@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - lts/*
+script:
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  local_dir: build/
+  on:
+      branch: master
+notifications:
+  email:
+    recipients:
+      - mama@milestone.dk
+    on_success: change
+    on_failure: always
