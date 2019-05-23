@@ -1,0 +1,11 @@
+{
+  "name": "milestone-web-design-system",
+  "version": "0.1.0",
+  "scripts": {
+	"build": "fractal.cmd build",
+	"start": "fractal.cmd start --sync"
+  },
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7"
+  }
+}
