@@ -2,8 +2,8 @@
   "name": "milestone-web-design-system",
   "version": "0.1.0",
   "scripts": {
-	"ci-build": "fractal build", // Command for travis ci
-	"build": "fractal.cmd build", // .cmd needed on windows environment
+	"ci-build": "fractal build",
+	"build": "fractal.cmd build",
 	"start": "fractal.cmd start --sync"
   },
   "dependencies": {
