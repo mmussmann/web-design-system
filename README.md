@@ -1,5 +1,5 @@
 # web-design-system
-[![Build Status](https://travis-ci.org/mmussmann/web-design-system.svg?branch=master)](https://travis-ci.org/mmussmann/web-design-system)
+[![Build Status](https://travis-ci.org/milestone-sys/web-design-system.svg?branch=master)](https://travis-ci.org/milestone-sys/web-design-system)
 
 Design system for Milestone Systems online presence 
 
