@@ -3,8 +3,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    resolve: {
+        alias: {
+            components: path.resolve(__dirname, './components'),
+            scss: path.resolve(__dirname, './src/scss')
+        }
+    },
     entry: {
-        index: path.resolve('./src/js/index.js')
+        main: path.resolve('./src/js/main.js')
     },
     output: {
         path: path.resolve('./public/'),
