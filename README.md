@@ -3,4 +3,4 @@
 
 Design system for Milestone Systems online presence 
 
-Public site: https://mmussmann.github.io/web-design-system/
+Public site: https://milestone-sys.github.io/web-design-system/
