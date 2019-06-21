@@ -33,6 +33,7 @@
     "webpack-merge": "^4.2.1"
   },
   "license": "MIT",
+  "homepage": "https://milestone-sys.github.io/web-design-system/",
   "repository": {
     "type": "git",
     "url": "https://github.com/milestone-sys/web-design-system.git"
