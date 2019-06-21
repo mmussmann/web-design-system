@@ -1,3 +1,4 @@
 module.exports = {
-  title: 'DEMO -- Bootstrap grid'
+  title: 'DEMO -- Bootstrap grid',
+  status: 'prototype'
 };
