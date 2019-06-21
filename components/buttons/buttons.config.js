@@ -1,6 +1,6 @@
 module.exports = {
 	collated: true,
-	status: 'wip',
+	status: 'prototype',
 	variants: [{
 		name: 'default',
 		label: 'Large',
