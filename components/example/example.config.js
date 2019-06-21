@@ -5,3 +5,4 @@ module.exports = {
 		'text': 'This is an example component!',
 	}
 };
+
