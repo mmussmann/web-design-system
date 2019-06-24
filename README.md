@@ -4,3 +4,4 @@
 Design system for Milestone Systems online presence 
 
 Public site: https://milestone-sys.github.io/web-design-system/
+NPM location: https://www.npmjs.com/package/@milestone-sys/web-design-system
