@@ -4,9 +4,16 @@ node_js:
 script:
   - npm run build
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  local_dir: build/
-  on:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    local_dir: build/
+    on:
+        branch: master
+  - provider: npm
+    skip_cleanup: true
+    email: mama@milestone.dk
+    api_key: "$NPM_TOKEN"
+    on:
+      tags: true
       branch: master
