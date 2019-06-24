@@ -10,6 +10,6 @@ _E.g. Adding a new msds-* prefixed class <br><br>_
 _E.g. Fixing a bug in existing code without changing API(Classes etc..)_
 
 ### Steps to follow.
-Go to github repository under (releases)[https://github.com/milestone-sys/web-design-system/releases], add your new tag and save. 
+Go to github repository under [releases](https://github.com/milestone-sys/web-design-system/releases), add your new tag and save. 
 
-This will trigger a automated travis-ci deploy to the (package on npm)[https://www.npmjs.com/package/@milestone-sys/web-design-system]
+This will trigger a automated travis-ci deploy to the [package on npm](https://www.npmjs.com/package/@milestone-sys/web-design-system)
