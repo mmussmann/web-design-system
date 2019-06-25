@@ -1,25 +1,25 @@
 module.exports = {
-	collated: true,
-	status: 'prototype',
-	variants: [
+  collated: true,
+  status: 'prototype',
+  variants: [
     {
-  		name: 'default',
-  		label: 'Large',
-  		context: {
-  			text: 'Variation 1'
-  		}
-  	}, 
+      name: 'default',
+      label: 'Large',
+      context: {
+        text: 'Variation 1'
+      }
+    },
     {
-  		name: 'medium',
+      name: 'medium',
       context: {
         text: 'Variation 2'
-      }		
-  	}, 
+      }
+    },
     {
-  		name: 'small',
-  		context: {
-  			text: 'Variation 3'
-  		}
-  	}
-  ]  
-};
+      name: 'small',
+      context: {
+        text: 'Variation 3'
+      }
+    }
+  ]
+}
