@@ -1,6 +1,7 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin')
 
 module.exports = {
   resolve: {
@@ -18,6 +19,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new StyleLintPlugin({
+      files: '{components,src}/**/*.{scss,css}'
+    }),
     new MiniCssExtractPlugin()
   ],
   module: {
