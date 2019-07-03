@@ -2,6 +2,7 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
 
 module.exports = {
   resolve: {
@@ -22,7 +23,15 @@ module.exports = {
     new StyleLintPlugin({
       files: '{components,src}/**/*.{scss,css}'
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new SVGSpritemapPlugin('src/svg/**/*.svg', {
+      output: {
+        filename: 'msds-spritemap.svg'
+      },
+      sprite: {
+        prefix: false
+      }
+    })
   ],
   module: {
     rules: [
