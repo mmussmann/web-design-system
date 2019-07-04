@@ -1,9 +1,10 @@
-.empty { // Added to not fail linting due to empty file
+// Added to not fail linting due to empty file
+.empty {
   background: pink;
 
   @media print {
     .test2 {
-      background: orange;
+      background: green;
 
       .test3 {
         background: blue;

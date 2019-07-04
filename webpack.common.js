@@ -21,7 +21,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new StyleLintPlugin({
-      files: '{components,src}/**/*.{scss,css}'
+      files: '{components,src}/**/*.{scss,css}',
+      fix: true
     }),
     new MiniCssExtractPlugin(),
     new SVGSpritemapPlugin('src/svg/**/*.svg', {
