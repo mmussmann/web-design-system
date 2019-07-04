@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
     "start": "webpack --config ./webpack.dev.js --watch",
-    "eslint-fix": "eslint {components/**/*.js,src/**/*.js,*.js} --fix"
+    "eslint-fix": "eslint {components/**/*.js,src/**/*.js,*.js} --fix",
+    "stylelint-fix": "stylelint {components/**/*.scss,src/**/*.scss,*.js} --fix"
   },
   "main": "main.js",
   "style": "main.css",
