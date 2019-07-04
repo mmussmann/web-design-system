@@ -21,7 +21,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new StyleLintPlugin({
-      files: '{components,src}/**/*.{scss,css}'
+      files: '{components,src}/**/*.{scss,css}',
+      fix: true
     }),
     new MiniCssExtractPlugin(),
     new SVGSpritemapPlugin('src/svg/**/*.svg', {
@@ -39,16 +40,14 @@ module.exports = {
         enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader'
+        use: ['eslint-loader', 'prettier-loader']
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
         }
       }
     ]

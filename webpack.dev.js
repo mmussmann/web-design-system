@@ -24,9 +24,7 @@ module.exports = merge(common, {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [
-                require('postcss-preset-env')
-              ],
+              plugins: [require('postcss-preset-env')],
               sourceMap: true
             }
           },
