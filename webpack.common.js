@@ -40,7 +40,15 @@ module.exports = {
         enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['eslint-loader', 'prettier-loader']
+        use: [
+          'eslint-loader',
+          {
+            loader: 'prettier-loader',
+            options: {
+              parser: 'babel'
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,

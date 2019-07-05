@@ -1,5 +1,5 @@
 const path = require('path')
-const fractal = module.exports = require('@frctl/fractal').create()
+const fractal = (module.exports = require('@frctl/fractal').create())
 
 // Project title
 fractal.set('project.title', 'Milestone Web Design System')
