@@ -1,14 +1,46 @@
-// Added to not fail linting due to empty file
-.empty {
-  background: pink;
+// Colors Definitions ----------------------------------------------------------------------------------------------------------------------------
+// Primary Colors
+$clear-blue: #0099da;
+$dark-blue: #023852;
+$yellow: #ffe700;
 
-  @media print {
-    .test2 {
-      background: green;
+// Gray, White and Black Colors
+$gray-1: #f9f9f9;
+$gray-2: #f5f6f7;
+$gray-3: #ebeff2;
+$gray-4: #dce2e6;
+$gray-5: #ced3d7;
+$gray-6: #b6bbc0;
+$gray-7: #9dadb7;
+$gray-8: #7c8b95;
+$gray-9: #6d6f71;
+$gray-10: #303436;
+$white: #ffffff;
+$black: #000000;
 
-      .test3 {
-        background: blue;
-      }
-    }
-  }
-}
+//Alternative Colors
+$alt-blue-1: #50bfee;
+$alt-blue-2: #0081c1;
+$alt-blue-3: #035d88;
+$alt-yellow-1: #ffd300;
+$alt-yellow-2: #ffc000;
+$confirm-green: #3cc003;
+$danger-red-1: #ff285a;
+$danger-red-2: #b23b57;
+$sand: #9e9d8e;
+
+// Gradients
+$clear-blue-gradient: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
+$dark-blue-gradient: linear-gradient(270deg, $alt-blue-3 0%, $dark-blue 100%);
+$mixed-blue-gradient: linear-gradient(90deg, $alt-blue-3 20%, $clear-blue 80%);
+$yellow-gradient: linear-gradient(90deg, $alt-yellow-1 0%, $yellow 100%);
+$gray-gradient-1: linear-gradient(90deg, $gray-3 0%, $white 100%);
+$gray-gradient-2: linear-gradient(90deg, $gray-2 0%, $gray-1 100%);
+$gray-gradient-3: linear-gradient(90deg, $gray-3 0%, $gray-2 100%);
+$gray-gradient-4: linear-gradient(90deg, $gray-4 0%, $gray-3 100%);
+$gray-gradient-5: linear-gradient(90deg, $gray-5 0%, $gray-4 100%);
+
+// Shadows
+$shadow-small: 0 1px 2px rgba(2, 56, 82, 0.17);
+$shadow-medium: 0 2px 12px rgba(2, 56, 82, 0.17);
+$shadow-large: 0 12px 36px 0 rgba(2, 56, 82, 0.12);
