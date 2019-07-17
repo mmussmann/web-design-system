@@ -21,7 +21,13 @@ module.exports = merge(common, {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [require('postcss-preset-env'), require('cssnano')]
+              plugins: [
+                require('postcss-pxtorem')({
+                  propList: ['*']
+                }),
+                require('postcss-preset-env'),
+                require('cssnano')
+              ]
             }
           },
           {
@@ -36,10 +42,12 @@ module.exports = merge(common, {
       mode: 'build',
       configPath: 'fractal.js'
     }),
+    // Additional files to be deployed in NPM package
     new CopyPlugin([
       { from: 'package.json', to: 'package.json' },
       { from: 'LICENSE', to: 'LICENSE', toType: 'file' },
-      { from: 'README.md', to: 'README.md' }
+      { from: 'README.md', to: 'README.md' },
+      { from: 'src/scss/variables.scss', to: 'scss/variables.scss' }
     ])
   ]
 })

@@ -1,0 +1,34 @@
+<h1>Primary colors</h1>
+<div class="color-container">  
+  {{#each primaryColors}}
+    <div class="color-square {{textColor}} {{backgroundColor}}">{{text}}</div>
+  {{/each}}
+</div>
+
+<h1>Grays, white, black</h1>
+<div class="color-container">  
+  {{#each grayWhiteBlack}}
+    <div class="color-square {{textColor}} {{backgroundColor}}">{{text}}</div>
+  {{/each}}
+</div>
+
+<h1>Alternative colors</h1>
+<div class="color-container">  
+  {{#each altColors}}
+    <div class="color-square {{textColor}} {{backgroundColor}}">{{text}}</div>
+  {{/each}}
+</div>
+
+<h1>Gradients</h1>
+<div class="color-container">  
+  {{#each gradients}}
+    <div class="color-square {{textColor}} {{backgroundColor}}">{{text}}</div>
+  {{/each}}
+</div>
+
+<h1>Shadows</h1>
+<div class="color-container" style="background: white; padding: 30px 0 30px 0;">  
+  {{#each shadows}}
+    <div style="height: 170px; width: 170px; border-radius: 50%;" class="color-square msds-bg-white {{textColor}} {{shadow}}">{{text}}</div>
+  {{/each}}
+</div>
