@@ -2,9 +2,12 @@
 title: CSS & SCSS Guidelines
 ---
 ### Build on bootstrap
-This project is build on top of bootstrap which means we are forced to use bootstrap class names. e.g. '.cards', this also means that when adding new bootstrap components to the project it should be considered a breaking change and version number increased in line with [Semantic Versioning](https://semver.org/)
+<p>This project is build on top of bootstrap grid and utilities, which means that classes from those areas will not be prefixed with msds-* and can cause potential conflicts.<p>
+<p>Before using this project read below documentation and try to get an overview of whether or not this would cause an issue.</p>
 
-To see a list of parts imported from bootstrap go to the code and read _**src/scss/bootstrapImport.scss**_
+Overview of classnames from bootstrap:
+[Utilities documentation](https://getbootstrap.com/docs/4.3/utilities/borders/)
+[Grid documentation](https://getbootstrap.com/docs/4.3/layout/grid/)
 
 ### Class prefix
 When adding custom classes not releated to bootstrap they should always be prefixed with **msds-***

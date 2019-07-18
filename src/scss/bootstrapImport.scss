@@ -1,7 +1,20 @@
 // Required
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/_mixins.scss';
 
-// Optional
-@import '~bootstrap/scss/bootstrap-grid';
+// Utilities
+@import '~bootstrap/scss/_utilities.scss';
+
+// Grid
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+@import '~bootstrap/scss/_grid.scss';
