@@ -10,7 +10,8 @@
       2,
       {
         "ignore": [
-          "blockless-at-rules"
+          "blockless-at-rules",
+          "pseudo-classes"
         ],
         "message": "Please try not to nest deeper than 3 levels"
       }
