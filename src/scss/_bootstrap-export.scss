@@ -6,7 +6,6 @@ This code should not in it self generate any CSS, so it should contain
 SASS variables, functions, mixins etc. that only generate CSS when called.
 */
 
-@import 'scss/_variables.scss';
 @import '~bootstrap/scss/_functions.scss';
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/_mixins.scss';
