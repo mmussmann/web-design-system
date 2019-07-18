@@ -47,7 +47,7 @@ module.exports = merge(common, {
       { from: 'package.json', to: 'package.json' },
       { from: 'LICENSE', to: 'LICENSE', toType: 'file' },
       { from: 'README.md', to: 'README.md' },
-      { from: 'src/scss/_export.scss', to: 'scss/_export.scss' }
+      { from: 'src/scss/_variables.scss', to: 'scss/_variables.scss' }
     ])
   ]
 })

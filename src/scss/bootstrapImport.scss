@@ -7,14 +7,13 @@
 @import '~bootstrap/scss/_utilities.scss';
 
 // Grid
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  // Copied from bootstrap _reboot.scss
+  // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+  box-sizing: border-box;
 }
+
 @import '~bootstrap/scss/_grid.scss';
