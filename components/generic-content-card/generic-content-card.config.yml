@@ -1,4 +1,5 @@
 context:
-  placeholderImg: 'https://baconmockup.com/300/200'
+  placeholderImg: 'http://via.placeholder.com/640x360'
   placeholderHeading: 'Technical Support/Care Portals'
   placeholderDescription: 'Get technical assistance for Milestone Products'
+status: 'wip'
