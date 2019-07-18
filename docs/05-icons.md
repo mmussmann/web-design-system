@@ -2,6 +2,7 @@
 title: Icons
 ---
 ### Adding a new icon
+- Use SVGOMG to optimize the SVG https://jakearchibald.github.io/svgomg/
 - Add the icon.svg to **src/svg** folder.
 - Update **components/icons/icons.hbs** with the new icon
 - Push to repository
