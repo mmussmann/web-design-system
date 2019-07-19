@@ -1,6 +1,5 @@
 module.exports = {
   status: 'ready',
-  title: 'Available colors',
   context: {
     inlineCss: `
       .color-square{
