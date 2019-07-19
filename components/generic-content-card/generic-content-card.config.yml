@@ -1,5 +1,11 @@
 context:
-  placeholderImg: 'http://via.placeholder.com/640x360'
-  placeholderHeading: 'Technical Support/Care Portals'
-  placeholderDescription: 'Get technical assistance for Milestone Products'
+  general:
+    cardDescription: 'Cards'
+    cardDescriptionDarkTheme: 'Cards Dark theme'
+  card:  
+    placeholderImg: 'http://via.placeholder.com/360x180'
+    placeholderHeading: 'Headline lorem ipsum'
+    placeholderHeadingLong: 'Headline lorem ipsumsemper id commodo'
+    placeholderDescription: 'Lorem ipsum dolorem sit amet etiam vestibulum morbi nibh? Commodo rhoncus semper commodo malesuada.'
+    placeholderDescriptionlong: 'Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.'
 status: 'wip'
