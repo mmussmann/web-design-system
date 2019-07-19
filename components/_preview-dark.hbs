@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <link media="all" rel="stylesheet" href="{{ path '/main.css' }}">
+    <title>Dark Preview Layout</title>
+		<script defer src="{{ path '/main.js' }}"></script>
+
+    <style>
+      body {
+        padding: 1em;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
+        margin-bottom: 20px;
+      }
+
+      h1, h2, h3, h4, h5, h6, p{
+        color: white;
+      }
+
+      {{_target.context.inlineCss}}
+    </style>
+	</head>
+	<body>
+		{{{ yield }}}
+	</body>
+</html>

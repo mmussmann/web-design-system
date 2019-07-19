@@ -1,0 +1,109 @@
+//Delete  me
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.msds-container-card-category {
+  font-family: 'Open Sans';
+  cursor: pointer;
+  position: relative;
+  width: 280px;
+
+  &:hover {
+    .msds-container-card-category__header {
+      color: $yellow;
+    }
+  }
+
+  &:active {
+    .msds-container-card-category__header {
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &--disabled {
+    .msds-container-card-category__header {
+      position: relative;
+      color: $white;
+      overflow: hidden;
+    }
+
+    .msds-container-card-category__header-icon {
+      fill: $white;
+    }
+
+    .msds-container-card-category__header-opaque-filter {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 360px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 2px 2px 0 0;
+    }
+
+    &:hover {
+      cursor: unset;
+      .msds-container-card-category__header {
+        color: $white;
+      }
+    }
+
+    &:active {
+      .msds-container-card-category__header {
+        box-shadow: unset;
+      }
+    }
+  }
+
+  &--large {
+    width: 360px;
+
+    .msds-container-card-category__header {
+      width: 360px;
+    }
+
+    .msds-container-card-category__content {
+      width: 360px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    padding-right: 16px;
+  }
+
+  &__header-body {
+    padding: 27px 10px 27px 20px;
+    line-height: 24px;
+  }
+
+  &__header-icon {
+    fill: $yellow;
+    width: 18px;
+    height: 18px;
+    margin: 30px 0px;
+  }
+
+  &__header-opaque-filter {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  &__content {
+    width: 280px;
+    color: $white;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    &-body {
+      padding: 24px 20px;
+    }
+  }
+}
