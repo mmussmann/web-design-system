@@ -14,7 +14,7 @@
 
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.25rem, 0 0.75rem 2.25rem 0;
+    box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: none;
   }
 
@@ -62,9 +62,6 @@
   &--dark-theme {
     .msds-generic-content-card__body {
       background: $alt-blue-3;
-    }
-
-    .msds-generic-content-card__body {
       color: white;
     }
   }
