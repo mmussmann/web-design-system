@@ -11,13 +11,11 @@
   border-radius: 2px;
   transition-duration: 0.3s;
   box-shadow: $shadow-small;
-
   &:active,
   &:focus {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: none;
   }
-
   &:hover {
     cursor: pointer;
     transform: translateY(-10px);
