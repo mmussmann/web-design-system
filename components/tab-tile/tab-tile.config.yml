@@ -1,6 +1,6 @@
 context:
   general:
   tab:  
-    placeholderImg: 'http://via.placeholder.com/360x180'
+    placeholderImg: ''
     placeholderHeading: 'Headline lorem ipsum'
 status: 'wip'
