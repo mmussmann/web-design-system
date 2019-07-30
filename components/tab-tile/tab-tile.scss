@@ -1,0 +1,41 @@
+// delete me!
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+.row-scroll-x-mobile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@include media-breakpoint-down(xs) {
+  .row-scroll-x-mobile {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+.msds-tab-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 277px;
+  height: 180px;
+  border: 1px solid $gray-4;
+  background: transparent;
+  font-family: 'open-sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: $gray-9;
+  cursor: pointer;
+  padding-top: 24px;
+  svg {
+    width: 120px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  &--active {
+    background: $white;
+    border-top: 4px solid $clear-blue;
+    border-bottom: none;
+  }
+}
