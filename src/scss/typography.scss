@@ -1,0 +1,155 @@
+@mixin msds-font($font) {
+  @if $font == 'display-1' {
+    font-size: 84px;
+    line-height: 88px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+  }
+
+  @if $font == 'display-2' {
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    letter-spacing: 0.86px;
+  }
+
+  @if $font == 'display-3' {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+  }
+
+  @if $font == 'header-1' {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  @if $font == 'header-2' {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 300;
+  }
+
+  @if $font == 'header-3' {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  @if $font == 'header-4' {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  @if $font == 'header-5' {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  @if $font == 'header-6' {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  @if $font == 'lead' {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+
+  @if $font == 'body-1' {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @if $font == 'body-2' {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @if $font == 'body-3' {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @if $font == 'body-4' {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  @if $font == 'body-5' {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.msds-text-display-1 {
+  @include msds-font('display-1');
+}
+
+.msds-text-display-2 {
+  @include msds-font('display-2');
+}
+
+.msds-text-display-3 {
+  @include msds-font('display-3');
+}
+
+.msds-text-header-1 {
+  @include msds-font('header-1');
+}
+
+.msds-text-header-2 {
+  @include msds-font('header-2');
+}
+
+.msds-text-header-3 {
+  @include msds-font('header-3');
+}
+
+.msds-text-header-4 {
+  @include msds-font('header-4');
+}
+
+.msds-text-header-5 {
+  @include msds-font('header-5');
+}
+
+.msds-text-header-6 {
+  @include msds-font('header-6');
+}
+
+.msds-text-lead {
+  @include msds-font('lead');
+}
+
+.msds-text-body-1 {
+  @include msds-font('body-1');
+}
+
+.msds-text-body-2 {
+  @include msds-font('body-2');
+}
+
+.msds-text-body-3 {
+  @include msds-font('body-3');
+}
+
+.msds-text-body-4 {
+  @include msds-font('body-4');
+}
+
+.msds-text-body-5 {
+  @include msds-font('body-5');
+}
