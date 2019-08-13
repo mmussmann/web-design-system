@@ -1,5 +1,5 @@
 module.exports = {
-  status: 'prototype',
+  status: 'ready',
   title: 'Available icons',
   context: {
     inlineCss: 'svg{height: 50px; width: 50px;margin: 5px}'
