@@ -66,15 +66,12 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 16px;
+    @include msds-font('header-4');
     padding-right: 16px;
   }
 
   &__header-body {
-    padding: 27px 10px 27px 20px;
-    line-height: 24px;
+    padding: 24px 10px 24px 20px;
   }
 
   &__header-icon {
@@ -93,8 +90,7 @@
   &__content {
     width: 280px;
     color: $white;
-    font-size: 16px;
-    line-height: 22px;
+    @include msds-font('body-1');
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.1);
 

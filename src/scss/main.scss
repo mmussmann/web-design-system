@@ -1,9 +1,9 @@
 // SCSS
 @import 'scss/_variables.scss';
 @import 'scss/bootstrapImport.scss';
-@import 'scss/typography.scss';
 
 // Components
+@import 'components/typography/typography.scss';
 @import 'components/colors/colors-and-shadows.scss';
 @import 'components/button-cards/generic-content-card/generic-content-card.scss';
 @import 'components/button-cards/container-cards/category-card.scss';
