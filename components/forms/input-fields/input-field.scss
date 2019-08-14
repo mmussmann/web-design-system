@@ -1,0 +1,13 @@
+.msds-input {
+  height: 56px;
+  width: 463px;
+  padding-left: 20px;
+  border: 1px solid $gray-5;
+  border-radius: 2px;
+  &:hover {
+    background-color: $gray-2;
+  }
+  &--small {
+    height: 36px;
+  }
+}
