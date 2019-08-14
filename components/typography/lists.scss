@@ -1,0 +1,26 @@
+.msds-ul {
+  font-family: 'Open Sans';
+  list-style: none;
+  padding-left: 20px;
+}
+
+.msds-ul > .msds-ul__item::before {
+  content: '\2022';
+  color: $clear-blue;
+  display: inline-block;
+  width: 20px;
+  margin-left: -16px;
+}
+
+.msds-ul__item > .msds-ul {
+  padding-left: 35px;
+}
+
+.msds-ul__item > .msds-ul .msds-ul__item::before {
+  content: '\25CB';
+  color: $clear-blue;
+  font-size: bold;
+  display: inline-block;
+  width: 20px;
+  margin-left: -16px;
+}
