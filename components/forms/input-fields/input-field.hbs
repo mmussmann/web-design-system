@@ -1,7 +1,39 @@
 <form class="msds-form">
+    <div class="large-input">
+        <div class="msds-text-body-1">Large</div>
+        <br>
+        <div class="msds-text-body-3">
+            Default
+        </div>
+        <br>
+        <div class="msds-form__input-container">
+            <input class="msds-form__input-container-input" type="text" placeholder="{{placeholder}}" name="default-input">
+            <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
+            <p class="msds-form__input-container-input-message">{{message}}</p>
+        </div>
+
+        <div class="msds-text-body-3">
+            Disabled
+        </div>
+        <br>
+        <div class="msds-form__input-container">
+            <input class="msds-form__input-container-input msds-form__input-container-input--disabled" type="text" placeholder="{{placeholder}}" name="default-input" disabled>
+            <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
+            <p class="msds-form__input-container-input-message">{{message}}</p>
+        </div>
+    </div>
+
+<div class="small-input">
+    <div class="msds-text-body-1">small</div>
+    <br>
+    <div class="msds-text-body-3">
+        Default 
+    </div>
+    <br>    
     <div class="msds-form__input-container">
-        <input class="msds-form__input-container-input" type="text" placeholder="{{placeholder}}" name="default-input">
-        <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
+        <input class="msds-form__input-container-input msds-form__input-container-input--small" type="text" placeholder="{{placeholder}}" name="default-input">
+        <label class="msds-form__input-container-input-label msds-form__input-container-input-label--small" for="default-input">{{placeholder}}</label>
         <p class="msds-form__input-container-input-message">{{message}}</p>
     </div>
+</div>
 </form>

@@ -1,12 +1,13 @@
 .msds-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   &__input-container {
     position: relative;
     &-input {
       font-family: 'Open-sans', sans-serif;
       font-size: 16px;
-      line-height: 22px;
+      color: $gray-10;
       height: 56px;
       width: 463px;
       padding-left: 20px;
@@ -19,20 +20,27 @@
       &:focus {
         outline: 4px solid rgba(0, 153, 218, 0.5);
       }
-
       &:focus ~ label {
         top: 1px;
-        font-size: 11px;
+        font-size: 10px;
       }
       &::placeholder {
         color: transparent;
       }
       &:not(:placeholder-shown) ~ label {
         top: 1px;
-        font-size: 11px;
+        font-size: 10px;
       }
       &--small {
         height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      &--disabled {
+        & ~ label {
+          color: $gray-7;
+        }
+        background: $gray-3;
       }
     }
     &-input-label {
@@ -44,16 +52,17 @@
       color: $gray-8;
       font-size: 16px;
 
-      &--active {
-        top: 1px;
-        font-size: 11px;
+      &--small {
+        font-size: 12px;
+        top: calc(50% - 25px);
       }
     }
     &-input-message {
       font-size: 12px;
       line-height: 18px;
       color: $gray-9;
-      margin-right: 50px;
+      margin-left: 3px;
+      margin-top: 6px;
     }
   }
 }
