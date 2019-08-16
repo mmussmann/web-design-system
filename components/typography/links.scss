@@ -1,0 +1,22 @@
+a.msds-incontext-link,
+.msds-incontext-link a {
+  color: $clear-blue;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--grey {
+    color: $gray-10;
+  }
+}
+
+.msds-link {
+  color: $clear-blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
