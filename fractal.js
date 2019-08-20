@@ -21,3 +21,21 @@ fractal.docs.set('path', path.join(__dirname, 'docs'))
 fractal.web.set('static.path', path.join(__dirname, 'public'))
 fractal.web.set('builder.dest', path.join(__dirname, '/build'))
 fractal.web.set('server.sync', true)
+
+/*
+ * Theming
+ */
+const customTheme = require('@frctl/mandelbrot')({
+    "nav": ["docs", "components"],
+    "panels": ["html", "view", "context", "info", "notes"],
+    "styles": [
+        "default",
+        "/main.css",
+        "/theme-overrides/styles.css"
+    ],
+    "scripts": [
+        "default"
+    ]
+});
+customTheme.addLoadPath(path.join(__dirname, '/fractal-theme'));
+fractal.web.theme(customTheme);
