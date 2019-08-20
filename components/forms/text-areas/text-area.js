@@ -8,6 +8,6 @@ textAreas.forEach(element => {
 
 function updateWordCount(element) {
   const wordCount = element.value
-  const countElement = element.parentNode.childNodes[3]
+  const countElement = element.parentNode.querySelector('.msds-form__input-container-text-area-message')
   countElement.innerHTML = wordCount
 }
