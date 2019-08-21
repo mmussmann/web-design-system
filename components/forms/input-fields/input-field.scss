@@ -1,0 +1,145 @@
+.msds-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &__input-container {
+    position: relative;
+  }
+
+  &__input-container-input {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 16px;
+    color: $gray-10;
+    height: 56px;
+    width: 463px;
+    padding-left: 20px;
+    border: 1px solid $gray-5;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $gray-2;
+    }
+
+    &:focus {
+      outline: 4px solid rgba(0, 153, 218, 0.5);
+    }
+
+    &:focus ~ label {
+      top: 1px;
+      font-size: 10px;
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:not(:placeholder-shown) ~ label {
+      top: 1px;
+      font-size: 10px;
+    }
+
+    &--small {
+      height: 36px;
+      font-size: 12px;
+      line-height: 18px;
+
+      & ~ label {
+        font-size: 12px;
+        top: calc(50% - 20px);
+      }
+    }
+
+    &--disabled {
+      &:hover {
+        background-color: $gray-3;
+      }
+
+      & ~ label {
+        color: $gray-7;
+      }
+      background: $gray-3;
+    }
+
+    &--success {
+      border: 1px solid $confirm-green;
+      & ~ p {
+        color: $confirm-green;
+      }
+
+      & ~ p:before,
+      & ~ p:after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        width: 2px;
+        background-color: $confirm-green;
+      }
+
+      & ~ p:before {
+        top: calc(50% - 16px);
+        height: 13px;
+        right: 15px;
+        transform: rotate(45deg);
+      }
+
+      & ~ p:after {
+        top: calc(50% - 12px);
+        height: 7px;
+        right: 21px;
+        transform: rotate(-45deg);
+      }
+
+      &:focus {
+        outline: 4px solid rgba(60, 192, 3, 0.5);
+      }
+    }
+
+    &--error {
+      border: 1px solid $danger-red-1;
+      & ~ p {
+        color: $danger-red-1;
+      }
+
+      & ~ p:before,
+      & ~ p:after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: calc(50% - 17px);
+        height: 13px;
+        width: 2px;
+        background-color: $danger-red-1;
+      }
+
+      & ~ p:before {
+        transform: rotate(45deg);
+      }
+
+      & ~ p:after {
+        transform: rotate(-45deg);
+      }
+
+      &:focus {
+        outline: 4px solid rgba(255, 40, 90, 0.5);
+      }
+    }
+  }
+
+  &__input-container-input-label {
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 20px;
+    transition: 0.5s;
+    pointer-events: none;
+    color: $gray-8;
+    font-size: 16px;
+  }
+
+  &__input-container-input-message {
+    font-size: 12px;
+    line-height: 18px;
+    color: $gray-9;
+    margin-left: 3px;
+    margin-top: 6px;
+  }
+}
