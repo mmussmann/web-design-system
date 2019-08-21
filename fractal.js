@@ -26,7 +26,7 @@ fractal.web.set('server.sync', true)
  * Theming
  */
 const customTheme = require('@frctl/mandelbrot')({
-    "nav": ["docs", "components"],
+    "nav": ["components", "docs"],
     "panels": ["html", "view", "context", "info", "notes"],
     "styles": [
         "default",

@@ -1,7 +1,7 @@
 module.exports = {
   status: 'ready',
   context: {
-    inlineCss: `
+    previewCss: `
       .color-square{
         width: 170px; 
         height: 92px; 

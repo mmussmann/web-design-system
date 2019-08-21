@@ -1,7 +1,7 @@
 ---
 title: Icons
 ---
-### Adding a new icon
+## Adding a new icon
 - Use SVGOMG to optimize the SVG https://jakearchibald.github.io/svgomg/
 - Add the icon.svg to **src/svg** folder.
 - Update **components/icons/icons.hbs** with the new icon
@@ -10,16 +10,10 @@ title: Icons
 
 Once travis has build the release and published to NPM you can use it by updating the NPM package.
 
-### Icon preview
-<div class="icon-preview">
-{{render '@icons'}}
-</div>
+## Usage
+Host **msds-spritemap.svg** then use it like below with the # representing the icon name (ID)
 
-### Usage
-Host msds-spritemap.svg then use it like below with the # representing the icon name (ID)
-
-### Icon source
+## Icon source
 ```
-{{render '@icons'}}
+{{view '@icons'}}
 ```
-

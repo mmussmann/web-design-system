@@ -1,11 +1,11 @@
 ---
 title: Spacing
 ---
-<p>Spacing is related to both margin and padding</p> 
+Spacing is related to both margin and padding
 
-<p>The implementation is a configuration of [bootstrap spacing utility](https://getbootstrap.com/docs/4.3/utilities/spacing/).</p>
+The implementation is a configuration of [bootstrap spacing utility](https://getbootstrap.com/docs/4.3/utilities/spacing/).
 
-<h3>Current configuration values are:</h3>
+### Current configuration values are:
 
 ``` SCSS
 $spacers: (
@@ -26,14 +26,14 @@ $spacers: (
 );
 ```
 
-<h3>Usage examples - Classes: (*For more details lookup [bootstrap spacing utility](https://getbootstrap.com/docs/4.3/utilities/spacing/)*)</h3>
+### Usage examples - Classes: (*For more details lookup [bootstrap spacing utility](https://getbootstrap.com/docs/4.3/utilities/spacing/)*)
 
 ```<div class="mx-4"></div>``` -- Will add 1rem margin __all around__<br>
 ```<div class="mr-4"></div>``` -- Will add 1rem margin __right__<br>
 ```<div class="px-4"></div>``` -- Will add 1rem padding __all around__<br>
 ```<div class="pt-4"></div>``` -- Will add 1rem padding __top__<br>
 
-<h3>Usage examples: (From code)</h3>
+### Usage examples: (From code)
 ``` SCSS
 .test {
 	margin: map-get($spacers, 4);
