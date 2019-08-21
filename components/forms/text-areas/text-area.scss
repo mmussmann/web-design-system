@@ -131,6 +131,8 @@
   }
 
   &__input-container-text-area-message {
+    display: flex;
+    justify-content: space-between;
     font-size: 12px;
     line-height: 18px;
     color: $gray-9;

@@ -1,13 +1,14 @@
 const textAreas = document.querySelectorAll('.msds-form__input-container-text-area')
 
 textAreas.forEach(element => {
-  element.onchange = function() {
+  element.onkeydown = function() {
     updateWordCount(element)
   }
 })
 
 function updateWordCount(element) {
-  const wordCount = element.value
-  const countElement = element.parentNode.querySelector('.msds-form__input-container-text-area-message')
+  const inputLength = element.value.length
+  const wordCount = `${inputLength} / 400`
+  const countElement = element.parentNode.querySelector('.word-count')
   countElement.innerHTML = wordCount
 }
