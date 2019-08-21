@@ -7,13 +7,13 @@
 	"selector-no-vendor-prefix": true,
 	"value-no-vendor-prefix": true,
 	"max-nesting-depth": [
-      2,
+      4,
       {
         "ignore": [
           "blockless-at-rules",
           "pseudo-classes"
         ],
-        "message": "Please try not to nest deeper than 3 levels"
+        "message": "Please try not to nest deeper than 5 levels"
       }
     ]
   }
