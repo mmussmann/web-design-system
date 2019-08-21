@@ -10,10 +10,16 @@ title: Icons
 
 Once travis has build the release and published to NPM you can use it by updating the NPM package.
 
+### Icon preview
+<div class="icon-preview">
+{{render '@icons'}}
+</div>
+
 ### Usage
 Host msds-spritemap.svg then use it like below with the # representing the icon name (ID)
+
+### Icon source
 ```
-<svg>
-  <use href="/msds-spritemap.svg#graphql-delete-me" />
-</svg>
+{{render '@icons'}}
 ```
+
