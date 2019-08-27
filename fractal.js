@@ -37,5 +37,5 @@ const customTheme = require('@frctl/mandelbrot')({
         "default"
     ]
 });
-customTheme.addLoadPath(path.join(__dirname, '/fractal-theme'));
+customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'));
 fractal.web.theme(customTheme);

@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   resolve: {
@@ -32,7 +33,10 @@ module.exports = {
       sprite: {
         prefix: false
       }
-    })
+    }),
+    new CopyPlugin([
+      { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' }
+    ])
   ],
   module: {
     rules: [
