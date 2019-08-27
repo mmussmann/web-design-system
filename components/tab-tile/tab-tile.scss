@@ -4,6 +4,10 @@
   background-color: #fff;
 }
 
+.center-tabs {
+  justify-content: center;
+}
+
 @include media-breakpoint-down(xs) {
   .row-scroll-x-mobile {
     flex-wrap: nowrap;
