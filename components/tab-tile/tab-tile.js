@@ -1,5 +1,10 @@
 const tabs = document.querySelectorAll('.msds-tab-tile')
 const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
+const viewport = window.matchMedia('(max-width: 992px)')
+const smallTabsClass = 'msds-tab-tile--small'
+
+applySmallTabs(viewport)
+viewport.addListener(applySmallTabs)
 
 for (let i = 0; i < tabContainers.length; i++) {
   const numberOftabs = tabContainers[i].childElementCount
@@ -29,4 +34,18 @@ function setActive(clickedTab) {
     }
   })
   clickedTab.classList.add(activeClass)
+}
+
+function applySmallTabs(viewPort) {
+  if (viewPort.matches) {
+    // If media query matches
+
+    tabs.forEach(tab => {
+      tab.classList.add(smallTabsClass)
+    })
+  } else {
+    tabs.forEach(tab => {
+      tab.classList.remove(smallTabsClass)
+    })
+  }
 }

@@ -1,14 +1,14 @@
 .row-scroll-x-mobile {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .center-tabs {
   justify-content: center;
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
   .row-scroll-x-mobile {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -17,29 +17,32 @@
 
 .msds-tab-tile {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   margin-right: 4px;
   max-width: 371px;
   min-width: 153px;
-  height: 180px;
-  background: #fff;
-  border-top: 4px solid #fff;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  min-height: 180px;
+  background: $white;
+  border-top: 4px solid $white;
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
   @include msds-font('body-1');
   font-weight: bold;
+  text-align: center;
   color: $gray-9;
   cursor: pointer;
-  padding-top: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 20px 16px 24px 16px;
 
   svg {
     width: 120px;
     height: 90px;
     margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 200px;
   }
 
   &:hover {
@@ -72,9 +75,19 @@
   }
 
   &--small {
-    min-width: 120px;
-    border-top: 4px solid #fff;
-    .msds-tab-tile--active {
+    min-width: 128px;
+    min-height: 152px;
+    padding: 20px 12px 9px 12px;
+    border-top: 4px solid $white;
+    text-align: center;
+    @include msds-font('header-6');
+    svg {
+      max-width: 80px;
+      max-height: 60px;
+      margin-bottom: 12px;
+    }
+    //background: $clear-blue;
+    &.msds-tab-tile--active {
       border-bottom: 4px solid $clear-blue;
     }
   }
