@@ -11,23 +11,22 @@ for (let i = 0; i < tabContainers.length; i++) {
 
 for (let i = 0; i < tabs.length; i++) {
   const tab = tabs[i]
-  tab.addEventListener('click', toggleActive)
+  tab.addEventListener('click', () => setActive(tab))
 }
 
 function centerTabs(tabContainer) {
   tabContainer.classList.add('center-tabs')
 }
 
-function toggleActive() {
-  const isActive = this.classList.contains('msds-tab-tile--active')
-
-  if (isActive) {
-    return
-  } else {
-    const elements = document.querySelectorAll('.msds-tab-tile')
-    ;[].forEach.call(elements, function(element) {
-      element.classList.remove('msds-tab-tile--active')
-    })
-    this.classList.add('msds-tab-tile--active')
-  }
+function setActive(clickedTab) {
+  const tabContainer = clickedTab.parentElement
+  const tabs = tabContainer.querySelectorAll('.msds-tab-tile')
+  const activeClass = 'msds-tab-tile--active'
+  tabs.forEach(tab => {
+    const isActive = tab.classList.contains(activeClass)
+    if (isActive) {
+      tab.classList.remove(activeClass)
+    }
+  })
+  clickedTab.classList.add(activeClass)
 }
