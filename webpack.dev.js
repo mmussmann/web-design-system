@@ -2,7 +2,6 @@ const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 const FractalWebpackPlugin = require('fractal-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -46,9 +45,6 @@ module.exports = merge(common, {
     new FractalWebpackPlugin({
       mode: 'server',
       configPath: 'fractal.js'
-    }),
-    new CopyPlugin([
-      { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' }
-    ])
+    })
   ]
 })
