@@ -19,6 +19,17 @@ for (let i = 0; i < tabs.length; i++) {
   tab.addEventListener('click', () => setActive(tab))
 }
 
+document.body.onkeyup = function(e) {
+  if (e.keyCode == 32) {
+    tabs.forEach(tab => {
+      const tabHasFocus = document.activeElement
+      if (tabHasFocus === tab) {
+        setActive(tab)
+      }
+    })
+  }
+}
+
 function centerTabs(tabContainer) {
   tabContainer.classList.add('center-tabs')
 }
@@ -38,8 +49,6 @@ function setActive(clickedTab) {
 
 function applySmallTabs(viewPort) {
   if (viewPort.matches) {
-    // If media query matches
-
     tabs.forEach(tab => {
       tab.classList.add(smallTabsClass)
     })
