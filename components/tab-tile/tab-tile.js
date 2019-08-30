@@ -45,6 +45,23 @@ function setActive(clickedTab) {
     }
   })
   clickedTab.classList.add(activeClass)
+  scrollToElement(clickedTab)
+}
+
+function scrollToElement(tab) {
+  const parentElement = tab.parentElement
+  const containerWidth = parentElement.clientWidth
+  const tabScrollLeft = tab.offsetLeft
+  const elementWidth = tab.clientWidth
+  const calcTabScrollPos = tabScrollLeft - containerWidth / 2 + elementWidth / 1.5
+
+  const scrollOptions = {
+    left: calcTabScrollPos,
+    top: 0,
+    behavior: 'smooth'
+  }
+
+  parentElement.scrollTo(scrollOptions)
 }
 
 function applySmallTabs(viewPort) {
