@@ -44,22 +44,22 @@
     .msds-container-contact-card__body-contact-person {
       margin-top: 18px;
       padding: 0px 20px;
-      // margin-top: 24px;
-      // margin-bottom: 0px;
     }
+
     .msds-container-contact-card__body-contact-position {
       margin: 0px;
       padding: 2px 20px 0px 20px;
-      // padding-top: 8px;
     }
 
     .msds-container-contact-card__body-contact-email {
       padding: 0px 20px;
       margin-top: 6px;
     }
+
     .msds-container-contact-card__body-contact-social-media {
       padding: 0px 20px;
     }
+
     .msds-container-contact-card__overlay {
       display: none;
     }
@@ -83,6 +83,7 @@
       margin-top: 14px;
       padding: 0px 16px;
     }
+
     .msds-container-contact-card__body-contact-position {
       margin: 0px;
       padding: 2px 16px 0px 16px;
@@ -92,9 +93,11 @@
       padding: 0px 16px;
       margin-top: 6px;
     }
+
     .msds-container-contact-card__body-contact-social-media {
       padding: 0px 16px;
     }
+
     .msds-container-contact-card__overlay {
       display: none;
     }
@@ -125,6 +128,7 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 20px;
+
     .msds-container-contact-card__icon {
       fill: $clear-blue;
       width: 15px;
@@ -141,6 +145,7 @@
   &__body-contact-social-media {
     font-size: 16px;
     line-height: 22px;
+
     .msds-container-contact-card__icon {
       width: 15px;
       height: 11px;
