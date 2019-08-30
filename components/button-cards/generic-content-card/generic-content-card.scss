@@ -1,3 +1,9 @@
+// .card-row {
+//   @include media-breakpoint-down(sm) {
+//     justify-content: space-between;
+//   }
+// }
+
 .msds-generic-content-card {
   display: flex;
   flex-direction: column;
@@ -8,10 +14,14 @@
   border-radius: 2px;
   transition-duration: 0.3s;
   box-shadow: $shadow-small;
-  &:active,
-  &:focus {
+  padding-bottom: 40px;
+  &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
-    outline: none;
+    outline: 4px solid rgba(157, 173, 183, 0.5);
+  }
+  &:focus {
+    box-shadow: none;
+    outline: 4px solid rgba(157, 173, 183, 0.5);
   }
   &:hover {
     cursor: pointer;
@@ -23,10 +33,16 @@
         transition: all 0.8s ease-in-out;
       }
     }
+    .msds-generic-content-card {
+      &__body-heading {
+        color: $clear-blue;
+      }
+    }
   }
   &__cap {
     overflow: hidden;
     &-image {
+      transition-duration: 0.3s;
       display: block;
       margin: 0;
       max-width: 100%;
@@ -50,9 +66,19 @@
     }
   }
   &--dark-theme {
-    .msds-generic-content-card__body {
-      background: $alt-blue-3;
-      color: white;
+    background: $alt-blue-3;
+    .msds-generic-content-card {
+      &__body {
+        background: $alt-blue-3;
+        color: $white;
+      }
+    }
+    &:hover {
+      .msds-generic-content-card {
+        &__body-heading {
+          color: $white !important;
+        }
+      }
     }
   }
 }
