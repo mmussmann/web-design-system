@@ -1,7 +1,7 @@
 const cardRows = document.querySelectorAll('.card-row')
 
 calcCardDimension()
-window.onresize = function(event) {
+window.onresize = function() {
   calcCardDimension()
 }
 

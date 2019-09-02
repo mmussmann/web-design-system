@@ -1,20 +1,17 @@
-// .card-row {
-//   @include media-breakpoint-down(sm) {
-//     justify-content: space-between;
-//   }
-// }
+.card-row > div {
+  margin-bottom: 20px;
+}
 
 .msds-generic-content-card {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: $white;
   height: 100%;
   color: black;
   text-decoration: none;
   border-radius: 2px;
   transition-duration: 0.3s;
   box-shadow: $shadow-small;
-  padding-bottom: 40px;
   &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: 4px solid rgba(157, 173, 183, 0.5);
@@ -47,12 +44,14 @@
       margin: 0;
       max-width: 100%;
       height: auto;
+      border-radius: 2px 2px 0 0;
     }
   }
   &__body {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: white;
+    background-color: $white;
+    border-radius: 0 0 2px 2px;
     &-heading {
       @include msds-font('header-3');
       margin: 0;
@@ -66,18 +65,19 @@
     }
   }
   &--dark-theme {
-    background: $alt-blue-3;
+    //background: $alt-blue-3;
+    background-color: rgba(0, 0, 0, 0.1);
+
     .msds-generic-content-card {
       &__body {
-        background: $alt-blue-3;
+        background: transparent;
         color: $white;
       }
     }
     &:hover {
-      .msds-generic-content-card {
-        &__body-heading {
-          color: $white !important;
-        }
+      background-color: rgba(0, 0, 0, 0.3);
+      .msds-generic-content-card__body-heading {
+        color: $white;
       }
     }
   }
