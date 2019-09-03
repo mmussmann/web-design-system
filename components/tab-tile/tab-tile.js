@@ -1,10 +1,10 @@
 const tabs = document.querySelectorAll('.msds-tab-tile')
 const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
-const viewport = window.matchMedia('(max-width: 992px)')
+const mediaQueryList = window.matchMedia('(max-width: 992px)')
 const smallTabsClass = 'msds-tab-tile--small'
 
-applySmallTabs(viewport)
-viewport.addListener(applySmallTabs)
+applySmallTabs(mediaQueryList)
+mediaQueryList.addListener(applySmallTabs)
 
 for (let i = 0; i < tabContainers.length; i++) {
   const numberOftabs = tabContainers[i].childElementCount
@@ -64,8 +64,8 @@ function scrollToElement(tab) {
   parentElement.scrollTo(scrollOptions)
 }
 
-function applySmallTabs(viewPort) {
-  if (viewPort.matches) {
+function applySmallTabs(mediaQueryList) {
+  if (mediaQueryList.matches) {
     tabs.forEach(tab => {
       tab.classList.add(smallTabsClass)
     })
