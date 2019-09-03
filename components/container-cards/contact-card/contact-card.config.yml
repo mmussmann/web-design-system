@@ -1,0 +1,17 @@
+status: 'wip'
+notes: 'Overview Contact Card Light Theme'
+context: 
+  headline: 'President & CEO'
+  contactPerson: 'Lars Thinggaard'
+  contactPosition: 'President & CEO, Milestone Systems'
+  contactEmail: 'lt@milestone.dk'
+  contactSocialMediaLink: 'Visit on LinkedIn'
+  placeholderImg: '//placehold.it/300'
+
+  headlineNoImage: 'APAC & Corporate'
+  contactPersonNoImage: 'Pernille Larsen'
+  contactPositionNoImage: 'Corporate Communications Manager and PR & Communications Manager APAC'
+  contactEmailNoImage: 'pel@milestone.dk'
+  contactSocialMediaLinkNoImage: 'Visit on LinkedIn'
+  placeholderImgNoImage: '//placehold.it/300'
+  
