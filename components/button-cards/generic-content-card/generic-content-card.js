@@ -6,7 +6,8 @@ window.onresize = function() {
 }
 
 function calcCardDimension() {
-  cardRows.forEach(cardRow => {
+  for (let i = 0; i < cardRows.length; i++) {
+    const cardRow = cardRows[i]
     const heighestImage = getHeighestImage(cardRow)
 
     if (screen.width < 992) {
@@ -14,17 +15,18 @@ function calcCardDimension() {
     } else {
       setCardheight(cardRow, heighestImage)
     }
-  })
+  }
 }
 
 function getHeighestImage(cardRow) {
   const images = cardRow.querySelectorAll('.msds-generic-content-card__cap-image')
   const imageHeights = []
 
-  images.forEach(image => {
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i]
     const imageHeight = image.clientHeight
     imageHeights.push(imageHeight)
-  })
+  }
 
   const heighestImageValue = Math.max(...imageHeights)
   return heighestImageValue
@@ -39,7 +41,8 @@ function setCardheight(cardRow, heightValue) {
   const cards = cardRow.querySelectorAll('.msds-generic-content-card')
   const doubleImageHeight = heightValue * 2 + 'px'
 
-  cards.forEach(card => {
+  for (let i = 0; i < cards.length; i++) {
+    const card = cards[i]
     card.style.minHeight = doubleImageHeight
-  })
+  }
 }
