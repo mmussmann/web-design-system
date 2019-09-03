@@ -41,7 +41,7 @@
   }
 
   &__text {
-    max-width: 200px;
+    width: 100%;
   }
 
   &:hover {
@@ -63,14 +63,24 @@
 
   &--disabled {
     color: $gray-7;
-    filter: grayscale(1);
     pointer-events: none;
+    svg {
+      filter: grayscale(100%);
+    }
     .msds-tab-tile--active {
       border-top: 4px solid $gray-5;
     }
-
     &:hover {
       color: $gray-7;
+    }
+    &.msds-tab-tile--active {
+      border-top: 4px solid $gray-5;
+    }
+    &.msds-tab-tile--small {
+      &.msds-tab-tile--active {
+        border-bottom: 4px solid $gray-5;
+        border-top: 4px solid $white;
+      }
     }
   }
 
@@ -78,6 +88,7 @@
     padding: 20px 12px 9px 12px;
     border-top: 4px solid $white;
     text-align: center;
+    min-width: 120px;
     @include msds-font('body-2');
     svg {
       max-width: 80px;

@@ -1,10 +1,10 @@
 const tabs = document.querySelectorAll('.msds-tab-tile')
 const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
-const viewport = window.matchMedia('(max-width: 992px)')
+const mediaQueryList = window.matchMedia('(max-width: 992px)')
 const smallTabsClass = 'msds-tab-tile--small'
 
-applySmallTabs(viewport)
-viewport.addListener(applySmallTabs)
+applySmallTabs(mediaQueryList)
+mediaQueryList.addListener(applySmallTabs)
 
 for (let i = 0; i < tabContainers.length; i++) {
   const numberOftabs = tabContainers[i].childElementCount
@@ -21,12 +21,13 @@ for (let i = 0; i < tabs.length; i++) {
 
 document.body.onkeyup = function(e) {
   if (e.keyCode == 32) {
-    tabs.forEach(tab => {
+    for (let i = 0; i < tabs.length; i++) {
+      const tab = tabs[i]
       const tabHasFocus = document.activeElement
       if (tabHasFocus === tab) {
         setActive(tab)
       }
-    })
+    }
   }
 }
 
@@ -38,12 +39,13 @@ function setActive(clickedTab) {
   const tabContainer = clickedTab.parentElement
   const tabs = tabContainer.querySelectorAll('.msds-tab-tile')
   const activeClass = 'msds-tab-tile--active'
-  tabs.forEach(tab => {
+  for (let i = 0; i < tabs.length; i++) {
+    const tab = tabs[i]
     const isActive = tab.classList.contains(activeClass)
     if (isActive) {
       tab.classList.remove(activeClass)
     }
-  })
+  }
   clickedTab.classList.add(activeClass)
   scrollToElement(clickedTab)
 }
@@ -60,18 +62,21 @@ function scrollToElement(tab) {
     top: 0,
     behavior: 'smooth'
   }
-
-  parentElement.scrollTo(scrollOptions)
+  if (parentElement.scrollTo) {
+    parentElement.scrollTo(scrollOptions)
+  }
 }
 
-function applySmallTabs(viewPort) {
-  if (viewPort.matches) {
-    tabs.forEach(tab => {
+function applySmallTabs(mediaQueryList) {
+  if (mediaQueryList.matches) {
+    for (let i = 0; i < tabs.length; i++) {
+      const tab = tabs[i]
       tab.classList.add(smallTabsClass)
-    })
+    }
   } else {
-    tabs.forEach(tab => {
+    for (let i = 0; i < tabs.length; i++) {
+      const tab = tabs[i]
       tab.classList.remove(smallTabsClass)
-    })
+    }
   }
 }
