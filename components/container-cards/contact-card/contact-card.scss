@@ -125,8 +125,7 @@
 
   &__body-contact-email {
     color: $clear-blue;
-    font-size: 16px;
-    line-height: 22px;
+    @include msds-font('body-1');
     margin-bottom: 20px;
 
     .msds-container-contact-card__icon {
@@ -143,8 +142,7 @@
   }
 
   &__body-contact-social-media {
-    font-size: 16px;
-    line-height: 22px;
+    @include msds-font('body-1');
 
     .msds-container-contact-card__icon {
       width: 15px;
