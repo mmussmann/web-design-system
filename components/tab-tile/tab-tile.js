@@ -28,12 +28,6 @@ document.body.onkeyup = function(e) {
         setActive(tab)
       }
     }
-    // tabs.forEach(tab => {
-    //   const tabHasFocus = document.activeElement
-    //   if (tabHasFocus === tab) {
-    //     setActive(tab)
-    //   }
-    // })
   }
 }
 
@@ -52,13 +46,6 @@ function setActive(clickedTab) {
       tab.classList.remove(activeClass)
     }
   }
-
-  // tabs.forEach(tab => {
-  //   const isActive = tab.classList.contains(activeClass)
-  //   if (isActive) {
-  //     tab.classList.remove(activeClass)
-  //   }
-  // })
   clickedTab.classList.add(activeClass)
   scrollToElement(clickedTab)
 }
