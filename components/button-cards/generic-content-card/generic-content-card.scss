@@ -1,22 +1,25 @@
-.msds-generic-content-card {
+.msds-cards {
   display: flex;
   flex-direction: column;
-  background: white;
+  background: $white;
   height: 100%;
-  color: black;
+  color: $black;
   text-decoration: none;
   border-radius: 2px;
   transition-duration: 0.3s;
   box-shadow: $shadow-small;
+
   &:active,
   &:focus {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: none;
   }
+
   &:hover {
     cursor: pointer;
     transform: translateY(-10px);
     box-shadow: $shadow-large;
+
     .msds-generic-content-card__cap {
       &-image {
         transform: scale(1.1);
@@ -24,8 +27,10 @@
       }
     }
   }
+
   &__cap {
     overflow: hidden;
+
     &-image {
       display: block;
       margin: 0;
@@ -33,22 +38,26 @@
       height: auto;
     }
   }
+
   &__body {
     padding-left: 20px;
     padding-right: 20px;
     background-color: white;
+
     &-heading {
       @include msds-font('header-3');
       margin: 0;
       padding-top: 24px;
       padding-bottom: 8px;
     }
+
     &-description {
       @include msds-font('body-1');
       margin: 0;
       padding-bottom: 32px;
     }
   }
+
   &--dark-theme {
     .msds-generic-content-card__body {
       background: $alt-blue-3;
