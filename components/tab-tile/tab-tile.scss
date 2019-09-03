@@ -1,9 +1,15 @@
 .row-scroll-x-mobile {
   display: flex;
   flex-wrap: wrap;
+  background-color: $white;
+  padding: 4px;
 }
 
-@include media-breakpoint-down(xs) {
+.center-tabs {
+  justify-content: center;
+}
+
+@include media-breakpoint-down(md) {
   .row-scroll-x-mobile {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -12,26 +18,85 @@
 
 .msds-tab-tile {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
-  min-width: 277px;
-  height: 180px;
-  border: 1px solid $gray-4;
-  background: transparent;
+  margin-right: 4px;
+  background: $white;
+  max-width: 371px;
+  border-top: 4px solid $white;
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
   @include msds-font('body-1');
   font-weight: bold;
+  text-align: center;
   color: $gray-9;
   cursor: pointer;
-  padding-top: 24px;
+  padding: 20px 16px 24px 16px;
+
   svg {
     width: 120px;
     height: 90px;
     margin-bottom: 20px;
   }
 
+  &__text {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $clear-blue;
+  }
+
+  &:focus {
+    outline: 4px solid rgba(0, 153, 218, 0.5);
+    color: $clear-blue;
+  }
+
   &--active {
+    border: 1px solid $gray-4;
     background: $white;
     border-top: 4px solid $clear-blue;
     border-bottom: none;
+    color: $clear-blue;
+  }
+
+  &--disabled {
+    color: $gray-7;
+    pointer-events: none;
+    svg {
+      filter: grayscale(100%);
+    }
+    .msds-tab-tile--active {
+      border-top: 4px solid $gray-5;
+    }
+    &:hover {
+      color: $gray-7;
+    }
+    &.msds-tab-tile--active {
+      border-top: 4px solid $gray-5;
+    }
+    &.msds-tab-tile--small {
+      &.msds-tab-tile--active {
+        border-bottom: 4px solid $gray-5;
+        border-top: 4px solid $white;
+      }
+    }
+  }
+
+  &--small {
+    padding: 20px 12px 9px 12px;
+    border-top: 4px solid $white;
+    text-align: center;
+    min-width: 120px;
+    @include msds-font('body-2');
+    svg {
+      max-width: 80px;
+      max-height: 60px;
+      margin-bottom: 12px;
+    }
+    &.msds-tab-tile--active {
+      border-bottom: 4px solid $clear-blue;
+    }
   }
 }
