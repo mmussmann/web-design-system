@@ -20,7 +20,9 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanAfterEveryBuildPatterns: ['!theme-overrides/*'],
+    }),
     new StyleLintPlugin({
       files: '{components,src}/**/*.{scss,css}',
       fix: true

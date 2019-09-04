@@ -1,0 +1,182 @@
+.msds-container-contact-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 360px;
+  text-decoration: none;
+  background: $white;
+  padding-top: 22px;
+  padding-bottom: 32px;
+  box-shadow: 0 1px 2px 0 rgba(2, 56, 82, 0.3);
+
+  &--small {
+    width: 280px;
+    padding: 24px 16px 32px 16px;
+    justify-content: flex-start;
+
+    .msds-container-contact-card__body-contact-position {
+      margin-bottom: 12px;
+    }
+
+    .msds-container-contact-card__caption {
+      max-width: 146px;
+      max-height: 146px;
+      margin: 0 auto;
+      z-index: 2;
+    }
+  }
+
+  &--without-image {
+    padding-top: 0px;
+    text-align: left;
+
+    .msds-container-contact-card__headline {
+      display: flex;
+      text-align: center;
+      background: $gray-3;
+      margin: 0px;
+      padding: 20px 20px 32px 20px;
+      height: 72px;
+    }
+
+    .msds-container-contact-card__body-contact-person {
+      margin-top: 18px;
+      padding: 0px 20px;
+    }
+
+    .msds-container-contact-card__body-contact-position {
+      margin: 0px;
+      padding: 2px 20px 0px 20px;
+    }
+
+    .msds-container-contact-card__body-contact-email {
+      padding: 0px 20px;
+      margin-top: 6px;
+    }
+
+    .msds-container-contact-card__body-contact-social-media {
+      padding: 0px 20px;
+    }
+
+    .msds-container-contact-card__overlay {
+      display: none;
+    }
+  }
+
+  &--small-without-image {
+    width: 280px;
+    padding-top: 0px;
+    text-align: left;
+
+    .msds-container-contact-card__headline {
+      display: flex;
+      text-align: center;
+      background: $gray-3;
+      margin: 0px;
+      padding: 12px 16px 32px 16px;
+      height: 56px;
+    }
+
+    .msds-container-contact-card__body-contact-person {
+      margin-top: 14px;
+      padding: 0px 16px;
+    }
+
+    .msds-container-contact-card__body-contact-position {
+      margin: 0px;
+      padding: 2px 16px 0px 16px;
+    }
+
+    .msds-container-contact-card__body-contact-email {
+      padding: 0px 16px;
+      margin-top: 6px;
+    }
+
+    .msds-container-contact-card__body-contact-social-media {
+      padding: 0px 16px;
+    }
+
+    .msds-container-contact-card__overlay {
+      display: none;
+    }
+  }
+
+  &__headline {
+    color: $gray-10;
+    margin-bottom: 16px;
+    z-index: 2;
+    @include msds-font('header-3');
+  }
+
+  &__body-contact-person {
+    color: $gray-10;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    @include msds-font('header-4');
+  }
+
+  &__body-contact-position {
+    @include msds-font('body-1');
+    color: $gray-8;
+    margin-bottom: 24px;
+  }
+
+  &__body-contact-email {
+    color: $clear-blue;
+    @include msds-font('body-1');
+    margin-bottom: 20px;
+
+    .msds-container-contact-card__icon {
+      fill: $clear-blue;
+      width: 15px;
+      height: 11px;
+      margin-right: 24.5px;
+    }
+
+    .msds-container-contact-card__link {
+      color: $clear-blue;
+      text-decoration: none;
+    }
+  }
+
+  &__body-contact-social-media {
+    @include msds-font('body-1');
+
+    .msds-container-contact-card__icon {
+      width: 15px;
+      height: 11px;
+      margin-right: 24.5px;
+      fill: $clear-blue;
+    }
+
+    .msds-container-contact-card__link {
+      color: $clear-blue;
+      text-decoration: none;
+    }
+  }
+
+  &__caption {
+    max-width: 186px;
+    max-height: 186px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  &__caption-image {
+    height: 100%;
+    width: 100%;
+    border: 8px solid rgba(2, 56, 82, 0.12);
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 157px;
+    background: $gray-3;
+    z-index: 1;
+  }
+}
