@@ -4,14 +4,14 @@ context:
   headline: 'President & CEO'
   contactPerson: 'Lars Thinggaard'
   contactPosition: 'President & CEO, Milestone Systems'
-  contactEmail: 'lt@milestone.dk'
+  contactEmail: 'Contact'
   contactSocialMediaLink: 'Visit on LinkedIn'
   placeholderImg: '//placehold.it/300'
 
   headlineNoImage: 'APAC & Corporate'
   contactPersonNoImage: 'Pernille Larsen'
   contactPositionNoImage: 'Corporate Communications Manager and PR & Communications Manager APAC'
-  contactEmailNoImage: 'pel@milestone.dk'
+  contactEmailNoImage: 'Contact'
   contactSocialMediaLinkNoImage: 'Visit on LinkedIn'
   placeholderImgNoImage: '//placehold.it/300'
   
