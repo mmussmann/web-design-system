@@ -22,6 +22,7 @@
 
     &:focus {
       outline: 4px solid rgba(0, 153, 218, 0.5);
+      border: 1px solid $clear-blue;
     }
 
     &:focus ~ label {
@@ -91,6 +92,7 @@
 
       &:focus {
         outline: 4px solid rgba(60, 192, 3, 0.5);
+        border: 1px solid $confirm-green;
       }
     }
 
@@ -121,6 +123,7 @@
 
       &:focus {
         outline: 4px solid rgba(255, 40, 90, 0.5);
+        border: 1px solid $danger-red-2;
       }
     }
   }
