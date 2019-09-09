@@ -73,6 +73,14 @@
       background: $gray-3;
     }
 
+    &--readonly {
+      color: $black;
+      pointer-events: none;
+      & ~ label {
+        color: $black;
+      }
+    }
+
     &--success {
       border: 1px solid $confirm-green;
       & ~ p {
