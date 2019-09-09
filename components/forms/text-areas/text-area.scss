@@ -41,10 +41,27 @@
         height: 120px;
         font-size: 12px;
         line-height: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        &:focus {
+          padding-left: 12px;
+        }
+        &:focus ~ label {
+          font-size: 9px;
+          left: 12px;
+        }
 
         & ~ label {
+          left: 12px;
           font-size: 12px;
           top: calc(20% - 20px);
+        }
+
+        &:not(:placeholder-shown) ~ label {
+          left: 12px;
+          top: 10px;
+          font-size: 9px;
         }
       }
 
