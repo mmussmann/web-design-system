@@ -12,36 +12,35 @@
     text-align: left;
   }
 
-  &__close {
+  @include media-breakpoint-up(xl) {
+    padding: 40px 95px 48px 24px;
+  }
+
+  &--generic {
+    border-color: $clear-blue;
+  }
+
+  &__close-click-area {
     position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
     right: 16px;
     top: 16px;
     width: 32px;
     height: 32px;
-    opacity: 0.3;
 
     &:hover {
-      opacity: 1;
+      .msds-alert__close-icon {
+        color: $gray-9;
+      }
     }
+  }
 
-    &:before,
-    &:after {
-      position: absolute;
-      right: 7px;
-      top: 0;
-      content: ' ';
-      height: 16px;
-      width: 2px;
-      background-color: $gray-9;
-    }
-
-    &:before {
-      transform: rotate(45deg);
-    }
-
-    &:after {
-      transform: rotate(-45deg);
-    }
+  &__close-icon {
+    width: 16px;
+    height: 16px;
+    color: $gray-8;
   }
 
   &__content-container {
@@ -66,6 +65,13 @@
     @include media-breakpoint-up(lg) {
       width: 105px;
       height: 130px;
+      margin-left: 72px;
+      margin-right: 64px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 102px;
+      margin-right: 69px;
     }
   }
 
@@ -73,16 +79,22 @@
     @include media-breakpoint-up(md) {
       margin-left: 56px;
     }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 71px;
+    }
   }
 
   &__header {
     @include msds-font('header-3');
+    color: $gray-10;
   }
 
   &__text {
     @include msds-font('body-2');
     margin-top: 16px;
     margin-bottom: 24px;
+    color: $gray-9;
   }
 
   &__action-container {
@@ -126,5 +138,6 @@
 
   &__checkbox-label {
     @include msds-font('body-3');
+    color: $gray-9;
   }
 }
