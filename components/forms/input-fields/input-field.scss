@@ -40,13 +40,25 @@
     }
 
     &--small {
+      padding-left: 12px;
       height: 36px;
       font-size: 12px;
       line-height: 18px;
+      padding-top: 12px;
+
+      &:focus ~ label {
+        left: 13px;
+        top: 5px;
+      }
 
       & ~ label {
+        left: 13px;
         font-size: 12px;
         top: calc(50% - 20px);
+      }
+
+      &:not(:placeholder-shown) ~ label {
+        top: 5px;
       }
     }
 
