@@ -21,7 +21,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanAfterEveryBuildPatterns: ['!theme-overrides/*'],
+      cleanAfterEveryBuildPatterns: ['!theme-overrides/**/*', '!src/**/*']
     }),
     new StyleLintPlugin({
       files: '{components,src}/**/*.{scss,css}',
@@ -36,9 +36,7 @@ module.exports = {
         prefix: false
       }
     }),
-    new CopyPlugin([
-      { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' }
-    ])
+    new CopyPlugin([{ from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' }])
   ],
   module: {
     rules: [

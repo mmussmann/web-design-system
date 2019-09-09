@@ -1,0 +1,90 @@
+.msds-alert {
+  position: relative;
+  padding: 40px 24px;
+  background: $gray-2;
+  box-shadow: $shadow-small;
+  border-radius: 2px;
+  border-left: 4px solid $danger-red-1;
+  text-align: center;
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      right: 7px;
+      top: 0;
+      content: ' ';
+      height: 16px;
+      width: 2px;
+      background-color: $gray-9;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 70px;
+    margin: 0 auto 16px auto;
+
+    @include media-breakpoint-up(md) {
+      width: 80px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 105px;
+    }
+  }
+
+  &__header {
+    @include msds-font('header-3');
+  }
+
+  &__text {
+    @include msds-font('body-2');
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    // THIS IS JUST PLACERHOLDER STYLING, DELETE THIS ONCE WE HAVE BUTTONS
+    // IMPLEMENTED IN THE DESIGN SYSTEM
+    height: 36px;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  &__checkbox {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+  }
+
+  &__checkbox-label {
+    @include msds-font('body-3');
+  }
+}
