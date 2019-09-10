@@ -36,7 +36,10 @@ module.exports = {
         prefix: false
       }
     }),
-    new CopyPlugin([{ from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' }])
+    new CopyPlugin([
+      { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
+      { from: 'src/demo-img', to: 'src/demo-img' }
+    ])
   ],
   module: {
     rules: [
