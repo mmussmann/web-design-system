@@ -3,7 +3,7 @@ const cookiePrefix = 'msds-alert-'
 
 /** Private methods **/
 function findAncestor(el, sel) {
-  while ((el = el.parentElement) && !(el.matches || el.matchesSelector).call(el, sel));
+  while ((el = el.parentElement) && !(el.matches || el.matchesSelector || el.msMatchesSelector).call(el, sel));
   return el
 }
 
