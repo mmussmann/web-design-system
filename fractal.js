@@ -26,16 +26,10 @@ fractal.web.set('server.sync', true)
  * Theming
  */
 const customTheme = require('@frctl/mandelbrot')({
-    "nav": ["components", "docs"],
-    "panels": ["html", "view", "context", "info", "notes"],
-    "styles": [
-        "default",
-        "/main.css",
-        "/theme-overrides/styles.css"
-    ],
-    "scripts": [
-        "default"
-    ]
-});
+  nav: ['components', 'docs'],
+  panels: ['html', 'view', 'context', 'info', 'notes'],
+  styles: ['default', '/main.css', '/theme-overrides/styles.css'],
+  scripts: ['default']
+})
 customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'));
-fractal.web.theme(customTheme);
+fractal.web.theme(customTheme)
