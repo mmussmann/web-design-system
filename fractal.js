@@ -8,7 +8,6 @@ fractal.set('project.title', 'Milestone Web Design System')
  * Components config
  */
 fractal.components.set('path', path.join(__dirname, 'components'))
-    // fractal.components.set('default.preview', '@preview');
 
 /*
  * Docs config
