@@ -1,0 +1,143 @@
+.msds-alert {
+  position: relative;
+  padding: 40px 24px;
+  background: $gray-2;
+  box-shadow: $shadow-small;
+  border-radius: 2px;
+  border-left: 4px solid $danger-red-1;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding: 32px 80px 40px 24px;
+    text-align: left;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 40px 95px 48px 24px;
+  }
+
+  &--generic {
+    border-color: $clear-blue;
+  }
+
+  &__close-click-area {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    right: 16px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      .msds-alert__close-icon {
+        color: $gray-9;
+      }
+    }
+  }
+
+  &__close-icon {
+    width: 16px;
+    height: 16px;
+    color: $gray-8;
+  }
+
+  &__content-container {
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 70px;
+    height: 90px;
+    margin: 0 auto 16px auto;
+
+    @include media-breakpoint-up(md) {
+      width: 80px;
+      height: 100px;
+      margin-left: 46px;
+      margin-right: 34px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 105px;
+      height: 130px;
+      margin-left: 72px;
+      margin-right: 64px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 102px;
+      margin-right: 69px;
+    }
+  }
+
+  &__text-container {
+    @include media-breakpoint-up(md) {
+      margin-left: 56px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: 71px;
+    }
+  }
+
+  &__header {
+    @include msds-font('header-3');
+    color: $gray-10;
+  }
+
+  &__text {
+    @include msds-font('body-2');
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: $gray-9;
+  }
+
+  &__action-container {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: -10px;
+    }
+  }
+
+  &__button {
+    // THIS IS JUST PLACERHOLDER STYLING, DELETE THIS ONCE WE HAVE BUTTONS
+    // IMPLEMENTED IN THE DESIGN SYSTEM
+    height: 36px;
+    padding: 0 20px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 10px;
+      margin-right: 40px;
+    }
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 10px;
+    }
+  }
+
+  &__checkbox {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+  }
+
+  &__checkbox-label {
+    @include msds-font('body-3');
+    color: $gray-9;
+  }
+}
