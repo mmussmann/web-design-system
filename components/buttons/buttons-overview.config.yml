@@ -1,0 +1,9 @@
+status: 'wip'
+title: overview
+context:
+  general:
+    cardDescription: 'Buttons'
+    cardDescriptionDarkTheme: 'How all buttons are defined'
+  config:  
+    buttonUrl: 'http://via.placeholder.com/360x180'
+    buttonText: 'Read more'  
