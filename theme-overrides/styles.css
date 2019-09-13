@@ -63,7 +63,7 @@ body {
     fill: #fff;
 }
 
-[dir="ltr"] .Header-button {
+.Header-button {
     border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 
-[dir="ltr"] .Tree-title {
+.Tree-title {
     padding-left: 6px;
     padding-top: 14px;
     margin: 0;
@@ -124,7 +124,7 @@ body {
     position: absolute;
 }
 
-[dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
+.Tree-collection.is-closed .Tree-collectionLabel span::before {
     background-image: none;
     content: url('/src/demo-img/pil.svg');
     opacity: 1 !important;
@@ -135,12 +135,12 @@ body {
     transition: 150ms
 }
 
-[dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel {
+.Tree-collection.is-closed .Tree-collectionLabel {
     transition: 150ms;
     background: var(--milestone-color-white);
 }
 
-[dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel:hover {
+.Tree-collection.is-closed .Tree-collectionLabel:hover {
     transition: 150ms;
     background: var(--milestone-color-grey100);
 }
