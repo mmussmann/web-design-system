@@ -251,8 +251,8 @@ body {
     padding: 15px 0;
 }
 
-.Document {
-    max-width: 1050px;
+.Document {    
+    max-width: unset;
     margin: 20px 40px;
     padding: 20px;
 }
@@ -270,8 +270,8 @@ body {
     position: relative;
 }
 
-.Document-content {
-    max-width: 445px;
+.Document-content {    
+    max-width: unset;
     padding: 10px 0;
 }
 
@@ -302,6 +302,45 @@ body {
     line-height: 1.7;
     text-align: inherit;
     padding: 5px 0;
+}
+
+.Prose {
+    max-width: unset;
+}
+
+.Prose .element-preview {
+    padding: 1em;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+    margin-bottom: 0;
+}
+
+.Prose .lang-html pre {
+    margin: 0;
+}
+
+dl {
+    font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
+    font-feature-settings: "dlig" 1;
+    margin-bottom: 0.75em;
+    opacity: 0.8; 
+    margin-bottom: 20px;
+}
+
+dl dt {
+    margin-bottom: 6px;
+}
+dl dd {
+    font: bold 1rem/1 "Open Sans", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    margin-bottom: 5px;     
+}
+
+dl dt a,
+dl dd a {
+    text-decoration: none;     
 }
 
 :root {
