@@ -1,6 +1,6 @@
 const textAreas = document.querySelectorAll('.msds-form__input-container-text-area')
 
-textAreas.forEach(element => {
+;[].forEach.call(textAreas, element => {
   element.onkeydown = function() {
     updateWordCount(element)
   }

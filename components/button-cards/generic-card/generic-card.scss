@@ -2,16 +2,19 @@
   margin-bottom: 20px;
 }
 
-.msds-generic-content-card {
+.msds-generic-card {
   display: flex;
   flex-direction: column;
   background: $white;
   height: 100%;
-  color: $black;
-  text-decoration: none;
   border-radius: 2px;
   transition-duration: 0.3s;
   box-shadow: $shadow-small;
+
+  &--link {
+    color: $black;
+    text-decoration: none;
+  }
 
   &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
@@ -27,20 +30,20 @@
     transform: translateY(-10px);
     box-shadow: $shadow-large;
 
-    .msds-generic-content-card__cap {
+    .msds-generic-card__frame {
       &-image {
         transform: scale(1.1);
         transition: all 0.8s ease-in-out;
       }
     }
-    .msds-generic-content-card {
+    .msds-generic-card {
       &__body-heading {
         color: $clear-blue;
       }
     }
   }
 
-  &__cap {
+  &__frame {
     overflow: hidden;
 
     &-image {
@@ -75,7 +78,7 @@
   &--dark-theme {
     background-color: rgba(0, 0, 0, 0.1);
 
-    .msds-generic-content-card {
+    .msds-generic-card {
       &__body {
         background: transparent;
         color: $white;
@@ -83,9 +86,15 @@
     }
     &:hover {
       background-color: rgba(0, 0, 0, 0.3);
-      .msds-generic-content-card__body-heading {
+      .msds-generic-card__body-heading {
         color: $white;
       }
     }
+  }
+
+  &--vertical-aligned {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
   }
 }

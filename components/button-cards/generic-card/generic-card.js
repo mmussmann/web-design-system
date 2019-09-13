@@ -19,7 +19,7 @@ function calcCardDimension() {
 }
 
 function getHeighestImage(cardRow) {
-  const images = cardRow.querySelectorAll('.msds-generic-content-card__cap-image')
+  const images = cardRow.querySelectorAll('.msds-generic-card__frame-image')
   const imageHeights = []
 
   for (let i = 0; i < images.length; i++) {
@@ -38,7 +38,7 @@ function setCardRowheight(cardRow, heightValue) {
 }
 
 function setCardheight(cardRow, heightValue) {
-  const cards = cardRow.querySelectorAll('.msds-generic-content-card')
+  const cards = cardRow.querySelectorAll('.msds-generic-card')
   const doubleImageHeight = heightValue * 2 + 'px'
 
   for (let i = 0; i < cards.length; i++) {
