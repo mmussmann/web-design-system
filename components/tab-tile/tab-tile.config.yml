@@ -3,4 +3,5 @@ context:
   tab:  
     placeholderImg: ''
     placeholderHeading: 'Self-Service & Support Lorem Ipsum Dolorem Pellentesque'
+    placeholderSmall: 'Document and guiadance'
 status: 'wip'
