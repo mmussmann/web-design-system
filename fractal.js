@@ -8,7 +8,6 @@ fractal.set('project.title', 'Milestone Web Design System')
  * Components config
  */
 fractal.components.set('path', path.join(__dirname, 'components'))
-// fractal.components.set('default.preview', '@preview');
 
 /*
  * Docs config
@@ -31,5 +30,5 @@ const customTheme = require('@frctl/mandelbrot')({
   styles: ['default', '/main.css', '/theme-overrides/styles.css'],
   scripts: ['default']
 })
-customTheme.addLoadPath(path.join(__dirname, '/fractal-theme'))
+customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'));
 fractal.web.theme(customTheme)
