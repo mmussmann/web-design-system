@@ -1,0 +1,115 @@
+/*
+    ICON
+
+    .icon           = required
+    .has-circle     = creates a circle around the icon and makes the icon half the original size
+    .is-small       = 16px
+    %empty%         = 24px (default)
+    .is-medium      = 32px
+    .is-large       = 48px
+    .is-xlarge      = 64px
+    .is-xxlarge     = 128px
+
+    Color and Fill is currentColor
+
+    <div class="msds-icon has-circle is-small has-shadow">
+        <svg>
+            <use xlink:href="/Static/Img/Icons/icons.svg#comment"></use>
+        </svg>
+    </div>
+
+    NOTE: if no circle, classes can be set on svg-element
+*/
+
+$icon-dimensions-small: 1rem !default;
+$icon-dimensions: 1.5rem !default;
+$icon-dimensions-medium: 2rem !default;
+$icon-dimensions-large: 3rem !default;
+$icon-dimensions-xlarge: 5rem !default;
+$icon-dimensions-xxlarge: 8rem !default;
+
+.msds-icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  fill: currentColor;
+  color: currentColor;
+  height: $icon-dimensions;
+  width: $icon-dimensions;
+  box-sizing: content-box;
+  vertical-align: middle;
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  &.has-circle-filled,
+  &.has-circle {
+    border-radius: 50%;
+    border: 1px solid currentColor;
+
+    svg {
+      // Half-size for svg nested in has-circle
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+  &.has-circle-filled {
+    background: currentColor;
+
+    svg {
+      fill: #0099da;
+    }
+  }
+
+  &.has-shadow {
+    box-shadow: 0 1px 2px 0 $rgba-1;
+  }
+
+  &.is-small {
+    height: $icon-dimensions-small;
+    width: $icon-dimensions-small;
+
+    .msds-icon-text {
+      font-size: 0.6rem;
+    }
+  }
+
+  &.is-medium {
+    height: $icon-dimensions-medium;
+    width: $icon-dimensions-medium;
+
+    .msds-icon-text {
+      font-size: 1rem; // Not tested
+    }
+  }
+
+  &.is-large {
+    height: $icon-dimensions-large;
+    width: $icon-dimensions-large;
+
+    .msds-icon-text {
+      font-size: 1.5rem; // Working on Marketplace landingpage
+    }
+  }
+
+  &.is-xlarge {
+    height: $icon-dimensions-xlarge;
+    width: $icon-dimensions-xlarge;
+
+    .msds-icon-text {
+      font-size: 2.5rem; // Not tested
+    }
+  }
+
+  &.is-xxlarge {
+    height: $icon-dimensions-xxlarge;
+    width: $icon-dimensions-xxlarge;
+
+    .msds-icon-text {
+      font-size: 4rem; // Not tested
+    }
+  }
+}

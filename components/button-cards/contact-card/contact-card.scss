@@ -1,11 +1,11 @@
-.msds-container-contact-card {
+.msds-contact-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   text-decoration: none;
   background: $white;
+  height: 100%;
   padding-top: 22px;
   padding-bottom: 32px;
   box-shadow: $shadow-small;
@@ -15,11 +15,15 @@
     padding-bottom: 32px;
     justify-content: flex-start;
 
-    .msds-container-contact-card__body-contact-position {
+    .msds-contact-card__body-contact-person {
+      margin-top: 16px;
+    }
+
+    .msds-contact-card__body-contact-position {
       margin-bottom: 12px;
     }
 
-    .msds-container-contact-card__caption {
+    .msds-contact-card__caption {
       max-width: 146px;
       max-height: 146px;
       margin: 0 auto;
@@ -27,16 +31,11 @@
     }
   }
 
-  &__body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   &--without-image {
     padding-top: 0px;
     text-align: left;
 
-    .msds-container-contact-card__headline {
+    .msds-contact-card__headline {
       display: flex;
       text-align: center;
       background: $gray-3;
@@ -45,23 +44,23 @@
       height: 72px;
     }
 
-    .msds-container-contact-card__body {
+    .msds-contact-card__body {
       padding-top: 25px;
     }
 
-    .msds-container-contact-card__body-contact-person {
+    .msds-contact-card__body-contact-person {
       margin-bottom: 8px;
     }
 
-    .msds-container-contact-card__body-contact-position {
+    .msds-contact-card__body-contact-position {
       margin-bottom: 12px;
     }
 
-    .msds-container-contact-card__body-contact-details {
+    .msds-contact-card__body-contact-details {
       display: block;
     }
 
-    .msds-container-contact-card__overlay {
+    .msds-contact-card__overlay {
       display: none;
     }
   }
@@ -70,7 +69,7 @@
     padding-top: 0px;
     text-align: left;
 
-    .msds-container-contact-card__headline {
+    .msds-contact-card__headline {
       display: flex;
       text-align: center;
       background: $gray-3;
@@ -79,25 +78,25 @@
       height: 56px;
     }
 
-    .msds-container-contact-card__body {
+    .msds-contact-card__body {
       padding-top: 20px;
       padding-left: 16px;
       padding-right: 16px;
     }
 
-    .msds-container-contact-card__body-contact-person {
+    .msds-contact-card__body-contact-person {
       margin-bottom: 8px;
     }
 
-    .msds-container-contact-card__body-contact-position {
+    .msds-contact-card__body-contact-position {
       margin-bottom: 12px;
     }
 
-    .msds-container-contact-card__body-contact-details {
+    .msds-contact-card__body-contact-details {
       display: block;
     }
 
-    .msds-container-contact-card__overlay {
+    .msds-contact-card__overlay {
       display: none;
     }
   }
@@ -107,6 +106,11 @@
     margin-bottom: 16px;
     z-index: 2;
     @include msds-font('header-3');
+  }
+
+  &__body {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__body-contact-person {
@@ -127,19 +131,19 @@
     display: table;
     margin: 0 auto;
 
-    .msds-container-contact-card__body-contact-details-wrapper {
+    .msds-contact-card__body-contact-details-wrapper {
       display: table-cell;
       text-align: left;
     }
 
-    .msds-container-contact-card__icon {
+    .msds-contact-card__icon {
       fill: $clear-blue;
       width: 15px;
       height: 11px;
       margin-right: 25px;
     }
 
-    .msds-container-contact-card__link {
+    .msds-contact-card__link {
       color: $clear-blue;
       display: block;
       text-decoration: none;
@@ -173,23 +177,29 @@
     background: $gray-3;
     z-index: 1;
   }
+
+  &--vertically-aligned {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .msds-container-contact-card__caption {
+  .msds-contact-card__caption {
     max-width: 146px;
     max-height: 146px;
   }
 
-  .msds-container-contact-card--small {
-    .msds-container-contact-card__icon {
+  .msds-contact-card--small {
+    .msds-contact-card__icon {
       margin-right: 15px;
     }
   }
 }
 
 @media (max-width: 768px) {
-  .msds-container-contact-card {
+  .msds-contact-card {
     margin-bottom: 20px;
   }
 }
