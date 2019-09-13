@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   background-color: $white;
   padding: 4px;
+
+  &--sticky-tabs {
+    top: 0;
+    position: fixed;
+    .tabs-content-container {
+      padding: 500px;
+    }
+  }
 }
 
 .center-tabs {
@@ -99,4 +107,12 @@
       border-bottom: 4px solid $clear-blue;
     }
   }
+}
+
+.tabs-content-container {
+  height: 100vh;
+  background-color: $clear-blue;
+}
+.other-content {
+  height: 200vh;
 }

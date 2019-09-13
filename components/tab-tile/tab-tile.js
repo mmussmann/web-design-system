@@ -2,6 +2,27 @@ const tabs = document.querySelectorAll('.msds-tab-tile')
 const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
 const mediaQueryList = window.matchMedia('(max-width: 992px)')
 const smallTabsClass = 'msds-tab-tile--small'
+const stickyTabsContainers = document.querySelectorAll('.sticky-tabs-container')
+
+if (stickyTabsContainers) {
+  window.addEventListener(
+    'scroll',
+    function() {
+      for (let i = 0; i < stickyTabsContainers.length; i++) {
+        const stickyTabsContainer = stickyTabsContainers[i]
+        const stickyTabRow = stickyTabsContainer.querySelector('.row-scroll-x-mobile')
+        const tabContent = stickyTabsContainer.querySelector('.tabs-content-container')
+        const shouldAddStickyClass = isElementIntop(stickyTabRow, tabContent)
+        if (shouldAddStickyClass) {
+          stickyTabRow.classList.add('row-scroll-x-mobile--sticky-tabs')
+        } else {
+          stickyTabRow.classList.remove('row-scroll-x-mobile--sticky-tabs')
+        }
+      }
+    },
+    false
+  )
+}
 
 applySmallTabs(mediaQueryList)
 mediaQueryList.addListener(applySmallTabs)
@@ -79,4 +100,40 @@ function applySmallTabs(mediaQueryList) {
       tab.classList.remove(smallTabsClass)
     }
   }
+}
+
+function isElementIntop(tabRow, contentElement) {
+  const tabRowBounding = tabRow.getBoundingClientRect()
+  const contentElementBounding = contentElement.getBoundingClientRect()
+
+  //check if top of tabRow == top of window
+  if (
+    tabRowBounding.top <= 0 &&
+    contentElementBounding.bottom >= 0 &&
+    contentElementBounding.top < tabRowBounding.bottom
+  ) {
+    console.log('stick bar')
+    contentElement.style.height = contentElementBounding.height + tabRowBounding.height
+    return true
+  } else {
+    console.log('unstick')
+    return false
+  }
+
+  //check if bottom of contentElement == top of window
+
+  // if (tabRowBounding.y <= 0 && contentElementBounding.bottom <= 0) {
+  //   return false
+  //   // } else if (contentElementBounding.bottom >= 0) {
+  //   //   return false
+  // } else if (tabRowBounding.y <= 0) {
+  //   if (tabRowBounding.bottom > contentElementBounding.bottom) {
+  //     return false
+  //   }
+  //   return true
+  // }
+
+  // return (
+  //   tabRowBounding.y <= 0 && contentElementBounding.y + contentElementBounding.height >= contentElementBounding.height
+  // )
 }
