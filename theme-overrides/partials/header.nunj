@@ -8,6 +8,6 @@
         <a href="{{ path('/') }}" class="Header-title" data-pjax>
             <img class="logo-test" src="/src/demo-img/milestone-logo-white.png" alt="logo">
         </a>
-        <h6 class="selected-topic header-txt">Digitl Design System</h6>
+        <h6 class="header-txt ">Digitl Design System</h6>
     </div>
 </div>

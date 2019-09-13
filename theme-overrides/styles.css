@@ -1,28 +1,11 @@
 html,
 body {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-.Header p,
-.Header h1,
-.Header h2,
-.Header h3,
-.Header h4,
-.Header h5,
-.Header h6 {
+.Header {
     color: var(--milestone-color-white);
-    font-family: 'Open Sans', sans-serif !important;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo-test {
@@ -30,7 +13,7 @@ h6 {
 }
 
 .Header {
-    background: var(--milestone-gradients-clear-blue) !important;
+    background: var(--milestone-gradients-clear-blue);
     height: 50px;
     position: unset;
     box-shadow: none;
@@ -47,7 +30,7 @@ h6 {
 }
 
 .Header-title {
-    padding: 0.75rem 0 !important;
+    padding: 0.75rem 0;
 }
 
 .header-txt::before {
@@ -67,6 +50,7 @@ h6 {
 }
 
 .header-txt {
+    color: var(--milestone-color-white);
     padding: 39px 0;
     font-weight: 300;
 }
@@ -89,35 +73,34 @@ h6 {
 
 .Document-header {
     border-bottom: none;
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
 }
 
-
-[dir="ltr"] .Frame-panel--sidebar {
-    width: 230px !important;
+.Frame-panel--sidebar {
+    width: 230px;
     border-right: none;
 }
 
 .Frame-panel--sidebar {
-    background: var(--milestone-color-white) !important;
+    background: var(--milestone-color-white);
     min-width: unset;
-    max-width: 230px !important;
+    max-width: 230px;
     z-index: 10;
     box-shadow: var(--milestone-shadow-medium);
 }
 
 .Tree-title {
     font-weight: bold;
-    font-size: 12px !important;
+    font-size: 12px;
     user-select: none;
     cursor: pointer;
 }
 
 
 [dir="ltr"] .Tree-title {
-    padding-left: 6px !important;
+    padding-left: 6px;
     padding-top: 14px;
-    margin: 0 !important;
+    margin: 0;
 }
 
 .Tree-items>li::before {
@@ -142,7 +125,7 @@ h6 {
 }
 
 [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
-    background-image: none !important;
+    background-image: none;
     content: url('/src/demo-img/pil.svg');
     opacity: 1 !important;
     top: 3px !important;
@@ -163,7 +146,7 @@ h6 {
 }
 
 .Tree-collectionLabel span::before {
-    background-image: none !important;
+    background-image: none;
     content: url('/theme-overrides/images/pil.svg');
     opacity: 1 !important;
     top: 5px !important;
@@ -185,7 +168,7 @@ h6 {
 
 .Tree-collectionLabel span {
     font-weight: 400;
-    font-size: 13px !important;
+    font-size: 13px;
     color: var(--milestone-color-grey1000);
     padding-left: 26px !important;
 }
@@ -200,7 +183,7 @@ h6 {
 }
 
 .is-current a span {
-    color: var(--milestone-color-primary-clear-blue) !important;
+    color: var(--milestone-color-primary-clear-blue);
     margin-left: 10px;
 }
 
@@ -219,7 +202,7 @@ h6 {
     content: "";
     width: 2px;
     height: 16px;
-    background-color: var(--milestone-color-primary-clear-blue) !important;
+    background-color: var(--milestone-color-primary-clear-blue);
 }
 
 .Tree-item .Tree-entityLink::before {
@@ -231,30 +214,41 @@ h6 {
 }
 
 .Tree-entityLink:hover {
-    background: unset !important;
+    background: unset;
 }
 
 .Tree-entityLink:hover span {
     color: var(--milestone-color-primary-clear-blue);
 }
 
-.Frame-handle,
+.Frame-handle {
+    display: none;
+    width: 0;
+}
+
 .Preview-handle {
     display: none;
-    width: 0 !important;
+    width: 0;
 }
 
 .Tree-collection.is-closed {
     height: 50px;
 }
 
-h4.Tree-collectionLabel {
+.Tree-collectionLabel {
     padding: 14px 0;
 }
 
-ol,
-ul {
-    padding: 15px 0 !important;
+.Browser-tabs {
+    padding: 15px 0;
+}
+
+.Tree-items.Tree-depth-1 {
+    padding: 15px 0;
+}
+
+.Tree-collectionItems {
+    padding: 15px 0;
 }
 
 .Document {
@@ -268,7 +262,7 @@ ul {
 }
 
 .Document-title {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
     font-weight: 300;
     color: var(--milestone-color-grey1000);
@@ -284,7 +278,7 @@ ul {
 .Document-content h2 {
     height: 21px;
     color: #747474;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -292,7 +286,7 @@ ul {
 }
 
 .Document h3 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 14px;
@@ -300,17 +294,14 @@ ul {
 }
 
 .Document-content p {
-    font-family: 'Open Sans', sans-serif !important;
+    /* font-family: 'Open Sans', sans-serif !important; */
+    font-family: 'Open Sans', sans-serif;
     color: #747474;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7 !important;
-    text-align: inherit !important;
-    padding: 5px 0 !important;
-}
-
-.Preview {
-    border: 5px solid red !important;
+    line-height: 1.7;
+    text-align: inherit;
+    padding: 5px 0;
 }
 
 :root {
@@ -361,13 +352,16 @@ ul {
 @media only screen and (max-width: 382px) {
 
     .Header-title {
-        padding: 1.3rem 0 !important;
+        padding: 1.3rem 0;
     }
 }
 
 @media only screen and (max-width: 375px) {
 
-    .Header,
+    .Header {
+        height: 90px;
+    }
+
     .Frame-header {
         height: 90px;
     }
@@ -377,7 +371,7 @@ ul {
     }
 
     .Header-title {
-        padding: 0.75rem 0 !important;
+        padding: 0.75rem 0;
     }
 
     .header-txt {
