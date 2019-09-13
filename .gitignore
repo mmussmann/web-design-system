@@ -1,7 +1,4 @@
 node_modules
 build
-public/src
-public/main.css
-public/main.js
-public/msds-spritemap.svg
+public
 .vs
