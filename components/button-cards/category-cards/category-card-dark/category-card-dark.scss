@@ -1,32 +1,32 @@
-.msds-container-card-category {
+.msds-category-card {
   cursor: pointer;
   position: relative;
   width: 280px;
 
   &:hover {
-    .msds-container-card-category__header {
+    .msds-category-card__header {
       color: $yellow;
     }
   }
 
   &:active {
-    .msds-container-card-category__header {
+    .msds-category-card__header {
       box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
     }
   }
 
   &--disabled {
-    .msds-container-card-category__header {
+    .msds-category-card__header {
       position: relative;
       color: $white;
       overflow: hidden;
     }
 
-    .msds-container-card-category__header-icon {
+    .msds-category-card__header-icon {
       fill: $white;
     }
 
-    .msds-container-card-category__header-opaque-filter {
+    .msds-category-card__header-opaque-filter {
       position: absolute;
       top: 0px;
       right: 0px;
@@ -38,13 +38,13 @@
 
     &:hover {
       cursor: unset;
-      .msds-container-card-category__header {
+      .msds-category-card__header {
         color: $white;
       }
     }
 
     &:active {
-      .msds-container-card-category__header {
+      .msds-category-card__header {
         box-shadow: unset;
       }
     }
@@ -53,11 +53,11 @@
   &--large {
     width: 360px;
 
-    .msds-container-card-category__header {
+    .msds-category-card__header {
       width: 360px;
     }
 
-    .msds-container-card-category__content {
+    .msds-category-card__content {
       width: 360px;
     }
   }

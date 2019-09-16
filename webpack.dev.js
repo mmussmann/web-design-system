@@ -45,6 +45,6 @@ module.exports = merge(common, {
     new FractalWebpackPlugin({
       mode: 'server',
       configPath: 'fractal.js'
-    })
+    })    
   ]
 })

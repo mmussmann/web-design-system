@@ -8,7 +8,6 @@ fractal.set('project.title', 'Milestone Web Design System')
  * Components config
  */
 fractal.components.set('path', path.join(__dirname, 'components'))
-// fractal.components.set('default.preview', '@preview');
 
 /*
  * Docs config
@@ -26,16 +25,10 @@ fractal.web.set('server.sync', true)
  * Theming
  */
 const customTheme = require('@frctl/mandelbrot')({
-    "nav": ["components", "docs"],
-    "panels": ["html", "view", "context", "info", "notes"],
-    "styles": [
-        "default",
-        "/main.css",
-        "/theme-overrides/styles.css"
-    ],
-    "scripts": [
-        "default"
-    ]
-});
-customTheme.addLoadPath(path.join(__dirname, '/fractal-theme'));
-fractal.web.theme(customTheme);
+  nav: ['components', 'docs'],
+  panels: ['html', 'view', 'context', 'info', 'notes'],
+  styles: ['default', '/main.css', '/theme-overrides/styles.css'],
+  scripts: ['default']
+})
+customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'));
+fractal.web.theme(customTheme)
