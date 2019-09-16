@@ -110,7 +110,6 @@ function isElementIntop(tabRow, contentElement) {
     contentElementBounding.bottom >= 0 &&
     contentElementBounding.top < tabRowBounding.bottom
   ) {
-    console.log('stick bar')
     contentElement.style.paddingTop = tabRowBounding.height + 'px'
     return true
   } else {
