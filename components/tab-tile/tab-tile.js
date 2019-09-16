@@ -116,24 +116,7 @@ function isElementIntop(tabRow, contentElement) {
     contentElement.style.height = contentElementBounding.height + tabRowBounding.height
     return true
   } else {
-    console.log('unstick')
+    //console.log('unstick')
     return false
   }
-
-  //check if bottom of contentElement == top of window
-
-  // if (tabRowBounding.y <= 0 && contentElementBounding.bottom <= 0) {
-  //   return false
-  //   // } else if (contentElementBounding.bottom >= 0) {
-  //   //   return false
-  // } else if (tabRowBounding.y <= 0) {
-  //   if (tabRowBounding.bottom > contentElementBounding.bottom) {
-  //     return false
-  //   }
-  //   return true
-  // }
-
-  // return (
-  //   tabRowBounding.y <= 0 && contentElementBounding.y + contentElementBounding.height >= contentElementBounding.height
-  // )
 }
