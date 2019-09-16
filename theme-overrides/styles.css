@@ -25,6 +25,15 @@ body {
     font-weight: 300;
 }
 
+.document-title-underline {
+    position: relative;
+    top: -40px;
+    left: 1px;
+    height: 1px;
+    width: 32px;
+    background: var(--milestone-color-primary-clear-blue);
+}
+
 .Header p {
     font-size: 12px;
 }
@@ -125,13 +134,25 @@ body {
 }
 
 .Tree-collection.is-closed .Tree-collectionLabel span::before {
-    background-image: none;
-    content: url('/src/demo-img/pil.svg');
+    background-image: none !important;
+    content: url('../src/svg/caret.svg');
     opacity: 1 !important;
     top: 3px !important;
     left: 7px !important;
     color: var(--milestone-color-primary-clear-blue);
     transform: rotate(0deg) scale(.5);
+    transition: 150ms
+}
+
+.Tree-collectionLabel span::before {
+    background-image: none !important;
+    content: url('../src/svg/caret.svg');
+    opacity: 1 !important;
+    top: 5px !important;
+    left: 8px !important;
+    color: var(--milestone-color-primary-clear-blue);
+    transform: rotate(90deg) scale(.5);
+    font-weight: 900;
     transition: 150ms
 }
 
@@ -145,17 +166,6 @@ body {
     background: var(--milestone-color-grey100);
 }
 
-.Tree-collectionLabel span::before {
-    background-image: none;
-    content: url('/theme-overrides/images/pil.svg');
-    opacity: 1 !important;
-    top: 5px !important;
-    left: 8px !important;
-    color: var(--milestone-color-primary-clear-blue);
-    transform: rotate(90deg) scale(.5);
-    font-weight: 900;
-    transition: 150ms
-}
 
 .Tree-collectionLabel {
     transition: 150ms;
@@ -266,40 +276,6 @@ body {
     font-weight: 300;
     color: var(--milestone-color-grey1000);
     font-size: 42px;
-    position: relative;
-}
-
-.Document-content {    
-    padding: 10px 0;
-}
-
-.Document-content h2 {
-    height: 21px;
-    color: #747474;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0.3px;
-    line-height: 21px;
-}
-
-.Document h3 {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--milestone-color-grey900)
-}
-
-.Document-content p {
-    /* font-family: 'Open Sans', sans-serif !important; */
-    font-family: 'Open Sans', sans-serif;
-    color: #747474;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    text-align: inherit;
-    padding: 5px 0;
 }
 
 .Prose {
@@ -321,24 +297,25 @@ body {
 
 dl {
     font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
-    font-feature-settings: "dlig" 1;
+    font-feature-settings: "dlig"1;
     margin-bottom: 0.75em;
-    opacity: 0.8; 
+    opacity: 0.8;
     margin-bottom: 20px;
 }
 
 dl dt {
     margin-bottom: 6px;
 }
+
 dl dd {
     font: bold 1rem/1 "Open Sans", Helvetica, Arial, sans-serif;
     margin-left: 20px;
-    margin-bottom: 5px;     
+    margin-bottom: 5px;
 }
 
 dl dt a,
 dl dd a {
-    text-decoration: none;     
+    text-decoration: none;
 }
 
 :root {
@@ -386,56 +363,22 @@ dl dd a {
     --milestone-shadow-large: 0 0.75rem 2.25rem 0 rgba(2, 56, 82, 0.12);
 }
 
-@media only screen and (max-width: 382px) {
-
-    .Header-title {
-        padding: 1.3rem 0;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-
-    .Header {
-        height: 90px;
-    }
-
-    .Frame-header {
-        height: 90px;
-    }
+@media only screen and (max-width: 576px) {
 
     .flex-child-header-txt {
-        display: block;
-    }
-
-    .Header-title {
-        padding: 0.75rem 0;
-    }
-
-    .header-txt {
-        padding: 0 17px;
+        padding-left: 0;
     }
 
     .logo-test {
-        max-width: 120px;
+        width: 135px;
     }
 
-    .header-txt::before {
-        content: "";
-        position: absolute;
-        top: 61px;
-        left: 93px;
-        height: 2px;
-        width: 22px;
-        margin: 0 -14px;
-        background: var(--milestone-color-primary-yellow);
+    .header-txt {
+        font-size: 14px;
+        padding: 47px 0;
     }
-}
 
-.underline {
-    position: relative;
-    top: -40px;
-    left: 1px;
-    height: 1px;
-    width: 32px;
-    background: var(--milestone-color-primary-clear-blue);
+    .Header-title {
+        padding: 1.75rem 0;
+    }
 }
