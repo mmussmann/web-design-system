@@ -251,8 +251,7 @@ body {
     padding: 15px 0;
 }
 
-.Document {    
-    max-width: unset;
+.Document {
     margin: 20px 40px;
     padding: 20px;
 }
@@ -271,7 +270,6 @@ body {
 }
 
 .Document-content {    
-    max-width: unset;
     padding: 10px 0;
 }
 

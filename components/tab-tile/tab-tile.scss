@@ -6,7 +6,7 @@
 
   &--sticky-tabs {
     top: 0;
-    position: fixed;
+    position: sticky;
     .tabs-content-container {
       padding: 500px;
     }
@@ -110,7 +110,7 @@
 }
 
 .tabs-content-container {
-  height: 100vh;
+  height: 200vh;
   background-color: $clear-blue;
 }
 .other-content {
