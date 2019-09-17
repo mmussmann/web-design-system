@@ -38,7 +38,8 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
-      { from: 'src/demo-img', to: 'src/demo-img' }
+      { from: 'src/demo-img', to: 'src/demo-img' },
+      { from: 'src/svg/caret.svg', to: 'src/demo-img' }
     ])
   ],
   module: {
