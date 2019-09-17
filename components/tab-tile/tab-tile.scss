@@ -1,9 +1,7 @@
 .row-scroll-x-mobile {
   display: flex;
   flex-wrap: wrap;
-  background-color: $white;
-  padding: 4px;
-
+  padding-left: 4px;
   &--sticky-tabs {
     top: 0;
     position: sticky;
@@ -26,18 +24,20 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
-  margin-right: 4px;
-  background: $white;
+  //margin-right: 4px;
+  border-bottom: 1px solid $gray-4;
   max-width: 371px;
-  border-top: 4px solid $white;
-  border-left: 1px solid $white;
-  border-right: 1px solid $white;
+  border-top: 4px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   @include msds-font('body-1');
   font-weight: bold;
   text-align: center;
   color: $gray-9;
   cursor: pointer;
   padding: 20px 16px 24px 16px;
+  margin-left: 0;
+  margin-right: 0;
 
   svg {
     width: 120px;
@@ -69,6 +69,7 @@
   &--disabled {
     color: $gray-7;
     pointer-events: none;
+    border-bottom: none;
     svg {
       filter: grayscale(100%);
     }
@@ -89,9 +90,15 @@
     }
   }
 
+  &--no-image {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
   &--small {
     padding: 20px 12px 9px 12px;
-    border-top: 4px solid $white;
+    border-top: 4px solid transparent;
     text-align: center;
     min-width: 120px;
     @include msds-font('body-2');
