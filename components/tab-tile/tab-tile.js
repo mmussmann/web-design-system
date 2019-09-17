@@ -14,8 +14,10 @@ if (stickyTabsContainers) {
         const tabContent = stickyTabsContainer.querySelector('.tabs-content-container')
         const shouldAddStickyClass = isElementIntop(stickyTabRow, tabContent)
         if (shouldAddStickyClass) {
+          console.log('add sticky')
           stickyTabRow.classList.add('row-scroll-x-mobile--sticky-tabs')
         } else {
+          console.log('remove sticky')
           stickyTabRow.classList.remove('row-scroll-x-mobile--sticky-tabs')
         }
       }
@@ -105,11 +107,7 @@ function applySmallTabs(mediaQueryList) {
 function isElementIntop(tabRow, contentElement) {
   const tabRowBounding = tabRow.getBoundingClientRect()
   const contentElementBounding = contentElement.getBoundingClientRect()
-  if (
-    tabRowBounding.top <= 0 &&
-    contentElementBounding.bottom >= 0 &&
-    contentElementBounding.top < tabRowBounding.bottom
-  ) {
+  if (tabRowBounding.top <= 0 && contentElementBounding.bottom >= 0) {
     contentElement.style.paddingTop = tabRowBounding.height + 'px'
     return true
   } else {
