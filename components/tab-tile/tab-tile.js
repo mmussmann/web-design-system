@@ -105,11 +105,7 @@ function applySmallTabs(mediaQueryList) {
 function isElementIntop(tabRow, contentElement) {
   const tabRowBounding = tabRow.getBoundingClientRect()
   const contentElementBounding = contentElement.getBoundingClientRect()
-  if (
-    tabRowBounding.top <= 0 &&
-    contentElementBounding.bottom >= 0 &&
-    contentElementBounding.top < tabRowBounding.bottom
-  ) {
+  if (tabRowBounding.top <= 0 && contentElementBounding.bottom >= 0) {
     contentElement.style.paddingTop = tabRowBounding.height + 'px'
     return true
   } else {
