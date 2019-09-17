@@ -2,6 +2,27 @@ const tabs = document.querySelectorAll('.msds-tab-tile')
 const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
 const mediaQueryList = window.matchMedia('(max-width: 992px)')
 const smallTabsClass = 'msds-tab-tile--small'
+const stickyTabsContainers = document.querySelectorAll('.sticky-tabs-container')
+
+if (stickyTabsContainers) {
+  window.addEventListener(
+    'scroll',
+    function() {
+      for (let i = 0; i < stickyTabsContainers.length; i++) {
+        const stickyTabsContainer = stickyTabsContainers[i]
+        const stickyTabRow = stickyTabsContainer.querySelector('.row-scroll-x-mobile')
+        const tabContent = stickyTabsContainer.querySelector('.tabs-content-container')
+        const shouldAddStickyClass = isElementIntop(stickyTabRow, tabContent)
+        if (shouldAddStickyClass) {
+          stickyTabRow.classList.add('row-scroll-x-mobile--sticky-tabs')
+        } else {
+          stickyTabRow.classList.remove('row-scroll-x-mobile--sticky-tabs')
+        }
+      }
+    },
+    false
+  )
+}
 
 applySmallTabs(mediaQueryList)
 mediaQueryList.addListener(applySmallTabs)
@@ -78,5 +99,21 @@ function applySmallTabs(mediaQueryList) {
       const tab = tabs[i]
       tab.classList.remove(smallTabsClass)
     }
+  }
+}
+
+function isElementIntop(tabRow, contentElement) {
+  const tabRowBounding = tabRow.getBoundingClientRect()
+  const contentElementBounding = contentElement.getBoundingClientRect()
+  if (
+    tabRowBounding.top <= 0 &&
+    contentElementBounding.bottom >= 0 &&
+    contentElementBounding.top < tabRowBounding.bottom
+  ) {
+    contentElement.style.paddingTop = tabRowBounding.height + 'px'
+    return true
+  } else {
+    contentElement.style.paddingTop = 0
+    return false
   }
 }
