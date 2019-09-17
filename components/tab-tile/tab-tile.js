@@ -14,10 +14,8 @@ if (stickyTabsContainers) {
         const tabContent = stickyTabsContainer.querySelector('.tabs-content-container')
         const shouldAddStickyClass = isElementIntop(stickyTabRow, tabContent)
         if (shouldAddStickyClass) {
-          console.log('add sticky')
           stickyTabRow.classList.add('row-scroll-x-mobile--sticky-tabs')
         } else {
-          console.log('remove sticky')
           stickyTabRow.classList.remove('row-scroll-x-mobile--sticky-tabs')
         }
       }
