@@ -1,4 +1,5 @@
 node_modules
 build
-public
+public/
 .vs
+.DS_Store
