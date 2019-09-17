@@ -109,6 +109,9 @@
     }
     &.msds-tab-tile--active {
       border-bottom: 4px solid $clear-blue;
+      background-color: transparent;
+      border-left: transparent;
+      border-right: transparent;
     }
   }
 }
