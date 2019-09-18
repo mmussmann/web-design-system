@@ -76,6 +76,18 @@
         background: $gray-3;
       }
 
+      &--readonly {
+        &:hover {
+          background-color: $gray-3;
+        }
+
+        & ~ label {
+          color: $black;
+        }
+        background: $gray-3;
+        pointer-events: none;
+      }
+
       &--error {
         border: 1px solid $danger-red-1;
         & ~ p {
