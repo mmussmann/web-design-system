@@ -242,7 +242,7 @@ body {
 }
 
 .Tree-collection.is-closed {
-  height: 50px;
+    height: 53px;
 }
 
 .Tree-collectionLabel {
@@ -256,6 +256,7 @@ body {
 .Tree-items.Tree-depth-1 {
   padding: 15px 0;
 }
+
 .Document {
   margin: 20px 40px;
   padding: 20px;
@@ -263,6 +264,10 @@ body {
 
 .Document-header {
   border-bottom: none;
+}
+
+.Tree-collectionItems {
+    padding: 10px 0;
 }
 
 .Document-title {
