@@ -1,7 +1,8 @@
 context:
   general:
     cardDescription: 'Cards'
-    cardDescriptionDarkTheme: 'Cards Dark theme'
+    cardDescriptionDarkTheme: 'Cards Dark Theme'
+    cardDescriptionDarkThemeSmall: 'Small Cards Dark Theme'
   card:  
     placeholderImg: 'http://via.placeholder.com/360x180'
     placeholderHeading: 'Headline lorem ipsum'
