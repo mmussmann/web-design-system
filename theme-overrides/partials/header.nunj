@@ -6,7 +6,8 @@
     </button>
     <div class="flex-child-header-txt">
         <a href="{{ path('/') }}" class="Header-title" data-pjax>
-            <img class="logo-test" src="{{ path('/src/demo-img/milestone-logo-white.png') }}" alt="logo"></a>
-        <h6 class="header-txt ">Digitl Design System</h6>
+            <img class="logo-test" src="{{ path('/src/demo-img/milestone-logo-white.png') }}" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>
     </div>
 </div>
