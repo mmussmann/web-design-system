@@ -1,8 +1,10 @@
 .row-scroll-x-mobile {
   display: flex;
   flex-wrap: wrap;
-  background-color: $white;
-  padding: 4px;
+  // background-color: $white;
+  // padding: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
 
   &--sticky-tabs {
     top: 0;
@@ -26,12 +28,18 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
-  margin-right: 4px;
-  background: $white;
+  //margin-right: 4px;
+  //background: $white;
   max-width: 371px;
-  border-top: 4px solid $white;
-  border-left: 1px solid $white;
-  border-right: 1px solid $white;
+  border-top: 4px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid $gray-4;
+  margin-left: 0;
+  margin-right: 0;
+  // border-top: 4px solid $white;
+  // border-left: 1px solid $white;
+  // border-right: 1px solid $white;
   @include msds-font('body-1');
   font-weight: bold;
   text-align: center;
@@ -59,7 +67,9 @@
   }
 
   &--active {
-    border: 1px solid $gray-4;
+    border-left: 1px solid $gray-4;
+    border-right: 1px solid $gray-4;
+    //border: 1px solid $gray-4;
     background: $white;
     border-top: 4px solid $clear-blue;
     border-bottom: none;
@@ -91,7 +101,10 @@
 
   &--small {
     padding: 20px 12px 9px 12px;
-    border-top: 4px solid $white;
+    border-top: 4px solid transparent;
+    //border-top: 4px solid $white;
+    border-left: none;
+    border-right: none;
     text-align: center;
     min-width: 120px;
     @include msds-font('body-2');
@@ -102,13 +115,14 @@
     }
     &.msds-tab-tile--active {
       border-bottom: 4px solid $clear-blue;
+      background-color: transparent;
     }
   }
 }
 
 .tabs-content-container {
   height: 200vh;
-  background-color: $clear-blue;
+  background-color: $gray-5;
 }
 .other-content {
   height: 200vh;
