@@ -14,7 +14,7 @@
   font-weight: 700;
   white-space: nowrap;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.0625em;
 
   &:hover {
     text-decoration: none;
@@ -45,14 +45,13 @@
   &--primary {
     color: $clear-blue;
     background: $yellow-gradient;
-    box-shadow: inset 0 -0.0625rem 0 0 $alt-yellow-2;
     border-color: $alt-yellow-2;
     bottom: 0;
     transition: bottom 0.2s;
 
     &:hover {
       background: $yellow;
-      box-shadow: inset 0 0 0 0 $alt-yellow-2, 0 0.125rem 0.75rem 0 $rgba-1;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.125rem;
       transition: bottom 0.2s;
     }
@@ -61,18 +60,17 @@
     &:not(:disabled):not(.disabled).active,
     &.show > .btn-primary.dropdown-toggle {
       background: $yellow;
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3, 0 0 0 0.25rem $rgba-3;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
     }
 
     &:focus,
     &.focus {
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-yellow-2, 0 0 0 0.25rem $rgba-4;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
     }
   }
   // Secondary Button
   &--secondary {
     color: $clear-blue;
-    background: $white;
     border-color: $clear-blue;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
@@ -80,7 +78,7 @@
     &:hover {
       color: $white;
       background: $clear-blue-gradient;
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3, 0 0.125rem 0.75rem 0 $rgba-1;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.1875rem;
       transition: background 0.2s, bottom 0.2s;
     }
@@ -89,27 +87,28 @@
     &:not(:disabled):not(.disabled).active,
     &.show > .btn-secondary.dropdown-toggle {
       background: $clear-blue-gradient;
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3, 0 0 0 0.25rem $rgba-3;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
+      color: $white;
     }
 
     &:focus,
     &.focus {
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3, 0 0 0 0.25rem $rgba-3;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
     }
   }
   // Tertiary Button
   &--tertiary {
     color: $white;
     background: $clear-blue-gradient;
-    box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3;
     border-color: $clear-blue;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
 
     &:hover {
       background: $dark-blue-gradient;
-      box-shadow: inset 0 -0.0625rem 0 0 $gray-10, 0 0.125rem 0.75rem 0 $rgba-1;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.1875rem;
+      border-color: $dark-blue;
       transition: background 0.2s, bottom 0.2s;
     }
 
@@ -117,19 +116,18 @@
     &:not(:disabled):not(.disabled).active,
     &.show > .btn-tertiary.dropdown-toggle {
       background: $dark-blue-gradient;
-      box-shadow: inset 0 -0.0625rem 0 0 $gray-10, 0 0 0 0.25rem $rgba-3;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
     }
 
     &:focus,
     &.focus {
       background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
-      box-shadow: inset 0 -0.0625rem 0 0 $alt-blue-3, 0 0 0 0.25rem $rgba-3;
+      box-shadow: 0 0 0 0.25rem $rgba-3;
     }
   }
   // Gray Button
   &--gray {
     color: $gray-8;
-    background: $white;
     border-color: $gray-8;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
@@ -137,7 +135,7 @@
     &:hover {
       color: $white;
       background: $gray-8;
-      box-shadow: inset 0 -0.0625rem 0 0 $gray-9, 0 0.125rem 0.75rem 0 $rgba-1;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.1875rem;
       transition: background 0.2s, bottom 0.2s;
     }
@@ -146,18 +144,18 @@
     &:not(:disabled):not(.disabled).active,
     &.show > .btn-gray.dropdown-toggle {
       background: $gray-8;
-      box-shadow: inset 0 -0.0625rem 0 0 $gray-8, 0 0 0 0.25rem $rgba-4;
+      box-shadow: 0 0 0 0.25rem $rgba-4;
+      color: $white;
     }
 
     &:focus,
     &.focus {
-      box-shadow: inset 0 -0.0625rem 0 0 $gray-8, 0 0 0 0.25rem $rgba-4;
+      box-shadow: 0 0 0 0.25rem $rgba-4;
     }
   }
   // Danger Button
   &--danger {
     color: $danger-red-1;
-    background: $white;
     border-color: $danger-red-1;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
@@ -165,7 +163,7 @@
     &:hover {
       color: $white;
       background: $danger-red-1;
-      box-shadow: inset 0 -0.0625rem 0 0 $danger-red-2, 0 0.125rem 0.75rem 0 $rgba-1;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.1875rem;
       transition: background 0.2s, bottom 0.2s;
     }
@@ -174,12 +172,13 @@
     &:not(:disabled):not(.disabled).active,
     &.show > .btn-gray.dropdown-toggle {
       background: $danger-red-1;
-      box-shadow: inset 0 -0.0625rem 0 0 $danger-red-1, 0 0 0 0.25rem $rgba-5;
+      box-shadow: 0 0 0 0.25rem $rgba-5;
+      color: $white;
     }
 
     &:focus,
     &.focus {
-      box-shadow: inset 0 -0.0625rem 0 0 $danger-red-1, 0 0 0 0.25rem $rgba-5;
+      box-shadow: 0 0 0 0.25rem $rgba-5;
     }
   }
   // Disabled Button - Has to remain at the end to overwrite all hover attributes on defined buttons.
