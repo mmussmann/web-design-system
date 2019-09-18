@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
     "start": "webpack --config ./webpack.dev.js --watch",
-    "prettier": "prettier {*.js,src/**/*.js,src/**/*.scss,components/**/*.scss,components/**/*.js} --write"
+    "prettier": "prettier {*.js,src/**/*.js,src/**/*.scss,components/**/*.scss,components/**/*.js,theme-overrides/**/*.css} --write"
   },
   "main": "main.js",
   "style": "main.css",

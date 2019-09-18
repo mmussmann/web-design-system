@@ -16,9 +16,42 @@
     text-decoration: none;
   }
 
+  &--small {
+    .msds-generic-card__body-heading {
+      padding-top: 20px;
+    }
+  }
+
+  &--vertical-aligned {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+  }
+
+  &--dark-theme {
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .msds-generic-card {
+      &__body {
+        background: transparent;
+        color: $white;
+      }
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      .msds-generic-card__body {
+        .msds-generic-card__body-heading {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
   &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: 4px solid rgba(157, 173, 183, 0.5);
+    border-radius: 2px 2px 0 0;
   }
   &:focus {
     box-shadow: none;
@@ -29,6 +62,7 @@
     cursor: pointer;
     transform: translateY(-10px);
     box-shadow: $shadow-large;
+    text-decoration: none;
 
     .msds-generic-card__frame {
       &-image {
@@ -73,28 +107,5 @@
       margin: 0;
       padding-bottom: 32px;
     }
-  }
-
-  &--dark-theme {
-    background-color: rgba(0, 0, 0, 0.1);
-
-    .msds-generic-card {
-      &__body {
-        background: transparent;
-        color: $white;
-      }
-    }
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      .msds-generic-card__body-heading {
-        color: $white;
-      }
-    }
-  }
-
-  &--vertical-aligned {
-    display: flex;
-    flex: 1 0 auto;
-    flex-wrap: wrap;
   }
 }
