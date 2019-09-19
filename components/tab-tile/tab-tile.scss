@@ -55,10 +55,11 @@
   }
 
   &:focus {
-    outline: 4px solid rgba(0, 153, 218, 0.5);
-    color: $clear-blue;
+    border-top: 4px solid $gray-4;
+    outline: none;
   }
 
+  &:active,
   &--active {
     border-left: 1px solid $gray-4;
     border-right: 1px solid $gray-4;
@@ -66,6 +67,10 @@
     border-top: 4px solid $clear-blue;
     border-bottom: none;
     color: $clear-blue;
+
+    &:focus {
+      border-top: 4px solid $clear-blue;
+    }
   }
 
   &--disabled {

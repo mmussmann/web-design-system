@@ -41,7 +41,7 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 document.body.onkeyup = function(e) {
-  if (e.keyCode == 32) {
+  if (e.keyCode == 13) {
     for (let i = 0; i < tabs.length; i++) {
       const tab = tabs[i]
       const tabHasFocus = document.activeElement
