@@ -22,7 +22,8 @@ $spacers: (
   11: 80px,  // 5rem
   12: 96px,  // 6rem
   13: 112px, // 7rem
-  14: 160px  // 10rem
+  14: 160px, // 10rem
+  15: 192px  // 12rem
 );
 ```
 
