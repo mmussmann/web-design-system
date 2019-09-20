@@ -12,6 +12,18 @@ body {
   width: 176px;
 }
 
+.github-milestone-system {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  top: 12px;
+}
+
+.github-milestone-system .git-icon {  
+  width: 26px;
+  height: 26px;
+}
+
 .Header {
   background: var(--milestone-gradients-clear-blue);
   height: 50px;
