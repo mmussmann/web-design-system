@@ -1,246 +1,256 @@
 html,
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .Header {
-    color: var(--milestone-color-white);
-    font-family: 'Open Sans', sans-serif;
+  color: var(--milestone-color-white);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo-test {
-    width: 176px;
+  width: 176px;
+}
+
+.github-milestone-system {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  top: 12px;
+}
+
+.github-milestone-system .git-icon {  
+  width: 26px;
+  height: 26px;
 }
 
 .Header {
-    background: var(--milestone-gradients-clear-blue);
-    height: 50px;
-    position: unset;
-    box-shadow: none;
-    text-overflow: unset;
+  background: var(--milestone-gradients-clear-blue);
+  height: 50px;
+  position: unset;
+  box-shadow: none;
+  text-overflow: unset;
 }
 
 .Header h2 {
-    font-size: 50px;
-    font-weight: 300;
+  font-size: 50px;
+  font-weight: 300;
 }
 
 .document-title-underline {
-    position: relative;
-    top: -40px;
-    left: 1px;
-    height: 1px;
-    width: 32px;
-    background: var(--milestone-color-primary-clear-blue);
+  position: relative;
+  top: -40px;
+  left: 1px;
+  height: 1px;
+  width: 32px;
+  background: var(--milestone-color-primary-clear-blue);
 }
 
 .Header p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .Header-title {
-    padding: 0.75rem 0;
+  padding: 0.75rem 0;
 }
 
 .header-txt::before {
-    content: "";
-    position: absolute;
-    top: 13px;
-    height: 22px;
-    width: 2px;
-    margin: 0 -14px;
-    background: var(--milestone-color-primary-yellow);
+  content: '';
+  position: absolute;
+  top: 13px;
+  height: 22px;
+  width: 2px;
+  margin: 0 -14px;
+  background: var(--milestone-color-primary-yellow);
 }
 
 .flex-child-header-txt {
-    display: flex;
-    padding-left: 15px;
-    padding-top: 3px;
+  display: flex;
+  padding-left: 15px;
+  padding-top: 3px;
 }
 
 .header-txt {
-    color: var(--milestone-color-white);
-    padding: 39px 0;
-    font-weight: 300;
+  color: var(--milestone-color-white);
+  padding: 39px 0;
+  font-weight: 300;
 }
 
 .Frame-header {
-    height: 50px;
+  height: 50px;
 }
 
 .Header-navToggle svg {
-    fill: #fff;
+  fill: #fff;
 }
 
 .Header-button {
-    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .Pen-header {
-    display: none;
+  display: none;
 }
 
 .Document-header {
-    border-bottom: none;
-    margin-bottom: 50px;
+  border-bottom: none;
+  margin-bottom: 50px;
 }
 
 .Frame-panel--sidebar {
-    width: 230px;
-    border-right: none;
+  width: 230px;
+  border-right: none;
 }
 
 .Frame-panel--sidebar {
-    background: var(--milestone-color-white);
-    min-width: unset;
-    max-width: 230px;
-    z-index: 10;
-    box-shadow: var(--milestone-shadow-medium);
+  background: var(--milestone-color-white);
+  min-width: unset;
+  max-width: 230px;
+  z-index: 10;
+  box-shadow: var(--milestone-shadow-medium);
 }
 
 .Tree-title {
-    font-weight: bold;
-    font-size: 12px;
-    user-select: none;
-    cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  user-select: none;
+  cursor: pointer;
 }
-
 
 .Tree-title {
-    padding-left: 6px;
-    padding-top: 14px;
-    margin: 0;
+  padding-left: 6px;
+  padding-top: 14px;
+  margin: 0;
 }
 
-.Tree-items>li::before {
-    content: " ";
-    width: 100%;
-    border-top: 1px solid var(--milestone-color-grey400);
-    position: absolute;
+.Tree-items > li::before {
+  content: ' ';
+  width: 100%;
+  border-top: 1px solid var(--milestone-color-grey400);
+  position: absolute;
 }
 
-.Tree-items>li:first-of-type::before {
-    content: " ";
-    width: 100%;
-    border-top: 1px solid var(--milestone-color-grey400);
-    position: absolute;
+.Tree-items > li:first-of-type::before {
+  content: ' ';
+  width: 100%;
+  border-top: 1px solid var(--milestone-color-grey400);
+  position: absolute;
 }
 
-.Tree-items>li:last-of-type::after {
-    content: " ";
-    width: 100%;
-    border-top: 1px solid var(--milestone-color-grey400);
-    position: absolute;
+.Tree-items > li:last-of-type::after {
+  content: ' ';
+  width: 100%;
+  border-top: 1px solid var(--milestone-color-grey400);
+  position: absolute;
 }
 
-[dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
-    background-image: none !important;
-    content: url('./../src/demo-img/caret.svg');
-    opacity: 1;
-    top: 3px;
-    width: 12px;
-    left: 8px !important;
-    color: var(--milestone-color-primary-clear-blue);
-    transform: rotate(0deg) scale(0.5);
-    transition: 150ms;
+[dir='ltr'] .Tree-collection.is-closed .Tree-collectionLabel span::before {
+  background-image: none !important;
+  content: url('./../src/demo-img/caret.svg');
+  opacity: 1;
+  top: 3px;
+  width: 12px;
+  left: 8px !important;
+  color: var(--milestone-color-primary-clear-blue);
+  transform: rotate(0deg) scale(0.5);
+  transition: 150ms;
 }
 
 .Tree-collectionLabel span::before {
-    background-image: none !important;
-    content: url('./../src/demo-img/caret.svg');
-    opacity: 1;
-    top: 5px;
-    width: 12px;
-    left: 8px !important;
-    color: var(--milestone-color-primary-clear-blue);
-    transform: rotate(90deg) scale(0.5);
-    transition: 150ms;
+  background-image: none !important;
+  content: url('./../src/demo-img/caret.svg');
+  opacity: 1;
+  top: 5px;
+  width: 12px;
+  left: 8px !important;
+  color: var(--milestone-color-primary-clear-blue);
+  transform: rotate(90deg) scale(0.5);
+  transition: 150ms;
 }
 
 .Tree-collection.is-closed .Tree-collectionLabel {
-    transition: 150ms;
-    background: var(--milestone-color-white);
+  transition: 150ms;
+  background: var(--milestone-color-white);
 }
 
 .Tree-collection.is-closed .Tree-collectionLabel:hover {
-    transition: 150ms;
-    background: var(--milestone-color-grey100);
+  transition: 150ms;
+  background: var(--milestone-color-grey100);
 }
 
-
 .Tree-collectionLabel {
-    transition: 150ms;
-    background: var(--milestone-color-grey100);
+  transition: 150ms;
+  background: var(--milestone-color-grey100);
 }
 
 .Tree-collectionLabel:hover {
-    background: var(--milestone-color-grey100);
+  background: var(--milestone-color-grey100);
 }
 
 .Tree-collectionLabel span {
-    font-weight: 400;
-    font-size: 13px;
-    color: var(--milestone-color-grey1000);
-    padding-left: 26px !important;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--milestone-color-grey1000);
+  padding-left: 26px !important;
 }
 
 .Tree-entity a span {
-    color: #303436;
-    margin-left: 12px;
+  color: #303436;
+  margin-left: 12px;
 }
 
 .is-current a {
-    background-color: #fff !important;
+  background-color: #fff !important;
 }
 
 .is-current a span {
-    color: var(--milestone-color-primary-clear-blue);
-    margin-left: 10px;
+  color: var(--milestone-color-primary-clear-blue);
+  margin-left: 10px;
 }
 
 .Status-dot {
-    display: none;
+  display: none;
 }
 
 .Tree-entityLink {
-    color: var(--milestone-color-grey1000);
-    font-weight: normal;
-    line-height: 18px;
-    font-size: 12px;
-    padding-left: 30px !important;
+  color: var(--milestone-color-grey1000);
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 30px !important;
 }
 
 .Tree-entityLink::before {
-    content: "";
-    width: 2px;
-    height: 16px;
-    background-color: var(--milestone-color-primary-clear-blue);
+  content: '';
+  width: 2px;
+  height: 16px;
+  background-color: var(--milestone-color-primary-clear-blue);
 }
 
 .Tree-item .Tree-entityLink::before {
-    display: none;
+  display: none;
 }
 
 .is-current .Tree-entityLink::before {
-    display: block;
+  display: block;
 }
 
 .Tree-entityLink:hover {
-    background: unset;
+  background: unset;
 }
 
 .Tree-entityLink:hover span {
-    color: var(--milestone-color-primary-clear-blue);
+  color: var(--milestone-color-primary-clear-blue);
 }
 
 .Frame-handle {
-    display: none;
-    width: 0;
+  display: none;
+  width: 0;
 }
 
 .Preview-handle {
-    display: none;
-    width: 0;
+  display: none;
+  width: 0;
 }
 
 .Tree-collection.is-closed {
@@ -248,24 +258,24 @@ body {
 }
 
 .Tree-collectionLabel {
-    padding: 16px 0;
+  padding: 16px 0;
 }
 
 .Browser-tabs {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .Tree-items.Tree-depth-1 {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .Document {
-    margin: 20px 40px;
-    padding: 20px;
+  margin: 20px 40px;
+  padding: 20px;
 }
 
 .Document-header {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .Tree-collectionItems {
@@ -273,84 +283,85 @@ body {
 }
 
 .Document-title {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: capitalize;
-    font-weight: 300;
-    color: var(--milestone-color-grey1000);
-    font-size: 42px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: var(--milestone-color-grey1000);
+  font-size: 42px;
 }
 
 .Prose {
-    max-width: unset;
+  max-width: unset;
 }
 
 .Prose .element-preview {
-    padding: 1em;
-    background-color: #fff;
-    background-image: linear-gradient(45deg, #eee 25%, transparent 25%), linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%), linear-gradient(-45deg, transparent 75%, #eee 75%);
-    background-size: 20px 20px;
-    background-position: 0 0, 0 10px, 10px -10px, -10px 0;
-    margin-bottom: 0;
+  padding: 1em;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #eee 25%, transparent 25%),
+    linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%),
+    linear-gradient(-45deg, transparent 75%, #eee 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  margin-bottom: 0;
 }
 
 .Prose .lang-html pre {
-    margin: 0;
+  margin: 0;
 }
 
 dl {
-    font: bold 1.125rem/1.33333 "Open Sans", Helvetica, Arial, sans-serif;
-    font-feature-settings: "dlig"1;
-    margin-bottom: 0.75em;
-    opacity: 0.8;
-    margin-bottom: 20px;
+  font: bold 1.125rem/1.33333 'Open Sans', Helvetica, Arial, sans-serif;
+  font-feature-settings: 'dlig' 1;
+  margin-bottom: 0.75em;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
 dl dt {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 dl dd {
-    font: bold 1rem/1 "Open Sans", Helvetica, Arial, sans-serif;
-    margin-left: 20px;
-    margin-bottom: 5px;
+  font: bold 1rem/1 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-left: 20px;
+  margin-bottom: 5px;
 }
 
 dl dt a,
 dl dd a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 :root {
-    --milestone-color-primary-clear-blue: #0099da;
-    --milestone-color-primary-yellow: #ffe700;
+  --milestone-color-primary-clear-blue: #0099da;
+  --milestone-color-primary-yellow: #ffe700;
 
-    --milestone-color-grey100: #F9F9F9;
-    --milestone-color-grey400: #DCE2E6;
-    --milestone-color-grey1000: #303436;
+  --milestone-color-grey100: #f9f9f9;
+  --milestone-color-grey400: #dce2e6;
+  --milestone-color-grey1000: #303436;
 
-    --milestone-color-white: #ffffff;
+  --milestone-color-white: #ffffff;
 
-    --milestone-gradients-clear-blue: Linear-gradient(90deg, #0081C1 0%, #0099DA 100%);
+  --milestone-gradients-clear-blue: Linear-gradient(90deg, #0081c1 0%, #0099da 100%);
 
-    --milestone-shadow-medium: 0 0.0125rem 0.75rem rgba(2, 56, 82, 0.17);
+  --milestone-shadow-medium: 0 0.0125rem 0.75rem rgba(2, 56, 82, 0.17);
 }
 
 @media only screen and (max-width: 576px) {
+  .flex-child-header-txt {
+    padding-left: 0;
+  }
 
-    .flex-child-header-txt {
-        padding-left: 0;
-    }
+  .logo-test {
+    width: 135px;
+  }
 
-    .logo-test {
-        width: 135px;
-    }
+  .header-txt {
+    font-size: 14px;
+    padding: 47px 0;
+  }
 
-    .header-txt {
-        font-size: 14px;
-        padding: 47px 0;
-    }
-
-    .Header-title {
-        padding: 1.75rem 0;
-    }
+  .Header-title {
+    padding: 1.75rem 0;
+  }
 }
