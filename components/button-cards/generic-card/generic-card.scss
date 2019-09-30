@@ -1,5 +1,5 @@
 .card-row > div {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .msds-generic-card {
@@ -25,7 +25,6 @@
   &--vertical-aligned {
     display: flex;
     flex: 1 0 auto;
-    flex-wrap: wrap;
   }
 
   &--dark-theme {
