@@ -172,6 +172,86 @@ module.exports = {
         scssVarName: '$sand'
       }
     ],
+    transparent:[
+      {
+        textColor: 'msds-text-black',
+        text: 'white 50%',
+        backgroundColor: 'msds-white-50-transparent',
+        scssVarName: '$rgba-7'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'white 30%',
+        backgroundColor: 'msds-white-30-transparent',
+        scssVarName: '$rgba-8'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'white 10%',
+        backgroundColor: 'msds-white-10-transparent',
+        scssVarName: '$rgba-9'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'black 30%',
+        backgroundColor: 'msds-black-30-transparent',
+        scssVarName: '$rgba-10'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'black 10%',
+        backgroundColor: 'msds-black-10-transparent',
+        scssVarName: '$rgba-11'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'gray 6 50%',
+        backgroundColor: 'msds-gray-6-50-transparent',
+        scssVarName: '$rgba-12'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'gray 7 50%',
+        backgroundColor: 'msds-gray-7-50-transparent',
+        scssVarName: '$rgba-4'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'gray 8 50%',
+        backgroundColor: 'msds-gray-8-50-transparent',
+        scssVarName: '$rgba-13'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'dark blue 12%',
+        backgroundColor: 'msds-dark-blue-12-transparent',
+        scssVarName: '$rgba-2'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'dark blue 17%',
+        backgroundColor: 'msds-dark-blue-17-transparent',
+        scssVarName: '$rgba-1'
+      },
+      {
+        textColor: 'msds-text-black',
+        text: 'dark blue 30%',
+        backgroundColor: 'msds-dark-blue-30-transparent',
+        scssVarName: '$rgba-6'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'damger red 50%',
+        backgroundColor: 'msds-danger-red-50-transparent',
+        scssVarName: '$rgba-5'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'clear blue 50%',
+        backgroundColor: 'msds-clear-blue-50-transparent',
+        scssVarName: '$rgba-3'
+      },
+    ],
     gradients: [
       {
         textColor: 'msds-text-white',

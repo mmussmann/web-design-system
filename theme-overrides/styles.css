@@ -305,6 +305,17 @@ body {
   margin-bottom: 0;
 }
 
+.Prose .element-preview-dark {
+  padding: 1em;
+  background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  margin-bottom: 0;
+}
+
+.Prose .element-preview-dark h3 {
+  color: #ffffff;
+}
+
 .Prose .lang-html pre {
   margin: 0;
 }

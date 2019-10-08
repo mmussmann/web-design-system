@@ -96,6 +96,34 @@
       box-shadow: 0 0 0 0.25rem $rgba-3;
     }
   }
+
+  &--secondary-dark {
+    color: $white;
+    border-color: $white;
+    bottom: 0;
+    transition: background 0.2s, bottom 0.2s;
+
+    &:hover {
+      color: $clear-blue;
+      background: $white;
+      bottom: 0.1875rem;
+      transition: background 0.2s, bottom 0.2s;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    &.show > .btn-secondary.dropdown-toggle {
+      background: $white;
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-6, 0 0 0 4px $rgba-7;
+      color: $clear-blue;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: 0 0.125rem 0.75rem 0 $rgba-6, 0 0 0 4px $rgba-7;
+    }
+  }
+
   // Tertiary Button
   &--tertiary {
     color: $white;
