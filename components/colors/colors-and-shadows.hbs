@@ -19,6 +19,13 @@
   {{/each}}
 </div>
 
+<h1>Transparent Colors</h1>
+<div class="color-container">  
+  {{#each transparent}}
+    <div class="color-square {{textColor}} {{backgroundColor}}">{{text}}<span class="variable-name">{{scssVarName}}</span></div>
+  {{/each}}
+</div>
+
 <h1>Gradients</h1>
 <div class="color-container">  
   {{#each gradients}}

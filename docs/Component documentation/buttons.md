@@ -7,7 +7,7 @@ title: Buttons
 
 ### Table of contents
 <div class="row">
-    <div class="col-3">
+    <div class="col-4">
         <dl>
             <dt>[Overview](#overview)</dt>
             <dd>[Global Definition](#global-definition)</dd>
@@ -26,12 +26,17 @@ title: Buttons
             <dd>[With an icon](#with-an-icon)</dd>
         </dl>
         <dl>
+            <dt>[Secondary Button Dark Theme](#secondary-button-dark-theme)</dt>
+            <dd>[Without an icon](#without-an-icon)</dd>
+            <dd>[With an icon](#with-an-icon)</dd>
+        </dl>
+        <dl>
             <dt>[Tertiary Button](#tertiary-button)</dt>
             <dd>[Without an icon](#without-an-icon)</dd>
             <dd>[With an icon](#with-an-icon)</dd>
         </dl>
     </div>
-    <div class="col-3">
+    <div class="col-4">
         <dl>
             <dt>[Gray Button](#gray-button)</dt>
             <dd>[Without an icon](#without-an-icon)</dd>
@@ -137,8 +142,27 @@ Below are few examples of the Milestone Secondary button. The default Secondary 
   <div class="element-preview__inner">{{render '@button-secondary-icon'}}</div>
 </div>
 
+
+## Secondary Button Dark Theme
+To use a Secondary Dark Themed buttons you need to add the following CCS class: <b><i>"msds-btn--secondary-dark"</i></b>. 
+
+Below are few examples of the Milestone Secondary Dark Themed button. The default Secondary Dark Themed button has no icon as mentioned in the global definition previously.
+
+### Without an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-secondary-dark'}}</div>
+</div>
 ```html
-{{render '@button-secondary-icon'}}
+{{render '@button-secondary-dark'}}
+```
+
+### With an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-secondary-dark-icon'}}</div>
+</div>
+
+```html
+{{render '@button-secondary-dark-icon'}}
 ```
 
 ## Tertiary Button
