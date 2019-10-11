@@ -1,0 +1,73 @@
+.card-row > div {
+  margin-top: 20px;
+}
+
+.msds-basic-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $white;
+
+  &--vertical-aligned {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  &--centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  &__caption {
+    margin-bottom: 24px;
+  }
+
+  &__caption-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 3px;
+  }
+
+  &__caption-title {
+    display: inline-block;
+    @include msds-font('body-1');
+    color: #0099da;
+    font-weight: 700;
+    line-height: 22px;
+    vertical-align: top;
+  }
+
+  &__separator {
+    height: 1px;
+    width: 32px;
+    background-color: $gray-4;
+  }
+
+  &__body {
+    border-radius: 0 0 2px 2px;
+
+    &-heading {
+      @include msds-font('header-3');
+      color: $gray-10;
+      margin: 0;
+      padding-top: 24px;
+      padding-bottom: 8px;
+    }
+
+    &-description {
+      @include msds-font('body-1');
+      color: $gray-9;
+      font-weight: 300;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__link {
+    @include msds-font('body-1');
+    color: $clear-blue;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}

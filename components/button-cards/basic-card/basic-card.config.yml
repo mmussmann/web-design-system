@@ -1,0 +1,11 @@
+context:
+  general:
+    cardDescription: 'Basic Cards'
+    cardCaptionTitle: 'Basic Cards caption title'    
+  card:     
+    placeholderHeading: 'Headline lorem ipsum'
+    placeholderHeadingLong: 'Headline lorem ipsumsemper id commodo'
+    placeholderDescription: 'Lorem ipsum dolorem sit amet etiam vestibulum morbi nibh? Commodo rhoncus semper commodo malesuada.'
+    placeholderDescriptionlong: 'Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.'
+    placeholderLinkText: read more
+status: 'wip'
