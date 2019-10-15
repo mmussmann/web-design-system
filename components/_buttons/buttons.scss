@@ -1,3 +1,36 @@
+@mixin light-theme-disabled {
+  background: $white;
+  border: 0.0625rem solid $gray-4;
+  color: $gray-7;
+  opacity: 1;
+  box-shadow: none;
+  transition: initial;
+  cursor: initial;
+
+  .msds-icon {
+    fill: $gray-5;
+  }
+
+  &:hover {
+    background-color: $white;
+    bottom: 0;
+    box-shadow: initial;
+  }
+}
+
+@mixin dark-theme-disabled {
+  background-color: $rgba-11;
+  border: 1px solid $rgba-8;
+  color: $gray-7;
+  box-shadow: none;
+  transition: initial;
+  cursor: initial;
+  &:hover {
+    background-color: $rgba-11;
+    color: $gray-7;
+    bottom: 0;
+  }
+}
 .msds-btn {
   position: relative;
   display: inline-flex;
@@ -48,12 +81,14 @@
     border-color: $alt-yellow-2;
     bottom: 0;
     transition: bottom 0.2s;
-
     &:hover {
       background: $yellow;
       box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.125rem;
       transition: bottom 0.2s;
+    }
+    &:disabled {
+      @include light-theme-disabled();
     }
 
     &:not(:disabled):not(.disabled):active,
@@ -74,6 +109,9 @@
     border-color: $clear-blue;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
+    &:disabled {
+      @include light-theme-disabled();
+    }
 
     &:hover {
       color: $white;
@@ -102,6 +140,9 @@
     border-color: $white;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
+    &:disabled {
+      @include dark-theme-disabled();
+    }
 
     &:hover {
       color: $clear-blue;
@@ -122,9 +163,6 @@
     &.focus {
       box-shadow: 0 0.125rem 0.75rem 0 $rgba-6, 0 0 0 4px $rgba-7;
     }
-    &:disabled{
-      background-color: rgba(0,0,0,0.1);
-    }
   }
 
   // Tertiary Button
@@ -134,6 +172,10 @@
     border-color: $clear-blue;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
+
+    &:disabled {
+      @include light-theme-disabled();
+    }
 
     &:hover {
       background: $dark-blue-gradient;
@@ -210,25 +252,6 @@
     &:focus,
     &.focus {
       box-shadow: 0 0 0 0.25rem $rgba-5;
-    }
-  }
-  // Disabled Button - Has to remain at the end to overwrite all hover attributes on defined buttons.
-  &:disabled {
-    background: $white;
-    border: 0.0625rem solid $gray-4;
-    color: $gray-7;
-    opacity: 1;
-    box-shadow: none;
-    transition: initial;
-
-    .msds-icon {
-      fill: $gray-5;
-    }
-
-    &:hover {
-      background: $white;
-      bottom: 0;
-      box-shadow: initial;
     }
   }
 }

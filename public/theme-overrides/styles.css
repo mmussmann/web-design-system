@@ -19,7 +19,7 @@ body {
   top: 12px;
 }
 
-.github-milestone-system .git-icon {  
+.github-milestone-system .git-icon {
   width: 26px;
   height: 26px;
 }
@@ -254,7 +254,7 @@ body {
 }
 
 .Tree-collection.is-closed {
-    height: 53px;
+  height: 53px;
 }
 
 .Tree-collectionLabel {
@@ -279,7 +279,7 @@ body {
 }
 
 .Tree-collectionItems {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .Document-title {
@@ -303,6 +303,17 @@ body {
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0;
   margin-bottom: 0;
+}
+
+.Prose .element-preview-dark {
+  padding: 1em;
+  background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+  margin-bottom: 0;
+}
+
+.Prose .element-preview-dark h3 {
+  color: #ffffff;
 }
 
 .Prose .lang-html pre {
