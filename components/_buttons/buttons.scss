@@ -122,6 +122,9 @@
     &.focus {
       box-shadow: 0 0.125rem 0.75rem 0 $rgba-6, 0 0 0 4px $rgba-7;
     }
+    &:disabled{
+      background-color: rgba(0,0,0,0.1);
+    }
   }
 
   // Tertiary Button
