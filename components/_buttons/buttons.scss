@@ -212,6 +212,9 @@
       bottom: 0.1875rem;
       transition: background 0.2s, bottom 0.2s;
     }
+    &:disabled {
+      @include light-theme-disabled();
+    }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
@@ -239,6 +242,9 @@
       box-shadow: 0 0.125rem 0.75rem 0 $rgba-1;
       bottom: 0.1875rem;
       transition: background 0.2s, bottom 0.2s;
+    }
+    &:disabled {
+      @include light-theme-disabled();
     }
 
     &:not(:disabled):not(.disabled):active,
