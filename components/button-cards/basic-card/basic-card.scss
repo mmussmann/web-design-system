@@ -27,6 +27,7 @@
     height: 20px;
     display: inline-block;
     margin-right: 3px;
+    vertical-align: bottom;
   }
 
   &__caption-title {
@@ -52,7 +53,8 @@
       color: $gray-10;
       margin: 0;
       padding-top: 24px;
-      padding-bottom: 8px;
+      padding-bottom: 8px;      
+      line-height: 22px;
     }
 
     &-description {
