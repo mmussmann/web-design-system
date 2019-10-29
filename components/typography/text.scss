@@ -4,6 +4,10 @@
     line-height: 88px;
     font-weight: 800;
     letter-spacing: 1.2px;
+
+    @include media-breakpoint-down(lg) {
+      line-height: calc(38px + 4.2vw);
+    }
   }
 
   @if $font == 'display-2' {
@@ -11,6 +15,10 @@
     line-height: 64px;
     font-weight: 800;
     letter-spacing: 0.86px;
+
+    @include media-breakpoint-down(lg) {
+      line-height: calc(32px + 2.625vw);
+    }
   }
 
   @if $font == 'display-3' {
@@ -18,18 +26,30 @@
     line-height: 48px;
     font-weight: 800;
     letter-spacing: 0.6px;
+
+    @include media-breakpoint-down(lg) {
+      line-height: calc(29px + 1.45vw);
+    }
   }
 
   @if $font == 'header-1' {
     @include rfs(42);
     line-height: 48px;
     font-weight: 300;
+
+    @include media-breakpoint-down(lg) {
+      line-height: calc(29px + 1.45vw);
+    }
   }
 
   @if $font == 'header-2' {
     @include rfs(32);
     line-height: 38px;
     font-weight: 300;
+
+    @include media-breakpoint-down(lg) {
+      line-height: calc(27px + 0.9vw);
+    }
   }
 
   @if $font == 'header-3' {
