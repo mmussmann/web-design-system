@@ -1,7 +1,7 @@
 @mixin light-theme-disabled {
   background: $white;
   border: 0.0625rem solid $gray-4;
-  color: $gray-7;
+  color: $rgba-7;
   opacity: 1;
   box-shadow: none;
   transition: initial;
@@ -21,18 +21,19 @@
 @mixin dark-theme-disabled {
   background-color: $rgba-11;
   border: 1px solid $rgba-8;
-  color: $gray-7;
+  color: $rgba-7;
   box-shadow: none;
   transition: initial;
   cursor: initial;
   &:hover {
     background-color: $rgba-11;
-    color: $gray-7;
+    color: $rgba-7;
     bottom: 0;
   }
 }
 .msds-btn {
   position: relative;
+  font-family: "Open Sans";
   display: inline-flex;
   margin-top: 1.25rem;
   padding: 0.8125rem 3rem 0.6875rem;
