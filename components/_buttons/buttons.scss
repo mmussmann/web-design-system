@@ -1,7 +1,7 @@
 @mixin light-theme-disabled {
   background: $white;
   border: 0.0625rem solid $gray-4;
-  color: $gray-7;
+  color: $rgba-7;
   opacity: 1;
   box-shadow: none;
   transition: initial;
@@ -21,18 +21,19 @@
 @mixin dark-theme-disabled {
   background-color: $rgba-11;
   border: 1px solid $rgba-8;
-  color: $gray-7;
+  color: $rgba-7;
   box-shadow: none;
   transition: initial;
   cursor: initial;
   &:hover {
     background-color: $rgba-11;
-    color: $gray-7;
+    color: $rgba-7;
     bottom: 0;
   }
 }
 .msds-btn {
   position: relative;
+  font-family: "Open Sans";
   display: inline-flex;
   margin-top: 1.25rem;
   padding: 0.8125rem 3rem 0.6875rem;
@@ -45,9 +46,9 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
-  white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 0.0625em;
+  text-align: center;
 
   &:hover {
     text-decoration: none;
@@ -265,20 +266,28 @@
 .msds-btn--icon {
   padding-right: 1.25rem;
   padding-left: 1.75rem;
+  text-align: left;
+  align-items: center;
 
   .msds-icon {
     padding-left: 1.5rem;
-    height: 1.125rem;
-    width: 1.125rem;
+
+    svg {
+      height: 1.125rem;
+      width: 1.125rem;
+    }
   }
 
   &.msds-btn--lg {
     padding: 1.2rem 1.5rem 1.1rem 2.25rem;
 
     .msds-icon {
-      height: 1.25rem;
-      width: 1.25rem;
       padding-left: 4rem;
+
+      svg {
+        height: 1.25rem;
+        width: 1.25rem;
+      }
     }
   }
 
@@ -287,9 +296,12 @@
     padding-left: 1.25rem;
 
     .msds-icon {
-      height: 1.125rem;
-      width: 1.125rem;
       padding-left: 1.555625rem;
+
+      svg {
+        height: 1.125rem;
+        width: 1.125rem;
+      }
     }
   }
 
@@ -301,18 +313,24 @@
     .msds-icon {
       padding-right: 1.5rem;
       padding-left: 0;
-      height: 1.125rem;
-      width: 1.125rem;
+
+      svg {
+        height: 1.125rem;
+        width: 1.125rem;
+      }
     }
 
     &.msds-btn--lg {
       padding: 1.2rem 2.25rem 1.1rem 1.5rem;
 
       .msds-icon {
-        height: 1.25rem;
-        width: 1.25rem;
         padding-right: 4rem;
         padding-left: 0;
+
+        svg {
+          height: 1.25rem;
+          width: 1.25rem;
+        }
       }
     }
 
@@ -321,10 +339,13 @@
       padding-left: 0.75rem;
 
       .msds-icon {
-        height: 1.125rem;
-        width: 1.125rem;
         padding-left: 0;
         padding-right: 1.555625rem;
+
+        svg {
+          height: 1.125rem;
+          width: 1.125rem;
+        }
       }
     }
   }
