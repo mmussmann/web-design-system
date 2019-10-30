@@ -49,7 +49,7 @@
 
   &--svg {
     .msds-generic-card__frame {
-      background: linear-gradient(0deg, #f5f6f7 0%, #f9f9f9 100%);
+      background: linear-gradient(0deg, $gray-3 0%, $white 100%);
     }
 
     .msds-generic-card__frame-image {
