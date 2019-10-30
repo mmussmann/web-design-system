@@ -47,6 +47,20 @@
     }
   }
 
+  &--svg {
+    .msds-generic-card__frame {
+      background: linear-gradient(0deg, #f5f6f7 0%, #f9f9f9 100%);
+    }
+
+    .msds-generic-card__frame-image {
+      height: 75%;
+    }
+
+    .embed-responsive-item {
+      top: 20px;
+    }
+  }
+
   &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: 4px solid rgba(157, 173, 183, 0.5);
