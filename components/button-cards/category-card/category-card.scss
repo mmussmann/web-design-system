@@ -1,7 +1,8 @@
 .msds-category-card {
   cursor: pointer;
   position: relative;
-  width: 280px;
+  display: flex;
+  flex-direction: column;
 
   &:hover {
     .msds-category-card__header {
@@ -11,11 +12,12 @@
 
   &:active {
     .msds-category-card__header {
-      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 -1px 0 0 #0175a6, 0 0 0 4px $rgba-3;
     }
   }
 
   &--disabled {
+    pointer-events: none;
     .msds-category-card__header {
       position: relative;
       color: $white;
@@ -30,9 +32,8 @@
       position: absolute;
       top: 0px;
       right: 0px;
-      width: 360px;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: $rgba-10;
       border-radius: 2px 2px 0 0;
     }
 
@@ -50,35 +51,61 @@
     }
   }
 
-  &--large {
-    width: 360px;
-
+  &--small {
     .msds-category-card__header {
-      width: 360px;
+      padding-right: 12px;
+
+      &-body {
+        padding: 16px 16px 16px 12px;
+      }
+      &-icon {
+        margin: 20px 0px;
+      }
     }
 
     .msds-category-card__content {
-      width: 360px;
+      &-body {
+        padding: 16px 16px 32px;
+      }
     }
   }
+
+  &--dark {
+    .msds-category-card__header {
+      background: $rgba-10;
+      &:active {
+        box-shadow: 0 0 0 4px $rgba-7, $shadow-large;
+      }
+    }
+
+    .msds-category-card__content {
+      color: $white;
+      background: $rgba-11;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3);
     color: $white;
     @include msds-font('header-4');
     padding-right: 16px;
+    background: linear-gradient(90deg, #0081c1 0%, #0099da 100%);
   }
 
   &__header-body {
-    padding: 24px 10px 24px 20px;
+    padding: 24px 12px 24px 20px;
   }
 
   &__header-icon {
     fill: $yellow;
-    width: 18px;
-    height: 18px;
-    margin: 30px 0px;
+    width: 16px;
+    height: 16px;
+    margin: 28px 0px;
   }
 
   &__header-opaque-filter {
@@ -88,14 +115,11 @@
   }
 
   &__content {
-    width: 280px;
-    color: $white;
     @include msds-font('body-1');
     border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.1);
 
     &-body {
-      padding: 24px 20px;
+      padding: 24px 22px 32px 26px;
     }
   }
 }
