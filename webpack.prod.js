@@ -48,7 +48,8 @@ module.exports = merge(common, {
       { from: 'LICENSE', to: 'LICENSE', toType: 'file' },
       { from: 'README.md', to: 'README.md' },
       { from: 'src/scss/_variables.scss', to: 'scss/_variables.scss' },
-      { from: '.npmignore', to: '.npmignore', toType: 'file' }
+      { from: '.npmignore', to: '.npmignore', toType: 'file' },
+      { from: 'components/icons/icons.list.js', to: 'icons.list.js'}
     ])
   ]
 })
