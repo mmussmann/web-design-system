@@ -102,7 +102,7 @@
     justify-content: space-between;
     color: $white;
     @include msds-font('header-4');
-    background: linear-gradient(90deg, #0081c1 0%, #0099da 100%);
+    background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
   }
 
   &__header-body {
