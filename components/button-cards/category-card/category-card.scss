@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 1px 2px 0 rgba(2, 56, 82, 0.3);
 
   @keyframes move-arrow-right {
     0% {
@@ -28,6 +29,20 @@
     }
     .msds-category-card__header {
       box-shadow: inset 0 -1px 0 0 #0175a6, 0 0 0 4px $rgba-3;
+    }
+
+    .msds-category-card__content {
+      border-top: 4px solid rgba(0, 153, 218, 0.5);
+    }
+  }
+
+  &:focus {
+    .msds-category-card__header {
+      box-shadow: inset 0 -1px 0 0 #0175a6, 0 0 0 4px rgba(0, 153, 218, 0.5);
+      border-radius: 2px 2px 0 0;
+      &-body {
+        color: $white;
+      }
     }
   }
 
@@ -62,33 +77,65 @@
     }
 
     .msds-category-card__content {
-      color: $white;
       background: $rgba-11;
+
+      &-body {
+        color: $white;
+      }
     }
   }
 
   &--disabled {
     pointer-events: none;
     .msds-category-card__header {
+      background: $gray-4;
       position: relative;
-      color: $rgba-7;
+      color: $gray-7;
       overflow: hidden;
     }
 
     .msds-category-card__header-icon {
-      fill: $rgba-7;
+      fill: $gray-7;
+    }
+
+    .msds-category-card__content-body {
+      color: $gray-7;
     }
 
     &:hover {
       cursor: unset;
       .msds-category-card__header {
-        color: $white;
+        color: $gray-7;
       }
     }
 
     &:active {
       .msds-category-card__header {
         box-shadow: unset;
+      }
+    }
+
+    &.msds-category-card--dark {
+      .msds-category-card__header {
+        background: $rgba-10;
+      }
+
+      .msds-category-card__header-icon {
+        fill: $rgba-7;
+      }
+
+      .msds-category-card__content {
+        background: $rgba-11;
+      }
+
+      .msds-category-card__content-body {
+        color: $white;
+      }
+
+      &:hover {
+        .msds-category-card__header {
+          color: $white;
+        }
       }
     }
   }
@@ -103,6 +150,13 @@
     color: $white;
     @include msds-font('header-4');
     background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
+    flex: 1 auto;
+
+    &:active {
+      .msds-category-card__header {
+        box-shadow: inset 0 -1px 0 0 #0175a6, 0 0 0 4px $rgba-3;
+      }
+    }
   }
 
   &__header-body {
@@ -126,9 +180,12 @@
   &__content {
     @include msds-font('body-1');
     border-radius: 2px;
+    background-color: $white;
+    flex: 1 auto;
 
     &-body {
       padding: 24px 20px 32px 20px;
+      color: $gray-9;
     }
   }
 }
