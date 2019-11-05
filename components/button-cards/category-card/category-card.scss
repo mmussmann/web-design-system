@@ -1,0 +1,134 @@
+.msds-category-card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @keyframes move-arrow-right {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 44px;
+    }
+  }
+
+  &:hover {
+    .msds-category-card__header {
+      color: $yellow;
+    }
+    .msds-category-card__header-icon {
+      animation: move-arrow-right 1.1 forwards 0.7s;
+    }
+  }
+
+  &:active {
+    .msds-category-card {
+      overflow: visible;
+    }
+    .msds-category-card__header {
+      box-shadow: inset 0 -1px 0 0 #0175a6, 0 0 0 4px $rgba-3;
+    }
+  }
+
+  &--small {
+    .msds-category-card__header {
+      &-body {
+        padding: 16px 12px 16px 16px;
+      }
+
+      &-icon-container {
+        padding-right: 12px;
+      }
+
+      &-icon {
+        margin: 20px 0px 0px;
+      }
+    }
+
+    .msds-category-card__content {
+      &-body {
+        padding: 20px 16px 32px;
+      }
+    }
+  }
+
+  &--dark {
+    .msds-category-card__header {
+      background: $rgba-10;
+      &:active {
+        box-shadow: 0 0 0 4px $rgba-7, $shadow-large;
+      }
+    }
+
+    .msds-category-card__content {
+      color: $white;
+      background: $rgba-11;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    .msds-category-card__header {
+      position: relative;
+      color: $rgba-7;
+      overflow: hidden;
+    }
+
+    .msds-category-card__header-icon {
+      fill: $rgba-7;
+    }
+
+    &:hover {
+      cursor: unset;
+      .msds-category-card__header {
+        color: $white;
+      }
+    }
+
+    &:active {
+      .msds-category-card__header {
+        box-shadow: unset;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    @include msds-font('header-4');
+    background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
+  }
+
+  &__header-body {
+    padding: 24px 16px 24px 18px;
+  }
+
+  &__header-icon-container {
+    position: relative;
+    overflow: hidden;
+    width: 32px;
+    height: auto;
+  }
+
+  &__header-icon {
+    fill: $yellow;
+    width: 16px;
+    height: 16px;
+    margin: 30px 0px 0px;
+  }
+
+  &__content {
+    @include msds-font('body-1');
+    border-radius: 2px;
+
+    &-body {
+      padding: 24px 20px 32px 20px;
+    }
+  }
+}
