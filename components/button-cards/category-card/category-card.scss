@@ -150,7 +150,7 @@
     color: $white;
     @include msds-font('header-4');
     background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
-    flex: 1 auto;
+    border-radius: 2px 2px 0 0;
 
     &:active {
       .msds-category-card__header {
@@ -161,6 +161,8 @@
 
   &__header-body {
     padding: 24px 16px 24px 18px;
+    width: 90%;
+    height: fit-content;
   }
 
   &__header-icon-container {
@@ -181,7 +183,7 @@
     @include msds-font('body-1');
     border-radius: 2px;
     background-color: $white;
-    flex: 1 auto;
+    border-radius: 0 0 2px 2px;
 
     &-body {
       padding: 24px 20px 32px 20px;
