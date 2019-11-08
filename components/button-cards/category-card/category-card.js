@@ -1,15 +1,15 @@
-const setMaxHeight = array => {
-  let arrHeightValues = []
-  maxObjectHeight = 0
+const setMaximumHeight = elements => {
+  const elementsHeights = []
+  let maximumElementHeight = 0
 
-  for (let i = 0; i < array.length; i++) {
-    arrHeightValues.push(array[i].clientHeight)
+  for (let i = 0; i < elements.length; i++) {
+    elementsHeights.push(elements[i].clientHeight)
   }
 
-  maxObjectHeight = Math.max(...arrHeightValues)
+  maximumElementHeight = Math.max(...elementsHeights)
 
-  for (let i = 0; i < array.length; i++) {
-    array[i].parentNode.style.height = maxObjectHeight + 'px'
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].parentNode.style.height = maximumElementHeight + 'px'
   }
 }
 
@@ -20,11 +20,11 @@ function cleanInlineStyles(array) {
 }
 
 function init() {
-  const arrHeader = document.querySelectorAll('.msds-category-card__header-body')
-  const arrContent = document.querySelectorAll('.msds-category-card__content-body')
+  const headerElements = document.querySelectorAll('.msds-category-card__header-body')
+  const contentElements = document.querySelectorAll('.msds-category-card__content-body')
 
-  setMaxHeight(arrHeader)
-  setMaxHeight(arrContent)
+  setMaximumHeight(headerElements)
+  setMaximumHeight(contentElements)
 }
 
 init()
@@ -32,15 +32,15 @@ init()
 window.onresize = resize
 
 function resize() {
-  const mobileSize = 767
-  const arrHeader = document.querySelectorAll('.msds-category-card__header-body')
-  const arrContent = document.querySelectorAll('.msds-category-card__content-body')
+  const mobileBreakpoint = 767
+  const headerElements = document.querySelectorAll('.msds-category-card__header-body')
+  const contentElements = document.querySelectorAll('.msds-category-card__content-body')
 
-  if (document.documentElement.clientWidth > mobileSize) {
-    setMaxHeight(arrHeader)
-    setMaxHeight(arrContent)
+  if (document.documentElement.clientWidth > mobileBreakpoint) {
+    setMaximumHeight(headerElements)
+    setMaximumHeight(contentElements)
   } else {
-    cleanInlineStyles(arrHeader)
-    cleanInlineStyles(arrContent)
+    cleanInlineStyles(headerElements)
+    cleanInlineStyles(contentElements)
   }
 }
