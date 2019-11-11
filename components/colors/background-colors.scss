@@ -1,0 +1,22 @@
+.msds-backgrounds-colors {
+}
+
+.msds-backgrounds-colors {
+  &__color-element {
+    height: 100px;
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid black;
+  }
+
+  &__color-name {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  &__class-name {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
