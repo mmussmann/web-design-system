@@ -8,8 +8,6 @@ function init() {
   }
 }
 
-init()
-
 function appendColorTextElementToContainer(textColorsContainer, color) {
   const colorTextElement = createColorTextElement(color)
 
@@ -27,3 +25,5 @@ function createColorTextElement(color) {
 
   return colorTextElement
 }
+
+init()
