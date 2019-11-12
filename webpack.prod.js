@@ -49,7 +49,9 @@ module.exports = merge(common, {
       { from: 'README.md', to: 'README.md' },
       { from: 'src/scss/_variables.scss', to: 'scss/_variables.scss' },
       { from: '.npmignore', to: '.npmignore', toType: 'file' },
-      { from: 'components/icons/icons.list.js', to: 'icons.list.js'}
+      { from: 'components/icons/icons.list.js', to: 'icons.list.js'},
+      { from: 'components/typography/text.list.js', to: 'text.list.js'},
+      { from: 'components/colors/colors.list.js', to: 'colors.list.js'}
     ])
   ]
 })
