@@ -1,0 +1,233 @@
+.msds-right-arrow {
+  @include sprite('right-arrow');
+  height: map-get(map-get($sprite-sizes, 'right-arrow'), 'height');
+  width: map-get(map-get($sprite-sizes, 'right-arrow'), 'width');
+}
+
+.msds-email {
+  @include sprite('email');
+  height: map-get(map-get($sprite-sizes, 'email'), 'height');
+  width: map-get(map-get($sprite-sizes, 'email'), 'width');
+}
+
+.msds-phone {
+  @include sprite('phone');
+  height: map-get(map-get($sprite-sizes, 'phone'), 'height');
+  width: map-get(map-get($sprite-sizes, 'phone'), 'width');
+}
+
+.msds-linkedin {
+  @include sprite('linkedin');
+  height: map-get(map-get($sprite-sizes, 'linkedin'), 'height');
+  width: map-get(map-get($sprite-sizes, 'linkedin'), 'width');
+}
+
+.msds-publish {
+  @include sprite('publish');
+  height: map-get(map-get($sprite-sizes, 'publish'), 'height');
+  width: map-get(map-get($sprite-sizes, 'publish'), 'width');
+}
+
+.msds-cross {
+  @include sprite('cross');
+  height: map-get(map-get($sprite-sizes, 'cross'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cross'), 'width');
+}
+
+.msds-quote {
+  @include sprite('quote');
+  height: map-get(map-get($sprite-sizes, 'quote'), 'height');
+  width: map-get(map-get($sprite-sizes, 'quote'), 'width');
+}
+
+.msds-download {
+  @include sprite('download');
+  height: map-get(map-get($sprite-sizes, 'download'), 'height');
+  width: map-get(map-get($sprite-sizes, 'download'), 'width');
+}
+
+.msds-logo-diamond {
+  @include sprite('logo-diamond');
+  height: map-get(map-get($sprite-sizes, 'logo-diamond'), 'height');
+  width: map-get(map-get($sprite-sizes, 'logo-diamond'), 'width');
+}
+
+.msds-dome-cam {
+  @include sprite('dome-cam');
+  height: map-get(map-get($sprite-sizes, 'dome-cam'), 'height');
+  width: map-get(map-get($sprite-sizes, 'dome-cam'), 'width');
+}
+
+.msds-dome-cam-8 {
+  @include sprite('dome-cam-8');
+  height: map-get(map-get($sprite-sizes, 'dome-cam-8'), 'height');
+  width: map-get(map-get($sprite-sizes, 'dome-cam-8'), 'width');
+}
+
+.msds-dome-cam-8-animated {
+  @include sprite('dome-cam-8-animated');
+  height: map-get(map-get($sprite-sizes, 'dome-cam-8-animated'), 'height');
+  width: map-get(map-get($sprite-sizes, 'dome-cam-8-animated'), 'width');
+}
+
+.msds-cam-group-small {
+  @include sprite('cam-group-small');
+  height: map-get(map-get($sprite-sizes, 'cam-group-small'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cam-group-small'), 'width');
+}
+
+.msds-cam-group-big {
+  @include sprite('cam-group-big');
+  height: map-get(map-get($sprite-sizes, 'cam-group-big'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cam-group-big'), 'width');
+}
+
+.msds-planet {
+  @include sprite('planet');
+  height: map-get(map-get($sprite-sizes, 'planet'), 'height');
+  width: map-get(map-get($sprite-sizes, 'planet'), 'width');
+}
+
+.msds-single-site {
+  @include sprite('single-site');
+  height: map-get(map-get($sprite-sizes, 'single-site'), 'height');
+  width: map-get(map-get($sprite-sizes, 'single-site'), 'width');
+}
+
+.msds-advanced-super-surveillance {
+  @include sprite('advanced-super-surveillance');
+  height: map-get(map-get($sprite-sizes, 'advanced-super-surveillance'), 'height');
+  width: map-get(map-get($sprite-sizes, 'advanced-super-surveillance'), 'width');
+}
+
+.msds-screen-recording {
+  @include sprite('screen-recording');
+  height: map-get(map-get($sprite-sizes, 'screen-recording'), 'height');
+  width: map-get(map-get($sprite-sizes, 'screen-recording'), 'width');
+}
+
+.msds-clock-24-7 {
+  @include sprite('clock-24-7');
+  height: map-get(map-get($sprite-sizes, 'clock-24-7'), 'height');
+  width: map-get(map-get($sprite-sizes, 'clock-24-7'), 'width');
+}
+
+.msds-cal-monthly {
+  @include sprite('cal-monthly');
+  height: map-get(map-get($sprite-sizes, 'cal-monthly'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cal-monthly'), 'width');
+}
+
+.msds-cal-weekly {
+  @include sprite('cal-weekly');
+  height: map-get(map-get($sprite-sizes, 'cal-weekly'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cal-weekly'), 'width');
+}
+
+.msds-backup-important {
+  @include sprite('backup-important');
+  height: map-get(map-get($sprite-sizes, 'backup-important'), 'height');
+  width: map-get(map-get($sprite-sizes, 'backup-important'), 'width');
+}
+
+.msds-no-backup {
+  @include sprite('no-backup');
+  height: map-get(map-get($sprite-sizes, 'no-backup'), 'height');
+  width: map-get(map-get($sprite-sizes, 'no-backup'), 'width');
+}
+
+.msds-xprotect {
+  @include sprite('xprotect');
+  height: map-get(map-get($sprite-sizes, 'xprotect'), 'height');
+  width: map-get(map-get($sprite-sizes, 'xprotect'), 'width');
+}
+
+.msds-access-control-illustration {
+  @include sprite('access-control-illustration');
+  height: map-get(map-get($sprite-sizes, 'access-control-illustration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'access-control-illustration'), 'width');
+}
+
+.msds-care {
+  @include sprite('care');
+  height: map-get(map-get($sprite-sizes, 'care'), 'height');
+  width: map-get(map-get($sprite-sizes, 'care'), 'width');
+}
+
+.msds-contact-illustration {
+  @include sprite('contact-illustration');
+  height: map-get(map-get($sprite-sizes, 'contact-illustration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'contact-illustration'), 'width');
+}
+
+.msds-customizable {
+  @include sprite('customizable');
+  height: map-get(map-get($sprite-sizes, 'customizable'), 'height');
+  width: map-get(map-get($sprite-sizes, 'customizable'), 'width');
+}
+
+.msds-download-illustration {
+  @include sprite('download-illustration');
+  height: map-get(map-get($sprite-sizes, 'download-illustration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'download-illustration'), 'width');
+}
+
+.msds-end-user {
+  @include sprite('end-user');
+  height: map-get(map-get($sprite-sizes, 'end-user'), 'height');
+  width: map-get(map-get($sprite-sizes, 'end-user'), 'width');
+}
+
+.msds-getting-started {
+  @include sprite('getting-started');
+  height: map-get(map-get($sprite-sizes, 'getting-started'), 'height');
+  width: map-get(map-get($sprite-sizes, 'getting-started'), 'width');
+}
+
+.msds-interconnect {
+  @include sprite('interconnect');
+  height: map-get(map-get($sprite-sizes, 'interconnect'), 'height');
+  width: map-get(map-get($sprite-sizes, 'interconnect'), 'width');
+}
+
+.msds-milestone-global-offices-illustration {
+  @include sprite('milestone-global-offices-illustration');
+  height: map-get(map-get($sprite-sizes, 'milestone-global-offices-illustration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'milestone-global-offices-illustration'), 'width');
+}
+
+.msds-product-overview-illustration {
+  @include sprite('product-overview-illustration');
+  height: map-get(map-get($sprite-sizes, 'product-overview-illustration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'product-overview-illustration'), 'width');
+}
+
+.msds-reliable {
+  @include sprite('reliable');
+  height: map-get(map-get($sprite-sizes, 'reliable'), 'height');
+  width: map-get(map-get($sprite-sizes, 'reliable'), 'width');
+}
+
+.msds-scalable {
+  @include sprite('scalable');
+  height: map-get(map-get($sprite-sizes, 'scalable'), 'height');
+  width: map-get(map-get($sprite-sizes, 'scalable'), 'width');
+}
+
+.msds-secure {
+  @include sprite('secure');
+  height: map-get(map-get($sprite-sizes, 'secure'), 'height');
+  width: map-get(map-get($sprite-sizes, 'secure'), 'width');
+}
+
+.msds-upgrade {
+  @include sprite('upgrade');
+  height: map-get(map-get($sprite-sizes, 'upgrade'), 'height');
+  width: map-get(map-get($sprite-sizes, 'upgrade'), 'width');
+}
+
+.msds-skyline {
+  @include sprite('skyline');
+  height: map-get(map-get($sprite-sizes, 'skyline'), 'height');
+  width: map-get(map-get($sprite-sizes, 'skyline'), 'width');
+}

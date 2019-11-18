@@ -2,9 +2,8 @@ module.exports = {
   status: 'ready',
   title: 'Available icons',
   context: {
-    previewCss: `svg {
-      height: 50px; 
-      width: 50px;
+    previewCss: `div {
+      display: inline-block;
       margin: 5px;
     }`
   },

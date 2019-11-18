@@ -1,9 +1,10 @@
 export const buttonIcons = ['right-arrow', 'email', 'phone', 'linkedin', 'publish', 'cross', 'quote', 'download']
 
 export const richIcons = [
-  'logo',
+  'logo-diamond',
   'dome-cam',
   'dome-cam-8',
+  'dome-cam-8-animated',
   'cam-group-small',
   'cam-group-big',
   'planet',

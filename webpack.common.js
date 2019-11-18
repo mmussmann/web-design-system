@@ -30,10 +30,21 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new SVGSpritemapPlugin('src/svg/**/*.svg', {
       output: {
-        filename: 'msds-spritemap.svg'
+        filename: 'msds-spritemap.svg',
+        svgo: false,
+        svg: {
+          sizes: false
+        }
       },
       sprite: {
-        prefix: false
+        prefix: false,
+      },
+      styles: {
+        format: 'data',
+        filename: path.join(__dirname, 'src/scss/_sprites.scss'),
+        variables : {
+          sizes: 'sprite-sizes'
+        }
       }
     }),
     new CopyPlugin([
