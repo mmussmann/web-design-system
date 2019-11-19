@@ -1,13 +1,3 @@
-.card-row > div {
-  margin-top: 40px;
-}
-
-@media (min-width: 769px) {
-  .card-row > div {
-    margin-top: 20px;
-  }
-}
-
 .msds-basic-card {
   display: flex;
   flex-direction: column;
