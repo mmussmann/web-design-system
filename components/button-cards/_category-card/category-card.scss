@@ -5,12 +5,12 @@
   flex-direction: column;
   box-shadow: 0 1px 2px 0 rgba(2, 56, 82, 0.3);
 
-  @keyframes move-arrow-right {
-    0% {
-      margin-left: 0px;
+  @keyframes rotate-clockwise {
+    from {
+      transform: rotate(0deg);
     }
-    100% {
-      margin-left: 44px;
+    to {
+      transform: rotate(360deg);
     }
   }
 
@@ -19,7 +19,7 @@
       color: $yellow;
     }
     .msds-category-card__header-icon {
-      animation: move-arrow-right 1.1 forwards 0.7s;
+      animation: rotate-clockwise 1 forwards 0.3s;
     }
   }
 
