@@ -3,7 +3,7 @@
     @include rfs(80);
     line-height: 88px;
     font-weight: 800;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.15px;
 
     @include media-breakpoint-down(lg) {
       line-height: calc(38px + 4.2vw);
