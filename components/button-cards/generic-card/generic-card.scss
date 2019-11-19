@@ -47,6 +47,13 @@
     }
   }
 
+  &--svg {
+    .msds-generic-card__frame-image {
+      top: 20px;
+      height: 75%;
+    }
+  }
+
   &:active {
     box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
     outline: 4px solid rgba(157, 173, 183, 0.5);
