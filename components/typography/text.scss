@@ -1,9 +1,9 @@
 @mixin msds-font($font) {
   @if $font == 'display-1' {
-    @include rfs(84);
+    @include rfs(80);
     line-height: 88px;
     font-weight: 800;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
 
     @include media-breakpoint-down(lg) {
       line-height: calc(38px + 4.2vw);
@@ -11,10 +11,10 @@
   }
 
   @if $font == 'display-2' {
-    @include rfs(60);
+    @include rfs(56);
     line-height: 64px;
     font-weight: 800;
-    letter-spacing: 0.86px;
+    letter-spacing: 0.8px;
 
     @include media-breakpoint-down(lg) {
       line-height: calc(32px + 2.625vw);
