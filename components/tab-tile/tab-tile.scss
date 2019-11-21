@@ -21,7 +21,32 @@
   }
 }
 
+@mixin border-bottom {
+  position: absolute;
+  border-top: unset;
+  top: unset;
+  bottom: 0px;
+  left: -0.0625rem;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: calc(100% + 2px);
+  border-radius: none;
+}
+
+@mixin border-top {
+  position: absolute;
+  top: -4px;
+  left: -0.0625rem;
+  content: ' ';
+  display: block;
+  height: 0%;
+  width: calc(100% + 2px);
+  border-radius: 2px 2px 0 0;
+}
+
 .msds-tab-tile {
+  position: relative;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -31,6 +56,7 @@
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-bottom: 1px solid $gray-4;
+  border-radius: 2px 2px 0 0;
   margin-left: 0;
   margin-right: 0;
   @include msds-font('body-1');
@@ -55,21 +81,39 @@
   }
 
   &:focus {
-    border-top: 4px solid $gray-7;
     outline: none;
+
+    &:after {
+      border-top: 4px solid $gray-7;
+      @include border-top();
+    }
   }
 
-  &:active,
   &--active {
+    border-top: 4px solid $clear-blue;
     border-left: 1px solid $gray-4;
     border-right: 1px solid $gray-4;
-    background: $white;
-    border-top: 4px solid $clear-blue;
     border-bottom: none;
+    background: $white;
     color: $clear-blue;
 
-    &:focus {
+    &:after {
+      @include border-top();
       border-top: 4px solid $clear-blue;
+    }
+
+    &:active {
+      &:after {
+        @include border-top();
+        border-top: 4px solid $clear-blue;
+      }
+    }
+
+    &:focus {
+      &:after {
+        @include border-top();
+        border-top: 4px solid $clear-blue;
+      }
     }
   }
 
@@ -98,20 +142,46 @@
 
   &--small {
     padding: 20px 12px 9px 12px;
-    border-top: 4px solid transparent;
+    border-top: 0px solid transparent;
     border-left: none;
     border-right: none;
     text-align: center;
     min-width: 120px;
     @include msds-font('body-2');
+
     svg {
       max-width: 80px;
       max-height: 60px;
       margin-bottom: 12px;
     }
+
+    &:focus {
+      &:after {
+        @include border-bottom();
+        bottom: -1px;
+        border-top: unset;
+        border-bottom: 3px solid $gray-7;
+      }
+    }
+
     &.msds-tab-tile--active {
-      border-bottom: 4px solid $clear-blue;
       background-color: transparent;
+      &:after {
+        @include border-bottom();
+        border-top: unset;
+        border-bottom: 3px solid $clear-blue;
+      }
+      &:active {
+        &:after {
+          @include border-bottom();
+          border-top: unset;
+          border-bottom: 3px solid $clear-blue;
+        }
+      }
+
+      &.msds-tab-tile {
+        border-top: unset;
+      }
     }
   }
 }
