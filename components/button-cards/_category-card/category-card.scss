@@ -70,6 +70,8 @@
   }
 
   &--dark {
+    box-shadow: none;
+
     .msds-category-card__header {
       background: $rgba-10;
       &:active {
@@ -163,7 +165,6 @@
   &__header-body {
     padding: 24px 16px 24px 18px;
     width: 90%;
-    height: fit-content;
   }
 
   &__header-icon-container {
@@ -185,9 +186,10 @@
     border-radius: 2px;
     background-color: $white;
     border-radius: 0 0 2px 2px;
+    border-top: 4px solid transparent;
 
     &-body {
-      padding: 24px 20px 32px 20px;
+      padding: 20px 20px 32px 20px;
       color: $gray-9;
     }
   }
