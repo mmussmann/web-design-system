@@ -1,46 +1,14 @@
-const setMaximumHeight = elements => {
-  const elementsHeights = []
-  let maximumElementHeight = 0
+import { setCardContentMaximumHeight, resetCardContentHeights } from 'components/button-cards/card.js'
 
-  for (let i = 0; i < elements.length; i++) {
-    elementsHeights.push(elements[i].clientHeight)
-  }
+window.addEventListener('load', function() {
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__header-body')
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__content-body')
+})
 
-  maximumElementHeight = Math.max(...elementsHeights)
+window.onresize = function() {
+  resetCardContentHeights('.msds-category-card__header-body')
+  resetCardContentHeights('.msds-category-card__content-body')
 
-  for (let i = 0; i < elements.length; i++) {
-    elements[i].parentNode.style.height = maximumElementHeight + 'px'
-  }
-}
-
-function cleanInlineStyles(array) {
-  array.forEach(element => {
-    element.parentNode.style = null
-  })
-}
-
-function init() {
-  const headerElements = document.querySelectorAll('.msds-category-card__header-body')
-  const contentElements = document.querySelectorAll('.msds-category-card__content-body')
-
-  setMaximumHeight(headerElements)
-  setMaximumHeight(contentElements)
-}
-
-init()
-
-window.onresize = resize
-
-function resize() {
-  const mobileBreakpoint = 767
-  const headerElements = document.querySelectorAll('.msds-category-card__header-body')
-  const contentElements = document.querySelectorAll('.msds-category-card__content-body')
-
-  if (document.documentElement.clientWidth > mobileBreakpoint) {
-    setMaximumHeight(headerElements)
-    setMaximumHeight(contentElements)
-  } else {
-    cleanInlineStyles(headerElements)
-    cleanInlineStyles(contentElements)
-  }
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__header-body')
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__content-body')
 }
