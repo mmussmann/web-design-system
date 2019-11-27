@@ -1,17 +1,14 @@
-import { setRowBySection, resetHeights } from 'components/button-cards/card.js'
-
-function setRowHeights() {
-  setRowBySection('.msds-category-card__header-body')
-  setRowBySection('.msds-category-card__content-body')
-}
-
-window.onresize = function() {
-  resetHeights('.msds-category-card__header-body')
-  resetHeights('.msds-category-card__content-body')
-
-  setRowHeights()
-}
+import { setCardContentMaximumHeight, resetCardContentHeights } from 'components/button-cards/card.js'
 
 window.addEventListener('load', function() {
-  setRowHeights()
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__header-body')
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__content-body')
 })
+
+window.onresize = function() {
+  resetCardContentHeights('.msds-category-card__header-body')
+  resetCardContentHeights('.msds-category-card__content-body')
+
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__header-body')
+  setCardContentMaximumHeight('.card-row', '.msds-category-card__content-body')
+}
