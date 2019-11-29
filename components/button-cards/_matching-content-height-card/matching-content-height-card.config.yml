@@ -1,0 +1,18 @@
+status: 'wip'
+notes: 'Overview of available colors'
+context:
+  headline: 'Deployment Best Practices'
+  content: 'Ask ideas and share ideas and experiences.'
+  headlineLong: 'Video Tutorials on Milestone Products'
+  contactPerson: 'Lars Thinggaard'
+  contactPosition: 'President & CEO, Milestone Systems'
+  contactEmail: 'Contact'
+  contactSocialMediaLink: 'Visit on LinkedIn'
+  placeholderImg: '//placehold.it/300'
+  headlineNoImage: 'APAC & Corporate'
+  contactPersonNoImage: 'Pernille Larsen'
+  contactPositionNoImage: 'Corporate Communications Manager and PR & Communications Manager APAC'
+  contactEmailNoImage: 'Contact'
+  contactSocialMediaLinkNoImage: 'Visit on LinkedIn'
+  placeholderImgNoImage: '//placehold.it/300'
+  
