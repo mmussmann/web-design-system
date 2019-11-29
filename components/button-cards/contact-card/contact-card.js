@@ -7,7 +7,6 @@ window.addEventListener('load', function() {
       '.msds-contact-card__body-contact-person',
       '.msds-contact-card__body-contact-position',
       '.msds-contact-card__body-contact-details'
-    ],
-    waitForImages: false
+    ]
   })
 })
