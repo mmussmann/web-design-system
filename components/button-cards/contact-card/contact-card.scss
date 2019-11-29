@@ -110,6 +110,8 @@
 
   &__headline {
     color: $gray-10;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 16px;
     z-index: 2;
     @include msds-font('header-4');
