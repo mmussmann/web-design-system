@@ -28,13 +28,25 @@ module.exports = {
       fix: true
     }),
     new MiniCssExtractPlugin(),
-    new SVGSpritemapPlugin('src/svg/**/*.svg', {
+    new SVGSpritemapPlugin('src/svg/button/**/*.svg', {
       output: {
-        filename: 'msds-spritemap.svg',
+         filename: 'msds-spritemap.svg',
+         svgo: true,
+        svg: {
+          sizes: false
+        }
+      },
+      sprite: {
+        prefix: false,
+      }
+    }),
+    new SVGSpritemapPlugin('src/svg/rich/**/*.svg', {
+      output: {
+        filename: 'rich-icon-spritemap-build-only.svg',
         svgo: {
           plugins: [
             { cleanupAttrs: true },
-            { inlineStyles: true },
+            { inlineStyles: false },
             { removeDoctype: true },
             { removeXMLProcInst: true },
             { removeComments: true },
@@ -53,7 +65,7 @@ module.exports = {
             { minifyStyles: false },
             { convertStyleToAttrs: true },
             { convertColors: true },
-            { convertPathData: false },
+            { convertPathData: true },
             { convertTransform: true },
             { removeUnknownsAndDefaults: true },
             { removeNonInheritableGroupAttrs: true },
@@ -67,7 +79,7 @@ module.exports = {
             { moveGroupAttrsToElems: true },
             { collapseGroups: true },
             { removeRasterImages: false },
-            { mergePaths: true },
+            { mergePaths: false },
             { convertShapeToPath: true },
             { convertEllipseToCircle: true },
             { sortAttrs: false },
@@ -93,7 +105,7 @@ module.exports = {
       },
       styles: { 
         format: 'data',
-        filename: path.join(__dirname, 'src/scss/_sprites.scss'),
+        filename: path.join(__dirname, 'src/scss/rich-icons.scss'),
         variables : { 
           sizes: 'sprite-sizes'
         }

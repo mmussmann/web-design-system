@@ -1,51 +1,3 @@
-.msds-right-arrow {
-  @include sprite('right-arrow');
-  height: map-get(map-get($sprite-sizes, 'right-arrow'), 'height');
-  width: map-get(map-get($sprite-sizes, 'right-arrow'), 'width');
-}
-
-.msds-email {
-  @include sprite('email');
-  height: map-get(map-get($sprite-sizes, 'email'), 'height');
-  width: map-get(map-get($sprite-sizes, 'email'), 'width');
-}
-
-.msds-phone {
-  @include sprite('phone');
-  height: map-get(map-get($sprite-sizes, 'phone'), 'height');
-  width: map-get(map-get($sprite-sizes, 'phone'), 'width');
-}
-
-.msds-linkedin {
-  @include sprite('linkedin');
-  height: map-get(map-get($sprite-sizes, 'linkedin'), 'height');
-  width: map-get(map-get($sprite-sizes, 'linkedin'), 'width');
-}
-
-.msds-publish {
-  @include sprite('publish');
-  height: map-get(map-get($sprite-sizes, 'publish'), 'height');
-  width: map-get(map-get($sprite-sizes, 'publish'), 'width');
-}
-
-.msds-cross {
-  @include sprite('cross');
-  height: map-get(map-get($sprite-sizes, 'cross'), 'height');
-  width: map-get(map-get($sprite-sizes, 'cross'), 'width');
-}
-
-.msds-quote {
-  @include sprite('quote');
-  height: map-get(map-get($sprite-sizes, 'quote'), 'height');
-  width: map-get(map-get($sprite-sizes, 'quote'), 'width');
-}
-
-.msds-download {
-  @include sprite('download');
-  height: map-get(map-get($sprite-sizes, 'download'), 'height');
-  width: map-get(map-get($sprite-sizes, 'download'), 'width');
-}
-
 .msds-logo-diamond {
   @include sprite('logo-diamond');
   height: map-get(map-get($sprite-sizes, 'logo-diamond'), 'height');
@@ -63,13 +15,6 @@
   height: map-get(map-get($sprite-sizes, 'dome-cam-8'), 'height');
   width: map-get(map-get($sprite-sizes, 'dome-cam-8'), 'width');
 }
-
-.msds-dome-cam-8-animated {
-  @include sprite('dome-cam-8-animated');
-  height: map-get(map-get($sprite-sizes, 'dome-cam-8-animated'), 'height');
-  width: map-get(map-get($sprite-sizes, 'dome-cam-8-animated'), 'width');
-}
-
 .msds-cam-group-small {
   @include sprite('cam-group-small');
   height: map-get(map-get($sprite-sizes, 'cam-group-small'), 'height');

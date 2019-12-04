@@ -22,7 +22,7 @@ fractal.web.set('builder.dest', path.join(__dirname, '/build'))
 fractal.web.set('server.sync', true)
 fractal.web.set('server.syncOptions', {
   watchOptions: {
-    ignored: path.resolve('src/scss/_sprites.scss'),
+    ignored: path.resolve('src/scss/rich-icons.scss'),
 }
 })
 
