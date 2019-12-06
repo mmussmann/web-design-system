@@ -9,4 +9,3 @@ import 'components/button-cards/solution-card/solution-card.js'
 import 'components/button-cards/_category-card/category-card.js'
 import 'components/colors/background-colors.js'
 import 'components/colors/text-colors.js'
-

@@ -2,116 +2,34 @@
   margin-top: 20px;
 }
 
-.msds-generic-card {
+.msds-tag {
+  width: 106px;
+  height: 26px;
   display: flex;
-  flex-direction: column;
-  background: $white;
-  height: 100%;
-  border-radius: 2px;
-  transition-duration: 0.3s;
-  box-shadow: $shadow-small;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 
-  &--link {
-    color: $black;
-    text-decoration: none;
-  }
-
-  &--small {
-    .msds-generic-card__body-heading {
-      padding-top: 20px;
-    }
-  }
-
-  &--vertical-aligned {
+.msds-solution-card {
+  padding-top: 20px;
+  background-color: #fff;
+  &__header {
     display: flex;
-    flex: 1 0 auto;
-  }
-
-  &--dark-theme {
-    background-color: rgba(0, 0, 0, 0.1);
-
-    .msds-generic-card {
-      &__body {
-        background: transparent;
-        color: $white;
-      }
-    }
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.3);
-      .msds-generic-card__body {
-        .msds-generic-card__body-heading {
-          color: $white;
-          text-decoration: underline;
-        }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-logo-container {
+      width: 110px;
+      height: 62px;
+      &-logo {
+        height: 100%;
+        width: 100%;
       }
     }
   }
-
-  &--svg {
-    .msds-generic-card__frame-image {
-      top: 20px;
-      height: 75%;
-    }
-  }
-
-  &:active {
-    box-shadow: 0 0 0 4px rgba(157, 173, 183, 0.5), 0 12px 36px 0 rgba(2, 56, 82, 0.12);
-    outline: 4px solid rgba(157, 173, 183, 0.5);
-    border-radius: 2px 2px 0 0;
-  }
-  &:focus {
-    box-shadow: none;
-    outline: 4px solid rgba(157, 173, 183, 0.5);
-  }
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
-    box-shadow: $shadow-large;
-    text-decoration: none;
-
-    .msds-generic-card__frame {
-      &-image {
-        transform: scale(1.1);
-        transition: all 0.8s ease-in-out;
-      }
-    }
-    .msds-generic-card {
-      &__body-heading {
-        color: $clear-blue;
-      }
-    }
-  }
-
-  &__frame {
-    overflow: hidden;
-
-    &-image {
-      transition-duration: 0.3s;
-      display: block;
-      margin: 0;
-      max-width: 100%;
-      height: auto;
-      border-radius: 2px 2px 0 0;
-    }
-  }
-
   &__body {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: $white;
-    border-radius: 0 0 2px 2px;
-    &-heading {
-      @include msds-font('header-3');
-      margin: 0;
-      padding-top: 24px;
-      padding-bottom: 8px;
-    }
-
-    &-description {
-      @include msds-font('body-1');
-      margin: 0;
-      padding-bottom: 32px;
-    }
+  }
+  &__footer {
   }
 }
