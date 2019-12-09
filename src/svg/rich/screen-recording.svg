@@ -1,0 +1,707 @@
+<svg width="156" height="114" viewBox="0 0 156 114" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.icon-blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.icon-blink2 {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  animation-delay: 500ms;
+}
+
+.icon-blink3 {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  animation-delay: 350ms;
+}
+
+.icon-blink4 {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  animation-delay: 450ms;
+}
+
+.icon-blink5 {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  animation-delay: 500ms;
+}
+
+#camara-numer {
+  stroke-dasharray: 5;
+  stroke-dashoffset: 2;
+  animation: dash 2s linear forwards;
+  -webkit-animation: dash 2s linear forwards;
+}
+
+.test-stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-miterlimit: 5;
+}
+
+.scale-height {
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 86%;
+  animation-name: scale-height;
+}
+
+.animate-line {
+  stroke-dasharray: 241;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 3s linear forwards;
+  -o-animation: dash 3s linear forwards;
+  -moz-animation: dash 3s linear forwards;
+  animation: dash 3s linear forwards;
+}
+
+.animate-line-long {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash-long 4s linear forwards;
+  -o-animation: dash-long 4s linear forwards;
+  -moz-animation: dash-long 4s linear forwards;
+  animation: dash-long 4s linear forwards;
+}
+
+.number3-dash-animate {
+  stroke-dasharray: 65;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash-number3 2s linear forwards;
+  -o-animation: dash-number3 2s linear forwards;
+  -moz-animation: dash-number3 2s linear forwards;
+  animation: dash-number3 2s linear forwards;
+}
+
+.backup-local-animation {
+  -webkit-animation: backup-local-animation 2s ease infinite;
+  -o-animation: backup-local-animation 2s ease infinite;
+  -moz-animation: backup-local-animation 2s ease infinite;
+  animation: backup-local-animation 2s ease infinite;
+}
+
+.calender {
+  -webkit-animation: calender 500ms ease forwards;
+  -o-animation: calender 500ms ease forwards;
+  -moz-animation: calender 500ms ease forwards;
+  animation: calender 500ms ease forwards;
+}
+
+.calender-blue-month {
+  -webkit-animation: calender-blue 500ms ease forwards;
+  -o-animation: calender-blue 500ms ease forwards;
+  -moz-animation: calender-blue 500ms ease forwards;
+  animation: calender-blue 500ms ease forwards;
+  fill: #cad3d6;
+  animation-delay: 1200ms;
+}
+
+.calender-blue-week {
+  -webkit-animation: calender-blue 500ms ease forwards;
+  -o-animation: calender-blue 500ms ease forwards;
+  -moz-animation: calender-blue 500ms ease forwards;
+  animation: calender-blue 500ms ease forwards;
+  fill: #cad3d6;
+  animation-delay: 400ms;
+}
+
+.calender:nth-of-type(2) {
+  animation-delay: 50ms;
+}
+
+.calender:nth-of-type(3) {
+  animation-delay: 100ms;
+}
+
+.calender:nth-of-type(18) {
+  animation-delay: 150ms;
+}
+
+.calender:nth-of-type(5) {
+  animation-delay: 200ms;
+}
+
+.calender:nth-of-type(6) {
+  animation-delay: 250ms;
+}
+
+.calender:nth-of-type(7) {
+  animation-delay: 300ms;
+}
+
+.calender:nth-of-type(8) {
+  animation-delay: 350ms;
+}
+
+.calender:nth-of-type(9) {
+  animation-delay: 400ms;
+}
+
+.calender:nth-of-type(10) {
+  animation-delay: 450ms;
+}
+
+.calender:nth-of-type(11) {
+  animation-delay: 500ms;
+}
+
+.calender:nth-of-type(14) {
+  animation-delay: 550ms;
+}
+
+.calender:nth-of-type(13) {
+  animation-delay: 600ms;
+}
+
+.calender:nth-of-type(12) {
+  animation-delay: 650ms;
+}
+
+.calender:nth-of-type(15) {
+  animation-delay: 700ms;
+}
+
+.calender:nth-of-type(16) {
+  animation-delay: 750ms;
+}
+
+.calender:nth-of-type(17) {
+  animation-delay: 800ms;
+}
+
+.calender:nth-of-type(4) {
+  animation-delay: 850ms;
+}
+
+.calender:nth-of-type(19) {
+  animation-delay: 900ms;
+}
+
+.calender:nth-of-type(20) {
+  animation-delay: 950ms;
+}
+
+.calender:nth-of-type(21) {
+  animation-delay: 1000ms;
+}
+
+.calender:nth-of-type(25) {
+  animation-delay: 1050ms;
+}
+
+.calender:nth-of-type(23) {
+  animation-delay: 1100ms;
+}
+
+.calender:nth-of-type(24) {
+  animation-delay: 11500ms;
+}
+
+.calender:nth-of-type(22) {
+  animation-delay: 1200ms;
+}
+
+.calender:nth-of-type(26) {
+  animation-delay: 1250ms;
+}
+
+.calender:nth-of-type(27) {
+  animation-delay: 1300ms;
+}
+
+.calender:nth-of-type(28) {
+  animation-delay: 1350ms;
+}
+
+.calender:nth-of-type(29) {
+  animation-delay: 1400ms;
+}
+
+.animate-line-check-marks-month {
+  -webkit-animation: animate-line-check-marks 1s linear forwards;
+  -o-animation: animate-line-check-marks 1s linear forwards;
+  -moz-animation: animate-line-check-marks 1s linear forwards;
+  animation: animate-line-check-marks 1s linear forwards;
+  animation-delay: 1800ms;
+  opacity: 0;
+}
+
+.animate-line-check-marks-week {
+  -webkit-animation: animate-line-check-marks 1s linear forwards;
+  -o-animation: animate-line-check-marks 1s linear forwards;
+  -moz-animation: animate-line-check-marks 1s linear forwards;
+  animation: animate-line-check-marks 1s linear forwards;
+  animation-delay: 800ms;
+  opacity: 0;
+}
+
+.camara-detect-right {
+  -webkit-animation: camara-detect-right 5s linear forwards;
+  -o-animation: camara-detect-right 5s linear forwards;
+  -moz-animation: camara-detect-right 5s linear forwards;
+  animation: camara-detect-right 5s linear forwards;
+  transform-origin: center;
+}
+
+.camara-detect-left {
+  -webkit-animation: camara-detect-left 5s linear forwards;
+  -o-animation: camara-detect-left 5s linear forwards;
+  -moz-animation: camara-detect-left 5s linear forwards;
+  animation: camara-detect-left 5s linear forwards;
+  transform-origin: center;
+}
+
+.cloud-1 {
+  -webkit-animation: cloud-ani 30s ease infinite;
+  -o-animation: cloud-ani 30s ease infinite;
+  -moz-animation: cloud-ani 30s ease infinite;
+  animation: cloud-ani 30s ease infinite;
+}
+
+.cloud-2 {
+  -webkit-animation: cloud-ani-fast-out 13s ease infinite;
+  -o-animation: cloud-ani-fast-out 13s ease infinite;
+  -moz-animation: cloud-ani-fast-out 13s ease infinite;
+  animation: cloud-ani-fast-out 13s ease infinite;
+  animation-delay: 1000ms;
+}
+
+.cloud-3 {
+  -webkit-animation: cloud-ani 12s ease infinite;
+  -o-animation: cloud-ani 12s ease infinite;
+  -moz-animation: cloud-ani 12s ease infinite;
+  animation: cloud-ani 12s ease infinite;
+  animation-delay: 500ms;
+}
+
+.camara-move {
+  animation: camara-move-ani 3s linear infinite;
+}
+
+.rotate {
+  transform-origin: center 11%;
+  animation-name: rotate;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes scale-height {
+  0% {
+    transform: scaleY(0) translateY(-6%);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0) translateY(-6%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 241;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 241;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-long {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash-long {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-number3 {
+  0% {
+    stroke-dashoffset: 70;
+  }
+  90% {
+    stroke-dashoffset: 0;
+    fill: #02375200;
+  }
+  100% {
+    fill: #023852;
+  }
+}
+
+@keyframes dash-number3 {
+  0% {
+    stroke-dashoffset: 70;
+  }
+  90% {
+    stroke-dashoffset: 0;
+    fill: #02375200;
+  }
+  100% {
+    fill: #023852;
+  }
+}
+
+@-webkit-keyframes backup-local-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backup-local-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes calender {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes calender {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes calender-blue {
+  0% {
+    fill: #cad3d6;
+  }
+  100% {
+    fill: #50bfee;
+  }
+}
+
+@-webkit-keyframes animate-line-check-marks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-line-check-marks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes camara-detect-right {
+  0% {
+    transform: translate(0, 0) scaleY(1);
+  }
+  10% {
+    transform: translate(-80%, 0);
+  }
+  20% {
+    transform: translate(-50%, 0);
+    fill: rgb(255, 255, 255);
+  }
+  25% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  26% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  27% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  28% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  29% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  65% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  80% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1);
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@-webkit-keyframes camara-detect-right {
+  0% {
+    transform: translate(0, 0) scaleY(1);
+  }
+  10% {
+    transform: translate(-80%, 0);
+  }
+  20% {
+    transform: translate(-50%, 0);
+    fill: rgb(255, 255, 255);
+  }
+  25% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  26% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  27% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  28% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  29% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  65% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  80% {
+    transform: translate(-50%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1);
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@keyframes camara-detect-left {
+  0% {
+    transform: translate(0, 0) scaleY(1);
+  }
+  10% {
+    transform: translate(80%, 0);
+  }
+  20% {
+    transform: translate(13%, 0);
+    fill: rgb(255, 255, 255);
+  }
+  25% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  26% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  27% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  28% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  29% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  65% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  80% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1);
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@-webkit-keyframes camara-detect-left {
+  0% {
+    transform: translate(0, 0) scaleY(1);
+  }
+  10% {
+    transform: translate(80%, 0);
+  }
+  20% {
+    transform: translate(13%, 0);
+    fill: rgb(255, 255, 255);
+  }
+  25% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  26% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  27% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  28% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgba(255, 230, 0, 0);
+  }
+  29% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  65% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  80% {
+    transform: translate(13%, 0) scaleY(0.5);
+    fill: rgb(255, 231, 0);
+  }
+  100% {
+    transform: translate(0, 0) scaleY(1);
+    fill: rgb(255, 255, 255);
+  }
+}
+
+@keyframes cloud-ani {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  95% {
+    transform: translate(-50%, -1%);
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+    transform: translate(5%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes cloud-ani-fast-out {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  55% {
+    transform: translate(-20%, -1%);
+    opacity: 0;
+  }
+  95% {
+    transform: translate(-50%, -1%);
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+    transform: translate(5%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes camara-move-ani {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-3%, 7%) rotate(-5deg);
+  }
+  30% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(-3%, 7%) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+</style>
+</defs>
+<g fill="none" fill-rule="evenodd"><path d="M91.435049 107.008509v-9.2858761H64.4570395v9.2858761c-.0215825.240798-.0589184.479909-.111766.715786-.1198917.547393-.310342 1.076762-.5665382 1.57473-.7308543 1.468928-2.25477 2.368062-3.8886874 2.294385h36.1235547c-1.6339174.073677-3.1578331-.825457-3.8886873-2.294385-.2595353-.496498-.4501507-1.026326-.5665382-1.57473-.0567381-.235614-.0979368-.474728-.1233281-.715786z" fill="#9DADB7" fill-rule="nonzero"/><path d="M101.563365 111.59341H54.3171619c-.2961048-.001454-.5891099.060542-.8594423.181849-.2623713.118007-.4993143.286226-.6975742.495247-.2016996.2144-.3612276.465132-.4701882.739001-.1151111.287832-.173991.595208-.173434.905373h51.6436408c.002417-.610514-.227857-1.198839-.643641-1.644374-.198929-.20997-.437328-.378293-.701424-.495247-.267667-.121141-.558128-.183155-.851734-.181849z" fill="#CED6DB" fill-rule="nonzero"/><path fill="#71868E" fill-rule="nonzero" d="M64.4493315 97.726502H91.427341v7.73823H64.4493315v-5.8036725z"/><path d="M152.894809 97.7265039H2.97415579c-.28523745 0-.56740971-.0590559-.82861029-.1741121-.24415671-.1139015-.46402917-.274197-.64747223-.472032-.19393524-.1998415-.348265-.43487-.45477216-.6925716-.11155378-.2698339-.16957606-.5590544-.16957606-.8512054V3.17693651c0-.57745824.22500499-1.13203636.62434822-1.54764604.19310456-.19672222.42207534-.35434647.67445024-.46429381.26145042-.11383533.54363429-.17181106.82861029-.17027212H152.921787c.284976-.00153894.56716.05643679.82861.17027212.513843.22272432.919559.639763 1.129222 1.16073453.110712.26860384.165745.55664804.165745.8473362V95.5327137c0 .2919022-.055415.5811325-.165745.8512054-.106507.2577016-.260837.4927301-.454772.6925716-.192084.1979429-.421309.3557422-.67445.4642938-.268631.1227841-.560426.1857194-.855588.1857194z" fill="#023852" fill-rule="nonzero"/><path fill="#0099DA" fill-rule="nonzero" d="M5.48311068 88.0537143H150.393562V5.63769371H5.48311068V67.4468073z"/><path fill="#0082CA" fill-rule="nonzero" d="M11.0983907 11.0583239H5.48311068V5.64156282l5.39560192 5.21169798z"/><path d="M80.4434546 92.8901081c.0024686-.6676363-.2612109-1.3085216-.7322777-1.7797929-.2278447-.2305159-.4990139-.4133195-.7977783-.537807-.3083647-.1313597-.6400874-.1984909-.9750623-.1973398-.3348916-.000302-.666447.0667954-.9750624.1973398-.5985879.2554241-1.0752041.7339094-1.3296305 1.3348447-.2671684.6263754-.2671684 1.3352659 0 1.9616413.2544264.6009354.7310426 1.0794206 1.3296305 1.3348447.3083421.1318717.6399078.2002869.9750624.201194.3352303-.0001644.6669423-.0686097.9750623-.201194.2987644-.1244874.5699336-.307291.7977783-.5378069.2274486-.2290472.4092693-.4995648.5357062-.7970378.1300344-.3098256.1968697-.6426813.1965715-.9788861z" fill="#416A7D" fill-rule="nonzero"/><path fill="#0099DA" fill-rule="nonzero" d="M150.393562 5.64156282v5.41676108H11.0983907l-.2119701-.2050631-5.39560192-5.21169798z"/><path d="M150.393562 11.0583239v76.9953904H91.1305829L75.1094993 72.6662435 59.0999776 57.2749037 43.090456 41.8796948 27.1002043 26.4767476l-5.3956019-5.2078289-5.3956019-5.2078289a4759.42772511 4759.42772511 0 01-5.1913398-5.0027659H150.393562z" fill="#31A9E0" fill-rule="nonzero"/><path class="camara-detect-left" fill="#FFF" fill-rule="nonzero" d="M15.6923603 20.5918235v-1.2729388h-4.7712537v61.8942341h4.7712537V79.944049H12.185219V20.5918235h1.7535707z"/><path class="camara-detect-right" fill="#FFF" fill-rule="nonzero" d="M140.257538 79.944049v1.2690698h4.771254V19.3188847h-4.771254v1.2729388h3.507141V79.944049h-1.75357z"/><path fill="#FFF" fill-rule="nonzero" d="M83.1913401 45.8997053h-7.0258445v-7.0533968h-1.2641124v7.0533968h-7.0258445v1.2690698h7.0258445v7.0533968h1.2641124v-7.0533968h7.0258445v-.6345349z"/><path d="M28.4760828 25.2966675h1.5724325c.5534003-.0367282 1.1074365.0615044 1.6148266.2863145.4189538.2272286.6606809.685106.6127862 1.1607345.0132209.3162721-.095873.6254286-.3044661.8628127-.223735.2300249-.515917.3807628-.8324643.4294718.1630566.0374716.3109095.1238325.4239402.2476233.1135763.1453071.2045378.3070709.2697801.4797703l.4200861.9982317.4200862.9943626h-1.2024484l-.3044662-.773823-.3044661-.7738231c-.0587259-.2166793-.1730056-.414118-.3314441-.572629-.1995701-.1225983-.4343646-.1743739-.6667422-.1470264h-.2890501v2.2673015h-1.0983904v-5.4593214zm1.0945364 2.3446837h.3198821c.3273083.0243821.6553162-.036944.9519383-.1779793.2055707-.121065.3239038-.3496368.3044661-.5881055.0210882-.2449479-.1108327-.4774848-.3314441-.5842363-.2955115-.1095134-.6106025-.1556444-.9249603-.1354191h-.3198821v1.4857402zm3.7537973-2.3446837h3.2180911v.9053729h-2.1351167v1.3154991h1.9655407v.8821583h-1.9655407v1.4393108h2.1620948v.9131112h-3.2412152v-5.4554523zm8.3053729 5.3316406c-.1903806.0634625-.3866383.1075345-.5858082.1315499-.2260196.0315223-.4539688.0470371-.6821582.0464294-.7786795.0347069-1.5415558-.2279554-2.1351168-.7351319-1.0949579-1.135618-1.0949579-2.9385602 0-4.0741782.5616733-.5135308 1.2985266-.7905881 2.0580368-.773823.2215522-.0010679.442952.0118547.6628882.0386911.2217004.031647.4398271.0847728.6513262.1586338l-.03854.472032-.03854.472032c-.1797803-.084445-.3685592-.1480508-.5626842-.1895866-.193792-.0413041-.3915697-.0607701-.5896622-.0580367-.4822213-.0241113-.953593.148984-1.3065065.4797703-.3447576.3738832-.5228884.8726495-.4933121 1.381274-.0205182.519874.1684131 1.0261315.5241441 1.4044888.3487012.3291795.8125857.50712 1.2910905.4952468.1975279.0018517.3948372-.0136842.5896622-.0464294.2082357-.0338272.4123404-.0895925.6089322-.166372v.4759012l.046248.4875085z" fill="#FFE700" fill-rule="nonzero"/><path class="icon-blink" d="M25.2811157 28.0243936c.0087718-1.3197009-.9134706-2.4613285-2.2015012-2.7251993-1.2880306-.2638709-2.582091.4237165-3.0890744 1.6413519-.5069835 1.2176355-.085285 2.6252225 1.0066439 3.360076 1.0919289.7348535 2.5491027.5917223 3.4784454-.341671.5109476-.5137638.800246-1.2085792.8054863-1.9345576z" fill="#FFE700" fill-rule="nonzero"/></g></svg>

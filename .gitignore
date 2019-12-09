@@ -3,3 +3,4 @@ build
 public
 .vs
 .DS_Store
+src/scss/rich-icons.scss
