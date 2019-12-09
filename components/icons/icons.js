@@ -18,8 +18,8 @@ function appendIconElementToContainer(iconsContainer, icon, isButtonIcon) {
 function createIconElement(icon) {
   const iconElement = document.createElement('div')
 
-  iconElement.classList.add(`msds-${icon}`)
-  iconElement.setAttribute('title', icon)
+  iconElement.classList.add(icon.value)
+  iconElement.setAttribute('title', icon.name)
 
   return iconElement
 }
@@ -28,8 +28,8 @@ function createButtonIconElement(icon) {
   const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
   const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use')
 
-  useElement.setAttribute('href', `/msds-spritemap.svg#${icon}`)
-  svgElement.setAttribute('title', icon)
+  useElement.setAttribute('href', icon.previewValue)
+  svgElement.setAttribute('title', icon.name)
   svgElement.appendChild(useElement)
 
   return svgElement
