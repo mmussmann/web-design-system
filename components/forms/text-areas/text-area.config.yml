@@ -2,6 +2,7 @@ status: 'wip'
 notes: 'Overview of text-areas'
 context:
   placeholder: "Enter your description*"
+  readonlyPlaceholder: "Read Only"
   message: "Please be aware that lorem ipsum dolorem."
   errorMessage: "You have entered and invalid email address. Please try again."
   successMessage: "Looks good!"
