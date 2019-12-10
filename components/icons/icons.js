@@ -1,4 +1,5 @@
 import { buttonIcons, richIcons } from './icons.list'
+const path = require('path')
 
 function init() {
   const iconsContainer = document.querySelector('.msds-icons')
@@ -28,7 +29,9 @@ function createButtonIconElement(icon) {
   const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
   const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use')
 
-  useElement.setAttribute('href', icon.previewValue)
+  console.log(path.resolve('/'))
+
+  useElement.setAttribute('href', path.join(__dirname, icon.previewValue))
   svgElement.setAttribute('title', icon.name)
   svgElement.appendChild(useElement)
 
