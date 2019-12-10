@@ -1,17 +1,18 @@
 import { buttonIcons, richIcons } from './icons.list'
-const path = require('path')
 
 function init() {
   const iconsContainer = document.querySelector('.msds-icons')
 
   if (iconsContainer) {
-    buttonIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true))
+    const path = document.querySelector('.msds-icons').dataset.path
+
+    buttonIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
     richIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon))
   }
 }
 
-function appendIconElementToContainer(iconsContainer, icon, isButtonIcon) {
-  const iconElement = isButtonIcon ? createButtonIconElement(icon) : createIconElement(icon)
+function appendIconElementToContainer(iconsContainer, icon, isButtonIcon, path) {
+  const iconElement = isButtonIcon ? createButtonIconElement(icon, path) : createIconElement(icon)
 
   iconsContainer.appendChild(iconElement)
 }
@@ -25,11 +26,11 @@ function createIconElement(icon) {
   return iconElement
 }
 
-function createButtonIconElement(icon) {
+function createButtonIconElement(icon, path) {
   const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
   const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use')
 
-  useElement.setAttribute('href', path.join(__dirname, icon.previewValue))
+  useElement.setAttribute('href', `${path}${icon.previewValue}`)
   svgElement.setAttribute('title', icon.name)
   svgElement.appendChild(useElement)
 

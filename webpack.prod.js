@@ -26,7 +26,11 @@ module.exports = merge(common, {
                   propList: ['*']
                 }),
                 require('postcss-preset-env'),
-                require('cssnano')
+                require('cssnano')({
+                  preset: ['default', {
+                    svgo: false
+                }]
+                })
               ]
             }
           },
