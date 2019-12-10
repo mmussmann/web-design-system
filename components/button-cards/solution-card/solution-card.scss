@@ -49,6 +49,23 @@
     }
   }
   &__body {
+    &-headline {
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &-list {
+      list-style: none;
+      display: flex;
+      padding-left: 20px;
+      padding-right: 20px;
+      &-item {
+        display: flex;
+        flex-wrap: nowrap;
+        color: #6d6f71;
+        font-size: 12px;
+      }
+    }
   }
   &__footer {
   }
