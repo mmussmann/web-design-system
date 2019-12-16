@@ -109,6 +109,10 @@
         background-color: #f9f9f9;
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
         &:hover {
           text-decoration: underline;
           background-color: #fff;
