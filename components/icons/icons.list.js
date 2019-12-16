@@ -10,7 +10,8 @@ export const buttonIcons = [
   { name: 'Publish', value: '/Static/dist/msds-spritemap.svg#publish', previewValue: '#publish' },
   { name: 'Cross', value: '/Static/dist/msds-spritemap.svg#cross', previewValue: '#cross' },
   { name: 'Quote', value: '/Static/dist/msds-spritemap.svg#quote', previewValue: '#quote' },
-  { name: 'Download', value: '/Static/dist/msds-spritemap.svg#download', previewValue: '#download' }
+  { name: 'Download', value: '/Static/dist/msds-spritemap.svg#download', previewValue: '#download' },
+  { name: 'Checkmark', value: '/Static/dist/msds-spritemap.svg#checkmark', previewValue: '#checkmark' }
 ]
 
 export const richIcons = [

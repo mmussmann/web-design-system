@@ -1,6 +1,6 @@
 context:
   general:
-    cardDescription: 'Cards'
+    cardDescription: 'Solution Cards'
     cardDescriptionDarkTheme: 'Cards Dark Theme'
     cardDescriptionDarkThemeSmall: 'Small Cards Dark Theme'
   card:  

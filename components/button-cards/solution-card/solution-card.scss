@@ -5,17 +5,19 @@
 .msds-tag {
   position: absolute;
   transform: translateY(-50%);
-
   border-radius: 20px;
   right: 20px;
   display: flex;
-
   justify-content: center;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 12px;
   padding-right: 16px;
-  svg {
+  &--center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .msds-icon {
     width: 16px;
     height: 16px;
     margin-right: 8px;
@@ -42,10 +44,12 @@
       width: 100%;
       height: 1px;
       background-color: #dce2e6;
+      margin-bottom: 5px;
     }
     &-headline {
       align-self: flex-start;
       padding-left: 20px;
+      padding-right: 20px;
     }
   }
   &__body {
@@ -53,20 +57,80 @@
       padding-left: 20px;
       font-size: 14px;
       font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 16px;
     }
-    &-list {
-      list-style: none;
-      display: flex;
+    &-description {
       padding-left: 20px;
       padding-right: 20px;
-      &-item {
-        display: flex;
-        flex-wrap: nowrap;
-        color: #6d6f71;
-        font-size: 12px;
-      }
+      color: #6d6f71;
+      font-size: 12px;
     }
   }
   &__footer {
+    &-certification {
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      .icon-container {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--certified {
+          background-color: $yellow;
+        }
+        &--verified {
+          border: 1px solid $gray-3;
+        }
+
+        .msds-icon {
+          width: 8px;
+          height: 6px;
+        }
+      }
+      &-text {
+        font-size: 12px;
+        color: #6d6f71;
+        font-weight: 600;
+      }
+    }
+    &-buttons {
+      display: flex;
+      &--small {
+        flex-direction: column;
+      }
+      &-button {
+        cursor: pointer;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        &:hover {
+          text-decoration: underline;
+          background-color: #fff;
+          background-color: #ebeff2;
+        }
+        &--small {
+          width: 100%;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          &:first-child {
+            border-bottom: 1px solid #dce2e6;
+          }
+        }
+        &--large {
+          width: 50%;
+          padding-top: 18px;
+          padding-bottom: 18px;
+          &:first-child {
+            border-right: 1px solid #dce2e6;
+          }
+        }
+      }
+    }
   }
 }
