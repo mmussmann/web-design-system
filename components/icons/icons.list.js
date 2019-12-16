@@ -2,15 +2,15 @@ export const buttonIcons = [
   {
     name: 'Right Arrow',
     value: '/Static/dist/msds-spritemap.svg#right-arrow',
-    previewValue: '/msds-spritemap.svg#right-arrow'
+    previewValue: '#right-arrow'
   },
-  { name: 'Email', value: '/Static/dist/msds-spritemap.svg#email', previewValue: '/msds-spritemap.svg#email' },
-  { name: 'Phone', value: '/Static/dist/msds-spritemap.svg#phone', previewValue: '/msds-spritemap.svg#phone' },
-  { name: 'Linkedin', value: '/Static/dist/msds-spritemap.svg#linkedin', previewValue: '/msds-spritemap.svg#linkedin' },
-  { name: 'Publish', value: '/Static/dist/msds-spritemap.svg#publish', previewValue: '/msds-spritemap.svg#publish' },
-  { name: 'Cross', value: '/Static/dist/msds-spritemap.svg#cross', previewValue: '/msds-spritemap.svg#cross' },
-  { name: 'Quote', value: '/Static/dist/msds-spritemap.svg#quote', previewValue: '/msds-spritemap.svg#quote' },
-  { name: 'Download', value: '/Static/dist/msds-spritemap.svg#download', previewValue: '/msds-spritemap.svg#download' }
+  { name: 'Email', value: '/Static/dist/msds-spritemap.svg#email', previewValue: '#email' },
+  { name: 'Phone', value: '/Static/dist/msds-spritemap.svg#phone', previewValue: '#phone' },
+  { name: 'Linkedin', value: '/Static/dist/msds-spritemap.svg#linkedin', previewValue: '#linkedin' },
+  { name: 'Publish', value: '/Static/dist/msds-spritemap.svg#publish', previewValue: '#publish' },
+  { name: 'Cross', value: '/Static/dist/msds-spritemap.svg#cross', previewValue: '#cross' },
+  { name: 'Quote', value: '/Static/dist/msds-spritemap.svg#quote', previewValue: '#quote' },
+  { name: 'Download', value: '/Static/dist/msds-spritemap.svg#download', previewValue: '#download' }
 ]
 
 export const richIcons = [

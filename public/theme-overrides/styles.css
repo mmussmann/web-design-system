@@ -146,7 +146,7 @@ body {
 
 [dir='ltr'] .Tree-collection.is-closed .Tree-collectionLabel span::before {
   background-image: none !important;
-  content: url('./../src/demo-img/caret.svg');
+  content: url('./../src/demo-img/right-arrow.svg');
   opacity: 1;
   top: 3px;
   width: 12px;
@@ -158,7 +158,7 @@ body {
 
 .Tree-collectionLabel span::before {
   background-image: none !important;
-  content: url('./../src/demo-img/caret.svg');
+  content: url('./../src/demo-img/right-arrow.svg');
   opacity: 1;
   top: 5px;
   width: 12px;
