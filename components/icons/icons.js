@@ -6,6 +6,9 @@ function init() {
   if (iconsContainer) {
     const path = document.querySelector('.msds-icons').dataset.path
 
+    buttonIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
+    richIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
+
     buttonIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
     richIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon))
   }
