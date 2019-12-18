@@ -1,0 +1,141 @@
+.msds-tag {
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 16px;
+  .msds-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+.msds-solution-card {
+  padding-top: 20px;
+  background-color: #fff;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-logo-container {
+      width: 110px;
+      height: 62px;
+      margin-bottom: 28px;
+      &-logo {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &-tag-container {
+      width: 100%;
+      height: 1px;
+      background-color: #dce2e6;
+      margin-bottom: 5px;
+    }
+    &-headline {
+      align-self: flex-start;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__body {
+    &-headline {
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    &-description {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #6d6f71;
+      font-size: 12px;
+    }
+  }
+  &__footer {
+    &-certification {
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      .icon-container {
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .msds-icon {
+          width: 8px;
+          height: 6px;
+        }
+      }
+      &-text {
+        font-size: 12px;
+        color: #6d6f71;
+        font-weight: 600;
+      }
+    }
+    &-buttons {
+      display: flex;
+
+      &-button {
+        cursor: pointer;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+          background-color: #fff;
+          background-color: #ebeff2;
+        }
+        width: 50%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        &:first-child {
+          border-right: 1px solid #dce2e6;
+        }
+      }
+    }
+  }
+  &--verified {
+    .icon-container {
+      border: 1px solid $gray-3;
+    }
+  }
+  &--certified {
+    .icon-container {
+      background-color: $yellow;
+    }
+  }
+  &--small {
+    .msds-tag {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .msds-solution-card__footer-buttons {
+      flex-direction: column;
+      &-button {
+        width: 100%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        &:first-child {
+          border-bottom: 1px solid #dce2e6;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

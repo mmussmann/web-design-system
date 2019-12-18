@@ -1,0 +1,11 @@
+<svg width="68" height="68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="c" cx="32" cy="32" r="32" fill="#fff" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 1)">
+            <use xlink:href="#c" />
+        </g>
+        <path d="M41.763 33.955L29.642 42.48a1.088 1.088 0 01-1.715-.89V24.078a1.088 1.088 0 011.737-.874l12.12 8.987c.484.358.585 1.04.227 1.522a1.088 1.088 0 01-.248.242z" fill="#0099DA" />
+    </g>
+</svg>
