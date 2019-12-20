@@ -40,81 +40,82 @@ module.exports = {
         prefix: false,
       }
     }),
-    new SVGSpritemapPlugin('src/svg/rich/**/*.svg', {
-      output: {
-        filename: 'rich-icon-spritemap-build-only.svg',
-        svgo: {
-          plugins: [
-            { cleanupAttrs: true },
-            { inlineStyles: false },
-            { removeDoctype: true },
-            { removeXMLProcInst: true },
-            { removeComments: true },
-            { removeMetadata: true },
-            { removeTitle: true },
-            { removeDesc: true },
-            { removeUselessDefs: true },
-            { removeXMLNS: false },
-            { removeEditorsNSData: true },
-            { removeEmptyAttrs: true },
-            { removeHiddenElems: true },
-            { removeEmptyText: true },
-            { removeEmptyContainers: true },
-            { removeViewBox: true },
-            { cleanupEnableBackground: true },
-            { minifyStyles: false },
-            { convertStyleToAttrs: true },
-            { convertColors: true },
-            { convertPathData: true },
-            { convertTransform: true },
-            { removeUnknownsAndDefaults: true },
-            { removeNonInheritableGroupAttrs: true },
-            { removeUselessStrokeAndFill: true },
-            { removeUnusedNS: true },
-            { prefixIds: false },
-            { cleanupIDs: false },
-            { cleanupNumericValues: true },
-            { cleanupListOfValues: false },
-            { moveElemsAttrsToGroup: true },
-            { moveGroupAttrsToElems: true },
-            { collapseGroups: true },
-            { removeRasterImages: false },
-            { mergePaths: false },
-            { convertShapeToPath: true },
-            { convertEllipseToCircle: true },
-            { sortAttrs: false },
-            { sortDefsChildren: true },
-            { removeDimensions: false },
-            { removeAttrs: false },
-            { removeAttributesBySelector: false },
-            { removeElementsByAttr: false },
-            { addClassesToSVGElement: false },
-            { addAttributesToSVGElement: false },
-            { removeOffCanvasPaths: false },
-            { removeStyleElement: false },
-            { removeScriptElement: false },
-            { reusePaths: false }
-          ]
-        },
-        svg: {
-          sizes: false
-        }
-      },
-      sprite: {
-        prefix: false,
-      },
-      styles: { 
-        format: 'data',
-        filename: path.join(__dirname, 'src/scss/rich-icons.scss'),
-        variables : { 
-          sizes: 'sprite-sizes'
-        }
-      }
-    }),
+    // new SVGSpritemapPlugin('src/svg/rich/**/*.svg', {
+    //   output: {
+    //     filename: 'rich-icon-spritemap-build-only.svg',
+    //     svgo: {
+    //       plugins: [
+    //         { cleanupAttrs: true },
+    //         { inlineStyles: false },
+    //         { removeDoctype: true },
+    //         { removeXMLProcInst: true },
+    //         { removeComments: true },
+    //         { removeMetadata: true },
+    //         { removeTitle: true },
+    //         { removeDesc: true },
+    //         { removeUselessDefs: true },
+    //         { removeXMLNS: false },
+    //         { removeEditorsNSData: true },
+    //         { removeEmptyAttrs: true },
+    //         { removeHiddenElems: true },
+    //         { removeEmptyText: true },
+    //         { removeEmptyContainers: true },
+    //         { removeViewBox: true },
+    //         { cleanupEnableBackground: true },
+    //         { minifyStyles: false },
+    //         { convertStyleToAttrs: true },
+    //         { convertColors: true },
+    //         { convertPathData: true },
+    //         { convertTransform: true },
+    //         { removeUnknownsAndDefaults: true },
+    //         { removeNonInheritableGroupAttrs: true },
+    //         { removeUselessStrokeAndFill: true },
+    //         { removeUnusedNS: true },
+    //         { prefixIds: false },
+    //         { cleanupIDs: false },
+    //         { cleanupNumericValues: true },
+    //         { cleanupListOfValues: false },
+    //         { moveElemsAttrsToGroup: true },
+    //         { moveGroupAttrsToElems: true },
+    //         { collapseGroups: true },
+    //         { removeRasterImages: false },
+    //         { mergePaths: false },
+    //         { convertShapeToPath: true },
+    //         { convertEllipseToCircle: true },
+    //         { sortAttrs: false },
+    //         { sortDefsChildren: true },
+    //         { removeDimensions: false },
+    //         { removeAttrs: false },
+    //         { removeAttributesBySelector: false },
+    //         { removeElementsByAttr: false },
+    //         { addClassesToSVGElement: false },
+    //         { addAttributesToSVGElement: false },
+    //         { removeOffCanvasPaths: false },
+    //         { removeStyleElement: false },
+    //         { removeScriptElement: false },
+    //         { reusePaths: false }
+    //       ]
+    //     },
+    //     svg: {
+    //       sizes: false
+    //     }
+    //   },
+    //   sprite: {
+    //     prefix: false,
+    //   },
+    //   styles: { 
+    //     format: 'data',
+    //     filename: path.join(__dirname, 'src/scss/rich-icons.scss'),
+    //     variables : { 
+    //       sizes: 'sprite-sizes'
+    //     }
+    //   }
+    // }),
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
-      { from: 'src/demo-img', to: 'src/demo-img' },
-      { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' }
+      { from: 'src/demo-img', to: 'src/demo-img' },      
+      { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' },      
+      { from: 'components/Progress-Bar/progress-bar-initialization.js', to: 'src/js' }
     ])
   ],
   module: {

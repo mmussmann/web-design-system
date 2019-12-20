@@ -1,0 +1,62 @@
+.msds-progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__progression-counter {
+    @include msds-font('header-4');
+    color: $gray-10;
+    margin-bottom: 16px;
+  }
+
+  &__base-bar {
+    position: relative;
+    background-color: $rgba-11;
+    width: 100%;
+    height: 12px;
+    border-radius: 25px;
+  }
+
+  &__progression-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $clear-blue-gradient;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &--completed {
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  &--small {
+    .msds-progress-bar__progression-counter {
+      @include msds-font('header-5');
+      text-align: center;
+    }
+
+    .msds-progress-bar__base-bar {
+      height: 8px;
+    }
+  }
+
+  &--dark {
+    .msds-progress-bar__progression-counter {
+      color: $white;
+    }
+
+    .msds-progress-bar__base-bar {
+      background-color: $rgba-9;
+    }
+
+    .msds-progress-bar__progression-bar {
+      background: $yellow-gradient;
+    }
+  }
+}
