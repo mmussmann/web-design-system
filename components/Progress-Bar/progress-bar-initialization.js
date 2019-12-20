@@ -82,7 +82,7 @@ window.addEventListener('load', function() {
         darkThemeProgressBar.init("DarkThemeProgressBar", darkThemeBaseNumberElement.value, 0); 
 
         document.querySelector('#DarkThemePrevStep').addEventListener('click', event => {
-            progressBar.prev();
+            darkThemeProgressBar.prev();
         })
     
         document.querySelector('#DarkThemeNextStep').addEventListener('click', event => {
