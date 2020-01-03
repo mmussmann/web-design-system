@@ -121,6 +121,25 @@
       background-color: $yellow;
     }
   }
+
+  @include media-breakpoint-between(md, lg) {
+    .msds-tag {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .msds-solution-card__footer-buttons {
+      flex-direction: column;
+      &-button {
+        width: 100%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        &:first-child {
+          border-bottom: 1px solid $gray-4;
+          border-right: none;
+        }
+      }
+    }
+  }
   &--small {
     .msds-tag {
       left: 50%;
