@@ -242,3 +242,21 @@
   height: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'height');
   width: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'width');
 }
+
+.msds-feature-rich {
+  @include sprite('feature-rich');
+  height: map-get(map-get($sprite-sizes, 'feature-rich'), 'height');
+  width: map-get(map-get($sprite-sizes, 'feature-rich'), 'width');
+}
+
+.msds-reduced-investment {
+  @include sprite('reduced-investment');
+  height: map-get(map-get($sprite-sizes, 'reduced-investment'), 'height');
+  width: map-get(map-get($sprite-sizes, 'reduced-investment'), 'width');
+}
+
+.msds-ease-of-use {
+  @include sprite('ease-of-use');
+  height: map-get(map-get($sprite-sizes, 'ease-of-use'), 'height');
+  width: map-get(map-get($sprite-sizes, 'ease-of-use'), 'width');
+}
