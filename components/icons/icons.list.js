@@ -58,5 +58,6 @@ export const richIcons = [
   { name: 'GDPR Ready', value: 'msds-gdpr-ready' },
   { name: 'Reduced Investment', value: 'msds-reduced-investment' },
   { name: 'Feature Rich', value: 'msds-feature-rich' },
-  { name: 'Ease Of Use', value: 'msds-ease-of-use' }
+  { name: 'Ease Of Use', value: 'msds-ease-of-use' },
+  { name: 'Wifi', value: 'msds-wifi' }
 ]
