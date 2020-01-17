@@ -2,7 +2,33 @@ const tabs = document.querySelectorAll('.msds-tabs__tab')
 const tabContainers = document.querySelectorAll('.msds-tabs__tabs-container')
 const mediaQueryList = window.matchMedia('(max-width: 992px)')
 const stickyTabsContainers = document.querySelectorAll('.msds-tabs__sticky-container')
+const centerTabClass = 'msds-tabs--center-tabs'
 const smallTabsClass = 'msds-tabs__tab--small'
+const activeTabClass = 'msds-tabs__tab--active'
+const stickyTabContentTopPadding = '40px'
+const enterKeyCode = 13
+
+function init() {
+  locateTabsToCenter()
+  applySmallTabs(mediaQueryList)
+  mediaQueryList.addListener(applySmallTabs)
+  bindEvents()
+}
+
+function bindEvents() {
+  tabs.forEach(tab => (tab.onclick = () => setTabActive(tab)))
+  window.onscroll = setStickyTabsClass
+  document.body.onkeyup = setTabActiveOnEnterKey
+}
+
+function locateTabsToCenter() {
+  for (let i = 0; i < tabContainers.length; i++) {
+    const numberOftabsAndSpacers = tabContainers[i].childElementCount
+    if (numberOftabsAndSpacers <= 4) {
+      tabContainers[i].parentElement.classList.add(centerTabClass)
+    }
+  }
+}
 
 function applySmallTabs(mediaQueryList) {
   if (mediaQueryList.matches) {
@@ -16,6 +42,49 @@ function applySmallTabs(mediaQueryList) {
       tab.classList.remove(smallTabsClass)
     }
   }
+}
+
+function setTabActive(clickedTab) {
+  const tabContainer = clickedTab.parentElement
+  const contentContainers = tabContainer.parentElement.parentElement.querySelectorAll('.msds-tabs__content-container')
+  const shownContent = tabContainer.parentElement.parentElement.querySelector('.msds-tabs__content-container--visible')
+  const activeTab = tabContainer.querySelector('.' + activeTabClass)
+
+  if (activeTab != null) {
+    activeTab.classList.remove(activeTabClass)
+  }
+
+  clickedTab.classList.add(activeTabClass)
+
+  if (shownContent != null) {
+    shownContent.classList.remove('msds-tabs__content-container--visible')
+  }
+  if (contentContainers.length > clickedTab.dataset.index) {
+    contentContainers[clickedTab.dataset.index].classList.add('msds-tabs__content-container--visible')
+  }
+
+  ensureCardsContentMatchingHeights()
+  scrollToElement(clickedTab)
+}
+
+function setTabActiveOnEnterKey(event) {
+  if (event.keyCode == enterKeyCode) {
+    tabs.forEach(tab => tab === document.activeElement && setTabActive(tab))
+  }
+}
+
+function setStickyTabsClass() {
+  stickyTabsContainers.forEach(stickyTabsContainer => {
+    const stickyTabRow = stickyTabsContainer.querySelector('.msds-tabs__container')
+    const tabContent = stickyTabsContainer.querySelector('.msds-tabs__content-container')
+    const shouldAddStickyClass = hasElementHitTop(stickyTabRow, tabContent)
+
+    if (shouldAddStickyClass) {
+      stickyTabRow.classList.add('msds-tabs--sticky-tabs')
+    } else {
+      stickyTabRow.classList.remove('msds-tabs--sticky-tabs')
+    }
+  })
 }
 
 function scrollToElement(tab) {
@@ -35,102 +104,16 @@ function scrollToElement(tab) {
   }
 }
 
-function setActive(clickedTab) {
-  const tabContainer = clickedTab.parentElement
-  const tabs = tabContainer.querySelectorAll('.msds-tabs__tab')
-  const activeClass = 'msds-tabs__tab--active'
-  const contentContainers = tabContainer.parentElement.parentElement.querySelectorAll('.msds-tabs__content-container')
-  const shownContent = tabContainer.parentElement.parentElement.querySelector('.msds-tabs__content-container--visible')
-
-  for (let i = 0; i < tabs.length; i++) {
-    const tab = tabs[i]
-    const isActive = tab.classList.contains(activeClass)
-
-    if (isActive) {
-      tab.classList.remove(activeClass)
-    }
-  }
-
-  clickedTab.classList.add(activeClass)
-
-  if (shownContent != null) {
-    shownContent.classList.remove('msds-tabs__content-container--visible')
-  }
-  if (contentContainers.length > clickedTab.dataset.index) {
-    contentContainers[clickedTab.dataset.index].classList.add('msds-tabs__content-container--visible')
-  }
-
-  ensureCardsContentMatchingHeights()
-  scrollToElement(clickedTab)
-}
-
 function hasElementHitTop(tabRow, contentElement) {
   const tabRowBounding = tabRow.getBoundingClientRect()
   const contentElementBounding = contentElement.getBoundingClientRect()
+
   if (tabRowBounding.top <= 0 && contentElementBounding.bottom >= 0) {
-    contentElement.style.paddingTop = 40 + 'px'
+    contentElement.style.paddingTop = stickyTabContentTopPadding
     return true
   } else {
     contentElement.style.paddingTop = 0
     return false
-  }
-}
-
-function locateTabsToCenter() {
-  for (let i = 0; i < tabContainers.length; i++) {
-    const numberOftabsAndSpacers = tabContainers[i].childElementCount
-    if (numberOftabsAndSpacers <= 4) {
-      applyTabsCentered(tabContainers[i].parentElement)
-    }
-  }
-}
-
-function applyTabsCentered(tabContainer) {
-  tabContainer.classList.add('msds-tabs--center-tabs')
-}
-
-function applyTabActiveEvent() {
-  for (let i = 0; i < tabs.length; i++) {
-    const tab = tabs[i]
-    const tabIndex = i
-    tab.addEventListener('click', () => setActive(tab, tabIndex))
-  }
-}
-
-function applyTabKeyboardNavigation() {
-  document.body.onkeyup = function(e) {
-    if (e.keyCode == 13) {
-      for (let i = 0; i < tabs.length; i++) {
-        const tab = tabs[i]
-        const tabIndex = i
-        const tabHasFocus = document.activeElement
-        if (tabHasFocus === tab) {
-          setActive(tab, tabIndex)
-        }
-      }
-    }
-  }
-}
-
-function applyTabsSticky() {
-  if (stickyTabsContainers) {
-    window.addEventListener(
-      'scroll',
-      function() {
-        for (let i = 0; i < stickyTabsContainers.length; i++) {
-          const currentStickyTabsContainer = stickyTabsContainers[i]
-          const stickyTabRow = currentStickyTabsContainer.querySelector('.msds-tabs__container')
-          const tabContent = currentStickyTabsContainer.querySelector('.msds-tabs__content-container')
-          const shouldAddStickyClass = hasElementHitTop(stickyTabRow, tabContent)
-          if (shouldAddStickyClass) {
-            stickyTabRow.classList.add('msds-tabs--sticky-tabs')
-          } else {
-            stickyTabRow.classList.remove('msds-tabs--sticky-tabs')
-          }
-        }
-      },
-      false
-    )
   }
 }
 
@@ -158,15 +141,6 @@ function ensureCardsContentMatchingHeights() {
       '.msds-solution-card__footer-buttons'
     ]
   })
-}
-
-function init() {
-  locateTabsToCenter()
-  applyTabActiveEvent()
-  applyTabKeyboardNavigation()
-  applyTabsSticky()
-  applySmallTabs(mediaQueryList)
-  mediaQueryList.addListener(applySmallTabs)
 }
 
 init()
