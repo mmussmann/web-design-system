@@ -1,5 +1,7 @@
 window.addEventListener('load', function() {
-    
+    /*
+    //THIS FILE IS NOT USED FOR NOW. ONCE WE MAKE THE JS WORKING ON DOCUMENTS WE WILL USE IT.
+
     //Progress bar Global Definition------------------
     //Initialize the progress bar with the element id, a progression of 5 steps and set a specific progression step by default      
     const progressBar = Object.create(window.msdsProgressBar);      
@@ -128,5 +130,5 @@ window.addEventListener('load', function() {
     //         progressBar.init(baseNumber);
     //     })  
     // }
-    
+    */
 });  

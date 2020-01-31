@@ -12,45 +12,21 @@
               </div>
             </div>
           </div>
-      </div>           
-      <br /><br /><br />
-      <div class="progress-element">                    
-        <div class="basenumber">
-            <label>Base number </label>
-            <input id="LightThemeBaseNumber" type="number" value="5" >                            
-        </div>
-        <div id="LightThemePrevStep" class="prevStep"><</div>
-        <div id="LightThemeNextStep" class="nextStep">></div>
-        <input id="LightThemeStartFromOne" type="checkbox" name="LightThemeStartFromOne" />
-        <label for="LightThemeStartFromOne">Start from 1</label>
-      </div>      
+      </div>          
     </div>
   </div>
 </div>
-<style> 
-  .progress-element {
-    text-align: center;
-  }  
-
-  .progress-element .basenumber {    
-    display: inline-block;  
-    vertical-align: text-bottom;  
+<script>
+  //Light Theme scripts------------------              
+  const lightThemeProgressBarEl = document.getElementById("LightThemeProgressBar");
+  if(lightThemeProgressBarEl) {    
+    //Initialize the progress bar with 12 steps.
+    const lightThemeProgressBar = Object.create(window.msdsProgressBar);
+    lightThemeProgressBar.init("LightThemeProgressBar", 12, 0);             
   }
-  
-  .progress-element .basenumber input {    
-    width: 50px;
-  }
-
-  .progress-element .prevStep, 
-  .progress-element .nextStep {
-    width: 20px;
-    height: 21px;
-    background: #303436;
-    color: #fff;
-    display: inline-block;
-    vertical-align: text-bottom;
-    cursor: pointer;
-    line-height: 20px;
-    user-select: none;
+</script> 
+<style>
+  #LightThemeProgressBar .msds-progress-bar__progression-bar {
+    width: 41.6667%;
   }
 </style>

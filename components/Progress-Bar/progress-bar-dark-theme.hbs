@@ -12,50 +12,30 @@
               </div>
             </div>
           </div>
-      </div>           
-      <br /><br /><br />
-      <div class="progress-element">                    
-        <div class="basenumber">
-            <label>Base number </label>
-            <input id="DarkThemeBaseNumber" type="number" value="5" >                            
-        </div>
-        <div id="DarkThemePrevStep" class="prevStep"><</div>        
-        <div id="DarkThemeNextStep" class="nextStep">></div>
-        <input id="DarkThemeStartFromOne" type="checkbox" name="DarkThemeStartFromOne" />
-        <label for="DarkThemeStartFromOne">Start from 1</label>
       </div>      
     </div>
   </div>
 </div>
-<style>  
-  .progress-element {
-    text-align: center;
-  }  
-
-  .progress-element .basenumber {    
-    display: inline-block;  
-    color: #fff;
-    vertical-align: text-bottom;  
+<script>
+  //Dark Theme scripts------------------        
+  //Initialize the progress bar with 12 steps.    
+  const darkThemeProgressBarEl = document.getElementById("DarkThemeProgressBar");
+  if(darkThemeProgressBarEl) {
+    const darkThemeProgressBar = Object.create(window.msdsProgressBar);      
+    darkThemeProgressBar.init("DarkThemeProgressBar", 12, 0);  
   }
-  
-  .progress-element .basenumber input {    
-    width: 50px;
+</script>
+<style>
+  .dark-theme {
+    background: linear-gradient(90deg, #035d88 0%, #0099da 100%) !important;
   }
-
-  .progress-element .prevStep, 
-  .progress-element .nextStep {
-    width: 20px;
-    height: 21px;
-    background: #ffe700;
-    color: #303436;
-    display: inline-block;
-    vertical-align: text-bottom;
-    cursor: pointer;
-    line-height: 20px;
-    user-select: none;
+  .dark-theme h1{
+    color: #ffffff;
   }
-
-  .checkbox-label {
-    color: #fff;
+  .dark-theme h2{
+    color: #ffffff;
+  }
+  #DarkThemeProgressBar .msds-progress-bar__progression-bar {
+    width: 41.6667%;
   }
 </style>
