@@ -1,74 +1,90 @@
-const tabs = document.querySelectorAll('.msds-tab-tile')
-const tabContainers = document.querySelectorAll('.row-scroll-x-mobile')
+const tabs = document.querySelectorAll('.msds-tabs__tab')
+const tabContainers = document.querySelectorAll('.msds-tabs__tabs-container')
 const mediaQueryList = window.matchMedia('(max-width: 992px)')
-const smallTabsClass = 'msds-tab-tile--small'
-const stickyTabsContainers = document.querySelectorAll('.sticky-tabs-container')
+const stickyTabsContainers = document.querySelectorAll('.msds-tabs__sticky-container')
+const centerTabClass = 'msds-tabs--center-tabs'
+const smallTabsClass = 'msds-tabs__tab--small'
+const activeTabClass = 'msds-tabs__tab--active'
+const stickyTabContentTopPadding = '40px'
+const enterKeyCode = 13
 
-if (stickyTabsContainers) {
-  window.addEventListener(
-    'scroll',
-    function() {
-      for (let i = 0; i < stickyTabsContainers.length; i++) {
-        const stickyTabsContainer = stickyTabsContainers[i]
-        const stickyTabRow = stickyTabsContainer.querySelector('.row-scroll-x-mobile')
-        const tabContent = stickyTabsContainer.querySelector('.tabs-content-container')
-        const shouldAddStickyClass = isElementIntop(stickyTabRow, tabContent)
-        if (shouldAddStickyClass) {
-          stickyTabRow.classList.add('row-scroll-x-mobile--sticky-tabs')
-        } else {
-          stickyTabRow.classList.remove('row-scroll-x-mobile--sticky-tabs')
-        }
-      }
-    },
-    false
-  )
+function init() {
+  locateTabsToCenter()
+  applySmallTabs(mediaQueryList)
+  mediaQueryList.addListener(applySmallTabs)
+  bindEvents()
 }
 
-applySmallTabs(mediaQueryList)
-mediaQueryList.addListener(applySmallTabs)
+function bindEvents() {
+  tabs.forEach(tab => (tab.onclick = () => setTabActive(tab)))
+  window.onscroll = setStickyTabsClass
+  document.body.onkeyup = setTabActiveOnEnterKey
+}
 
-for (let i = 0; i < tabContainers.length; i++) {
-  const numberOftabs = tabContainers[i].childElementCount
-
-  if (numberOftabs <= 2) {
-    centerTabs(tabContainers[i])
+function locateTabsToCenter() {
+  for (let i = 0; i < tabContainers.length; i++) {
+    const numberOftabsAndSpacers = tabContainers[i].childElementCount
+    if (numberOftabsAndSpacers <= 4) {
+      tabContainers[i].parentElement.classList.add(centerTabClass)
+    }
   }
 }
 
-for (let i = 0; i < tabs.length; i++) {
-  const tab = tabs[i]
-  tab.addEventListener('click', () => setActive(tab))
-}
-
-document.body.onkeyup = function(e) {
-  if (e.keyCode == 13) {
+function applySmallTabs(mediaQueryList) {
+  if (mediaQueryList.matches) {
     for (let i = 0; i < tabs.length; i++) {
       const tab = tabs[i]
-      const tabHasFocus = document.activeElement
-      if (tabHasFocus === tab) {
-        setActive(tab)
-      }
+      tab.classList.add(smallTabsClass)
+    }
+  } else {
+    for (let i = 0; i < tabs.length; i++) {
+      const tab = tabs[i]
+      tab.classList.remove(smallTabsClass)
     }
   }
 }
 
-function centerTabs(tabContainer) {
-  tabContainer.classList.add('center-tabs')
-}
-
-function setActive(clickedTab) {
+function setTabActive(clickedTab) {
   const tabContainer = clickedTab.parentElement
-  const tabs = tabContainer.querySelectorAll('.msds-tab-tile')
-  const activeClass = 'msds-tab-tile--active'
-  for (let i = 0; i < tabs.length; i++) {
-    const tab = tabs[i]
-    const isActive = tab.classList.contains(activeClass)
-    if (isActive) {
-      tab.classList.remove(activeClass)
-    }
+  const contentContainers = tabContainer.parentElement.parentElement.querySelectorAll('.msds-tabs__content-container')
+  const shownContent = tabContainer.parentElement.parentElement.querySelector('.msds-tabs__content-container--visible')
+  const activeTab = tabContainer.querySelector('.' + activeTabClass)
+
+  if (activeTab != null) {
+    activeTab.classList.remove(activeTabClass)
   }
-  clickedTab.classList.add(activeClass)
+
+  clickedTab.classList.add(activeTabClass)
+
+  if (shownContent != null) {
+    shownContent.classList.remove('msds-tabs__content-container--visible')
+  }
+  if (contentContainers.length > clickedTab.dataset.index) {
+    contentContainers[clickedTab.dataset.index].classList.add('msds-tabs__content-container--visible')
+  }
+
+  ensureCardsContentMatchingHeights()
   scrollToElement(clickedTab)
+}
+
+function setTabActiveOnEnterKey(event) {
+  if (event.keyCode == enterKeyCode) {
+    tabs.forEach(tab => tab === document.activeElement && setTabActive(tab))
+  }
+}
+
+function setStickyTabsClass() {
+  stickyTabsContainers.forEach(stickyTabsContainer => {
+    const stickyTabRow = stickyTabsContainer.querySelector('.msds-tabs__container')
+    const tabContent = stickyTabsContainer.querySelector('.msds-tabs__content-container')
+    const shouldAddStickyClass = hasElementHitTop(stickyTabRow, tabContent)
+
+    if (shouldAddStickyClass) {
+      stickyTabRow.classList.add('msds-tabs--sticky-tabs')
+    } else {
+      stickyTabRow.classList.remove('msds-tabs--sticky-tabs')
+    }
+  })
 }
 
 function scrollToElement(tab) {
@@ -88,28 +104,43 @@ function scrollToElement(tab) {
   }
 }
 
-function applySmallTabs(mediaQueryList) {
-  if (mediaQueryList.matches) {
-    for (let i = 0; i < tabs.length; i++) {
-      const tab = tabs[i]
-      tab.classList.add(smallTabsClass)
-    }
-  } else {
-    for (let i = 0; i < tabs.length; i++) {
-      const tab = tabs[i]
-      tab.classList.remove(smallTabsClass)
-    }
-  }
-}
-
-function isElementIntop(tabRow, contentElement) {
+function hasElementHitTop(tabRow, contentElement) {
   const tabRowBounding = tabRow.getBoundingClientRect()
   const contentElementBounding = contentElement.getBoundingClientRect()
+
   if (tabRowBounding.top <= 0 && contentElementBounding.bottom >= 0) {
-    contentElement.style.paddingTop = tabRowBounding.height + 'px'
+    contentElement.style.paddingTop = stickyTabContentTopPadding
     return true
   } else {
     contentElement.style.paddingTop = 0
     return false
   }
 }
+
+function ensureCardsContentMatchingHeights() {
+  const cardRows = document.querySelectorAll('.card-row')
+
+  cardRows.ensureCardContentsSameHeightWithinParent({
+    subSelectors: ['.msds-category-card__header-body', '.msds-category-card__content-body']
+  })
+
+  cardRows.ensureCardContentsSameHeightWithinParent({
+    subSelectors: [
+      '.msds-contact-card__headline',
+      '.msds-contact-card__body-contact-person',
+      '.msds-contact-card__body-contact-position',
+      '.msds-contact-card__body-contact-details'
+    ]
+  })
+
+  cardRows.ensureCardContentsSameHeightWithinParent({
+    subSelectors: [
+      '.msds-solution-card__header-headline',
+      '.msds-solution-card__body-headline',
+      '.msds-solution-card__body-description',
+      '.msds-solution-card__footer-buttons'
+    ]
+  })
+}
+
+init()
