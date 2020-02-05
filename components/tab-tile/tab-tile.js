@@ -16,7 +16,13 @@ function init() {
 }
 
 function bindEvents() {
-  tabs.forEach(tab => (tab.onclick = () => setTabActive(tab)))
+  for (let i = 0; i < tabs.length; i++) {
+    const tab = tabs[i]
+    tab.onclick = function() {
+      setTabActive(tab)
+    }
+  }
+
   window.onscroll = setStickyTabsClass
   document.body.onkeyup = setTabActiveOnEnterKey
 }
@@ -69,12 +75,18 @@ function setTabActive(clickedTab) {
 
 function setTabActiveOnEnterKey(event) {
   if (event.keyCode == enterKeyCode) {
-    tabs.forEach(tab => tab === document.activeElement && setTabActive(tab))
+    for (let i = 0; i < tabs.length; i++) {
+      const tab = tabs[i]
+      if (tab === document.activeElement && setTabActive(tab)) {
+        return true
+      }
+    }
   }
 }
 
 function setStickyTabsClass() {
-  stickyTabsContainers.forEach(stickyTabsContainer => {
+  for (let i = 0; i < stickyTabsContainers.length; i++) {
+    const stickyTabsContainer = stickyTabsContainers[i]
     const stickyTabRow = stickyTabsContainer.querySelector('.msds-tabs__container')
     const tabContent = stickyTabsContainer.querySelector('.msds-tabs__content-container')
     const shouldAddStickyClass = hasElementHitTop(stickyTabRow, tabContent)
@@ -84,7 +96,7 @@ function setStickyTabsClass() {
     } else {
       stickyTabRow.classList.remove('msds-tabs--sticky-tabs')
     }
-  })
+  }
 }
 
 function scrollToElement(tab) {
