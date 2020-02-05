@@ -11,17 +11,3 @@
     </div>
   </div>           
 </div>
-<script>
-  //Progress bar Global Definition------------------
-  //Initialize the progress bar with the element id, a progression of 5 steps and set a specific progression step by default          
-  const ProgressBarDefinitionElement = document.getElementById("ProgressBarDefinition");
-  if(ProgressBarDefinitionElement) {
-    const ProgressBarDefinition = Object.create(window.msdsProgressBar);
-    ProgressBarDefinition.init("ProgressBarDefinition", 5, 2);
-  }
-</script>
-<style>
-  #ProgressBarDefinition .msds-progress-bar__progression-bar {
-    width: 40%;
-  }
-</style>

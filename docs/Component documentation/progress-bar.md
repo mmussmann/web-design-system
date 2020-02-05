@@ -44,6 +44,14 @@ Also, note that the progress bar width is adaptive which means that it is based 
 ```html
 {{render '@progress-bar-global-definition'}}
 ```
+```javascript
+//Initialize the progress bar with the element id, a progression of 5 steps and set a specific progression step by default      
+const progressBar = Object.create(window.msdsProgressBar);      
+const ProgressBarDefinition = document.getElementById("ProgressBarDefinition");
+if(ProgressBarDefinition) {
+    progressBar.init("ProgressBarDefinition", 5, 4); 
+}
+```
 
 ### Features
 By default our progress bar starts from 0. However, depending on the context, we have an option to start the progress bar from 1 by setting the "StartFromOne" variable to true. There is also a way to set a progression to a specific step by setting the currentStep to the value you need.
