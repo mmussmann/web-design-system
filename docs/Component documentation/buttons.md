@@ -92,7 +92,7 @@ You can see the different state by hovering, activating and focusing on them on 
 ```
 
 ### Direction
-In some circonstances when having a button with a icon, we would like to render the icon on the left side of the button. To do so, you just need to replace "msds-btn--icon" by the following CSS class: "msds-btn--icon-left"
+In some circumstances when having a button with a icon, we would like to render the icon on the left side of the button. To do so, you just need to replace "msds-btn--icon" by the following CSS class: "msds-btn--icon-left"
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-overview-direction'}}</div>

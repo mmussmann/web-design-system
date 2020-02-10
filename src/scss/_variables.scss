@@ -52,7 +52,7 @@ $clear-blue-gradient: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
 $dark-blue-gradient: linear-gradient(270deg, $alt-blue-3 0%, $dark-blue 100%);
 $mixed-blue-gradient: linear-gradient(90deg, $alt-blue-3 20%, $clear-blue 80%);
 $yellow-gradient: linear-gradient(90deg, $alt-yellow-1 0%, $yellow 100%);
-$blue-to-yellow: linear-gradient(90deg, #0099da 32%, #ffe700 68%);
+$blue-to-yellow: linear-gradient(90deg, $clear-blue 32%, $yellow 68%);
 $gray-gradient-1: linear-gradient(90deg, $gray-3 0%, $white 100%);
 $gray-gradient-2: linear-gradient(90deg, $gray-2 0%, $gray-1 100%);
 $gray-gradient-3: linear-gradient(90deg, $gray-3 0%, $gray-2 100%);

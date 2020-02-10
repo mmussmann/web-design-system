@@ -97,6 +97,10 @@ body {
   margin-bottom: 50px;
 }
 
+.Frame-panel {
+  overflow-y: scroll;
+}
+
 .Frame-panel--sidebar {
   width: 230px;
   border-right: none;
@@ -310,6 +314,7 @@ body {
   background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
   background-position: 0 0, 0 10px, 10px -10px, -10px 0;
   margin-bottom: 0;
+  font-family: 'Open Sans';
 }
 
 .Prose .element-preview-dark h3 {
