@@ -90,7 +90,7 @@
     @include floating-light-theme-disabled();
   }
 
-  &.msds-btn-floating--sm {
+  &--sm {
     .msds-icon {
       width: 10px;
       height: 10px;
@@ -99,7 +99,7 @@
     }
   }
 
-  &.msds-btn-floating--lg {
+  &--lg {
     .msds-icon {
       width: 20px;
       height: 20px;
@@ -108,7 +108,7 @@
     }
   }
 
-  &.msds-btn-floating--column {
+  &--column {
     flex-direction: column-reverse;
     justify-content: center;
     .msds-icon {
@@ -117,7 +117,7 @@
     }
   }
 
-  &.msds-btn-floating--right {
+  &--right {
     flex-direction: row-reverse;
     .msds-icon {
       margin-right: 0px;
@@ -125,7 +125,7 @@
     }
   }
 
-  &.msds-btn-floating--secondary {
+  &--secondary {
     .msds-icon {
       border: unset;
     }
@@ -156,7 +156,7 @@
     }
   }
 
-  &.msds-btn-floating--dark {
+  &--dark {
     color: $white;
     .msds-icon {
       border: 1px solid $white;
@@ -191,7 +191,7 @@
     }
   }
 
-  &.msds-btn-floating--dark-secondary {
+  &--dark-secondary {
     color: $white;
     .msds-icon {
       border: unset;
