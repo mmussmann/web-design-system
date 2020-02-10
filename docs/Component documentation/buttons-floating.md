@@ -7,7 +7,7 @@ title: Floating Buttons
 
 ### Table of contents
 <div class="row">
-    <div class="col-4">
+    <div class="col-12">
         <dl>
             <dt>[Overview](#overview)</dt>
             <dd>[Global Definition](#global-definition)</dd>
@@ -32,7 +32,7 @@ title: Floating Buttons
 
 ## Overview
 ### Global Definition
-Each button is based on a global CSS class called "msds-btn" along with "msds-btn\--floating". It is important to include "msds-btn" as this is the main class for buttons, in order to utalize the floating button you need to include "msds-btn\--floating" as this modifier renders a floating button. 
+Each button is based on a global CSS class called "msds-btn" along with ".msds-btn-floating". It is important to include "msds-btn" as this is the main class for buttons, in order to utalize the floating button you need to include ".msds-btn-floating" as this modifier renders a floating button. 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-floating-overview'}}</div>
@@ -68,9 +68,9 @@ Each button has different states that are applied automatically: <i>hover, activ
 
 ### Direction
 There are three positional states that floating buttons can be preset to, these position can be applied to all floating buttons
-- The icon on the left, and the text on the right
-- The text on the left, and the icon on the right
-- Column alignment with the text above the icon
+- The icon on the left, and the text on the right by default
+- The text on the left, and the icon on the right by using <b><i>".msds-btn-floating\--right"</i></b> modifier
+- Column alignment with the text above the icon by using <b><i>".msds-btn-floating\--column"</i></b> modifier
 
 #### Icon left - Text Right
 <div class="element-preview">
@@ -100,7 +100,7 @@ There are three positional states that floating buttons can be preset to, these 
 ```
 
 ## Primary Floating Button
-To use a primary floating button can be used by appending the following modifier CCS class: <b><i>"msds-btn\--floating"</i></b>. 
+To use a primary floating button can be used by appending the following modifier CCS class: <b><i>".msds-btn-floating"</i></b>. 
 
 Below is a example of the Milestone Primary floating button.
 
@@ -113,7 +113,7 @@ Below is a example of the Milestone Primary floating button.
 ```
 
 ## Secondary Floating Button
-To use the Secondary Floating Button you need to add the following CCS class: <b><i>"msds-btn\--floating-secondary"</i></b>. 
+To use the Secondary Floating Button you need to add the following CCS class: <b><i>".msds-btn-floating\--secondary"</i></b>. 
 
 Below are few examples of the Milestone Secondary button.
 
@@ -137,7 +137,7 @@ Below are few examples of the Milestone Secondary button.
 
 
 ## Primary Floating Button Dark Theme
-To use the Dark Themed buttons you need to add the following CCS class: <b><i>"msds-btn\--floating-dark"</i></b>. 
+To use the Dark Themed buttons you need to add the following CCS class: <b><i>".msds-btn-floating\--dark"</i></b>. 
 
 Below are few examples of the Milestone Dark Themed Floating Button. 
 
@@ -161,7 +161,7 @@ Below are few examples of the Milestone Dark Themed Floating Button.
 
 ## Secondary Floating Button Dark Theme
 
-To use the Dark Themed buttons you need to add the following CCS class: <b><i>"msds-btn\--floating-dark-secondary"</i></b>. 
+To use the Dark Themed buttons you need to add the following CCS class: <b><i>".msds-btn-floating\--dark-secondary"</i></b>. 
 
 Below are few examples of the Milestone Dark Themed Floating Button. 
 
