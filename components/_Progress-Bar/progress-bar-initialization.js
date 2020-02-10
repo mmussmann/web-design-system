@@ -1,7 +1,5 @@
 window.addEventListener('load', function() {
-    
-    //THIS FILE IS NOT USED FOR NOW. ONCE WE MAKE THE JS WORKING ON DOCUMENTS WE WILL USE IT.
-
+        
     //Progress bar Global Definition------------------
     //Initialize the progress bar with the element id, a progression of 5 steps and set a specific progression step by default      
     const progressBar = Object.create(window.msdsProgressBar);      
@@ -9,42 +7,51 @@ window.addEventListener('load', function() {
     if(ProgressBarDefinition) {
         progressBar.init("ProgressBarDefinition", 5, 4); 
     }
-    /*
-    //Progress bar Size scripts------------------
-    const progressBarSize1 = Object.create(window.msdsProgressBar);    
-    progressBarSize1.currentStep = 2; //Set the progress bar to a specific step by default.
-    const progressBarSize1El = document.getElementById("ProgressBarSize1");
-    if(progressBarSize1El) {
-        progressBarSize1.init("ProgressBarSize1", 5, 2); //Initialize the progress bar with 5 steps.
-    }    
 
-    const progressBarSize2 = Object.create(window.msdsProgressBar);    
-    progressBarSize2.currentStep = 3; //Set the progress bar to a specific step by default.
-    const progressBarSize2El = document.getElementById("ProgressBarSize2");
-    if(progressBarSize2El) {
-        progressBarSize2.init("ProgressBarSize2", 5, 2); //Initialize the progress bar with 5 steps.
+    //Progress Bar Features scripts------------------    
+    const progressBarFeatures1El = document.getElementById("ProgressBarFeatures1");
+    if(progressBarFeatures1El) {
+        //Initialize the progress bar with 5 steps starting form the default value 0.
+        const progressBarFeatures1 = Object.create(window.msdsProgressBar);
+        progressBarFeatures1.init("ProgressBarFeatures1", 5, 0);
     }
-    
-    //Progress bar States scripts------------------
-    const progressBarState1 = Object.create(window.msdsProgressBar);      
-    const progressBarState1El = document.getElementById("ProgressBarState1");
-    if(progressBarState1El) {
-        progressBarState1.init("ProgressBarState1", 5, 0); //Initialize the progress bar with 5 steps.
-    }    
-    
-    const progressBarState2 = Object.create(window.msdsProgressBar);        
-    const progressBarState2El = document.getElementById("ProgressBarState2");
-    if(progressBarState2El) {
-        progressBarState2.startFromOne = true; //Set "StartFromOne" variable to true.
-        progressBarState2.init("ProgressBarState2", 5, 0); //Initialize the progress bar with 5 steps.
-    }  
-    
+        
+    const progressBarFeatures2El = document.getElementById("ProgressBarFeatures2");
+        if(progressBarFeatures2El) {
+        //Initialize the progress bar with 5 steps starting form the 1.
+        const progressBarFeatures2 = Object.create(window.msdsProgressBar);
+        progressBarFeatures2.startFromOne = true; //Set "StartFromOne" variable to true.
+        progressBarFeatures2.init("ProgressBarFeatures2", 5, 0); //Initialize the progress bar with 5 steps.
+    }
 
+    const progressBarFeatures3El = document.getElementById("ProgressBarFeatures3");
+    if(progressBarFeatures3El) {
+        //Set the progress bar to a specific step.
+        const progressBarFeatures3 = Object.create(window.msdsProgressBar);
+        progressBarFeatures3.init("ProgressBarFeatures3", 5, 3); //Initialize the progress bar with 5 steps.
+    }
+
+    //Progress bar Size scripts------------------
+    const progressBarSize1El = document.getElementById('ProgressBarSize1');
+    if(progressBarSize1El) {
+        const progressBarSize1 = Object.create(window.msdsProgressBar);
+        progressBarSize1.init('ProgressBarSize1', 5, 2); //Initialize the progress bar with 5 steps.
+    }    
+            
+    const progressBarSize2El = document.getElementById('ProgressBarSize2');
+    if(progressBarSize2El) {
+        //Set the progress bar to a specific step by default.
+        const progressBarSize2 = Object.create(window.msdsProgressBar);      
+        progressBarSize2.init('ProgressBarSize2', 5, 3); //Initialize the progress bar with 5 steps.
+    }
+     
+    
     //Light Theme scripts------------------       
-    //Initialize the progress bar with 12 steps.
-    const lightThemeProgressBar = Object.create(window.msdsProgressBar);     
+    //Initialize the progress bar with 12 steps.        
     const lightThemeProgressBarEl = document.getElementById("LightThemeProgressBar");
     if(lightThemeProgressBarEl) {
+        const lightThemeProgressBar = Object.create(window.msdsProgressBar);
+
         let lightThemeBaseNumberElement = document.querySelectorAll('#LightThemeBaseNumber')[0]    
         lightThemeBaseNumberElement.value = 12;
 
@@ -68,19 +75,18 @@ window.addEventListener('load', function() {
             const baseNumber = document.querySelectorAll('#LightThemeBaseNumber')[0].value;
             lightThemeProgressBar.init("LightThemeProgressBar", baseNumber, 0);
         })
-    }       
-    
-    
+    }               
           
-
+    
     //Dark Theme scripts------------------        
     //Initialize the progress bar with 12 steps.
-    const darkThemeProgressBar = Object.create(window.msdsProgressBar);          
-
     const darkThemeProgressBarEl = document.getElementById("DarkThemeProgressBar");
     if(darkThemeProgressBarEl) {
+        const darkThemeProgressBar = Object.create(window.msdsProgressBar);
+
         let darkThemeBaseNumberElement = document.querySelectorAll('#DarkThemeBaseNumber')[0]    
         darkThemeBaseNumberElement.value = 12;
+        
         darkThemeProgressBar.init("DarkThemeProgressBar", darkThemeBaseNumberElement.value, 0); 
 
         document.querySelector('#DarkThemePrevStep').addEventListener('click', event => {
@@ -101,34 +107,5 @@ window.addEventListener('load', function() {
             const baseNumber = document.querySelectorAll('#DarkThemeBaseNumber')[0].value;
             darkThemeProgressBar.init("DarkThemeProgressBar", baseNumber, 0);
         })
-    }                  
-
-    //---
-
-    // progressBar = window.progressBar;
-    // let baseNumberElement = document.querySelectorAll('#BaseNumber')[0]
-    // if(baseNumberElement) {
-    //     let baseNumber = baseNumberElement.value;
-    //     progressBar.init(baseNumber);    
-
-    //     document.querySelector('.prevStep').addEventListener('click', event => {
-    //         progressBar.onclick = progressBar.prev();
-    //     })
-
-    //     document.querySelector('.nextStep').addEventListener('click', event => {
-    //         progressBar.next();
-    //     })
-
-    //     document.querySelector('#BaseNumber').addEventListener('change', event => {
-    //         progressBar.init(event.target.value);        
-    //     })    
-
-    //     const startFromOne = document.querySelector('#StartFromOne');
-    //     startFromOne.addEventListener('change', event => {        
-    //         progressBar.startFromOne = startFromOne.checked;
-    //         const baseNumber = document.querySelectorAll('#BaseNumber')[0].value;
-    //         progressBar.init(baseNumber);
-    //     })  
-    // }
-    */
+    }
 });  

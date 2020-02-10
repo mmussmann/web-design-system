@@ -115,7 +115,7 @@ module.exports = {
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
       { from: 'src/demo-img', to: 'src/demo-img' },      
       { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' },
-      { from: 'components/Progress-Bar/progress-bar-initialization.js', to: 'src/js' }
+      { from: 'components/_Progress-Bar/progress-bar-initialization.js', to: 'src/js' }
     ])
   ],
   module: {
