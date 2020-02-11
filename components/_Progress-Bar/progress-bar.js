@@ -17,33 +17,26 @@ const msdsProgressBar = {
     this.baseNumber = baseNumber
     this.updateProgressbarDisplay()
   },
-  updateProgressbarDisplay: function() {
-    //calculate the percentage width of the progress step and update the look and fill base on this
-    const updatedWidth = (this.currentStep * 100) / this.baseNumber
-
-    //update the progression bar
-    const progressBarProgressionElement = this.parentElement.querySelectorAll('.msds-progress-bar__progression-bar')
-    for (let i = 0; i < progressBarProgressionElement.length; i++) {
-      //update the width of the progression bar
-      const currentEl = progressBarProgressionElement[i]
-      currentEl.style.width = updatedWidth + '%'
-
+  updateProgressbarDisplay: function() { //update the display of the prorgess bar (step and counter)
+    
+    const progressBarProgressionElement = this.parentElement.querySelector('.msds-progress-bar__progression-bar')
+    if (progressBarProgressionElement) {
+      //calculate the percentage width of the progress step and update the look and fill base on this
+      const updatedWidth = (this.currentStep * 100) / this.baseNumber
+      progressBarProgressionElement.style.width = updatedWidth + '%'
+      
       //Add the completed class to round the corners of the progression bar.
       if (this.currentStep == this.baseNumber) {
-        currentEl.classList.add('msds-progress-bar__progression-bar--completed')
+        progressBarProgressionElement.classList.add('msds-progress-bar__progression-bar--completed')
       } else {
-        if (currentEl.classList.contains('msds-progress-bar__progression-bar--completed')) {
-          currentEl.classList.remove('msds-progress-bar__progression-bar--completed')
+        if (progressBarProgressionElement.classList.contains('msds-progress-bar__progression-bar--completed')) {
+          progressBarProgressionElement.classList.remove('msds-progress-bar__progression-bar--completed')
         }
       }
-    }
 
-    //update the progression counter
-    const progressionCounterElement = this.parentElement.querySelectorAll('.msds-progress-bar__progression-counter')
-    for (let i = 0; i < progressionCounterElement.length; i++) {
-      //update the width of the progression bar
-      const currentEl = progressionCounterElement[i]
-      currentEl.innerHTML = this.currentStep + '/' + this.baseNumber
+      //update the progression counter
+      const progressionCounterElement = this.parentElement.querySelector('.msds-progress-bar__progression-counter')
+      progressionCounterElement.innerHTML = this.currentStep + '/' + this.baseNumber
     }
   },
   next: function() {
