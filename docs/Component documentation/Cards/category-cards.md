@@ -33,9 +33,9 @@ title: Category Cards
 
 ## Overview
 ### Global Definition
-Each category card is based on a global CSS class called "msds-category-card". It is important to include it first as it is the main CSS class. Without it there is no card component. 
+Each category card is based on a global CSS class called <code>"msds-category-card"</code>. It is important to include it first as it is the main CSS class. Without it there is no card component. 
 There are 2 types of category cards, the primary category card, that has a content body below the headline, and the category card with no body below the headline.  
-- Delete "msds-category-card__content" div to remove the body below the headline.
+- Delete <code>"msds-category-card__content"</code> div to remove the body below the headline.
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@category'}}</div>
@@ -47,8 +47,8 @@ There are 2 types of category cards, the primary category card, that has a conte
 
 ### Sizes
 Our cards can be rendered in 2 different sizes, large, and small as followed. In order to use small cards, add the following
-- "col-md-3" instead of "col-md-4"
-- "msds-category-card\--small" to the same group of classes that has "msds-category-card"
+- <code>"col-md-3"</code> instead of <code>"col-md-4"</code>
+- <code>"msds-category-card\--small"</code> to the same group of classes that has <code>"msds-category-card"</code>
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@category-overview-sizes'}}</div>
@@ -74,9 +74,9 @@ You can see the different state by hovering, activating and focusing on them on 
 The default category card is a light themed, blue card.
 
 ### Category Cards Default Large 
-The default large category card can be used by wrapping your "msds-category-card" block with a "col-md-4" from Bootstrap.
+The default large category card can be used by wrapping your <code>"msds-category-card"</code> block with a <code>"col-md-4"</code> from Bootstrap.
 Below is a example of the Milestone Large Category Card. 
-- The default has content in the body of the card and has a preset width based on bootstrap columns "col-md-4".
+- The default has content in the body of the card and has a preset width based on bootstrap columns <code>"col-md-4"</code>.
 - The alternative has no body, to achieve this you can remove the body from the card.
 
 <div class="element-preview">
@@ -89,7 +89,7 @@ Below is a example of the Milestone Large Category Card.
 
 ### Category Cards Default Small
 Below is a example of the Milestone Small Themed Category Card. 
-- The small cards have preset width based on bootstrap columns "col-md-3" and "msds-category-card--small" as an extra class at the same level as "msds-category-card".
+- The small cards have preset width based on bootstrap columns <code>"col-md-3"</code> and <code>"msds-category-card--small"</code> as an extra class at the same level as <code>"msds-category-card"</code>.
 - The alternative has no body, to achieve this you can remove the body from the card.
 
 <div class="element-preview">
@@ -102,7 +102,7 @@ Below is a example of the Milestone Small Themed Category Card.
 
 ### Category Cards Default Disabled
 Below is a example of the Milestone Disabled Category Card. 
-- The disabled cards must have the "msds-category-card\--disabled" modifier as an extra class at the same level as "msds-category-card" in order to disable the card. This applies to both large and small category cards.
+- The disabled cards must have the <code>"msds-category-card\--disabled"</code> modifier as an extra class at the same level as <code>"msds-category-card"</code> in order to disable the card. This applies to both large and small category cards.
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@category-disabled'}}</div>
@@ -132,10 +132,10 @@ You can see the different state by hovering, activating and focusing on them on 
 ```
 
 ## Category Cards Dark Themed
-To use "dark themed category card" you need to add the following CCS class: <b><i>"msds-category-card\--dark"</i></b>. 
+To use "dark themed category card" you need to add the following CCS class: <code>"msds-category-card\--dark"</code>. 
 
 Below is a example of the Milestone Large Dark Themed Category Card. 
-- The default has content in the body of the card and has a preset width based on bootstrap columns "col-md-4".
+- The default has content in the body of the card and has a preset width based on bootstrap columns <code>"col-md-4"</code>.
 - The alternative has no body, to achieve this you can remove the body from the card.
 
 ### Category Cards Large Dark Themed
@@ -149,7 +149,7 @@ Below is a example of the Milestone Large Dark Themed Category Card.
 
 ### Category Cards Small Dark Themed
 Below is a example of the Milestone Small Dark Themed Category Card. 
-- The small cards have preset width based on bootstrap columns "col-md-3" and "msds-category-card--small" as an extra class at the same level as "msds-category-card".
+- The small cards have preset width based on bootstrap columns <code>"col-md-3"</code> and <code>"msds-category-card--small"</code> as an extra class at the same level as <code>"msds-category-card"</code>.
 - The alternative has no body, to achieve this you can remove the body from the card.
 
 <div class="element-preview-dark">
@@ -162,7 +162,7 @@ Below is a example of the Milestone Small Dark Themed Category Card.
 
 ### Category Cards Disabled Dark Themed
 Below is a example of the Milestone Disabled Dark Themed Category Card. 
-- The disabled cards must have the "msds-category-card\--disabled" modifier as an extra class at the same level as "msds-category-card" in order to disable the card. This applies to both large and small category cards.
+- The disabled cards must have the <code>"msds-category-card\--disabled"</code> modifier as an extra class at the same level as <code>"msds-category-card"</code> in order to disable the card. This applies to both large and small category cards.
 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@category-disabled-dark'}}</div>

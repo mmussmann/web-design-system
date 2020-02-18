@@ -16,13 +16,13 @@ title: Floating Buttons
             <dd>[Direction](#direction)</dd>
         </dl>
         <dl>
-            <dt>[Primary Floating Button](#primary-floating-button)</dt>
+            <dt>[Floating Button](#floating-button)</dt>
         </dl>
         <dl>
             <dt>[Secondary Floating Button](#secondary-floating-button)</dt>
         </dl>
         <dl>
-            <dt>[Primary Floating Button Dark Theme](#primary-floating-button-dark-theme)</dt>
+            <dt>[Floating Button Dark Theme](#floating-button-dark-theme)</dt>
         </dl>
         <dl>
             <dt>[Secondary Floating Button Dark Theme](#secondary-floating-button-dark-theme)</dt>
@@ -32,7 +32,7 @@ title: Floating Buttons
 
 ## Overview
 ### Global Definition
-Each button is based on a global CSS class called "msds-btn" along with ".msds-btn-floating". It is important to include "msds-btn" as this is the main class for buttons, in order to utalize the floating button you need to include ".msds-btn-floating" as this modifier renders a floating button. 
+Each button is based on a global CSS class called <code>".msds-btn-floating"</code>. 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-floating-overview'}}</div>
@@ -69,8 +69,16 @@ Each button has different states that are applied automatically: <i>hover, activ
 ### Direction
 There are three positional states that floating buttons can be preset to, these position can be applied to all floating buttons
 - The icon on the left, and the text on the right by default
-- The text on the left, and the icon on the right by using <b><i>".msds-btn-floating\--right"</i></b> modifier
-- Column alignment with the text above the icon by using <b><i>".msds-btn-floating\--column"</i></b> modifier
+- The text on the left, and the icon on the right by using <code>".msds-btn-floating\--right"</code> modifier
+- Column alignment with the text above the icon by using <code>".msds-btn-floating\--column"</code> modifier
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@button-floating-positioning'}}</div>
+</div>
+
+```html
+{{render '@button-floating-positioning'}}
+```
 
 #### Icon left - Text Right
 <div class="element-preview">
@@ -99,8 +107,8 @@ There are three positional states that floating buttons can be preset to, these 
 {{render '@button-floating-aligned-column'}}
 ```
 
-## Primary Floating Button
-To use a primary floating button can be used by appending the following modifier CCS class: <b><i>".msds-btn-floating"</i></b>. 
+## Floating Button
+To use a primary floating button can be used by appending the following modifier CCS class: <code>".msds-btn-floating"</code>. 
 
 Below is a example of the Milestone Primary floating button.
 
@@ -113,7 +121,7 @@ Below is a example of the Milestone Primary floating button.
 ```
 
 ## Secondary Floating Button
-To use the Secondary Floating Button you need to add the following CCS class: <b><i>".msds-btn-floating\--secondary"</i></b>. 
+To use the Secondary Floating Button you need to add the following CCS class: <code>".msds-btn-floating\--secondary"</code>. 
 
 Below are few examples of the Milestone Secondary button.
 
@@ -136,8 +144,8 @@ Below are few examples of the Milestone Secondary button.
 </div>
 
 
-## Primary Floating Button Dark Theme
-To use the Dark Themed buttons you need to add the following CCS class: <b><i>".msds-btn-floating\--dark"</i></b>. 
+## Floating Button Dark Theme
+To use the Dark Themed buttons you need to add the following CCS class: <code>".msds-btn-floating\--dark"</code>. 
 
 Below are few examples of the Milestone Dark Themed Floating Button. 
 
@@ -161,7 +169,7 @@ Below are few examples of the Milestone Dark Themed Floating Button.
 
 ## Secondary Floating Button Dark Theme
 
-To use the Dark Themed buttons you need to add the following CCS class: <b><i>".msds-btn-floating\--dark-secondary"</i></b>. 
+To use the Dark Themed buttons you need to add the following CCS class: <code>".msds-btn-floating\--dark-secondary"</code>. 
 
 Below are few examples of the Milestone Dark Themed Floating Button. 
 
