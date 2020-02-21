@@ -31,7 +31,12 @@ module.exports = {
     new SVGSpritemapPlugin('src/svg/button/**/*.svg', {
       output: {
          filename: 'msds-spritemap.svg',
-         svgo: true,
+         svgo: {
+          plugins: [
+            { removeTitle: true },
+            { removeUselessStrokeAndFill: true }
+          ]
+        },
         svg: {
           sizes: false
         }

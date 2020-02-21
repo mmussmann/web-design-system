@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row card-row">
+    <div class="col-12 col-md-4">
+      <div class="msds-contact-card msds-contact-card--vertically-aligned">
+        <div class="msds-contact-card__overlay"></div>
+        <div class="msds-contact-card__headline">
+          {{headline}}
+        </div>
+        <div class="msds-contact-card__caption">
+          <img class="msds-contact-card__caption-image rounded-circle" src="{{placeholderImg}}" alt="Card image">
+        </div>
+        <div class="msds-contact-card__body">
+          <div class="msds-contact-card__body-contact-person">
+            {{contactPerson}}
+          </div>
+          <div class="msds-contact-card__body-contact-position">
+            {{contactPosition}}
+          </div>
+          <div class="msds-contact-card__body-contact-details">
+            <div class="msds-contact-card__body-contact-details-wrapper">
+              <a class="msds-contact-card__link" href="#">
+                <svg title="email" class="msds-contact-card__icon">
+                  <use href="{{ path '/msds-spritemap.svg' }}#email" />
+                </svg>
+                {{contactEmail}}
+              </a>
+              <a class="msds-contact-card__link" href="#">
+                <svg title="linkedin" class="msds-contact-card__icon">
+                  <use href="{{ path '/msds-spritemap.svg' }}#linkedin" />
+                </svg>
+                {{contactSocialMediaLink}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="msds-contact-card msds-contact-card--without-image msds-contact-card--vertically-aligned">
+        <div class="msds-contact-card__overlay"></div>
+        <div class="msds-contact-card__headline">
+          {{headlineNoImage}}
+        </div>
+        <div class="msds-contact-card__body">
+          <div class="msds-contact-card__body-contact-person">
+            {{contactPersonNoImage}}
+          </div>
+          <div class="msds-contact-card__body-contact-position">
+            {{contactPositionNoImage}}
+          </div>
+          <div class="msds-contact-card__body-contact-details">
+            <a class="msds-contact-card__link" href="#">
+              <svg title="email" class="msds-contact-card__icon">
+                <use href="{{ path '/msds-spritemap.svg' }}#email" />
+              </svg>
+              {{contactEmailNoImage}}
+            </a>
+            <a class="msds-contact-card__link" href="#">
+              <svg title="linkedin" class="msds-contact-card__icon">
+                <use href="{{ path '/msds-spritemap.svg' }}#linkedin" />
+              </svg>
+              {{contactSocialMediaLinkNoImage}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="col-12 col-md-4">
+      <div class="msds-contact-card msds-contact-card--content msds-contact-card--vertically-aligned">
+        <div class="msds-contact-card__caption">
+          <img class="msds-contact-card__caption-image rounded-circle" src="{{placeholderImg}}" alt="Card image">
+        </div>
+        <div class="msds-contact-card__body">
+          <div class="msds-contact-card__body-contact-person">
+            {{contactPerson}}
+          </div>
+          <div class="msds-contact-card__body-contact-position">
+            {{contactPosition}}
+          </div>
+          <div class="msds-contact-card__body-contact-details">
+            <div class="msds-contact-card__body-contact-details-wrapper">
+              <button type="button" class="msds-btn msds-btn--primary msds-btn--icon">
+                get in contact
+                <div class="msds-icon"><svg>
+                    <use href="/msds-spritemap.svg#email" /></svg></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
