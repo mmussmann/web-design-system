@@ -74,6 +74,7 @@ export const buttonIcons = [
   { name: 'Plugin', value: '/Static/dist/msds-spritemap.svg#plugin', previewValue: '#plugin' },
   { name: 'Plus', value: '/Static/dist/msds-spritemap.svg#plus', previewValue: '#plus' },
   { name: 'Podcast', value: '/Static/dist/msds-spritemap.svg#podcast', previewValue: '#podcast' },
+  { name: 'Press Release', value: '/Static/dist/msds-spritemap.svg#press-release', previewValue: '#press-release' },
   { name: 'Price', value: '/Static/dist/msds-spritemap.svg#price', previewValue: '#price' },
   { name: 'Print', value: '/Static/dist/msds-spritemap.svg#print', previewValue: '#print' },
   { name: 'Profile', value: '/Static/dist/msds-spritemap.svg#profile', previewValue: '#profile' },
