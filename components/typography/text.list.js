@@ -9,6 +9,7 @@ fontSizes = [
     { name: 'Header 5', value: 'msds-text-header-5' },
     { name: 'Header 6', value: 'msds-text-header-6' },
     { name: 'Lead', value: 'msds-text-lead' },
+    { name: 'Body text 0', value: 'msds-text-body-0' },
     { name: 'Body text 1', value: 'msds-text-body-1' },
     { name: 'Body text 2', value: 'msds-text-body-2' },
     { name: 'Body text 3', value: 'msds-text-body-3' },
