@@ -23,7 +23,7 @@ fractal.web.set('server.sync', true)
 fractal.web.set('server.syncOptions', {
   watchOptions: {
     ignored: path.resolve('src/scss/rich-icons.scss'),
-}
+  }
 })
 
 /*
@@ -33,7 +33,7 @@ const customTheme = require('@frctl/mandelbrot')({
   nav: ['components', 'docs'],
   panels: ['html', 'view', 'context', 'info', 'notes'],
   styles: ['default', '/main.css', '/theme-overrides/styles.css'],
-  scripts: ['/main.js', '/src/js/progress-bar-initialization.js']
+  scripts: ['/design-system.js']
 })
 customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'))
 fractal.web.theme(customTheme)
