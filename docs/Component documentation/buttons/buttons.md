@@ -58,7 +58,7 @@ title: Buttons
 
 ## Overview
 ### Global Definition
-Each button is based on a global CSS class called "msds-btn". It is important to include it first as it is the main CSS class. Without it there is no button component. You can find mainly 2 types of buttons, the default button which is without an icon and one with a icon.
+Each button is based on a global CSS class called <code>"msds-btn"</code>. It is important to include it first as it is the main CSS class. Without it there is no button component. You can find mainly 2 types of buttons, the default button which is without an icon and one with a icon.
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-overview-global-definition'}}</div>
@@ -92,7 +92,7 @@ You can see the different state by hovering, activating and focusing on them on 
 ```
 
 ### Direction
-In some circumstances when having a button with a icon, we would like to render the icon on the left side of the button. To do so, you just need to replace "msds-btn--icon" by the following CSS class: "msds-btn--icon-left"
+In some circumstances when having a button with a icon, we would like to render the icon on the left side of the button. To do so, you just need to replace <code>"msds-btn\--icon"</code> by the following CSS class: <code>"msds-btn\--icon-left"</code>
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-overview-direction'}}</div>
@@ -103,7 +103,7 @@ In some circumstances when having a button with a icon, we would like to render 
 ```
 
 ## Primary Button
-To use a primary button you need to add the following CCS class: <b><i>"msds-btn--primary"</i></b>. 
+To use a primary button you need to add the following CCS class: <code>"msds-btn\--primary"</code>. 
 
 Below is a example of the Milestone Primary button. The default Primary button is without an icon as mentioned in the global definition previously.
 
@@ -125,7 +125,7 @@ Below is a example of the Milestone Primary button. The default Primary button i
 ```
 
 ## Secondary Button
-To use a Secondary button you need to add the following CCS class: <b><i>"msds-btn--secondary"</i></b>. 
+To use a Secondary button you need to add the following CCS class: <code>"msds-btn\--secondary"</code>. 
 
 Below are few examples of the Milestone Secondary button. The default Secondary button is without an icon as mentioned in the global definition previously.
 
@@ -144,7 +144,7 @@ Below are few examples of the Milestone Secondary button. The default Secondary 
 
 
 ## Secondary Button Dark Theme
-To use a Secondary Dark Themed buttons you need to add the following CCS class: <b><i>"msds-btn--secondary-dark"</i></b>. 
+To use a Secondary Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--secondary-dark"</code>. 
 
 Below are few examples of the Milestone Secondary Dark Themed button. The default Secondary Dark Themed button has no icon as mentioned in the global definition previously.
 
@@ -166,7 +166,7 @@ Below are few examples of the Milestone Secondary Dark Themed button. The defaul
 ```
 
 ## Tertiary Button
-To use a Tertiary button you need to add the following CCS class: <b><i>"msds-btn--tertiary"</i></b>. 
+To use a Tertiary button you need to add the following CCS class: <code>"msds-btn\--tertiary"</code>. 
 
 Below are few examples of the Milestone Tertiary button. The default Tertiary button is without an icon as mentioned in the global definition previously.
 
@@ -188,7 +188,7 @@ Below are few examples of the Milestone Tertiary button. The default Tertiary bu
 ```
 
 ## Gray Button
-To use a Gray button you need to add the following CCS class: <b><i>"msds-btn--gray"</i></b>. 
+To use a Gray button you need to add the following CCS class: <code>"msds-btn\--gray"</code>. 
 
 Below are few examples of the Milestone Gray button. The default Gray button is without an icon as mentioned in the global definition previously.
 
@@ -210,7 +210,7 @@ Below are few examples of the Milestone Gray button. The default Gray button is 
 ```
 
 ## Danger Button
-To use a Danger button you need to add the following CCS class: <b><i>"msds-btn--danger"</i></b>. 
+To use a Danger button you need to add the following CCS class: <code>"msds-btn\--danger"</code>. 
 
 Below are few examples of the Milestone Danger button. The default Danger button is without an icon as mentioned in the global definition previously.
 
@@ -231,9 +231,8 @@ Below are few examples of the Milestone Danger button. The default Danger button
 {{render '@button-danger-icon'}}
 ```
 
-
 ## Button Group
-In few cases, we will need to have several buttons and in order to render them and space them correctly, you will need to use a parent element using the following CSS classes: "msds-btn-group--left" or "msds-btn-group--right". It all depends where you would like to align your buttons.
+In few cases, we will need to have several buttons and in order to render them and space them correctly, you will need to use a parent element using the following CSS classes: <code>"msds-btn-group\--left"</code> or <code>"msds-btn-group\--right"</code>. It all depends where you would like to align your buttons.
 
 Below are few examples:
 

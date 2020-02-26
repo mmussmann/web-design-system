@@ -8,7 +8,7 @@
   height: 100%;
   padding-top: 24px;
   padding-bottom: 32px;
-  box-shadow: 0 1px 2px 0 rgba(2, 56, 82, 0.3);
+  box-shadow: 0 1px 2px 0 $rgba-6;
 
   &--vertically-aligned {
     display: flex;
@@ -17,21 +17,13 @@
 
   &--small {
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
     justify-content: flex-start;
 
-    .msds-contact-card__body-contact-person {
-      margin-top: 16px;
-    }
-
-    .msds-contact-card__body-contact-position {
-      margin-bottom: 12px;
-    }
-
     .msds-contact-card__caption {
-      max-width: 146px;
-      max-height: 137px;
-      margin: 0 auto 16px;
+      max-width: 130px;
+      max-height: 130px;
+      margin: 0 auto 24px;
       z-index: 2;
     }
   }
@@ -58,12 +50,10 @@
       margin-bottom: 8px;
     }
 
-    .msds-contact-card__body-contact-position {
-      margin-bottom: 12px;
-    }
-
     .msds-contact-card__body-contact-details {
       display: block;
+      margin-top: 12px;
+      padding-top: 0px;
     }
 
     .msds-contact-card__overlay {
@@ -95,16 +85,27 @@
       margin-bottom: 8px;
     }
 
-    .msds-contact-card__body-contact-position {
-      margin-bottom: 12px;
-    }
-
     .msds-contact-card__body-contact-details {
       display: block;
+      margin-top: 12px;
+      padding-top: 0px;
     }
 
     .msds-contact-card__overlay {
       display: none;
+    }
+  }
+
+  &--content {
+    box-shadow: unset;
+    background: transparent;
+
+    .msds-contact-card__body-contact-position {
+      margin-bottom: 4px;
+    }
+
+    .msds-contact-card__body-contact-details {
+      padding-top: 0;
     }
   }
 
@@ -131,7 +132,6 @@
   &__body-contact-position {
     @include msds-font('body-1');
     color: $gray-8;
-    margin-bottom: 12px;
   }
 
   &__body-contact-details {
@@ -139,6 +139,7 @@
     @include msds-font('body-1');
     display: table;
     margin: 0 auto;
+    padding-top: 24px;
 
     .msds-contact-card__body-contact-details-wrapper {
       display: table-cell;
@@ -147,8 +148,8 @@
 
     .msds-contact-card__icon {
       fill: $clear-blue;
-      width: 15px;
-      height: 11px;
+      width: 16px;
+      height: 16px;
       margin-right: 25px;
     }
 
@@ -158,7 +159,7 @@
       align-items: center;
       color: $clear-blue;
       text-decoration: none;
-      margin-bottom: 10px;
+      margin-bottom: 16px;
 
       &:hover {
         text-decoration: underline;
@@ -171,8 +172,8 @@
   }
 
   &__caption {
-    max-width: 186px;
-    max-height: 186px;
+    max-width: 170px;
+    max-height: 170px;
     margin: 0 auto 16px;
     z-index: 2;
   }
@@ -180,7 +181,7 @@
   &__caption-image {
     height: 100%;
     width: 100%;
-    border: 8px solid rgba(2, 56, 82, 0.12);
+    box-shadow: 0 2px 12px 0 $rgba-1;
   }
 
   &__overlay {
