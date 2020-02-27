@@ -4,24 +4,21 @@
       <h1>Progress Bar</h1>
       <h2>Light Theme</h2>
       <div class="row">
-          <div class="col-8">
-            <div id="LightThemeProgressBar" class="msds-progress-bar">
-              <span class="msds-progress-bar__progression-counter"></span>
-              <div class="msds-progress-bar__base-bar">
-                <div class="msds-progress-bar__progression-bar"></div>
-              </div>
-            </div>
+        <div class="col-8">
+          <div id="LightThemeProgressBar" class="msds-progress-bar">
+            <span class="msds-progress-bar__progression-counter"></span>
+            <div class="msds-progress-bar__base-bar">
+              <div class="msds-progress-bar__progression-bar"></div>
+            </div>            
             <div class="progress-pagination progress-pagination--light">
-              <div class="basenumber">
-                  <label>Base number</label>
-                  <input id="LightThemeBaseNumber" type="number" value="5">
-              </div>
               <div id="LightThemePrevStep" class="prevStep">Previous</div>
-              <div id="LightThemeNextStep" class="nextStep">Next</div>
-              <input id="LightThemeStartFromOne" type="checkbox" name="LightThemeStartFromOne" />
-              <label for="LightThemeStartFromOne">Start from 1</label>
+              <div class="currentsteps">                  
+                  <input id="LightThemeCurrentStep" type="number"> / <span id="LightThemeBaseNumber" ></span>
+              </div>
+              <div id="LightThemeNextStep" class="nextStep">Next</div>              
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>

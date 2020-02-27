@@ -395,12 +395,12 @@ dl dd a {
   text-align: center;
   margin: 20px 0;
 }
-.progress-pagination .basenumber {
+.progress-pagination .currentsteps {
   display: inline-block;
-  vertical-align: text-bottom;
+  vertical-align: text-bottom;  
 }
 
-.progress-pagination .basenumber input {
+.progress-pagination .currentsteps input {
   width: 50px;
 }
 
@@ -420,7 +420,7 @@ dl dd a {
   color: #fff;
 }
 
-.progress-pagination.progress-pagination--dark .basenumber {
+.progress-pagination.progress-pagination--dark .currentsteps {
   color: #fff;
 }
 
@@ -428,8 +428,4 @@ dl dd a {
 .progress-pagination.progress-pagination--dark .nextStep {
   background: #ffe700;
   color: #303436;
-}
-
-.progress-pagination.progress-pagination--dark label {
-  color: #fff;
 }

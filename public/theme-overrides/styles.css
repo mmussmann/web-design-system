@@ -317,7 +317,15 @@ body {
   font-family: 'Open Sans';
 }
 
-.Prose .element-preview-dark h3 {
+.Prose .element-preview-dark h1,
+.Prose .element-preview-dark h2,
+.Prose .element-preview-dark h3,
+.Prose .element-preview-dark h4,
+.Prose .element-preview-dark h5,
+.Prose .element-preview-dark h6,
+.Prose .element-preview-dark p,
+.Prose .element-preview-dark span,
+.Prose .element-preview-dark label {
   color: #ffffff;
 }
 
@@ -380,4 +388,44 @@ dl dd a {
   .Header-title {
     padding: 1.75rem 0;
   }
+}
+
+/* Progress Bar ******************************************/
+.progress-pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+.progress-pagination .currentsteps {
+  display: inline-block;
+  vertical-align: text-bottom;  
+}
+
+.progress-pagination .currentsteps input {
+  width: 50px;
+}
+
+.progress-pagination .prevStep,
+.progress-pagination .nextStep {
+  padding: 5px 10px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  cursor: pointer;
+  line-height: 20px;
+  user-select: none;
+}
+
+.progress-pagination.progress-pagination--light .prevStep,
+.progress-pagination.progress-pagination--light .nextStep {
+  background: #303436;
+  color: #fff;
+}
+
+.progress-pagination.progress-pagination--dark .currentsteps {
+  color: #fff;
+}
+
+.progress-pagination.progress-pagination--dark .prevStep,
+.progress-pagination.progress-pagination--dark .nextStep {
+  background: #ffe700;
+  color: #303436;
 }

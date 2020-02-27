@@ -39,16 +39,15 @@ Also, note that the progress bar width is adaptive which means that it is based 
 ```
 
 ```javascript
-//Initialize the progress bar with the element id, a progression of 5 steps and set a specific progression step by default      
-const progressBar = Object.create(window.msdsProgressBar);      
-const ProgressBarDefinition = document.getElementById("ProgressBarDefinition");
-if(ProgressBarDefinition) {
-    progressBar.init("ProgressBarDefinition", 5, 4); 
-}
+//Progress bar Global Definition------------------
+//Initialize the progress bar with the element id, a maximum of 5 steps and starting from 0 (minimum step). 
+const progressBar = new msdsProgressBar('ProgressBarDefinition', 5, false)
+//Set the progression to step 4 - For demo purposes.
+progressBar.goToStep(4)
 ```
 
 ### Features
-By default our progress bar starts from 0. However, depending on the context, we have an option to start the progress bar from 1 by setting the "StartFromOne" variable to true. There is also a way to set a progression to a specific step by setting the currentStep to the value you need.
+By default our progress bar starts from 0. However, depending on the context, we have an option to start the progress bar from 1 by setting the "StartFromOne" variable to true. There is also a way to set a progression to a specific step by setting the currentStep to the value you need. To do so, you will need to use the goToStep function and pass as parameter the required step number.
 
 
 <div class="element-preview">
@@ -60,28 +59,17 @@ By default our progress bar starts from 0. However, depending on the context, we
 ```
 
 ```javascript
-//Progress Bar Features scripts------------------    
-const progressBarFeatures1El = document.getElementById("ProgressBarFeatures1");
-if(progressBarFeatures1El) {
-    //Initialize the progress bar with 5 steps starting form the default value 0.
-    const progressBarFeatures1 = Object.create(window.msdsProgressBar);
-    progressBarFeatures1.init("ProgressBarFeatures1", 5, 0);
-}
-    
-const progressBarFeatures2El = document.getElementById("ProgressBarFeatures2");
-    if(progressBarFeatures2El) {
-    //Initialize the progress bar with 5 steps starting form the 1.
-    const progressBarFeatures2 = Object.create(window.msdsProgressBar);
-    progressBarFeatures2.startFromOne = true; //Set "StartFromOne" variable to true.
-    progressBarFeatures2.init("ProgressBarFeatures2", 5, 0); //Initialize the progress bar with 5 steps starting from step 1 as the startFromOne is set to true
-}
+//Progress Bar Features scripts------------------
+//Initialize the progress bar with 5 steps starting form step 0.
+const progressBarFeatures1 = new msdsProgressBar('ProgressBarFeatures1', 5, false)
 
-const progressBarFeatures3El = document.getElementById("ProgressBarFeatures3");
-if(progressBarFeatures3El) {
-    //Set the progress bar to a specific step.
-    const progressBarFeatures3 = Object.create(window.msdsProgressBar);
-    progressBarFeatures3.init("ProgressBarFeatures3", 5, 3); //Initialize the progress bar with 5 steps starting from step 3
-}
+//Initialize the progress bar with 5 steps starting form step 1.
+const progressBarFeatures2 = new msdsProgressBar('ProgressBarFeatures2', 5, true)
+
+//Set the progress bar with 5 steps starting from 0.
+const progressBarFeatures3 = new msdsProgressBar('ProgressBarFeatures3', 5, false)
+//Set the progression to step 3 to show how the goToStep function works
+progressBarFeatures3.goToStep(3)
 ```
 
 ### Sizes
@@ -97,18 +85,15 @@ Our Progress Bar can be rendered in 2 different sizes, large (default) and small
 
 ```javascript
 //Progress bar Size scripts------------------
-const progressBarSize1El = document.getElementById('ProgressBarSize1');
-if(progressBarSize1El) {
-  const progressBarSize1 = Object.create(window.msdsProgressBar);
-  progressBarSize1.init('ProgressBarSize1', 5, 2); //Initialize the progress bar with 5 steps starting from step 2
-}    
-        
-const progressBarSize2El = document.getElementById('ProgressBarSize2');
-if(progressBarSize2El) {
-  //Set the progress bar to a specific step by default.
-  const progressBarSize2 = Object.create(window.msdsProgressBar);      
-  progressBarSize2.init('ProgressBarSize2', 5, 3); //Initialize the progress bar with 5 steps starting from step 3
-}
+//Initialize the progress bar with 5 steps starting from 0.
+const progressBarSize1 = new msdsProgressBar('ProgressBarSize1', 5, false)
+//Set the progression to step 2 - For demo purposes.
+progressBarSize1.goToStep(2)
+
+//Initialize the progress bar with 5 steps starting from 0.
+const progressBarSize2 = new msdsProgressBar('ProgressBarSize2', 5, false)
+//Set the progression to step 3 - For demo purposes.
+progressBarSize2.goToStep(3)
 ```
 
 ### Light version
@@ -125,43 +110,10 @@ you can also see that you can attached different events such as prev() and next(
 ```
 
 ```javascript
-//Light Theme scripts------------------              
-const lightThemeProgressBarEl = document.getElementById("LightThemeProgressBar");
-if(lightThemeProgressBarEl) {    
-  //Initialize the progress bar with 12 steps.
-  const lightThemeProgressBar = Object.create(window.msdsProgressBar);
-  lightThemeProgressBar.init("LightThemeProgressBar", 12, 0);             
-}
-
-//Initialize the progress bar with 12 steps.     
-const lightThemeProgressBarEl = document.getElementById("LightThemeProgressBar");
-if(lightThemeProgressBarEl) {
-  const lightThemeProgressBar = Object.create(window.msdsProgressBar);
-
-  let lightThemeBaseNumberElement = document.querySelectorAll('#LightThemeBaseNumber')[0]    
-  lightThemeBaseNumberElement.value = 12;
-
-  lightThemeProgressBar.init("LightThemeProgressBar", lightThemeBaseNumberElement.value, 0);  
-  
-  document.querySelector('#LightThemePrevStep').addEventListener('click', event => {            
-      lightThemeProgressBar.prev();
-  })
-
-  document.querySelector('#LightThemeNextStep').addEventListener('click', event => {
-      lightThemeProgressBar.next();
-  })
-
-  document.querySelector('#LightThemeBaseNumber').addEventListener('change', event => {
-      lightThemeProgressBar.init("LightThemeProgressBar", event.target.value, 0);        
-  })    
-
-  const lightThemeStartFromOneElement = document.querySelector('#LightThemeStartFromOne');
-  lightThemeStartFromOneElement.addEventListener('change', event => {        
-      lightThemeProgressBar.startFromOne = lightThemeStartFromOneElement.checked;
-      const baseNumber = document.querySelectorAll('#LightThemeBaseNumber')[0].value;
-      lightThemeProgressBar.init("LightThemeProgressBar", baseNumber, 0);
-  })
-}  
+//Light Theme scripts------------------
+//Initialize the progress bar with 20 steps starting from 0.
+const lightThemeProgressBar = new msdsProgressBar('LightThemeProgressBar', 20, false)
+lightThemeProgressBar.setPaginationElements('LightThemePrevStep', 'LightThemeNextStep', 'LightThemeBaseNumber', 'LightThemeCurrentStep')
 ```
 
 ### Dark version
@@ -176,34 +128,8 @@ Concerning the Dark theme version, you will need to add the following CSS class 
 ```
 
 ```javascript
-//Dark Theme scripts------------------        
-//Initialize the progress bar with 12 steps.
-const darkThemeProgressBarEl = document.getElementById("DarkThemeProgressBar");
-if(darkThemeProgressBarEl) {
-    const darkThemeProgressBar = Object.create(window.msdsProgressBar);
-
-    let darkThemeBaseNumberElement = document.querySelectorAll('#DarkThemeBaseNumber')[0]    
-    darkThemeBaseNumberElement.value = 12;
-    
-    darkThemeProgressBar.init("DarkThemeProgressBar", darkThemeBaseNumberElement.value, 0); 
-
-    document.querySelector('#DarkThemePrevStep').addEventListener('click', event => {
-        darkThemeProgressBar.prev();
-    })
-
-    document.querySelector('#DarkThemeNextStep').addEventListener('click', event => {
-        darkThemeProgressBar.next();
-    })
-
-    document.querySelector('#DarkThemeBaseNumber').addEventListener('change', event => {
-        darkThemeProgressBar.init("DarkThemeProgressBar", event.target.value, 0);        
-    })    
-
-    const darkThemeStartFromOneElement = document.querySelector('#DarkThemeStartFromOne');
-    darkThemeStartFromOneElement.addEventListener('change', event => {        
-        darkThemeProgressBar.startFromOne = darkThemeStartFromOneElement.checked;
-        const baseNumber = document.querySelectorAll('#DarkThemeBaseNumber')[0].value;
-        darkThemeProgressBar.init("DarkThemeProgressBar", baseNumber, 0);
-    })
-}
+//Dark Theme scripts------------------
+//Initialize the progress bar with 20 steps starting from 1.
+const darkThemeProgressBar = new msdsProgressBar('DarkThemeProgressBar', 20, true)
+darkThemeProgressBar.setPaginationElements('DarkThemePrevStep', 'DarkThemeNextStep', 'DarkThemeBaseNumber', 'DarkThemeCurrentStep')
 ```
