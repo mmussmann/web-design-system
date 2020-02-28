@@ -10,10 +10,10 @@ window.addEventListener('load', function() {
   //Progress Bar Features scripts------------------
   //Progress Bar Features scripts------------------
   //Initialize the progress bar with 5 steps starting form step 0.
-  const progressBarFeatures1 = new msdsProgressBar('ProgressBarFeatures1', 5, false)
+  new msdsProgressBar('ProgressBarFeatures1', 5, false)
 
   //Initialize the progress bar with 5 steps starting form step 1.
-  const progressBarFeatures2 = new msdsProgressBar('ProgressBarFeatures2', 5, true)
+  new msdsProgressBar('ProgressBarFeatures2', 5, true)
 
   //Set the progress bar with 5 steps starting from 0.
   const progressBarFeatures3 = new msdsProgressBar('ProgressBarFeatures3', 5, false)
