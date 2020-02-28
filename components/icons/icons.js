@@ -1,20 +1,4 @@
-import { buttonIcons, richIcons } from './icons.list'
-
-function init() {
-  const iconsContainer = document.querySelector('.msds-icons')
-
-  if (iconsContainer) {
-    const path = document.querySelector('.msds-icons').dataset.path
-
-    buttonIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
-    richIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
-
-    buttonIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
-    richIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon))
-  }
-}
-
-function appendIconElementToContainer(iconsContainer, icon, isButtonIcon, path) {
+export function appendIconElementToContainer(iconsContainer, icon, isButtonIcon, path) {
   const iconElement = isButtonIcon ? createButtonIconElement(icon, path) : createIconElement(icon)
   const iconWrapper = createBootstrapWrapper()
   const iconName = iconElement.getAttribute('title')
@@ -53,5 +37,3 @@ function createButtonIconElement(icon, path) {
 
   return svgElement
 }
-
-init()
