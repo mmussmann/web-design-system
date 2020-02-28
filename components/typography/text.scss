@@ -79,9 +79,14 @@
   }
 
   @if $font == 'lead' {
-    @include rfs(20);
-    line-height: 28px;
+    @include rfs(24);
+    line-height: 32px;
     font-weight: 300;
+  }
+
+  @if $font == 'body-0' {
+    @include rfs(18);
+    line-height: 26px;
   }
 
   @if $font == 'body-1' {
@@ -152,6 +157,10 @@
 
 .msds-text-lead {
   @include msds-font('lead');
+}
+
+.msds-text-body-0 {
+  @include msds-font('body-0');
 }
 
 .msds-text-body-1 {
