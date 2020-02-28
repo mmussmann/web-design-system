@@ -3,7 +3,8 @@ module.exports = {
   title: 'Available icons',
   context: {
     previewCss: `
-    .msds-icons {
+    .msds-button-icons,
+    .msds-rich-icons {
       display: inline;
     }
     div {
@@ -11,6 +12,9 @@ module.exports = {
       margin: 10px;
       height: 200px !important;
       width: 200px !important;
+    }
+    p{
+      text-align: center;
     }
     svg {
       margin: 10px;
