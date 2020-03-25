@@ -1,0 +1,189 @@
+.msds-expander {
+  padding-top: 40px;
+  padding-bottom: 56px;
+  &--dark {
+    border-bottom: 1px solid $white;
+    .msds-expander__list-item {
+      border-top: 1px solid $white;
+
+      &:hover {
+        .msds-expander__headline {
+          background: $rgba-2;
+          text-decoration: underline;
+          text-decoration-color: $white;
+        }
+      }
+
+      &:focus {
+        .msds-expander__headline {
+          text-decoration: unset;
+          text-decoration-color: unset;
+          border: 4px solid $rgba-7;
+        }
+      }
+
+      &:active {
+        .msds-expander__headline {
+          border: 4px solid $rgba-7;
+        }
+      }
+    }
+
+    .msds-expander__headline-icon {
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &--hide-desktop-element {
+    display: none;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 32px;
+
+    &-icon {
+      max-width: 100px;
+      max-height: 84px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__body {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid $gray-4;
+  }
+
+  &__headline {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 24px 16px 24px;
+    border: 4px solid transparent;
+  }
+
+  &__headline-icon {
+    padding-top: 4px;
+    padding-left: 12px;
+    svg {
+      fill: $clear-blue;
+      width: 17px;
+      height: 17px;
+      transform: rotate(270deg);
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    background-origin: border-box;
+    border-top: 1px solid $gray-4;
+
+    &:hover {
+      .msds-expander__headline {
+        text-decoration: underline;
+        text-decoration-color: $clear-blue;
+      }
+    }
+
+    &:focus {
+      .msds-expander__headline {
+        text-decoration: unset;
+        text-decoration-color: unset;
+        border: 4px solid $rgba-3;
+      }
+    }
+    &:active {
+      .msds-expander__headline {
+        border: 4px solid $rgba-3;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    opacity: 1;
+    padding: 0 16px 38px;
+    margin: 0;
+    overflow: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.25s ease-in-out;
+  }
+
+  input[type='checkbox'] {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    &:checked {
+      + .msds-expander__headline {
+        font-weight: 400;
+        padding: 25px 16px 25px;
+
+        .msds-expander__headline-icon {
+          svg {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      & ~ .msds-expander__content {
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(0, 100%);
+
+        & ~ .msds-expander__body {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .msds-expander {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 96px;
+
+    &--hide-mobile-element {
+      display: none;
+    }
+
+    &--hide-desktop-element {
+      display: block;
+    }
+
+    &__header {
+      margin: 70px 0 0 0;
+      height: unset;
+
+      &-icon {
+        margin-bottom: 0;
+        max-width: 185px;
+        max-height: 155px;
+      }
+    }
+    .msds-expander__header-headline {
+      margin-top: 82px;
+      margin-bottom: 40px;
+    }
+  }
+}
