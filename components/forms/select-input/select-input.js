@@ -1,8 +1,8 @@
 function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   const _options = options
-  let _valid = false
   const _validationMsg = validationMsg
   const _placeholder = isRequired ? placeholder + '*' : placeholder
+  let _valid = false
   let _value = 'not set'
   let _index = 0
   let shouldPopulateList = true
@@ -88,4 +88,13 @@ const input = new SelectInput(
   true
 )
 input.init()
+
+const inputSmall = new SelectInput(
+  2,
+  { dk: 'Denmark', en: 'England', po: 'Poland' },
+  'validationMsg',
+  'Select Country',
+  true
+)
+inputSmall.init()
 // console.log('getSelectedValue()', input.getSelectedValue())
