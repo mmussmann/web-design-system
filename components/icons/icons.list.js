@@ -202,5 +202,6 @@ export const richIcons = [
   { name: 'Reduced Investment', value: 'msds-reduced-investment' },
   { name: 'Feature Rich', value: 'msds-feature-rich' },
   { name: 'Ease Of Use', value: 'msds-ease-of-use' },
-  { name: 'Wifi', value: 'msds-wifi' }
+  { name: 'Wifi', value: 'msds-wifi' },
+  { name: 'Xprotect Compare Matrix', value: 'msds-xprotect-compare-matrix' }
 ]
