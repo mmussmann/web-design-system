@@ -74,7 +74,7 @@
     .msds-icon {
       color: $white;
       background: $clear-blue-gradient;
-      box-shadow: 0 0 0 4px rgba(0, 153, 218, 0.5);
+      box-shadow: 0 0 0 4px $rgba-3;
     }
   }
 
@@ -82,7 +82,7 @@
     outline: none;
 
     .msds-icon {
-      box-shadow: 0 0 0 4px rgba(0, 153, 218, 0.5);
+      box-shadow: 0 0 0 4px $rgba-3;
     }
   }
 
@@ -145,13 +145,13 @@
       .msds-icon {
         color: $clear-blue;
         background: $rgba-2;
-        box-shadow: 0 0 0 4px rgba(0, 153, 218, 0.5);
+        box-shadow: 0 0 0 4px $rgba-3;
       }
     }
 
     &:focus {
       .msds-icon {
-        box-shadow: 0 0 0 4px rgba(0, 153, 218, 0.5);
+        box-shadow: 0 0 0 4px $rgba-3;
       }
     }
   }
