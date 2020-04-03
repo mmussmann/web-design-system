@@ -1,4 +1,9 @@
 function SelectInput(id, options, validationMsg, placeholder, isRequired) {
+  let selectInput
+  let selectElement
+  let validationMsgElement
+  let isOpen = false
+  let displayValidationMsg = false
   const _options = options
   const _validationMsg = validationMsg
   const _placeholder = isRequired ? placeholder + '*' : placeholder
@@ -8,40 +13,65 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   let shouldPopulateList = true
 
   const cacheDom = function() {
-    this.selectInput = document.getElementById(id)
-    console.log('cache dom', this.selectInput)
+    selectInput = document.getElementById(id)
+    selectElement = selectInput.querySelector('.msds-select-input__select')
+    validationMsgElement = selectInput.querySelector('.msds-select-input__validation-msg')
   }
 
   const bindEvents = function() {
-    this.selectInput.addEventListener('change', () => render())
+    selectElement.addEventListener('change', () => render())
   }
 
   const render = function() {
+    _index = selectElement.value
+    if (isOpen) {
+      selectInput.classList.toggle('msds-select-input--open')
+    }
+    if (_validationMsg != '' && displayValidationMsg == true) {
+      validationMsgElement.style.display = 'block'
+    } else {
+      validationMsgElement.style.display = 'none'
+    }
+    if (_index == 0) {
+      selectElement.classList.add('msds-select-input__select--no-selection')
+    } else {
+      selectElement.classList.remove('msds-select-input__select--no-selection')
+      displayValidationMsg = false
+    }
     if (isEmpty(_options)) {
       _index = 0
       return
     } else if (shouldPopulateList) {
       shouldPopulateList = false
       const placeholderElement = createOptionElement(_placeholder, 0, true)
-      this.selectInput.add(placeholderElement)
+      selectElement.add(placeholderElement)
       let valueIndex = 1
       for (const key in _options) {
         const optionElement = createOptionElement(_options[key], valueIndex, false)
-        this.selectInput.add(optionElement)
+        selectElement.add(optionElement)
         valueIndex++
       }
-
-      //console.log('_value', this.selectInput.value)
     }
-    _index = this.selectInput.value
-    _value = this.selectInput.options[this.selectInput.selectedIndex].text
-    validateComponent()
+    _value = selectElement.options[selectElement.selectedIndex].text
   }
-  const validateComponent = function() {
+
+  this.toogleOpen = function() {
+    if (!isOpen) {
+      isOpen = true
+    } else {
+      isOpen = false
+    }
+  }
+
+  this.validateComponent = function() {
     if (_index != 0) {
       _valid = true
+      displayValidationMsg = false
+      render()
     } else {
       _valid = false
+      displayValidationMsg = true
+      render()
     }
   }
   const createOptionElement = function(text, value, isPlaceholder) {
@@ -70,8 +100,12 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
 
   this.isValid = function() {
     if (_valid) {
+      displayValidationMsg = false
+      render()
       return true
     }
+    displayValidationMsg = true
+    render()
     return false
   }
 
@@ -81,7 +115,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
 }
 
 const input = new SelectInput(
-  1,
+  'input-1',
   { dk: 'Denmark', en: 'England', po: 'Poland' },
   'validationMsg',
   'Select Country',
@@ -90,11 +124,10 @@ const input = new SelectInput(
 input.init()
 
 const inputSmall = new SelectInput(
-  2,
+  'input-2',
   { dk: 'Denmark', en: 'England', po: 'Poland' },
   'validationMsg',
   'Select Country',
   true
 )
 inputSmall.init()
-// console.log('getSelectedValue()', input.getSelectedValue())
