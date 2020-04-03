@@ -24,6 +24,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
 
   const render = function() {
     _index = selectElement.value
+    validationMsgElement.innerHTML = _validationMsg
     if (isOpen) {
       selectInput.classList.toggle('msds-select-input--open')
     }
