@@ -1,5 +1,5 @@
 const path = require('path')
-const {  CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
@@ -13,7 +13,8 @@ module.exports = {
     }
   },
   entry: {
-    main: path.resolve('./src/js/main.js')
+    main: path.resolve('./src/js/main.js'),
+    "design-system": path.resolve('./src/js/design-system.js')
   },
   output: {
     path: path.resolve('./public/'),
@@ -118,7 +119,7 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
-      { from: 'src/demo-img', to: 'src/demo-img' },
+      { from: 'src/demo-img', to: 'src/demo-img' },      
       { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' }
     ])
   ],
