@@ -37,14 +37,18 @@ function onCloseClick(e) {
 
 /** Public methods **/
 function initialize() {
-  const elements = document.querySelectorAll('.js-msds-alert-close-click-handler')
+  const elements = document.querySelectorAll('.msds-btn, .msds-alert__close-click-area')
+
   ;[].forEach.call(elements, element => {
     const domAlert = findAncestor(element, '.msds-alert')
-    const alertId = domAlert.dataset.alertId
-    if (!cookies.get(cookiePrefix + alertId)) {
-      domAlert.classList.remove('d-none')
+
+    if (domAlert) {
+      const alertId = domAlert.dataset.alertId
+      if (!cookies.get(cookiePrefix + alertId)) {
+        domAlert.classList.remove('d-none')
+      }
+      element.addEventListener('click', onCloseClick)
     }
-    element.addEventListener('click', onCloseClick)
   })
 }
 
