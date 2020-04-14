@@ -17,7 +17,14 @@ function getFutureDate(addedDays) {
 function onCloseClick(e) {
   const domAlert = findAncestor(e.currentTarget, '.msds-alert')
   const alertId = domAlert.dataset.alertId
-  const stayHidden = domAlert.querySelector('.msds-alert__checkbox').checked
+  let stayHidden
+
+  if (!domAlert.classList.contains('msds-alert--stay-hidden')) {
+    stayHidden = domAlert.querySelector('.msds-alert__checkbox').checked
+  } else {
+    stayHidden = domAlert
+  }
+
   if (alertId && stayHidden) {
     cookies.set(cookiePrefix + alertId, true, {
       expires: getFutureDate(30)

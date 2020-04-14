@@ -5,6 +5,31 @@
 		and the checkbox needs to be implemented how we want it in forms first. But be mindfull of accessability when doing so.
 	</p>
 
+	<h2>Extra attention alert - Without a checkbox - With image</h2>
+	<div class="row">
+		<div class="col-12">
+			<div class="d-none msds-alert msds-alert--stay-hidden" data-alert-id="123">
+				<div class="msds-alert__close-click-area js-msds-alert-close-click-handler">
+					<svg class="msds-alert__close-icon">
+					  <use href="{{ path '/msds-spritemap.svg' }}#cross" />
+					</svg>
+				</div>
+				<div class="msds-alert__content-container">
+					<img class="msds-alert__image" src="{{ path '/src/demo-img/time-to-market.png' }}">
+					<div class="msds-alert__text-container">
+						<div class="msds-alert__header">Donec libero turpis, lacinia nec leo sit amet</div>
+						<p class="msds-alert__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar.
+						</p>
+						<div class="msds-alert__action-container">
+							 <button type="button" class="msds-btn msds-btn--secondary msds-btn--sm js-msds-alert-close-click-handler">ok, i get it</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<h2>Extra attention alert - With image</h2>
 	<div class="row">
 		<div class="col-12">
