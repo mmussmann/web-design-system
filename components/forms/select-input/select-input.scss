@@ -1,6 +1,3 @@
-.divider-bottom {
-  border-bottom: 1px solid #dce2e6;
-}
 .msds-select-input {
   position: relative;
   &__select {
@@ -61,6 +58,9 @@
   &__validation-msg {
     display: none;
     margin-top: 4px;
+    &--display {
+      display: block;
+    }
   }
   &--open {
     .msds-select-input__icon {
