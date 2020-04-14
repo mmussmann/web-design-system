@@ -32,7 +32,7 @@
 
     &:hover {
       .msds-alert__close-icon {
-        color: $gray-9;
+        fill: $gray-9;
       }
     }
   }
@@ -40,7 +40,8 @@
   &__close-icon {
     width: 16px;
     height: 16px;
-    color: $gray-8;
+    fill: $gray-8;
+    cursor: pointer;
   }
 
   &__content-container {
@@ -102,21 +103,12 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: -10px;
+      margin-top: 24px;
     }
   }
 
-  &__button {
-    // THIS IS JUST PLACERHOLDER STYLING, DELETE THIS ONCE WE HAVE BUTTONS
-    // IMPLEMENTED IN THE DESIGN SYSTEM
-    height: 36px;
-    padding: 0 20px;
-    text-transform: uppercase;
-
-    @include media-breakpoint-up(md) {
-      margin-top: 10px;
-      margin-right: 40px;
-    }
+  .msds-btn {
+    margin-top: 0px;
   }
 
   &__checkbox-container {
@@ -124,9 +116,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    margin-left: 40px;
 
     @include media-breakpoint-up(md) {
-      margin-top: 10px;
+      margin-top: 0px;
     }
   }
 
@@ -134,6 +127,7 @@
     height: 16px;
     width: 16px;
     margin-right: 10px;
+    cursor: pointer;
   }
 
   &__checkbox-label {
