@@ -16,12 +16,14 @@ function getFutureDate(addedDays) {
 /** Event handlers **/
 function onCloseClick(e) {
   const domAlert = findAncestor(e.currentTarget, '.msds-alert')
+  const containsStayHiddenModifier = domAlert.classList.contains('msds-alert--stay-hidden') ? true : false
+  const containsStayHiddenCheckbox = domAlert.querySelector('.msds-alert__checkbox') ? true : false
   const alertId = domAlert.dataset.alertId
   let stayHidden
 
-  if (!domAlert.classList.contains('msds-alert--stay-hidden')) {
+  if (!containsStayHiddenModifier && containsStayHiddenCheckbox) {
     stayHidden = domAlert.querySelector('.msds-alert__checkbox').checked
-  } else {
+  } else if (containsStayHiddenModifier) {
     stayHidden = domAlert
   }
 
