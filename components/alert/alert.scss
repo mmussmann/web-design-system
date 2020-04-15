@@ -87,14 +87,12 @@
 
   &__header {
     @include msds-font('header-3');
-    color: $gray-10;
   }
 
   &__text {
     @include msds-font('body-2');
     margin-top: 16px;
     margin-bottom: 24px;
-    color: $gray-9;
   }
 
   &__action-container {
