@@ -4,7 +4,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   let validationMsgElement
   let isOpen = false
   let displayValidationMsg = false
-  let _valid = false
+  let _valid = isRequired ? false : true
   let _value = 'not set'
   let _selectedOptionIndex = 0
   let shouldPopulateList = true
@@ -74,6 +74,16 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     return true
   }
 
+  const cleanValidationState = function() {
+    displayValidationMsg = false
+    _valid = true
+  }
+
+  const setValidationState = function() {
+    displayValidationMsg = true
+    _valid = false
+  }
+
   this.init = function() {
     cacheDom()
     bindEvents()
@@ -88,24 +98,13 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     }
   }
 
-  this.validateComponent = function() {
-    if (_selectedOptionIndex != 0) {
-      _valid = true
-      displayValidationMsg = false
-      render()
-    } else {
-      _valid = false
-      displayValidationMsg = true
-      render()
-    }
-  }
   this.isValid = function() {
     if (_valid) {
-      displayValidationMsg = false
+      cleanValidationState()
       render()
       return true
     }
-    displayValidationMsg = true
+    setValidationState()
     render()
     return false
   }
