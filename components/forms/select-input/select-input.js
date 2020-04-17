@@ -28,16 +28,16 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     if (isOpen) {
       selectInput.classList.toggle('msds-select-input--open')
     }
-    if (_validationMsg != '' && displayValidationMsg == true) {
-      validationMsgElement.classList.add('msds-select-input__validation-msg--display')
-    } else {
-      validationMsgElement.classList.remove('msds-select-input__validation-msg--display')
-    }
     if (_selectedOptionIndex == 0) {
       selectElement.classList.add('msds-select-input__select--no-selection')
     } else {
       selectElement.classList.remove('msds-select-input__select--no-selection')
-      displayValidationMsg = false
+      cleanValidationState()
+    }
+    if (_validationMsg != '' && displayValidationMsg) {
+      validationMsgElement.classList.add('msds-select-input__validation-msg--display')
+    } else {
+      validationMsgElement.classList.remove('msds-select-input__validation-msg--display')
     }
     if (isEmpty(_options)) {
       _selectedOptionIndex = 0
