@@ -16,8 +16,17 @@ function getFutureDate(addedDays) {
 /** Event handlers **/
 function onCloseClick(e) {
   const domAlert = findAncestor(e.currentTarget, '.msds-alert')
+  const containsStayHiddenModifier = domAlert.classList.contains('msds-alert--stay-hidden') ? true : false
+  const containsStayHiddenCheckbox = domAlert.querySelector('.msds-alert__checkbox') ? true : false
   const alertId = domAlert.dataset.alertId
-  const stayHidden = domAlert.querySelector('.msds-alert__checkbox').checked
+  let stayHidden
+
+  if (!containsStayHiddenModifier && containsStayHiddenCheckbox) {
+    stayHidden = domAlert.querySelector('.msds-alert__checkbox').checked
+  } else if (containsStayHiddenModifier) {
+    stayHidden = domAlert
+  }
+
   if (alertId && stayHidden) {
     cookies.set(cookiePrefix + alertId, true, {
       expires: getFutureDate(30)
@@ -28,14 +37,18 @@ function onCloseClick(e) {
 
 /** Public methods **/
 function initialize() {
-  const elements = document.querySelectorAll('.js-msds-alert-close-click-handler')
+  const elements = document.querySelectorAll('.msds-btn, .msds-alert__close-click-area')
+
   ;[].forEach.call(elements, element => {
     const domAlert = findAncestor(element, '.msds-alert')
-    const alertId = domAlert.dataset.alertId
-    if (!cookies.get(cookiePrefix + alertId)) {
-      domAlert.classList.remove('d-none')
+
+    if (domAlert) {
+      const alertId = domAlert.dataset.alertId
+      if (!cookies.get(cookiePrefix + alertId)) {
+        domAlert.classList.remove('d-none')
+      }
+      element.addEventListener('click', onCloseClick)
     }
-    element.addEventListener('click', onCloseClick)
   })
 }
 

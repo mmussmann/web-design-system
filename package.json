@@ -1,7 +1,7 @@
 {
   "name": "@milestone-sys/web-design-system",
   "description": "Milestone web design system",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "browserslist": "last 1 version, not dead, > 0.2%",
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
