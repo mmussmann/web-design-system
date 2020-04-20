@@ -36,8 +36,10 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     }
     if (_validationMsg != '' && displayValidationMsg) {
       validationMsgElement.classList.add('msds-select-input__validation-msg--display')
+      displayValidationMessage();
     } else {
       validationMsgElement.classList.remove('msds-select-input__validation-msg--display')
+      hideValidationMessage();
     }
     if (isEmpty(_options)) {
       _selectedOptionIndex = 0
@@ -74,13 +76,18 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     return true
   }
 
-  const cleanValidationState = function() {
+  const hideValidationMessage = function () {
     displayValidationMsg = false
+  }
+  const displayValidationMessage = function() {
+    displayValidationMsg = true
+  }
+
+  const cleanValidationState = function() {
     _valid = true
   }
 
   const setValidationState = function() {
-    displayValidationMsg = true
     _valid = false
   }
 
@@ -101,10 +108,12 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   this.isValid = function() {
     if (_valid) {
       cleanValidationState()
+      hideValidationMessage()
       render()
       return true
     }
     setValidationState()
+    displayValidationMessage()
     render()
     return false
   }
@@ -131,3 +140,6 @@ const inputSmall = new SelectInput(
   true
 )
 inputSmall.init()
+
+
+
