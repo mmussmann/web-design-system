@@ -31,7 +31,7 @@ title: Contact Cards
 
 ## Overview
 ### Global Definition
-Each Contact Card is based on a global CSS class called <code>"msds-contact-card"</code>. It is important to include this class first as it is the main CSS class. Without it there is no card component. 
+Each Contact Card is based on a global CSS class called <code>"msds-contact-card"</code>. It is important to include this class first as it is the main CSS class. Without this HTML class, you cannot utalize component. 
 There are 3 types of Contact Cards:
 
 1. The default Contact Card, the <i>default Contact Card</i> is used for lists of contacts

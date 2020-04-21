@@ -33,7 +33,7 @@ title: Category Cards
 
 ## Overview
 ### Global Definition
-Each category card is based on a global CSS class called <code>"msds-category-card"</code>. It is important to include it first as it is the main CSS class. Without it there is no card component. 
+Each category card is based on a global CSS class called <code>"msds-category-card"</code>. It is important to include it first as it is the main CSS class. Without this HTML class, you cannot utalize component. 
 There are 2 types of category cards, the primary category card, that has a content body below the headline, and the category card with no body below the headline.  
 - Delete <code>"msds-category-card__content"</code> div to remove the body below the headline.
 
