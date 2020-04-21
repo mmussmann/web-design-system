@@ -36,10 +36,10 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     }
     if (_validationMsg != '' && displayValidationMsg) {
       validationMsgElement.classList.add('msds-select-input__validation-msg--display')
-      displayValidationMessage();
+      displayValidationMessage()
     } else {
       validationMsgElement.classList.remove('msds-select-input__validation-msg--display')
-      hideValidationMessage();
+      hideValidationMessage()
     }
     if (isEmpty(_options)) {
       _selectedOptionIndex = 0
@@ -76,7 +76,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     return true
   }
 
-  const hideValidationMessage = function () {
+  const hideValidationMessage = function() {
     displayValidationMsg = false
   }
   const displayValidationMessage = function() {
@@ -123,23 +123,23 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   }
 }
 
-const input = new SelectInput(
-  'input-1',
-  { dk: 'Denmark', en: 'England', po: 'Poland' },
-  'validationMsg',
-  'Select Country',
-  true
-)
-input.init()
-
-const inputSmall = new SelectInput(
-  'input-2',
-  { dk: 'Denmark', en: 'England', po: 'Poland' },
-  'validationMsg',
-  'Select Country',
-  true
-)
-inputSmall.init()
-
-
+if (document.querySelector('.msds-select-input')) {
+    const input = new SelectInput(
+      'input-1',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      true
+    )
+    input.init()
+    
+    const inputSmall = new SelectInput(
+      'input-2',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      true
+    )
+    inputSmall.init()
+}
 
