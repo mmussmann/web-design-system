@@ -272,3 +272,15 @@
   height: map-get(map-get($sprite-sizes, 'xprotect-compare-matrix'), 'height');
   width: map-get(map-get($sprite-sizes, 'xprotect-compare-matrix'), 'width');
 }
+
+.msds-xprotect-compare-products {
+  @include sprite('xprotect-compare-products');
+  height: map-get(map-get($sprite-sizes, 'xprotect-compare-products'), 'height');
+  width: map-get(map-get($sprite-sizes, 'xprotect-compare-products'), 'width');
+}
+
+.msds-xprotect-compare-releases {
+  @include sprite('xprotect-compare-releases');
+  height: map-get(map-get($sprite-sizes, 'xprotect-compare-releases'), 'height');
+  width: map-get(map-get($sprite-sizes, 'xprotect-compare-releases'), 'width');
+}
