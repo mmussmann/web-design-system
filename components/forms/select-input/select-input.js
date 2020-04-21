@@ -124,22 +124,21 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
 }
 
 if (document.querySelector('.msds-select-input')) {
-    const input = new SelectInput(
-      'input-1',
-      { dk: 'Denmark', en: 'England', po: 'Poland' },
-      'validationMsg',
-      'Select Country',
-      true
-    )
-    input.init()
-    
-    const inputSmall = new SelectInput(
-      'input-2',
-      { dk: 'Denmark', en: 'England', po: 'Poland' },
-      'validationMsg',
-      'Select Country',
-      true
-    )
-    inputSmall.init()
-}
+  const input = new SelectInput(
+    'input-1',
+    { dk: 'Denmark', en: 'England', po: 'Poland' },
+    'validationMsg',
+    'Select Country',
+    true
+  )
+  input.init()
 
+  const inputSmall = new SelectInput(
+    'input-2',
+    { dk: 'Denmark', en: 'England', po: 'Poland' },
+    'validationMsg',
+    'Select Country',
+    true
+  )
+  inputSmall.init()
+}

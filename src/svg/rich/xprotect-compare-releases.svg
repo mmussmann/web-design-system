@@ -2,48 +2,44 @@
     <defs>
     <style>
         .cls-1-new4 {
-        fill: #009bdb;
+            fill: #009bdb;
         }
 
         .cls-2-new4 {
-        fill: #081935;
+            fill: #081935;
         }
 
         .cls-2-new4, .cls-4-new4 {
-        opacity: 0.2;
+            opacity: 0.2;
         }
 
         .cls-2-new4, .cls-3-new4, .cls-4-new4 {
-        isolation: isolate;
+            isolation: isolate;
         }
 
         .cls-3-new4 {
-        fill: #4188bd;
-        opacity: 0.3;
+            fill: #4188bd;
+            opacity: 0.3;
         }
 
-        <!-- .cls-4-new4, .cls-5-new4 {
-        fill: #fff;
-        } -->
-
         .cls-4-new4 {
-        fill: #fff;
+            fill: #fff;
         }
 
         .cls-6-new4 {
-        fill: #c3ccd1;
+            fill: #c3ccd1;
         }
 
         .cls-7-new4 {
-        fill: #003a5d;
+            fill: #003a5d;
         }
 
         .cls-8-new4 {
-        fill: url(#linear-gradient-new4);
+            fill: url(#linear-gradient-new4);
         }
 
         .cls-blue-opa {
-        fill: #0238524d;
+            fill: #0238524d;
         }
 
         .show-text1 {
@@ -177,7 +173,6 @@
                 fill: #fff;
                 transform: translate(-35px, -43px);
             }
-
         }
     </style>
     <linearGradient id="linear-gradient-new4" x1="403.56" y1="50.07" x2="438.05" y2="50.07" gradientTransform="matrix(1, 0, 0, -1, 0, 330)" gradientUnits="userSpaceOnUse">
