@@ -1,4 +1,4 @@
-function SelectInput(id, options, validationMsg, placeholder, isRequired) {
+export const SelectInput = function (id, options, validationMsg, placeholder, isRequired) {
   let selectInput
   let selectElement
   let validationMsgElement
