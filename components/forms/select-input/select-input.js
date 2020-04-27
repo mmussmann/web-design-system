@@ -152,7 +152,6 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
 //   inputSmall.init()
 // }
 
-
 // export const SelectInput = function(id, options, validationMsg, placeholder, isRequired) {
 //   let selectInput
 //   const _id = id
