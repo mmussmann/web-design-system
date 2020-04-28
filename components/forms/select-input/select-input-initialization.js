@@ -12,43 +12,50 @@ window.addEventListener('load', function() {
     )
     input.init()
 
-    // const selectInputConfiguration = {
-    //   input: new SelectInput(
-    //     'input-1',
-    //     { dk: 'Denmark', en: 'England', po: 'Poland' },
-    //     'validationMsg',
-    //     'Select Country',
-    //     true
-    //   ),
-    //   smallinput: new SelectInput(
-    //     'input-2',
-    //     { dk: 'Denmark', en: 'England', po: 'Poland' },
-    //     'validationMsg',
-    //     'Select Country',
-    //     true
-    //   ),
-    //   cacheDom: function() {
-    //     this.selectElements = document.querySelectorAll('.msds-select-input')
-    //   },
-    //   bindEvents: function() {
-    //     for (let i = 0; i < this.selectElements.length; i++) {
-    //       const element = this.selectElements[i]
-    //       element.addEventListener('click', () => this.clickSelect(element))
-    //     }
-    //   },
-    //   init: function() {
-    //     this.cacheDom()
-    //     this.bindEvents()
-    //     this.render()
-    //   },
-    //   render: function() {
-    //     this.input.init()
-    //     this.smallinput.init()
-    //   },
-    //   clickSelect: function(selectInputElement) {
-    //     console.log(selectInputElement)
-    //     if (selectInputElement) selectInputElement.toggleOpen()
-    //   }
-    // }
+    const inputRequired = new SelectInput(
+      'input-required',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      true
+    )
+    inputRequired.init()
+
+    const inputNotRequired = new SelectInput(
+      'input-not-required',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      false
+    )
+    inputNotRequired.init()
+
+    const inputSmall = new SelectInput(
+      'input-small',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      true
+    )
+    inputSmall.init()
+
+    const inputDefault = new SelectInput(
+      'input-default',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'validationMsg',
+      'Select Country',
+      true
+    )
+    inputDefault.init()
+
+    const errorinput = new SelectInput(
+      'input-error',
+      { dk: 'Denmark', en: 'England', po: 'Poland' },
+      'Error message',
+      'Select Country',
+      true
+    )
+    errorinput.init()
+    errorinput.isValid()
   }
 })
