@@ -1,4 +1,4 @@
-function SelectInput(id, options, validationMsg, placeholder, isRequired) {
+export const SelectInput = function(id, options, validationMsg, placeholder, isRequired) {
   let selectInput
   let selectElement
   let validationMsgElement
@@ -121,24 +121,4 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   this.getSelectedValue = function() {
     return _value
   }
-}
-
-if (document.querySelector('.msds-select-input')) {
-  const input = new SelectInput(
-    'input-1',
-    { dk: 'Denmark', en: 'England', po: 'Poland' },
-    'validationMsg',
-    'Select Country',
-    true
-  )
-  input.init()
-
-  const inputSmall = new SelectInput(
-    'input-2',
-    { dk: 'Denmark', en: 'England', po: 'Poland' },
-    'validationMsg',
-    'Select Country',
-    true
-  )
-  inputSmall.init()
 }
