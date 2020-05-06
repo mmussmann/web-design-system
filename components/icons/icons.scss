@@ -284,3 +284,9 @@
   height: map-get(map-get($sprite-sizes, 'xprotect-compare-releases'), 'height');
   width: map-get(map-get($sprite-sizes, 'xprotect-compare-releases'), 'width');
 }
+
+.msds-okay {
+  @include sprite('okay');
+  height: map-get(map-get($sprite-sizes, 'okay'), 'height');
+  width: map-get(map-get($sprite-sizes, 'okay'), 'width');
+}
