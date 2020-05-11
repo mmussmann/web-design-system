@@ -18,7 +18,9 @@ module.exports = {
   },
   output: {
     path: path.resolve('./public/'),
-    filename: '[name].js'
+    filename: '[name].js',
+    //library: 'SelectInput',
+    libraryTarget: 'umd'
   },
   plugins: [
     new CleanWebpackPlugin({ 
