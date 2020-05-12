@@ -20,7 +20,7 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
 
   const bindEvents = function() {
     selectElement.addEventListener('change', () => render())
-    selectElement.addEventListener('change', () => handleSelectChange())
+    selectElement.addEventListener('change', () => onChangehandler())
   }
 
   const render = function() {
