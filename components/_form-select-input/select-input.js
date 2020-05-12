@@ -1,4 +1,4 @@
-export const SelectInput = function(id, options, validationMsg, placeholder, isRequired) {
+export const SelectInput = function(id, options, validationMsg, placeholder, isRequired, onChangehandler) {
   let selectInput
   let selectElement
   let validationMsgElement
@@ -20,6 +20,7 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
 
   const bindEvents = function() {
     selectElement.addEventListener('change', () => render())
+    selectElement.addEventListener('change', () => handleSelectChange())
   }
 
   const render = function() {
