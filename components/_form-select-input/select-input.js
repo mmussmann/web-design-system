@@ -8,7 +8,7 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
   let _value = 'not set'
   let _selectedOptionIndex = 0
   let shouldPopulateList = true
-  const _options = options
+  let _options = options
   const _validationMsg = validationMsg
   const _placeholder = isRequired ? placeholder + '*' : placeholder
 
@@ -47,6 +47,9 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
       return
     } else if (shouldPopulateList) {
       shouldPopulateList = false
+      while (selectElement.options.length > 0) {
+        selectElement.remove(0)
+      }
       const placeholderElement = createOptionElement(_placeholder, 0, true)
       selectElement.add(placeholderElement)
       let valueIndex = 1
@@ -104,6 +107,12 @@ export const SelectInput = function(id, options, validationMsg, placeholder, isR
     } else {
       isOpen = false
     }
+  }
+
+  this.setOptions = function(options) {
+    _options = options
+    shouldPopulateList = true
+    render()
   }
 
   this.isValid = function() {
