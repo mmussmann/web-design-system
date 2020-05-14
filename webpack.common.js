@@ -120,8 +120,7 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
-     // { from: 'theme-overrides/design-system-overrides.js', to: 'theme-overrides/design-system-overrides.js' },
-      { from: 'src/demo-img', to: 'src/demo-img' },      
+      { from: 'src/demo-img', to: 'src/demo-img' },
       { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' }
     ])
   ],
