@@ -29,7 +29,6 @@
 
     &:checked {
       ~ .msds-expanding-section__buttons-container {
-        background: red;
         height: 100px;
         width: 100%;
 
@@ -43,7 +42,7 @@
       }
 
       ~ .msds-expanding-section__content {
-        max-height: 1000px;
+        max-height: 10000px;
       }
     }
   }
