@@ -1,4 +1,4 @@
-function SelectInput(id, options, validationMsg, placeholder, isRequired) {
+export const SelectInput = function(id, options, validationMsg, placeholder, isRequired, onChangehandler) {
   let selectInput
   let selectElement
   let validationMsgElement
@@ -8,7 +8,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   let _value = 'not set'
   let _selectedOptionIndex = 0
   let shouldPopulateList = true
-  const _options = options
+  let _options = options
   const _validationMsg = validationMsg
   const _placeholder = isRequired ? placeholder + '*' : placeholder
 
@@ -20,6 +20,7 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
 
   const bindEvents = function() {
     selectElement.addEventListener('change', () => render())
+    selectElement.addEventListener('change', () => onChangehandler())
   }
 
   const render = function() {
@@ -46,6 +47,9 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
       return
     } else if (shouldPopulateList) {
       shouldPopulateList = false
+      while (selectElement.options.length > 0) {
+        selectElement.remove(0)
+      }
       const placeholderElement = createOptionElement(_placeholder, 0, true)
       selectElement.add(placeholderElement)
       let valueIndex = 1
@@ -105,6 +109,12 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
     }
   }
 
+  this.setOptions = function(options) {
+    _options = options
+    shouldPopulateList = true
+    render()
+  }
+
   this.isValid = function() {
     if (_valid) {
       cleanValidationState()
@@ -121,24 +131,4 @@ function SelectInput(id, options, validationMsg, placeholder, isRequired) {
   this.getSelectedValue = function() {
     return _value
   }
-}
-
-if (document.querySelector('.msds-select-input')) {
-  const input = new SelectInput(
-    'input-1',
-    { dk: 'Denmark', en: 'England', po: 'Poland' },
-    'validationMsg',
-    'Select Country',
-    true
-  )
-  input.init()
-
-  const inputSmall = new SelectInput(
-    'input-2',
-    { dk: 'Denmark', en: 'England', po: 'Poland' },
-    'validationMsg',
-    'Select Country',
-    true
-  )
-  inputSmall.init()
 }

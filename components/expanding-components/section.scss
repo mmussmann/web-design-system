@@ -1,0 +1,50 @@
+.msds-expanding-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &--closed {
+    display: flex;
+    transition: all 0.15s ease-in-out;
+  }
+
+  &--open {
+    display: none;
+    transition: all 0.15s ease-in-out;
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .msds-btn-floating {
+    padding-bottom: 42px;
+  }
+
+  & input[type='checkbox'],
+  & input[type='radio'] {
+    display: none;
+
+    &:checked {
+      ~ .msds-expanding-section__buttons-container {
+        background: red;
+        height: 100px;
+        width: 100%;
+
+        .msds-expanding-section--closed {
+          display: none;
+        }
+
+        .msds-expanding-section--open {
+          display: flex;
+        }
+      }
+
+      ~ .msds-expanding-section__content {
+        max-height: 1000px;
+      }
+    }
+  }
+}

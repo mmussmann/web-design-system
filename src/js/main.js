@@ -1,7 +1,7 @@
 import '../scss/main.scss'
 import 'components/tab-tile/tab-tile.js'
 import 'components/forms/text-areas/text-area.js'
-import 'components/forms/select-input/select-input.js'
+import { SelectInput } from 'components/_form-select-input/select-input.js'
 import 'components/alert/alert.js'
 import 'components/button-cards/card.js'
 import 'components/button-cards/generic-card/generic-card.js'
@@ -14,3 +14,5 @@ import 'components/icons/icons.js'
 import 'components/_Progress-Bar/progress-bar.js'
 import 'components/icons/button-icons.js'
 import 'components/icons/rich-icons.js'
+
+export const SelectInputComponent = SelectInput
