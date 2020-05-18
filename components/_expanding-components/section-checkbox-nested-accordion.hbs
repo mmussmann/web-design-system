@@ -2,12 +2,12 @@
     <div class="row">
         <div class="msds-expanding-section msds-bg-gray-gradient-2">
             <div class="col-12">
-                <input id="expanding-section-1" class="msds-expanding-section__checkbox" type="radio" name="section-level-1"/>
-                <label class="msds-expanding-section__buttons-container" for="expanding-section-1">
+                <input id="expanding-section-1-checkbox-nested" class="msds-expanding-section__checkbox" type="checkbox" />
+                <label class="msds-expanding-section__buttons-container" for="expanding-section-1-checkbox-nested">
                     <div class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--column
                          msds-expanding-section--closed">
                         <svg class="msds-icon">
-                            <use href="/msds-spritemap.svg#right-arrow"></use>
+                             <use href="{{ path '/msds-spritemap.svg' }}#right-arrow"></use>
                         </svg>
                         <div class="msds-expanding-section__button-text">
                             Show more
@@ -16,14 +16,14 @@
                     <div class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--column 
                         msds-expanding-section--open">
                         <svg class="msds-icon">
-                            <use href="/msds-spritemap.svg#cross"></use>
+                             <use href="{{ path '/msds-spritemap.svg' }}#cross"></use>
                         </svg>
                         <div class="msds-expanding-section__button-text">
                             Show less
                         </div>
                     </div>
                 </label>
-                
+                </input>
                 <div class="msds-expanding-section__content msds-text-body-1 msds-text-gray-9">
                     <div class="msds-accordion msds-accordion--list-content msds-bg-gray-gradient-2">
                         <div class="row">
@@ -33,9 +33,8 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-8">
-                                <h2 class="msds-accordion__header msds-text-header-2 msds-text-gray-10">Frequently asked
-                                    questions</h2>
-
+                                <div class="msds-accordion__header msds-text-header-2 msds-text-gray-10">Frequently asked
+                                    questions</div>
                                 <div class="msds-accordion__list-item">
                                     <legend>
                                         <input id="how-does-membership-work" type="radio" name="accordion-level-1" />
@@ -43,10 +42,9 @@
                                             class="msds-accordion__list-item-headline msds-text-body-1 msds-text-clear-blue"
                                             for="how-does-membership-work">
                                             How does the membership model work?
-
                                             <div class="msds-accordion__list-item-headline-icon">
                                                 <svg>
-                                                    <use href="/msds-spritemap.svg#right-arrow"></use>
+                                                     <use href="{{ path '/msds-spritemap.svg' }}#right-arrow"></use>
                                                 </svg>
                                             </div>
                                         </label>
@@ -59,9 +57,7 @@
                                             pariatur, eum unde commodi nesciunt.
                                         </div>
                                     </legend>
-
                                 </div>
-
                                 <div class="msds-accordion__list-item">
                                     <legend>
                                         <input id="how-do-i-find-marketplace" type="radio" name="accordion-level-1" />
@@ -69,10 +65,9 @@
                                             class="msds-accordion__list-item-headline msds-text-body-1 msds-text-clear-blue"
                                             for="how-do-i-find-marketplace">
                                             How do I join Milestone Marketplace?
-
                                             <div class="msds-accordion__list-item-headline-icon">
                                                 <svg>
-                                                    <use href="/msds-spritemap.svg#right-arrow"></use>
+                                                     <use href="{{ path '/msds-spritemap.svg' }}#right-arrow"></use>
                                                 </svg>
                                             </div>
                                         </label>
@@ -89,38 +84,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-         <div class="msds-expanding-section msds-bg-gray-gradient-2">
-            <div class="col-12">
-                <input id="expanding-section-2" class="msds-expanding-section__checkbox" type="radio" name="section-level-1"/>
-                <label class="msds-expanding-section__buttons-container" for="expanding-section-2">
-                    <div class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--column
-                         msds-expanding-section--closed">
-                        <svg class="msds-icon">
-                            <use href="/msds-spritemap.svg#right-arrow"></use>
-                        </svg>
-                        <div class="msds-expanding-section__button-text">
-                            Show more
-                        </div>
-                    </div>
-                    <div class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--column 
-                        msds-expanding-section--open">
-                        <svg class="msds-icon">
-                            <use href="/msds-spritemap.svg#cross"></use>
-                        </svg>
-                        <div class="msds-expanding-section__button-text">
-                            Show less
-                        </div>
-                    </div>
-                </label>
-                <div class="msds-expanding-section__content msds-text-body-1 msds-text-gray-9">
-                    Quisque dictum elementum maximus. Sed leo arcu, laoreet faucibus iaculis sit amet,
-                    ultricies in elit. Praesent sit amet massa vel lacus hendrerit facilisis. Nulla lectus
-                    elit, dictum et metus nec, venenatis luctus lacus. Ut ut maximus sapien. Suspendisse
-                    varius molestie mauris, in rhoncus purus bibendum a.
                 </div>
             </div>
         </div>
