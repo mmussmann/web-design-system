@@ -11,7 +11,7 @@
                 transform-box: fill-box;
                 transform-origin: center;
                 opacity: 0;
-            }
+            } 
             
             .icon_play_animation:hover .play_hover_animation {
                 transform-origin: center center;
@@ -21,7 +21,7 @@
                 animation-direction: alternate;
                 animation-iteration-count: infinite;
             }
-            
+
             @keyframes opac-ani {
                 0% {
                     opacity: 0;
