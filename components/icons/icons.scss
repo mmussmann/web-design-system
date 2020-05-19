@@ -290,3 +290,9 @@
   height: map-get(map-get($sprite-sizes, 'okay'), 'height');
   width: map-get(map-get($sprite-sizes, 'okay'), 'width');
 }
+
+.msds-play-pulse {
+  @include sprite('play-pulse');
+  height: map-get(map-get($sprite-sizes, 'play-pulse'), 'height');
+  width: map-get(map-get($sprite-sizes, 'play-pulse'), 'width');
+}

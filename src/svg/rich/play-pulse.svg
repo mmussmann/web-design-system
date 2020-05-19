@@ -1,40 +1,39 @@
-<svg class="icon_play_animation" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="icon_play_animation" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-    <style>
-        .play_static {
-            transform-box: fill-box;
-            transform-origin: center;
-            transform: scale(0.85);
-        }
-        
-        .play_hover_animation {
-            transform-box: fill-box;
-            transform-origin: center;
-            opacity: 0;
-        }
-        
-        .icon_play_animation:hover .play_hover_animation {
-            transform-origin: center center;
-            animation-name: opac-ani;
-            animation-duration: 1500ms;
-            animation-timing-function: ease-in-out;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-        }
-        
-        @keyframes opac-ani {
-            0% {
+        <style>
+            .play_static {
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: scale(0.85);
+            }
+            
+            .play_hover_animation {
+                transform-box: fill-box;
+                transform-origin: center;
                 opacity: 0;
             }
-            80% {
-                opacity: 1;
+            
+            .icon_play_animation:hover .play_hover_animation {
+                transform-origin: center center;
+                animation-name: opac-ani;
+                animation-duration: 1500ms;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
             }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
- 
+            
+            @keyframes opac-ani {
+                0% {
+                    opacity: 0;
+                }
+                80% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
+                }
+            } 
+        </style>
     </defs>
     <title>play icon</title>
     <g id="Oval">
@@ -44,4 +43,4 @@
     <g id="Graphic-elements-/-Icons-/-Play-/-Clear-blue" transform="translate(25.000000, 21.000000)" fill="#0099DA">
         <path d="M15.3068259,12.1752453 L2.60866417,21.1048685 C2.0935373,21.467117 1.3822841,21.3431845 1.02003569,20.8280576 C0.88497826,20.6360024 0.8125,20.4069375 0.8125,20.1721488 L0.8125,1.8277554 C0.8125,1.19800973 1.32300973,0.6875 1.9527554,0.6875 C2.19732422,0.6875 2.43541266,0.766134819 2.63187311,0.911796064 L15.3300349,10.3265662 C15.8359052,10.7016326 15.9419429,11.4157729 15.5668765,11.9216433 C15.4943008,12.0195297 15.4065035,12.1051498 15.3068259,12.1752453 Z" id="Triangle"></path>
     </g>
-</svg>
+</svg>  
