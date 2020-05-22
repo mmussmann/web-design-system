@@ -1,22 +1,21 @@
-export const UncheckRadioButton = function(elementClass) {
+export const ExpandingComponent = function(elementClass) {
   const expandingComponent = elementClass
-  let expandingElement
+  let expandingComponentsCollection
 
   const cacheDom = function() {
-    expandingElement = document.querySelectorAll('.' + expandingComponent)
+    expandingComponentsCollection = document.querySelectorAll('.' + expandingComponent)
   }
 
   const bindEvents = function() {
-    expandingElement.forEach(labelElement => {
-      labelElement.addEventListener('click', () => findInputForLabel(labelElement))
+    expandingComponentsCollection.forEach(labelElement => {
+      labelElement.addEventListener('click', () => resetInputRadioButtonState(labelElement))
     })
   }
 
-  const findInputForLabel = function(labelElement) {
-    const labelElementFor = labelElement.htmlFor
-    const inputId = labelElementFor
+  const resetInputRadioButtonState = function(labelElement) {
+    const inputId = labelElement.htmlFor
 
-    if (labelElementFor) {
+    if (inputId) {
       uncheckRadioButton(inputId)
     }
   }

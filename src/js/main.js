@@ -19,8 +19,8 @@ import 'components/_expanding-components/section-initialization.js'
 
 //Documentation imports
 import { SelectInput } from 'components/_form-select-input/select-input.js'
-import { UncheckRadioButton } from 'components/_expanding-components/uncheck-radio-button.js'
+import { ExpandingElement } from 'components/_expanding-components/uncheck-radio-button.js'
 
 //Documentation exports
 export const SelectInputComponent = SelectInput
-export const UncheckRadioButtonElement = UncheckRadioButton
+export const ExpandingComponent = ExpandingElement

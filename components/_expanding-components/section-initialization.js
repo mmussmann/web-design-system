@@ -1,4 +1,4 @@
-import { UncheckRadioButton } from './uncheck-radio-button.js'
+import { ExpandingComponent } from './uncheck-radio-button.js'
 
-const expandingSections = new UncheckRadioButton('msds-expanding-section__buttons-container')
+const expandingSections = new ExpandingComponent('msds-expanding-section__buttons-container')
 expandingSections.init()
