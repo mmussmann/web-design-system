@@ -377,3 +377,8 @@
   height: map-get(map-get($sprite-sizes, 'growth-data'), 'height');
   width: map-get(map-get($sprite-sizes, 'growth-data'), 'width');
 }
+.msds-hardware-applications-software {
+  @include sprite('hardware-applications-software');
+  height: map-get(map-get($sprite-sizes, 'hardware-applications-software'), 'height');
+  width: map-get(map-get($sprite-sizes, 'hardware-applications-software'), 'width');
+}
