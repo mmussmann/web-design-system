@@ -234,5 +234,6 @@ export const richIcons = [
   { name: 'Milestone In The Media', value: 'msds-milestone-in-the-media' },
   { name: 'Mobile support', value: 'msds-mobile-support' },
   { name: 'My Milestone', value: 'msds-my-milestone' },
-  { name: 'Network', value: 'msds-network' }
+  { name: 'Network', value: 'msds-network' },
+  { name: 'Newspaper', value: 'msds-newspaper' }
 ]

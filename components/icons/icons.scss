@@ -437,3 +437,8 @@
   height: map-get(map-get($sprite-sizes, 'network'), 'height');
   width: map-get(map-get($sprite-sizes, 'network'), 'width');
 }
+.msds-newspaper {
+  @include sprite('newspaper');
+  height: map-get(map-get($sprite-sizes, 'newspaper'), 'height');
+  width: map-get(map-get($sprite-sizes, 'newspaper'), 'width');
+}
