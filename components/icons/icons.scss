@@ -407,3 +407,8 @@
   height: map-get(map-get($sprite-sizes, 'lpr'), 'height');
   width: map-get(map-get($sprite-sizes, 'lpr'), 'width');
 }
+.msds-marketplace-filter {
+  @include sprite('marketplace-filter');
+  height: map-get(map-get($sprite-sizes, 'marketplace-filter'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-filter'), 'width');
+}
