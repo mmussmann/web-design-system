@@ -482,3 +482,8 @@
   height: map-get(map-get($sprite-sizes, 'publish'), 'height');
   width: map-get(map-get($sprite-sizes, 'publish'), 'width');
 }
+.msds-quote {
+  @include sprite('quote');
+  height: map-get(map-get($sprite-sizes, 'quote'), 'height');
+  width: map-get(map-get($sprite-sizes, 'quote'), 'width');
+}
