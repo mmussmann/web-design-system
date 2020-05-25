@@ -527,3 +527,8 @@
   height: map-get(map-get($sprite-sizes, 'solutions-design-tool'), 'height');
   width: map-get(map-get($sprite-sizes, 'solutions-design-tool'), 'width');
 }
+.msds-subscriptions {
+  @include sprite('subscriptions');
+  height: map-get(map-get($sprite-sizes, 'subscriptions'), 'height');
+  width: map-get(map-get($sprite-sizes, 'subscriptions'), 'width');
+}
