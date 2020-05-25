@@ -214,5 +214,6 @@ export const richIcons = [
   { name: 'Crime', value: 'msds-crime' },
   { name: 'Crowd Management', value: 'msds-crowd-management' },
   { name: 'Customer Stories', value: 'msds-customer-stories' },
-  { name: 'Cyber security', value: 'msds-cyber-security' }
+  { name: 'Cyber security', value: 'msds-cyber-security' },
+  { name: 'Decision making', value: 'msds-decision-making' }
 ]

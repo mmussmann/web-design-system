@@ -337,3 +337,8 @@
   height: map-get(map-get($sprite-sizes, 'cyber-security'), 'height');
   width: map-get(map-get($sprite-sizes, 'cyber-security'), 'width');
 }
+.msds-decision-making {
+  @include sprite('decision-making');
+  height: map-get(map-get($sprite-sizes, 'decision-making'), 'height');
+  width: map-get(map-get($sprite-sizes, 'decision-making'), 'width');
+}
