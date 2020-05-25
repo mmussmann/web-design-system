@@ -502,3 +502,8 @@
   height: map-get(map-get($sprite-sizes, 'searching'), 'height');
   width: map-get(map-get($sprite-sizes, 'searching'), 'width');
 }
+.msds-self-service-support {
+  @include sprite('self-service-support');
+  height: map-get(map-get($sprite-sizes, 'self-service-support'), 'height');
+  width: map-get(map-get($sprite-sizes, 'self-service-support'), 'width');
+}

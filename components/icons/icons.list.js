@@ -247,5 +247,6 @@ export const richIcons = [
   { name: 'Quote', value: 'msds-quote' },
   { name: 'Reaction mode', value: 'msds-reaction-mode' },
   { name: 'Save money', value: 'msds-save-money' },
-  { name: 'Searching', value: 'msds-searching' }
+  { name: 'Searching', value: 'msds-searching' },
+  { name: 'Self service support', value: 'msds-self-service-support' }
 ]
