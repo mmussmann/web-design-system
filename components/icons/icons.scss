@@ -442,3 +442,8 @@
   height: map-get(map-get($sprite-sizes, 'newspaper'), 'height');
   width: map-get(map-get($sprite-sizes, 'newspaper'), 'width');
 }
+.msds-open-platform-community {
+  @include sprite('open-platform-community');
+  height: map-get(map-get($sprite-sizes, 'open-platform-community'), 'height');
+  width: map-get(map-get($sprite-sizes, 'open-platform-community'), 'width');
+}
