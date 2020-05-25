@@ -244,5 +244,6 @@ export const richIcons = [
   { name: 'Project', value: 'msds-project' },
   { name: 'Promotion', value: 'msds-promotion' },
   { name: 'Publish', value: 'msds-publish' },
-  { name: 'Quote', value: 'msds-quote' }
+  { name: 'Quote', value: 'msds-quote' },
+  { name: 'Reaction mode', value: 'msds-reaction-mode' }
 ]
