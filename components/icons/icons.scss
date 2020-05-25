@@ -308,3 +308,8 @@
   height: map-get(map-get($sprite-sizes, 'catalogue'), 'height');
   width: map-get(map-get($sprite-sizes, 'catalogue'), 'width');
 }
+.msds-community {
+  @include sprite('community');
+  height: map-get(map-get($sprite-sizes, 'community'), 'height');
+  width: map-get(map-get($sprite-sizes, 'community'), 'width');
+}
