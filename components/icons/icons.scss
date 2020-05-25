@@ -412,3 +412,8 @@
   height: map-get(map-get($sprite-sizes, 'marketplace-filter'), 'height');
   width: map-get(map-get($sprite-sizes, 'marketplace-filter'), 'width');
 }
+.msds-marketplace-interface {
+  @include sprite('marketplace-interface');
+  height: map-get(map-get($sprite-sizes, 'marketplace-interface'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-interface'), 'width');
+}
