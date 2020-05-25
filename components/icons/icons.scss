@@ -452,3 +452,8 @@
   height: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'height');
   width: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'width');
 }
+.msds-partnership {
+  @include sprite('partnership');
+  height: map-get(map-get($sprite-sizes, 'partnership'), 'height');
+  width: map-get(map-get($sprite-sizes, 'partnership'), 'width');
+}
