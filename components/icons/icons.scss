@@ -387,3 +387,8 @@
   height: map-get(map-get($sprite-sizes, 'hardware'), 'height');
   width: map-get(map-get($sprite-sizes, 'hardware'), 'width');
 }
+.msds-integrator-searching-female {
+  @include sprite('integrator-searching-female');
+  height: map-get(map-get($sprite-sizes, 'integrator-searching-female'), 'height');
+  width: map-get(map-get($sprite-sizes, 'integrator-searching-female'), 'width');
+}
