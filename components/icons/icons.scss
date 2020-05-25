@@ -302,3 +302,9 @@
   height: map-get(map-get($sprite-sizes, 'body-worn'), 'height');
   width: map-get(map-get($sprite-sizes, 'body-worn'), 'width');
 }
+
+.msds-catalogue {
+  @include sprite('catalogue');
+  height: map-get(map-get($sprite-sizes, 'catalogue'), 'height');
+  width: map-get(map-get($sprite-sizes, 'catalogue'), 'width');
+}
