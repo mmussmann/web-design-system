@@ -225,5 +225,6 @@ export const richIcons = [
   { name: 'Growth Data', value: 'msds-growth-data' },
   { name: 'Hardware, applications, software', value: 'msds-hardware-applications-software' },
   { name: 'Hardware', value: 'msds-hardware' },
-  { name: 'Integrator Searching Female', value: 'msds-integrator-searching-female' }
+  { name: 'Integrator Searching Female', value: 'msds-integrator-searching-female' },
+  { name: 'Integrator Searching male', value: 'msds-integrator-searching-male' }
 ]
