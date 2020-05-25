@@ -256,5 +256,6 @@ export const richIcons = [
   { name: 'Subscriptions', value: 'msds-subscriptions' },
   { name: 'Tailored', value: 'msds-tailored' },
   { name: 'Time To Market', value: 'msds-time-to-market' },
-  { name: 'Upgrade Marketplace Subscription', value: 'msds-upgrade-marketplace-subscription' }
+  { name: 'Upgrade Marketplace Subscription', value: 'msds-upgrade-marketplace-subscription' },
+  { name: 'World Leading', value: 'msds-world-leading' }
 ]

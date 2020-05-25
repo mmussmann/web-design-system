@@ -547,3 +547,8 @@
   height: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'height');
   width: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'width');
 }
+.msds-world-leading {
+  @include sprite('world-leading');
+  height: map-get(map-get($sprite-sizes, 'world-leading'), 'height');
+  width: map-get(map-get($sprite-sizes, 'world-leading'), 'width');
+}
