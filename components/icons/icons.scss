@@ -331,3 +331,9 @@
   height: map-get(map-get($sprite-sizes, 'customer-stories'), 'height');
   width: map-get(map-get($sprite-sizes, 'customer-stories'), 'width');
 }
+
+.msds-cyber-security {
+  @include sprite('cyber-security');
+  height: map-get(map-get($sprite-sizes, 'cyber-security'), 'height');
+  width: map-get(map-get($sprite-sizes, 'cyber-security'), 'width');
+}
