@@ -347,3 +347,8 @@
   height: map-get(map-get($sprite-sizes, 'design'), 'height');
   width: map-get(map-get($sprite-sizes, 'design'), 'width');
 }
+.msds-devices {
+  @include sprite('devices');
+  height: map-get(map-get($sprite-sizes, 'devices'), 'height');
+  width: map-get(map-get($sprite-sizes, 'devices'), 'width');
+}
