@@ -251,5 +251,6 @@ export const richIcons = [
   { name: 'Self service support', value: 'msds-self-service-support' },
   { name: 'Sign up', value: 'msds-sign-up' },
   { name: 'Smart Wall Person', value: 'msds-smart-wall-person' },
-  { name: 'Smart Wall', value: 'msds-smart-wall' }
+  { name: 'Smart Wall', value: 'msds-smart-wall' },
+  { name: 'Solutions Design Tool', value: 'msds-solutions-design-tool' }
 ]

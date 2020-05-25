@@ -522,3 +522,8 @@
   height: map-get(map-get($sprite-sizes, 'smart-wall'), 'height');
   width: map-get(map-get($sprite-sizes, 'smart-wall'), 'width');
 }
+.msds-solutions-design-tool {
+  @include sprite('solutions-design-tool');
+  height: map-get(map-get($sprite-sizes, 'solutions-design-tool'), 'height');
+  width: map-get(map-get($sprite-sizes, 'solutions-design-tool'), 'width');
+}
