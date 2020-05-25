@@ -249,5 +249,6 @@ export const richIcons = [
   { name: 'Save money', value: 'msds-save-money' },
   { name: 'Searching', value: 'msds-searching' },
   { name: 'Self service support', value: 'msds-self-service-support' },
-  { name: 'Sign up', value: 'msds-sign-up' }
+  { name: 'Sign up', value: 'msds-sign-up' },
+  { name: 'Smart Wall Person', value: 'msds-smart-wall-person' }
 ]

@@ -512,3 +512,8 @@
   height: map-get(map-get($sprite-sizes, 'sign-up'), 'height');
   width: map-get(map-get($sprite-sizes, 'sign-up'), 'width');
 }
+.msds-smart-wall-person {
+  @include sprite('smart-wall-person');
+  height: map-get(map-get($sprite-sizes, 'smart-wall-person'), 'height');
+  width: map-get(map-get($sprite-sizes, 'smart-wall-person'), 'width');
+}
