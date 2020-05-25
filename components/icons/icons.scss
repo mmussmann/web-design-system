@@ -457,3 +457,8 @@
   height: map-get(map-get($sprite-sizes, 'partnership'), 'height');
   width: map-get(map-get($sprite-sizes, 'partnership'), 'width');
 }
+.msds-press-release {
+  @include sprite('press-release');
+  height: map-get(map-get($sprite-sizes, 'press-release'), 'height');
+  width: map-get(map-get($sprite-sizes, 'press-release'), 'width');
+}

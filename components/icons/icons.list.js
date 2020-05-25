@@ -238,5 +238,6 @@ export const richIcons = [
   { name: 'Newspaper', value: 'msds-newspaper' },
   { name: 'Open Platform Community', value: 'msds-open-platform-community' },
   { name: 'Outdated Hardware', value: 'msds-outdated-hardware' },
-  { name: 'Partnership', value: 'msds-partnership' }
+  { name: 'Partnership', value: 'msds-partnership' },
+  { name: 'Press Release', value: 'msds-press-release' }
 ]
