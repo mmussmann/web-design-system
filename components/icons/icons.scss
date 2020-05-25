@@ -537,3 +537,8 @@
   height: map-get(map-get($sprite-sizes, 'tailored'), 'height');
   width: map-get(map-get($sprite-sizes, 'tailored'), 'width');
 }
+.msds-time-to-market {
+  @include sprite('time-to-market');
+  height: map-get(map-get($sprite-sizes, 'time-to-market'), 'height');
+  width: map-get(map-get($sprite-sizes, 'time-to-market'), 'width');
+}

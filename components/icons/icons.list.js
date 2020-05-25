@@ -254,5 +254,6 @@ export const richIcons = [
   { name: 'Smart Wall', value: 'msds-smart-wall' },
   { name: 'Solutions Design Tool', value: 'msds-solutions-design-tool' },
   { name: 'Subscriptions', value: 'msds-subscriptions' },
-  { name: 'Tailored', value: 'msds-tailored' }
+  { name: 'Tailored', value: 'msds-tailored' },
+  { name: 'Time To Market', value: 'msds-time-to-market' }
 ]
