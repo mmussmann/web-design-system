@@ -246,5 +246,6 @@ export const richIcons = [
   { name: 'Publish', value: 'msds-publish' },
   { name: 'Quote', value: 'msds-quote' },
   { name: 'Reaction mode', value: 'msds-reaction-mode' },
-  { name: 'Save money', value: 'msds-save-money' }
+  { name: 'Save money', value: 'msds-save-money' },
+  { name: 'Searching', value: 'msds-searching' }
 ]

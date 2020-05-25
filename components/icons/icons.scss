@@ -497,3 +497,8 @@
   height: map-get(map-get($sprite-sizes, 'save-money'), 'height');
   width: map-get(map-get($sprite-sizes, 'save-money'), 'width');
 }
+.msds-searching {
+  @include sprite('searching');
+  height: map-get(map-get($sprite-sizes, 'searching'), 'height');
+  width: map-get(map-get($sprite-sizes, 'searching'), 'width');
+}
