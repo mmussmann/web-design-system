@@ -290,3 +290,9 @@
   height: map-get(map-get($sprite-sizes, 'okay'), 'height');
   width: map-get(map-get($sprite-sizes, 'okay'), 'width');
 }
+
+.msds-analytics {
+  @include sprite('analytics');
+  height: map-get(map-get($sprite-sizes, 'analytics'), 'height');
+  width: map-get(map-get($sprite-sizes, 'analytics'), 'width');
+}

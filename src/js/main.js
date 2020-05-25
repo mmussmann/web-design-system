@@ -9,7 +9,7 @@ import 'components/colors/background-colors.js'
 import 'components/colors/text-colors.js'
 import 'components/icons/icons.js'
 import 'components/icons/button-icons.js'
-import 'components/icons/rich-icons.js'	
+import 'components/icons/rich-icons.js'
 
 //Documented components
 import 'components/button-cards/_category-card/category-card.js'
