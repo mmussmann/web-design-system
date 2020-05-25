@@ -432,3 +432,8 @@
   height: map-get(map-get($sprite-sizes, 'my-milestone'), 'height');
   width: map-get(map-get($sprite-sizes, 'my-milestone'), 'width');
 }
+.msds-network {
+  @include sprite('network');
+  height: map-get(map-get($sprite-sizes, 'network'), 'height');
+  width: map-get(map-get($sprite-sizes, 'network'), 'width');
+}
