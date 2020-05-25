@@ -325,3 +325,9 @@
   height: map-get(map-get($sprite-sizes, 'crowd-management'), 'height');
   width: map-get(map-get($sprite-sizes, 'crowd-management'), 'width');
 }
+
+.msds-customer-stories {
+  @include sprite('customer-stories');
+  height: map-get(map-get($sprite-sizes, 'customer-stories'), 'height');
+  width: map-get(map-get($sprite-sizes, 'customer-stories'), 'width');
+}
