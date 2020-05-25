@@ -532,3 +532,8 @@
   height: map-get(map-get($sprite-sizes, 'subscriptions'), 'height');
   width: map-get(map-get($sprite-sizes, 'subscriptions'), 'width');
 }
+.msds-tailored {
+  @include sprite('tailored');
+  height: map-get(map-get($sprite-sizes, 'tailored'), 'height');
+  width: map-get(map-get($sprite-sizes, 'tailored'), 'width');
+}

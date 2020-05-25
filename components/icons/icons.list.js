@@ -253,5 +253,6 @@ export const richIcons = [
   { name: 'Smart Wall Person', value: 'msds-smart-wall-person' },
   { name: 'Smart Wall', value: 'msds-smart-wall' },
   { name: 'Solutions Design Tool', value: 'msds-solutions-design-tool' },
-  { name: 'Subscriptions', value: 'msds-subscriptions' }
+  { name: 'Subscriptions', value: 'msds-subscriptions' },
+  { name: 'Tailored', value: 'msds-tailored' }
 ]
