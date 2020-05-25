@@ -462,3 +462,8 @@
   height: map-get(map-get($sprite-sizes, 'press-release'), 'height');
   width: map-get(map-get($sprite-sizes, 'press-release'), 'width');
 }
+.msds-privacy {
+  @include sprite('privacy');
+  height: map-get(map-get($sprite-sizes, 'privacy'), 'height');
+  width: map-get(map-get($sprite-sizes, 'privacy'), 'width');
+}
