@@ -227,5 +227,6 @@ export const richIcons = [
   { name: 'Hardware', value: 'msds-hardware' },
   { name: 'Integrator Searching Female', value: 'msds-integrator-searching-female' },
   { name: 'Integrator Searching male', value: 'msds-integrator-searching-male' },
-  { name: 'Investigation', value: 'msds-investigation' }
+  { name: 'Investigation', value: 'msds-investigation' },
+  { name: 'LPR', value: 'msds-lpr' }
 ]

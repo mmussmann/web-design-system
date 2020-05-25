@@ -402,3 +402,8 @@
   height: map-get(map-get($sprite-sizes, 'investigation'), 'height');
   width: map-get(map-get($sprite-sizes, 'investigation'), 'width');
 }
+.msds-lpr {
+  @include sprite('lpr');
+  height: map-get(map-get($sprite-sizes, 'lpr'), 'height');
+  width: map-get(map-get($sprite-sizes, 'lpr'), 'width');
+}
