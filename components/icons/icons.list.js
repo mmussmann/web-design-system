@@ -223,5 +223,6 @@ export const richIcons = [
   { name: 'Employees', value: 'msds-employees' },
   { name: 'Get leads', value: 'msds-get-leads' },
   { name: 'Growth Data', value: 'msds-growth-data' },
-  { name: 'Hardware, applications, software', value: 'msds-hardware-applications-software' }
+  { name: 'Hardware, applications, software', value: 'msds-hardware-applications-software' },
+  { name: 'Hardware', value: 'msds-hardware' }
 ]
