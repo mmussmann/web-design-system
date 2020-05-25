@@ -211,5 +211,6 @@ export const richIcons = [
   { name: 'Body worn', value: 'msds-body-worn' },
   { name: 'Catalogue', value: 'msds-catalogue' },
   { name: 'Community', value: 'msds-community' },
-  { name: 'Crime', value: 'msds-crime' }
+  { name: 'Crime', value: 'msds-crime' },
+  { name: 'Crowd Management', value: 'msds-crowd-management' }
 ]
