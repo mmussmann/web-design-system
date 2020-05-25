@@ -397,3 +397,8 @@
   height: map-get(map-get($sprite-sizes, 'integrator-searching-male'), 'height');
   width: map-get(map-get($sprite-sizes, 'integrator-searching-male'), 'width');
 }
+.msds-investigation {
+  @include sprite('investigation');
+  height: map-get(map-get($sprite-sizes, 'investigation'), 'height');
+  width: map-get(map-get($sprite-sizes, 'investigation'), 'width');
+}
