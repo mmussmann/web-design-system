@@ -207,5 +207,6 @@ export const richIcons = [
   { name: 'Xprotect Compare Products', value: 'msds-xprotect-compare-products' },
   { name: 'Xprotect Compare Releases', value: 'msds-xprotect-compare-releases' },
   { name: 'Okay', value: 'msds-okay' },
-  { name: 'Analytics', value: 'msds-analytics' }
+  { name: 'Analytics', value: 'msds-analytics' },
+  { name: 'Body worn', value: 'msds-body-worn' }
 ]

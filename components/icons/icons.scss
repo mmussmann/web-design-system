@@ -296,3 +296,9 @@
   height: map-get(map-get($sprite-sizes, 'analytics'), 'height');
   width: map-get(map-get($sprite-sizes, 'analytics'), 'width');
 }
+
+.msds-body-worn {
+  @include sprite('body-worn');
+  height: map-get(map-get($sprite-sizes, 'body-worn'), 'height');
+  width: map-get(map-get($sprite-sizes, 'body-worn'), 'width');
+}
