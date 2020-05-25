@@ -417,3 +417,8 @@
   height: map-get(map-get($sprite-sizes, 'marketplace-interface'), 'height');
   width: map-get(map-get($sprite-sizes, 'marketplace-interface'), 'width');
 }
+.msds-milestone-in-the-media {
+  @include sprite('milestone-in-the-media');
+  height: map-get(map-get($sprite-sizes, 'milestone-in-the-media'), 'height');
+  width: map-get(map-get($sprite-sizes, 'milestone-in-the-media'), 'width');
+}

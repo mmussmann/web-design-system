@@ -230,5 +230,6 @@ export const richIcons = [
   { name: 'Investigation', value: 'msds-investigation' },
   { name: 'LPR', value: 'msds-lpr' },
   { name: 'Marketplace Filter', value: 'msds-marketplace-filter' },
-  { name: 'Marketplace Interface', value: 'msds-marketplace-interface' }
+  { name: 'Marketplace Interface', value: 'msds-marketplace-interface' },
+  { name: 'Milestone In The Media', value: 'msds-milestone-in-the-media' }
 ]
