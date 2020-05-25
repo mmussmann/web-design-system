@@ -342,3 +342,8 @@
   height: map-get(map-get($sprite-sizes, 'decision-making'), 'height');
   width: map-get(map-get($sprite-sizes, 'decision-making'), 'width');
 }
+.msds-design {
+  @include sprite('design');
+  height: map-get(map-get($sprite-sizes, 'design'), 'height');
+  width: map-get(map-get($sprite-sizes, 'design'), 'width');
+}
