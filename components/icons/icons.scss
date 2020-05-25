@@ -367,3 +367,8 @@
   height: map-get(map-get($sprite-sizes, 'employees'), 'height');
   width: map-get(map-get($sprite-sizes, 'employees'), 'width');
 }
+.msds-get-leads {
+  @include sprite('get-leads');
+  height: map-get(map-get($sprite-sizes, 'get-leads'), 'height');
+  width: map-get(map-get($sprite-sizes, 'get-leads'), 'width');
+}
