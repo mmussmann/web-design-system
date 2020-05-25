@@ -255,5 +255,6 @@ export const richIcons = [
   { name: 'Solutions Design Tool', value: 'msds-solutions-design-tool' },
   { name: 'Subscriptions', value: 'msds-subscriptions' },
   { name: 'Tailored', value: 'msds-tailored' },
-  { name: 'Time To Market', value: 'msds-time-to-market' }
+  { name: 'Time To Market', value: 'msds-time-to-market' },
+  { name: 'Upgrade Marketplace Subscription', value: 'msds-upgrade-marketplace-subscription' }
 ]
