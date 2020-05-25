@@ -236,5 +236,6 @@ export const richIcons = [
   { name: 'My Milestone', value: 'msds-my-milestone' },
   { name: 'Network', value: 'msds-network' },
   { name: 'Newspaper', value: 'msds-newspaper' },
-  { name: 'Open Platform Community', value: 'msds-open-platform-community' }
+  { name: 'Open Platform Community', value: 'msds-open-platform-community' },
+  { name: 'Outdated Hardware', value: 'msds-outdated-hardware' }
 ]

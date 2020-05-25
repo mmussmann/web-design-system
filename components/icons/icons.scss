@@ -447,3 +447,8 @@
   height: map-get(map-get($sprite-sizes, 'open-platform-community'), 'height');
   width: map-get(map-get($sprite-sizes, 'open-platform-community'), 'width');
 }
+.msds-outdated-hardware {
+  @include sprite('outdated-hardware');
+  height: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'height');
+  width: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'width');
+}
