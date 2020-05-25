@@ -372,3 +372,8 @@
   height: map-get(map-get($sprite-sizes, 'get-leads'), 'height');
   width: map-get(map-get($sprite-sizes, 'get-leads'), 'width');
 }
+.msds-growth-data {
+  @include sprite('growth-data');
+  height: map-get(map-get($sprite-sizes, 'growth-data'), 'height');
+  width: map-get(map-get($sprite-sizes, 'growth-data'), 'width');
+}
