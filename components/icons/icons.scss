@@ -313,3 +313,9 @@
   height: map-get(map-get($sprite-sizes, 'community'), 'height');
   width: map-get(map-get($sprite-sizes, 'community'), 'width');
 }
+
+.msds-crime {
+  @include sprite('crime');
+  height: map-get(map-get($sprite-sizes, 'crime'), 'height');
+  width: map-get(map-get($sprite-sizes, 'crime'), 'width');
+}

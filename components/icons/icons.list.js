@@ -210,5 +210,6 @@ export const richIcons = [
   { name: 'Analytics', value: 'msds-analytics' },
   { name: 'Body worn', value: 'msds-body-worn' },
   { name: 'Catalogue', value: 'msds-catalogue' },
-  { name: 'Community', value: 'msds-community' }
+  { name: 'Community', value: 'msds-community' },
+  { name: 'Crime', value: 'msds-crime' }
 ]
