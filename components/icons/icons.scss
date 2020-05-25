@@ -492,3 +492,8 @@
   height: map-get(map-get($sprite-sizes, 'reaction-mode'), 'height');
   width: map-get(map-get($sprite-sizes, 'reaction-mode'), 'width');
 }
+.msds-save-money {
+  @include sprite('save-money');
+  height: map-get(map-get($sprite-sizes, 'save-money'), 'height');
+  width: map-get(map-get($sprite-sizes, 'save-money'), 'width');
+}
