@@ -240,5 +240,6 @@ export const richIcons = [
   { name: 'Outdated Hardware', value: 'msds-outdated-hardware' },
   { name: 'Partnership', value: 'msds-partnership' },
   { name: 'Press Release', value: 'msds-press-release' },
-  { name: 'Privacy', value: 'msds-privacy' }
+  { name: 'Privacy', value: 'msds-privacy' },
+  { name: 'Project', value: 'msds-project' }
 ]

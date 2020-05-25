@@ -467,3 +467,8 @@
   height: map-get(map-get($sprite-sizes, 'privacy'), 'height');
   width: map-get(map-get($sprite-sizes, 'privacy'), 'width');
 }
+.msds-project {
+  @include sprite('project');
+  height: map-get(map-get($sprite-sizes, 'project'), 'height');
+  width: map-get(map-get($sprite-sizes, 'project'), 'width');
+}
