@@ -477,3 +477,8 @@
   height: map-get(map-get($sprite-sizes, 'promotion'), 'height');
   width: map-get(map-get($sprite-sizes, 'promotion'), 'width');
 }
+.msds-publish {
+  @include sprite('publish');
+  height: map-get(map-get($sprite-sizes, 'publish'), 'height');
+  width: map-get(map-get($sprite-sizes, 'publish'), 'width');
+}

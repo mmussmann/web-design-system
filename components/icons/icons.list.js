@@ -242,5 +242,6 @@ export const richIcons = [
   { name: 'Press Release', value: 'msds-press-release' },
   { name: 'Privacy', value: 'msds-privacy' },
   { name: 'Project', value: 'msds-project' },
-  { name: 'Promotion', value: 'msds-promotion' }
+  { name: 'Promotion', value: 'msds-promotion' },
+  { name: 'Publish', value: 'msds-publish' }
 ]

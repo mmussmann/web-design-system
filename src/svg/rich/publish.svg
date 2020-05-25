@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Rich icons / Publish</title>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-Publish" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="publish" transform="translate(64.000000, 62.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="#0099DA" points="0.79 64.51 311.83 0.65 92.07 113.47"></polygon>
+            <polygon id="Path" fill="#023852" points="311.98 0.66 92.22 113.48 109.06 205.54"></polygon>
+            <polygon id="Path" fill="#FFE700" points="129.28 135.8 108.91 205.53 190.39 150.69"></polygon>
+            <polygon id="Path" fill="#0099DA" points="311.83 0.65 129.28 135.8 237.4 204.75"></polygon>
+            <polygon id="Path" fill="#9DADB7" opacity="0.2" style="mix-blend-mode: multiply;" points="129.28 135.8 172.04 163.2 119.7 168.53"></polygon>
+        </g>
+    </g>
+</svg>
