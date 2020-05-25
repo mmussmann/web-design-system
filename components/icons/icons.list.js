@@ -217,5 +217,6 @@ export const richIcons = [
   { name: 'Cyber security', value: 'msds-cyber-security' },
   { name: 'Decision making', value: 'msds-decision-making' },
   { name: 'Design', value: 'msds-design' },
-  { name: 'devices', value: 'msds-devices' }
+  { name: 'Devices', value: 'msds-devices' },
+  { name: 'Document', value: 'msds-document' }
 ]
