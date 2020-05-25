@@ -517,3 +517,8 @@
   height: map-get(map-get($sprite-sizes, 'smart-wall-person'), 'height');
   width: map-get(map-get($sprite-sizes, 'smart-wall-person'), 'width');
 }
+.msds-smart-wall {
+  @include sprite('smart-wall');
+  height: map-get(map-get($sprite-sizes, 'smart-wall'), 'height');
+  width: map-get(map-get($sprite-sizes, 'smart-wall'), 'width');
+}
