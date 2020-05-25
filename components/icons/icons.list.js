@@ -219,5 +219,6 @@ export const richIcons = [
   { name: 'Design', value: 'msds-design' },
   { name: 'Devices', value: 'msds-devices' },
   { name: 'Document', value: 'msds-document' },
-  { name: 'Emergency', value: 'msds-emergency' }
+  { name: 'Emergency', value: 'msds-emergency' },
+  { name: 'Employees', value: 'msds-employees' }
 ]
