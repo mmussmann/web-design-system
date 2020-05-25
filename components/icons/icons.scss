@@ -507,3 +507,8 @@
   height: map-get(map-get($sprite-sizes, 'self-service-support'), 'height');
   width: map-get(map-get($sprite-sizes, 'self-service-support'), 'width');
 }
+.msds-sign-up {
+  @include sprite('sign-up');
+  height: map-get(map-get($sprite-sizes, 'sign-up'), 'height');
+  width: map-get(map-get($sprite-sizes, 'sign-up'), 'width');
+}
