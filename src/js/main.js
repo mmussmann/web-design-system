@@ -20,7 +20,7 @@ import 'components/_expanding-components/section-initialization.js'
 
 //Documentation imports
 import { SelectInput } from 'components/_form-select-input/select-input.js'
-import { ExpandingElement } from 'components/_expanding-components/uncheck-radio-button.js'
+import { ExpandingElement } from 'components/_expanding-components/expanding-component.js'
 
 //Documentation exports
 export const SelectInputComponent = SelectInput
