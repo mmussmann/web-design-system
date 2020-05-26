@@ -177,12 +177,6 @@
   width: map-get(map-get($sprite-sizes, 'skyline'), 'width');
 }
 
-.msds-benefits-and-requirements {
-  @include sprite('benefits-and-requirements');
-  height: map-get(map-get($sprite-sizes, 'benefits-and-requirements'), 'height');
-  width: map-get(map-get($sprite-sizes, 'benefits-and-requirements'), 'width');
-}
-
 .msds-hardware-track {
   @include sprite('hardware-track');
   height: map-get(map-get($sprite-sizes, 'hardware-track'), 'height');
