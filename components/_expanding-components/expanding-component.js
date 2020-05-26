@@ -1,4 +1,4 @@
-export const ExpandingComponent = function(elementClass) {
+export const ExpandingElement = function(elementClass) {
   const expandingComponent = elementClass
   let expandingComponentsCollection
 

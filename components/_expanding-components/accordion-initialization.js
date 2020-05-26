@@ -1,4 +1,4 @@
-import { ExpandingComponent } from './uncheck-radio-button.js'
+import { ExpandingElement } from './expanding-component.js'
 
-const accordions = new ExpandingComponent('msds-accordion__list-item-headline')
+const accordions = new ExpandingElement('msds-accordion__list-item-headline')
 accordions.init()
