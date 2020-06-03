@@ -187,7 +187,6 @@
     }
   }
 
-  //&__list-item--floating {
   &--floating-list-item {
     .msds-accordion__list-item {
       margin-top: 20px;
@@ -290,15 +289,6 @@
       &-title {
         color: $yellow;
       }
-
-      // &:hover {
-      //   .msds-accordion__list-item-header-icon .msds-btn-floating {
-      //     .msds-icon {
-      //       background: unset;
-      //       box-shadow: unset;
-      //     }
-      //   }
-      // }
     }
 
     .msds-accordion__list-item-header-icon {
@@ -320,7 +310,6 @@
           fill: $clear-blue-gradient;
           color: $yellow;
           box-shadow: unset;
-          //box-shadow: inset 0 -1px 0 0 #0175a6, 0 2px 12px 0 $rgba-1;
         }
       }
     }
