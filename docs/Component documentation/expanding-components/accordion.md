@@ -48,7 +48,7 @@ There are 3 implementations of Accordions, in light and dark themes with an icon
 
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-checkbox'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-overview'}}</div>
 </div>
 
 ### Accordion using checkboxes
@@ -56,7 +56,7 @@ To use "expanding accordion" you need to add the following HTML class: <code>"ms
 The Accordion with checkboxes can have multiple accordions open at once.
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-checkbox'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-overview'}}</div>
 </div>
 
 Below is an example of the Milestone Default Expanding Accordion that you can copy into your solution to utilize the component. 
