@@ -26,6 +26,7 @@
   box-shadow: none;
   transition: initial;
   cursor: initial;
+  pointer-events: none;
   &:hover {
     background-color: $rgba-11;
     color: $rgba-7;
