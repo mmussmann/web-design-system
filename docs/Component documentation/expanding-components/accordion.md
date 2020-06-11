@@ -43,13 +43,14 @@ Ensure that each accordion element <code>input</code> has an id and that the lab
 ```
 <br>
 
-There are 3 implementations of Accordions, in light and dark themes with an icon on the left, or a full width accordion without an icon on the left.
+There are 5 implementations of Accordions
 
 #### The Default Expanding Accordions
 - Default Accordion using checkboxes – the checkboxes allow multiple accordion elements to be open at any time.
 - Accordion using radio buttons – the radio buttons only allow one accordion element to be open at any time.
-- Full Width Accordion – does not have an icon on the left and takes up the full width of a bootstrap grid.
-
+- Accordions with an icon on the left side
+- Accordions with a floating button on the left side
+- Accordions as floating list items - used for navigation 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@accordion-checkbox-overview'}}</div>
@@ -107,7 +108,6 @@ To make use of accordions that has an icon on the left add the class modifier <c
 {{render '@accordion-checkbox-medium-icon-left'}}
 ```
 
-
 ### Accordion with an icon on the left floating
 
 To make use of accordions that has an icon on the left with a floating button add the class modifier on the component <code>class="msds-accordion msds-accordion\--floating-list-item"</code> along with <code>msds-accordion__list-item-header\--left-icon</code> on the desired accordion label <code>class="msds-accordion__list-item-header</code>
@@ -128,12 +128,11 @@ To make use of accordions that has an icon on the left with a floating button ad
 
 ### Accordion with an icon on the left floating dark yellow
 
-To make use of accordions that has an icon on the left with a floating button in a dark theme add the class modifier on the component <code>class="msds-accordion msds-accordion\--floating-list-item msds-accordion\--dark-yellow"
+To make use of accordions that has an icon on the left with a floating button in a dark theme add the class modifier on the component <code>class="msds-accordion msds-accordion\--floating-list-item msds-accordion\--dark-yellow"</code>
 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@accordion-checkbox-medium-icon-left-floating-dark-yellow'}}</div>
 </div>
-
 
 ```html
 {{render '@accordion-checkbox-medium-icon-left-floating-dark-yellow'}}
@@ -141,7 +140,7 @@ To make use of accordions that has an icon on the left with a floating button in
 
 ### Accordion filtered list items
 
-To make use of accordions with filtered list items is intended to be used for site navigation, to use the filtered list version of the accordion add the class modifier on the component <code>class="msds-accordion msds-accordion\--filter-list-item"
+To make use of accordions with filtered list items is intended to be used for site navigation, to use the filtered list version of the accordion add the class modifier on the component <code>class="msds-accordion msds-accordion\--filter-list-item"</code>
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@accordion-checkbox-medium-filtered-list-items'}}</div>
