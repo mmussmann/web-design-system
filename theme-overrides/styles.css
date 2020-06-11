@@ -434,3 +434,7 @@ dl dd a {
   background: #ffe700;
   color: #303436;
 }
+
+button:focus {
+  outline: none;
+}

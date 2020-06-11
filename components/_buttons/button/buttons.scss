@@ -6,6 +6,7 @@
   box-shadow: none;
   transition: initial;
   cursor: initial;
+  pointer-events: none;
 
   .msds-icon {
     fill: $gray-5;
@@ -25,6 +26,7 @@
   box-shadow: none;
   transition: initial;
   cursor: initial;
+  pointer-events: none;
   &:hover {
     background-color: $rgba-11;
     color: $rgba-7;
@@ -89,12 +91,15 @@
       bottom: 2px;
       transition: bottom 0.2s;
     }
+    &.disabled,
     &:disabled {
       @include light-theme-disabled();
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-primary.dropdown-toggle {
       background: $yellow;
       box-shadow: 0 0 0 4px $rgba-3;
@@ -111,6 +116,7 @@
     border-color: $clear-blue;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
+    &.disabled,
     &:disabled {
       @include light-theme-disabled();
     }
@@ -125,6 +131,8 @@
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-secondary.dropdown-toggle {
       background: $clear-blue-gradient;
       box-shadow: 0 0 0 4px $rgba-3;
@@ -142,6 +150,7 @@
     border-color: $white;
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
+    &.disabled,
     &:disabled {
       @include dark-theme-disabled();
     }
@@ -155,6 +164,8 @@
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-secondary.dropdown-toggle {
       background: $white;
       box-shadow: 0 2px 12px 0 $rgba-6, 0 0 0 4px $rgba-7;
@@ -175,6 +186,7 @@
     bottom: 0;
     transition: background 0.2s, bottom 0.2s;
 
+    &.disabled,
     &:disabled {
       @include light-theme-disabled();
     }
@@ -189,6 +201,8 @@
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-tertiary.dropdown-toggle {
       background: $dark-blue-gradient;
       box-shadow: 0 0 0 4px $rgba-3;
@@ -214,12 +228,15 @@
       bottom: 3px;
       transition: background 0.2s, bottom 0.2s;
     }
+    &.disabled,
     &:disabled {
       @include light-theme-disabled();
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-gray.dropdown-toggle {
       background: $gray-8;
       box-shadow: 0 0 0 4px $rgba-4;
@@ -245,12 +262,15 @@
       bottom: 3px;
       transition: background 0.2s, bottom 0.2s;
     }
+    &.disabled,
     &:disabled {
       @include light-theme-disabled();
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
+    &:not(.disabled):not(.disabled):active,
+    &:not(.disabled):not(.disabled).active,
     &.show > .btn-gray.dropdown-toggle {
       background: $danger-red-1;
       box-shadow: 0 0 0 4px $rgba-5;
