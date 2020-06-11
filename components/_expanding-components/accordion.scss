@@ -185,6 +185,9 @@
         }
       }
     }
+    svg {
+      vertical-align: middle;
+    }
   }
 
   &--floating-list-item {
@@ -279,16 +282,21 @@
       padding-left: 0px;
       margin-right: 15px;
     }
+
     .msds-accordion__list-item-header-icon svg {
       transform: unset;
     }
   }
 
   &--dark-yellow {
-    .msds-accordion__list-item-header {
+    .msds-accordion__list-item .msds-accordion__list-item-header {
       &-title {
         color: $yellow;
       }
+    }
+
+    .msds-accordion__list-item-body {
+      color: $white;
     }
 
     .msds-accordion__list-item-header-icon {
@@ -335,60 +343,6 @@
           .msds-icon {
             background: unset;
             box-shadow: unset;
-          }
-        }
-      }
-    }
-  }
-
-  &--dark {
-    .msds-accordion__list-item-header-icon {
-      svg {
-        fill: $white;
-      }
-    }
-
-    .msds-accordion__list-item {
-      &:last-child {
-        border-bottom: 1px solid $rgba-8;
-      }
-    }
-
-    .msds-accordion__list-item-header {
-      border-top: 1px solid $rgba-8;
-    }
-
-    .msds-accordion__list-item-input {
-      &:hover {
-        ~ .msds-accordion__list-item-header {
-          background: $rgba-2;
-        }
-      }
-
-      &:active {
-        ~ .msds-accordion__list-item-header {
-          background: $rgba-2;
-          outline: 4px solid $rgba-7;
-        }
-      }
-
-      &:focus {
-        ~ .msds-accordion__list-item-header {
-          outline: 4px solid $rgba-7;
-        }
-      }
-
-      &:disabled {
-        ~ .msds-accordion__list-item-header {
-          background: unset;
-          outline: unset;
-          text-decoration: unset;
-          font-weight: unset;
-          color: $white;
-          opacity: 0.5;
-
-          .msds-accordion__list-item-header-icon svg {
-            fill: $white;
           }
         }
       }
