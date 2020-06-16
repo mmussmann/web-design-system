@@ -1,6 +1,6 @@
 context:
   general:
-    cardDescription: 'Basic Cards'
+    cardDescription: 'Basic Card Representation'
     cardCaptionTitle: 'Basic Cards caption title'    
   card:     
     placeholderHeading: 'Headline lorem ipsum'
