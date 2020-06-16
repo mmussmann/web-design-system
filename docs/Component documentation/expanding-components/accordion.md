@@ -15,8 +15,11 @@ title: Accordion
           <dl>
             <dt>[Accordion Using Checkboxes](#accordion-using-checkboxes)</dt>
             <dt>[Accordion Using Radio Buttons](#accordion-using-radio-buttons)</dt>
-            <dt>[Accordion Full Width](#accordion-full-width)</dt>
-            <dt>[Accordion Dark Theme](#accordion-dark-theme)</dt>
+            <dt>[Accordion Large](#accordion-large)</dt>
+            <dt>[Accordion With An Icon On The Left](#accordion-with-an-icon-on-the-left)</dt>
+            <dt>[Accordion With An Icon On The Left Floating](#accordion-with-an-icon-on-the-left-floating)</dt>
+            <dt>[Accordion With An Icon On The Left Floating Dark Yellow Theme](#accordion-with-an-icon-on-the-left-floating-dark-yellow)</dt>
+            <dt>[Accordion With Filtered List Items](#accordion-filtered-list-items)</dt>
             <dt>[Accordion Disabled](#accordion-disabled)</dt>
         </dl>
     </div>
@@ -32,20 +35,22 @@ Ensure that each accordion element <code>input</code> has an id and that the lab
 ```html
 {{render '@accordion-input'}}
 ```
+<br>
 
 #### Label
-
 ```html
 {{render '@accordion-label'}}
 ```
+<br>
 
-There are 3 implementations of Accordions, in light and dark themes with an icon on the left, or a full width accordion without an icon on the left.
+There are 5 implementations of Accordions
 
 #### The Default Expanding Accordions
 - Default Accordion using checkboxes – the checkboxes allow multiple accordion elements to be open at any time.
 - Accordion using radio buttons – the radio buttons only allow one accordion element to be open at any time.
-- Full Width Accordion – does not have an icon on the left and takes up the full width of a bootstrap grid.
-
+- Accordions with an icon on the left side
+- Accordions with a floating button on the left side
+- Accordions as floating list items - used for navigation 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@accordion-checkbox-overview'}}</div>
@@ -56,13 +61,11 @@ To use "expanding accordion" you need to add the following HTML class: <code>"ms
 The Accordion with checkboxes can have multiple accordions open at once.
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-checkbox-overview'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium'}}</div>
 </div>
 
-Below is an example of the Milestone Default Expanding Accordion that you can copy into your solution to utilize the component. 
-
 ```html
-{{render '@accordion-checkbox'}}
+{{render '@accordion-checkbox-medium'}}
 ```
 
 ### Accordion using radio buttons
@@ -72,49 +75,88 @@ To make use of accordions that can only have one element open at any time, chang
   <div class="element-preview__inner">{{render '@accordion-radio'}}</div>
 </div>
 
-Below is an example of the Milestone Expanding Accordion with radio buttons that you can copy into your solution to utilize the component. 
-
 ```html
 {{render '@accordion-radio'}}
 ```
 
-### Accordion Full Width 
-To make use of the full width accordion, set the accordions container div to <code>class="col-12 col-md-8"</code>. In addition to setting the column container width, the following modifier has to be added to the msds-accordion div container <code> msds-accordion\--full-width</code>.
-
-Full Width Accordions can utilize the dark themed if <code> msds-accordion\--dark</code> modifier is applied.
+### Accordion large
+To make use of large accordions, add the <code>msds-accordion--large</code> to the main component <code>class="msds-accordion"</code>
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-radio-full-width'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-large'}}</div>
 </div>
 
-Below is an example of the Milestone Full Width Accordion that you can copy into your solution to utilize the component. 
-
 ```html
-{{render '@accordion-radio-full-width'}}
+{{render '@accordion-checkbox-large'}}
 ```
 
-### Accordion dark theme
-To use "dark themed accordion" you need to add the following CCS class: <code>" msds-accordion\--dark"</code>.
+### Accordion with an icon on the left
+
+To make use of accordions that has an icon on the left add the class modifier <code>msds-accordion__list-item-header\--left-icon</code> on the desired accordion label <code>class="msds-accordion__list-item-header</code>
+
+<br>
+```html
+{{render '@accordion-modifier-icon-left'}}
+```
+<br>
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-checkbox-dark'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium-icon-left'}}</div>
 </div>
 
-Below is an example of the Milestone Dark Themed Expanding Accordion that you can copy into your solution to utilize the component. 
+```html
+{{render '@accordion-checkbox-medium-icon-left'}}
+```
+
+### Accordion with an icon on the left floating
+
+To make use of accordions that has an icon on the left with a floating button add the class modifier on the component <code>class="msds-accordion msds-accordion\--floating-list-item"</code> along with <code>msds-accordion__list-item-header\--left-icon</code> on the desired accordion label <code>class="msds-accordion__list-item-header</code>
+
+<br>
+```html
+{{render '@accordion-modifier-icon-floating'}}
+```
+<br>
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium-icon-left-floating'}}</div>
+</div>
 
 ```html
-{{render '@accordion-checkbox-dark'}}
+{{render '@accordion-checkbox-medium-icon-left-floating'}}
+```
+
+### Accordion with an icon on the left floating dark yellow
+
+To make use of accordions that has an icon on the left with a floating button in a dark theme add the class modifier on the component <code>class="msds-accordion msds-accordion\--floating-list-item msds-accordion\--dark-yellow"</code>
+
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium-icon-left-floating-dark-yellow'}}</div>
+</div>
+
+```html
+{{render '@accordion-checkbox-medium-icon-left-floating-dark-yellow'}}
+```
+
+### Accordion filtered list items
+
+To make use of accordions with filtered list items is intended to be used for site navigation, to use the filtered list version of the accordion add the class modifier on the component <code>class="msds-accordion msds-accordion\--filter-list-item"</code>
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium-filtered-list-items'}}</div>
+</div>
+
+```html
+{{render '@accordion-checkbox-medium-filtered-list-items'}}
 ```
 
 ### Accordion disabled
-To make use of the disabled accordion, add <code>disabled</code> to the input container of the accordion item you would like to disable <code><input id="how-does-membership-work" type="checkbox" disabled /></code>
+To make use of the accordion with a disabled list item, append a <code>disabled</code> attribute to the <code>msds-accordion__list-item-input</code> element
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@accordion-disabled'}}</div>
+  <div class="element-preview__inner">{{render '@accordion-checkbox-medium-disabled'}}</div>
 </div>
 
-Below is an example of the Milestone Disabled Accordion that you can copy into your solution to utilize the component. 
-
 ```html
-{{render '@accordion-disabled'}}
+{{render '@accordion-checkbox-medium-disabled'}}
 ```

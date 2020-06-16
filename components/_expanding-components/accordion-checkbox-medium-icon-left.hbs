@@ -1,12 +1,16 @@
 <div class="msds-accordion">
-    <div class="msds-accordion__list-item msds-accordion__list-item--animate-icon-rotate">
-        <input type="checkbox" class="msds-accordion__list-item-input" id="accordion-list-item_overview-medium-1">
-        <label class="msds-accordion__list-item-header" for="accordion-list-item_overview-medium-1">
+    <div class="msds-accordion__list-item">
+        <input type="checkbox" class="msds-accordion__list-item-input" id="accordion-list-item_overview-medium-icon-left-1">
+        <label class="msds-accordion__list-item-header
+                         msds-accordion__list-item-header--left-icon" 
+                for="accordion-list-item_overview-medium-icon-left-1">
             <span class="msds-accordion__list-item-header-title">Accordion List Overview Item 1 </span>
             <span class="msds-accordion__list-item-header-icon">
-                <svg>
-                    <use href="{{ path '/msds-spritemap.svg' }}#right-arrow" />
-                </svg>
+                <span class="msds-btn-floating">
+                    <svg class="msds-icon">
+                        <use href="{{ path '/msds-spritemap.svg' }}#knowledgebase"></use>
+                    </svg>
+                </span>
             </span>
         </label>
         <div class="msds-accordion__list-item-body">
@@ -24,14 +28,18 @@
             </div>
         </div>
     </div>
-    <div class="msds-accordion__list-item msds-accordion__list-item--animate-icon-rotate">
-        <input type="checkbox" class="msds-accordion__list-item-input" id="accordion-list-item_overview-medium-2">
-        <label class="msds-accordion__list-item-header" for="accordion-list-item_overview-medium-2">
+  <div class="msds-accordion__list-item">
+        <input type="checkbox" class="msds-accordion__list-item-input" id="accordion-list-item_overview-medium-icon-left-2">
+        <label class="msds-accordion__list-item-header
+                         msds-accordion__list-item-header--left-icon" 
+                for="accordion-list-item_overview-medium-icon-left-2">
             <span class="msds-accordion__list-item-header-title">Accordion List Overview Item 2 </span>
             <span class="msds-accordion__list-item-header-icon">
-                <svg>
-                    <use href="{{ path '/msds-spritemap.svg' }}#right-arrow" />
-                </svg>
+                <span class="msds-btn-floating">
+                    <svg class="msds-icon">
+                        <use href="{{ path '/msds-spritemap.svg' }}#demo"></use>
+                    </svg>
+                </span>
             </span>
         </label>
         <div class="msds-accordion__list-item-body">
@@ -50,5 +58,4 @@
         </div>
     </div>
 </div>
-
 
