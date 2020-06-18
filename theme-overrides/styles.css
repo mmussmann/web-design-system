@@ -298,6 +298,11 @@ body {
   max-width: unset;
 }
 
+code,
+pre {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .Prose .element-preview {
   padding: 1em;
   background-color: #fff;
@@ -332,7 +337,6 @@ body {
 .Prose .lang-html pre {
   margin: 0;
 }
-
 dl {
   font: bold 1.125rem/1.33333 'Open Sans', Helvetica, Arial, sans-serif;
   font-feature-settings: 'dlig' 1;
@@ -395,9 +399,10 @@ dl dd a {
   text-align: center;
   margin: 20px 0;
 }
+
 .progress-pagination .currentsteps {
   display: inline-block;
-  vertical-align: text-bottom;  
+  vertical-align: text-bottom;
 }
 
 .progress-pagination .currentsteps input {

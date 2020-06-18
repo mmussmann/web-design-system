@@ -114,3 +114,25 @@ $icon-dimensions-xxlarge: 8rem !default;
     }
   }
 }
+
+.msds-icon-certification {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--certified {
+    background-color: $yellow;
+  }
+
+  &--verified {
+    border: 1px solid $gray-3;
+  }
+
+  .msds-icon {
+    width: 8px;
+    height: 6px;
+  }
+}

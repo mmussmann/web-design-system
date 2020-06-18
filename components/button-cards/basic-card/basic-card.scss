@@ -13,6 +13,10 @@
     text-align: center;
   }
 
+  &__frame {
+    margin-bottom: 40px;
+  }
+
   &__caption {
     margin-bottom: 24px;
   }
@@ -28,7 +32,7 @@
   &__caption-title {
     display: inline-block;
     @include msds-font('body-1');
-    color: #0099da;
+    color: $clear-blue;
     font-weight: 700;
     line-height: 22px;
     vertical-align: top;
@@ -38,16 +42,30 @@
     height: 1px;
     width: 32px;
     background-color: $gray-4;
+    margin-bottom: 24px;
   }
 
   &__body {
     border-radius: 0 0 2px 2px;
 
+    &-heading-icon {
+      margin-bottom: 15px;
+
+      svg {
+        fill: $clear-blue;
+        width: 32px;
+        height: 32px;
+      }
+
+      img {
+        height: 40px;
+      }
+    }
+
     &-heading {
       @include msds-font('header-3');
       color: $gray-10;
       margin: 0;
-      padding-top: 24px;
       padding-bottom: 8px;
       line-height: 22px;
     }
@@ -66,5 +84,33 @@
     color: $clear-blue;
     font-weight: 300;
     text-decoration: none;
+  }
+
+  &--dark {
+    .msds-basic-card__caption-title {
+      color: $alt-blue-1;
+    }
+
+    .msds-basic-card__separator {
+      background-color: rgba(220, 226, 230, 0.4); //TODO: replace with a correct value.
+    }
+
+    .msds-basic-card__body-heading-icon {
+      svg {
+        fill: $white;
+      }
+    }
+
+    .msds-basic-card__body-heading {
+      color: $white;
+    }
+
+    .msds-basic-card__body-description {
+      color: $white;
+    }
+
+    .msds-basic-card__link {
+      color: $yellow;
+    }
   }
 }
