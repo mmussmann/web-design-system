@@ -1,3 +1,4 @@
+import 'core-js/stable'
 import './main.js'
 
 //JS files for documnetations
