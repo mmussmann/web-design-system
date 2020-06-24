@@ -1,4 +1,4 @@
-export const buttonIcons = [
+export const flatIcons = [
   {
     name: 'Arrow',
     value: '/Static/dist/msds-spritemap.svg#right-arrow',

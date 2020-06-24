@@ -8,7 +8,7 @@ import 'components/button-cards/solution-card/solution-card.js'
 import 'components/colors/background-colors.js'
 import 'components/colors/text-colors.js'
 import 'components/icons/icons.js'
-import 'components/icons/button-icons.js'
+import 'components/icons/flat-icons.js'
 import 'components/icons/rich-icons.js'
 
 //Documented components
