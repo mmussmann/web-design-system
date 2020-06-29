@@ -1,4 +1,4 @@
-import { buttonIcons } from './icons.list'
+import { flatIcons } from './icons.list'
 import { appendIconElementToContainer } from './icons.js'
 
 function init() {
@@ -7,9 +7,9 @@ function init() {
   if (iconsContainer) {
     const path = document.querySelector('.msds-button-icons').dataset.path
 
-    buttonIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
+    flatIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
 
-    buttonIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
+    flatIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
   }
 }
 
