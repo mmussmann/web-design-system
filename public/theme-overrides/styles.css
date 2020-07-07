@@ -435,6 +435,19 @@ dl dd a {
   color: #303436;
 }
 
+/* Checkbox ***************************************/
+#hovered-checkbox + label:before {
+  background: #f5f6f7 !important;
+}
+
+#focused-checkbox + label:before {
+  box-shadow: 0 0 0 4px rgba(0,153,218,.5) !important;
+  border: 1px solid #0099da !important;
+}
+#hovered-checkbox, #focused-checkbox, #checked-checkbox, #hovered-checkbox + label, #focused-checkbox + label, #checked-checkbox + label {
+  pointer-events: none;
+}
+
 button:focus {
   outline: none;
 }

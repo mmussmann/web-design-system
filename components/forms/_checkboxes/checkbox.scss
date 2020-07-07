@@ -1,0 +1,108 @@
+.msds-checkbox {
+  margin: 20px;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    + .msds-checkbox__label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: flex-start;
+      -webkit-tap-highlight-color: transparent; //remove blue highlight on ios devices
+
+      &:before {
+        content: '';
+        margin-right: 20px;
+        display: inline-block;
+        vertical-align: text-top;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        background: $white;
+        transition: all 0.2s ease;
+        border-radius: 2px;
+        border: 1px solid $gray-5;
+      }
+    }
+
+    &:hover {
+      + .msds-checkbox__label:before {
+        background: $gray-2;
+      }
+    }
+
+    &:focus {
+      + .msds-checkbox__label:before {
+        box-shadow: 0 0 0 4px $rgba-3;
+        border: 1px solid $clear-blue;
+      }
+    }
+
+    &:checked {
+      + .msds-checkbox__label:before {
+        border: 1px solid $clear-blue;
+        background: $clear-blue;
+      }
+    }
+
+    &:disabled,
+    &--disabled {
+      + .msds-checkbox__label {
+        color: $gray-7;
+        cursor: auto;
+        &:before {
+          box-shadow: none;
+          background: $gray-3;
+          border: 1px solid $gray-5;
+        }
+      }
+    }
+
+    &.msds-checkbox__readonly {
+      pointer-events: none;
+
+      + .msds-checkbox__label {
+        color: $gray-10;
+        cursor: auto;
+        pointer-events: none;
+
+        &:before {
+          box-shadow: none;
+          background: $gray-3;
+          border: 1px solid $gray-5;
+        }
+      }
+
+      &:checked + .msds-checkbox__label > {
+        .msds-checkbox__checkmark {
+          fill: $gray-5;
+        }
+      }
+    }
+
+    &:checked + .msds-checkbox__label > {
+      .msds-checkbox__checkmark {
+        transition: all 0.2s ease-out;
+        opacity: 1;
+      }
+    }
+
+    &:not(:checked) + .msds-checkbox__label > {
+      .msds-checkbox__checkmark {
+        opacity: 0;
+        transition: all 0.2s ease-in;
+        top: 18px;
+      }
+    }
+  }
+  &__checkmark {
+    fill: $white;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+  }
+}
