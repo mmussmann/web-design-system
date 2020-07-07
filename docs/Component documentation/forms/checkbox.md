@@ -82,7 +82,7 @@ It can be disabled programmatically by setting the "disabled" attribute to the i
 ### Readonly State
 
 In order to use the checkbox as read-only, you need to add the following to the input element:
-- HTML class <code>"msds-checkbox__input--readonly"</code>
+- HTML class <code>"msds-checkbox__readonly"</code>
 - <code>"tabindex"</code> attribute and its value set to "-1".
 - <code>"checked"</code> attribute (optional).
 

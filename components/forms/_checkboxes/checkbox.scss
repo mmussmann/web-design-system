@@ -4,7 +4,7 @@
   &__input {
     position: absolute;
     opacity: 0;
-    + label {
+    + .msds-checkbox__label {
       position: relative;
       cursor: pointer;
       padding: 0;
@@ -28,20 +28,20 @@
     }
 
     &:hover {
-      + label:before {
+      + .msds-checkbox__label:before {
         background: $gray-2;
       }
     }
 
     &:focus {
-      + label:before {
+      + .msds-checkbox__label:before {
         box-shadow: 0 0 0 4px $rgba-3;
         border: 1px solid $clear-blue;
       }
     }
 
     &:checked {
-      + label:before {
+      + .msds-checkbox__label:before {
         border: 1px solid $clear-blue;
         background: $clear-blue;
       }
@@ -49,7 +49,7 @@
 
     &:disabled,
     &--disabled {
-      + label {
+      + .msds-checkbox__label {
         color: $gray-7;
         cursor: auto;
         &:before {
@@ -60,11 +60,10 @@
       }
     }
 
-    &--readonly,
-    &--readonly:checked {
+    &.msds-checkbox__readonly {
       pointer-events: none;
 
-      + label {
+      + .msds-checkbox__label {
         color: $gray-10;
         cursor: auto;
         pointer-events: none;
@@ -76,24 +75,29 @@
         }
       }
 
-      &:checked + label > svg,
-      &:not(:checked) + label > svg {
-        fill: $gray-5;
+      &:checked + .msds-checkbox__label > {
+        .msds-checkbox__checkmark {
+          fill: $gray-5;
+        }
       }
     }
 
-    &:checked + label > svg {
-      transition: all 0.2s ease-out;
-      opacity: 1;
+    &:checked + .msds-checkbox__label > {
+      .msds-checkbox__checkmark {
+        transition: all 0.2s ease-out;
+        opacity: 1;
+      }
     }
 
-    &:not(:checked) + label > svg {
-      opacity: 0;
-      transition: all 0.2s ease-in;
-      top: 18px;
+    &:not(:checked) + .msds-checkbox__label > {
+      .msds-checkbox__checkmark {
+        opacity: 0;
+        transition: all 0.2s ease-in;
+        top: 18px;
+      }
     }
   }
-  svg {
+  &__checkmark {
     fill: $white;
     height: 12px;
     width: 12px;
