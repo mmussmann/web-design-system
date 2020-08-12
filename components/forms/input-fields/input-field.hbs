@@ -2,101 +2,135 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input" type="text" placeholder="{{placeholder}}"
-                        name="default-input">
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-lg">
+                        <label for="text-input-lg" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{message}}
+                    </p>
                 </div>
             </div>
-
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--small" type="text"
-                        placeholder="{{placeholder}}" name="default-input">
-                    <label class="msds-form__input-container-input-label msds-form__input-container-input-label"
-                        for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input msds-input--small">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-sm">
+                        <label for="text-input-sm" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{message}}
+                    </p>
                 </div>
             </div>
-
+            <div class="col-12">
+                <h3>
+                    Disabled inputs
+                </h3> 
+            </div>
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--disabled"
-                        type="text" placeholder="{{placeholder}}" name="default-input" disabled>
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" disabled="disabled" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-disabled-lg">
+                        <label for="text-input-disabled-lg" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input
-                        class="msds-form__input-container-input msds-form__input-container-input--small msds-form__input-container-input--disabled"
-                        type="text" placeholder="{{placeholder}}" name="default-input" disabled>
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input msds-input--small">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" disabled="disabled" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-disabled-sm">
+                        <label for="text-input-disabled-sm" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
+            <div class="col-12">
+                <h3>
+                    Readonly inputs
+                </h3> 
+            </div>
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--readonly" type="text"
-                        placeholder="{{placeholder}}" name="default-input" value="read only">
-                    <label class="msds-form__input-container-input-label msds-form__input-container-input-label"
-                        for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" readonly="readonly" class="msds-input__text-input" placeholder="{{placeholder}}" value="{{readOnlyText}}" name="text-input-readonly-lg">
+                        <label for="text-input-readonly-lg" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--small msds-form__input-container-input--readonly" type="text"
-                        placeholder="{{placeholder}}" name="default-input" value="read only">
-                    <label class="msds-form__input-container-input-label msds-form__input-container-input-label"
-                        for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{message}}</p>
+                <div class="msds-input msds-input--small">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" readonly="readonly" class="msds-input__text-input" value="{{readOnlyText}}" placeholder="{{placeholder}}" name="text-input-readonly-sm">
+                        <label for="text-input-readonly-sm" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
+            <div class="col-12">
+                <h3>
+                    Success inputs
+                </h3> 
+            </div>
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--error" type="text"
-                        placeholder="{{placeholder}}" name="default-input">
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{errorMessage}}</p>
+                <div class="msds-input msds-input--success">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-success-lg">
+                        <label for="text-input-success-lg" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input
-                        class="msds-form__input-container-input msds-form__input-container-input--small msds-form__input-container-input--error"
-                        type="text" placeholder="{{placeholder}}" name="default-input">
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{errorMessage}}</p>
+                <div class="msds-input msds-input--small msds-input--success">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-success-sm">
+                        <label for="text-input-error-sm" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
+            <div class="col-12">
+                <h3>
+                    Error inputs
+                </h3> 
+            </div>
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input class="msds-form__input-container-input msds-form__input-container-input--success"
-                        type="text" placeholder="{{placeholder}}" name="default-input">
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{successMessage}}</p>
+                <div class="msds-input msds-input--error">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-error-lg">
+                        <label for="text-input-error-lg" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
             <div class="col-12 col-md-5">
-                <div class="msds-form__input-container">
-                    <input
-                        class="msds-form__input-container-input msds-form__input-container-input--small msds-form__input-container-input--success"
-                        type="text" placeholder="{{placeholder}}" name="default-input">
-                    <label class="msds-form__input-container-input-label" for="default-input">{{placeholder}}</label>
-                    <p class="msds-form__input-container-input-message">{{successMessage}}</p>
+                <div class="msds-input msds-input--small msds-input--error">
+                    <div class="msds-input__icon-wrapper">
+                        <input type="text" class="msds-input__text-input" placeholder="{{placeholder}}" name="text-input-error-sm">
+                        <label for="text-input-error-sm" class="msds-input__label">{{placeholder}}</label>
+                    </div>
+                    <p class="msds-input__info-message">
+                        {{errorMessage}}
+                    </p>
                 </div>
             </div>
-
         </div>
     </div>
 </form>

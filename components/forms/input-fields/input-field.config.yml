@@ -3,5 +3,6 @@ notes: 'Overview of input-fields'
 context:
   placeholder: "Enter your e-mail*"
   message: "We'll never share your email with anyone else."
-  errorMessage: "You have entered and invalid email address. Please try again."
+  errorMessage: "You have entered and invalid email address. Please try again. You have entered and invalid email address. Please try again. You have entered and invalid email address. Please try again."
   successMessage: "Looks good!"
+  readOnlyText: "Readonly!"
