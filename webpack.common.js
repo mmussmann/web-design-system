@@ -30,7 +30,7 @@ module.exports = {
       fix: true
     }),
     new MiniCssExtractPlugin(),
-    new SVGSpritemapPlugin('src/svg/button/**/*.svg', {
+    new SVGSpritemapPlugin('src/svg/flat/**/*.svg', {
       output: {
          filename: 'msds-spritemap.svg',
          svgo: {
@@ -121,7 +121,7 @@ module.exports = {
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
       { from: 'src/demo-img', to: 'src/demo-img' },
-      { from: 'src/svg/button/right-arrow.svg', to: 'src/demo-img' }
+      { from: 'src/svg/flat/right-arrow.svg', to: 'src/demo-img' }
     ])
   ],
   module: {
