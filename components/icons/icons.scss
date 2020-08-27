@@ -853,3 +853,20 @@
   height: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'height');
   width: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'width');
 }
+
+//Generic Flat Animated Icons
+use[href='/msds-spritemap.svg#loader-animated'] {
+  animation: animationFrames cubic-bezier(0.165, 0.84, 0.44, 1) 1.5s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+
+  @keyframes animationFrames {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

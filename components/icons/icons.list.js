@@ -53,6 +53,11 @@ export const flatIcons = [
     previewValue: '#list-horisontal'
   },
   { name: 'Live', value: '/Static/dist/msds-spritemap.svg#live', previewValue: '#live' },
+  {
+    name: 'Loader Animated',
+    value: '/Static/dist/msds-spritemap.svg#loader-animated',
+    previewValue: '#loader-animated'
+  },
   { name: 'Location', value: '/Static/dist/msds-spritemap.svg#location', previewValue: '#location' },
   { name: 'Lock Closed', value: '/Static/dist/msds-spritemap.svg#lock-closed', previewValue: '#lock-closed' },
   { name: 'Lock Open', value: '/Static/dist/msds-spritemap.svg#lock-open', previewValue: '#lock-open' },
