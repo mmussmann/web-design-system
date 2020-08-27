@@ -855,7 +855,7 @@
 }
 
 //Generic Flat Animated Icons
-use[href='/msds-spritemap.svg#loader-animated'] {
+use[href*='/msds-spritemap.svg#loader-animated'] {
   animation: animationFrames cubic-bezier(0.165, 0.84, 0.44, 1) 1.5s infinite;
   transform-box: fill-box;
   transform-origin: center;
