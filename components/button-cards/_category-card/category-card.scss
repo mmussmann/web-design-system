@@ -155,7 +155,7 @@
     display: flex;
     justify-content: space-between;
     color: $white;
-    @include msds-font('header-4');
+    @extend .msds-text-header-4;
     background: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
     border-radius: 2px 2px 0 0;
 
@@ -187,7 +187,7 @@
   }
 
   &__content {
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
     border-radius: 2px;
     background-color: $white;
     border-radius: 0 0 2px 2px;

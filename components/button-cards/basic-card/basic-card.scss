@@ -31,10 +31,9 @@
 
   &__caption-title {
     display: inline-block;
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
+    @extend .msds-font-weight-bold;
     color: $clear-blue;
-    font-weight: 700;
-    line-height: 22px;
     vertical-align: top;
   }
 
@@ -63,26 +62,25 @@
     }
 
     &-heading {
-      @include msds-font('header-3');
+      @extend .msds-text-header-3;
       color: $gray-10;
       margin: 0;
       padding-bottom: 8px;
-      line-height: 22px;
     }
 
     &-description {
-      @include msds-font('body-1');
+      @extend .msds-text-body-1;
+      @extend .msds-font-weight-light;
       color: $gray-9;
-      font-weight: 300;
       margin: 0;
       padding-bottom: 10px;
     }
   }
 
   &__link {
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
+    @extend .msds-font-weight-light;
     color: $clear-blue;
-    font-weight: 300;
     text-decoration: none;
   }
 

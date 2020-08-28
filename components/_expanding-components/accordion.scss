@@ -91,8 +91,7 @@
   }
 
   &__list-item-header-title {
-    @include msds-font('body-1');
-    font-weight: bold;
+    @extend .msds-text-body-1-bold;
     color: $clear-blue;
   }
 
@@ -115,13 +114,12 @@
   }
 
   &__list-item-subtitle {
-    @include msds-font('body-1');
-    font-weight: bold;
+    @extend .msds-text-body-1-bold;
     margin-bottom: 20px;
   }
 
   &__list-item-description {
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
   }
 
   .msds-btn-floating {
@@ -151,7 +149,7 @@
     }
 
     .msds-accordion__list-item-header-title {
-      @include msds-font('header-3');
+      @extend .msds-text-header-3;
       color: $clear-blue;
     }
 

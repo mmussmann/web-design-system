@@ -52,8 +52,7 @@
     border-radius: 2px 2px 0 0;
     margin-left: 0;
     margin-right: 0;
-    @include msds-font('body-1');
-    font-weight: bold;
+    @extend .msds-text-body-1-bold;
     text-align: center;
     color: $gray-9;
     cursor: pointer;
@@ -125,7 +124,7 @@
     border-right: none;
     text-align: center;
     min-width: 120px;
-    @include msds-font('body-2');
+    @extend .msds-text-body-2;
     border-bottom: 0.7px solid $gray-4;
 
     .msds-tab-tile__svg {
