@@ -58,7 +58,7 @@
   &__validation-msg {
     display: none;
     display: none;
-    @include msds-font('body-3');
+    @extend .msds-text-body-3;
     margin-left: 3px;
     margin-top: 10px;
     &--display {
