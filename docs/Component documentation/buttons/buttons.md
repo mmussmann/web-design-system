@@ -1,58 +1,47 @@
 ---
 title: Buttons
 ---
+## On this page we will go through our buttons component 
 
-## The buttons are used everywhere on the website for different purposes and actions such as forms, CTAs and campaigns...
-## Below you will find the different definitions and options to create your buttons
+The buttons are used everywhere on the website for different purposes and actions such as forms, CTAs and campaigns...
+
+Below you will find the different definitions and options to create your buttons
 
 ### Table of contents
 <div class="row">
-    <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[States](#states)</dd>
-            <dd>[Direction](#direction)</dd>
-        </dl>
-        <dl>
-            <dt>[Primary Button](#primary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Secondary Button](#secondary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Secondary Button Dark Theme](#secondary-button-dark-theme)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Tertiary Button](#tertiary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
+    <div class="col-12 col-md-3">
+      <dl>
+        <dt>[Overview](#overview)</dt>
+        <dd>[Global Definition](#global-definition)</dd>
+        <dd>[Sizes](#sizes)</dd>
+        <dd>[States](#states)</dd>
+        <dd>[Direction](#direction)</dd>
+      </dl>
     </div>
-    <div class="col-4">
-        <dl>
-            <dt>[Gray Button](#gray-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Danger Button](#danger-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Button Group](#button-group)</dt>
-            <dd>[Left Alignment](#left-alignment)</dd>
-            <dd>[Center Alignment](#center-alignment)</dd>
-            <dd>[Right Alignment](#right-alignment)</dd>
-        </dl>
+    <div class="col-12 col-md-3">
+      <dl>
+        <dt>[Primary Button](#primary-button)</dt>
+        <dt>[Secondary Button](#secondary-button)</dt>
+        <dt>[Tertiary Button](#tertiary-button)</dt>
+        <dt>[Gray Button](#gray-button)</dt>
+        <dt>[Danger Button](#danger-button)</dt>
+      </dl>
+    </div>
+    <div class="col-12 col-md-3">
+      <dl>
+        <dt>[Primary Button Dark Theme](#primary-button-dark-theme)</dt>
+        <dt>[Secondary Button Dark Theme](#secondary-button-dark-theme)</dt>
+        <dt>[Danger Button Dark Theme](#danger-button-dark-theme)<dt>
+        <dt>[Disabled Button Dark Theme](#disabled-button-dark-theme)</dt>
+      </dl>
+    </div>
+    <div class="col-12 col-md-3">
+      <dl>
+        <dt>[Button Group](#button-group)</dt>
+        <dd>[Left Alignment](#left-alignment)</dd>
+        <dd>[Center Alignment](#center-alignment)</dd>
+        <dd>[Right Alignment](#right-alignment)</dd>
+      </dl>
     </div>
 </div>
 
@@ -142,6 +131,27 @@ Below are few examples of the Milestone Secondary button. The default Secondary 
   <div class="element-preview__inner">{{render '@button-secondary-icon'}}</div>
 </div>
 
+## Primary Button Dark Theme
+To use a Primary Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--primary-dark"</code>. 
+
+Below are few examples of the Milestone Primary Dark Themed button. The default Primary Dark Themed button has no icon as mentioned in the global definition previously.
+
+### Without an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-primary-dark'}}</div>
+</div>
+```html
+{{render '@button-primary-dark'}}
+```
+
+### With an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-primary-dark-icon'}}</div>
+</div>
+
+```html
+{{render '@button-primary-dark-icon'}}
+```
 
 ## Secondary Button Dark Theme
 To use a Secondary Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--secondary-dark"</code>. 
@@ -163,6 +173,51 @@ Below are few examples of the Milestone Secondary Dark Themed button. The defaul
 
 ```html
 {{render '@button-secondary-dark-icon'}}
+```
+
+## Danger Button Dark Theme
+To use a Danger Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--danger-dark"</code>. 
+
+Below are few examples of the Milestone Danger Dark Themed button. The default Danger Dark Themed button has no icon as mentioned in the global definition previously.
+
+### Without an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-danger-dark'}}</div>
+</div>
+```html
+{{render '@button-danger-dark'}}
+```
+
+### With an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-danger-dark-icon'}}</div>
+</div>
+
+```html
+{{render '@button-danger-dark-icon'}}
+```
+
+## Disabled Button Dark Theme
+To apply a Disabled Dark Themed button state, you need to add the <code>"disabled"</code> CCS attribute to buttons that have one the following CSS classes:
+<code>"msds-btn\--primary-dark"</code>, <code>"msds-btn\--secondary-dark"</code> or <code>"msds-btn\--danger-dark"</code>.
+
+Below are few examples of the Milestone Disabled Dark Themed button. The default Disabled Dark Themed button has no icon as mentioned in the global definition previously.
+
+### Without an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-disabled-dark'}}</div>
+</div>
+```html
+{{render '@button-disabled-dark'}}
+```
+
+### With an icon
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@button-disabled-dark-icon'}}</div>
+</div>
+
+```html
+{{render '@button-disabled-dark-icon'}}
 ```
 
 ## Tertiary Button
