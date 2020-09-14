@@ -116,7 +116,7 @@
     padding-right: 20px;
     margin-bottom: 16px;
     z-index: 2;
-    @include msds-font('header-4');
+    @extend .msds-text-header-4;
   }
 
   &__body {
@@ -127,17 +127,17 @@
   &__body-contact-person {
     color: $gray-10;
     margin-bottom: 8px;
-    @include msds-font('header-4');
+    @extend .msds-text-header-4;
   }
 
   &__body-contact-position {
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
     color: $gray-8;
   }
 
   &__body-contact-details {
     color: $clear-blue;
-    @include msds-font('body-1');
+    @extend .msds-text-body-1;
     display: table;
     margin: 0 auto;
     padding-top: 24px;

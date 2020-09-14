@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Flat icons / Marketplace / marketplace-displays-digital-signage</title>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Marketplace-/-marketplace-displays-digital-signage" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="marketplace-displays-digital-signage" transform="translate(25.000000, 4.000000)" fill-rule="nonzero">
+            <path d="M52.9411765,112.941176 L52.9411765,91.7647059 L70.5882353,81.1764706 L70.5882353,0 L7.05882353,0 L7.05882353,81.1764706 L24.7058824,91.7647059 L24.7058824,112.941176 L0,112.941176 L0,120 L77.6470588,120 L77.6470588,112.941176 L52.9411765,112.941176 Z M31.7647059,81.1764706 L31.7647059,77.6470588 L45.8823529,77.6470588 L45.8823529,81.1764706 L31.7647059,81.1764706 Z M40.5882353,86.4705882 C40.5882353,87.4411765 39.7941176,88.2352941 38.8235294,88.2352941 C37.8529412,88.2352941 37.0588235,87.4411765 37.0588235,86.4705882 C37.0588235,85.5 37.8529412,84.7058824 38.8235294,84.7058824 C39.7941176,84.7058824 40.5882353,85.5 40.5882353,86.4705882 Z M14.1176471,74.1176471 L14.1176471,7.05882353 L63.5294118,7.05882353 L63.5294118,74.1176471 L14.1176471,74.1176471 Z" id="Shape"></path>
+            <rect id="Rectangle" opacity="0.65" x="21.1764706" y="14.1176471" width="35.2941176" height="52.9411765"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Rich icons / Marketplace / Industries-Utilities</title>
+    <defs>
+        <linearGradient x1="49.9843614%" y1="-54.1040659%" x2="49.9843614%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="30%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.02" offset="40%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.07" offset="51%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.17" offset="64%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.29" offset="77%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.45" offset="90%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-54.1125935%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="30%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.02" offset="40%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.07" offset="51%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.17" offset="64%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.29" offset="77%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.45" offset="90%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-Marketplace-/-Industries-Utilities" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="utilities" transform="translate(0.000000, 84.000000)" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#E0DFDE" x="21.04" y="143.08" width="41.09" height="5.26"></rect>
+            <rect id="Rectangle" fill="#E0DFDE" x="75.42" y="135.85" width="9.62" height="4.71"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" style="mix-blend-mode: multiply;" x="81.34" y="135.85" width="4.15" height="4.71"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" style="mix-blend-mode: multiply;" x="60.05" y="143.08" width="4.15" height="5.26"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" style="mix-blend-mode: multiply;" x="25.63" y="143.08" width="2.08" height="5.26"></rect>
+            <rect id="Rectangle" fill="#E0DFDE" x="23.53" y="139.8" width="41.03" height="1.52"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" x="83.59" y="79.06" width="15.31" height="80.41"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" x="62.13" y="79.06" width="15.31" height="80.41"></rect>
+            <polygon id="Path" fill="#CBCDCB" points="98.89 98.75 85.96 83.17 85.96 79.06 98.89 79.06"></polygon>
+            <polygon id="Path" fill="#CBCDCB" points="77.44 98.75 64.21 83.17 64.21 79.06 77.44 79.06"></polygon>
+            <path d="M328,81.82 L309.44,63.25 C306.879884,60.690949 305.441065,57.2197975 305.44,53.6 L305.44,29.78 C305.437201,26.15761 303.998847,22.683985 301.44,20.12 L285.29,4 C282.726015,1.44115302 279.25239,0.00279895671 275.63,1.42108547e-14 L222.21,1.42108547e-14 C217.410501,1.42108547e-14 212.807722,1.90727716 209.414901,5.30197337 C206.022081,8.69666959 204.117347,13.3005013 204.119997,18.1 L204.119997,54.68 C204.119997,64.67245 212.217551,72.7744793 222.21,72.78 L253.44,72.78 C257.062826,72.780609 260.537255,74.2192959 263.1,76.78 L272.38,86.07 C274.942567,88.6315007 276.381588,92.1067372 276.38,95.73 L276.38,116.32 L332,117.81 L332,91.47 C332,87.8502025 330.560116,84.379051 328,81.82 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M216.51,94.14 L200,77.68 C197.721269,75.4019838 196.440715,72.3121068 196.44,69.09 L196.44,47.85 C196.439285,44.6278932 195.158731,41.5380162 192.88,39.26 L178.53,24.92 C176.253231,22.6394036 173.162545,21.3585138 169.94,21.3599987 L122.43,21.3599987 C113.538216,21.3599987 106.33,28.5682155 106.33,37.46 L106.33,70.02 C106.33,78.9117845 113.538216,86.12 122.43,86.12 L150.2,86.12 C153.425572,86.1180611 156.519534,87.3988176 158.8,89.68 L167.06,97.94 C169.332279,100.221509 170.608655,103.309979 170.61,106.53 L170.61,124.85 L220.07,126.16 L220.07,102.73 C220.07,99.5078932 218.788731,96.4180162 216.51,94.14 L216.51,94.14 Z" id="Path" fill="url(#linearGradient-2)"></path>
+            <rect id="Rectangle" fill="#8C8F8B" x="5.88" y="130.86" width="19.76" height="64.39" rx="3.77"></rect>
+            <path d="M21.86,130.86 L15.52,130.86 C16.5285898,130.86 17.49516,131.263963 18.2036271,131.981826 C18.9120943,132.699689 19.3033765,133.671499 19.29,134.68 L19.29,191.48 C19.29,193.562114 17.6021135,195.25 15.52,195.25 L21.86,195.25 C23.9421135,195.25 25.63,193.562114 25.63,191.48 L25.63,134.68 C25.6433765,133.671499 25.2520943,132.699689 24.5436271,131.981826 C23.83516,131.263963 22.8685898,130.86 21.86,130.86 L21.86,130.86 Z" id="Path" fill="#CBCDCB" style="mix-blend-mode: multiply;"></path>
+            <path d="M269.3,111.54 L251.12,241.37 C250.992598,242.276065 251.264179,243.192872 251.864521,243.883361 C252.464863,244.57385 253.335022,244.97 254.25,244.97 L353.75,244.97 C354.680081,244.97 355.563405,244.562283 356.165994,243.853808 C356.768583,243.145332 357.029635,242.207966 356.88,241.29 L335.35,111.46 C335.100017,109.931392 333.778914,108.81 332.23,108.81 L272.43,108.81 C270.852803,108.814636 269.518911,109.978062 269.3,111.54 Z" id="Path" fill="#0099DA"></path>
+            <path d="M162.43,111.54 L144.25,241.37 C144.122598,242.276065 144.394179,243.192872 144.994521,243.883361 C145.594863,244.57385 146.465022,244.970002 147.38,244.970002 L246.88,244.970002 C247.809516,244.970002 248.692286,244.562522 249.293391,243.853527 C249.894495,243.144532 250.152959,242.206845 250,241.29 L228.48,111.46 C228.230017,109.931392 226.908914,108.81 225.36,108.81 L165.56,108.81 C163.981175,108.81 162.64484,109.97586 162.43,111.54 L162.43,111.54 Z" id="Path" fill="#009BDB"></path>
+            <path d="M356.9,241.29 L335.38,111.46 C335.126173,109.933568 333.807389,108.813447 332.26,108.81 L316.65,108.81 C318.199656,108.812691 319.521726,109.932016 319.78,111.46 L341.3,241.29 C341.452959,242.206845 341.194495,243.144532 340.593391,243.853527 C339.992286,244.562522 339.109516,244.970002 338.18,244.970002 L353.78,244.970002 C354.709516,244.970002 355.592286,244.562522 356.193391,243.853527 C356.794495,243.144532 357.052959,242.206845 356.9,241.29 L356.9,241.29 Z" id="Path" fill="#4FBAE6" style="mix-blend-mode: multiply;"></path>
+            <path d="M250.05,241.49 L228.53,111.68 C228.271825,110.157541 226.954192,109.042621 225.41,109.039998 L209.8,109.039998 C211.345704,109.038494 212.665644,110.155367 212.92,111.68 L234.45,241.51 C234.602959,242.426845 234.344495,243.364532 233.743391,244.073527 C233.142286,244.782522 232.259516,245.190007 231.33,245.190007 L246.93,245.190007 C247.863657,245.191915 248.750368,244.780849 249.352247,244.067084 C249.954125,243.353318 250.209551,242.409925 250.05,241.49 L250.05,241.49 Z" id="Path" fill="#4FBAE6" style="mix-blend-mode: multiply;"></path>
+            <polygon id="Path" fill="#BAE4F5" points="272.45 119.56 268.18 119.56 268.78 115.23 272.45 115.23"></polygon>
+            <rect id="Rectangle" fill="#BAE4F5" x="272.45" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="276.78" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="281.1" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="285.43" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="289.76" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="294.09" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="298.42" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="302.74" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="307.07" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="311.4" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="315.73" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="320.05" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="324.38" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="328.71" y="115.23" width="4.33" height="4.33"></rect>
+            <polygon id="Path" fill="#BAE4F5" points="337.41 123.89 333.04 123.89 333.04 119.56 336.69 119.56"></polygon>
+            <polygon id="Path" fill="#BAE4F5" points="165.58 119.56 161.31 119.56 161.92 115.23 165.58 115.23"></polygon>
+            <rect id="Rectangle" fill="#BAE4F5" x="165.58" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="169.91" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="174.24" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="178.57" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="182.89" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="187.22" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="191.55" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="195.88" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="200.2" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="204.53" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="208.86" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="213.19" y="115.23" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="217.51" y="119.56" width="4.33" height="4.33"></rect>
+            <rect id="Rectangle" fill="#BAE4F5" x="221.84" y="115.23" width="4.33" height="4.33"></rect>
+            <polygon id="Path" fill="#BAE4F5" points="230.54 123.89 226.17 123.89 226.17 119.56 229.83 119.56"></polygon>
+            <g id="Group" opacity="0.42" style="mix-blend-mode: multiply;" transform="translate(175.000000, 154.000000)" fill="#4FBAE6">
+                <polygon id="Path" points="43.28 61.9 0.54 0.81 0.54 61.9"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#8C8F8B" x="32.88" y="155.19" width="142.6" height="35.76"></rect>
+            <rect id="Rectangle" fill="#CAD3D6" x="197.18" y="215.9" width="171.21" height="29.06"></rect>
+            <rect id="Rectangle" fill="#EFF2F3" x="3.28" y="190.95" width="202.68" height="54.02"></rect>
+            <polygon id="Path" fill="#33617E" points="20.66 230.99 13.93 238.03 13.93 245.21 20.66 245.21"></polygon>
+            <polygon id="Path" fill="#003A5D" points="20.66 208.14 13.93 208.14 13.93 238.03 20.66 230.99"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(13.000000, 208.000000)" fill="#003A5D">
+                <polygon id="Path" points="7.66 0.14 0.93 0.14 0.93 37.21 2.91 37.21 2.91 2.24 7.66 2.24"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="32.09 230.89 25.36 237.93 25.36 245.11 32.09 245.11"></polygon>
+            <polygon id="Path" fill="#003A5D" points="32.09 208.04 25.36 208.04 25.36 237.93 32.09 230.89"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(25.000000, 208.000000)" fill="#003A5D">
+                <polygon id="Path" points="7.09 0.04 0.36 0.04 0.36 37.11 2.34 37.11 2.34 2.14 7.09 2.14"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="43.88 230.99 37.15 238.03 37.15 245.21 43.88 245.21"></polygon>
+            <polygon id="Path" fill="#003A5D" points="43.88 208.14 37.15 208.14 37.15 238.03 43.88 230.99"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(37.000000, 208.000000)" fill="#003A5D">
+                <polygon id="Path" points="6.88 0.14 0.15 0.14 0.15 37.21 2.13 37.21 2.13 2.24 6.88 2.24"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="171.57 230.84 164.84 237.88 164.84 245.06 171.57 245.06"></polygon>
+            <polygon id="Path" fill="#003A5D" points="171.57 207.99 164.84 207.99 164.84 237.88 171.57 230.84"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(164.000000, 207.000000)" fill="#003A5D">
+                <polygon id="Path" points="7.57 0.99 0.84 0.99 0.84 38.06 2.82 38.06 2.82 3.09 7.57 3.09"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="183.01 230.75 176.28 237.78 176.28 244.96 183.01 244.96"></polygon>
+            <polygon id="Path" fill="#003A5D" points="183.01 207.9 176.28 207.9 176.28 237.78 183.01 230.75"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(176.000000, 207.000000)" fill="#003A5D">
+                <polygon id="Path" points="7.01 0.9 0.28 0.9 0.28 37.96 2.26 37.96 2.26 3 7.01 3"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="194.79 230.84 188.06 237.88 188.06 245.06 194.79 245.06"></polygon>
+            <polygon id="Path" fill="#003A5D" points="194.79 207.99 188.06 207.99 188.06 237.88 194.79 230.84"></polygon>
+            <g id="Group" opacity="0.64" style="mix-blend-mode: multiply;" transform="translate(188.000000, 207.000000)" fill="#023852">
+                <polygon id="Path" points="6.79 0.99 0.06 0.99 0.06 38.06 2.05 38.06 2.05 3.09 6.79 3.09"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#EFF2F3" x="0" y="188.61" width="209.22" height="2.75"></rect>
+            <rect id="Rectangle" fill="#CED5D9" x="3.28" y="191.36" width="202.69" height="2.75"></rect>
+            <polygon id="Path" fill="#33617E" points="192.06 200.84 195.55 197.51 197.18 197.51 197.18 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="188.76 200.84 188.76 197.51 195.55 197.51 192.06 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="172.06 200.84 175.54 197.51 177.17 197.51 177.17 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="168.75 200.84 168.75 197.51 175.54 197.51 172.06 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="152.05 200.84 155.54 197.51 157.17 197.51 157.17 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="148.75 200.84 148.75 197.51 155.54 197.51 152.05 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="132.05 200.84 135.54 197.51 137.17 197.51 137.17 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="128.75 200.84 128.75 197.51 135.54 197.51 132.05 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="112.04 200.84 115.53 197.51 117.16 197.51 117.16 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="108.74 200.84 108.74 197.51 115.53 197.51 112.04 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="92.04 200.84 95.53 197.51 97.16 197.51 97.16 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="88.74 200.84 88.74 197.51 95.53 197.51 92.04 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="72.03 200.84 75.52 197.51 77.15 197.51 77.15 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="68.73 200.84 68.73 197.51 75.52 197.51 72.03 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="52.03 200.84 55.52 197.51 57.15 197.51 57.15 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="48.73 200.84 48.73 197.51 55.52 197.51 52.03 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="32.03 200.84 35.52 197.51 37.15 197.51 37.15 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="28.73 200.84 28.73 197.51 35.52 197.51 32.03 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="12.02 200.84 15.51 197.51 17.14 197.51 17.14 200.84"></polygon>
+            <polygon id="Path" fill="#003A5D" points="8.72 200.84 8.72 197.51 15.51 197.51 12.02 200.84"></polygon>
+            <polygon id="Path" fill="#33617E" points="216.82 225.75 222.41 220.42 225.02 220.42 225.02 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="211.54 225.75 211.54 220.42 222.41 220.42 216.82 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="235.8 225.75 241.38 220.42 244 220.42 244 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="230.51 225.75 230.51 220.42 241.38 220.42 235.8 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="254.77 225.75 260.36 220.42 262.97 220.42 262.97 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="249.48 225.75 249.48 220.42 260.36 220.42 254.77 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="273.74 225.75 279.33 220.42 281.94 220.42 281.94 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="268.46 225.75 268.46 220.42 279.33 220.42 273.74 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="292.72 225.75 298.31 220.42 300.92 220.42 300.92 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="287.43 225.75 287.43 220.42 298.31 220.42 292.72 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="311.69 225.75 317.28 220.42 319.89 220.42 319.89 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="306.4 225.75 306.4 220.42 317.28 220.42 311.69 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="330.66 225.75 336.25 220.42 338.86 220.42 338.86 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="325.38 225.75 325.38 220.42 336.25 220.42 330.66 225.75"></polygon>
+            <polygon id="Path" fill="#33617E" points="349.64 225.75 355.23 220.42 357.83 220.42 357.83 225.75"></polygon>
+            <polygon id="Path" fill="#003A5D" points="344.35 225.75 344.35 220.42 355.23 220.42 349.64 225.75"></polygon>
+            <g id="Group" opacity="0.42" style="mix-blend-mode: multiply;" transform="translate(205.000000, 219.000000)" fill="#BFC9CE">
+                <polygon id="Path" points="18.56 25.96 0.97 0.8 0.97 25.96"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="32.88 173.07 32.88 182.96 97.38 182.96 103.93 173.07"></polygon>
+            <polygon id="Path" fill="#003A5D" points="103.93 173.07 97.38 182.96 175.47 182.96 175.47 173.07"></polygon>
+            <g id="Group" opacity="0.63" style="mix-blend-mode: multiply;" transform="translate(46.000000, 173.000000)" fill="#003A5D">
+                <rect id="Rectangle" x="0.18" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="13.13" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="26.08" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="39.03" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="51.98" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="64.93" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="77.88" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="90.83" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="103.78" y="0.07" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="116.73" y="0.07" width="1" height="9.9"></rect>
+            </g>
+            <g id="Group" opacity="0.68" style="mix-blend-mode: multiply;" transform="translate(32.000000, 173.000000)" fill="#003A5D">
+                <polygon id="Path" points="3.4 2.08 70.6 2.08 71.93 0.07 0.88 0.07 0.88 9.96 3.4 9.96"></polygon>
+                <polygon id="Path" points="143.47 2.08 143.47 0.07 71.93 0.07 70.6 2.08"></polygon>
+            </g>
+            <polygon id="Path" fill="#33617E" points="32.88 160.39 32.88 170.28 97.38 170.28 103.93 160.39"></polygon>
+            <polygon id="Path" fill="#003A5D" points="103.93 160.39 97.38 170.28 175.47 170.28 175.47 160.39"></polygon>
+            <g id="Group" opacity="0.63" style="mix-blend-mode: multiply;" transform="translate(46.000000, 160.000000)" fill="#023852">
+                <rect id="Rectangle" x="0.18" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="13.13" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="26.08" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="39.03" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="51.98" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="64.93" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="77.88" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="90.83" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="103.78" y="0.39" width="1" height="9.9"></rect>
+                <rect id="Rectangle" x="116.73" y="0.39" width="1" height="9.9"></rect>
+            </g>
+            <g id="Group" opacity="0.68" style="mix-blend-mode: multiply;" transform="translate(32.000000, 160.000000)" fill="#023852">
+                <polygon id="Path" points="3.4 2.4 70.6 2.4 71.93 0.39 0.88 0.39 0.88 10.28 3.4 10.28"></polygon>
+                <polygon id="Path" points="143.47 2.4 143.47 0.39 71.93 0.39 70.6 2.4"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#B5B8B5" x="28.73" y="153.52" width="149.01" height="3.19"></rect>
+            <rect id="Rectangle" fill="#D3DADD" x="205.96" y="212.03" width="166.2" height="3.88"></rect>
+            <rect id="Rectangle" fill="#CBCDCB" x="81.34" y="77.71" width="19.79" height="1.34"></rect>
+            <rect id="Rectangle" fill="#BFC9CE" x="205.96" y="215.9" width="162.43" height="2.06"></rect>
+            <rect id="Rectangle" fill="#8C8F8B" x="128.75" y="145.71" width="18.92" height="7.81"></rect>
+            <rect id="Rectangle" fill="#8C8F8B" x="112.14" y="149.62" width="12.67" height="3.9"></rect>
+            <rect id="Rectangle" fill="#96A6AE" x="125.24" y="221.03" width="28.43" height="23.85"></rect>
+            <g id="Group" opacity="0.42" style="mix-blend-mode: multiply;" transform="translate(125.000000, 221.000000)" fill="#CED5D9">
+                <polygon id="Path" points="17.84 23.88 0.24 0.03 0.24 23.88"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#96A6AE" x="90.4" y="221.03" width="28.43" height="23.85"></rect>
+            <g id="Group" opacity="0.42" style="mix-blend-mode: multiply;" transform="translate(90.000000, 221.000000)" fill="#CED5D9">
+                <polygon id="Path" points="18 23.88 0.4 0.03 0.4 23.88"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#96A6AE" x="55.52" y="221.03" width="28.43" height="23.85"></rect>
+            <g id="Group" opacity="0.42" style="mix-blend-mode: multiply;" transform="translate(55.000000, 221.000000)" fill="#CED5D9">
+                <polygon id="Path" points="18.12 23.88 0.52 0.03 0.52 23.88"></polygon>
+            </g>
+            <rect id="Rectangle" fill="#CBCDCB" x="59.89" y="77.71" width="19.79" height="1.34"></rect>
+            <path d="M405.37,212.84 L393.69,206.17 L393,200.68 C392.932971,200.2291 392.545855,199.895277 392.09,199.895277 C391.634145,199.895277 391.247029,200.2291 391.18,200.68 L390.5,206.14 L378.82,212.81 C378.467741,213.01999 378.297006,213.437778 378.401373,213.834375 C378.505741,214.230973 378.860008,214.510602 379.27,214.52 L389.45,214.52 L387.52,229.96 L387.52,229.96 L385.7,244.68 C385.650142,245.049315 385.833052,245.411158 386.16,245.59 C386.480373,245.760816 386.870859,245.729577 387.16,245.51 L395.87,238.51 L396.66,244.88 C396.720117,245.336966 397.109098,245.678928 397.57,245.68 L397.68,245.68 C398.175778,245.622457 398.53269,245.176317 398.48,244.68 L394.72,214.58 L404.89,214.58 C405.301807,214.574911 405.660064,214.29676 405.767047,213.89906 C405.874031,213.501359 405.703676,213.081009 405.35,212.87 L405.37,212.84 Z M392.66,212.68 L391.53,212.68 L392.1,208.16 L392.66,212.68 Z M382.73,212.68 L390.22,208.4 L389.69,212.68 L382.73,212.68 Z M390.68,219.52 L392.81,222.72 L389.81,226.77 L390.68,219.52 Z M387.79,242.68 L389.11,232.13 L394.39,237.41 L387.79,242.68 Z M389.64,230.07 L394.09,224.15 L395.57,235.99 L389.64,230.07 Z M393.64,220.78 L391,216.79 L391,216.79 L391.27,214.55 L392.86,214.55 L393.64,220.78 Z M394.48,212.78 L393.94,208.5 L401.44,212.78 L394.48,212.78 Z" id="Shape" fill="#CBCDCB"></path>
+            <path d="M439.54,212.84 L427.86,206.17 L427.18,200.71 C427.112971,200.2591 426.725855,199.925277 426.27,199.925277 C425.814145,199.925277 425.427029,200.2591 425.36,200.71 L424.68,206.17 L413,212.84 C412.647741,213.04999 412.477006,213.467778 412.581373,213.864375 C412.685741,214.260973 413.040008,214.540602 413.45,214.55 L423.63,214.55 L421.7,229.99 L421.7,229.99 L419.87,244.68 C419.820142,245.049315 420.003052,245.411158 420.33,245.59 C420.64983,245.763404 421.041806,245.732046 421.33,245.51 L430.04,238.51 L430.83,244.88 C430.890117,245.336966 431.279098,245.678928 431.74,245.68 L431.85,245.68 C432.345778,245.622457 432.70269,245.176317 432.65,244.68 L428.89,214.58 L439.06,214.58 C439.471807,214.574911 439.830064,214.29676 439.937047,213.89906 C440.044031,213.501359 439.873676,213.081009 439.52,212.87 L439.54,212.84 Z M426.83,212.68 L425.71,212.68 L426.27,208.16 L426.83,212.68 Z M416.9,212.68 L424.39,208.4 L423.86,212.68 L416.9,212.68 Z M424.9,219.52 L427.03,222.72 L424.03,226.77 L424.9,219.52 Z M422,242.68 L423.32,232.13 L428.6,237.41 L422,242.68 Z M423.85,230.07 L428.3,224.15 L429.78,235.99 L423.85,230.07 Z M427.85,220.78 L425.21,216.83 L425.21,216.83 L425.48,214.59 L427.07,214.59 L427.85,220.78 Z M428.69,212.78 L428.16,208.5 L435.65,212.78 L428.69,212.78 Z" id="Shape" fill="#CBCDCB"></path>
+        </g>
+    </g>
+</svg>

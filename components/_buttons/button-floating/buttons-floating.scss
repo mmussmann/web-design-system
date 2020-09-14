@@ -41,10 +41,9 @@
   align-items: center;
   user-select: none;
   padding: 0px;
-  @include msds-font('body-1');
+  @extend .msds-text-body-1;
   color: $clear-blue;
   background-color: transparent;
-  font-weight: 400;
   text-transform: unset;
   text-align: center;
   cursor: pointer;

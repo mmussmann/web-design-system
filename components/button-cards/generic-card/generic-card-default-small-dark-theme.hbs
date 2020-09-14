@@ -1,0 +1,22 @@
+<h1>Small Dark Theme cards with SVG</h1>
+<div class="row card-row">
+      <div class="col-12 col-md-3">
+        <div class="msds-generic-card msds-generic-card--vertical-aligned msds-generic-card--dark-theme msds-generic-card--svg">
+            <a href="#" class="msds-generic-card--link">
+                <div class="msds-generic-card__frame embed-responsive embed-responsive-2by1 msds-bg-gray-gradient-1">
+                    <svg class="msds-generic-card__frame-image embed-responsive-item">
+                        <use href="{{ path '/msds-spritemap.svg' }}#no-backup" />
+                    </svg>
+                </div>
+                <div class="msds-generic-card__body">
+                    <h3 class="msds-generic-card__body-heading">
+                        {{card.placeholderHeading}}
+                    </h3>
+                    <p class="msds-generic-card__body-description">
+                        {{card.placeholderDescriptionlong}}
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div> 
+</div>

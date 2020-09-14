@@ -2,12 +2,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  &__input-container {
+}
+.msds-input {
+  position: relative;
+  &__icon-wrapper {
     position: relative;
+    margin-bottom: 10px;
   }
-
-  &__input-container-input {
-    font-size: 16px;
+  &__text-input {
+    @extend .msds-text-body-1;
     color: $gray-10;
     height: 56px;
     width: 100%;
@@ -15,154 +18,135 @@
     border: 1px solid $gray-5;
     border-radius: 2px;
     padding-top: 13px;
-
-    &:hover {
-      background-color: $gray-2;
+    &::placeholder {
+      color: transparent;
     }
-
+    &:read-only {
+      pointer-events: none;
+      background: $gray-3;
+      color: $black;
+    }
+    &:read-only + label {
+      pointer-events: none;
+      color: $gray-7;
+    }
+    &:disabled {
+      background: $gray-3;
+      & ~ label {
+        color: $gray-7;
+      }
+    }
     &:focus {
       outline: 4px solid rgba(0, 153, 218, 0.5);
       border: 1px solid $clear-blue;
     }
-
-    &:focus ~ label {
-      top: 10px;
+    &:focus + label {
+      top: 8px;
       font-size: 10px;
     }
-
-    &::placeholder {
-      color: transparent;
-    }
-
-    &:not(:placeholder-shown) ~ label {
-      top: 10px;
+    &:not(:placeholder-shown) + label {
+      top: 8px;
       font-size: 10px;
     }
-
-    &--small {
+  }
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    transition: 0.5s;
+    pointer-events: none;
+    color: $gray-8;
+    @extend .msds-text-body-1;
+  }
+  &__info-message {
+    @extend .msds-text-body-3;
+    color: $gray-9;
+    margin-left: 3px;
+    margin-top: 0;
+  }
+  &--small {
+    .msds-input__text-input {
       padding-left: 12px;
-      height: 36px;
-      font-size: 12px;
-      line-height: 18px;
       padding-top: 12px;
-
-      &:focus ~ label {
-        left: 13px;
-        top: 5px;
-      }
-
-      & ~ label {
+      height: 36px;
+      @extend .msds-text-body-3;
+      top: 5px;
+      & + label {
         left: 13px;
         font-size: 12px;
-        top: calc(50% - 20px);
+        top: 10px;
       }
-
-      &:not(:placeholder-shown) ~ label {
-        top: 5px;
+      &:focus + label {
+        left: 13px;
+        top: 1px;
+        font-size: 11px;
       }
-    }
-
-    &--disabled {
-      &:hover {
-        background-color: $gray-3;
-      }
-
-      & ~ label {
-        color: $gray-7;
-      }
-      background: $gray-3;
-    }
-
-    &--readonly {
-      color: $black;
-      pointer-events: none;
-      & ~ label {
-        color: $black;
+      &:not(:placeholder-shown) + label {
+        font-size: 11px;
+        top: 1px;
       }
     }
-
-    &--success {
+  }
+  &--success {
+    .msds-input__icon-wrapper:before,
+    .msds-input__icon-wrapper:after {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: calc(50% - 6px);
+      height: 13px;
+      width: 2px;
+      background-color: $confirm-green;
+    }
+    .msds-input__icon-wrapper:before {
+      top: calc(50% - 7px);
+      height: 13px;
+      right: 15px;
+      transform: rotate(45deg);
+    }
+    .msds-input__icon-wrapper:after {
+      top: calc(50% - 3px);
+      height: 7px;
+      right: 22px;
+      transform: rotate(-45deg);
+    }
+    .msds-input__text-input {
       border: 1px solid $confirm-green;
-      & ~ p {
-        color: $confirm-green;
-      }
-
-      & ~ p:before,
-      & ~ p:after {
-        content: '';
-        position: absolute;
-        right: 15px;
-        width: 2px;
-        background-color: $confirm-green;
-      }
-
-      & ~ p:before {
-        top: calc(50% - 16px);
-        height: 13px;
-        right: 15px;
-        transform: rotate(45deg);
-      }
-
-      & ~ p:after {
-        top: calc(50% - 12px);
-        height: 7px;
-        right: 21px;
-        transform: rotate(-45deg);
-      }
-
       &:focus {
         outline: 4px solid rgba(60, 192, 3, 0.5);
         border: 1px solid $confirm-green;
       }
     }
-
-    &--error {
+    .msds-input__info-message {
+      color: $confirm-green;
+    }
+  }
+  &--error {
+    .msds-input__icon-wrapper:before,
+    .msds-input__icon-wrapper:after {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: calc(50% - 6px);
+      height: 13px;
+      width: 2px;
+      background-color: $danger-red-1;
+    }
+    .msds-input__icon-wrapper:before {
+      transform: rotate(45deg);
+    }
+    .msds-input__icon-wrapper:after {
+      transform: rotate(-45deg);
+    }
+    .msds-input__text-input {
       border: 1px solid $danger-red-1;
-      & ~ p {
-        color: $danger-red-1;
-      }
-
-      & ~ p:before,
-      & ~ p:after {
-        content: '';
-        position: absolute;
-        right: 15px;
-        top: calc(50% - 17px);
-        height: 13px;
-        width: 2px;
-        background-color: $danger-red-1;
-      }
-
-      & ~ p:before {
-        transform: rotate(45deg);
-      }
-
-      & ~ p:after {
-        transform: rotate(-45deg);
-      }
-
       &:focus {
         outline: 4px solid rgba(255, 40, 90, 0.5);
         border: 1px solid $danger-red-2;
       }
     }
-  }
-
-  &__input-container-input-label {
-    position: absolute;
-    top: calc(50% - 23px);
-    left: 20px;
-    transition: 0.5s;
-    pointer-events: none;
-    color: $gray-8;
-    font-size: 16px;
-  }
-
-  &__input-container-input-message {
-    font-size: 12px;
-    line-height: 18px;
-    color: $gray-9;
-    margin-left: 3px;
-    margin-top: 6px;
+    .msds-input__info-message {
+      color: $danger-red-1;
+    }
   }
 }

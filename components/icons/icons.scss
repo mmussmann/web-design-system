@@ -546,3 +546,327 @@
   height: map-get(map-get($sprite-sizes, 'world-leading'), 'height');
   width: map-get(map-get($sprite-sizes, 'world-leading'), 'width');
 }
+.msds-marketplace-challenges-assist-people-feel-safe-leaving {
+  @include sprite('marketplace-challenges-assist-people-feel-safe-leaving');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'width');
+}
+
+.msds-marketplace-challenges-assist-people-feel-safe-leaving {
+  @include sprite('marketplace-challenges-assist-people-feel-safe-leaving');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'width');
+}
+.msds-marketplace-challenges-assist-people-in-finding-their-vehicles {
+  @include sprite('marketplace-challenges-assist-people-in-finding-their-vehicles');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-in-finding-their-vehicles'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-in-finding-their-vehicles'), 'width');
+}
+.msds-marketplace-challenges-avoid-employee-theft {
+  @include sprite('marketplace-challenges-avoid-employee-theft');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-avoid-employee-theft'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-avoid-employee-theft'), 'width');
+}
+.msds-marketplace-challenges-control-access-to-restricted-areas {
+  @include sprite('marketplace-challenges-control-access-to-restricted-areas');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-control-access-to-restricted-areas'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-control-access-to-restricted-areas'), 'width');
+}
+.msds-marketplace-challenges-discover-inefficiencies-in-cargo-movement {
+  @include sprite('marketplace-challenges-discover-inefficiencies-in-cargo-movement');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-discover-inefficiencies-in-cargo-movement'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-discover-inefficiencies-in-cargo-movement'), 'width');
+}
+.msds-marketplace-challenges-find-lost-children {
+  @include sprite('marketplace-challenges-find-lost-children');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-find-lost-children'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-find-lost-children'), 'width');
+}
+.msds-marketplace-challenges-gather-evidence-for-criminal-investigation {
+  @include sprite('marketplace-challenges-gather-evidence-for-criminal-investigation');
+  height: map-get(
+    map-get($sprite-sizes, 'marketplace-challenges-gather-evidence-for-criminal-investigation'),
+    'height'
+  );
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-gather-evidence-for-criminal-investigation'), 'width');
+}
+.msds-marketplace-challenges-improve-wait-time-in-lines {
+  @include sprite('marketplace-challenges-improve-wait-time-in-lines');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-improve-wait-time-in-lines'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-improve-wait-time-in-lines'), 'width');
+}
+.msds-marketplace-challenges-money-disputes-with-customers {
+  @include sprite('marketplace-challenges-money-disputes-with-customers');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-money-disputes-with-customers'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-money-disputes-with-customers'), 'width');
+}
+.msds-marketplace-challenges-personalized-customer-experience {
+  @include sprite('marketplace-challenges-personalized-customer-experience');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-personalized-customer-experience'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-personalized-customer-experience'), 'width');
+}
+.msds-marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge {
+  @include sprite('marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge');
+  height: map-get(
+    map-get(
+      $sprite-sizes,
+      'marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge'
+    ),
+    'height'
+  );
+  width: map-get(
+    map-get(
+      $sprite-sizes,
+      'marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge'
+    ),
+    'width'
+  );
+}
+.msds-marketplace-challenges-provide-evidence-against-lawsuit {
+  @include sprite('marketplace-challenges-provide-evidence-against-lawsuit');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-provide-evidence-against-lawsuit'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-provide-evidence-against-lawsuit'), 'width');
+}
+.msds-marketplace-challenges-react-to-confrontations-before-they-escalate {
+  @include sprite('marketplace-challenges-react-to-confrontations-before-they-escalate');
+  height: map-get(
+    map-get($sprite-sizes, 'marketplace-challenges-react-to-confrontations-before-they-escalate'),
+    'height'
+  );
+  width: map-get(
+    map-get($sprite-sizes, 'marketplace-challenges-react-to-confrontations-before-they-escalate'),
+    'width'
+  );
+}
+.msds-marketplace-challenges-reduce-property-damage {
+  @include sprite('marketplace-challenges-reduce-property-damage');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-reduce-property-damage'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-reduce-property-damage'), 'width');
+}
+.msds-marketplace-challenges-reduce-workplace-accidents {
+  @include sprite('marketplace-challenges-reduce-workplace-accidents');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-reduce-workplace-accidents'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-reduce-workplace-accidents'), 'width');
+}
+.msds-marketplace-challenges-respond-to-medical-emergencies {
+  @include sprite('marketplace-challenges-respond-to-medical-emergencies');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-respond-to-medical-emergencies'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-respond-to-medical-emergencies'), 'width');
+}
+.msds-marketplace-challenges-situational-awareness-to-response-teams {
+  @include sprite('marketplace-challenges-situational-awareness-to-response-teams');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-situational-awareness-to-response-teams'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-situational-awareness-to-response-teams'), 'width');
+}
+.msds-marketplace-challenges-understand-customer-behavior {
+  @include sprite('marketplace-challenges-understand-customer-behavior');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-understand-customer-behavior'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-understand-customer-behavior'), 'width');
+}
+.msds-marketplace-challenges-vandalism {
+  @include sprite('marketplace-challenges-vandalism');
+  height: map-get(map-get($sprite-sizes, 'marketplace-challenges-vandalism'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-challenges-vandalism'), 'width');
+}
+.msds-marketplace-industries-airports {
+  @include sprite('marketplace-industries-airports');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-airports'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-airports'), 'width');
+}
+.msds-marketplace-industries-art-and-entertainment {
+  @include sprite('marketplace-industries-art-and-entertainment');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-art-and-entertainment'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-art-and-entertainment'), 'width');
+}
+.msds-marketplace-industries-city-surveillance {
+  @include sprite('marketplace-industries-city-surveillance');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-city-surveillance'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-city-surveillance'), 'width');
+}
+.msds-marketplace-industries-construction {
+  @include sprite('marketplace-industries-construction');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-construction'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-construction'), 'width');
+}
+.msds-marketplace-industries-critical-infrastructure {
+  @include sprite('marketplace-industries-critical-infrastructure');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-critical-infrastructure'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-critical-infrastructure'), 'width');
+}
+.msds-marketplace-industries-education {
+  @include sprite('marketplace-industries-education');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-education'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-education'), 'width');
+}
+.msds-marketplace-industries-finance-and-insurance {
+  @include sprite('marketplace-industries-finance-and-insurance');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-finance-and-insurance'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-finance-and-insurance'), 'width');
+}
+.msds-marketplace-industries-healthcare {
+  @include sprite('marketplace-industries-healthcare');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-healthcare'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-healthcare'), 'width');
+}
+.msds-marketplace-industries-information-technology {
+  @include sprite('marketplace-industries-information-technology');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-information-technology'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-information-technology'), 'width');
+}
+.msds-marketplace-industries-manufacturing {
+  @include sprite('marketplace-industries-manufacturing');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-manufacturing'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-manufacturing'), 'width');
+}
+.msds-marketplace-industries-public-administration {
+  @include sprite('marketplace-industries-public-administration');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-public-administration'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-public-administration'), 'width');
+}
+.msds-marketplace-industries-public-transport {
+  @include sprite('marketplace-industries-public-transport');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-public-transport'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-public-transport'), 'width');
+}
+.msds-marketplace-industries-retail {
+  @include sprite('marketplace-industries-retail');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-retail'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-retail'), 'width');
+}
+.msds-marketplace-industries-seaports {
+  @include sprite('marketplace-industries-seaports');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-seaports'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-seaports'), 'width');
+}
+.msds-marketplace-industries-trafic-monitoring {
+  @include sprite('marketplace-industries-trafic-monitoring');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-trafic-monitoring'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-trafic-monitoring'), 'width');
+}
+.msds-marketplace-industries-utilities {
+  @include sprite('marketplace-industries-utilities');
+  height: map-get(map-get($sprite-sizes, 'marketplace-industries-utilities'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-industries-utilities'), 'width');
+}
+.msds-marketplace-practice-access-control {
+  @include sprite('marketplace-practice-access-control');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-access-control'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-access-control'), 'width');
+}
+.msds-marketplace-practice-business-intelligence {
+  @include sprite('marketplace-practice-business-intelligence');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-business-intelligence'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-business-intelligence'), 'width');
+}
+.msds-marketplace-practice-business-solutions {
+  @include sprite('marketplace-practice-business-solutions');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-business-solutions'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-business-solutions'), 'width');
+}
+.msds-marketplace-practice-central-monitoring {
+  @include sprite('marketplace-practice-central-monitoring');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-central-monitoring'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-central-monitoring'), 'width');
+}
+.msds-marketplace-practice-cloud-and-managed-services {
+  @include sprite('marketplace-practice-cloud-and-managed-services');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-cloud-and-managed-services'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-cloud-and-managed-services'), 'width');
+}
+.msds-marketplace-practice-communication {
+  @include sprite('marketplace-practice-communication');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-communication'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-communication'), 'width');
+}
+.msds-marketplace-practice-crisis-emergency {
+  @include sprite('marketplace-practice-crisis-emergency');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-crisis-emergency'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-crisis-emergency'), 'width');
+}
+.msds-marketplace-practice-cyber-security {
+  @include sprite('marketplace-practice-cyber-security');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-cyber-security'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-cyber-security'), 'width');
+}
+.msds-marketplace-practice-detection-and-deterrence {
+  @include sprite('marketplace-practice-detection-and-deterrence');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-detection-and-deterrence'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-detection-and-deterrence'), 'width');
+}
+.msds-marketplace-practice-digital-infrastructure {
+  @include sprite('marketplace-practice-digital-infrastructure');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-digital-infrastructure'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-digital-infrastructure'), 'width');
+}
+.msds-marketplace-practice-facilities-management {
+  @include sprite('marketplace-practice-facilities-management');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-facilities-management'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-facilities-management'), 'width');
+}
+.msds-marketplace-practice-fire-and-life-safety {
+  @include sprite('marketplace-practice-fire-and-life-safety');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-fire-and-life-safety'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-fire-and-life-safety'), 'width');
+}
+.msds-marketplace-practice-home-automation-iot {
+  @include sprite('marketplace-practice-home-automation-iot');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-home-automation-iot'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-home-automation-iot'), 'width');
+}
+.msds-marketplace-practice-intrusion-and-alarm {
+  @include sprite('marketplace-practice-intrusion-and-alarm');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-intrusion-and-alarm'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-intrusion-and-alarm'), 'width');
+}
+.msds-marketplace-practice-investigation {
+  @include sprite('marketplace-practice-investigation');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-investigation'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-investigation'), 'width');
+}
+.msds-marketplace-practice-it-hardware-and-equipment {
+  @include sprite('marketplace-practice-it-hardware-and-equipment');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-it-hardware-and-equipment'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-it-hardware-and-equipment'), 'width');
+}
+.msds-marketplace-practice-privacy-protection {
+  @include sprite('marketplace-practice-privacy-protection');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-privacy-protection'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-privacy-protection'), 'width');
+}
+.msds-marketplace-practice-smart-city {
+  @include sprite('marketplace-practice-smart-city');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-smart-city'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-smart-city'), 'width');
+}
+.msds-marketplace-practice-surveillance {
+  @include sprite('marketplace-practice-surveillance');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-surveillance'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-surveillance'), 'width');
+}
+.msds-marketplace-practice-tracking-and-monitoring {
+  @include sprite('marketplace-practice-tracking-and-monitoring');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-tracking-and-monitoring'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-tracking-and-monitoring'), 'width');
+}
+.msds-marketplace-practice-vehicles-and-traffic {
+  @include sprite('marketplace-practice-vehicles-and-traffic');
+  height: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'width');
+}
+
+//Generic Flat Animated Icons
+use[href*='/msds-spritemap.svg#loader-animated'] {
+  animation: animationFrames cubic-bezier(0.165, 0.84, 0.44, 1) 1.5s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+
+  @keyframes animationFrames {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

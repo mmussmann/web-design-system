@@ -2,14 +2,27 @@ import { flatIcons } from './icons.list'
 import { appendIconElementToContainer } from './icons.js'
 
 function init() {
-  const iconsContainer = document.querySelector('.msds-button-icons')
+  const genericIconsContainer = document.querySelector('.msds-generic-flat-icons')
+  const marketplaceIconsContainer = document.querySelector('.msds-marketplace-flat-icons')
 
-  if (iconsContainer) {
-    const path = document.querySelector('.msds-button-icons').dataset.path
+  if (genericIconsContainer) {
+    const path = genericIconsContainer.dataset.path
 
-    flatIcons.sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
+    const genericIcons = flatIcons
+      .filter(icon => !icon.name.startsWith('Marketplace '))
+      .sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
 
-    flatIcons.forEach(icon => appendIconElementToContainer(iconsContainer, icon, true, path))
+    genericIcons.forEach(icon => appendIconElementToContainer(genericIconsContainer, icon, true, path))
+  }
+
+  if (marketplaceIconsContainer) {
+    const path = marketplaceIconsContainer.dataset.path
+
+    const marketplaceIcons = flatIcons
+      .filter(icon => icon.name.startsWith('Marketplace '))
+      .sort((iconA, iconB) => (iconA.name > iconB.name ? 1 : -1))
+
+    marketplaceIcons.forEach(icon => appendIconElementToContainer(marketplaceIconsContainer, icon, true, path))
   }
 }
 

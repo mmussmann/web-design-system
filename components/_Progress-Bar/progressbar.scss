@@ -4,7 +4,7 @@
   align-items: center;
 
   &__progression-counter {
-    @include msds-font('header-4');
+    @extend .msds-text-header-4;
     color: $gray-10;
     margin-bottom: 16px;
   }
@@ -37,7 +37,7 @@
 
   &--small {
     .msds-progress-bar__progression-counter {
-      @include msds-font('header-5');
+      @extend .msds-text-header-5;
       text-align: center;
     }
 
