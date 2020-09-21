@@ -28,6 +28,7 @@
     transform: translateY(-5px);
     box-shadow: 0 2px 12px 0 $rgba-1;
   }
+  &.disabled,
   &:disabled,
   &[disabled] {
     background: $gray-2;
@@ -48,7 +49,8 @@
   .msds-icon {
     height: initial;
     width: initial;
-    display: inline-block;
+    display: inline-flex;
+    //display: inline-block;
     padding-left: 24px;
     svg {
       fill: $clear-blue;
@@ -76,7 +78,7 @@
     font-size: 13px;
     padding: 8px 24px;
     .msds-icon {
-      display: inline-block;
+      //display: inline-block;
       padding-left: 20px;
       svg {
         fill: $clear-blue;
@@ -254,6 +256,7 @@
   &--primary-dark,
   &--secondary-dark,
   &--danger-dark {
+    &.disabled,
     &:disabled,
     &[disabled] {
       background: $rgba-11;
@@ -270,6 +273,13 @@
         transform: translateY(0px);
         cursor: initial;
       }
+    }
+  }
+  &--icon-left {
+    flex-direction: row-reverse;
+    .msds-icon {
+      padding-right: 20px;
+      padding-left: 0px;
     }
   }
 }
