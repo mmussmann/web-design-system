@@ -125,7 +125,7 @@
       fill: $clear-blue;
     }
 
-    .mdsds-generic-card__body-text-above-headline {
+    .msds-generic-card__body-text-above-headline {
       color: $gray-8;
       margin: 0;
       padding: 20px 0 0 0;
@@ -135,6 +135,7 @@
     .msds-generic-card__body-heading {
       color: $gray-10;
       padding: 8px 0 16px;
+      @extend .msds-text-header-4;
     }
 
     .msds-generic-card__media-info {
