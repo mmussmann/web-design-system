@@ -225,11 +225,11 @@
   width: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'width');
 }
 
-.msds-about-gdpr {
-  @include sprite('about-gdpr');
-  height: map-get(map-get($sprite-sizes, 'about-gdpr'), 'height');
-  width: map-get(map-get($sprite-sizes, 'about-gdpr'), 'width');
-}
+// .msds-about-gdpr {
+//   @include sprite('about-gdpr');
+//   height: map-get(map-get($sprite-sizes, 'about-gdpr'), 'height');
+//   width: map-get(map-get($sprite-sizes, 'about-gdpr'), 'width');
+// }
 
 .msds-gdpr-ready {
   @include sprite('gdpr-ready');
