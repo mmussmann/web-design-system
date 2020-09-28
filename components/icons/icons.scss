@@ -207,12 +207,6 @@
   width: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'width');
 }
 
-.msds-gdpr-ready {
-  @include sprite('gdpr-ready');
-  height: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'height');
-  width: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'width');
-}
-
 .msds-feature-rich {
   @include sprite('feature-rich');
   height: map-get(map-get($sprite-sizes, 'feature-rich'), 'height');
