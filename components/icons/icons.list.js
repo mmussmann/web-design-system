@@ -492,7 +492,6 @@ export const richIcons = [
   { name: 'System Builder Track', value: 'msds-system-builder-track' },
   { name: 'Service Track', value: 'msds-service-track' },
   { name: 'Hands', value: 'msds-hands' },
-  { name: 'GDPR Toolbox', value: 'msds-gdpr-toolbox' },
   { name: 'Reduced Investment', value: 'msds-reduced-investment' },
   { name: 'Features', value: 'msds-feature-rich' },
   { name: 'Like', value: 'msds-ease-of-use' },
