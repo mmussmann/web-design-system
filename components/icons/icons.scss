@@ -177,12 +177,6 @@
   width: map-get(map-get($sprite-sizes, 'system-builder-track'), 'width');
 }
 
-.msds-service-track {
-  @include sprite('service-track');
-  height: map-get(map-get($sprite-sizes, 'service-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'service-track'), 'width');
-}
-
 .msds-feature-rich {
   @include sprite('feature-rich');
   height: map-get(map-get($sprite-sizes, 'feature-rich'), 'height');
