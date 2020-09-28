@@ -165,12 +165,6 @@
   width: map-get(map-get($sprite-sizes, 'upgrade'), 'width');
 }
 
-.msds-skyline {
-  @include sprite('skyline');
-  height: map-get(map-get($sprite-sizes, 'skyline'), 'height');
-  width: map-get(map-get($sprite-sizes, 'skyline'), 'width');
-}
-
 .msds-system-builder-track {
   @include sprite('system-builder-track');
   height: map-get(map-get($sprite-sizes, 'system-builder-track'), 'height');
