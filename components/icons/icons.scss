@@ -183,12 +183,6 @@
   width: map-get(map-get($sprite-sizes, 'hardware-track'), 'width');
 }
 
-.msds-device-track {
-  @include sprite('device-track');
-  height: map-get(map-get($sprite-sizes, 'device-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'device-track'), 'width');
-}
-
 .msds-system-builder-track {
   @include sprite('system-builder-track');
   height: map-get(map-get($sprite-sizes, 'system-builder-track'), 'height');
