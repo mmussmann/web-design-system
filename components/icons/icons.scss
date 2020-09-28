@@ -453,11 +453,7 @@
   height: map-get(map-get($sprite-sizes, 'time-to-market'), 'height');
   width: map-get(map-get($sprite-sizes, 'time-to-market'), 'width');
 }
-.msds-upgrade-marketplace-subscription {
-  @include sprite('upgrade-marketplace-subscription');
-  height: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'height');
-  width: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'width');
-}
+
 .msds-world-leading {
   @include sprite('world-leading');
   height: map-get(map-get($sprite-sizes, 'world-leading'), 'height');

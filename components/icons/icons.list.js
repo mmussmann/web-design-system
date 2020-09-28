@@ -542,7 +542,6 @@ export const richIcons = [
   { name: 'Subscriptions', value: 'msds-subscriptions' },
   { name: 'Customizable', value: 'msds-tailored' },
   { name: 'Time-to-Market', value: 'msds-time-to-market' },
-  { name: 'Upgrade Marketplace Subscription', value: 'msds-upgrade-marketplace-subscription' },
   { name: 'World Leading', value: 'msds-world-leading' },
   {
     name: 'Marketplace Challenges Assist People Feel Safe Leaving',
