@@ -195,12 +195,6 @@
   width: map-get(map-get($sprite-sizes, 'service-track'), 'width');
 }
 
-.msds-hands {
-  @include sprite('hands');
-  height: map-get(map-get($sprite-sizes, 'hands'), 'height');
-  width: map-get(map-get($sprite-sizes, 'hands'), 'width');
-}
-
 .msds-feature-rich {
   @include sprite('feature-rich');
   height: map-get(map-get($sprite-sizes, 'feature-rich'), 'height');
