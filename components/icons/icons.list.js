@@ -489,7 +489,6 @@ export const richIcons = [
   { name: 'Skyline', value: 'msds-skyline' },
   { name: 'System Builder Track', value: 'msds-system-builder-track' },
   { name: 'Service Track', value: 'msds-service-track' },
-  { name: 'Reduced Investment', value: 'msds-reduced-investment' },
   { name: 'Features', value: 'msds-feature-rich' },
   { name: 'Like', value: 'msds-ease-of-use' },
   { name: 'Wifi', value: 'msds-wifi' },
