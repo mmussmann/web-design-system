@@ -489,7 +489,7 @@ export const richIcons = [
   { name: 'Update', value: 'msds-upgrade' },
   { name: 'Skyline', value: 'msds-skyline' },
   { name: 'Hardware Track', value: 'msds-hardware-track' },
-  { name: 'Application Track', value: 'msds-application-track' },
+  //{ name: 'Application Track', value: 'msds-application-track' },
   { name: 'Device track', value: 'msds-device-track' },
   { name: 'System Builder Track', value: 'msds-system-builder-track' },
   { name: 'Service Track', value: 'msds-service-track' },

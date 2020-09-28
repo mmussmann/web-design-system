@@ -183,12 +183,6 @@
   width: map-get(map-get($sprite-sizes, 'hardware-track'), 'width');
 }
 
-.msds-application-track {
-  @include sprite('application-track');
-  height: map-get(map-get($sprite-sizes, 'application-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'application-track'), 'width');
-}
-
 .msds-device-track {
   @include sprite('device-track');
   height: map-get(map-get($sprite-sizes, 'device-track'), 'height');
@@ -224,12 +218,6 @@
   height: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'height');
   width: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'width');
 }
-
-// .msds-about-gdpr {
-//   @include sprite('about-gdpr');
-//   height: map-get(map-get($sprite-sizes, 'about-gdpr'), 'height');
-//   width: map-get(map-get($sprite-sizes, 'about-gdpr'), 'width');
-// }
 
 .msds-gdpr-ready {
   @include sprite('gdpr-ready');
