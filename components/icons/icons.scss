@@ -201,12 +201,6 @@
   width: map-get(map-get($sprite-sizes, 'hands'), 'width');
 }
 
-.msds-gdpr-info-kit {
-  @include sprite('gdpr-info-kit');
-  height: map-get(map-get($sprite-sizes, 'gdpr-info-kit'), 'height');
-  width: map-get(map-get($sprite-sizes, 'gdpr-info-kit'), 'width');
-}
-
 .msds-gdpr-toolbox {
   @include sprite('gdpr-toolbox');
   height: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'height');
