@@ -486,7 +486,6 @@ export const richIcons = [
   { name: 'Scalable', value: 'msds-scalable' },
   { name: 'Secure', value: 'msds-secure' },
   { name: 'Update', value: 'msds-upgrade' },
-  { name: 'System Builder Track', value: 'msds-system-builder-track' },
   { name: 'Features', value: 'msds-feature-rich' },
   { name: 'Like', value: 'msds-ease-of-use' },
   { name: 'Wifi', value: 'msds-wifi' },
