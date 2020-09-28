@@ -458,7 +458,6 @@ export const flatIcons = [
 ]
 
 export const richIcons = [
-  { name: 'Logo Diamond', value: 'msds-logo-diamond' },
   { name: 'Camera', value: 'msds-dome-cam' },
   { name: 'Cameras, 8, animated', value: 'msds-dome-cam-8' },
   { name: 'Cameras, 48, animated', value: 'msds-cam-group-small' },
@@ -488,7 +487,6 @@ export const richIcons = [
   { name: 'Secure', value: 'msds-secure' },
   { name: 'Update', value: 'msds-upgrade' },
   { name: 'Skyline', value: 'msds-skyline' },
-  { name: 'Hardware Track', value: 'msds-hardware-track' },
   { name: 'System Builder Track', value: 'msds-system-builder-track' },
   { name: 'Service Track', value: 'msds-service-track' },
   { name: 'Reduced Investment', value: 'msds-reduced-investment' },

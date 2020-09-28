@@ -1,9 +1,3 @@
-.msds-logo-diamond {
-  @include sprite('logo-diamond');
-  height: map-get(map-get($sprite-sizes, 'logo-diamond'), 'height');
-  width: map-get(map-get($sprite-sizes, 'logo-diamond'), 'width');
-}
-
 .msds-dome-cam {
   @include sprite('dome-cam');
   height: map-get(map-get($sprite-sizes, 'dome-cam'), 'height');
@@ -175,12 +169,6 @@
   @include sprite('skyline');
   height: map-get(map-get($sprite-sizes, 'skyline'), 'height');
   width: map-get(map-get($sprite-sizes, 'skyline'), 'width');
-}
-
-.msds-hardware-track {
-  @include sprite('hardware-track');
-  height: map-get(map-get($sprite-sizes, 'hardware-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'hardware-track'), 'width');
 }
 
 .msds-system-builder-track {
@@ -413,11 +401,6 @@
   @include sprite('press-release');
   height: map-get(map-get($sprite-sizes, 'press-release'), 'height');
   width: map-get(map-get($sprite-sizes, 'press-release'), 'width');
-}
-.msds-privacy {
-  @include sprite('privacy');
-  height: map-get(map-get($sprite-sizes, 'privacy'), 'height');
-  width: map-get(map-get($sprite-sizes, 'privacy'), 'width');
 }
 .msds-project {
   @include sprite('project');
