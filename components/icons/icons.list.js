@@ -496,7 +496,6 @@ export const richIcons = [
   { name: 'Hands', value: 'msds-hands' },
   { name: 'GDPR Info Kit', value: 'msds-gdpr-info-kit' },
   { name: 'GDPR Toolbox', value: 'msds-gdpr-toolbox' },
-  // { name: 'About GDPR', value: 'msds-about-gdpr' },
   { name: 'GDPR Ready', value: 'msds-gdpr-ready' },
   { name: 'Reduced Investment', value: 'msds-reduced-investment' },
   { name: 'Features', value: 'msds-feature-rich' },
