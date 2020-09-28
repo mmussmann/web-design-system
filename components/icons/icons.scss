@@ -177,12 +177,6 @@
   width: map-get(map-get($sprite-sizes, 'ease-of-use'), 'width');
 }
 
-.msds-wifi {
-  @include sprite('wifi');
-  height: map-get(map-get($sprite-sizes, 'wifi'), 'height');
-  width: map-get(map-get($sprite-sizes, 'wifi'), 'width');
-}
-
 .msds-xprotect-compare-matrix {
   @include sprite('xprotect-compare-matrix');
   height: map-get(map-get($sprite-sizes, 'xprotect-compare-matrix'), 'height');

@@ -488,7 +488,6 @@ export const richIcons = [
   { name: 'Update', value: 'msds-upgrade' },
   { name: 'Features', value: 'msds-feature-rich' },
   { name: 'Like', value: 'msds-ease-of-use' },
-  { name: 'Wifi', value: 'msds-wifi' },
   { name: 'Compare, detail', value: 'msds-xprotect-compare-matrix' },
   { name: 'Compare, high level, animated', value: 'msds-xprotect-compare-products' },
   { name: 'Compare, releases, animated', value: 'msds-xprotect-compare-releases' },
