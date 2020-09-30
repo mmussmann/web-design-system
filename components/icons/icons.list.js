@@ -525,7 +525,6 @@ export const richIcons = [
   { name: 'Camera, outdated', value: 'msds-outdated-hardware' },
   { name: 'Partnership', value: 'msds-partnership' },
   { name: 'Press Release', value: 'msds-press-release' },
-  { name: 'Privacy', value: 'msds-privacy' },
   { name: 'Project, static', value: 'msds-project' },
   { name: 'Promotion', value: 'msds-promotion' },
   { name: 'Publish', value: 'msds-publish' },
