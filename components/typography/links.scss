@@ -17,6 +17,7 @@ a.msds-incontext-link,
   text-decoration: none;
 
   &:hover {
+    color: $clear-blue;
     text-decoration: underline;
   }
 }

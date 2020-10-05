@@ -8,16 +8,28 @@ title: Section
 ### Table of contents
 <div class="row">
     <div class="col-12">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-        </dl>
-          <dl>
-            <dt>[Section Using Checkboxes](#section-using-checkboxes)</dt>
-            <dt>[Section Using Radio Buttons](#section-using-radio-buttons)</dt>
-            <dt>[Section With Nested Components](#section-with-nested-components)</dt>
-            <dt>[Section Dark Theme](#section-dark-theme)</dt>
-        </dl>
+      <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link" href="#overview">Overview</a>
+                <ul class="document__unordered-list">
+                      <li class="document__unordered-list-item">
+                        <a class="msds-link" href="#global-definition">Global Definition</a>
+                      </li>
+                </ul>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#section-using-checkboxes">Section Using Checkboxes</a>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#section-using-radio-buttons">Section Using Radio Buttons</a>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#section-with-nested-components">Section With Nested Components</a>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#section-dark-theme">Section Dark Theme</a>
+            </li>
+        </ul>
     </div>
 </div>
 

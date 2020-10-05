@@ -1,10 +1,14 @@
 <div class="Header">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
     <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        {# {% include 'icons/close-nav.svg' %} #}
-        {# {% include 'icons/open-nav.svg' %} #}
-          {# {% include './src/svg/flat/cross.svg' %} #}
-          <svg class="Header-navToggleIcon Header-navToggleIcon--open" width="128" height="128" xmlns="http://www.w3.org/2000/svg"><path fill="unset" fill-rule="nonzero" d="M63.646 54.433L99.079 19 109 28.921 73.567 64.354 108.29 99.08 98.371 109 63.645 74.276 29.63 108.29l-9.921-9.92 34.015-34.017L19 29.63l9.921-9.921z"/></svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
     </button>
     <div class="flex-child-header-txt">
         <a href="{{ path('/') }}" class="Header-title" data-pjax>

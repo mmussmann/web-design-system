@@ -6,53 +6,109 @@ title: Buttons
 ## Below you will find the different definitions and options to create your buttons
 
 ### Table of contents
+
 <div class="row">
-    <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[States](#states)</dd>
-            <dd>[Direction](#direction)</dd>
-        </dl>
-        <dl>
-            <dt>[Primary Button](#primary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Secondary Button](#secondary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Secondary Button Dark Theme](#secondary-button-dark-theme)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Tertiary Button](#tertiary-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
+    <div class="col-6">
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link" href="#overview">Overview</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#global-definition">Global Definition</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#sizes">Sizes</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#states">States</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#direction">Direction</a>
+                </li>
+            </ul>
+        </ul>
+         <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#primary-button">Primary Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#primary-button-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#primary-button-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul>
+         <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-button">Secondary Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#secondary-button-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#secondary-button-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul> 
+         <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-button-dark-theme">Secondary Dark Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#secondary-button-dark-theme-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#secondary-button-dark-theme-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul> 
     </div>
-    <div class="col-4">
-        <dl>
-            <dt>[Gray Button](#gray-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Danger Button](#danger-button)</dt>
-            <dd>[Without an icon](#without-an-icon)</dd>
-            <dd>[With an icon](#with-an-icon)</dd>
-        </dl>
-        <dl>
-            <dt>[Button Group](#button-group)</dt>
-            <dd>[Left Alignment](#left-alignment)</dd>
-            <dd>[Center Alignment](#center-alignment)</dd>
-            <dd>[Right Alignment](#right-alignment)</dd>
-        </dl>
+    <div class="col-6">
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#tertiary-button">Tertiary Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#tertiary-button-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#tertiary-button-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul>
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#gray-button">Gray Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#gray-button-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#gray-button-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul>
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#danger-button">Danger Button</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#danger-button-without-an-icon">Without An Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#danger-button-with-an-icon">With An Icon</a>
+                </li>
+            </ul>
+        </ul>    <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> <a class="msds-link" href="#button-group">Button Group</a></li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#left-alignment">Left Alignment</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#center-alignment">Center Alignment</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#right-alignment">Right Alignment</a>
+                </li>
+            </ul>
+        </ul>
     </div>
 </div>
 
@@ -107,7 +163,7 @@ To use a primary button you need to add the following CCS class: <code>"msds-btn
 
 Below is a example of the Milestone Primary button. The default Primary button is without an icon as mentioned in the global definition previously.
 
-### Without an icon
+### Primary Button Without An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-primary-default'}}</div>
 </div>
@@ -115,7 +171,7 @@ Below is a example of the Milestone Primary button. The default Primary button i
 ```html
 {{render '@button-primary-default'}}
 ```
-### With an icon
+### Primary Button With An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-primary-icon'}}</div>
 </div>
@@ -129,34 +185,39 @@ To use a Secondary button you need to add the following CCS class: <code>"msds-b
 
 Below are few examples of the Milestone Secondary button. The default Secondary button is without an icon as mentioned in the global definition previously.
 
-### Without an icon
+### Secondary Button Without An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-secondary-default'}}</div>
 </div>
+
 ```html
 {{render '@button-secondary-default'}}
 ```
 
-### With an icon
+### Secondary Button With An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-secondary-icon'}}</div>
 </div>
 
+```html
+{{render '@button-secondary-icon'}}
+```
 
 ## Secondary Button Dark Theme
 To use a Secondary Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--secondary-dark"</code>. 
 
 Below are few examples of the Milestone Secondary Dark Themed button. The default Secondary Dark Themed button has no icon as mentioned in the global definition previously.
 
-### Without an icon
+### Secondary Button Dark Theme Without An Icon
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@button-secondary-dark'}}</div>
 </div>
+
 ```html
 {{render '@button-secondary-dark'}}
 ```
 
-### With an icon
+### Secondary Button Dark Theme With An Icon
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@button-secondary-dark-icon'}}</div>
 </div>
@@ -170,7 +231,7 @@ To use a Tertiary button you need to add the following CCS class: <code>"msds-bt
 
 Below are few examples of the Milestone Tertiary button. The default Tertiary button is without an icon as mentioned in the global definition previously.
 
-### Without an icon
+### Tertiary Button Without An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-tertiary-default'}}</div>
 </div>
@@ -178,7 +239,7 @@ Below are few examples of the Milestone Tertiary button. The default Tertiary bu
 ```html
 {{render '@button-tertiary-default'}}
 ```
-### With an icon
+### Tertiary Button With An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-tertiary-icon'}}</div>
 </div>
@@ -192,7 +253,7 @@ To use a Gray button you need to add the following CCS class: <code>"msds-btn\--
 
 Below are few examples of the Milestone Gray button. The default Gray button is without an icon as mentioned in the global definition previously.
 
-### Without an icon
+### Gray Button Without An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-gray-default'}}</div>
 </div>
@@ -200,7 +261,7 @@ Below are few examples of the Milestone Gray button. The default Gray button is 
 ```html
 {{render '@button-gray-default'}}
 ```
-### With icon
+### Gray Button With An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-gray-icon'}}</div>
 </div>
@@ -214,7 +275,7 @@ To use a Danger button you need to add the following CCS class: <code>"msds-btn\
 
 Below are few examples of the Milestone Danger button. The default Danger button is without an icon as mentioned in the global definition previously.
 
-### Without an icon
+### Danger Button Without An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-danger-default'}}</div>
 </div>
@@ -222,7 +283,7 @@ Below are few examples of the Milestone Danger button. The default Danger button
 ```html
 {{render '@button-danger-default'}}
 ```
-### With an icon
+### Danger Button With An Icon
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@button-danger-icon'}}</div>
 </div>

@@ -11,14 +11,25 @@ We have defined two different progress bars. One default which is the large vers
 ### Table of contents
 <div class="row">
     <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[Features](#features)</dd>
-            <dd>[Light version](#light-version)</dd>
-            <dd>[Dark version](#dark-version)</dd>
-        </dl>        
+      <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link" href="#overview">Overview</a>
+                <ul class="document__unordered-list">
+                      <li class="document__unordered-list-item">
+                        <a class="msds-link" href="#global-definition">Global Definition</a>
+                      </li>
+                      <li class="document__unordered-list-item">
+                        <a class="msds-link" href="#sizes">Sizes</a>
+                      </li>
+                </ul>
+            </li>
+            <li class="document__unordered-list-item">
+                 <a class="msds-link" href="#features">Features</a>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#dark-version">Light version</a>
+            </li>
+        </ul>      
     </div>    
 </div>
 
@@ -62,10 +73,8 @@ By default our progress bar starts from 0. However, depending on the context, we
 //Progress Bar Features scripts------------------
 //Initialize the progress bar with 5 steps starting form step 0.
 const progressBarFeatures1 = new msdsProgressBar('ProgressBarFeatures1', 5, false)
-
 //Initialize the progress bar with 5 steps starting form step 1.
 const progressBarFeatures2 = new msdsProgressBar('ProgressBarFeatures2', 5, true)
-
 //Set the progress bar with 5 steps starting from 0.
 const progressBarFeatures3 = new msdsProgressBar('ProgressBarFeatures3', 5, false)
 //Set the progression to step 3 to show how the goToStep function works
@@ -89,7 +98,6 @@ Our Progress Bar can be rendered in 2 different sizes, large (default) and small
 const progressBarSize1 = new msdsProgressBar('ProgressBarSize1', 5, false)
 //Set the progression to step 2 - For demo purposes.
 progressBarSize1.goToStep(2)
-
 //Initialize the progress bar with 5 steps starting from 0.
 const progressBarSize2 = new msdsProgressBar('ProgressBarSize2', 5, false)
 //Set the progression to step 3 - For demo purposes.
