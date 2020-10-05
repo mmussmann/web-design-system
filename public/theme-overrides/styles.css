@@ -311,6 +311,11 @@ pre {
   font-family: 'Open Sans', sans-serif;
 }
 
+.Prose code,
+.Prose code pre {
+  background-color: rgba(83, 83, 99, 0.075);
+}
+
 .Prose .element-preview {
   padding: 1em;
   background-color: #fff;
