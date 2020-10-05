@@ -324,7 +324,7 @@ pre {
 
 .Prose .element-preview-dark {
   padding: 1em;
-  background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
+  background: linear-gradient(270deg, #035D88 0%, #023852 100%);
   background-position: 0 0, 0 10px, 10px -10px, -10px 0;
   margin-bottom: 0;
   font-family: 'Open Sans';
