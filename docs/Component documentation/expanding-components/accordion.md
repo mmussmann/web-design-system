@@ -188,3 +188,8 @@ To make use of the accordion with a disabled list item, append a <code>disabled<
 ``` html
 {{render '@accordion-checkbox-medium-disabled'}}
 ```
+
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>

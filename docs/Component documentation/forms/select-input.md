@@ -102,3 +102,8 @@ The required input is resembled by adding a star to the placeholder
     input.init()
     input.isValid()
 ```
+
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>

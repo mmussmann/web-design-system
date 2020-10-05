@@ -27,7 +27,10 @@ We have defined two different progress bars. One default which is the large vers
                  <a class="msds-link" href="#features">Features</a>
             </li>
             <li class="document__unordered-list-item">
-                  <a class="msds-link" href="#dark-version">Light version</a>
+                  <a class="msds-link" href="#light-version">Light version</a>
+            </li>
+            <li class="document__unordered-list-item">
+                  <a class="msds-link" href="#dark-version">Dark version</a>
             </li>
         </ul>      
     </div>    
@@ -141,3 +144,8 @@ Concerning the Dark theme version, you will need to add the following CSS class 
 const darkThemeProgressBar = new msdsProgressBar('DarkThemeProgressBar', 20, true)
 darkThemeProgressBar.setPaginationElements('DarkThemePrevStep', 'DarkThemeNextStep', 'DarkThemeBaseNumber', 'DarkThemeCurrentStep')
 ```
+
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>

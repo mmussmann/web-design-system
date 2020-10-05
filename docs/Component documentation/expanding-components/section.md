@@ -111,3 +111,8 @@ Below is an example below to get an overview of nesting components inside an exp
 ```html
 {{render '@section-radio-nested-accordion'}}
 ```
+
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>
