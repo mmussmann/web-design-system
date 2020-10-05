@@ -195,12 +195,10 @@ body {
   font-weight: 400;
   font-size: 13px;
   color: var(--milestone-color-grey1000);
-  /* padding-left: 26px !important; */
 }
 
 .Tree-entity a span {
   color: #303436;
-  /* margin-left: 12px; */
 }
 
 .is-current a {
@@ -218,10 +216,6 @@ body {
 
 .Tree-entityLink {
   color: var(--milestone-color-grey1000);
-  /* font-weight: normal;
-  line-height: 18px;
-  font-size: 12px; */
-  /* padding-left: 30px !important; */
 }
 
 .Tree-entityLink::before {
@@ -261,20 +255,8 @@ body {
   display: none;
 }
 
-.Tree-collection.is-closed {
-  /* height: 53px; */
-}
-
-.Tree-collectionLabel {
-  /* padding: 16px 0; */
-}
-
 .Browser-tabs {
   padding: 15px 0;
-}
-
-.Tree-items.Tree-depth-1 {
-  /* padding: 15px 0; */
 }
 
 .Document {
@@ -284,10 +266,6 @@ body {
 
 .Document-header {
   border-bottom: none;
-}
-
-.Tree-collectionItems {
-  /* padding: 10px 0; */
 }
 
 .Document-title {
