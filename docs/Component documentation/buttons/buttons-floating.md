@@ -7,26 +7,34 @@ title: Floating Buttons
 
 ### Table of contents
 <div class="row">
-    <div class="col-12">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[States](#states)</dd>
-            <dd>[Direction](#direction)</dd>
-        </dl>
-        <dl>
-            <dt>[Floating Button](#floating-button)</dt>
-        </dl>
-        <dl>
-            <dt>[Secondary Floating Button](#secondary-floating-button)</dt>
-        </dl>
-        <dl>
-            <dt>[Floating Button Dark Theme](#floating-button-dark-theme)</dt>
-        </dl>
-        <dl>
-            <dt>[Secondary Floating Button Dark Theme](#secondary-floating-button-dark-theme)</dt>
-        </dl>
+    <div class="col-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#overview">Overview</a></li>
+        <ul class="document__unordered-list">
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#global-definition">Global Definition</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#sizes">Sizes</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#states">States</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#direction">Direction</a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#floating-button">Floating Button</a></li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-floating-button">Secondary Floating Button</a>
+        </li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#floating-button-dark-theme">Floating Button Dark Theme</a>
+        </li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-floating-button-dark-theme">Secondary Floating
+            Button Dark Theme</a></li>
+      </ul>
     </div>
 </div>
 
