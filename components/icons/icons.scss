@@ -1,9 +1,3 @@
-.msds-logo-diamond {
-  @include sprite('logo-diamond');
-  height: map-get(map-get($sprite-sizes, 'logo-diamond'), 'height');
-  width: map-get(map-get($sprite-sizes, 'logo-diamond'), 'width');
-}
-
 .msds-dome-cam {
   @include sprite('dome-cam');
   height: map-get(map-get($sprite-sizes, 'dome-cam'), 'height');
@@ -171,94 +165,16 @@
   width: map-get(map-get($sprite-sizes, 'upgrade'), 'width');
 }
 
-.msds-skyline {
-  @include sprite('skyline');
-  height: map-get(map-get($sprite-sizes, 'skyline'), 'height');
-  width: map-get(map-get($sprite-sizes, 'skyline'), 'width');
-}
-
-.msds-hardware-track {
-  @include sprite('hardware-track');
-  height: map-get(map-get($sprite-sizes, 'hardware-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'hardware-track'), 'width');
-}
-
-.msds-application-track {
-  @include sprite('application-track');
-  height: map-get(map-get($sprite-sizes, 'application-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'application-track'), 'width');
-}
-
-.msds-device-track {
-  @include sprite('device-track');
-  height: map-get(map-get($sprite-sizes, 'device-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'device-track'), 'width');
-}
-
-.msds-system-builder-track {
-  @include sprite('system-builder-track');
-  height: map-get(map-get($sprite-sizes, 'system-builder-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'system-builder-track'), 'width');
-}
-
-.msds-service-track {
-  @include sprite('service-track');
-  height: map-get(map-get($sprite-sizes, 'service-track'), 'height');
-  width: map-get(map-get($sprite-sizes, 'service-track'), 'width');
-}
-
-.msds-hands {
-  @include sprite('hands');
-  height: map-get(map-get($sprite-sizes, 'hands'), 'height');
-  width: map-get(map-get($sprite-sizes, 'hands'), 'width');
-}
-
-.msds-gdpr-info-kit {
-  @include sprite('gdpr-info-kit');
-  height: map-get(map-get($sprite-sizes, 'gdpr-info-kit'), 'height');
-  width: map-get(map-get($sprite-sizes, 'gdpr-info-kit'), 'width');
-}
-
-.msds-gdpr-toolbox {
-  @include sprite('gdpr-toolbox');
-  height: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'height');
-  width: map-get(map-get($sprite-sizes, 'gdpr-toolbox'), 'width');
-}
-
-.msds-about-gdpr {
-  @include sprite('about-gdpr');
-  height: map-get(map-get($sprite-sizes, 'about-gdpr'), 'height');
-  width: map-get(map-get($sprite-sizes, 'about-gdpr'), 'width');
-}
-
-.msds-gdpr-ready {
-  @include sprite('gdpr-ready');
-  height: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'height');
-  width: map-get(map-get($sprite-sizes, 'gdpr-ready'), 'width');
-}
-
 .msds-feature-rich {
   @include sprite('feature-rich');
   height: map-get(map-get($sprite-sizes, 'feature-rich'), 'height');
   width: map-get(map-get($sprite-sizes, 'feature-rich'), 'width');
 }
 
-.msds-reduced-investment {
-  @include sprite('reduced-investment');
-  height: map-get(map-get($sprite-sizes, 'reduced-investment'), 'height');
-  width: map-get(map-get($sprite-sizes, 'reduced-investment'), 'width');
-}
-
 .msds-ease-of-use {
   @include sprite('ease-of-use');
   height: map-get(map-get($sprite-sizes, 'ease-of-use'), 'height');
   width: map-get(map-get($sprite-sizes, 'ease-of-use'), 'width');
-}
-
-.msds-wifi {
-  @include sprite('wifi');
-  height: map-get(map-get($sprite-sizes, 'wifi'), 'height');
-  width: map-get(map-get($sprite-sizes, 'wifi'), 'width');
 }
 
 .msds-xprotect-compare-matrix {
@@ -456,11 +372,6 @@
   height: map-get(map-get($sprite-sizes, 'press-release'), 'height');
   width: map-get(map-get($sprite-sizes, 'press-release'), 'width');
 }
-.msds-privacy {
-  @include sprite('privacy');
-  height: map-get(map-get($sprite-sizes, 'privacy'), 'height');
-  width: map-get(map-get($sprite-sizes, 'privacy'), 'width');
-}
 .msds-project {
   @include sprite('project');
   height: map-get(map-get($sprite-sizes, 'project'), 'height');
@@ -536,11 +447,7 @@
   height: map-get(map-get($sprite-sizes, 'time-to-market'), 'height');
   width: map-get(map-get($sprite-sizes, 'time-to-market'), 'width');
 }
-.msds-upgrade-marketplace-subscription {
-  @include sprite('upgrade-marketplace-subscription');
-  height: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'height');
-  width: map-get(map-get($sprite-sizes, 'upgrade-marketplace-subscription'), 'width');
-}
+
 .msds-world-leading {
   @include sprite('world-leading');
   height: map-get(map-get($sprite-sizes, 'world-leading'), 'height');
