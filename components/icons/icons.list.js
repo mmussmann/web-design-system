@@ -198,6 +198,441 @@ export const flatIcons = [
     name: 'Grid',
     value: '/Static/dist/msds-spritemap.svg#grid',
     previewValue: '#grid'
+  },
+  {
+    name: 'Hardware',
+    value: '/Static/dist/msds-spritemap.svg#hardware',
+    previewValue: '#hardware'
+  },
+  {
+    name: 'Home',
+    value: '/Static/dist/msds-spritemap.svg#home',
+    previewValue: '#home'
+  },
+  {
+    name: 'Image',
+    value: '/Static/dist/msds-spritemap.svg#image',
+    previewValue: '#image'
+  },
+  {
+    name: 'Information',
+    value: '/Static/dist/msds-spritemap.svg#information',
+    previewValue: '#information'
+  },
+  {
+    name: 'Investigation',
+    value: '/Static/dist/msds-spritemap.svg#investigation',
+    previewValue: '#investigation'
+  },
+  {
+    name: 'IT infrastructure',
+    value: '/Static/dist/msds-spritemap.svg#it-infrastructure',
+    previewValue: '#it-infrastructure'
+  },
+  {
+    name: 'Knowledge base',
+    value: '/Static/dist/msds-spritemap.svg#knowledge-base',
+    previewValue: '#knowledge-base'
+  },
+  {
+    name: 'Like',
+    value: '/Static/dist/msds-spritemap.svg#like',
+    previewValue: '#like'
+  },
+  {
+    name: 'Link',
+    value: '/Static/dist/msds-spritemap.svg#link',
+    previewValue: '#link'
+  },
+  {
+    name: 'List, bullet',
+    value: '/Static/dist/msds-spritemap.svg#list-bullets',
+    previewValue: '#list-bullets'
+  },
+  {
+    name: 'List, horizontal',
+    value: '/Static/dist/msds-spritemap.svg#list-horizontal',
+    previewValue: '#list-horizontal'
+  },
+  {
+    name: 'Live, animated',
+    value: '/Static/dist/msds-spritemap.svg#live',
+    previewValue: '#live'
+  },
+  {
+    name: 'Loader, animated',
+    value: '/Static/dist/msds-spritemap.svg#loader-animated',
+    previewValue: '#loader-animated'
+  },
+  {
+    name: 'Location',
+    value: '/Static/dist/msds-spritemap.svg#location',
+    previewValue: '#location'
+  },
+  {
+    name: 'Location, area',
+    value: '/Static/dist/msds-spritemap.svg#location-area',
+    previewValue: '#location-area'
+  },
+  {
+    name: 'Lock, closed',
+    value: '/Static/dist/msds-spritemap.svg#lock-closed',
+    previewValue: '#lock-closed'
+  },
+  {
+    name: 'Lock, open',
+    value: '/Static/dist/msds-spritemap.svg#lock-open',
+    previewValue: '#lock-open'
+  },
+  {
+    name: 'LPR',
+    value: '/Static/dist/msds-spritemap.svg#lpr',
+    previewValue: '#lpr'
+  },
+  {
+    name: 'Mail',
+    value: '/Static/dist/msds-spritemap.svg#mail',
+    previewValue: '#mail'
+  },
+  {
+    name: 'Management Operator',
+    value: '/Static/dist/msds-spritemap.svg#management-operator',
+    previewValue: '#management-operator'
+  },
+  {
+    name: 'Menu',
+    value: '/Static/dist/msds-spritemap.svg#menu',
+    previewValue: '#menu'
+  },
+  {
+    name: 'Minus',
+    value: '/Static/dist/msds-spritemap.svg#minus',
+    previewValue: '#minus'
+  },
+  {
+    name: 'Network',
+    value: '/Static/dist/msds-spritemap.svg#network',
+    previewValue: '#network'
+  },
+  {
+    name: 'No Access',
+    value: '/Static/dist/msds-spritemap.svg#no-access',
+    previewValue: '#no-access'
+  },
+  {
+    name: 'Number, 1',
+    value: '/Static/dist/msds-spritemap.svg#number-1',
+    previewValue: '#number-1'
+  },
+  {
+    name: 'Number, 2',
+    value: '/Static/dist/msds-spritemap.svg#number-2',
+    previewValue: '#number-2'
+  },
+  {
+    name: 'Number, 3',
+    value: '/Static/dist/msds-spritemap.svg#number-3',
+    previewValue: '#number-3'
+  },
+  {
+    name: 'Number, 4',
+    value: '/Static/dist/msds-spritemap.svg#number-4',
+    previewValue: '#number-4'
+  },
+  {
+    name: 'Number, 5',
+    value: '/Static/dist/msds-spritemap.svg#number-5',
+    previewValue: '#number-5'
+  },
+  {
+    name: 'Observe',
+    value: '/Static/dist/msds-spritemap.svg#observe',
+    previewValue: '#observe'
+  },
+  {
+    name: 'Operation Area',
+    value: '/Static/dist/msds-spritemap.svg#operation-area',
+    previewValue: '#operation-area'
+  },
+  {
+    name: 'Operator',
+    value: '/Static/dist/msds-spritemap.svg#operator',
+    previewValue: '#operator'
+  },
+  {
+    name: 'Partner Program',
+    value: '/Static/dist/msds-spritemap.svg#partner-program',
+    previewValue: '#partner-program'
+  },
+  {
+    name: 'Partnership',
+    value: '/Static/dist/msds-spritemap.svg#partnership',
+    previewValue: '#partnership'
+  },
+  {
+    name: 'Pause',
+    value: '/Static/dist/msds-spritemap.svg#pause',
+    previewValue: '#pause'
+  },
+  {
+    name: 'Play',
+    value: '/Static/dist/msds-spritemap.svg#play',
+    previewValue: '#play'
+  },
+  {
+    name: 'Plug and Play',
+    value: '/Static/dist/msds-spritemap.svg#plug-and-play',
+    previewValue: '#plug-and-play'
+  },
+  {
+    name: 'Plugin',
+    value: '/Static/dist/msds-spritemap.svg#plugin',
+    previewValue: '#plugin'
+  },
+  {
+    name: 'Plus',
+    value: '/Static/dist/msds-spritemap.svg#plus',
+    previewValue: '#plus'
+  },
+  {
+    name: 'Podcast',
+    value: '/Static/dist/msds-spritemap.svg#podcast',
+    previewValue: '#podcast'
+  },
+  {
+    name: 'Press Release',
+    value: '/Static/dist/msds-spritemap.svg#press-release',
+    previewValue: '#press-release'
+  },
+  {
+    name: 'Price',
+    value: '/Static/dist/msds-spritemap.svg#price',
+    previewValue: '#price'
+  },
+  {
+    name: 'Print',
+    value: '/Static/dist/msds-spritemap.svg#print',
+    previewValue: '#print'
+  },
+  {
+    name: 'Profile',
+    value: '/Static/dist/msds-spritemap.svg#profile',
+    previewValue: '#profile'
+  },
+  {
+    name: 'Project',
+    value: '/Static/dist/msds-spritemap.svg#project',
+    previewValue: '#project'
+  },
+  {
+    name: 'Publish',
+    value: '/Static/dist/msds-spritemap.svg#publish',
+    previewValue: '#publish'
+  },
+  {
+    name: 'Question',
+    value: '/Static/dist/msds-spritemap.svg#question',
+    previewValue: '#question'
+  },
+  {
+    name: 'Quote',
+    value: '/Static/dist/msds-spritemap.svg#quote',
+    previewValue: '#quote'
+  },
+  {
+    name: 'Rating',
+    value: '/Static/dist/msds-spritemap.svg#rating',
+    previewValue: '#rating'
+  },
+  {
+    name: 'Retail',
+    value: '/Static/dist/msds-spritemap.svg#retail',
+    previewValue: '#retail'
+  },
+  {
+    name: 'Screen Recorder',
+    value: '/Static/dist/msds-spritemap.svg#screen-recorder',
+    previewValue: '#screen-recorder'
+  },
+  {
+    name: 'Search',
+    value: '/Static/dist/msds-spritemap.svg#search',
+    previewValue: '#search'
+  },
+  {
+    name: 'Servers',
+    value: '/Static/dist/msds-spritemap.svg#servers',
+    previewValue: '#servers'
+  },
+  {
+    name: 'Service, coding',
+    value: '/Static/dist/msds-spritemap.svg#service-coding',
+    previewValue: '#service-coding'
+  },
+  {
+    name: 'Share',
+    value: '/Static/dist/msds-spritemap.svg#share',
+    previewValue: '#share'
+  },
+  {
+    name: 'Smart wall',
+    value: '/Static/dist/msds-spritemap.svg#smart-wall',
+    previewValue: '#smart-wall'
+  },
+  {
+    name: 'Social, Facebook',
+    value: '/Static/dist/msds-spritemap.svg#social-facebook',
+    previewValue: '#social-facebook'
+  },
+  {
+    name: 'Social, Instagram',
+    value: '/Static/dist/msds-spritemap.svg#social-instagram',
+    previewValue: '#social-instagram'
+  },
+  {
+    name: 'Social, LinkedIn',
+    value: '/Static/dist/msds-spritemap.svg#social-linkedin',
+    previewValue: '#social-linkedin'
+  },
+  {
+    name: 'Social, Twitter',
+    value: '/Static/dist/msds-spritemap.svg#social-twitter',
+    previewValue: '#social-twitter'
+  },
+  {
+    name: 'Social, Youtube',
+    value: '/Static/dist/msds-spritemap.svg#social-youtube',
+    previewValue: '#social-youtube'
+  },
+  {
+    name: 'Software',
+    value: '/Static/dist/msds-spritemap.svg#software',
+    previewValue: '#software'
+  },
+  {
+    name: 'Software Integration',
+    value: '/Static/dist/msds-spritemap.svg#software-integration',
+    previewValue: '#software-integration'
+  },
+  {
+    name: 'Software Operator',
+    value: '/Static/dist/msds-spritemap.svg#software-operator',
+    previewValue: '#software-operator'
+  },
+  {
+    name: 'Solution',
+    value: '/Static/dist/msds-spritemap.svg#solution',
+    previewValue: '#solution'
+  },
+  {
+    name: 'Sound',
+    value: '/Static/dist/msds-spritemap.svg#sound',
+    previewValue: '#sound'
+  },
+  {
+    name: 'Support and Service',
+    value: '/Static/dist/msds-spritemap.svg#support-and-service',
+    previewValue: '#support-and-service'
+  },
+  {
+    name: 'System Builder',
+    value: '/Static/dist/msds-spritemap.svg#system-builder',
+    previewValue: '#system-builder'
+  },
+  {
+    name: 'System Requirements',
+    value: '/Static/dist/msds-spritemap.svg#system-requirements',
+    previewValue: '#system-requirements'
+  },
+  {
+    name: 'Tag',
+    value: '/Static/dist/msds-spritemap.svg#tag',
+    previewValue: '#tag'
+  },
+  {
+    name: 'Tools',
+    value: '/Static/dist/msds-spritemap.svg#tools',
+    previewValue: '#tools'
+  },
+  {
+    name: 'Tracking',
+    value: '/Static/dist/msds-spritemap.svg#tracking',
+    previewValue: '#tracking'
+  },
+  {
+    name: 'Trade Show',
+    value: '/Static/dist/msds-spritemap.svg#trade-show',
+    previewValue: '#trade-show'
+  },
+  {
+    name: 'Training',
+    value: '/Static/dist/msds-spritemap.svg#training',
+    previewValue: '#training'
+  },
+  {
+    name: 'Transaction',
+    value: '/Static/dist/msds-spritemap.svg#transaction',
+    previewValue: '#transaction'
+  },
+  {
+    name: 'Trash',
+    value: '/Static/dist/msds-spritemap.svg#trash',
+    previewValue: '#trash'
+  },
+  {
+    name: 'Update',
+    value: '/Static/dist/msds-spritemap.svg#update',
+    previewValue: '#update'
+  },
+  {
+    name: 'Vehicles and Traffic',
+    value: '/Static/dist/msds-spritemap.svg#vehicles-and-traffic',
+    previewValue: '#vehicles-and-traffic'
+  },
+  {
+    name: 'Verification',
+    value: '/Static/dist/msds-spritemap.svg#verification',
+    previewValue: '#verification'
+  },
+  {
+    name: 'Video',
+    value: '/Static/dist/msds-spritemap.svg#video',
+    previewValue: '#video'
+  },
+  {
+    name: 'Warning',
+    value: '/Static/dist/msds-spritemap.svg#warning',
+    previewValue: '#warning'
+  },
+  {
+    name: 'Webinar',
+    value: '/Static/dist/msds-spritemap.svg#webinar',
+    previewValue: '#webinar'
+  },
+  {
+    name: 'Xprotect, Essential+',
+    value: '/Static/dist/msds-spritemap.svg#xprotect-essential-plus',
+    previewValue: '#xprotect-essential-plus'
+  },
+  {
+    name: 'Xprotect, Express+',
+    value: '/Static/dist/msds-spritemap.svg#xprotect-express-plus',
+    previewValue: '#xprotect-express-plus'
+  },
+  {
+    name: 'Xprotect, Professional+',
+    value: '/Static/dist/msds-spritemap.svg#xprotect-professional-plus',
+    previewValue: '#xprotect-professional-plus'
+  },
+  {
+    name: 'Xprotect, Expert',
+    value: '/Static/dist/msds-spritemap.svg#xprotect-expert',
+    previewValue: '#xprotect-expert'
+  },
+  {
+    name: 'Xprotect, Corporate',
+    value: '/Static/dist/msds-spritemap.svg#xprotect-corporate',
+    previewValue: '#xprotect-corporate'
   }
 
   // {
