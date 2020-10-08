@@ -224,3 +224,7 @@ You can see the different state by hovering, activating and focusing on them on 
 ```html
 {{render '@category-overview-dark-states'}}
 ```
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>
