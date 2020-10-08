@@ -30,11 +30,6 @@ export const flatIcons = [
     previewValue: '#attachment'
   },
   {
-    name: 'Attachment',
-    value: '/Static/dist/msds-spritemap.svg#attachment',
-    previewValue: '#attachment'
-  },
-  {
     name: 'Attention',
     value: '/Static/dist/msds-spritemap.svg#attention',
     previewValue: '#attention'
@@ -43,6 +38,76 @@ export const flatIcons = [
     name: 'Building Blocks',
     value: '/Static/dist/msds-spritemap.svg#builing-blocks',
     previewValue: '#builing-blocks'
+  },
+  {
+    name: 'Calendar',
+    value: '/Static/dist/msds-spritemap.svg#calendar',
+    previewValue: '#calendar'
+  },
+  {
+    name: 'Camera',
+    value: '/Static/dist/msds-spritemap.svg#camera',
+    previewValue: '#camera'
+  },
+  {
+    name: 'Career',
+    value: '/Static/dist/msds-spritemap.svg#career',
+    previewValue: '#career'
+  },
+  {
+    name: 'Certification',
+    value: '/Static/dist/msds-spritemap.svg#certification',
+    previewValue: '#certification'
+  },
+  {
+    name: 'Chat',
+    value: '/Static/dist/msds-spritemap.svg#chat',
+    previewValue: '#chat'
+  },
+  {
+    name: 'Chat Headset',
+    value: '/Static/dist/msds-spritemap.svg#chat-headset',
+    previewValue: '#chat-headset'
+  },
+  {
+    name: 'Checkmark',
+    value: '/Static/dist/msds-spritemap.svg#checkmark',
+    previewValue: '#checkmark'
+  },
+  {
+    name: 'Clock',
+    value: '/Static/dist/msds-spritemap.svg#clock',
+    previewValue: '#clock'
+  },
+  {
+    name: 'Close',
+    value: '/Static/dist/msds-spritemap.svg#close',
+    previewValue: '#close'
+  },
+  {
+    name: 'Cloud',
+    value: '/Static/dist/msds-spritemap.svg#cloud',
+    previewValue: '#cloud'
+  },
+  {
+    name: 'Code',
+    value: '/Static/dist/msds-spritemap.svg#code',
+    previewValue: '#code'
+  },
+  {
+    name: 'Communication',
+    value: '/Static/dist/msds-spritemap.svg#communication',
+    previewValue: '#communication'
+  },
+  {
+    name: 'Conference',
+    value: '/Static/dist/msds-spritemap.svg#conference',
+    previewValue: '#conference'
+  },
+  {
+    name: 'Customer Story',
+    value: '/Static/dist/msds-spritemap.svg#customer-story',
+    previewValue: '#customer-story'
   }
 
   // {
