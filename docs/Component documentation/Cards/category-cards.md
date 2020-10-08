@@ -7,27 +7,61 @@ title: Category Cards
 
 ### Table of contents
 <div class="row">
-    <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[States](#states)</dd>
-        </dl>
-          <dl>
-            <dt>[Category Card Default](#category-card-default)</dt>
-            <dd>[Category Cards Default Large](#category-cards-default-large)</dd>
-            <dd>[Category Cards Default Small](#category-cards-default-small)</dd>
-            <dd>[Category Cards Default Disabled](#category-cards-default-disabled)</dd>
-            <dd>[Category States Default](#category-states-default)</dd>
-        </dl>
-        <dl>
-            <dt>[Category Card Dark Themed](#category-card-dark-themed)</dt>
-            <dd>[Category Cards Large Dark Themed](#category-cards-large-dark-themed)</dd>
-            <dd>[Category Cards Small Dark Themed](#category-cards-small-dark-themed)</dd>
-            <dd>[Category Cards Disabled Dark Themed](#category-cards-disabled-dark-themed)</dd>
-            <dd>[Category States Dark Themed](#category-states-dark-themed)</dd>
-        </dl>
+    <div class="col-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item">
+          <a  class="msds-link"href="#overview">Overview</a>
+        </li>
+        <ul class="document__unordered-list">
+          <li class="document__unordered-list-item">
+            <a  class="msds-link"href="#global-definition">Global Definition</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a  class="msds-link"href="#sizes">Sizes</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a  class="msds-link"href="#states">States</a>
+          </li>
+        </ul>
+        <li class="document__unordered-list-item">
+            <a  class="msds-link"href="#category-card-default">Category Card Default</a>
+        </li>
+        <ul class="document__unordered-list">
+          <ul class="document__unordered-list">
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-default-large">Category Cards Default Large</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-default-small">Category Cards Default Small</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-default-disabled">Category Cards Default Disabled</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-states-default">Category States Default</a>
+            </li>
+          </ul>
+        </ul>
+        <li class="document__unordered-list-item">
+            <a  class="msds-link"href="#category-cards-dark-themed">Category Card Dark Themed</a>
+        </li>
+        <ul class="document__unordered-list">
+          <ul class="document__unordered-list">
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-large-dark-themed">Category Cards Large Dark Themed</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-small-dark-themed">Category Cards Small Dark Themed</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-cards-disabled-dark-themed">Category Cards Disabled Dark Themed</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a  class="msds-link"href="#category-states-dark-themed">Category States Dark Themed</a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
     </div>
 </div>
 

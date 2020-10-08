@@ -19,7 +19,7 @@ import 'components/_expanding-components/accordion-initialization.js'
 import 'components/_expanding-components/section-initialization.js'
 
 //Documentation imports
-import { SelectInput } from 'components/_form-select-input/select-input.js'
+import { SelectInput } from 'components/forms/_select-input/select-input.js'
 import { ExpandingElement } from 'components/_expanding-components/expanding-component.js'
 
 //Documentation exports

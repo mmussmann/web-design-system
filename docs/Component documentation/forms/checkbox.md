@@ -9,11 +9,17 @@ They can be used in forms, filters, lists etc.
 ### Table of contents
 <div class="row">
     <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[States](#states)</dd>
-        </dl>        
+        <ul class="document__unordered-list">
+             <li class="document__unordered-list-item">
+                 <a class="msds-link" href="#overview">Overview</a>
+             </li>
+             <li class="document__unordered-list-item">
+                 <a class="msds-link" href="#global-definition">Global Definition</a>
+             </li>
+             <li class="document__unordered-list-item">
+                 <a class="msds-link" href="#states">States</a>
+             </li>
+         </ul>    
     </div>    
 </div>
 
