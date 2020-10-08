@@ -65,7 +65,7 @@ export const flatIcons = [
     previewValue: '#chat'
   },
   {
-    name: 'Chat Headset',
+    name: 'Chat, Headset',
     value: '/Static/dist/msds-spritemap.svg#chat-headset',
     previewValue: '#chat-headset'
   },
@@ -80,9 +80,9 @@ export const flatIcons = [
     previewValue: '#clock'
   },
   {
-    name: 'Close',
-    value: '/Static/dist/msds-spritemap.svg#close',
-    previewValue: '#close'
+    name: 'Cross',
+    value: '/Static/dist/msds-spritemap.svg#cross',
+    previewValue: '#cross'
   },
   {
     name: 'Cloud',
@@ -93,6 +93,11 @@ export const flatIcons = [
     name: 'Code',
     value: '/Static/dist/msds-spritemap.svg#code',
     previewValue: '#code'
+  },
+  {
+    name: 'Colleague',
+    value: '/Static/dist/msds-spritemap.svg#colleague',
+    previewValue: '#colleague'
   },
   {
     name: 'Communication',
@@ -108,6 +113,91 @@ export const flatIcons = [
     name: 'Customer Story',
     value: '/Static/dist/msds-spritemap.svg#customer-story',
     previewValue: '#customer-story'
+  },
+  {
+    name: 'Demo',
+    value: '/Static/dist/msds-spritemap.svg#demo',
+    previewValue: '#demo'
+  },
+  {
+    name: 'Deployment',
+    value: '/Static/dist/msds-spritemap.svg#deployment',
+    previewValue: '#deployment'
+  },
+  {
+    name: 'Design',
+    value: '/Static/dist/msds-spritemap.svg#design',
+    previewValue: '#design'
+  },
+  {
+    name: 'Detection And Intrusion',
+    value: '/Static/dist/msds-spritemap.svg#detection-and-intrusion',
+    previewValue: '#detection-and-intrusion'
+  },
+  {
+    name: 'Deterrence Technology',
+    value: '/Static/dist/msds-spritemap.svg#deterrence-technology',
+    previewValue: '#deterrence-technology'
+  },
+  {
+    name: 'Devices, Desktop',
+    value: '/Static/dist/msds-spritemap.svg#devices-desktop',
+    previewValue: '#devices-desktop'
+  },
+  {
+    name: 'Devices, Mobile',
+    value: '/Static/dist/msds-spritemap.svg#devices-mobile',
+    previewValue: '#devices-mobile'
+  },
+  {
+    name: 'Devices, Tablet',
+    value: '/Static/dist/msds-spritemap.svg#devices-tablet',
+    previewValue: '#devices-tablet'
+  },
+  {
+    name: 'Download',
+    value: '/Static/dist/msds-spritemap.svg#download',
+    previewValue: '#download'
+  },
+  {
+    name: 'Drag',
+    value: '/Static/dist/msds-spritemap.svg#drag',
+    previewValue: '#drag'
+  },
+  {
+    name: 'E-Learning',
+    value: '/Static/dist/msds-spritemap.svg#e-learning',
+    previewValue: '#e-learning'
+  },
+  {
+    name: 'Edit',
+    value: '/Static/dist/msds-spritemap.svg#edit',
+    previewValue: '#edit'
+  },
+  {
+    name: 'Extend',
+    value: '/Static/dist/msds-spritemap.svg#extend',
+    previewValue: '#extend'
+  },
+  {
+    name: 'Filter',
+    value: '/Static/dist/msds-spritemap.svg#filter',
+    previewValue: '#filter'
+  },
+  {
+    name: 'Find Resource',
+    value: '/Static/dist/msds-spritemap.svg#find-resource',
+    previewValue: '#find-resource'
+  },
+  {
+    name: 'Global',
+    value: '/Static/dist/msds-spritemap.svg#global',
+    previewValue: '#global'
+  },
+  {
+    name: 'Grid',
+    value: '/Static/dist/msds-spritemap.svg#grid',
+    previewValue: '#grid'
   }
 
   // {
