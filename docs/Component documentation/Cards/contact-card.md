@@ -177,3 +177,7 @@ Below is a example of the Milestone Large Contact Card.
 ```html
 {{render '@contact-content'}}
 ```
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>
