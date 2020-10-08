@@ -38,6 +38,11 @@ export const flatIcons = [
     name: 'Attention',
     value: '/Static/dist/msds-spritemap.svg#attention',
     previewValue: '#attention'
+  },
+  {
+    name: 'Building Blocks',
+    value: '/Static/dist/msds-spritemap.svg#builing-blocks',
+    previewValue: '#builing-blocks'
   }
 
   // {
