@@ -7,25 +7,45 @@ title: Contact Cards
 
 ### Table of contents
 <div class="row">
-    <div class="col-12">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-        </dl>
-        <dl>
-            <dt>[Contact Card Default](#default-contact-card)</dt>
-            <dd>[Contact Cards Default Large](#default-contact-card-large)</dd>
-            <dd>[Contact Cards Default Small](#default-contact-card-small)</dd>
-        </dl>
-        <dl>
-            <dt>[Contact Card Without An Image](#contact-card-without-an-image)</dt>
-            <dd>[Contact Cards Without An Image Large](#contact-card-large-without-an-image)</dd>
-            <dd>[Contact Cards Without An Image Small](#contact-card-small-without-an-image)</dd>
-        </dl>   
-        <dl>
-            <dt>[Content Card](#content-contact-card)</dt>
-        </dl>
+    <div class="col-6">
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#overview">Overview</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link"href="#global-definition">Global Definition</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link"href="#sizes">Sizes</a>
+                </li>
+            </ul>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#default-contact-card">Contact Card Default</a>
+            </li>
+            <ul class="document__unordered-list">
+              <li class="document__unordered-list-item">
+                <a class="msds-link"href="#default-contact-card-large">Contact Cards Default Large</a>
+              </li>
+              <li class="document__unordered-list-item">
+                <a class="msds-link"href="#default-contact-card-small">Contact Cards Default Small</a>
+              </li>
+            </ul>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#contact-card-without-an-image">Contact Card Without An Image</a>
+            </li>
+            <ul class="document__unordered-list">
+              <li class="document__unordered-list-item">
+                <a class="msds-link"href="#contact-card-large-without-an-image">Contact Cards Without An Image Large</a>
+              </li>
+              <li class="document__unordered-list-item">
+                <a class="msds-link"href="#contact-card-small-without-an-image">Contact Cards Without An Image Small</a>
+              </li>
+            </ul>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#content-contact-card">Content Card</a>
+            </li>
+        </ul>
     </div>
 </div>
 
@@ -76,7 +96,7 @@ The default Contact Card has the following elements:
   - A description of the contacts position
   - Links to reach the contact
 
-### Default  Contact Card Large 
+### Default Contact Card Large 
 The default large Contact Card can be used by wrapping your <code>"msds-contact-card"</code> block with a <code>"col-md-4"</code> from Bootstrap.
 Below is a example of the Milestone Large Contact Card. 
 
@@ -157,3 +177,7 @@ Below is a example of the Milestone Large Contact Card.
 ```html
 {{render '@contact-content'}}
 ```
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>

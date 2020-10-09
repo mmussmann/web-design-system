@@ -16,13 +16,23 @@ Also, note that the select inputs width is adaptive which means that it is based
 
 ### Table of contents
 <div class="row">
-    <div class="col-4">
-        <dl>
-            <dt>[Overview](#overview)</dt>
-            <dd>[Global Definition](#global-definition)</dd>
-            <dd>[Sizes](#sizes)</dd>
-            <dd>[Features](#features)</dd>
-        </dl>        
+    <div class="col-4">   
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item">
+                <a class="msds-link" href="#overview">Overview</a>
+                <ul class="document__unordered-list"> 
+                   <li class="document__unordered-list-item"> 
+                        <a class="msds-link" href="#global-definition">Global Definition</a>
+                    </li>
+                   <li class="document__unordered-list-item"> 
+                        <a class="msds-link" href="#sizes">Sizes</a>
+                   </li>
+                   <li class="document__unordered-list-item"> 
+                        <a class="msds-link" href="#features">Features</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>    
 </div>
 
@@ -38,14 +48,13 @@ Also, note that the select inputs width is adaptive which means that it is based
 ```
 
 ```javascript
-    
+
     //Initialize the select input with the element id, an object of countries, a validation message, a place holder and required is true.
     const input = new SelectInput('input-1',{ dk: 'Denmark', en: 'England', po: 'Poland' },'validationMsg','Select Country',true)
-
     input.init()
 ```
 
-### Sizes
+ ### Sizes
 
 Our select input can be rendered in 2 different sizes, large (default) and small.
 
@@ -64,7 +73,6 @@ Our select input can be rendered in 2 different sizes, large (default) and small
 ```html
 {{render '@select-input-small'}}
 ```
-
 
 ### Features
 By default our select input is not set to requried. However, its possible to set the required flag when creating the object.
@@ -89,10 +97,13 @@ The required input is resembled by adding a star to the placeholder
 </div>
 
 ```javascript
-    
     //Initialize the select input with the element id, an object of countries, a validation message, a place holder and required is true.
     const input = new SelectInput('input-1',{ dk: 'Denmark', en: 'England', po: 'Poland' },'Error message','Select Country',true)
-
     input.init()
     input.isValid()
 ```
+
+<script>
+  //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+  dispatchEvent(new Event('load'));
+</script>
