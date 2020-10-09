@@ -862,12 +862,6 @@
   width: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'width');
 }
 
-.msds-tailored {
-  @include sprite('tailored');
-  height: map-get(map-get($sprite-sizes, 'tailored'), 'height');
-  width: map-get(map-get($sprite-sizes, 'tailored'), 'width');
-}
-
 .msds-marketplace-challenges-assist-people-feel-safe-leaving {
   @include sprite('marketplace-challenges-assist-people-feel-safe-leaving');
   height: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'height');

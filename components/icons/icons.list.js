@@ -620,19 +620,15 @@ export const richIcons = [
   { name: 'XProtect', value: 'msds-xprotect' },
   { name: 'Xprotect, Access, Anywhere', value: 'msds-xprotect-access-anywhere' },
   { name: 'Youtube', value: 'msds-youtube' },
-
   { name: 'Locations, animated', value: 'msds-planet' },
   { name: 'Integrated Surveillance System, animated', value: 'msds-advanced-super-surveillance' },
   { name: '24-7, animated', value: 'msds-clock-24-7' },
   { name: 'Calendar, month, animated', value: 'msds-cal-monthly' },
   { name: 'Calendar, week, animated', value: 'msds-cal-weekly' },
   { name: 'Access Control', value: 'msds-access-control-illustration' },
-
   { name: 'Reliable', value: 'msds-reliable' },
   { name: 'Body Worn', value: 'msds-body-worn' },
-
   { name: 'Camera, outdated', value: 'msds-outdated-hardware' },
-  // { name: 'Customizable', value: 'msds-tailored' },
   {
     name: 'Marketplace Challenges Assist People Feel Safe Leaving',
     value: 'msds-marketplace-challenges-assist-people-feel-safe-leaving'
