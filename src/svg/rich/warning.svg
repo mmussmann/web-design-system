@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Rich icons / warning</title>
+    <defs>
+        <linearGradient x1="0%" y1="50.0106799%" x2="100.011997%" y2="50.0106799%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FEF7DD" stop-opacity="0.14" offset="8%"></stop>
+            <stop stop-color="#FDEAA8" stop-opacity="0.37" offset="22%"></stop>
+            <stop stop-color="#FCDF7A" stop-opacity="0.56" offset="36%"></stop>
+            <stop stop-color="#FBD655" stop-opacity="0.72" offset="49%"></stop>
+            <stop stop-color="#FBCF38" stop-opacity="0.84" offset="63%"></stop>
+            <stop stop-color="#FACA23" stop-opacity="0.93" offset="76%"></stop>
+            <stop stop-color="#FAC716" stop-opacity="0.98" offset="89%"></stop>
+            <stop stop-color="#FAC612" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.118104297%" y1="49.9687689%" x2="99.9869051%" y2="49.9687689%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FEF7DD" stop-opacity="0.14" offset="8%"></stop>
+            <stop stop-color="#FDEAA8" stop-opacity="0.37" offset="22%"></stop>
+            <stop stop-color="#FCDF7A" stop-opacity="0.56" offset="36%"></stop>
+            <stop stop-color="#FBD655" stop-opacity="0.72" offset="49%"></stop>
+            <stop stop-color="#FBCF38" stop-opacity="0.84" offset="63%"></stop>
+            <stop stop-color="#FACA23" stop-opacity="0.93" offset="76%"></stop>
+            <stop stop-color="#FAC716" stop-opacity="0.98" offset="89%"></stop>
+            <stop stop-color="#FAC612" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FEF7DD" stop-opacity="0.14" offset="8%"></stop>
+            <stop stop-color="#FDEAA8" stop-opacity="0.37" offset="22%"></stop>
+            <stop stop-color="#FCDF7A" stop-opacity="0.56" offset="36%"></stop>
+            <stop stop-color="#FBD655" stop-opacity="0.72" offset="49%"></stop>
+            <stop stop-color="#FBCF38" stop-opacity="0.84" offset="63%"></stop>
+            <stop stop-color="#FACA23" stop-opacity="0.93" offset="76%"></stop>
+            <stop stop-color="#FAC716" stop-opacity="0.98" offset="89%"></stop>
+            <stop stop-color="#FAC612" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-warning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Warning" transform="translate(35.000000, 0.000000)" fill-rule="nonzero">
+            <path d="M172.815789,7.16736842 L1.86421053,308.729474 C-0.620990976,313.109947 -0.590451699,318.481242 1.94439916,322.833173 C4.47925002,327.185104 9.13628634,329.861053 14.1726316,329.861053 L356.087368,329.861053 C361.122807,329.861053 365.778229,327.182539 368.314404,322.832428 C370.850578,318.482317 370.885974,313.112642 368.407368,308.729474 L197.444211,7.16736842 C194.928121,2.73641119 190.225497,-0.00114313107 185.13,-0.00114313107 C180.034503,-0.00114313107 175.331879,2.73641119 172.815789,7.16736842 Z" id="Path" fill="#FFE700"></path>
+            <path d="M368.407368,308.729474 L197.444211,7.16736842 C194.023596,1.12571887 186.719765,-1.53468167 180.214737,0.891578947 L354.709474,308.694737 C356.048041,311.102519 356.015852,314.038132 354.624808,316.415984 C353.233765,318.793836 350.690605,320.260531 347.935789,320.273684 L0.787368421,320.273684 C2.74297173,325.994221 8.12708534,329.832032 14.1726316,329.814795 L356.087368,329.814795 C361.108664,329.803128 365.748329,327.133318 368.281529,322.797831 C370.814729,318.462345 370.862609,313.109581 368.407368,308.729474 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M189.42,229.020002 L189.42,229.020002 C196.574814,229.024034 202.481405,223.427781 202.863158,216.283158 L207.077895,131.918947 C207.258591,128.23655 205.921602,124.641101 203.378852,121.971433 C200.836103,119.301765 197.309986,117.791371 193.623158,117.792631 L185.263158,117.792631 C181.57633,117.791371 178.050213,119.301765 175.507463,121.971433 C172.964714,124.641101 171.627725,128.23655 171.808421,131.918947 L176,216.225263 C176.351565,223.38376 182.252882,229.010124 189.42,229.020002 L189.42,229.020002 Z" id="Path" fill="url(#linearGradient-2)"></path>
+            <circle id="Oval" fill="url(#linearGradient-3)" cx="189.42" cy="260.051579" r="17.6694737"></circle>
+            <path d="M185.135789,225.337896 L185.135789,225.337896 C192.309514,225.334485 198.221187,219.707957 198.578947,212.543158 L202.782105,128.190526 C202.965977,124.508184 201.632005,120.911493 199.091426,118.239618 C196.550847,115.567743 193.025877,114.054384 189.338947,114.052632 L180.921053,114.052632 C177.234123,114.054384 173.709153,115.567743 171.168574,118.239618 C168.627995,120.911493 167.294023,124.508184 167.477895,128.190526 L171.681053,212.543158 C172.039036,219.712427 177.957589,225.340655 185.135789,225.337896 Z" id="Path" fill="#023852"></path>
+            <circle id="Oval" fill="#023852" cx="185.135789" cy="256.381053" r="17.6694737"></circle>
+        </g>
+    </g>
+</svg>
