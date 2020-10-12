@@ -11,8 +11,8 @@ export const flatIcons = [
   },
   {
     name: 'Arrow',
-    value: '/Static/dist/msds-spritemap.svg#arrow',
-    previewValue: '#arrow'
+    value: '/Static/dist/msds-spritemap.svg#right-arrow',
+    previewValue: '#right-arrow'
   },
   {
     name: 'Arrow Double',
@@ -231,8 +231,8 @@ export const flatIcons = [
   },
   {
     name: 'Knowledge base',
-    value: '/Static/dist/msds-spritemap.svg#knowledge-base',
-    previewValue: '#knowledge-base'
+    value: '/Static/dist/msds-spritemap.svg#knowledgebase',
+    previewValue: '#knowledgebase'
   },
   {
     name: 'Like',
@@ -291,8 +291,8 @@ export const flatIcons = [
   },
   {
     name: 'Mail',
-    value: '/Static/dist/msds-spritemap.svg#mail',
-    previewValue: '#mail'
+    value: '/Static/dist/msds-spritemap.svg#email',
+    previewValue: '#email'
   },
   {
     name: 'Management Operator',
@@ -381,8 +381,8 @@ export const flatIcons = [
   },
   {
     name: 'Plug and Play',
-    value: '/Static/dist/msds-spritemap.svg#plug-and-play',
-    previewValue: '#plug-and-play'
+    value: '/Static/dist/msds-spritemap.svg#plugandplay',
+    previewValue: '#plugandplay'
   },
   {
     name: 'Plugin',
@@ -491,8 +491,8 @@ export const flatIcons = [
   },
   {
     name: 'Social, LinkedIn',
-    value: '/Static/dist/msds-spritemap.svg#social-linkedin',
-    previewValue: '#social-linkedin'
+    value: '/Static/dist/msds-spritemap.svg#linkedin',
+    previewValue: '#linkedin'
   },
   {
     name: 'Social, Twitter',
@@ -571,8 +571,8 @@ export const flatIcons = [
   },
   {
     name: 'Transaction',
-    value: '/Static/dist/msds-spritemap.svg#transaction',
-    previewValue: '#transaction'
+    value: '/Static/dist/msds-spritemap.svg#transact',
+    previewValue: '#transact'
   },
   {
     name: 'Trash',
