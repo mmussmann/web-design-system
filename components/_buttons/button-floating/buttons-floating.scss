@@ -5,12 +5,12 @@
   .msds-icon {
     color: $gray-4;
     border: 1px solid $gray-4;
+    background: $gray-2;
   }
 
   &:hover {
     text-decoration: none;
     .msds-icon {
-      background: unset;
       box-shadow: unset;
     }
   }
@@ -23,13 +23,13 @@
 
   .msds-icon {
     color: $white;
-    border: 1px solid $white;
+    border: 1px solid $rgba-14; // Since 50% opacity is already aaplied on parent element, the initial border opacity value has been increased by its doubled
+    background: $rgba-15; // Since 50% opacity is already aaplied on parent element, the initial border opacity value has been increased by its doubled
   }
 
   &:hover {
     text-decoration: none;
     .msds-icon {
-      background: unset;
       box-shadow: unset;
     }
   }

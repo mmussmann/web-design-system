@@ -259,14 +259,15 @@
     &.disabled,
     &:disabled,
     &[disabled] {
-      background: $rgba-11;
+      opacity: 0.5;
+      background: $rgba-15;
       box-shadow: none;
-      border: 1px solid $rgba-8;
-      color: $rgba-7;
+      border: 1px solid $rgba-14;
+      color: $white;
       pointer-events: none;
       .msds-icon {
         svg {
-          fill: $rgba-7;
+          fill: $white;
         }
       }
       &:hover {
