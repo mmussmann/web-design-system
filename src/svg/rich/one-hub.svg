@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Rich icons / one-hub</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#007CB4" offset="0%"></stop>
+            <stop stop-color="#0082BC" offset="5%"></stop>
+            <stop stop-color="#008FCD" offset="17%"></stop>
+            <stop stop-color="#0097D7" offset="30%"></stop>
+            <stop stop-color="#0099DA" offset="47%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9910362%" y1="100%" x2="49.9910362%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#003A5D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="39%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="39%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.9100719%" y1="50%" x2="-0.0899280576%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="39%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="-0.0900090009%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="39%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="39%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-one-hub" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-1" transform="translate(70.000000, 0.000000)">
+            <circle id="Oval" stroke="#0099DA" cx="150.239189" cy="164.910811" r="149.495946"></circle>
+            <line x1="278.062162" y1="92.5189189" x2="21.1824324" y2="240.87027" id="Path" stroke="#0099DA"></line>
+            <line x1="21.1824324" y1="92.5189189" x2="278.062162" y2="240.87027" id="Path" stroke="#0099DA"></line>
+            <line x1="149.614865" y1="20.8851351" x2="149.614865" y2="312.518919" id="Path" stroke="#0099DA"></line>
+            <circle id="Oval" fill="#979892" fill-rule="nonzero" cx="20.7513514" cy="92.0878378" r="19.1756757"></circle>
+            <circle id="Oval" fill="#023852" fill-rule="nonzero" cx="276.783784" cy="92.0878378" r="19.1756757"></circle>
+            <circle id="Oval" fill="#FCE400" fill-rule="nonzero" cx="149.614865" cy="19.1756757" r="19.1756757"></circle>
+            <path d="M166.248649,227.432432 L166.248649,210.739189 L135.939189,210.739189 L135.939189,227.432432 C135.85522,228.325887 135.597705,229.19437 135.181081,229.989189 C134.357707,231.628556 132.642877,232.625957 130.810811,232.531081 L171.362162,232.531081 C169.523304,232.620543 167.806639,231.610396 166.991892,229.959459 C166.592005,229.169533 166.340105,228.313074 166.248649,227.432432 L166.248649,227.432432 Z" id="Path" fill="#A5B1B8" fill-rule="nonzero"></path>
+            <path d="M177.010811,231.995946 L123.958108,231.995946 C123.306303,231.991711 122.679948,232.248677 122.218919,232.709459 C121.753215,233.174478 121.491225,233.805394 121.490541,234.463514 L179.463514,234.463514 C179.462829,233.805394 179.200839,233.174478 178.735135,232.709459 C178.277742,232.252339 177.65747,231.995674 177.010811,231.995946 L177.010811,231.995946 Z" id="Path" fill="#D2D8DC" fill-rule="nonzero"></path>
+            <g id="Group" opacity="0.5" transform="translate(135.270270, 215.540541)" fill="#A5B1B8" fill-rule="nonzero">
+                <polygon id="Path" style="mix-blend-mode: multiply;" points="0.668918919 0.683783784 15.8310811 0.683783784 30.9932432 0.683783784 30.9932432 5.57432432 30.9932432 10.4648649 15.8310811 10.4648649 0.668918919 10.4648649 0.668918919 5.57432432"></polygon>
+            </g>
+            <path d="M233.883784,216.893243 L68.3783784,216.893243 C65.4122961,216.88505 63.0121622,214.478256 63.0121622,211.512162 L63.0121622,114.340541 C63.0142552,112.918133 63.580996,111.554747 64.5878378,110.55 C65.5888288,109.537565 66.9546551,108.969809 68.3783784,108.973995 L233.883784,108.973995 C235.318636,108.958463 236.700393,109.516345 237.722003,110.523999 C238.743613,111.531653 239.320448,112.905606 239.324324,114.340541 L239.324324,211.512162 C239.324324,214.484051 236.915132,216.893243 233.943243,216.893243 L233.883784,216.893243 Z" id="Path" fill="#023852" fill-rule="nonzero"></path>
+            <polygon id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero" points="68.4675676 206.904054 151.368919 206.904054 234.285135 206.904054 234.285135 160.540541 234.285135 114.177027 151.368919 114.177027 68.4675676 114.177027 68.4675676 160.540541"></polygon>
+            <path d="M153.881081,211.556757 C153.891167,210.82656 153.613504,210.121723 153.108108,209.594595 C152.592008,209.067229 151.883814,208.772148 151.145946,208.777027 C150.101602,208.700708 149.102222,209.214619 148.556764,210.108461 C148.011306,211.002303 148.011306,212.126075 148.556764,213.019917 C149.102222,213.91376 150.101602,214.42767 151.145946,214.351351 C151.883814,214.35623 152.592008,214.061149 153.108108,213.533784 C153.617157,213.002978 153.895105,212.292072 153.881081,211.556757 L153.881081,211.556757 Z" id="Path" fill="#1B5679" fill-rule="nonzero"></path>
+            <g id="Group" opacity="0.1" transform="translate(68.378378, 112.972973)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                <polygon id="Path" points="0.0891891892 1.20405405 12.4567568 12.9175676 24.8243243 24.6459459 61.4513514 59.2959459 98.1081081 93.9310811 165.921622 93.9310811 165.921622 1.20405405"></polygon>
+            </g>
+            <circle id="Oval" fill="#0097D7" fill-rule="nonzero" cx="169.95" cy="120.108108" r="1.27837838"></circle>
+            <circle id="Oval" fill="#0097D7" fill-rule="nonzero" cx="196.885135" cy="150.551351" r="1.45675676"></circle>
+            <circle id="Oval" fill="#0097D7" fill-rule="nonzero" cx="181.856757" cy="139.268919" r="1.45675676"></circle>
+            <polygon id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero" points="129.041892 175.182432 145.556757 164.910811 129.041892 154.639189"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero" points="190.240541 175.182432 206.77027 164.910811 190.240541 154.639189"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero" points="206.993243 175.182432 223.522973 164.910811 206.993243 154.639189"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-5)" fill-rule="nonzero" points="114.087838 154.639189 97.5581081 164.910811 114.087838 175.182432"></polygon>
+            <polygon id="Path" fill="url(#linearGradient-6)" fill-rule="nonzero" points="97.3202703 154.639189 80.8054054 164.910811 97.3202703 175.182432"></polygon>
+            <rect id="Rectangle" fill="url(#linearGradient-7)" fill-rule="nonzero" x="154.832432" y="154.668919" width="5.58918919" height="20.4837838"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-7)" fill-rule="nonzero" x="164.137838" y="154.668919" width="5.58918919" height="20.4837838"></rect>
+            <circle id="Oval" fill="#023852" fill-rule="nonzero" cx="20.7513514" cy="241.301351" r="19.1756757"></circle>
+            <circle id="Oval" fill="#9FACB3" fill-rule="nonzero" cx="276.783784" cy="239.606757" r="19.1756757"></circle>
+            <circle id="Oval" fill="#0099DA" fill-rule="nonzero" cx="149.614865" cy="310.824324" r="19.1756757"></circle>
+        </g>
+    </g>
+</svg>

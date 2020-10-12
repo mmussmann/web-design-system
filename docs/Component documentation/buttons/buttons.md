@@ -201,10 +201,6 @@ Below are few examples of the Milestone Secondary button. The default Secondary 
   <div class="element-preview__inner">{{render '@button-secondary-icon'}}</div>
 </div>
 
-<<<<<<< HEAD
-```html
-{{render '@button-secondary-icon'}}
-=======
 ## Primary Button Dark Theme
 To use a Primary Dark Themed buttons you need to add the following CCS class: <code>"msds-btn\--primary-dark"</code>. 
 
@@ -214,6 +210,7 @@ Below are few examples of the Milestone Primary Dark Themed button. The default 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@button-primary-dark'}}</div>
 </div>
+
 ```html
 {{render '@button-primary-dark'}}
 ```
@@ -225,7 +222,6 @@ Below are few examples of the Milestone Primary Dark Themed button. The default 
 
 ```html
 {{render '@button-primary-dark-icon'}}
->>>>>>> 27e35d84e99013838e0c078cb9f3eaf443f87dfd
 ```
 
 ## Secondary Button Dark Theme
@@ -260,6 +256,7 @@ Below are few examples of the Milestone Danger Dark Themed button. The default D
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@button-danger-dark'}}</div>
 </div>
+
 ```html
 {{render '@button-danger-dark'}}
 ```
@@ -283,6 +280,7 @@ Below are few examples of the Milestone Disabled Dark Themed button. The default
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@button-disabled-dark'}}</div>
 </div>
+
 ```html
 {{render '@button-disabled-dark'}}
 ```
