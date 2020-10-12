@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>Graphic elements / Flat icons / Clock / Black</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Graphic-elements-/-Flat-icons-/-Clock-/-Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-11" transform="translate(4.000000, 4.000000)" fill="unset">
+    <title>Graphic elements / Icons / Flat icons / Generic / Clock</title>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Clock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" transform="translate(4.000000, 4.000000)" fill="#000000">
             <path d="M60,0 C26.862931,0 0,26.862931 0,60 C0,93.137069 26.862931,120 60,120 C93.137069,120 120,93.137069 120,60 C120,26.862931 93.137069,0 60,0 M60,8.27586207 C88.5206897,8.27586207 111.724138,31.4793103 111.724138,60 C111.724138,88.5206897 88.5206897,111.724138 60,111.724138 C31.4793103,111.724138 8.27586207,88.5206897 8.27586207,60 C8.27586207,31.4793103 31.4793103,8.27586207 60,8.27586207" id="Fill-1"></path>
             <path d="M99.3103448,63.9755172 C101.595517,63.9755172 103.448276,62.1227586 103.448276,59.8375862 C103.448276,57.5524138 101.595517,55.6996552 99.3103448,55.6996552 C97.0251724,55.6996552 95.1724138,57.5524138 95.1724138,59.8375862 C95.1724138,62.1227586 97.0251724,63.9755172 99.3103448,63.9755172" id="Fill-3"></path>
             <path d="M60,95.01 C57.7148276,95.01 55.862069,96.8627586 55.862069,99.147931 C55.862069,101.433103 57.7148276,103.285862 60,103.285862 C62.2851724,103.285862 64.137931,101.433103 64.137931,99.147931 C64.137931,96.8627586 62.2851724,95.01 60,95.01" id="Fill-5"></path>

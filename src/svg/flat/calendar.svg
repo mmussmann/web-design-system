@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>Graphic elements / Flat icons / Calendar / Black</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Graphic-elements-/-Flat-icons-/-Calendar-/-Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-4" transform="translate(4.000000, 4.000000)" fill="unset">
+    <title>Graphic elements / Icons / Flat icons / Generic / Calendar</title>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(4.000000, 4.000000)" fill="#000000">
             <path d="M0,120 L120,120 L120,12 L0,12 L0,120 Z M88.8,52.8 L110.4,52.8 L110.4,38.4 L88.8,38.4 L88.8,52.8 Z M62.4,52.8 L84,52.8 L84,38.4 L62.4,38.4 L62.4,52.8 Z M36,52.8 L57.6,52.8 L57.6,38.4 L36,38.4 L36,52.8 Z M9.6,52.8 L31.2,52.8 L31.2,38.4 L9.6,38.4 L9.6,52.8 Z M88.8,72 L110.4,72 L110.4,57.6 L88.8,57.6 L88.8,72 Z M62.4,72 L84,72 L84,57.6 L62.4,57.6 L62.4,72 Z M36,72 L57.6,72 L57.6,57.6 L36,57.6 L36,72 Z M9.6,72 L31.2,72 L31.2,57.6 L9.6,57.6 L9.6,72 Z M88.8,91.2 L110.4,91.2 L110.4,76.8 L88.8,76.8 L88.8,91.2 Z M62.4,91.2 L84,91.2 L84,76.8 L62.4,76.8 L62.4,91.2 Z M36,91.2 L57.6,91.2 L57.6,76.8 L36,76.8 L36,91.2 Z M9.6,91.2 L31.2,91.2 L31.2,76.8 L9.6,76.8 L9.6,91.2 Z M88.8,110.3994 L110.4,110.3994 L110.4,96 L88.8,96 L88.8,110.3994 Z M62.4,110.3994 L84,110.3994 L84,96 L62.4,96 L62.4,110.3994 Z M36,110.3994 L57.6,110.3994 L57.6,96 L36,96 L36,110.3994 Z M9.6,110.3994 L31.2,110.3994 L31.2,96 L9.6,96 L9.6,110.3994 Z" id="Fill-1"></path>
             <polygon id="Fill-2" points="15.6 7.2 25.2 7.2 25.2 0 15.6 0"></polygon>
             <polygon id="Fill-3" points="94.8 7.2 104.3994 7.2 104.3994 0 94.8 0"></polygon>

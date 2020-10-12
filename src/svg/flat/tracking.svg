@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Flat icons / Generic / Tracking</title>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Tracking" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tracking" transform="translate(4.000000, 4.000000)" fill="#000000">
+            <path d="M60,11 C32.9431458,11 11,32.9431458 11,60 C11,87.0568542 32.9431458,109 60,109 C87.0568542,109 109,87.0568542 109,60 C109,32.9431458 87.0568542,11 60,11 Z M60,17 C83.7431458,17 103,36.2568542 103,60 C103,83.7431458 83.7431458,103 60,103 C36.2568542,103 17,83.7431458 17,60 C17,36.2568542 36.2568542,17 60,17 Z" id="Stroke-20" fill-rule="nonzero"></path>
+            <polygon id="Stroke-11" fill-rule="nonzero" points="120 58 120 62 106 62 106 58"></polygon>
+            <polygon id="Stroke-11-Copy" fill-rule="nonzero" points="14 58 14 62 0 62 0 58"></polygon>
+            <polygon id="Stroke-18-Copy" fill-rule="nonzero" points="62.5 0 62.5 14 58.5 14 58.5 0"></polygon>
+            <polygon id="Stroke-18" fill-rule="nonzero" points="62.5 106 62.5 120 58.5 120 58.5 106"></polygon>
+            <path d="M60,59.6486486 C54.6711892,59.6486486 50.3513514,55.3288108 50.3513514,50 C50.3513514,44.6711892 54.6711892,40.3513514 60,40.3513514 C65.3288108,40.3513514 69.6486486,44.6711892 69.6486486,50 C69.6486486,55.3288108 65.3288108,59.6486486 60,59.6486486 M77,50 C77,45.4591622 75.2317703,41.1900946 72.0208378,37.9791622 C68.8101351,34.7682297 64.5410676,33 60,33 C55.4591622,33 51.1900946,34.7682297 47.9791622,37.9791622 C44.7684595,41.1900946 43,45.4591622 43,50 C43,52.870473 43.7257162,55.6908649 45.1034054,58.1919324 L45.1029459,58.1923919 L60,87.9860405 L74.8970541,58.1923919 L74.8965946,58.1919324 C76.2742838,55.6906351 77,52.8713919 77,50" id="Fill-1"></path>
+        </g>
+    </g>
+</svg>
