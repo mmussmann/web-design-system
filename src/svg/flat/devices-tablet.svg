@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Graphic elements / Icons / Flat icons / Generic / Devices / Tablet</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Devices-/-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M64,107 C67.3135,107 70,109.6865 70,113 C70,116.3135 67.3135,119 64,119 C60.6865,119 58,116.3135 58,113 C58,109.6865 60.6865,107 64,107 Z M101,12 L101,101 L27,101 L27,12 L101,12 Z M19,124 L109,124 L109,4 L19,4 L19,124 Z" id="Fill-1" fill="#000000" transform="translate(64.000000, 64.000000) rotate(90.000000) translate(-64.000000, -64.000000) "></path>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Devices-/-Tablet" stroke="none" stroke-width="1">
+        <path d="M64,107 C67.3135,107 70,109.6865 70,113 C70,116.3135 67.3135,119 64,119 C60.6865,119 58,116.3135 58,113 C58,109.6865 60.6865,107 64,107 Z M101,12 L101,101 L27,101 L27,12 L101,12 Z M19,124 L109,124 L109,4 L19,4 L19,124 Z" id="Fill-1" transform="translate(64.000000, 64.000000) rotate(90.000000) translate(-64.000000, -64.000000) "></path>
     </g>
 </svg>
