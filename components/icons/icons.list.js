@@ -1,5 +1,10 @@
 export const flatIcons = [
   {
+    name: 'Access',
+    value: '/Static/dist/msds-spritemap.svg#access',
+    previewValue: '#access'
+  },
+  {
     name: 'Analytics',
     value: '/Static/dist/msds-spritemap.svg#analytics',
     previewValue: '#analytics'

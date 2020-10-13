@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Graphic elements / Icons / Flat icons / Generic / Checkmark</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Checkmark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Line" fill="#000000" fill-rule="nonzero" points="112.016629 20 124 31.9833709 47.0529544 108.930416 4 65.877462 15.9833709 53.8940912 47.0529544 84.9636747"></polygon>
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Checkmark" stroke="none" stroke-width="1">
+        <polygon id="Line" points="112.016629 20 124 31.9833709 47.0529544 108.930416 4 65.877462 15.9833709 53.8940912 47.0529544 84.9636747"></polygon>
     </g>
 </svg>

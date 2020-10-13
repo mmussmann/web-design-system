@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Graphic elements / Icons / Flat icons / Generic / Customer Story</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Customer-Story" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Page-1" transform="translate(21.000000, 4.000000)" fill="#000000">
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Customer-Story" stroke="none" stroke-width="1">
+        <g id="Page-1" transform="translate(21.000000, 4.000000)">
             <polygon id="Fill-1" points="16.5517241 35.1724138 40.3448276 35.1724138 40.3448276 31.0344828 16.5517241 31.0344828"></polygon>
             <polygon id="Fill-2" points="16.5517241 47.5862069 28.4482759 47.5862069 28.4482759 43.4482759 16.5517241 43.4482759"></polygon>
             <path d="M0,-0.000103448276 L0,119.999897 L86.8965517,119.999897 L86.8965517,26.8964483 L56.8965517,-0.000103448276 L0,-0.000103448276 Z M8.27586207,8.27575862 L48.6206897,8.27575862 L48.6206897,35.1723103 L78.6206897,35.1723103 L78.6206897,111.724034 L8.27586207,111.724034 L8.27586207,8.27575862 Z" id="Fill-3"></path>
