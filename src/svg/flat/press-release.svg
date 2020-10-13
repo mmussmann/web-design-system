@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>Graphic elements / Icons / Flat icons / Press release / Black</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Press-release-/-Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Fill-1" fill="#000000" points="118.985565 4.00011594 71.4493333 36.4638841 71.4493333 92.116058 118.985565 123.641275"></polygon>
-        <polygon id="Fill-2" fill="#000000" points="10 44.579942 10 83.9996522 37.826087 83.9996522 37.826087 121.680812 51.7391304 121.680812 51.7391304 83.9996522 65.6521739 83.9996522 65.6521739 44.579942"></polygon>
+<svg viewBox="0 0 128 128">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon fill="#000000" points="118.985565 4.00011594 71.4493333 36.4638841 71.4493333 92.116058 118.985565 123.641275"></polygon>
+        <polygon fill="#000000" points="10 44.579942 10 83.9996522 37.826087 83.9996522 37.826087 121.680812 51.7391304 121.680812 51.7391304 83.9996522 65.6521739 83.9996522 65.6521739 44.579942"></polygon>
     </g>
 </svg>

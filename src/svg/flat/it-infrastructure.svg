@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Graphic elements / Icons / Flat icons / Generic / IT Infrastructure</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-IT-Infrastructure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="IT-infrastructure" transform="translate(6.000000, 10.000000)" fill="#000000" fill-rule="nonzero">
+    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-IT-Infrastructure" stroke="none" stroke-width="1">
+        <g id="IT-infrastructure" transform="translate(6.000000, 10.000000)">
             <polygon id="Path" points="60.5 68.6 60.5 60.1 54.5 60.1 54.5 68.6 5.3 68.6 5.3 95.6 11.3 95.6 11.3 74.6 54.5 74.6 54.5 97.9 60.5 97.9 60.5 74.6 104.6 74.6 104.6 95 110.6 95 110.6 68.6"></polygon>
             <path d="M4,22.1 L4,48.1 L112,48.1 L112,22.1 L4,22.1 Z M101.3,37.6 L88.5,37.6 L88.5,32.4 L101.3,32.4 L101.3,37.6 Z" id="Shape"></path>
             <polygon id="Fill-17" points="4 13 112 13 112 0 4 0"></polygon>

@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Graphic elements / Icons / Flat icons / Generic / Arrow double</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Arrow-double" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(34.000000, 4.000000)" fill="#000000">
-            <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Arrow-/-Down-/-Black" transform="translate(0.000000, 60.000000)">
-                <g id="Group" transform="translate(30.000000, 30.000000) scale(1, -1) rotate(90.000000) translate(-30.000000, -30.000000) translate(12.656250, 1.875000)">
-                    <polygon id="Rectangle-3-2" transform="translate(17.349797, 17.354003) rotate(135.000000) translate(-17.349797, -17.354003) " points="-2.34375 13.125 37.0433435 13.125 37.0433435 21.5830069 -2.34375 21.5830069"></polygon>
-                    <polygon id="Rectangle-3-3" transform="translate(17.351915, 39.223940) rotate(-135.000000) translate(-17.351915, -39.223940) " points="-2.34163211 34.9949366 37.0454614 34.9949366 37.0454614 43.4529434 -2.34163211 43.4529434"></polygon>
-                </g>
-            </g>
-            <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Arrow-/-Down-/-Black" transform="translate(30.000000, 30.000000) scale(1, -1) translate(-30.000000, -30.000000) ">
-                <g id="Group" transform="translate(30.000000, 30.000000) scale(1, -1) rotate(90.000000) translate(-30.000000, -30.000000) translate(12.656250, 1.875000)">
-                    <polygon id="Rectangle-3-2" transform="translate(17.349797, 17.354003) rotate(135.000000) translate(-17.349797, -17.354003) " points="-2.34375 13.125 37.0433435 13.125 37.0433435 21.5830069 -2.34375 21.5830069"></polygon>
-                    <polygon id="Rectangle-3-3" transform="translate(17.351915, 39.223940) rotate(-135.000000) translate(-17.351915, -39.223940) " points="-2.34163211 34.9949366 37.0454614 34.9949366 37.0454614 43.4529434 -2.34163211 43.4529434"></polygon>
-                </g>
+<svg viewBox="0 0 128 128">
+    <g transform="translate(34.000000, 4.000000)">
+        <g transform="translate(0.000000, 60.000000)">
+            <g transform="translate(30.000000, 30.000000) scale(1, -1) rotate(90.000000) translate(-30.000000, -30.000000) translate(12.656250, 1.875000)">
+                <polygon id="Rectangle-3-2" transform="translate(17.349797, 17.354003) rotate(135.000000) translate(-17.349797, -17.354003) " points="-2.34375 13.125 37.0433435 13.125 37.0433435 21.5830069 -2.34375 21.5830069"></polygon>
+                <polygon id="Rectangle-3-3" transform="translate(17.351915, 39.223940) rotate(-135.000000) translate(-17.351915, -39.223940) " points="-2.34163211 34.9949366 37.0454614 34.9949366 37.0454614 43.4529434 -2.34163211 43.4529434"></polygon>
             </g>
         </g>
-    </g>
+        <g transform="translate(30.000000, 30.000000) scale(1, -1) translate(-30.000000, -30.000000) ">
+            <g transform="translate(30.000000, 30.000000) scale(1, -1) rotate(90.000000) translate(-30.000000, -30.000000) translate(12.656250, 1.875000)">
+                <polygon id="Rectangle-3-2" transform="translate(17.349797, 17.354003) rotate(135.000000) translate(-17.349797, -17.354003) " points="-2.34375 13.125 37.0433435 13.125 37.0433435 21.5830069 -2.34375 21.5830069"></polygon>
+                <polygon id="Rectangle-3-3" transform="translate(17.351915, 39.223940) rotate(-135.000000) translate(-17.351915, -39.223940) " points="-2.34163211 34.9949366 37.0454614 34.9949366 37.0454614 43.4529434 -2.34163211 43.4529434"></polygon>
+            </g>
+        </g>
+    </g>    
 </svg>
