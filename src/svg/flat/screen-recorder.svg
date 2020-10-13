@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128"><defs><mask id="a" x="4" y="18" width="120" height="92.46" maskUnits="userSpaceOnUse"><polygon points="4 110.46 124 110.46 124 18 4 18 4 110.46" style="fill:#fff;fill-rule:evenodd"/></mask></defs><title>screen-recorder</title><path d="M75.8,96.69V92.75H52.2v3.94a7.65,7.65,0,0,1-1.09,3.6l-6.78,10.17H83.67l-6.78-10.17a7.65,7.65,0,0,1-1.09-3.6" style="fill-rule:evenodd"/><g style="mask:url(#a)"><path d="M11.87,81H116.13V25.87H11.87ZM4,88.82H124V18H4Z" style="fill-rule:evenodd"/></g><g style="mask:url(#a)"><polygon points="87.85 65.21 73.59 55.93 73.59 65.21 40.15 65.21 40.15 41.61 73.59 41.61 73.59 50.64 87.85 41.36 87.85 65.21" style="fill-rule:evenodd"/></g></svg>
+<svg viewBox="0 0 128 128">
+    <defs>
+        <mask x="4" y="18" width="120" height="92.46" maskUnits="userSpaceOnUse">
+            <polygon points="4 110.46 124 110.46 124 18 4 18 4 110.46" style="fill:#fff;fill-rule:evenodd" />
+        </mask>
+    </defs>
+    <title>screen-recorder</title>
+    <path
+        d="M75.8,96.69V92.75H52.2v3.94a7.65,7.65,0,0,1-1.09,3.6l-6.78,10.17H83.67l-6.78-10.17a7.65,7.65,0,0,1-1.09-3.6"
+        style="fill-rule:evenodd" />
+    <g style="mask:url(#a)">
+        <path d="M11.87,81H116.13V25.87H11.87ZM4,88.82H124V18H4Z" style="fill-rule:evenodd" />
+    </g>
+    <g style="mask:url(#a)">
+        <polygon
+            points="87.85 65.21 73.59 55.93 73.59 65.21 40.15 65.21 40.15 41.61 73.59 41.61 73.59 50.64 87.85 41.36 87.85 65.21"
+            style="fill-rule:evenodd" />
+    </g>
+</svg>
