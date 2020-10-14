@@ -129,11 +129,12 @@ $icon-dimensions-xxlarge: 8rem !default;
 
   &--verified {
     border: 1px solid $gray-3;
-    background: white;
+    background: $white;
   }
 
   .msds-icon {
     width: 8px;
     height: 6px;
+    color: $clear-blue;
   }
 }
