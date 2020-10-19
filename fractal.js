@@ -30,6 +30,7 @@ fractal.web.set('server.syncOptions', {
  * Theming
  */
 const customTheme = require('@frctl/mandelbrot')({
+  favicon: '/src/demo-img/favicon.ico',
   nav: ['components', 'docs'],
   panels: ['html', 'view', 'context', 'info', 'notes'],
   styles: ['default', '/main.css', '/theme-overrides/styles.css'],
