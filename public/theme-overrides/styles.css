@@ -442,3 +442,69 @@ dl dd a {
 button:focus {
   outline: none;
 }
+
+/* TOGGLE SIDE MENU BTN */
+
+.Header-button.Header-navToggle {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+
+.Frame .Header-navToggleIcon--open {
+  display: block!important;
+  right: 0;
+  position: absolute;
+  transition: all 150ms ease;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  left: 0;
+}
+
+.Frame.is-closed .Header-navToggleIcon--open {
+  left: -30px;
+  position: absolute;
+  opacity: 0;
+  transition: all 150ms ease-in;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+}
+.Frame .Header-navToggleIcon--closed {
+  left: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+  transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  display: block!important;
+  right: 0;
+  pointer-events: none;
+}
+
+.Frame.is-closed .Header-navToggleIcon--closed {
+  left: 0;
+  position: absolute;
+  transition: all 150ms ease;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition-delay: 100ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  opacity: 1;
+  right: 0;
+}
