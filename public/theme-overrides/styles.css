@@ -450,12 +450,12 @@ button:focus {
   align-items: center;
   height: 100%;
   position: relative;
+  justify-content: center;
 }
 
 
 .Frame .Header-navToggleIcon--open {
   display: block!important;
-  right: 0;
   position: absolute;
   transition: all 150ms ease;
   -webkit-transition: all 150ms ease;
@@ -465,11 +465,10 @@ button:focus {
   -webkit-transition-delay: 100ms;
   -moz-transition-delay: 100ms;
   -o-transition-delay: 100ms;
-  left: 0;
 }
 
 .Frame.is-closed .Header-navToggleIcon--open {
-  left: -30px;
+  transform: translate3d(-35px, 0, 0);
   position: absolute;
   opacity: 0;
   transition: all 150ms ease-in;
@@ -478,7 +477,7 @@ button:focus {
   -o-transition: all 150ms ease-in;
 }
 .Frame .Header-navToggleIcon--closed {
-  left: 30px;
+  transform: translate3d(20px, 0, 0);
   position: absolute;
   opacity: 0;
   transition: all 150ms ease-out;
@@ -490,12 +489,11 @@ button:focus {
   -moz-transition-delay: 100ms;
   -o-transition-delay: 100ms;
   display: block!important;
-  right: 0;
   pointer-events: none;
 }
 
 .Frame.is-closed .Header-navToggleIcon--closed {
-  left: 0;
+  transform: translate3d(0, 0, 0);
   position: absolute;
   transition: all 150ms ease;
   -webkit-transition: all 150ms ease;
@@ -506,5 +504,4 @@ button:focus {
   -moz-transition-delay: 100ms;
   -o-transition-delay: 100ms;
   opacity: 1;
-  right: 0;
 }
