@@ -52,8 +52,8 @@
 
     .msds-contact-card__body-contact-details {
       display: block;
-      margin-top: 12px;
-      padding-top: 0px;
+      margin-top: auto;
+      padding-top: 12px;
     }
 
     .msds-contact-card__overlay {
@@ -87,8 +87,8 @@
 
     .msds-contact-card__body-contact-details {
       display: block;
-      margin-top: 12px;
-      padding-top: 0px;
+      margin-top: auto;
+      padding-top: 12px;
     }
 
     .msds-contact-card__overlay {
@@ -107,6 +107,7 @@
 
     .msds-contact-card__body-contact-details {
       padding-top: 0;
+      margin: auto auto 0;
     }
   }
 
@@ -122,6 +123,9 @@
   &__body {
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__body-contact-person {
@@ -139,7 +143,7 @@
     color: $clear-blue;
     @extend .msds-text-body-1;
     display: table;
-    margin: 0 auto;
+    margin: auto 0 0;
     padding-top: 24px;
 
     .msds-contact-card__body-contact-details-wrapper {
