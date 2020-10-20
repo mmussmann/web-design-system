@@ -241,7 +241,7 @@ module.exports = {
       },
       {
         textColor: 'msds-text-white',
-        text: 'damger red 50%',
+        text: 'danger red 50%',
         backgroundColor: 'msds-danger-red-50-transparent',
         scssVarName: '$rgba-5'
       },
