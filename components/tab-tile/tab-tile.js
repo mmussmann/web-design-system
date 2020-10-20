@@ -69,7 +69,6 @@ function setTabActive(clickedTab) {
     contentContainers[clickedTab.dataset.index].classList.add('msds-tabs__content-container--visible')
   }
 
-  ensureCardsContentMatchingHeights()
   scrollToElement(clickedTab)
 }
 
@@ -127,32 +126,6 @@ function hasElementHitTop(tabRow, contentElement) {
     contentElement.style.paddingTop = 0
     return false
   }
-}
-
-function ensureCardsContentMatchingHeights() {
-  const cardRows = document.querySelectorAll('.card-row')
-
-  cardRows.ensureCardContentsSameHeightWithinParent({
-    subSelectors: ['.msds-category-card__header-body', '.msds-category-card__content-body']
-  })
-
-  cardRows.ensureCardContentsSameHeightWithinParent({
-    subSelectors: [
-      '.msds-contact-card__headline',
-      '.msds-contact-card__body-contact-person',
-      '.msds-contact-card__body-contact-position',
-      '.msds-contact-card__body-contact-details'
-    ]
-  })
-
-  cardRows.ensureCardContentsSameHeightWithinParent({
-    subSelectors: [
-      '.msds-solution-card__header-headline',
-      '.msds-solution-card__body-headline',
-      '.msds-solution-card__body-description',
-      '.msds-solution-card__footer-buttons'
-    ]
-  })
 }
 
 init()

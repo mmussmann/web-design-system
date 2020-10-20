@@ -12,7 +12,6 @@ import 'components/icons/rich-icons.js'
 
 //Documented components
 import 'components/button-cards/_category-card/category-card.js'
-import 'components/button-cards/_contact-card/contact-card.js'
 import 'components/_Progress-Bar/progress-bar.js'
 import 'components/_expanding-components/accordion-initialization.js'
 import 'components/_expanding-components/section-initialization.js'
