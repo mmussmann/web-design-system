@@ -68,7 +68,7 @@ function setTabActive(clickedTab) {
   if (contentContainers.length > clickedTab.dataset.index) {
     contentContainers[clickedTab.dataset.index].classList.add('msds-tabs__content-container--visible')
   }
-
+  ensureCardsContentMatchingHeights()
   scrollToElement(clickedTab)
 }
 
@@ -126,6 +126,14 @@ function hasElementHitTop(tabRow, contentElement) {
     contentElement.style.paddingTop = 0
     return false
   }
+}
+
+function ensureCardsContentMatchingHeights() {
+  const cardRows = document.querySelectorAll('.card-row')
+
+  cardRows.ensureCardContentsSameHeightWithinParent({
+    subSelectors: ['.msds-category-card__header-body', '.msds-category-card__content-body']
+  })
 }
 
 init()
