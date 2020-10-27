@@ -1009,7 +1009,7 @@ export const richIcons = [
   { name: 'Feedback, notification', value: 'msds-feedback-notification' },
   { name: 'Find', value: 'msds-find' },
   { name: 'Flexibility', value: 'msds-flexibility' },
-  { name: 'Form', value: 'msds-form' },
+  { name: 'Form', value: 'msds-form-icon' },
   { name: 'Global', value: 'msds-milestone-global-offices-illustration' },
   { name: 'Global Partner Network', value: 'msds-global-partner-network' },
   { name: 'Growth Data', value: 'msds-growth-data' },

@@ -358,7 +358,7 @@
   height: map-get(map-get($sprite-sizes, 'flexibility'), 'height');
   width: map-get(map-get($sprite-sizes, 'flexibility'), 'width');
 }
-.msds-form {
+.msds-form-icon {
   @include sprite('form');
   height: map-get(map-get($sprite-sizes, 'form'), 'height');
   width: map-get(map-get($sprite-sizes, 'form'), 'width');
