@@ -101,17 +101,17 @@
     box-shadow: unset;
     background: transparent;
 
-    .msds-contact-card__body-contact-position {
-      margin-bottom: 4px;
-    }
-
-    .msds-contact-card__body-contact-details {
-      padding-top: 0;
-      margin: auto auto 0;
-    }
-
     .msds-contact-card__body {
       height: auto;
+
+      &-contact-position {
+        margin-bottom: 4px;
+      }
+
+      &-contact-details {
+        padding-top: 0;
+        margin: auto auto 0;
+      }
     }
   }
 
