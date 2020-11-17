@@ -1058,7 +1058,7 @@ export const richIcons = [
   { name: 'Reminder', value: 'msds-reminder' },
   { name: 'Save Money', value: 'msds-save-money' },
   { name: 'Scalable', value: 'msds-scalable' },
-  { name: 'Scale Balance', value: 'msds-scale-balance' },
+  { name: 'Responsible', value: 'msds-scale-balance' },
   { name: 'Scale Up', value: 'msds-scale-up' },
   { name: 'Screen Recording, animated', value: 'msds-screen-recording' },
   { name: 'Searching', value: 'msds-searching' },
@@ -1109,6 +1109,18 @@ export const richIcons = [
   { name: 'Reliable', value: 'msds-reliable' },
   { name: 'Body Worn', value: 'msds-body-worn' },
   { name: 'Camera, outdated', value: 'msds-outdated-hardware' },
+  { name: 'Add', value: 'msds-add' },
+  { name: 'Covid', value: 'msds-covid' },
+  { name: 'Drone', value: 'msds-drone' },
+  { name: 'Phishing', value: 'msds-phishing' },
+  { name: 'Robot', value: 'msds-robot' },
+  { name: 'Sale Buyer', value: 'msds-sale-buyer' },
+  { name: 'Save The Date', value: 'msds-save-the-date' },
+  { name: 'Social Distancing', value: 'msds-social-distancing' },
+  { name: 'Software', value: 'msds-software' },
+  { name: 'Storage', value: 'msds-storage' },
+  { name: 'World Communication', value: 'msds-world-communication' },
+  { name: 'Ease of Use', value: 'msds-mind-at-ease' },
   {
     name: 'Marketplace Challenges Assist People Feel Safe Leaving',
     value: 'msds-marketplace-challenges-assist-people-feel-safe-leaving'
@@ -1227,5 +1239,8 @@ export const richIcons = [
   { name: 'Marketplace Practice Smart City', value: 'msds-marketplace-practice-smart-city' },
   { name: 'Marketplace Practice Surveillance', value: 'msds-marketplace-practice-surveillance' },
   { name: 'Marketplace Practice Tracking And Monitoring', value: 'msds-marketplace-practice-tracking-and-monitoring' },
-  { name: 'Marketplace Practice Vehicles And Traffic', value: 'msds-marketplace-practice-vehicles-and-traffic' }
+  { name: 'Marketplace Practice Vehicles And Traffic', value: 'msds-marketplace-practice-vehicles-and-traffic' },
+  { name: 'Marketplace Inspired', value: 'msds-marketplace-inspired' },
+  { name: 'Marketplace Product Page', value: 'msds-marketplace-product-page' },
+  { name: 'Marketplace Solution Service', value: 'msds-marketplace-solution-service' }
 ]

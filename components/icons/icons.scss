@@ -1,3 +1,5 @@
+// GENERIC ICONS
+
 .msds-acceleration {
   @include sprite('acceleration');
   height: map-get(map-get($sprite-sizes, 'acceleration'), 'height');
@@ -862,6 +864,80 @@
   width: map-get(map-get($sprite-sizes, 'outdated-hardware'), 'width');
 }
 
+.msds-add {
+  @include sprite('add');
+  height: map-get(map-get($sprite-sizes, 'add'), 'height');
+  width: map-get(map-get($sprite-sizes, 'add'), 'width');
+}
+
+.msds-covid {
+  @include sprite('covid');
+  height: map-get(map-get($sprite-sizes, 'covid'), 'height');
+  width: map-get(map-get($sprite-sizes, 'covid'), 'width');
+}
+
+.msds-drone {
+  @include sprite('drone');
+  height: map-get(map-get($sprite-sizes, 'drone'), 'height');
+  width: map-get(map-get($sprite-sizes, 'drone'), 'width');
+}
+
+.msds-phishing {
+  @include sprite('phishing');
+  height: map-get(map-get($sprite-sizes, 'phishing'), 'height');
+  width: map-get(map-get($sprite-sizes, 'phishing'), 'width');
+}
+
+.msds-robot {
+  @include sprite('robot');
+  height: map-get(map-get($sprite-sizes, 'robot'), 'height');
+  width: map-get(map-get($sprite-sizes, 'robot'), 'width');
+}
+
+.msds-sale-buyer {
+  @include sprite('sale-buyer');
+  height: map-get(map-get($sprite-sizes, 'sale-buyer'), 'height');
+  width: map-get(map-get($sprite-sizes, 'sale-buyer'), 'width');
+}
+
+.msds-save-the-date {
+  @include sprite('save-the-date');
+  height: map-get(map-get($sprite-sizes, 'save-the-date'), 'height');
+  width: map-get(map-get($sprite-sizes, 'save-the-date'), 'width');
+}
+
+.msds-social-distancing {
+  @include sprite('social-distancing');
+  height: map-get(map-get($sprite-sizes, 'social-distancing'), 'height');
+  width: map-get(map-get($sprite-sizes, 'social-distancing'), 'width');
+}
+
+.msds-software {
+  @include sprite('software');
+  height: map-get(map-get($sprite-sizes, 'software'), 'height');
+  width: map-get(map-get($sprite-sizes, 'software'), 'width');
+}
+
+.msds-storage {
+  @include sprite('storage');
+  height: map-get(map-get($sprite-sizes, 'storage'), 'height');
+  width: map-get(map-get($sprite-sizes, 'storage'), 'width');
+}
+
+.msds-world-communication {
+  @include sprite('world-communication');
+  height: map-get(map-get($sprite-sizes, 'world-communication'), 'height');
+  width: map-get(map-get($sprite-sizes, 'world-communication'), 'width');
+}
+
+.msds-mind-at-ease {
+  @include sprite('mind-at-ease');
+  height: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'height');
+  width: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'width');
+}
+
+// MARKETPLACE ICONS
+
 .msds-marketplace-challenges-assist-people-feel-safe-leaving {
   @include sprite('marketplace-challenges-assist-people-feel-safe-leaving');
   height: map-get(map-get($sprite-sizes, 'marketplace-challenges-assist-people-feel-safe-leaving'), 'height');
@@ -1168,6 +1244,21 @@
   @include sprite('marketplace-practice-vehicles-and-traffic');
   height: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'height');
   width: map-get(map-get($sprite-sizes, 'marketplace-practice-vehicles-and-traffic'), 'width');
+}
+.msds-marketplace-inspired {
+  @include sprite('marketplace-inspired');
+  height: map-get(map-get($sprite-sizes, 'marketplace-inspired'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-inspired'), 'width');
+}
+.msds-marketplace-product-page {
+  @include sprite('marketplace-product-page');
+  height: map-get(map-get($sprite-sizes, 'marketplace-product-page'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-product-page'), 'width');
+}
+.msds-marketplace-solution-service {
+  @include sprite('marketplace-solution-service');
+  height: map-get(map-get($sprite-sizes, 'marketplace-solution-service'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-solution-service'), 'width');
 }
 
 //Generic Flat Animated Icons
