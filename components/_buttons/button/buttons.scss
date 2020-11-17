@@ -3,7 +3,7 @@
   min-width: 181px;
   position: relative;
   background: transparent;
-  display: flex;
+  display: inline-flex;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,16 @@
     transform: translateY(-5px);
     box-shadow: 0 2px 12px 0 $rgba-1;
     text-decoration: none;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 5px;
+      width: 100%;
+      cursor: default;
+    }
   }
   &.disabled,
   &:disabled,
@@ -327,8 +337,4 @@
       }
     }
   }
-}
-
-a[class*='msds-btn'] {
-  display: inline-flex;
 }
