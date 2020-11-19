@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Graphic elements / Icons / Flat icons / Generic / Devices / Mobile</title>
-    <g id="Graphic-elements-/-Icons-/-Flat-icons-/-Generic-/-Devices-/-Mobile" stroke="none" stroke-width="1">
-        <path d="M34.8688525,100.393443 L93.8852459,100.393443 L93.8852459,11.8688525 L34.8688525,11.8688525 L34.8688525,100.393443 Z M64.3770492,118.098361 C61.1178689,118.098361 58.4754098,115.455902 58.4754098,112.196721 C58.4754098,108.937541 61.1178689,106.295082 64.3770492,106.295082 C67.6362295,106.295082 70.2786885,108.937541 70.2786885,112.196721 C70.2786885,115.455902 67.6362295,118.098361 64.3770492,118.098361 L64.3770492,118.098361 Z M27,124 L101.754098,124 L101.754098,4 L27,4 L27,124 Z" id="Fill-1"></path>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<path id="Fill-1" class="st0" d="M64,107c3.1,0,5.5,2.5,5.5,5.6s-2.5,5.5-5.6,5.5s-5.5-2.5-5.5-5.6C58.5,109.5,61,107,64,107z
+	 M93.5,12l0,88.4l-59,0l0-88.4L93.5,12z M26.6,124l74.8,0l0-120L26.6,4L26.6,124z"/>
 </svg>
