@@ -550,7 +550,7 @@ export const flatIcons = [
     previewValue: '#system-requirements'
   },
   {
-    name: 'Tag',
+    name: 'Tags',
     value: '/Static/dist/msds-spritemap.svg#tag',
     previewValue: '#tag'
   },
