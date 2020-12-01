@@ -13,14 +13,14 @@ Once travis has build the release and published to NPM you can use it by updatin
 ## Usage
 Host **msds-spritemap.svg** then use it like below with the # representing the icon name (ID)
 
-##  Button Icon source
+##  Flat Icon source
 ```
 <svg title="flat-icon">
-    <use href="/msds-spritemap.svg#flat-icon"></use>
+    <use href="/msds-spritemap.svg#name-of-flat-icon"></use>
 </svg>
 ```
 
 ##  Rich Icon source
 ```
-<div class="rich-icon"></div>
+<div class="name-of-rich-icon"></div>
 ```
