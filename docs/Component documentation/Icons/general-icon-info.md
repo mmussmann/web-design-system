@@ -15,8 +15,8 @@ Host **msds-spritemap.svg** then use it like below with the # representing the i
 
 ##  Button Icon source
 ```
-<svg title="button-icon">
-    <use href="/msds-spritemap.svg#button-icon"></use>
+<svg title="flat-icon">
+    <use href="/msds-spritemap.svg#flat-icon"></use>
 </svg>
 ```
 
