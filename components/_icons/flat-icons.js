@@ -26,4 +26,6 @@ function init() {
   }
 }
 
-init()
+window.addEventListener('load', function() {
+  init()
+})

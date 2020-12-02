@@ -22,7 +22,7 @@ module.exports = {
       vertical-align: top;
       height: 80px !important;
       width: 240px !important;
-      margin-top: 20px
+      margin-top: 20px;
     }
     .msds-icon-wrapper {
       display: inline-block;

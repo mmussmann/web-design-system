@@ -6,9 +6,9 @@ import 'components/button-cards/card.js'
 import 'components/button-cards/generic-card/generic-card.js'
 import 'components/colors/background-colors.js'
 import 'components/colors/text-colors.js'
-import 'components/icons/icons.js'
-import 'components/icons/flat-icons.js'
-import 'components/icons/rich-icons.js'
+import 'components/_icons/icons.js'
+import 'components/_icons/flat-icons.js'
+import 'components/_icons/rich-icons.js'
 
 //Documented components
 import 'components/button-cards/_category-card/category-card.js'
