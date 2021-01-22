@@ -13,6 +13,12 @@
 
   &__frame {
     overflow: hidden;
+    .embed-responsive-item {
+      img {
+        height: inherit;
+        width: 100%;
+      }
+    }
 
     &-image {
       transition-duration: 0.3s;

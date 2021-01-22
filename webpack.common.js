@@ -14,7 +14,9 @@ module.exports = {
   },
   entry: {
     main: path.resolve('./src/js/main.js'),
-    "design-system": path.resolve('./src/js/design-system.js')
+    "design-system": path.resolve('./src/js/design-system.js'),
+    "rich-icons-bundle": path.resolve('./src/js/rich-icons-bundle.js')
+    
   },
   output: {
     path: path.resolve('./public/'),

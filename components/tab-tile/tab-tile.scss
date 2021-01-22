@@ -131,6 +131,14 @@
       max-width: 80px;
       max-height: 60px;
       margin-bottom: 12px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: inherit;
+        width: 100%;
+      }
     }
 
     &.msds-tabs__tab--active {
@@ -179,6 +187,14 @@
     width: 120px;
     height: 90px;
     margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: inherit;
+      width: 100%;
+    }
   }
 
   &__tab-text {

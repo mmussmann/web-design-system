@@ -21,6 +21,12 @@ Host **msds-spritemap.svg** then use it like below with the # representing the i
 ```
 
 ##  Rich Icon source
+As a class
 ```
 <div class="name-of-rich-icon"></div>
+```
+
+Or as embedded image
+```
+<img src="path/to/svg/name-of-rich-icon-file.svg" alt=""/>
 ```
