@@ -16,7 +16,11 @@ deploy:
   - provider: npm
     edge: true
     skip_cleanup: true
-    email: mama@milestone.dk
+    email:
+      recipients:
+        - fch@milestone.dk
+        - dao@milestone.dk
+        - mss@milestone.dk
     api_key: "$NPM_TOKEN"
     on:
       tags: true

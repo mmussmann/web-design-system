@@ -13,11 +13,10 @@
 
   &__frame {
     overflow: hidden;
-    .embed-responsive-item {
-      img {
-        height: inherit;
-        width: 100%;
-      }
+
+    &-icon {
+      height: inherit;
+      width: 100%;
     }
 
     &-image {
@@ -28,6 +27,11 @@
       height: auto;
       border-radius: 2px 2px 0 0;
       object-fit: cover;
+
+      &-icon {
+        height: initial;
+        width: 100%;
+      }
     }
   }
 
