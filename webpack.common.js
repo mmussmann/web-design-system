@@ -14,7 +14,9 @@ module.exports = {
   },
   entry: {
     main: path.resolve('./src/js/main.js'),
-    "design-system": path.resolve('./src/js/design-system.js')
+    "design-system": path.resolve('./src/js/design-system.js'),
+    "rich-icons-bundle": path.resolve('./src/js/rich-icons-bundle.js')
+    
   },
   output: {
     path: path.resolve('./public/'),
@@ -121,7 +123,8 @@ module.exports = {
     new CopyPlugin([
       { from: 'theme-overrides/styles.css', to: 'theme-overrides/styles.css' },
       { from: 'src/demo-img', to: 'src/demo-img' },
-      { from: 'src/svg/flat/right-arrow.svg', to: 'src/demo-img' }
+      { from: 'src/svg/flat/right-arrow.svg', to: 'src/demo-img' },
+      // { from: 'src/svg/rich', to: 'svg/rich' } // Enable this line if you want to test svg as embedded image on dev environment and use following markup: <img class="msds-rich-icon" src="svg/rich/name-of-svg-file.svg" />
     ])
   ],
   module: {

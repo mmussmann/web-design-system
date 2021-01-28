@@ -57,6 +57,14 @@
     flex-grow: 0;
     flex-shrink: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+      height: inherit;
+      width: inherit;
+    }
 
     @include media-breakpoint-up(md) {
       flex-basis: 80px;

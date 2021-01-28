@@ -14,6 +14,11 @@
   &__frame {
     overflow: hidden;
 
+    &-icon {
+      height: inherit;
+      width: 100%;
+    }
+
     &-image {
       transition-duration: 0.3s;
       display: block;
@@ -22,6 +27,11 @@
       height: auto;
       border-radius: 2px 2px 0 0;
       object-fit: cover;
+
+      &-icon {
+        height: initial;
+        width: 100%;
+      }
     }
   }
 

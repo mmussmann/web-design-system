@@ -938,309 +938,1216 @@ export const flatIcons = [
 ]
 
 export const richIcons = [
-  { name: 'Acceleration', value: 'msds-acceleration' },
-  { name: 'Add Content', value: 'msds-add-content' },
-  { name: 'Add Solution', value: 'msds-add-solution' },
-  { name: 'Airplane', value: 'msds-airplane' },
-  { name: 'Ambition', value: 'msds-ambition' },
-  { name: 'Analytics', value: 'msds-analytics' },
-  { name: 'Analytics, devices', value: 'msds-analytics-devices' },
-  { name: 'Applications', value: 'msds-applications' },
-  { name: 'Backup, animated', value: 'msds-backup-important' },
-  { name: 'Black Screens', value: 'msds-black-screens' },
-  { name: 'Blueprint', value: 'msds-blueprint' },
-  { name: 'Book a Demo', value: 'msds-book-a-demo' },
-  { name: 'Book a Demo notification', value: 'msds-book-a-demo-notification' },
-  { name: 'Booking', value: 'msds-booking' },
-  { name: 'Browser', value: 'msds-browser' },
-  { name: 'Build', value: 'msds-build' },
-  { name: 'Building, Medium', value: 'msds-building-medium' },
-  { name: 'Calendar', value: 'msds-calendar' },
-  { name: 'Camera', value: 'msds-dome-cam' },
-  { name: 'Camera Analogue', value: 'msds-camera-analogue' },
-  { name: 'Camera, memory', value: 'msds-camera-memory' },
-  { name: 'Cameras, 8, animated', value: 'msds-dome-cam-8' },
-  { name: 'Cameras, 48, animated', value: 'msds-cam-group-small' },
-  { name: 'Cameras, infinite, animated', value: 'msds-cam-group-big' },
-  { name: 'Car', value: 'msds-car' },
-  { name: 'Care', value: 'msds-care' },
-  { name: 'Catalogue', value: 'msds-catalogue' },
-  { name: 'Certification', value: 'msds-certification' },
-  { name: 'Checklist', value: 'msds-checklist' },
-  { name: 'Checkmark', value: 'msds-checkmark' },
-  { name: 'Checkmark Badge', value: 'msds-checkmark-badge' },
-  { name: 'Co-working', value: 'msds-co-working' },
-  { name: 'Coffee', value: 'msds-coffee' },
-  { name: 'Community', value: 'msds-community' },
-  { name: 'Company', value: 'msds-company' },
-  { name: 'Compare, detail', value: 'msds-xprotect-compare-matrix' },
-  { name: 'Compare, high level, animated', value: 'msds-xprotect-compare-products' },
-  { name: 'Compare, releases, animated', value: 'msds-xprotect-compare-releases' },
-  { name: 'Complete Flow', value: 'msds-complete-flow' },
-  { name: 'Consumer', value: 'msds-consumer' },
-  { name: 'Contact', value: 'msds-contact-illustration' },
-  { name: 'Contact, notification', value: 'msds-contact-notification' },
-  { name: 'Crime', value: 'msds-crime' },
-  { name: 'Crowd Management', value: 'msds-crowd-management' },
-  { name: 'Customer Story', value: 'msds-customer-stories' },
-  { name: 'Customizable', value: 'msds-customizable' },
-  { name: 'Cyber Security', value: 'msds-cyber-security' },
-  { name: 'Dashboard', value: 'msds-dashboard' },
-  { name: 'Decision', value: 'msds-decision-making' },
-  { name: 'Deployment', value: 'msds-getting-started' },
-  { name: 'Deployment, device', value: 'msds-deployment-device' },
-  { name: 'Design, animated', value: 'msds-design-animated' },
-  { name: 'Design, static', value: 'msds-design' },
-  { name: 'Devices', value: 'msds-devices' },
-  { name: 'Devices, web', value: 'msds-devices-web' },
-  { name: 'Discount', value: 'msds-discount' },
-  { name: 'Document', value: 'msds-document' },
-  { name: 'Documentation', value: 'msds-documentation' },
-  { name: 'Download', value: 'msds-download-illustration' },
-  { name: 'E-learning', value: 'msds-e-learning' },
-  { name: 'Emergency', value: 'msds-emergency' },
-  { name: 'Employees', value: 'msds-employees' },
-  { name: 'End User', value: 'msds-end-user' },
-  { name: 'Explore', value: 'msds-explore' },
-  { name: 'Extension', value: 'msds-extension' },
-  { name: 'Faq', value: 'msds-faq' },
-  { name: 'Features', value: 'msds-feature-rich' },
-  { name: 'Feedback', value: 'msds-feedback' },
-  { name: 'Feedback, notification', value: 'msds-feedback-notification' },
-  { name: 'Find', value: 'msds-find' },
-  { name: 'Flexibility', value: 'msds-flexibility' },
-  { name: 'Form', value: 'msds-form-icon' },
-  { name: 'Global', value: 'msds-milestone-global-offices-illustration' },
-  { name: 'Global Partner Network', value: 'msds-global-partner-network' },
-  { name: 'Growth Data', value: 'msds-growth-data' },
-  { name: 'Happiness', value: 'msds-happiness' },
-  { name: 'Hardware', value: 'msds-hardware' },
-  { name: 'Hardware, Applications, Software', value: 'msds-hardware-applications-software' },
-  { name: 'Hardware, Services, Documentation', value: 'msds-hardware-services-documentation' },
-  { name: 'Innovation', value: 'msds-innovation' },
-  { name: 'Intelligence', value: 'msds-intelligence' },
-  { name: 'Interconnect', value: 'msds-interconnect' },
-  { name: 'Investigation', value: 'msds-investigation' },
-  { name: 'Join', value: 'msds-join' },
-  { name: 'Key Features', value: 'msds-key-features' },
-  { name: 'Languages', value: 'msds-languages' },
-  { name: 'Leads', value: 'msds-get-leads' },
-  { name: 'License Governance', value: 'msds-license-governance' },
-  { name: 'License Key', value: 'msds-license-key' },
-  { name: 'Like', value: 'msds-ease-of-use' },
-  { name: 'Like, notification', value: 'msds-like-notification' },
-  { name: 'Listen', value: 'msds-listen' },
-  { name: 'Live Streaming', value: 'msds-live-streaming' },
-  { name: 'Logged In', value: 'msds-logged-in' },
-  { name: 'LPR', value: 'msds-lpr' },
-  { name: 'Marketplace, filter', value: 'msds-marketplace-filter' },
-  { name: 'Marketplace, interface', value: 'msds-marketplace-interface' },
-  { name: 'Milestone in the Media', value: 'msds-milestone-in-the-media' },
-  { name: 'My Milestone', value: 'msds-my-milestone' },
-  { name: 'Network', value: 'msds-network' },
-  { name: 'Newspaper', value: 'msds-newspaper' },
-  { name: 'No. 1', value: 'msds-no-1' },
-  { name: 'No Backup, animated', value: 'msds-no-backup' },
-  { name: 'Okay', value: 'msds-okay' },
-  { name: 'One hub', value: 'msds-one-hub' },
-  { name: 'Open Platform', value: 'msds-open-platform' },
-  { name: 'Open Platform Community', value: 'msds-open-platform-community' },
-  { name: 'Partnership', value: 'msds-partnership' },
-  { name: 'Press Release', value: 'msds-press-release' },
-  { name: 'Product Overview', value: 'msds-product-overview-illustration' },
-  { name: 'Project, animated', value: 'msds-project-animated' },
-  { name: 'Project, static', value: 'msds-project' },
-  { name: 'Promotion', value: 'msds-promotion' },
-  { name: 'Publish', value: 'msds-publish' },
-  { name: 'Quote', value: 'msds-quote' },
-  { name: 'Reaction Mode', value: 'msds-reaction-mode' },
-  { name: 'Releases', value: 'msds-releases' },
-  { name: 'Reminder', value: 'msds-reminder' },
-  { name: 'Save Money', value: 'msds-save-money' },
-  { name: 'Scalable', value: 'msds-scalable' },
-  { name: 'Responsible', value: 'msds-scale-balance' },
-  { name: 'Scale Up', value: 'msds-scale-up' },
-  { name: 'Screen Recording, animated', value: 'msds-screen-recording' },
-  { name: 'Searching', value: 'msds-searching' },
-  { name: 'Secure', value: 'msds-secure' },
-  { name: 'Secure, GDPR', value: 'msds-secure-gdpr' },
-  { name: 'Service, coding ', value: 'msds-service-coding' },
-  { name: 'Sign Up', value: 'msds-sign-up' },
-  { name: 'Single Site, animated', value: 'msds-single-site' },
-  { name: 'Smart Wall', value: 'msds-smart-wall' },
-  { name: 'Smart Wall, person', value: 'msds-smart-wall-person' },
-  { name: 'Solutions Design, animated', value: 'msds-solutions-design-tool' },
-  { name: 'Submit for Feedback', value: 'msds-submit-for-feedback' },
-  { name: 'Subscriptions', value: 'msds-subscriptions' },
-  { name: 'Support, call', value: 'msds-support-call' },
-  { name: 'Support, chat, female', value: 'msds-support-chat-female' },
-  { name: 'Support, chat, male', value: 'msds-support-chat-male' },
-  { name: 'Support, mobile', value: 'msds-mobile-support' },
-  { name: 'Support, self service', value: 'msds-self-service-support' },
-  { name: 'Support, technical', value: 'msds-support-technical' },
-  { name: 'Switch On', value: 'msds-switch-on' },
-  { name: 'System Builder', value: 'msds-system-builder' },
-  { name: 'Tags', value: 'msds-tags' },
-  { name: 'Target', value: 'msds-target' },
-  { name: 'Time-to-Market', value: 'msds-time-to-market' },
-  { name: 'Tools', value: 'msds-tools' },
-  { name: 'Trade Show', value: 'msds-trade-show' },
-  { name: 'Transaction', value: 'msds-transaction' },
-  { name: 'Translation', value: 'msds-translation' },
-  { name: 'Update', value: 'msds-upgrade' },
-  { name: 'Update Content', value: 'msds-update-content' },
-  { name: 'Update Content Then Ppublish', value: 'msds-update-content-then-publish' },
-  { name: 'User Review', value: 'msds-user-review' },
-  { name: 'Verification', value: 'msds-verification' },
-  { name: 'Warning', value: 'msds-warning' },
-  { name: 'Watch', value: 'msds-watch' },
-  { name: 'Webinar', value: 'msds-webinar' },
-  { name: 'Well Being', value: 'msds-well-being' },
-  { name: 'World Leading', value: 'msds-world-leading' },
-  { name: 'XProtect', value: 'msds-xprotect' },
-  { name: 'Xprotect, Access, Anywhere', value: 'msds-xprotect-access-anywhere' },
-  { name: 'Youtube', value: 'msds-youtube' },
-  { name: 'Locations, animated', value: 'msds-planet' },
-  { name: 'Integrated Surveillance System, animated', value: 'msds-advanced-super-surveillance' },
-  { name: '24-7, animated', value: 'msds-clock-24-7' },
-  { name: 'Calendar, month, animated', value: 'msds-cal-monthly' },
-  { name: 'Calendar, week, animated', value: 'msds-cal-weekly' },
-  { name: 'Access Control', value: 'msds-access-control-illustration' },
-  { name: 'Reliable', value: 'msds-reliable' },
-  { name: 'Body Worn', value: 'msds-body-worn' },
-  { name: 'Camera, outdated', value: 'msds-outdated-hardware' },
-  { name: 'Add', value: 'msds-add' },
-  { name: 'Covid', value: 'msds-covid' },
-  { name: 'Drone', value: 'msds-drone' },
-  { name: 'Phishing', value: 'msds-phishing' },
-  { name: 'Robot', value: 'msds-robot' },
-  { name: 'Sale Buyer', value: 'msds-sale-buyer' },
-  { name: 'Save The Date', value: 'msds-save-the-date' },
-  { name: 'Social Distancing', value: 'msds-social-distancing' },
-  { name: 'Software', value: 'msds-software' },
-  { name: 'Storage', value: 'msds-storage' },
-  { name: 'World Communication', value: 'msds-world-communication' },
-  { name: 'Ease of Use', value: 'msds-mind-at-ease' },
+  {
+    name: 'Acceleration',
+    value: '/Static/svg/richIcons/acceleration.svg',
+    previewValue: 'msds-acceleration'
+  },
+  {
+    name: 'Add Content',
+    value: '/Static/svg/richIcons/add-content.svg',
+    previewValue: 'msds-add-content'
+  },
+  {
+    name: 'Add Solution',
+    value: '/Static/svg/richIcons/add-solution.svg',
+    previewValue: 'msds-add-solution'
+  },
+  {
+    name: 'Airplane',
+    value: '/Static/svg/richIcons/airplane.svg',
+    previewValue: 'msds-airplane'
+  },
+  {
+    name: 'Ambition',
+    value: '/Static/svg/richIcons/ambition.svg',
+    previewValue: 'msds-ambition'
+  },
+  {
+    name: 'Analytics',
+    value: '/Static/svg/richIcons/analytics.svg',
+    previewValue: 'msds-analytics'
+  },
+  {
+    name: 'Analytics, devices',
+    value: '/Static/svg/richIcons/analytics-devices.svg',
+    previewValue: 'msds-analytics-devices'
+  },
+  {
+    name: 'Applications',
+    value: '/Static/svg/richIcons/applications.svg',
+    previewValue: 'msds-applications'
+  },
+  {
+    name: 'Backup, animated',
+    value: '/Static/svg/richIcons/backup-important.svg',
+    previewValue: 'msds-backup-important'
+  },
+  {
+    name: 'Black Screens',
+    value: '/Static/svg/richIcons/black-screens.svg',
+    previewValue: 'msds-black-screens'
+  },
+  {
+    name: 'Blueprint',
+    value: '/Static/svg/richIcons/blueprint.svg',
+    previewValue: 'msds-blueprint'
+  },
+  {
+    name: 'Book a Demo',
+    value: '/Static/svg/richIcons/book-a-demo.svg',
+    previewValue: 'msds-book-a-demo'
+  },
+  {
+    name: 'Book a Demo notification',
+    value: '/Static/svg/richIcons/book-a-demo-notification.svg',
+    previewValue: 'msds-book-a-demo-notification'
+  },
+  {
+    name: 'Booking',
+    value: '/Static/svg/richIcons/booking.svg',
+    previewValue: 'msds-booking'
+  },
+  {
+    name: 'Browser',
+    value: '/Static/svg/richIcons/browser.svg',
+    previewValue: 'msds-browser'
+  },
+  {
+    name: 'Build',
+    value: '/Static/svg/richIcons/build.svg',
+    previewValue: 'msds-build'
+  },
+  {
+    name: 'Building, Medium',
+    value: '/Static/svg/richIcons/building-medium.svg',
+    previewValue: 'msds-building-medium'
+  },
+  {
+    name: 'Calendar',
+    value: '/Static/svg/richIcons/calendar.svg',
+    previewValue: 'msds-calendar'
+  },
+  {
+    name: 'Camera',
+    value: '/Static/svg/richIcons/dome-cam.svg',
+    previewValue: 'msds-dome-cam'
+  },
+  {
+    name: 'Camera Analogue',
+    value: '/Static/svg/richIcons/camera-analogue.svg',
+    previewValue: 'msds-camera-analogue'
+  },
+  {
+    name: 'Camera, memory',
+    value: '/Static/svg/richIcons/camera-memory.svg',
+    previewValue: 'msds-camera-memory'
+  },
+  {
+    name: 'Cameras, 8, animated',
+    value: '/Static/svg/richIcons/dome-cam-8.svg',
+    previewValue: 'msds-dome-cam-8'
+  },
+  {
+    name: 'Cameras, 48, animated',
+    value: '/Static/svg/richIcons/cam-group-small.svg',
+    previewValue: 'msds-cam-group-small'
+  },
+  {
+    name: 'Cameras, infinite, animated',
+    value: '/Static/svg/richIcons/cam-group-big.svg',
+    previewValue: 'msds-cam-group-big'
+  },
+  {
+    name: 'Car',
+    value: '/Static/svg/richIcons/car.svg',
+    previewValue: 'msds-car'
+  },
+  {
+    name: 'Care',
+    value: '/Static/svg/richIcons/care.svg',
+    previewValue: 'msds-care'
+  },
+  {
+    name: 'Catalogue',
+    value: '/Static/svg/richIcons/catalogue.svg',
+    previewValue: 'msds-catalogue'
+  },
+  {
+    name: 'Certification',
+    value: '/Static/svg/richIcons/certification.svg',
+    previewValue: 'msds-certification'
+  },
+  {
+    name: 'Checklist',
+    value: '/Static/svg/richIcons/checklist.svg',
+    previewValue: 'msds-checklist'
+  },
+  {
+    name: 'Checkmark',
+    value: '/Static/svg/richIcons/checkmark.svg',
+    previewValue: 'msds-checkmark'
+  },
+  {
+    name: 'Checkmark Badge',
+    value: '/Static/svg/richIcons/checkmark-badge.svg',
+    previewValue: 'msds-checkmark-badge'
+  },
+  {
+    name: 'Co-working',
+    value: '/Static/svg/richIcons/co-working.svg',
+    previewValue: 'msds-co-working'
+  },
+  {
+    name: 'Coffee',
+    value: '/Static/svg/richIcons/coffee.svg',
+    previewValue: 'msds-coffee'
+  },
+  {
+    name: 'Community',
+    value: '/Static/svg/richIcons/community.svg',
+    previewValue: 'msds-community'
+  },
+  {
+    name: 'Company',
+    value: '/Static/svg/richIcons/company.svg',
+    previewValue: 'msds-company'
+  },
+  {
+    name: 'Compare, detail',
+    value: '/Static/svg/richIcons/xprotect-compare-matrix.svg',
+    previewValue: 'msds-xprotect-compare-matrix'
+  },
+  {
+    name: 'Compare, high level, animated',
+    value: '/Static/svg/richIcons/xprotect-compare-products.svg',
+    previewValue: 'msds-xprotect-compare-products'
+  },
+  {
+    name: 'Compare, releases, animated',
+    value: '/Static/svg/richIcons/xprotect-compare-releases.svg',
+    previewValue: 'msds-xprotect-compare-releases'
+  },
+  {
+    name: 'Complete Flow',
+    value: '/Static/svg/richIcons/complete-flow.svg',
+    previewValue: 'msds-complete-flow'
+  },
+  {
+    name: 'Consumer',
+    value: '/Static/svg/richIcons/consumer.svg',
+    previewValue: 'msds-consumer'
+  },
+  {
+    name: 'Contact',
+    value: '/Static/svg/richIcons/contact-illustration.svg',
+    previewValue: 'msds-contact-illustration'
+  },
+  {
+    name: 'Contact, notification',
+    value: '/Static/svg/richIcons/contact-notification.svg',
+    previewValue: 'msds-contact-notification'
+  },
+  {
+    name: 'Crime',
+    value: '/Static/svg/richIcons/crime.svg',
+    previewValue: 'msds-community'
+  },
+  {
+    name: 'Crowd Management',
+    value: '/Static/svg/richIcons/crowd-management.svg',
+    previewValue: 'msds-crowd-management'
+  },
+  {
+    name: 'Customer Story',
+    value: '/Static/svg/richIcons/customer-stories.svg',
+    previewValue: 'msds-customer-stories'
+  },
+  {
+    name: 'Customizable',
+    value: '/Static/svg/richIcons/customizable.svg',
+    previewValue: 'msds-customizable'
+  },
+  {
+    name: 'Cyber Security',
+    value: '/Static/svg/richIcons/cyber-security.svg',
+    previewValue: 'msds-cyber-security'
+  },
+  {
+    name: 'Dashboard',
+    value: '/Static/svg/richIcons/dashboard.svg',
+    previewValue: 'msds-dashboard'
+  },
+  {
+    name: 'Decision',
+    value: '/Static/svg/richIcons/decision-making.svg',
+    previewValue: 'msds-decision-making'
+  },
+  {
+    name: 'Deployment',
+    value: '/Static/svg/richIcons/getting-started.svg',
+    previewValue: 'msds-getting-started'
+  },
+  {
+    name: 'Deployment, device',
+    value: '/Static/svg/richIcons/deployment-device.svg',
+    previewValue: 'msds-deployment-device'
+  },
+  {
+    name: 'Design, animated',
+    value: '/Static/svg/richIcons/design-animated.svg',
+    previewValue: 'msds-design-animated'
+  },
+  {
+    name: 'Design, static',
+    value: '/Static/svg/richIcons/design.svg',
+    previewValue: 'msds-design'
+  },
+  {
+    name: 'Devices',
+    value: '/Static/svg/richIcons/devices.svg',
+    previewValue: 'msds-devices'
+  },
+  {
+    name: 'Devices, web',
+    value: '/Static/svg/richIcons/devices-web.svg',
+    previewValue: 'msds-devices-web'
+  },
+  {
+    name: 'Discount',
+    value: '/Static/svg/richIcons/discount.svg',
+    previewValue: 'msds-discount'
+  },
+  {
+    name: 'Document',
+    value: '/Static/svg/richIcons/document.svg',
+    previewValue: 'msds-document'
+  },
+  {
+    name: 'Documentation',
+    value: '/Static/svg/richIcons/documentation.svg',
+    previewValue: 'msds-documentation'
+  },
+  {
+    name: 'Download',
+    value: '/Static/svg/richIcons/download-illustration.svg',
+    previewValue: 'msds-download-illustration'
+  },
+  {
+    name: 'E-learning',
+    value: '/Static/svg/richIcons/e-learning.svg',
+    previewValue: 'msds-e-learning'
+  },
+  {
+    name: 'Emergency',
+    value: '/Static/svg/richIcons/emergency.svg',
+    previewValue: 'msds-emergency'
+  },
+  {
+    name: 'Employees',
+    value: '/Static/svg/richIcons/employees.svg',
+    previewValue: 'msds-employees'
+  },
+  {
+    name: 'End User',
+    value: '/Static/svg/richIcons/end-user.svg',
+    previewValue: 'msds-end-user'
+  },
+  {
+    name: 'Explore',
+    value: '/Static/svg/richIcons/explore.svg',
+    previewValue: 'msds-explore'
+  },
+  {
+    name: 'Extension',
+    value: '/Static/svg/richIcons/extension.svg',
+    previewValue: 'msds-extension'
+  },
+  {
+    name: 'Faq',
+    value: '/Static/svg/richIcons/faq.svg',
+    previewValue: 'msds-faq'
+  },
+  {
+    name: 'Features',
+    value: '/Static/svg/richIcons/feature-rich.svg',
+    previewValue: 'msds-feature-rich'
+  },
+  {
+    name: 'Feedback',
+    value: '/Static/svg/richIcons/feedback.svg',
+    previewValue: 'msds-feedback'
+  },
+  {
+    name: 'Feedback, notification',
+    value: '/Static/svg/richIcons/feedback-notification.svg',
+    previewValue: 'msds-feedback-notification'
+  },
+  {
+    name: 'Find',
+    value: '/Static/svg/richIcons/find.svg',
+    previewValue: 'msds-find'
+  },
+  {
+    name: 'Flexibility',
+    value: '/Static/svg/richIcons/flexibility.svg',
+    previewValue: 'msds-flexibility'
+  },
+  {
+    name: 'Form',
+    value: '/Static/svg/richIcons/form-icon.svg',
+    previewValue: 'msds-form-icon'
+  },
+  {
+    name: 'Global',
+    value: '/Static/svg/richIcons/milestone-global-offices-illustration.svg',
+    previewValue: 'msds-milestone-global-offices-illustration'
+  },
+  {
+    name: 'Global Partner Network',
+    value: '/Static/svg/richIcons/global-partner-network.svg',
+    previewValue: 'msds-global-partner-network'
+  },
+  {
+    name: 'Growth Data',
+    value: '/Static/svg/richIcons/growth-data.svg',
+    previewValue: 'msds-growth-data'
+  },
+  {
+    name: 'Happiness',
+    value: '/Static/svg/richIcons/happiness.svg',
+    previewValue: 'msds-happiness'
+  },
+  {
+    name: 'Hardware',
+    value: '/Static/svg/richIcons/hardware.svg',
+    previewValue: 'msds-hardware'
+  },
+  {
+    name: 'Hardware, Applications, Software',
+    value: '/Static/svg/richIcons/hardware-applications-software.svg',
+    previewValue: 'msds-hardware-applications-software'
+  },
+  {
+    name: 'Hardware, Services, Documentation',
+    value: '/Static/svg/richIcons/hardware-services-documentation.svg',
+    previewValue: 'msds-hardware-services-documentation'
+  },
+  {
+    name: 'Innovation',
+    value: '/Static/svg/richIcons/innovation.svg',
+    previewValue: 'msds-innovation'
+  },
+  {
+    name: 'Intelligence',
+    value: '/Static/svg/richIcons/intelligence.svg',
+    previewValue: 'msds-intelligence'
+  },
+  {
+    name: 'Interconnect',
+    value: '/Static/svg/richIcons/interconnect.svg',
+    previewValue: 'msds-interconnect'
+  },
+  {
+    name: 'Investigation',
+    value: '/Static/svg/richIcons/investigation.svg',
+    previewValue: 'msds-investigation'
+  },
+  {
+    name: 'Join',
+    value: '/Static/svg/richIcons/join.svg',
+    previewValue: 'msds-join'
+  },
+  {
+    name: 'Key Features',
+    value: '/Static/svg/richIcons/key-features.svg',
+    previewValue: 'msds-key-features'
+  },
+  {
+    name: 'Languages',
+    value: '/Static/svg/richIcons/languages.svg',
+    previewValue: 'msds-languages'
+  },
+  {
+    name: 'Leads',
+    value: '/Static/svg/richIcons/get-leads.svg',
+    previewValue: 'msds-get-leads'
+  },
+  {
+    name: 'License Governance',
+    value: '/Static/svg/richIcons/license-governance.svg',
+    previewValue: 'msds-license-governance'
+  },
+  {
+    name: 'License Key',
+    value: '/Static/svg/richIcons/license-key.svg',
+    previewValue: 'msds-license-key'
+  },
+  {
+    name: 'Like',
+    value: '/Static/svg/richIcons/ease-of-use.svg',
+    previewValue: 'msds-ease-of-use'
+  },
+  {
+    name: 'Like, notification',
+    value: '/Static/svg/richIcons/like-notification.svg',
+    previewValue: 'msds-like-notification'
+  },
+  {
+    name: 'Listen',
+    value: '/Static/svg/richIcons/listen.svg',
+    previewValue: 'msds-listen'
+  },
+  {
+    name: 'Live Streaming',
+    value: '/Static/svg/richIcons/live-streaming.svg',
+    previewValue: 'msds-live-streaming'
+  },
+  {
+    name: 'Logged In',
+    value: '/Static/svg/richIcons/logged-in.svg',
+    previewValue: 'msds-logged-in'
+  },
+  {
+    name: 'LPR',
+    value: '/Static/svg/richIcons/lpr.svg',
+    previewValue: 'msds-lpr'
+  },
+  {
+    name: 'Marketplace, filter',
+    value: '/Static/svg/richIcons/marketplace-filter.svg',
+    previewValue: 'msds-marketplace-filter'
+  },
+  {
+    name: 'Marketplace, interface',
+    value: '/Static/svg/richIcons/marketplace-interface.svg',
+    previewValue: 'msds-marketplace-interface'
+  },
+  {
+    name: 'Milestone in the Media',
+    value: '/Static/svg/richIcons/milestone-in-the-media.svg',
+    previewValue: 'msds-milestone-in-the-media'
+  },
+  {
+    name: 'My Milestone',
+    value: '/Static/svg/richIcons/my-milestone.svg',
+    previewValue: 'msds-my-milestone'
+  },
+  {
+    name: 'Network',
+    value: '/Static/svg/richIcons/network.svg',
+    previewValue: 'msds-network'
+  },
+  {
+    name: 'Newspaper',
+    value: '/Static/svg/richIcons/newspaper.svg',
+    previewValue: 'msds-newspaper'
+  },
+  {
+    name: 'No. 1',
+    value: '/Static/svg/richIcons/no-1.svg',
+    previewValue: 'msds-no-1'
+  },
+  {
+    name: 'No Backup, animated',
+    value: '/Static/svg/richIcons/no-backup.svg',
+    previewValue: 'msds-no-backup'
+  },
+  {
+    name: 'Okay',
+    value: '/Static/svg/richIcons/okay.svg',
+    previewValue: 'msds-okay'
+  },
+  {
+    name: 'One hub',
+    value: '/Static/svg/richIcons/one-hub.svg',
+    previewValue: 'msds-one-hub'
+  },
+  {
+    name: 'Open Platform',
+    value: '/Static/svg/richIcons/open-platform.svg',
+    previewValue: 'msds-open-platform'
+  },
+  {
+    name: 'Open Platform Community',
+    value: '/Static/svg/richIcons/open-platform-community.svg',
+    previewValue: 'msds-open-platform-community'
+  },
+  {
+    name: 'Partnership',
+    value: '/Static/svg/richIcons/partnership.svg',
+    previewValue: 'msds-partnership'
+  },
+  {
+    name: 'Press Release',
+    value: '/Static/svg/richIcons/press-release.svg',
+    previewValue: 'msds-press-release'
+  },
+  {
+    name: 'Product Overview',
+    value: '/Static/svg/richIcons/product-overview-illustration.svg',
+    previewValue: 'msds-product-overview-illustration'
+  },
+  {
+    name: 'Project, animated',
+    value: '/Static/svg/richIcons/project-animated.svg',
+    previewValue: 'msds-project-animated'
+  },
+  {
+    name: 'Project, static',
+    value: '/Static/svg/richIcons/project.svg',
+    previewValue: 'msds-project'
+  },
+  {
+    name: 'Promotion',
+    value: '/Static/svg/richIcons/promotion.svg',
+    previewValue: 'msds-promotion'
+  },
+  {
+    name: 'Publish',
+    value: '/Static/svg/richIcons/publish.svg',
+    previewValue: 'msds-publish'
+  },
+  {
+    name: 'Quote',
+    value: '/Static/svg/richIcons/quote.svg',
+    previewValue: 'msds-quote'
+  },
+  {
+    name: 'Reaction Mode',
+    value: '/Static/svg/richIcons/reaction-mode.svg',
+    previewValue: 'msds-reaction-mode'
+  },
+  {
+    name: 'Releases',
+    value: '/Static/svg/richIcons/releases.svg',
+    previewValue: 'msds-releases'
+  },
+  {
+    name: 'Reminder',
+    value: '/Static/svg/richIcons/reminder.svg',
+    previewValue: 'msds-reminder'
+  },
+  {
+    name: 'Save Money',
+    value: '/Static/svg/richIcons/save-money.svg',
+    previewValue: 'msds-save-money'
+  },
+  {
+    name: 'Scalable',
+    value: '/Static/svg/richIcons/scalable.svg',
+    previewValue: 'msds-scalable'
+  },
+  {
+    name: 'Responsible',
+    value: '/Static/svg/richIcons/scale-balance.svg',
+    previewValue: 'msds-scale-balance'
+  },
+  {
+    name: 'Scale Up',
+    value: '/Static/svg/richIcons/scale-up.svg',
+    previewValue: 'msds-scale-up'
+  },
+  {
+    name: 'Screen Recording, animated',
+    value: '/Static/svg/richIcons/screen-recording.svg',
+    previewValue: 'msds-screen-recording'
+  },
+  {
+    name: 'Searching',
+    value: '/Static/svg/richIcons/searching.svg',
+    previewValue: 'msds-searching'
+  },
+  {
+    name: 'Secure',
+    value: '/Static/svg/richIcons/secure.svg',
+    previewValue: 'msds-secure'
+  },
+  {
+    name: 'Secure, GDPR',
+    value: '/Static/svg/richIcons/secure-gdpr.svg',
+    previewValue: 'msds-secure-gdpr'
+  },
+  {
+    name: 'Service, coding ',
+    value: '/Static/svg/richIcons/service-coding.svg',
+    previewValue: 'msds-service-coding'
+  },
+  {
+    name: 'Sign Up',
+    value: '/Static/svg/richIcons/sign-up.svg',
+    previewValue: 'msds-sign-up'
+  },
+  {
+    name: 'Single Site, animated',
+    value: '/Static/svg/richIcons/single-site.svg',
+    previewValue: 'msds-single-site'
+  },
+  {
+    name: 'Smart Wall',
+    value: '/Static/svg/richIcons/smart-wall.svg',
+    previewValue: 'msds-smart-wall'
+  },
+  {
+    name: 'Smart Wall, person',
+    value: '/Static/svg/richIcons/smart-wall-person.svg',
+    previewValue: 'msds-smart-wall-person'
+  },
+  {
+    name: 'Solutions Design, animated',
+    value: '/Static/svg/richIcons/solutions-design-tool.svg',
+    previewValue: 'msds-solutions-design-tool'
+  },
+  {
+    name: 'Submit for Feedback',
+    value: '/Static/svg/richIcons/submit-for-feedback.svg',
+    previewValue: 'msds-submit-for-feedback'
+  },
+  {
+    name: 'Subscriptions',
+    value: '/Static/svg/richIcons/subscriptions.svg',
+    previewValue: 'msds-subscriptions'
+  },
+  {
+    name: 'Support, call',
+    value: '/Static/svg/richIcons/support-call.svg',
+    previewValue: 'msds-support-call'
+  },
+  {
+    name: 'Support, chat, female',
+    value: '/Static/svg/richIcons/support-chat-female.svg',
+    previewValue: 'msds-support-chat-female'
+  },
+  {
+    name: 'Support, chat, male',
+    value: '/Static/svg/richIcons/support-chat-male.svg',
+    previewValue: 'msds-support-chat-male'
+  },
+  {
+    name: 'Support, mobile',
+    value: '/Static/svg/richIcons/mobile-support.svg',
+    previewValue: 'msds-mobile-support'
+  },
+  {
+    name: 'Support, self service',
+    value: '/Static/svg/richIcons/self-service-support.svg',
+    previewValue: 'msds-self-service-support'
+  },
+  {
+    name: 'Support, technical',
+    value: '/Static/svg/richIcons/support-technical.svg',
+    previewValue: 'msds-support-technical'
+  },
+  {
+    name: 'Switch On',
+    value: '/Static/svg/richIcons/switch-on.svg',
+    previewValue: 'msds-switch-on'
+  },
+  {
+    name: 'System Builder',
+    value: '/Static/svg/richIcons/system-builder.svg',
+    previewValue: 'msds-system-builder'
+  },
+  {
+    name: 'Tags',
+    value: '/Static/svg/richIcons/tags.svg',
+    previewValue: 'msds-tags'
+  },
+  {
+    name: 'Target',
+    value: '/Static/svg/richIcons/target.svg',
+    previewValue: 'msds-target'
+  },
+  {
+    name: 'Time-to-Market',
+    value: '/Static/svg/richIcons/time-to-market.svg',
+    previewValue: 'msds-time-to-market'
+  },
+  {
+    name: 'Tools',
+    value: '/Static/svg/richIcons/tools.svg',
+    previewValue: 'msds-tools'
+  },
+  {
+    name: 'Trade Show',
+    value: '/Static/svg/richIcons/trade-show.svg',
+    previewValue: 'msds-trade-show'
+  },
+  {
+    name: 'Transaction',
+    value: '/Static/svg/richIcons/transaction.svg',
+    previewValue: 'msds-transaction'
+  },
+  {
+    name: 'Translation',
+    value: '/Static/svg/richIcons/translation.svg',
+    previewValue: 'msds-translation'
+  },
+  {
+    name: 'Update',
+    value: '/Static/svg/richIcons/upgrade.svg',
+    previewValue: 'msds-upgrade'
+  },
+  {
+    name: 'Update Content',
+    value: '/Static/svg/richIcons/update-content.svg',
+    previewValue: 'msds-update-content'
+  },
+  {
+    name: 'Update Content Then Publish',
+    value: '/Static/svg/richIcons/update-content-then-publish.svg',
+    previewValue: 'msds-update-content-then-publish'
+  },
+  {
+    name: 'User Review',
+    value: '/Static/svg/richIcons/user-review.svg',
+    previewValue: 'msds-user-review'
+  },
+  {
+    name: 'Verification',
+    value: '/Static/svg/richIcons/verification.svg',
+    previewValue: 'msds-verification'
+  },
+  {
+    name: 'Warning',
+    value: '/Static/svg/richIcons/warning.svg',
+    previewValue: 'msds-warning'
+  },
+  {
+    name: 'Watch',
+    value: '/Static/svg/richIcons/watch.svg',
+    previewValue: 'msds-watch'
+  },
+  {
+    name: 'Webinar',
+    value: '/Static/svg/richIcons/webinar.svg',
+    previewValue: 'msds-webinar'
+  },
+  {
+    name: 'Well Being',
+    value: '/Static/svg/richIcons/well-being.svg',
+    previewValue: 'msds-well-being'
+  },
+  {
+    name: 'World Leading',
+    value: '/Static/svg/richIcons/world-leading.svg',
+    previewValue: 'msds-world-leading'
+  },
+  {
+    name: 'XProtect',
+    value: '/Static/svg/richIcons/xprotect.svg',
+    previewValue: 'msds-xprotect'
+  },
+  {
+    name: 'Xprotect, Access, Anywhere',
+    value: '/Static/svg/richIcons/xprotect-access-anywhere.svg',
+    previewValue: 'msds-xprotect-access-anywhere'
+  },
+  {
+    name: 'Youtube',
+    value: '/Static/svg/richIcons/youtube.svg',
+    previewValue: 'msds-youtube'
+  },
+  {
+    name: 'Locations, animated',
+    value: '/Static/svg/richIcons/planet.svg',
+    previewValue: 'msds-planet'
+  },
+  {
+    name: 'Integrated Surveillance System, animated',
+    value: '/Static/svg/richIcons/advanced-super-surveillance.svg',
+    previewValue: 'msds-advanced-super-surveillance'
+  },
+  {
+    name: '24-7, animated',
+    value: '/Static/svg/richIcons/clock-24-7.svg',
+    previewValue: 'msds-clock-24-7'
+  },
+  {
+    name: 'Calendar, month, animated',
+    value: '/Static/svg/richIcons/cal-monthly.svg',
+    previewValue: 'msds-cal-monthly'
+  },
+  {
+    name: 'Calendar, week, animated',
+    value: '/Static/svg/richIcons/cal-weekly.svg',
+    previewValue: 'msds-cal-weekly'
+  },
+  {
+    name: 'Access Control',
+    value: '/Static/svg/richIcons/access-control-illustration.svg',
+    previewValue: 'msds-access-control-illustration'
+  },
+  {
+    name: 'Reliable',
+    value: '/Static/svg/richIcons/reliable.svg',
+    previewValue: 'msds-reliable'
+  },
+  {
+    name: 'Body Worn',
+    value: '/Static/svg/richIcons/body-worn.svg',
+    previewValue: 'msds-body-worn'
+  },
+  {
+    name: 'Camera, outdated',
+    value: '/Static/svg/richIcons/outdated-hardware.svg',
+    previewValue: 'msds-outdated-hardware'
+  },
+  {
+    name: 'Add',
+    value: '/Static/svg/richIcons/add.svg',
+    previewValue: 'msds-add'
+  },
+  {
+    name: 'Covid',
+    value: '/Static/svg/richIcons/covid.svg',
+    previewValue: 'msds-covid'
+  },
+  {
+    name: 'Drone',
+    value: '/Static/svg/richIcons/drone.svg',
+    previewValue: 'msds-drone'
+  },
+  {
+    name: 'Phishing',
+    value: '/Static/svg/richIcons/phishing.svg',
+    previewValue: 'msds-phishing'
+  },
+  {
+    name: 'Robot',
+    value: '/Static/svg/richIcons/robot.svg',
+    previewValue: 'msds-robot'
+  },
+  {
+    name: 'Sale Buyer',
+    value: '/Static/svg/richIcons/sale-buyer.svg',
+    previewValue: 'msds-sale-buyer'
+  },
+  {
+    name: 'Save The Date',
+    value: '/Static/svg/richIcons/save-the-date.svg',
+    previewValue: 'msds-save-the-date'
+  },
+  {
+    name: 'Social Distancing',
+    value: '/Static/svg/richIcons/social-distancing.svg',
+    previewValue: 'msds-social-distancing'
+  },
+  {
+    name: 'Software',
+    value: '/Static/svg/richIcons/software.svg',
+    previewValue: 'msds-software'
+  },
+  {
+    name: 'Storage',
+    value: '/Static/svg/richIcons/storage.svg',
+    previewValue: 'msds-storage'
+  },
+  {
+    name: 'World Communication',
+    value: '/Static/svg/richIcons/world-communication.svg',
+    previewValue: 'msds-world-communication'
+  },
+  {
+    name: 'Ease of Use',
+    value: '/Static/svg/richIcons/mind-at-ease.svg',
+    previewValue: 'msds-mind-at-ease'
+  },
+  ////////////////////////////////////////
   {
     name: 'Marketplace Challenges Assist People Feel Safe Leaving',
-    value: 'msds-marketplace-challenges-assist-people-feel-safe-leaving'
+    value: '/Static/svg/richIcons/marketplace-challenges-assist-people-feel-safe-leaving.svg',
+    previewValue: 'msds-marketplace-challenges-assist-people-feel-safe-leaving'
   },
   {
     name: 'Marketplace Challenges Assist People In Finding Their Vehicles',
-    value: 'msds-marketplace-challenges-assist-people-in-finding-their-vehicles'
+    value: '/Static/svg/richIcons/marketplace-challenges-assist-people-in-finding-their-vehicles.svg',
+    previewValue: 'msds-marketplace-challenges-assist-people-in-finding-their-vehicles'
   },
-  { name: 'Marketplace Challenges Avoid Employee Theft', value: 'msds-marketplace-challenges-avoid-employee-theft' },
+  {
+    name: 'Marketplace Challenges Avoid Employee Theft',
+    value: '/Static/svg/richIcons/marketplace-challenges-avoid-employee-theft.svg',
+    previewValue: 'msds-marketplace-challenges-avoid-employee-theft'
+  },
   {
     name: 'Marketplace Challenges Control Access To Restricted Areas',
-    value: 'msds-marketplace-challenges-control-access-to-restricted-areas'
+    value: '/Static/svg/richIcons/marketplace-challenges-control-access-to-restricted-areas.svg',
+    previewValue: 'msds-marketplace-challenges-control-access-to-restricted-areas'
   },
   {
     name: 'Marketplace Challenges Discover Inefficiencies In Cargo Movement',
-    value: 'msds-marketplace-challenges-discover-inefficiencies-in-cargo-movement'
+    value: '/Static/svg/richIcons/marketplace-challenges-discover-inefficiencies-in-cargo-movement.svg',
+    previewValue: 'msds-marketplace-challenges-discover-inefficiencies-in-cargo-movement'
   },
-  { name: 'Marketplace Challenges Find Lost Children', value: 'msds-marketplace-challenges-find-lost-children' },
+  {
+    name: 'Marketplace Challenges Find Lost Children',
+    value: '/Static/svg/richIcons/marketplace-challenges-find-lost-children.svg',
+    previewValue: 'msds-marketplace-challenges-find-lost-children'
+  },
   {
     name: 'Marketplace Challenges Gather Evidence For Criminal Investigation',
-    value: 'msds-marketplace-challenges-gather-evidence-for-criminal-investigation'
+    value: '/Static/svg/richIcons/marketplace-challenges-gather-evidence-for-criminal-investigation.svg',
+    previewValue: 'msds-marketplace-challenges-gather-evidence-for-criminal-investigation'
   },
   {
     name: 'Marketplace Challenges Improve Wait Time In Lines',
-    value: 'msds-marketplace-challenges-improve-wait-time-in-lines'
+    value: '/Static/svg/richIcons/marketplace-challenges-improve-wait-time-in-lines.svg',
+    previewValue: 'msds-marketplace-challenges-improve-wait-time-in-lines'
   },
   {
     name: 'Marketplace Challenges Money Disputes With Customers',
-    value: 'msds-marketplace-challenges-money-disputes-with-customers'
+    value: '/Static/svg/richIcons/marketplace-challenges-money-disputes-with-customers.svg',
+    previewValue: 'msds-storage'
   },
   {
     name: 'Marketplace Challenges Personalized Customer Experience',
-    value: 'msds-marketplace-challenges-personalized-customer-experience'
+    value: '/Static/svg/richIcons/marketplace-challenges-personalized-customer-experience.svg',
+    previewValue: 'msds-marketplace-challenges-personalized-customer-experience'
   },
   {
     name: 'Marketplace Challenges Prevent Multiple People From Entering A Door On A Single Access Badge',
-    value: 'msds-marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge'
+    value:
+      '/Static/svg/richIcons/marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge.svg',
+    previewValue: 'msds-marketplace-challenges-prevent-multiple-people-from-entering-a-door-on-a-single-access-badge'
   },
   {
     name: 'Marketplace Challenges Provide Evidence Against Lawsuit',
-    value: 'msds-marketplace-challenges-provide-evidence-against-lawsuit'
+    value: '/Static/svg/richIcons/marketplace-challenges-provide-evidence-against-lawsuit.svg',
+    previewValue: 'msds-marketplace-challenges-provide-evidence-against-lawsuit'
   },
   {
     name: 'Marketplace Challenges React To Confrontations Before They Escalate',
-    value: 'msds-marketplace-challenges-react-to-confrontations-before-they-escalate'
+    value: '/Static/svg/richIcons/marketplace-challenges-react-to-confrontations-before-they-escalate.svg',
+    previewValue: 'msds-marketplace-challenges-react-to-confrontations-before-they-escalate'
   },
   {
     name: 'Marketplace Challenges Reduce Property Damage',
-    value: 'msds-marketplace-challenges-reduce-property-damage'
+    value: '/Static/svg/richIcons/marketplace-challenges-reduce-property-damage.svg',
+    previewValue: 'msds-marketplace-challenges-reduce-property-damage'
   },
   {
     name: 'Marketplace Challenges Reduce Workplace Accidents',
-    value: 'msds-marketplace-challenges-reduce-workplace-accidents'
+    value: '/Static/svg/richIcons/marketplace-challenges-reduce-workplace-accidents.svg',
+    previewValue: 'msds-marketplace-challenges-reduce-workplace-accidents'
   },
   {
     name: 'Marketplace Challenges Respond To Medical Emergencies',
-    value: 'msds-marketplace-challenges-respond-to-medical-emergencies'
+    value: '/Static/svg/richIcons/marketplace-challenges-respond-to-medical-emergencies.svg',
+    previewValue: 'msds-marketplace-challenges-respond-to-medical-emergencies'
   },
   {
     name: 'Marketplace Challenges Situational Awareness To Response Teams',
-    value: 'msds-marketplace-challenges-situational-awareness-to-response-teams'
+    value: '/Static/svg/richIcons/marketplace-challenges-situational-awareness-to-response-teams.svg',
+    previewValue: 'msds-marketplace-challenges-situational-awareness-to-response-teams'
   },
   {
     name: 'Marketplace Challenges Understand Customer Behavior',
-    value: 'msds-marketplace-challenges-understand-customer-behavior'
+    value: '/Static/svg/richIcons/marketplace-challenges-understand-customer-behavior.svg',
+    previewValue: 'msds-marketplace-challenges-understand-customer-behavior'
   },
-  { name: 'Marketplace Challenges Vandalism', value: 'msds-marketplace-challenges-vandalism' },
-  { name: 'Marketplace Industries Airports', value: 'msds-marketplace-industries-airports' },
-  { name: 'Marketplace Industries Art And Entertainment', value: 'msds-marketplace-industries-art-and-entertainment' },
-  { name: 'Marketplace Industries City Surveillance', value: 'msds-marketplace-industries-city-surveillance' },
-  { name: 'Marketplace Industries Construction', value: 'msds-marketplace-industries-construction' },
+  {
+    name: 'Marketplace Challenges Vandalism',
+    value: '/Static/svg/richIcons/marketplace-challenges-vandalism.svg',
+    previewValue: 'msds-marketplace-challenges-vandalism'
+  },
+  {
+    name: 'Marketplace Industries Airports',
+    value: '/Static/svg/richIcons/marketplace-industries-airports.svg',
+    previewValue: 'msds-marketplace-industries-airports'
+  },
+  {
+    name: 'Marketplace Industries Art And Entertainment',
+    value: '/Static/svg/richIcons/marketplace-industries-art-and-entertainment.svg',
+    previewValue: 'msds-marketplace-industries-art-and-entertainment'
+  },
+  {
+    name: 'Marketplace Industries City Surveillance',
+    value: '/Static/svg/richIcons/marketplace-industries-city-surveillance.svg',
+    previewValue: 'msds-marketplace-industries-city-surveillance'
+  },
+  {
+    name: 'Marketplace Industries Construction',
+    value: '/Static/svg/richIcons/marketplace-industries-construction.svg',
+    previewValue: 'msds-marketplace-industries-construction'
+  },
   {
     name: 'Marketplace Industries Critical Infrastructure',
-    value: 'msds-marketplace-industries-critical-infrastructure'
+    value: '/Static/svg/richIcons/marketplace-industries-critical-infrastructure.svg',
+    previewValue: 'msds-marketplace-industries-critical-infrastructure'
   },
-  { name: 'Marketplace Industries Education', value: 'msds-marketplace-industries-education' },
-  { name: 'Marketplace Industries Finance And Insurance', value: 'msds-marketplace-industries-finance-and-insurance' },
-  { name: 'Marketplace Industries Healthcare', value: 'msds-marketplace-industries-healthcare' },
+  {
+    name: 'Marketplace Industries Education',
+    value: '/Static/svg/richIcons/marketplace-industries-education.svg',
+    previewValue: 'msds-marketplace-industries-education'
+  },
+  {
+    name: 'Marketplace Industries Finance And Insurance',
+    value: '/Static/svg/richIcons/marketplace-industries-finance-and-insurance.svg',
+    previewValue: 'msds-marketplace-industries-finance-and-insurance'
+  },
+  {
+    name: 'Marketplace Industries Healthcare',
+    value: '/Static/svg/richIcons/marketplace-industries-healthcare.svg',
+    previewValue: 'msds-marketplace-industries-healthcare'
+  },
   {
     name: 'Marketplace Industries Information Technology',
-    value: 'msds-marketplace-industries-information-technology'
+    value: '/Static/svg/richIcons/marketplace-industries-information-technology.svg',
+    previewValue: 'msds-marketplace-industries-information-technology'
   },
-  { name: 'Marketplace Industries Manufacturing', value: 'msds-marketplace-industries-manufacturing' },
-  { name: 'Marketplace Industries Public Administration', value: 'msds-marketplace-industries-public-administration' },
-  { name: 'Marketplace Industries Public Transport', value: 'msds-marketplace-industries-public-transport' },
-  { name: 'Marketplace Industries Retail', value: 'msds-marketplace-industries-retail' },
-  { name: 'Marketplace Industries Seaports', value: 'msds-marketplace-industries-seaports' },
-  { name: 'Marketplace Industries Trafic Monitoring', value: 'msds-marketplace-industries-trafic-monitoring' },
-  { name: 'Marketplace Industries Utilities', value: 'msds-marketplace-industries-utilities' },
-  { name: 'Marketplace Practice Access Control', value: 'msds-marketplace-practice-access-control' },
-  { name: 'Marketplace Practice Business Intelligence', value: 'msds-marketplace-practice-business-intelligence' },
-  { name: 'Marketplace Practice Business Solutions', value: 'msds-marketplace-practice-business-solutions' },
-  { name: 'Marketplace Practice Central Monitoring', value: 'msds-marketplace-practice-central-monitoring' },
+  {
+    name: 'Marketplace Industries Manufacturing',
+    value: '/Static/svg/richIcons/marketplace-industries-manufacturing.svg',
+    previewValue: 'msds-marketplace-industries-manufacturing'
+  },
+  {
+    name: 'Marketplace Industries Public Administration',
+    value: '/Static/svg/richIcons/marketplace-industries-public-administration.svg',
+    previewValue: 'msds-marketplace-industries-public-administration'
+  },
+  {
+    name: 'Marketplace Industries Public Transport',
+    value: '/Static/svg/richIcons/marketplace-industries-public-transport.svg',
+    previewValue: 'msds-marketplace-industries-public-transport'
+  },
+  {
+    name: 'Marketplace Industries Retail',
+    value: '/Static/svg/richIcons/marketplace-industries-retail.svg',
+    previewValue: 'msds-marketplace-industries-retail'
+  },
+  {
+    name: 'Marketplace Industries Seaports',
+    value: '/Static/svg/richIcons/marketplace-industries-seaports.svg',
+    previewValue: 'msds-marketplace-industries-seaports'
+  },
+  {
+    name: 'Marketplace Industries Trafic Monitoring',
+    value: '/Static/svg/richIcons/marketplace-industries-trafic-monitoring.svg',
+    previewValue: 'msds-marketplace-industries-trafic-monitoring'
+  },
+  {
+    name: 'Marketplace Industries Utilities',
+    value: '/Static/svg/richIcons/marketplace-industries-utilities.svg',
+    previewValue: 'msds-marketplace-industries-utilities'
+  },
+  {
+    name: 'Marketplace Practice Access Control',
+    value: '/Static/svg/richIcons/marketplace-practice-access-control.svg',
+    previewValue: 'msds-marketplace-practice-access-control'
+  },
+  {
+    name: 'Marketplace Practice Business Intelligence',
+    value: '/Static/svg/richIcons/marketplace-practice-business-intelligence.svg',
+    previewValue: 'msds-marketplace-practice-business-intelligence'
+  },
+  {
+    name: 'Marketplace Practice Business Solutions',
+    value: '/Static/svg/richIcons/marketplace-practice-business-solutions.svg',
+    previewValue: 'msds-marketplace-practice-business-solutions'
+  },
+  {
+    name: 'Marketplace Practice Central Monitoring',
+    value: '/Static/svg/richIcons/marketplace-practice-central-monitoring.svg',
+    previewValue: 'msds-marketplace-practice-central-monitoring'
+  },
   {
     name: 'Marketplace Practice Cloud And Managed Services',
-    value: 'msds-marketplace-practice-cloud-and-managed-services'
+    value: '/Static/svg/richIcons/marketplace-practice-cloud-and-managed-services.svg',
+    previewValue: 'msds-marketplace-practice-cloud-and-managed-services'
   },
-  { name: 'Marketplace Practice Communication', value: 'msds-marketplace-practice-communication' },
-  { name: 'Marketplace Practice Crisis Emergency', value: 'msds-marketplace-practice-crisis-emergency' },
-  { name: 'Marketplace Practice Cyber Security', value: 'msds-marketplace-practice-cyber-security' },
+  {
+    name: 'Marketplace Practice Communication',
+    value: '/Static/svg/richIcons/marketplace-practice-communication.svg',
+    previewValue: 'msds-marketplace-practice-communication'
+  },
+  {
+    name: 'Marketplace Practice Crisis Emergency',
+    value: '/Static/svg/richIcons/marketplace-practice-crisis-emergency.svg',
+    previewValue: 'msds-marketplace-practice-crisis-emergency'
+  },
+  {
+    name: 'Marketplace Practice Cyber Security',
+    value: '/Static/svg/richIcons/marketplace-practice-cyber-security.svg',
+    previewValue: 'msds-marketplace-practice-cyber-security'
+  },
   {
     name: 'Marketplace Practice Detection And Deterrence',
-    value: 'msds-marketplace-practice-detection-and-deterrence'
+    value: '/Static/svg/richIcons/marketplace-practice-detection-and-deterrence.svg',
+    previewValue: 'msds-marketplace-practice-detection-and-deterrence'
   },
-  { name: 'Marketplace Practice Digital Infrastructure', value: 'msds-marketplace-practice-digital-infrastructure' },
-  { name: 'Marketplace Practice Facilities Management', value: 'msds-marketplace-practice-facilities-management' },
-  { name: 'Marketplace Practice Fire And Life Safety', value: 'msds-marketplace-practice-fire-and-life-safety' },
-  { name: 'Marketplace Practice Home Automation Iot', value: 'msds-marketplace-practice-home-automation-iot' },
-  { name: 'Marketplace Practice Intrusion And Alarm', value: 'msds-marketplace-practice-intrusion-and-alarm' },
-  { name: 'Marketplace Practice Investigation', value: 'msds-marketplace-practice-investigation' },
+  {
+    name: 'Marketplace Practice Digital Infrastructure',
+    value: '/Static/svg/richIcons/marketplace-practice-digital-infrastructure.svg',
+    previewValue: 'msds-marketplace-practice-digital-infrastructure'
+  },
+  {
+    name: 'Marketplace Practice Facilities Management',
+    value: '/Static/svg/richIcons/marketplace-practice-facilities-management.svg',
+    previewValue: 'msds-marketplace-practice-facilities-management'
+  },
+  {
+    name: 'Marketplace Practice Fire And Life Safety',
+    value: '/Static/svg/richIcons/marketplace-practice-fire-and-life-safety.svg',
+    previewValue: 'msds-marketplace-practice-fire-and-life-safety'
+  },
+  {
+    name: 'Marketplace Practice Home Automation Iot',
+    value: '/Static/svg/richIcons/marketplace-practice-home-automation-iot.svg',
+    previewValue: 'msds-marketplace-practice-home-automation-iot'
+  },
+  {
+    name: 'Marketplace Practice Intrusion And Alarm',
+    value: '/Static/svg/richIcons/marketplace-practice-intrusion-and-alarm.svg',
+    previewValue: 'msds-marketplace-practice-intrusion-and-alarm'
+  },
+  {
+    name: 'Marketplace Practice Investigation',
+    value: '/Static/svg/richIcons/marketplace-practice-investigation.svg',
+    previewValue: 'msds-marketplace-practice-investigation'
+  },
   {
     name: 'Marketplace Practice It Hardware And Equipment',
-    value: 'msds-marketplace-practice-it-hardware-and-equipment'
+    value: '/Static/svg/richIcons/marketplace-practice-it-hardware-and-equipment.svg',
+    previewValue: 'msds-marketplace-practice-it-hardware-and-equipment'
   },
-  { name: 'Marketplace Practice Privacy Protection', value: 'msds-marketplace-practice-privacy-protection' },
-  { name: 'Marketplace Practice Smart City', value: 'msds-marketplace-practice-smart-city' },
-  { name: 'Marketplace Practice Surveillance', value: 'msds-marketplace-practice-surveillance' },
-  { name: 'Marketplace Practice Tracking And Monitoring', value: 'msds-marketplace-practice-tracking-and-monitoring' },
-  { name: 'Marketplace Practice Vehicles And Traffic', value: 'msds-marketplace-practice-vehicles-and-traffic' },
-  { name: 'Marketplace Inspired', value: 'msds-marketplace-inspired' },
-  { name: 'Marketplace Product Page', value: 'msds-marketplace-product-page' },
-  { name: 'Marketplace Solution Service', value: 'msds-marketplace-solution-service' }
+  {
+    name: 'Marketplace Practice Privacy Protection',
+    value: '/Static/svg/richIcons/marketplace-practice-privacy-protection.svg',
+    previewValue: 'msds-marketplace-practice-privacy-protection'
+  },
+  {
+    name: 'Marketplace Practice Smart City',
+    value: '/Static/svg/richIcons/marketplace-practice-smart-city.svg',
+    previewValue: 'msds-marketplace-practice-smart-city'
+  },
+  {
+    name: 'Marketplace Practice Surveillance',
+    value: '/Static/svg/richIcons/marketplace-practice-surveillance.svg',
+    previewValue: 'msds-marketplace-practice-surveillance'
+  },
+  {
+    name: 'Marketplace Practice Tracking And Monitoring',
+    value: '/Static/svg/richIcons/marketplace-practice-tracking-and-monitoring.svg',
+    previewValue: 'msds-marketplace-practice-tracking-and-monitoring'
+  },
+  {
+    name: 'Marketplace Practice Vehicles And Traffic',
+    value: '/Static/svg/richIcons/marketplace-practice-vehicles-and-traffic.svg',
+    previewValue: 'msds-marketplace-practice-vehicles-and-traffic'
+  },
+  {
+    name: 'Marketplace Inspired',
+    value: '/Static/svg/richIcons/marketplace-inspired.svg',
+    previewValue: 'msds-marketplace-inspired'
+  },
+  {
+    name: 'Marketplace Product Page',
+    value: '/Static/svg/richIcons/marketplace-product-page.svg',
+    previewValue: 'msds-marketplace-product-page'
+  },
+  {
+    name: 'Marketplace Solution Service',
+    value: '/Static/svg/richIcons/marketplace-solution-service.svg',
+    previewValue: 'msds-marketplace-solution-service'
+  }
 ]
