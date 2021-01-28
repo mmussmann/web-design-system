@@ -66,9 +66,6 @@ State of the focused checkbox
   <div class="element-preview__inner">{{render '@checkbox-focus'}}</div>
 </div>
 
-```html
-{{render '@checkbox-focus'}}
-```
 
 ### Disabled State
 

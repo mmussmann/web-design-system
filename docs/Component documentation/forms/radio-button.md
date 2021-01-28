@@ -66,9 +66,6 @@ State of the focused radio button
   <div class="element-preview__inner">{{render '@radio-button-focus'}}</div>
 </div>
 
-```html
-{{render '@radio-button-focus'}}
-```
 
 ### Disabled State
 
