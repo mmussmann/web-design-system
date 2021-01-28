@@ -48,10 +48,6 @@ State of the hovered checkbox.
   <div class="element-preview__inner">{{render '@checkbox-hover'}}</div>
 </div>
 
-```html
-{{render '@checkbox-hover'}}
-```
-
 ### Checked State
 
 It can be checked programmatically by setting the "checked" property to the input element.

@@ -48,10 +48,6 @@ State of the hovered radio button.
   <div class="element-preview__inner">{{render '@radio-button-hover'}}</div>
 </div>
 
-```html
-{{render '@radio-button-hover'}}
-```
-
 ### Checked State
 
 It can be checked programmatically by setting the "checked" property to the input element.
