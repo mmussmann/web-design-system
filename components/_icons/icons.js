@@ -24,7 +24,7 @@ function createBootstrapWrapper() {
 function createRichIconElement(icon) {
   const iconElement = document.createElement('div')
 
-  iconElement.classList.add(icon.value)
+  iconElement.classList.add(icon.previewValue)
   iconElement.classList.add('msds-rich-icon')
   iconElement.setAttribute('title', icon.name)
 
