@@ -1,9 +1,9 @@
 ---
-title: Checkbox 
+title: Radio Button 
 ---
-## On this page we will go through our Checkbox component 
+## On this page we will go through our Radio Button component 
 
-Checkboxes allow the user to select one or more options from a set of items.
+Radio Button allow the user to select one option from a set of items.
 They can be used in forms, filters, lists etc.
 
 ### Table of contents
@@ -25,16 +25,16 @@ They can be used in forms, filters, lists etc.
 
 ## Overview
 ### Global Definition
-Each checkbox component is based on a global CSS class called "msds-checkbox". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
+Each radio button component is based on a global CSS class called "msds-radio-button". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
 
-The checkbox makes use of custom styling by replacing the default input element with a pseudo-element selector, yet it keeps the native "checked" boolean property to toggle its state on/off (or checked/unchecked).
+The radio button makes use of custom styling by replacing the default input element with a pseudo-element selector, yet it keeps the native "checked" boolean property to toggle its state on/off (or selected/unselected).
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-global-definition'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-global-definition'}}</div>
 </div>
 
 ```html
-{{render '@checkbox-global-definition'}}
+{{render '@radio-button-global-definition'}}
 ```
 
 
@@ -43,27 +43,27 @@ The styling of states are defined in the CSS file. Some of the states can be tri
 
 ### Hover State
 
-State of the hovered checkbox.
+State of the hovered radio button.
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-hover'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-hover'}}</div>
 </div>
 
 ### Checked State
 
 It can be checked programmatically by setting the "checked" property to the input element.
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-checked'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-selected'}}</div>
 </div>
 
 ```html
-{{render '@checkbox-checked'}}
+{{render '@radio-button-selected'}}
 ```
 
 ### Focus State
 
-State of the focused checkbox
+State of the focused radio button
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-focus'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-focus'}}</div>
 </div>
 
 
@@ -71,24 +71,24 @@ State of the focused checkbox
 
 It can be disabled programmatically by setting the "disabled" attribute to the input element.
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-disabled'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-disabled'}}</div>
 </div>
 
 ```html
-{{render '@checkbox-disabled'}}
+{{render '@radio-button-disabled'}}
 ```
 
 ### Readonly State
 
-In order to use the checkbox as read-only, you need to add the following to the input element:
-- HTML class <code>"msds-checkbox__readonly"</code>
+In order to use the radio button as read-only, you need to add the following to the input element:
+- HTML class <code>"msds-radio-button__readonly"</code>
 - <code>"tabindex"</code> attribute and its value set to "-1".
 - <code>"checked"</code> attribute (optional).
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@checkbox-readonly'}}</div>
+  <div class="element-preview__inner">{{render '@radio-button-readonly'}}</div>
 </div>
 
 ```html
-{{render '@checkbox-readonly'}}
+{{render '@radio-button-readonly'}}
 ```
