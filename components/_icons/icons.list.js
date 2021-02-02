@@ -1739,14 +1739,19 @@ export const richIcons = [
     previewValue: 'msds-xprotect'
   },
   {
-    name: 'Xprotect, Access, Anywhere',
+    name: 'XProtect, Access, Anywhere',
     value: '/Static/svg/richIcons/xprotect-access-anywhere.svg',
     previewValue: 'msds-xprotect-access-anywhere'
   },
   {
-    name: 'Youtube',
+    name: 'Video',
     value: '/Static/svg/richIcons/youtube.svg',
     previewValue: 'msds-youtube'
+  },
+  {
+    name: 'Video Cookie',
+    value: '/Static/svg/richIcons/video-cookie.svg',
+    previewValue: 'msds-video-cookie'
   },
   {
     name: 'Locations, animated',
