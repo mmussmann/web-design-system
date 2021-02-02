@@ -815,7 +815,11 @@
   height: map-get(map-get($sprite-sizes, 'youtube'), 'height');
   width: map-get(map-get($sprite-sizes, 'youtube'), 'width');
 }
-
+.msds-video-cookie {
+  @include sprite('video-cookie');
+  height: map-get(map-get($sprite-sizes, 'video-cookie'), 'height');
+  width: map-get(map-get($sprite-sizes, 'video-cookie'), 'width');
+}
 .msds-planet {
   @include sprite('planet');
   height: map-get(map-get($sprite-sizes, 'planet'), 'height');
