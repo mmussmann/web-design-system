@@ -107,6 +107,10 @@
     max-width: 144px; // keeps taking up full width.!?
     padding: 5px 5px;
     margin-top: 23px;
+
+    @include media-breakpoint-down(md) {
+      margin: 23px auto;
+    }
   }
 
   &__text-container {
