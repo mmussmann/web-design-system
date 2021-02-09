@@ -100,12 +100,10 @@
   }
 
   &__alert-tag {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     border-radius: 20px;
-    min-width: 50px;
-    max-width: 144px; // keeps taking up full width.!?
-    padding: 5px 5px;
+    padding: 5px 20px;
     margin-top: 23px;
 
     @include media-breakpoint-down(md) {
