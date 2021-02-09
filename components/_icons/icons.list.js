@@ -1151,7 +1151,7 @@ export const richIcons = [
   {
     name: 'Crime',
     value: '/Static/svg/richIcons/crime.svg',
-    previewValue: 'msds-community'
+    previewValue: 'msds-crime'
   },
   {
     name: 'Crowd Management',
