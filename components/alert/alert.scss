@@ -24,7 +24,7 @@
   }
 
   &--dark-theme {
-    background: linear-gradient(270deg, #035d88 0%, #023852 100%);
+    background: $dark-blue-gradient;
     border-color: $yellow;
     color: $white;
     .msds-alert__close-icon {
