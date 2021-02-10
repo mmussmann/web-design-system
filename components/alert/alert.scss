@@ -16,7 +16,20 @@
   }
 
   &--generic {
-    border-color: $clear-blue;
+    border-color: $clear-blue !important; //important to overwride dark theme border color
+  }
+
+  &--solution {
+    border-color: $dusty-green !important; //important to overwride dark theme border color
+  }
+
+  &--dark-theme {
+    background: $dark-blue-gradient;
+    border-color: $yellow;
+    color: $white;
+    .msds-alert__close-icon {
+      fill: $white;
+    }
   }
 
   &__close-click-area {
@@ -86,6 +99,18 @@
     }
   }
 
+  &__alert-badge {
+    display: inline-block;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: 23px;
+
+    @include media-breakpoint-down(md) {
+      margin: 23px auto;
+    }
+  }
+
   &__text-container {
     @include media-breakpoint-up(md) {
       margin-left: 56px;
@@ -98,6 +123,10 @@
 
   &__header {
     @extend .msds-text-header-3;
+    &-state {
+      @extend .msds-text-body-4-italic;
+      padding-left: 16px;
+    }
   }
 
   &__text {
