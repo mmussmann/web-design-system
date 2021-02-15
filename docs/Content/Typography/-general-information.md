@@ -1,5 +1,5 @@
 ---
-title: Typography
+title: General Information
 ---
 Typography is based on googles [open sans](https://fonts.google.com/specimen/Open+Sans)
 
