@@ -3,6 +3,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a:hover {
+  color: unset;
+}
+
 .Header {
   color: var(--milestone-color-white);
   font-family: 'Open Sans', sans-serif;
