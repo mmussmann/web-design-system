@@ -205,6 +205,12 @@ module.exports = {
       },
       {
         textColor: 'msds-text-black',
+        text: 'black 3%',
+        backgroundColor: 'msds-black-3-transparent',
+        scssVarName: '$rgba-16'
+      },
+      {
+        textColor: 'msds-text-black',
         text: 'gray 6 50%',
         backgroundColor: 'msds-gray-6-50-transparent',
         scssVarName: '$rgba-12'
