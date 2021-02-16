@@ -33,6 +33,10 @@
     display: inline-block;
     margin-right: 3px;
     vertical-align: bottom;
+
+    svg {
+      fill: $clear-blue;
+    }
   }
 
   &__caption-title {
@@ -92,8 +96,14 @@
   }
 
   &--dark {
+    .msds-basic-card__caption-icon {
+      svg {
+        fill: $yellow;
+      }
+    }
+
     .msds-basic-card__caption-title {
-      color: $alt-blue-1;
+      color: $yellow;
     }
 
     .msds-basic-card__separator {

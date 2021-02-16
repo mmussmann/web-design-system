@@ -3,7 +3,7 @@ title: Section
 ---
 
 ## The expanding sections are used when you wanted to show users limited information until the user expands a section
-## Below you will find the different definitions and options to create an expanding section component
+Below you will find the different definitions and options to create an expanding section component
 
 ### Table of contents
 <div class="row">

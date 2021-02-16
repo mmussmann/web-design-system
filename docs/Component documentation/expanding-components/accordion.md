@@ -3,8 +3,7 @@ title: Accordion
 ---
 
 ## The accordions are used when you wanted to show users limited information until the user expands an accordion an element
-
-## Below you will find the different definitions and options to create an accordion component
+Below you will find the different definitions and options to create an accordion component
 
 ### Table of contents
 
