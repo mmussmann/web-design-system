@@ -8,4 +8,6 @@ context:
     placeholderDescription: 'Lorem ipsum dolorem sit amet etiam vestibulum morbi nibh? Commodo rhoncus semper commodo malesuada.'
     placeholderDescriptionlong: 'Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.'
     placeholderLinkText: read more
+    placeholderImg: '../../../src/demo-img/xprotect.jpg'
+    placeholderCaptionImg: '../../../src/demo-img/milestone-systems-logo.png'
 status: 'wip'

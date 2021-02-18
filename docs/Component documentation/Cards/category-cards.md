@@ -3,7 +3,7 @@ title: Category Cards
 ---
 
 ## The category cards are used everywhere on the website to link between pages
-## Below you will find the different definitions and options to create your category cards
+Below you will find the different definitions and options to create your category cards
 
 ### Table of contents
 <div class="row">
