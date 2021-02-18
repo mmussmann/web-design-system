@@ -126,7 +126,7 @@ To use an alert that will be visible after page refresh, use the standard markup
 {{render '@alert-visible-after-refresh'}}
 ```
 
-### Alerts that are visible again after 30 days if the user
+### Alerts that are visible again after 30
 To use an alert that will remain hidden for 30 days, use the standard markup for alerts and add "<code>msds-alert--stay-hidden</code>" to the main HTML element.
 
 This version of the alerts does use cookies, so please ensure GDPR compliance when using alerts that need to remain hidden.
