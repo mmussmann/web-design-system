@@ -24,7 +24,6 @@
   }
 
   &--dark-theme {
-    background: $dark-blue-gradient;
     border-color: $yellow;
     color: $white;
     .msds-alert__close-icon {
@@ -136,27 +135,36 @@
   }
 
   &__action-container {
+    .msds-btn:nth-child(2) {
+      margin-top: 16px;
+    }
+
     @include media-breakpoint-up(md) {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       margin-top: 24px;
+
+      .msds-btn:nth-child(2) {
+        margin-top: 0;
+        margin-left: 20px;
+      }
     }
   }
 
   .msds-btn {
     margin-top: 0px;
   }
-
   &__checkbox-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    margin-left: 40px;
+    margin-left: 0;
 
     @include media-breakpoint-up(md) {
       margin-top: 0px;
+      margin-left: 40px;
     }
   }
 

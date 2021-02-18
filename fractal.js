@@ -33,7 +33,7 @@ const customTheme = require('@frctl/mandelbrot')({
   favicon: '/src/demo-img/favicon.ico',
   nav: ['components', 'docs'],
   panels: ['html', 'view', 'context', 'info', 'notes'],
-  styles: ['default', '/main.css', '/rich-icons-bundle.css', '/theme-overrides/styles.css'],
+  styles: ['default', '/rich-icons-bundle.css', '/theme-overrides/styles.css', '/main.css'],
   scripts: ['default', '/design-system.js']
 })
 customTheme.addLoadPath(path.join(__dirname, '/theme-overrides'))
