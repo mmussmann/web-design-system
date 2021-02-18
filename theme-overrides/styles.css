@@ -109,6 +109,7 @@ a:hover {
   width: 230px;
   height: 100%;
   border-right: none;
+  height: 100%;
 }
 
 .Frame-panel--sidebar {
@@ -117,6 +118,21 @@ a:hover {
   max-width: 230px;
   z-index: 10;
   box-shadow: var(--milestone-shadow-medium);
+}
+
+/* .Frame .Frame-body .Frame-panel--sidebar {
+  visibility: hidden;
+  width: 0px;
+  transition-delay: 100ms;
+  -webkit-transition: width 150ms ease-in-out, visibility 150ms linear;
+  -moz-transition: width 150ms ease-in-out, visibility 150ms linear;
+  -o-transition: width 150ms ease-in-out, visibility 150ms linear;
+  transition: width 150ms ease-in-out, visibility 150ms linear;
+} */
+
+.Frame.is-closed .Frame-body .Frame-panel--sidebar {
+  visibility: visible;
+  width: 230px;
 }
 
 .Tree-title {
@@ -300,6 +316,7 @@ pre {
 }
 
 .Prose .element-preview {
+  margin: 2em 0;
   padding: 1em;
   background-color: #fff;
   background-image: linear-gradient(45deg, #eee 25%, transparent 25%),
@@ -307,14 +324,13 @@ pre {
     linear-gradient(-45deg, transparent 75%, #eee 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0;
-  margin-bottom: 0;
 }
 
 .Prose .element-preview-dark {
+  margin: 2em 0;
   padding: 1em;
   background: linear-gradient(270deg, #035D88 0%, #023852 100%);
   background-position: 0 0, 0 10px, 10px -10px, -10px 0;
-  margin-bottom: 0;
   font-family: 'Open Sans';
 }
 

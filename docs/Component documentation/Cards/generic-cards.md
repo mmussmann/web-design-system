@@ -3,7 +3,7 @@ title: Generic Cards
 ---
 
 ## The generic cards are used everywhere on the website to link between pages
-## Below you will find the different definitions and options to create your generic cards
+Below you will find the different definitions and options to create your generic cards
 
 ### Table of contents
 <div class="row">
@@ -28,6 +28,14 @@ title: Generic Cards
                 <li class="document__unordered-list-item">
                   <a class="msds-link"href="#themes">Themes</a>
                 </li>
+                <ul class="document__unordered-list">
+                    <li class="document__unordered-list-item">
+                      <a class="msds-link"href="#light-themed-cards">Light Theme</a>
+                    </li>
+                    <li class="document__unordered-list-item">
+                      <a class="msds-link"href="#dark-themed-cards">Dark Theme</a>
+                    </li>
+                </ul>
             </ul>
             <li class="document__unordered-list-item"> 
                  <a class="msds-link"href="#generic-card-default">Generic Card Default</a>

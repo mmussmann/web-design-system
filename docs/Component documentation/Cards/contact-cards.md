@@ -3,7 +3,7 @@ title: Contact Cards
 ---
 
 ## The Contact Cards are used everywhere on the website to link between pages
-## Below you will find the different definitions and options to create your Contact Cards
+Below you will find the different definitions and options to create your Contact Cards
 
 ### Table of contents
 <div class="row">
