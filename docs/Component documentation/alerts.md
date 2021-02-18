@@ -29,7 +29,7 @@ Below you will find the different definitions and options to alerts
                   <a class="msds-link"href="#alerts-that-are-visible-after-refreshing-the-page">Alerts that are visible after refreshing the page</a>
                 </li>
                 <li class="document__unordered-list-item">
-                  <a class="msds-link"href="#alerts-that-are-visible-again-after-30-days-or-until-cookies-are-cleared">Alerts that are visible again after 30 days or until cookies are cleared</a>
+                  <a class="msds-link"href="#alerts-that-are-visible-again-after-30-days">Alerts that are visible again after 30 days or until cookies are cleared</a>
                 </li>
                 <ul class="document__unordered-list">
                     <li class="document__unordered-list-item">
@@ -126,7 +126,7 @@ To use an alert that will be visible after page refresh, use the standard markup
 {{render '@alert-visible-after-refresh'}}
 ```
 
-### Alerts that are visible again after 30
+### Alerts that are visible again after 30 days
 To use an alert that will remain hidden for 30 days, use the standard markup for alerts and add "<code>msds-alert--stay-hidden</code>" to the main HTML element.
 
 This version of the alerts does use cookies, so please ensure GDPR compliance when using alerts that need to remain hidden.
