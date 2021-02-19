@@ -107,6 +107,7 @@ a:hover {
 
 .Frame-panel--sidebar {
   width: 230px;
+  height: 100%;
   border-right: none;
   height: 100%;
 }
