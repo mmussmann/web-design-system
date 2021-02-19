@@ -54,7 +54,7 @@ module.exports = merge(common, {
       { from: 'src/scss/_variables.scss', to: 'scss/_variables.scss' },
       { from: '.npmignore', to: '.npmignore', toType: 'file' },
       { from: 'components/_icons/icons.list.js', to: 'icons.list.js'},
-      { from: 'components/typography/text.list.js', to: 'text.list.js'},
+      { from: 'components/_typography/text.list.js', to: 'text.list.js'},
       { from: 'components/colors/colors.list.js', to: 'colors.list.js'},
       { from: 'src/svg/rich', to: 'svg/rich' }
     ])
