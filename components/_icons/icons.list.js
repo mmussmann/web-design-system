@@ -1295,8 +1295,8 @@ export const richIcons = [
   },
   {
     name: 'Form',
-    value: '/Static/svg/richIcons/form-icon.svg',
-    previewValue: 'msds-form-icon'
+    value: '/Static/svg/richIcons/form.svg',
+    previewValue: 'msds-form'
   },
   {
     name: 'Global',
