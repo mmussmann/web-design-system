@@ -1,7 +1,7 @@
 import '../scss/main.scss'
 import 'components/tab-tile/tab-tile.js'
-import 'components/forms/text-areas/text-area.js'
 import 'components/_alert/alert.js'
+import 'components/forms/_text-areas/text-area.js'
 import 'components/button-cards/card.js'
 import 'components/button-cards/_generic-card/generic-card.js'
 import 'components/colors/background-colors.js'

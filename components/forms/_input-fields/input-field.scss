@@ -1,4 +1,4 @@
-.msds-form {
+.msds-forms {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -14,12 +14,14 @@
     color: $gray-10;
     height: 56px;
     width: 100%;
-    padding-left: 20px;
+    padding: 13px 20px 0;
     border: 1px solid $gray-5;
     border-radius: 2px;
-    padding-top: 13px;
     &::placeholder {
       color: transparent;
+    }
+    &:hover {
+      background-color: $gray-2;
     }
     &:read-only {
       pointer-events: none;
@@ -39,6 +41,7 @@
     &:focus {
       outline: 4px solid rgba(0, 153, 218, 0.5);
       border: 1px solid $clear-blue;
+      background-color: $white;
     }
     &:focus + label {
       top: 8px;
@@ -86,6 +89,18 @@
         top: 1px;
       }
     }
+
+    &.msds-input--success {
+      .msds-input__text-input {
+        padding-right: 33.4px;
+      }
+    }
+
+    &.msds-input--error {
+      .msds-input__text-input {
+        padding-right: 27px;
+      }
+    }
   }
   &--success {
     .msds-input__icon-wrapper:before,
@@ -112,6 +127,7 @@
     }
     .msds-input__text-input {
       border: 1px solid $confirm-green;
+      padding-right: 35px;
       &:focus {
         outline: 4px solid rgba(60, 192, 3, 0.5);
         border: 1px solid $confirm-green;
@@ -140,6 +156,7 @@
     }
     .msds-input__text-input {
       border: 1px solid $danger-red-1;
+      padding-right: 35px;
       &:focus {
         outline: 4px solid rgba(255, 40, 90, 0.5);
         border: 1px solid $danger-red-2;

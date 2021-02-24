@@ -12,19 +12,32 @@ They can be used in forms, filters, lists etc.
         <ul class="document__unordered-list">
              <li class="document__unordered-list-item">
                  <a class="msds-link" href="#overview">Overview</a>
-             </li>
-             <li class="document__unordered-list-item">
-                 <a class="msds-link" href="#global-definition">Global Definition</a>
-             </li>
+             </li>            
              <li class="document__unordered-list-item">
                  <a class="msds-link" href="#states">States</a>
              </li>
+             <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#hover-state">Hover State</a>
+                </li>             
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#checked-state">Checked State</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#focus-state">Focus State</a>
+                </li>             
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#disabled-state">Disabled State</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#readonly-state">Readonly State</a>
+                </li>
+            </ul>
          </ul>    
     </div>    
 </div>
 
 ## Overview
-### Global Definition
 Each radio button component is based on a global CSS class called "msds-radio-button". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
 
 The radio button makes use of custom styling by replacing the default input element with a pseudo-element selector, yet it keeps the native "checked" boolean property to toggle its state on/off (or selected/unselected).
@@ -36,7 +49,6 @@ The radio button makes use of custom styling by replacing the default input elem
 ```html
 {{render '@radio-button-global-definition'}}
 ```
-
 
 ## States
 The styling of states are defined in the CSS file. Some of the states can be triggered programmatically by setting the relative property to the input element. 

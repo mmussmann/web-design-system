@@ -349,6 +349,11 @@ pre {
 .Prose .lang-html pre {
   margin: 0;
 }
+
+.Prose ul>li {
+  list-style-type: unset;
+}
+
 dl {
   font: bold 1.125rem/1.33333 'Open Sans', Helvetica, Arial, sans-serif;
   font-feature-settings: 'dlig' 1;
@@ -463,6 +468,54 @@ dl dd a {
 button:focus {
   outline: none;
 }
+
+/* Input field ***************************************/
+/* hover state */
+#input-field-hover {
+  background-color: #F5F6F7;
+}
+
+/* focus state */
+#input-field-focus {
+  outline: 0.25rem solid rgba(0, 153, 218, 0.5);
+  border: 0.0625rem solid #0099da;
+}
+
+#input-field-focus + label {
+  top: 0.5rem;
+  font-size: 0.625rem;
+}
+
+.msds-input--small #input-field-focus + label {
+  font-size: 0.6875rem;
+  top: 0.0625rem;
+  left: 0.8125rem;
+}
+
+/* text-area field ***************************************/
+/* hover state */
+#text-area-hover {
+  background-color: #F5F6F7;
+}
+
+/* focus state */
+#text-area-focus {
+  outline: 0.25rem solid rgba(0, 153, 218, 0.5);
+  border: 0.0625rem solid #0099da;
+  background-color: #ffffff;
+}
+
+#text-area-focus + label {
+  top: 0.5rem;
+  font-size: 0.625rem;
+}
+
+.msds-text-area--small #text-area-field-focus + label {
+  font-size: 0.6875rem;
+  top: 0.0625rem;
+  left: 0.8125rem;
+}
+
 
 /* Radio button ***************************************/
 #hovered-radio-button + label:before {

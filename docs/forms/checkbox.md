@@ -12,19 +12,32 @@ They can be used in forms, filters, lists etc.
         <ul class="document__unordered-list">
              <li class="document__unordered-list-item">
                  <a class="msds-link" href="#overview">Overview</a>
-             </li>
-             <li class="document__unordered-list-item">
-                 <a class="msds-link" href="#global-definition">Global Definition</a>
-             </li>
-             <li class="document__unordered-list-item">
+             </li>   
+              <li class="document__unordered-list-item">
                  <a class="msds-link" href="#states">States</a>
-             </li>
+             </li>          
+             <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#hover-state">Hover State</a>
+                </li>             
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#checked-state">Checked State</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#focus-state">Focus State</a>
+                </li>             
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#disabled-state">Disabled State</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#readonly-state">Readonly State</a>
+                </li>
+            </ul>             
          </ul>    
     </div>    
 </div>
 
 ## Overview
-### Global Definition
 Each checkbox component is based on a global CSS class called "msds-checkbox". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
 
 The checkbox makes use of custom styling by replacing the default input element with a pseudo-element selector, yet it keeps the native "checked" boolean property to toggle its state on/off (or checked/unchecked).
