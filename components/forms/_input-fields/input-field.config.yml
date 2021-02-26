@@ -5,4 +5,4 @@ context:
   message: "We'll never share your email with anyone else."
   errorMessage: "You have entered and invalid email address. Please try again."
   successMessage: "Looks good!"
-  readOnlyText: "Readonly!"
+  readOnlyText: "Readonly !"

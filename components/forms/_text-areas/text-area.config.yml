@@ -3,7 +3,7 @@ notes: 'Overview of text-areas'
 context:
   placeholder: "Enter your description*"
   readonlyPlaceholder: "Read Only"
-  message: "Please be aware that lorem ipsum dolorem."
+  message: "Please be aware that the description should not be longer than 500 characters."
   errorMessage: "You have entered and invalid email address. Please try again."
   successMessage: "Looks good!"
   readonlyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero."

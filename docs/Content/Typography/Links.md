@@ -11,20 +11,27 @@ They have been defined in two type light anbd dark themes links. You can find be
 <div class="row">    
     <div class="col-md-6">
       <ul class="document__unordered-list">
-        <li class="document__unordered-list-item"> <a class="msds-link" href="#links">Links</a></li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#overview">Overview</a></li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#themes">Themes</a></li>
         <ul class="document__unordered-list">
           <li class="document__unordered-list-item">
-            <a class="msds-link" href="#light-theme-links">Light theme</a>
+            <a class="msds-link" href="#light-theme-links">Light</a>
           </li>  
-           <li class="document__unordered-list-item">
-            <a class="msds-link" href="#dark-theme-links">Dark theme</a>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#dark-theme-links">Dark</a>
           </li>         
         </ul>        
       </ul>     
     </div>
 </div>
 
-### Light Theme Links
+## Overview 
+On this page you will find all our link definitions to use on light and dark themes.
+
+## Themes 
+We have designed different links based on the theme type used on the page/block. It could either be light or dark themes. Based on it, the links will automatically get the correct styling. No need to add extra CSS classes. the light and dark themes will be specified by the page/block settings.
+
+### Light theme links
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@typography-links-light-theme'}}</div>

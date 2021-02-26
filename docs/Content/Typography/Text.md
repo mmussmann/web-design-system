@@ -10,21 +10,18 @@ Here are the different text definitions used all over Milestone website for each
 <div class="row">
     <div class="col-6">
       <ul class="document__unordered-list">
-        <li class="document__unordered-list-item"> <a class="msds-link" href="#text">Text</a></li>
-        <ul class="document__unordered-list">
-          <li class="document__unordered-list-item">
-            <a class="msds-link" href="#display">Displays</a>
-          </li>
-          <li class="document__unordered-list-item">
-            <a class="msds-link" href="#headers">Headers</a>
-          </li>
-          <li class="document__unordered-list-item">
-            <a class="msds-link" href="#leads">Leads</a>
-          </li>
-          <li class="document__unordered-list-item">
-            <a class="msds-link" href="#body-texts">Body Texts</a>
-          </li>
-        </ul>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#display">Displays</a>
+        </li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#headers">Headers</a>
+        </li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#leads">Leads</a>
+        </li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#body-texts">Body Texts</a>
+        </li>
       </ul>
     </div>    
 </div>
