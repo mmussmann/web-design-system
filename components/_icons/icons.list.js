@@ -1902,7 +1902,7 @@ export const richIcons = [
   {
     name: 'Marketplace Challenges Money Disputes With Customers',
     value: '/Static/svg/richIcons/marketplace-challenges-money-disputes-with-customers.svg',
-    previewValue: 'msds-storage'
+    previewValue: 'msds-marketplace-challenges-money-disputes-with-customers'
   },
   {
     name: 'Marketplace Challenges Personalized Customer Experience',
