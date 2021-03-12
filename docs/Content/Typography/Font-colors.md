@@ -2,7 +2,7 @@
 title: Font Colors
 ---
 
-## In this section, we are going to give you an overview of all the font colors of our fonts.
+## In this section, we are going to give you an overview of all the font colors.
 
 
 <div class="element-preview">
@@ -21,12 +21,44 @@ title: Font Colors
 {{render '@msds-text-dark-blue'}}
 ```
 
-<div class="element-preview-dark">
-  <div class="element-preview__inner">{{render '@msds-text-yellow'}}</div>
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@msds-text-alt-blue-1'}}</div>
 </div>
 
 ```html
-{{render '@msds-text-yellow'}}
+{{render '@msds-text-alt-blue-1'}}
+```
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@msds-text-alt-blue-2'}}</div>
+</div>
+
+```html
+{{render '@msds-text-alt-blue-2'}}
+```
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@msds-text-alt-blue-3'}}</div>
+</div>
+
+```html
+{{render '@msds-text-alt-blue-3'}}
+```
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@msds-text-black'}}</div>
+</div>
+
+```html
+{{render '@msds-text-black'}}
+```
+
+<div class="element-preview-dark">
+  <div class="element-preview__inner">{{render '@msds-text-white'}}</div>
+</div>
+
+```html
+{{render '@msds-text-white'}}
 ```
 
 <div class="element-preview-dark">
@@ -110,43 +142,11 @@ title: Font Colors
 ```
 
 <div class="element-preview-dark">
-  <div class="element-preview__inner">{{render '@msds-text-white'}}</div>
+  <div class="element-preview__inner">{{render '@msds-text-yellow'}}</div>
 </div>
 
 ```html
-{{render '@msds-text-white'}}
-```
-
-<div class="element-preview">
-  <div class="element-preview__inner">{{render '@msds-text-black'}}</div>
-</div>
-
-```html
-{{render '@msds-text-black'}}
-```
-
-<div class="element-preview">
-  <div class="element-preview__inner">{{render '@msds-text-alt-blue-1'}}</div>
-</div>
-
-```html
-{{render '@msds-text-alt-blue-1'}}
-```
-
-<div class="element-preview">
-  <div class="element-preview__inner">{{render '@msds-text-alt-blue-2'}}</div>
-</div>
-
-```html
-{{render '@msds-text-alt-blue-2'}}
-```
-
-<div class="element-preview">
-  <div class="element-preview__inner">{{render '@msds-text-alt-blue-3'}}</div>
-</div>
-
-```html
-{{render '@msds-text-alt-blue-3'}}
+{{render '@msds-text-yellow'}}
 ```
 
 <div class="element-preview-dark">
