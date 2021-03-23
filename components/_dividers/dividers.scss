@@ -1,0 +1,23 @@
+.msds-divider {
+  height: 1px;
+  width: 40px;
+  background: $clear-blue;
+
+  &--yellow {
+    background: $yellow;
+  }
+  &--dark-blue {
+    background: $dark-blue;
+  }
+  &--white {
+    background: $white;
+  }
+
+  &--white-50 {
+    background: rgba($white, 0.5);
+  }
+
+  &--gray-5 {
+    background: $gray-5;
+  }
+}
