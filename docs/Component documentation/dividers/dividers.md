@@ -5,8 +5,7 @@ title: Dividers
 ## The dividers are used to create a line between elements on a page
 Below you will find the different definitions and options to create your dividers
 
-#### Default Divider
-The default divider 
+#### Default Divider 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@divider-default'}}</div>
@@ -17,7 +16,6 @@ The default divider
 ```
 
 ##### Dark-blue Divider
-The dark blue divider 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@divider-dark-blue'}}</div>
@@ -28,7 +26,6 @@ The dark blue divider
 ```
 
 ##### Yellow Divider
-The yellow divider 
 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@divider-yellow'}}</div>
@@ -39,7 +36,6 @@ The yellow divider
 ```
 
 ###### White Divider
-The white divider 
 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@divider-white'}}</div>
@@ -50,7 +46,6 @@ The white divider
 ```
 
 ###### White 50% transparency Divider
-The white divider with 50 % transparency 
 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@divider-white-50'}}</div>
@@ -61,7 +56,6 @@ The white divider with 50 % transparency
 ```
 
 ###### Gray Divider
-The Gray divider using the $gray-5 color
 
 <div class="element-preview-dark">
   <div class="element-preview__inner">{{render '@divider-gray-5'}}</div>
