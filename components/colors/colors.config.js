@@ -172,7 +172,7 @@ module.exports = {
         scssVarName: '$sand'
       }
     ],
-    transparent:[
+    transparent: [
       {
         textColor: 'msds-text-black',
         text: 'white 50%',

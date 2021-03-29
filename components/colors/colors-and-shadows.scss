@@ -219,8 +219,20 @@
 .msds-bg-clear-blue-gradient {
   background: $clear-blue-gradient;
 }
+.msds-bg-clear-blue-gradient-2 {
+  background: $clear-blue-gradient-2;
+}
+.msds-bg-clear-blue-gradient-2-reverse {
+  background: $clear-blue-gradient-2-reverse;
+}
 .msds-bg-dark-blue-gradient {
   background: $dark-blue-gradient;
+}
+.msds-bg-dark-blue-gradient-2 {
+  background: $dark-blue-gradient-2;
+}
+.msds-bg-dark-blue-gradient-2-reverse {
+  background: $dark-blue-gradient-2-reverse;
 }
 .msds-bg-mixed-blue-gradient {
   background: $mixed-blue-gradient;
@@ -246,6 +258,18 @@
 .msds-bg-gray-gradient-5 {
   background: $gray-gradient-5;
 }
+.msds-bg-gray-gradient-6 {
+  background: $gray-gradient-6;
+}
+.msds-bg-gray-gradient-6-reverse {
+  background: $gray-gradient-6-reverse;
+}
+.msds-bg-white-gradient {
+  background: $white-gradient;
+}
+.msds-bg-white-gradient-reverse {
+  background: $white-gradient-reverse;
+}
 
 // Shadows
 .msds-shadow-small {
@@ -256,4 +280,31 @@
 }
 .msds-shadow-large {
   box-shadow: $shadow-large;
+}
+
+@media only screen and (max-width: 768px) {
+  .msds-bg-clear-blue-gradient-2 {
+    background: $clear-blue-gradient-2-mobile;
+  }
+  .msds-bg-clear-blue-gradient-2-reverse {
+    background: $clear-blue-gradient-2-reverse-mobile;
+  }
+  .msds-bg-dark-blue-gradient-2 {
+    background: $dark-blue-gradient-2-mobile;
+  }
+  .msds-bg-dark-blue-gradient-2-reverse {
+    background: $dark-blue-gradient-2-reverse-mobile;
+  }
+  .msds-bg-gray-gradient-6 {
+    background: $gray-gradient-6-mobile;
+  }
+  .msds-bg-gray-gradient-6-reverse {
+    background: $gray-gradient-6-reverse-mobile;
+  }
+  .msds-bg-white-gradient {
+    background: $white-gradient-mobile;
+  }
+  .msds-bg-white-gradient-reverse {
+    background: $white-gradient-reverse-mobile;
+  }
 }
