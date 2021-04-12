@@ -8,7 +8,7 @@
   }
 }
 
-a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link),
+a,
 a.msds-link:not(.msds-link--secondary) {
   @include msds-link($clear-blue);
 }
@@ -30,7 +30,7 @@ a.msds-link:not(.msds-link--secondary) {
 .msds-bg-dark-blue-gradient-2,
 .msds-bg-dark-blue-gradient-2-reverse,
 .msds-bg-mixed-blue-gradient {
-  a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link),
+  a,
   a.msds-link:not(.msds-link--secondary) {
     @include msds-link($yellow);
   }
