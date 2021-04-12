@@ -199,3 +199,8 @@
     }
   }
 }
+
+//if used on A tag, e need to be sure that the general link definition does not affect the card link.
+a.msds-category-card__link {
+  text-decoration: none;
+}
