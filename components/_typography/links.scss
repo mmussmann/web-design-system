@@ -1,23 +1,41 @@
-a.msds-incontext-link,
-.msds-incontext-link a {
-  color: $clear-blue;
+@mixin msds-link($font-color) {
+  color: $font-color;
   text-decoration: underline;
 
   &:hover {
+    color: $font-color;
     text-decoration: none;
-  }
-
-  &--grey {
-    color: $gray-10;
   }
 }
 
-.msds-link {
-  color: $clear-blue;
-  text-decoration: none;
+a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link),
+a.msds-link:not(.msds-link--secondary) {
+  @include msds-link($clear-blue);
+}
 
-  &:hover {
-    color: $clear-blue;
-    text-decoration: underline;
+.msds-bg-gray-8,
+.msds-bg-gray-9,
+.msds-bg-gray-10,
+.msds-bg-clear-blue,
+.msds-bg-dark-blue,
+.msds-bg-orange,
+.msds-bg-dusty-green,
+.msds-bg-gray-gradient-6,
+.msds-bg-gray-gradient-6-reverse,
+.msds-bg-blue-to-yellow-gradient,
+.msds-bg-clear-blue-gradient,
+.msds-bg-clear-blue-gradient-2,
+.msds-bg-clear-blue-gradient-2-reverse,
+.msds-bg-dark-blue-gradient,
+.msds-bg-dark-blue-gradient-2,
+.msds-bg-dark-blue-gradient-2-reverse,
+.msds-bg-mixed-blue-gradient {
+  a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link),
+  a.msds-link:not(.msds-link--secondary) {
+    @include msds-link($yellow);
   }
+}
+
+a.msds-link--secondary {
+  @include msds-link(inherit);
 }

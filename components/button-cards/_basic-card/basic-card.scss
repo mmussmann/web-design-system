@@ -92,7 +92,11 @@
     @extend .msds-text-body-1;
     @extend .msds-font-weight-light;
     color: $clear-blue;
-    text-decoration: none;
+
+    &:hover {
+      color: $clear-blue;
+      text-decoration: none;
+    }
   }
 
   &--dark {
@@ -126,6 +130,10 @@
 
     .msds-basic-card__link {
       color: $yellow;
+
+      &:hover {
+        color: $yellow;
+      }
     }
   }
 }
