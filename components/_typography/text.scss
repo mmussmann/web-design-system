@@ -1,7 +1,8 @@
 @mixin msds-font-superscript() {
   sup {
     font-size: 65%;
-    vertical-align: middle;
+    vertical-align: super;
+    line-height: 0;
   }
 }
 
