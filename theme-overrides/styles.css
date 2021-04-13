@@ -626,3 +626,18 @@ button:focus {
   display: inline-block;
   margin: 5px;
 }
+
+/* Link styling ajustments after the new link definition */
+.document__unordered-list .document__unordered-list-item a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link),
+.document__unordered-list .document__unordered-list-item a.msds-link:not(.msds-link--secondary),
+.Tree-collectionItems .Tree-item a.Tree-entityLink,
+.Tree-items .Tree-item a.Tree-entityLink {
+  text-decoration: none !important;
+}
+
+  .document__unordered-list .document__unordered-list-item a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link):hover,
+  .document__unordered-list .document__unordered-list-item a.msds-link:not(.msds-link--secondary):hover,
+  .Tree-collectionItems .Tree-item a.Tree-entityLink:hover,
+  .Tree-items .Tree-item a.Tree-entityLink:hover {
+    text-decoration: underline !important;
+  }

@@ -1,3 +1,11 @@
+@mixin msds-font-superscript() {
+  sup {
+    font-size: 65%;
+    vertical-align: super;
+    line-height: 0;
+  }
+}
+
 @mixin msds-font($font) {
   @if $font == 'display-1' {
     @include rfs(80);
@@ -162,159 +170,191 @@
 */
 .msds-text-display-1 {
   @include msds-font('display-1');
+  @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
   @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-2 {
   @include msds-font('display-2');
+  @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
   @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-3 {
   @include msds-font('display-3');
+  @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
   @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-header-1 {
   @include msds-font('header-1');
+  @include msds-font-superscript();
   @extend .msds-font-weight-light;
 }
 
 .msds-text-header-1-bold {
   @include msds-font('header-1');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-header-2 {
   @include msds-font('header-2');
+  @include msds-font-superscript();
   @extend .msds-font-weight-light;
 }
 
 .msds-text-header-2-bold {
   @include msds-font('header-2');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-header-3 {
   @include msds-font('header-3');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-header-3-light {
   @include msds-font('header-3');
+  @include msds-font-superscript();
   @extend .msds-font-weight-light;
 }
 
 .msds-text-header-4 {
   @include msds-font('header-4');
+  @include msds-font-superscript();
   @extend .msds-font-weight-semibold;
 }
 
 .msds-text-header-5 {
   @include msds-font('header-5');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
   @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-header-6 {
   @include msds-font('header-6');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
   @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-lead {
   @include msds-font('lead');
+  @include msds-font-superscript();
   @extend .msds-font-weight-light;
 }
 
 .msds-text-lead-bold {
   @include msds-font('lead');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-0 {
   @include msds-font('body-0');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-0-bold {
   @include msds-font('body-0');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-0-italic {
   @include msds-font('body-0');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
 
 .msds-text-body-1 {
   @include msds-font('body-1');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-1-bold {
   @include msds-font('body-1');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-1-italic {
   @include msds-font('body-1');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
 
 .msds-text-body-2 {
   @include msds-font('body-2');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-2-bold {
   @include msds-font('body-2');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-2-italic {
   @include msds-font('body-2');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
 
 .msds-text-body-3 {
   @include msds-font('body-3');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-3-bold {
   @include msds-font('body-3');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-3-italic {
   @include msds-font('body-3');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
 
 .msds-text-body-4 {
   @include msds-font('body-4');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-4-bold {
   @include msds-font('body-4');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-4-italic {
   @include msds-font('body-4');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
 
 .msds-text-body-5 {
   @include msds-font('body-5');
+  @include msds-font-superscript();
 }
 
 .msds-text-body-5-bold {
   @include msds-font('body-5');
+  @include msds-font-superscript();
   @extend .msds-font-weight-bold;
 }
 
 .msds-text-body-5-italic {
   @include msds-font('body-5');
+  @include msds-font-superscript();
   @extend .msds-font-style-italic;
 }
