@@ -83,9 +83,14 @@
     }
   }
 
-  &--link {
+  a.msds-generic-card--link {
     color: $black;
-    text-decoration: none;
+    text-decoration: unset;
+
+    &:hover {
+      color: unset;
+      text-decoration: unset;
+    }
   }
 
   &--small {
@@ -188,6 +193,7 @@
 
   &--dark-theme {
     background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: unset;
 
     .msds-generic-card {
       &__body {
