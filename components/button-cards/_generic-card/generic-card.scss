@@ -102,6 +102,9 @@
     .msds-generic-card__media-info {
       padding: 0 16px;
     }
+    .msds-generic-card__media-info {
+      flex-direction: column;
+    }
   }
 
   &--small#{&}--media {
