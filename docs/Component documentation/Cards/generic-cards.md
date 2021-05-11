@@ -91,6 +91,14 @@ When using small generic cards, make use of the bootstrap column <code>col-md-3<
 {{render '@generic-card-default-small'}}
 ```
 
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@generic-card-media-small'}}</div>
+</div>
+
+```html
+{{render '@generic-card-media-floating-icon'}}
+```
+
 ### Aspect Ratios
 Generic cards can be setup to use two different types of aspect ratios
 -	Generic Cards with a 2 by 1 ratio by using <code>class = "embed-responsive-2by1"</code>
@@ -163,6 +171,9 @@ Below we have an example of the default Generic Media Card
 ```html
 {{render '@generic-card-media'}}
 ```
+
+### Generic Media Card 
+Generic Media Cards have two different options, the first option is the default Generic Media card. The second option displays the media type of the generic card.
 
 #### Generic Media Card With Media Types
 Below we have an example of the Generic Media Card with a floating icon to display the media card type
