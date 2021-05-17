@@ -116,7 +116,6 @@ a:hover {
   background: var(--milestone-color-white);
   min-width: unset;
   max-width: 230px;
-  z-index: 10;
   box-shadow: var(--milestone-shadow-medium);
 }
 
@@ -635,9 +634,22 @@ button:focus {
   text-decoration: none !important;
 }
 
-  .document__unordered-list .document__unordered-list-item a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link):hover,
-  .document__unordered-list .document__unordered-list-item a.msds-link:not(.msds-link--secondary):hover,
-  .Tree-collectionItems .Tree-item a.Tree-entityLink:hover,
-  .Tree-items .Tree-item a.Tree-entityLink:hover {
-    text-decoration: underline !important;
-  }
+.document__unordered-list .document__unordered-list-item a:not(.msds-link--secondary):not(.msds-basic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link):not(.msds-generic-card--link):hover,
+.document__unordered-list .document__unordered-list-item a.msds-link:not(.msds-link--secondary):hover,
+.Tree-collectionItems .Tree-item a.Tree-entityLink:hover,
+.Tree-items .Tree-item a.Tree-entityLink:hover {
+  text-decoration: underline !important;
+}
+
+/* Modal styling for the documentation section */
+.msds-modal--documentation-demo {
+  z-index: unset;
+  position: unset;
+}
+
+.msds-modal--documentation-demo .msds-modal__close {
+  position: unset;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}

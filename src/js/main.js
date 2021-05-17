@@ -8,6 +8,8 @@ import 'components/colors/background-colors.js'
 import 'components/colors/text-colors.js'
 import 'components/_icons/icons.js'
 import 'components/_icons/flat-icons.js'
+import 'components/_modals/modal.js'
+import 'components/_modals/modal-manager.js'
 
 //Documented components
 import 'components/button-cards/_category-card/category-card.js'

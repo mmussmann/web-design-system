@@ -1,0 +1,105 @@
+// @import '~@milestone-sys/web-design-system/scss/_variables.scss';
+
+$close-button-offset: 15px;
+$transition-time: 250ms;
+
+.msds-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+  background: $white;
+  transition: opacity $transition-time;
+  visibility: hidden;
+  opacity: 0;
+
+  &--show {
+    visibility: visible;
+    opacity: 1;
+    overflow: auto;
+
+    .msds-modal__close {
+      display: block !important;
+    }
+  }
+
+  &--documentation-demo {
+    z-index: unset;
+    position: unset;
+
+    .msds-modal__close {
+      position: unset;
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    line-height: 1;
+    color: $gray-8;
+    z-index: 1;
+    display: none !important;
+  }
+
+  &__banner {
+    margin-bottom: 44px;
+  }
+
+  &__content {
+    background: $white;
+    padding: 68px 40px 64px;
+  }
+
+  &__headline {
+    margin-bottom: 24px;
+  }
+
+  &__cta {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 612px) {
+  .msds-modal {
+    &__cta {
+      .msds-btn {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .msds-modal {
+    &__cta {
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .msds-modal {
+    background: rgba(2, 56, 82, 0.9);
+
+    .msds-modal__overlay {
+      padding: 100px 0;
+    }
+
+    &__close {
+      top: 30px;
+      right: 30px;
+      font-size: 35px;
+      color: $white;
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
