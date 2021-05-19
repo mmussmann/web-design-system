@@ -39,6 +39,7 @@ export const backgroundColors = [
   { name: 'Milestone Dark Blue', value: 'msds-bg-dark-blue' },
   { name: 'Orange', value: 'msds-bg-orange' },
   { name: 'Dusty Green', value: 'msds-bg-dusty-green' },
+  { name: 'Husky Dark Blue', value: 'msds-bg-husky-dark-blue' },
   { name: 'White Gradient', value: 'msds-bg-white-gradient' },
   { name: 'White Gradient Reverse', value: 'msds-bg-white-gradient-reverse' },
   { name: 'Gray Gradient 1', value: 'msds-bg-gray-gradient-1' },
@@ -56,5 +57,6 @@ export const backgroundColors = [
   { name: 'Dark Blue Gradient', value: 'msds-bg-dark-blue-gradient' },
   { name: 'Dark Blue Gradient 2', value: 'msds-bg-dark-blue-gradient-2' },
   { name: 'Dark Blue Gradient 2 Reverse', value: 'msds-bg-dark-blue-gradient-2-reverse' },
-  { name: 'Mixed Blue Gradient', value: 'msds-bg-mixed-blue-gradient' }
+  { name: 'Mixed Blue Gradient', value: 'msds-bg-mixed-blue-gradient' },
+  { name: 'Husky Dark Blue Gradient', value: 'msds-bg-husky-dark-blue-gradient' }
 ]
