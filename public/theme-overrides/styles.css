@@ -640,16 +640,3 @@ button:focus {
 .Tree-items .Tree-item a.Tree-entityLink:hover {
   text-decoration: underline !important;
 }
-
-/* Modal styling for the documentation section */
-.msds-modal--documentation-demo {
-  z-index: unset;
-  position: unset;
-}
-
-.msds-modal--documentation-demo .msds-modal__close {
-  position: unset;
-  text-align: right;
-  margin-right: 20px;
-  margin-top: 20px;
-}

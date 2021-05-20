@@ -12,18 +12,23 @@ Below you will find the different definitions and options to modals
             <li class="document__unordered-list-item"> 
                  <a class="msds-link"href="#overview">Overview</a>
             </li>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#display-modal-on-load">Display modal on load</a>
+            </li>
+             <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#display-modal-on-click-event">Display modal on click event</a>
+            </li>
         </ul>
     </div>
 </div>
 
 ## Overview
-### Global Definition
 Modals are visible, until the user closes the modal
 
 Modals can be setup to display information, contain a form or contain a video. Modals do not have any Javascript functionality setup with cookies so developers would have to build that themselves. 
 
 
-### Display modal on load
+## Display modal on load
 Modals can be displayed on page load
 
 <div class="element-preview">
@@ -43,7 +48,7 @@ Modals can be displayed on page load
 
 ```
 
-### Display modal on click event
+## Display modal on click event
 Modals can be displayed on click events
 
 <div class="element-preview">
