@@ -1,4 +1,4 @@
-export const msdsModal = function(id, settings) {
+export const msdsModalComponent = function(id, settings) {
   //Checks if the modal element exist. if not we don't continue the initialization
   const modalId = id
 
