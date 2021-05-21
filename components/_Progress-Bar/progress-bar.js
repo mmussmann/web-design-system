@@ -1,4 +1,4 @@
-export const msdsProgressBar = function(parentElementId, maxStepNumber, startFromOne) {
+export const msdsProgressBarComponent = function(parentElementId, maxStepNumber, startFromOne) {
   //Get the base number for the progress bar
   const cssClassCompleted = 'msds-progress-bar__progression-bar--completed'
 

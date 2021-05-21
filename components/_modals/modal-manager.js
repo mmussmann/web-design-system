@@ -1,4 +1,4 @@
-export const msdsModalManager = function() {
+export const msdsModalManagerComponent = function() {
   //Checks if the modal element exist. if not we don't continue the initialization
   const modals = []
 
