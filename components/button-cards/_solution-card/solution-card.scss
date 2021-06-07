@@ -66,6 +66,15 @@
       margin-top: 20px;
 
       &-button {
+        @at-root a#{&} {
+          text-decoration: none;
+          &:first-child {
+            color: $gray-8;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
         cursor: pointer;
         text-decoration: none;
         background-color: $gray-1;
