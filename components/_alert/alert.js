@@ -53,6 +53,8 @@ function initialize() {
 }
 
 /** Immediate initialization **/
-if (document.querySelector('.msds-alert')) {
-  initialize()
-}
+window.addEventListener('load', function() {
+  if (document.querySelector('.msds-alert')) {
+    initialize()
+  }
+})
