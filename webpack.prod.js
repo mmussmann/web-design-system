@@ -56,6 +56,7 @@ module.exports = merge(common, {
       { from: 'components/_icons/icons.list.js', to: 'icons.list.js'},
       { from: 'components/_typography/text.list.js', to: 'text.list.js'},
       { from: 'components/colors/colors.list.js', to: 'colors.list.js'},
+      { from: 'components/_spacing/spacing.list.js', to: 'spacing.list.js'},
       { from: 'src/svg/rich', to: 'svg/rich' }
     ])
   ]
