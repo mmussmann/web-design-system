@@ -1,0 +1,41 @@
+/* Section Padding Definitions 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.msds-block-padding-large {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.msds-block-padding-medium {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.msds-block-padding-small {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 769px) {
+  .msds-block-padding-large {
+    padding-top: 96px;
+    padding-bottom: 112px;
+  }
+
+  .msds-block-padding-medium {
+    padding-top: 80px;
+    padding-bottom: 96px;
+  }
+
+  .msds-block-padding-small {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .msds-block-padding-large {
+    padding-top: 128px;
+    padding-bottom: 160px;
+  }
+}
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

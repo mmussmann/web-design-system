@@ -220,3 +220,9 @@ The alerts have multiple customization options that will be listed below
 ```html
 {{render '@alert-dark-theme-solution'}}
 ```
+
+
+<script>
+    //Iniliazes JS each time a user changes the page - this is for fractle v1.3.0
+    dispatchEvent(new Event('load'));
+</script>

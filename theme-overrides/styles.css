@@ -640,3 +640,100 @@ button:focus {
 .Tree-items .Tree-item a.Tree-entityLink:hover {
   text-decoration: underline !important;
 }
+
+/* Spacing definitions ofr the documentation 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.section-spacing {
+  opacity: 0.8;        
+}
+
+.section-spacing::before {  
+  content: '';
+  background: #50bfee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: 900;
+}
+
+.section-spacing::after {  
+  content: '';  
+  background: #50bfee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: 900;
+}
+  /* Large Spacing Definitions */
+  .section-spacing--large-desktop::before {
+    content: '128px';
+    height: 128px;
+  }
+  .section-spacing--large-desktop::after {
+    content: '160px';
+    height: 160px;
+  }
+  .section-spacing--large-tablet::before {
+    content: '96px';
+    height: 96px;
+  }
+  .section-spacing--large-tablet::after {
+    content: '112px';
+    height: 112px;
+  }
+  .section-spacing--large-mobile::before {
+    content: '64px';
+    height: 64px;
+  }
+  .section-spacing--large-mobile::after {
+    content: '80px';
+    height: 80px;
+  }
+
+  /* Medium Spacing Definitions */
+  .section-spacing--medium-desktop::before,
+  .section-spacing--medium-tablet::before  {
+    content: '80px';
+    height: 80px;
+  }
+  .section-spacing--medium-desktop::after,
+  .section-spacing--medium-tablet::after {
+    content: '96px';
+    height: 96px;
+  }
+  
+  .section-spacing--medium-mobile::before {
+    content: '64px';
+    height: 64px;
+  }
+  .section-spacing--medium-mobile::after {
+    content: '80px';
+    height: 80px;
+  }
+
+  /* Small Spacing Definitions */
+  .section-spacing--small-desktop::before,
+  .section-spacing--small-tablet::before  {
+    content: '48px';
+    height: 48px;
+  }
+  .section-spacing--small-desktop::after,
+  .section-spacing--small-tablet::after {
+    content: '56px';
+    height: 56px;
+  }
+  .section-spacing--small-mobile::before {
+    content: '32px';
+    height: 32px;
+  }
+  .section-spacing--small-mobile::after {
+    content: '40px';
+    height: 40px;
+  }
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
