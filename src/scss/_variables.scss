@@ -85,6 +85,11 @@ $shadow-small: 0 1px 2px rgba(2, 56, 82, 0.3);
 $shadow-medium: 0 2px 12px rgba(2, 56, 82, 0.17);
 $shadow-large: 0 12px 36px 0 rgba(2, 56, 82, 0.12);
 
+
+//Z-Indexes
+$zindex-modal-1: 4000;
+$zindex-modal-2: 4010;
+
 /***************** BOOTSTRAP CONFIGURATION VARIABLES *****************/
 $grid-gutter-width: 20px;
 $spacers: (
