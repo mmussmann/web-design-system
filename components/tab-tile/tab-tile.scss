@@ -31,7 +31,7 @@
   &__container {
     display: flex;
     flex-direction: row;
-    z-index: 10;
+    z-index: $zindex-element-1;
   }
 
   &__tabs-container {
