@@ -13,7 +13,7 @@
   &__list-item-input {
     position: absolute;
     opacity: 0;
-    z-index: -1;
+    z-index: $zindex-component-hidden;
 
     &:focus {
       ~ .msds-accordion__list-item-header {
