@@ -53,16 +53,19 @@ $rgba-16: rgba(0, 0, 0, 0.03);
 
 // Gradients
 $clear-blue-gradient: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
+$clear-blue-gradient-reverse: linear-gradient(-90deg, $alt-blue-2 0%, $clear-blue 100%);
 $clear-blue-gradient-2: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218, 0) 100%);
 $clear-blue-gradient-2-mobile: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
 $clear-blue-gradient-2-reverse: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0) 100%);
 $clear-blue-gradient-2-reverse-mobile: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
 $dark-blue-gradient: linear-gradient(270deg, $alt-blue-3 0%, $dark-blue 100%);
+$dark-blue-gradient-reverse: linear-gradient(-90deg, $dark-blue 0%, $alt-blue-3 100%);
 $dark-blue-gradient-2: linear-gradient(90deg, $dark-blue 0%, rgba(2, 56, 82, 0) 100%);
 $dark-blue-gradient-2-mobile: linear-gradient(90deg, $dark-blue 0%, rgba(2, 56, 82, 0.5) 100%);
 $dark-blue-gradient-2-reverse: linear-gradient(270deg, $dark-blue 0%, rgba(2, 56, 82, 0) 100%);
 $dark-blue-gradient-2-reverse-mobile: linear-gradient(270deg, $dark-blue 0%, rgba(2, 56, 82, 0.5) 100%);
 $mixed-blue-gradient: linear-gradient(90deg, $alt-blue-3 20%, $clear-blue 80%);
+$mixed-blue-gradient-reverse: linear-gradient(-90deg, $alt-blue-3 20%, $clear-blue 80%);
 $yellow-gradient: linear-gradient(90deg, $alt-yellow-1 0%, $yellow 100%);
 $blue-to-yellow: linear-gradient(90deg, $clear-blue 32%, $yellow 68%);
 $gray-gradient-1: linear-gradient(90deg, $gray-3 0%, $white 100%);

@@ -52,11 +52,14 @@ export const backgroundColors = [
   { name: 'Yellow Gradient', value: 'msds-bg-yellow-gradient' },
   { name: 'Blue To Yellow Gradient', value: 'msds-bg-blue-to-yellow-gradient' },
   { name: 'Clear Blue Gradient', value: 'msds-bg-clear-blue-gradient' },
+  { name: 'Clear Blue Gradient Reverse', value: 'msds-bg-clear-blue-gradient-reverse' },
   { name: 'Clear Blue Gradient 2', value: 'msds-bg-clear-blue-gradient-2' },
   { name: 'Clear Blue Gradient 2 Reverse', value: 'msds-bg-clear-blue-gradient-2-reverse' },
   { name: 'Dark Blue Gradient', value: 'msds-bg-dark-blue-gradient' },
+  { name: 'Dark Blue Gradient Reverse', value: 'msds-bg-dark-blue-gradient-reverse' },
   { name: 'Dark Blue Gradient 2', value: 'msds-bg-dark-blue-gradient-2' },
   { name: 'Dark Blue Gradient 2 Reverse', value: 'msds-bg-dark-blue-gradient-2-reverse' },
   { name: 'Mixed Blue Gradient', value: 'msds-bg-mixed-blue-gradient' },
+  { name: 'Mixed Blue Gradient Reverse', value: 'msds-bg-mixed-blue-gradient-reverse' },
   { name: 'Husky Dark Blue Gradient', value: 'msds-bg-husky-dark-blue-gradient' }
 ]
