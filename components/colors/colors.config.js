@@ -4,7 +4,7 @@ module.exports = {
     previewCss: `
       .color-square{
         width: 170px; 
-        height: 92px; 
+        height: 130px; 
         margin: 10px;
         display: flex;
         justify-content: center;
