@@ -1,6 +1,6 @@
 <div class="d-inline-block msds-popover">
     <div class="msds-text-header-1-bold msds-text-clear-blue mb-3">
-        MilestonePartnerLevelText
+        Invite a coworker
     </div>
     <div class="msds-text-body-3-bold msds-text-gray-9 mb-3">
         MilestonePartnerLevelLabel
@@ -10,12 +10,21 @@
     </a>
     <div class="msds-popover__item text-left p-4 msds-text-gray-10">
         <div class="msds-popover__content">
+            <svg title="icon" class="msds-popover__item-icon">
+                <use href="{{ path '/msds-spritemap.svg' }}#email" />
+            </svg>
             <div class="msds-text-header-4 mb-4">
-                PartnerClassificationTitle
+                {{general.popoverHeadline}}
             </div>
-            <p class="m-0 msds-text-body-3">
-                PartnerClassificationDescription
+            <p class="msds-text-body-2 mb-1">
+                {{general.coworkersDescription}}
             </p>
+            <p class="mb-1">John Doe</p>
+            <p class="mb-1">Jane Doe</p>
+            <p class="mb-1">Janie Doe</p>
+            <p class="mb-1">Johnny Doe</p>
+            <p class="mb-1">John Roe</p>
+            <p class="mb-1">Richard Roe</p>
         </div>
         <div class="msds-popover__arrow">
         </div>
