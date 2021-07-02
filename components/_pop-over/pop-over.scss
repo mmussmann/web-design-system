@@ -1,0 +1,164 @@
+$popover-width: 300px;
+$arrow-width: 50px;
+$arrow-height: 25px;
+$arrow-size: 20px;
+.msds-popover {
+  position: relative;
+
+  &__item {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: $popover-width;
+    background: $white;
+    box-shadow: 0 0 8px -2px rgba($black, 0.3);
+    padding: 1.25em;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, $arrow-height);
+
+    @include media-breakpoint-up(md) {
+      top: 50%;
+      left: 100%;
+      transform: translate($arrow-height, -50%);
+    }
+  }
+
+  &:hover &__item {
+    display: block;
+  }
+
+  &__arrow {
+    position: absolute;
+    overflow: hidden;
+
+    height: $arrow-height;
+    width: $arrow-width;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: $arrow-size;
+      height: $arrow-size;
+      background: currentColor;
+      box-shadow: 0 0 6px -1px rgba($black, 0.3);
+
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    @include media-breakpoint-up(md) {
+      width: $arrow-height;
+      height: $arrow-width;
+      bottom: auto;
+      left: auto;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      overflow: hidden;
+
+      &::after {
+        top: 50%;
+        left: 100%;
+      }
+    }
+  }
+
+  &--top &__item {
+    top: auto;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -$arrow-height);
+  }
+
+  &--top &__arrow {
+    top: 100%;
+    width: $arrow-width;
+    height: $arrow-height;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  &--bottom &__item {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, $arrow-height);
+  }
+
+  &--bottom &__arrow {
+    height: $arrow-height;
+    width: $arrow-width;
+    bottom: 100%;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: $arrow-size;
+      height: $arrow-size;
+      background: currentColor;
+      box-shadow: 0 0 6px -1px rgba($black, 0.3);
+
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &--right &__item {
+    top: 50%;
+    left: 100%;
+    transform: translate($arrow-height, -50%);
+  }
+
+  &--right &__arrow {
+    width: $arrow-height;
+    height: $arrow-width;
+    bottom: auto;
+    left: auto;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    overflow: hidden;
+
+    &::after {
+      top: 50%;
+      left: 100%;
+    }
+  }
+
+  &--left &__item {
+    left: auto;
+    top: 50%;
+    right: 100%;
+    transform: translate(-$arrow-height, -50%);
+  }
+
+  &--left &__arrow {
+    width: $arrow-height;
+    height: $arrow-width;
+    bottom: auto;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+
+    &::after {
+      top: 50%;
+      left: 0;
+    }
+  }
+}
