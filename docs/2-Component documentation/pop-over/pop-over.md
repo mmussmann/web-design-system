@@ -45,3 +45,29 @@ Each Pop Over component is based on a global CSS class called "msds-pop-over". I
 ```html
 {{render '@pop-over-global-definition'}}
 ```
+#### Pop over positioning
+The Pop over element can be positioned on top, left, right or on the bottom its hover element by extenting the class with its corrosponding extending class.  msds-popover--top, msds-popover--left, msds-popover--right, msds-popover--bottom. 
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@pop-over-top'}}</div>
+</div>
+
+```html
+{{render '@pop-over-top'}}
+```
+
+<div class="element-preview d-flex flex-row-reverse">
+  <div class="element-preview__inner">{{render '@pop-over-left'}}</div>
+</div>
+
+```html
+{{render '@pop-over-left'}}
+```
+
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@pop-over-bottom'}}</div>
+</div>
+
+```html
+{{render '@pop-over-bottom'}}
+```
