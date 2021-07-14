@@ -20,17 +20,22 @@ a.msds-link:not(.msds-link--secondary) {
 .msds-bg-dark-blue,
 .msds-bg-orange,
 .msds-bg-dusty-green,
+.msds-bg-husky-dark-blue,
 .msds-bg-gray-gradient-6,
 .msds-bg-gray-gradient-6-reverse,
 .msds-bg-blue-to-yellow-gradient,
 .msds-bg-clear-blue-gradient,
+.msds-bg-clear-blue-gradient-reverse,
 .msds-bg-clear-blue-gradient-2,
 .msds-bg-clear-blue-gradient-2-reverse,
 .msds-bg-dark-blue-gradient,
+.msds-bg-dark-blue-gradient-reverse,
 .msds-bg-dark-blue-gradient-2,
 .msds-bg-dark-blue-gradient-2-reverse,
-.msds-bg-mixed-blue-gradient {
-  a:not(.msds-btn),
+.msds-bg-mixed-blue-gradient,
+.msds-bg-mixed-blue-gradient-reverse,
+.msds-bg-husky-dark-blue-gradient {
+  a:not(.msds-btn):not(.msds-link--secondary),
   a.msds-link:not(.msds-link--secondary) {
     @include msds-link($yellow);
   }
