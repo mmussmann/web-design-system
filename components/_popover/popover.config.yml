@@ -1,0 +1,6 @@
+status: 'wip'
+context:
+  general:
+    popoverHeadline: "Invite a coworker"
+    coworkersDescription: "Contact one of the below co-workers for permission to add more colleagues."
+
