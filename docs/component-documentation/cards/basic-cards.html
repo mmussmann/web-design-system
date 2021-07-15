@@ -1,0 +1,2038 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../../src/demo-img/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../rich-icons-bundle.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../theme-overrides/styles.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../main.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Basic Cards | Milestone Web Design System</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    </button>
+    <div class="flex-child-header-txt">
+        <a href="../../../index.html" class="Header-title" data-pjax>
+            <img class="logo-test" src="../../../src/demo-img/milestone-logo-white.png" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>        
+    </div>
+    <div class="github-milestone-system">
+        <a class="github-milestonesys-design-system" href="https://github.com/milestone-sys/web-design-system" target="_blank">
+            <img class="git-icon" src="../../../src/demo-img/giticon.png" alt="git icon"></a>               
+        </a>
+    </div>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Basic Cards</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <h2 id="the-basic-cards-are-used-everywhere-on-the-website-to-link-between-pages">The basic cards are used everywhere on the website to link between pages</h2>
+<p>Below you will find the different definitions and options to create your basic cards</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="row">
+    <div class="col-6">
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#overview">Overview</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                  <a class="msds-link"href="#global-definition">Global Definition</a>
+                </li>
+                <li class="document__unordered-list-item">
+                  <a class="msds-link"href="#themes">Themes</a>
+                </li>
+            </ul>
+            <li class="document__unordered-list-item"> 
+                <a class="msds-link"href="#basic-card-layouts">Basic Card Layouts</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item"> 
+                    <a class="msds-link"href="#basic-card">Basic Card Default</a>
+                </li>
+                <li class="document__unordered-list-item"> 
+                    <a class="msds-link"href="#basic-card-without-a-caption">Basic Card Without A Caption</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link"href="#basic-card-without-a-caption-with-an-icon">Basic Card With Header Icon</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link"href="#basic-media-card-with-media-types">Basic Card With Header Image</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="col-6">
+        <ul class="document__unordered-list">
+            <li class="document__unordered-list-item"> 
+                <a class="msds-link"href="#basic-card-grouping">Basic Card Grouping</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a class="msds-link"href="#basic-card-left-aligned">Basic Card Left Aligned</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link"href="#basic-card-center-aligned">Basic Card Center Aligned</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link"href="#basic-card-with-icon-in-caption-title">Basic Card With Icon In Caption</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+<h2 id="overview">Overview</h2>
+<h3 id="global-definition">Global Definition</h3>
+<p>Each basic card is based on a global CSS class called <code>“msds-basic-card”</code>. It is important to include this class first as it is the main CSS class of the component. Without this HTML class, you cannot utilize component. 
+There are 4 types of basic cards:</p>
+<ul>
+<li>The default Basic Cards</li>
+<li>Basic Cards without a caption</li>
+<li>Basic Cards with header icons </li>
+<li>Basic Cards with header images</li>
+</ul>
+<h3 id="themes">Themes</h3>
+<p>Basic Cards have two different themes</p>
+<h4 id="light-themed-cards">Light Themed Cards</h4>
+<p>Light theme cards are setup as the default card</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                 <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>           
+        </div>
+    </div>
+</div></div>
+</div>
+
+<h4 id="dark-themed-cards">Dark Themed Cards</h4>
+<p>To use a dark themed card add the CSS class “<code>msds-basic-card--dark</code>“, this modifier will work for all basic cards</p>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--dark msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--dark msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame embed-responsive embed-responsive-16by9"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame-image embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../../src/demo-img/xprotect.jpg</span>
+                    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-title"</span>&gt;</span>
+                    Basic Cards caption title
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="basic-card-layouts">Basic Card Layouts</h3>
+<p>Below are the different Basic Card layouts</p>
+<h4 id="basic-card">Basic Card</h4>
+<p>Below is an example of the default Basic Card </p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                 <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>           
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame embed-responsive embed-responsive-16by9"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame-image embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../../src/demo-img/xprotect.jpg</span>
+                    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-title"</span>&gt;</span>
+                    Basic Cards caption title
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>           
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="basic-card-without-a-caption">Basic Card Without A Caption</h4>
+<p>Below is an example of a Basic Card without a caption</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                 <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>           
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>           
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="basic-card-without-a-caption-with-an-icon">Basic Card Without A Caption With An Icon</h4>
+<p>Below is an example of a Basic Card without a caption with an icon</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading-icon">
+                    <svg class="msds-icon">
+                        <use href="../../../msds-spritemap.svg#demo"></use>
+                    </svg>
+                </div>
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#demo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="basic-card-without-a-caption-with-an-image">Basic Card Without A Caption With An Image</h4>
+<p>Below is an example of a Basic Card without a caption with an image</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading-icon">
+                    <img src="../../../src/demo-img/milestone-systems-logo.png" alt="custom image one">
+                </div>
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../../src/demo-img/milestone-systems-logo.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"custom image one"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="basic-card-grouping">Basic Card Grouping</h3>
+<p>Basic Cards can be grouped into left/center/left with icon aligned cards</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+            </div>
+            <a class="msds-basic-card__link" href="/">
+                read more
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned msds-basic-card--centered">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+            </div>
+            <a class="msds-basic-card__link" href="/">
+                read more
+            </a>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-icon" title="Demo">
+                    <svg class="msds-icon">
+                            <use href="../../../msds-spritemap.svg#demo"></use>
+                    </svg>
+                </div> 
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<h5 id="basic-card-left-aligned">Basic Card Left Aligned</h5>
+<p>Basic Cards that are left aligned, are our default styling for Basic Cards.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame embed-responsive embed-responsive-16by9"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame-image embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../../src/demo-img/xprotect.jpg</span>
+                    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-title"</span>&gt;</span>
+                    Basic Cards caption title
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h5 id="basic-card-center-aligned">Basic Card Center Aligned</h5>
+<p>Basic Cards center aligned can be setup by using the “<code>msds-basic-card--centered</code>“ CSS class.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned msds-basic-card--centered">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned msds-basic-card--centered"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame embed-responsive embed-responsive-16by9"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame-image embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../../src/demo-img/xprotect.jpg</span>
+                    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-title"</span>&gt;</span>
+                    Basic Cards caption title
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h5 id="basic-card-with-icon-in-caption-title">Basic Card With Icon In Caption Title</h5>
+<p>Basic Cards can have an icon in the caption title</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row card-row">
+    <div class="col-12 col-md-4">
+        <div class="msds-basic-card msds-basic-card--vertical-aligned">
+            <div class="msds-basic-card__frame embed-responsive embed-responsive-16by9">
+                <img class="msds-basic-card__frame-image embed-responsive-item" src=../../../src/demo-img/xprotect.jpg
+                    alt="Card image">
+            </div>
+            <div class="msds-basic-card__caption">
+                <div class="msds-basic-card__caption-icon" title="logo-diamond">
+                    <svg class="msds-icon">
+                        <use href="../../../msds-spritemap.svg#demo"></use>
+                    </svg>
+                </div>
+                <div class="msds-basic-card__caption-title">
+                    Basic Cards caption title
+                </div>
+            </div>
+            <div class="msds-basic-card__separator"></div>
+            <div class="msds-basic-card__body">
+                <div class="msds-basic-card__body-heading">
+                    Headline lorem ipsum
+                </div>
+                <div class="msds-basic-card__body-description">
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                </div>
+                <a class="msds-basic-card__link" href="/">
+                    read more
+                </a>
+            </div>            
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row card-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-md-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card msds-basic-card--vertical-aligned"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame embed-responsive embed-responsive-16by9"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__frame-image embed-responsive-item"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">../../../src/demo-img/xprotect.jpg</span>
+                    <span class="hljs-attr">alt</span>=<span class="hljs-string">"Card image"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-icon"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"logo-diamond"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#demo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__caption-title"</span>&gt;</span>
+                    Basic Cards caption title
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__separator"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-heading"</span>&gt;</span>
+                    Headline lorem ipsum
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__body-description"</span>&gt;</span>
+                    Malesuada vestibulum morbi aliquam commodo. Rhoncus id semper pellentesque. Nibh conseqtetuer eros nullam.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-basic-card__link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/"</span>&gt;</span>
+                    read more
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>            
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-colors-items">
+                Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/background-colors.html" data-pjax>
+                <span>Background Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/colors-and-shadows.html" data-pjax>
+                <span>Colors And Shadows</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-font-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-font-colors-items">
+                Font Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-font-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-1.html" data-pjax>
+                <span>Msds Text Alt Blue 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-2.html" data-pjax>
+                <span>Msds Text Alt Blue 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-3.html" data-pjax>
+                <span>Msds Text Alt Blue 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-1.html" data-pjax>
+                <span>Msds Text Alt Yellow 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-2.html" data-pjax>
+                <span>Msds Text Alt Yellow 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-black.html" data-pjax>
+                <span>Msds Text Black</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-clear-blue.html" data-pjax>
+                <span>Msds Text Clear Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-confirm-green.html" data-pjax>
+                <span>Msds Text Confirm Green</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-1.html" data-pjax>
+                <span>Msds Text Danger Red 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-2.html" data-pjax>
+                <span>Msds Text Danger Red 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-dark-blue.html" data-pjax>
+                <span>Msds Text Dark Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-1.html" data-pjax>
+                <span>Msds Text Gray 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-10.html" data-pjax>
+                <span>Msds Text Gray 10</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-2.html" data-pjax>
+                <span>Msds Text Gray 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-3.html" data-pjax>
+                <span>Msds Text Gray 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-4.html" data-pjax>
+                <span>Msds Text Gray 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-5.html" data-pjax>
+                <span>Msds Text Gray 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-6.html" data-pjax>
+                <span>Msds Text Gray 6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-7.html" data-pjax>
+                <span>Msds Text Gray 7</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-8.html" data-pjax>
+                <span>Msds Text Gray 8</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-9.html" data-pjax>
+                <span>Msds Text Gray 9</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-sand.html" data-pjax>
+                <span>Msds Text Sand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-white.html" data-pjax>
+                <span>Msds Text White</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-yellow.html" data-pjax>
+                <span>Msds Text Yellow</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/text-colors.html" data-pjax>
+                <span>Text Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/tab-tile.html" data-pjax>
+                <span>Tab Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-content">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-content-items">
+                Content
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-content-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-icons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-icons-items">
+                Icons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-icons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/icons-flat.html" data-pjax>
+                <span>Icons Flat</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/icons-rich.html" data-pjax>
+                <span>Icons Rich</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-typography-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/links.html" data-pjax>
+                <span>Links</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/lists.html" data-pjax>
+                <span>Lists</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/text.html" data-pjax>
+                <span>Text</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-component-documentation">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-component-documentation-items">
+                Component Documentation
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-component-documentation-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../buttons/buttons.html" data-pjax>
+                <span>Buttons</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../buttons/buttons-floating.html" data-pjax>
+                <span>Buttons Floating</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-cards">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-cards-items">
+                Cards
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-cards-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Basic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="category-cards.html" data-pjax>
+                <span>Category Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="contact-cards.html" data-pjax>
+                <span>Contact Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="generic-cards.html" data-pjax>
+                <span>Generic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="solution-cards.html" data-pjax>
+                <span>Solution Cards</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-dividers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-dividers-items">
+                Dividers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-dividers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../dividers/dividers.html" data-pjax>
+                <span>Dividers</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-expanding-components">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-expanding-components-items">
+                Expanding Components
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-expanding-components-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../expanding-components/accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../expanding-components/section.html" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../modal.html" data-pjax>
+                <span>Modal</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-popover">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-popover-items">
+                Popover
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-popover-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../popover/popover.html" data-pjax>
+                <span>Popover</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../progress-bar.html" data-pjax>
+                <span>Progress Bar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-forms">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-forms-items">
+                Forms
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-forms-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/drop-down-list.html" data-pjax>
+                <span>Drop Down List</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/input-field.html" data-pjax>
+                <span>Input Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/radio-button.html" data-pjax>
+                <span>Radio Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/text-area.html" data-pjax>
+                <span>Text Area</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../utilities/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-guidelines-and-guides">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-guidelines-and-guides-items">
+                Guidelines And Guides
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-guidelines-and-guides-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/creating-a-new-release.html" data-pjax>
+                <span>Creating A New Release</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/css-and-scss-guidelines.html" data-pjax>
+                <span>Css And Scss Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/git-cheat-sheet.html" data-pjax>
+                <span>Git Cheat Sheet</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/installation-and-usage.html" data-pjax>
+                <span>Installation And Usage</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+<script src="../../../design-system.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>

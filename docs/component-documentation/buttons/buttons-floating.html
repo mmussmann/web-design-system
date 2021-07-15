@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../../src/demo-img/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../rich-icons-bundle.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../theme-overrides/styles.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../main.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Floating Buttons | Milestone Web Design System</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    </button>
+    <div class="flex-child-header-txt">
+        <a href="../../../index.html" class="Header-title" data-pjax>
+            <img class="logo-test" src="../../../src/demo-img/milestone-logo-white.png" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>        
+    </div>
+    <div class="github-milestone-system">
+        <a class="github-milestonesys-design-system" href="https://github.com/milestone-sys/web-design-system" target="_blank">
+            <img class="git-icon" src="../../../src/demo-img/giticon.png" alt="git icon"></a>               
+        </a>
+    </div>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Floating Buttons</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <h2 id="the-buttons-are-used-everywhere-on-the-website-for-different-purposes-and-actions-such-as-forms-ctas-and-campaigns">The buttons are used everywhere on the website for different purposes and actions such as forms, CTAs and campaigns…</h2>
+<h2 id="below-you-will-find-the-different-definitions-and-options-to-create-your-buttons">Below you will find the different definitions and options to create your buttons</h2>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="row">
+    <div class="col-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#overview">Overview</a></li>
+        <ul class="document__unordered-list">
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#global-definition">Global Definition</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#sizes">Sizes</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#states">States</a>
+          </li>
+          <li class="document__unordered-list-item">
+            <a class="msds-link" href="#direction">Direction</a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#floating-button">Floating Button</a></li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-floating-button">Secondary Floating Button</a>
+        </li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#floating-button-dark-theme">Floating Button Dark Theme</a>
+        </li>
+        <li class="document__unordered-list-item"> <a class="msds-link" href="#secondary-floating-button-dark-theme">Secondary Floating
+            Button Dark Theme</a></li>
+      </ul>
+    </div>
+</div>
+
+<h2 id="overview">Overview</h2>
+<h3 id="global-definition">Global Definition</h3>
+<p>Each button is based on a global CSS class called <code>".msds-btn-floating"</code>. </p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Default Floating Button</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Default Floating Button<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="sizes">Sizes</h3>
+<p>Our floating buttons can be rendered in 3 different sizes, large, medium and small.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="states">States</h3>
+<p>Each button has different states that are applied automatically: <i>hover, active, focus and disabled.</i></p>
+<ul>
+<li>You can see the different state by hovering, activating and focusing on the first Floating Button below</li>
+<li>The second Floating Button is disabled, all floating buttons can be disabled.</li>
+</ul>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-6">
+    <h3>Hover, Active and Focus states</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-6">
+    <h3>Disabled State</h3>
+    <button type="button" class="msds-btn-floating" disabled>
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Hover, Active and Focus states<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-6"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Disabled State<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span> <span class="hljs-attr">disabled</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="direction">Direction</h3>
+<p>There are three positional states that floating buttons can be preset to, these position can be applied to all floating buttons</p>
+<ul>
+<li>The icon on the left, and the text on the right by default</li>
+<li>The text on the left, and the icon on the right by using <code>".msds-btn-floating--right"</code> modifier</li>
+<li>Column alignment with the text above the icon by using <code>".msds-btn-floating--column"</code> modifier</li>
+</ul>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+
+  <div class="col-4">
+    <h3>Icon left, text right</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Text left, icon right</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Text above icon</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Icon left, text right<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Text left, icon right<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Text above icon<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="icon-left---text-right">Icon left - Text Right</h4>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="text-left---icon-right">Text left - Icon Right</h4>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg msds-btn-floating--right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm msds-btn-floating--right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="text-above-icon">Text above icon</h4>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg msds-btn-floating--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm msds-btn-floating--column"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h2 id="floating-button">Floating Button</h2>
+<p>To use a primary floating button can be used by appending the following modifier CCS class: <code>".msds-btn-floating"</code>. </p>
+<p>Below is a example of the Milestone Primary floating button.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h2 id="secondary-floating-button">Secondary Floating Button</h2>
+<p>To use the Secondary Floating Button you need to add the following CCS class: <code>".msds-btn-floating--secondary"</code>. </p>
+<p>Below are few examples of the Milestone Secondary button.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg msds-btn-floating--secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm msds-btn-floating--secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="aligned-right">Aligned Right</h3>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<h3 id="aligned-column---text-above-icon">Aligned Column - Text above icon</h3>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+
+<h2 id="floating-button-dark-theme">Floating Button Dark Theme</h2>
+<p>To use the Dark Themed buttons you need to add the following CCS class: <code>".msds-btn-floating--dark"</code>. </p>
+<p>Below are few examples of the Milestone Dark Themed Floating Button. </p>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--dark"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="aligned-right-1">Aligned Right</h3>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<h3 id="aligned-column---text-above-icon-1">Aligned Column - Text above icon</h3>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<h2 id="secondary-floating-button-dark-theme">Secondary Floating Button Dark Theme</h2>
+<p>To use the Dark Themed buttons you need to add the following CCS class: <code>".msds-btn-floating--dark-secondary"</code>. </p>
+<p>Below are few examples of the Milestone Dark Themed Floating Button. </p>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark-secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark-secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark-secondary">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark-secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Medium (default)<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--dark-secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark-secondary"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-icon"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+      See more
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="aligned-right-2">Aligned Right</h3>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark-secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark-secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark-secondary msds-btn-floating--right">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+
+<h3 id="aligned-column---text-above-icon-2">Aligned Column - Text above icon</h3>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="row">
+  <div class="col-4">
+    <h3>Large</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--lg msds-btn-floating--dark-secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Medium (default)</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--dark-secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+  <div class="col-4">
+    <h3>Small</h3>
+    <button type="button" class="msds-btn-floating msds-btn-floating--sm msds-btn-floating--dark-secondary msds-btn-floating--column">
+      <svg class="msds-icon">
+        <use href="../../../msds-spritemap.svg#right-arrow" />
+      </svg>
+      See more
+    </button>
+  </div>
+</div></div>
+</div>
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-colors-items">
+                Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/background-colors.html" data-pjax>
+                <span>Background Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/colors-and-shadows.html" data-pjax>
+                <span>Colors And Shadows</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-font-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-font-colors-items">
+                Font Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-font-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-1.html" data-pjax>
+                <span>Msds Text Alt Blue 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-2.html" data-pjax>
+                <span>Msds Text Alt Blue 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-3.html" data-pjax>
+                <span>Msds Text Alt Blue 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-1.html" data-pjax>
+                <span>Msds Text Alt Yellow 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-2.html" data-pjax>
+                <span>Msds Text Alt Yellow 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-black.html" data-pjax>
+                <span>Msds Text Black</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-clear-blue.html" data-pjax>
+                <span>Msds Text Clear Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-confirm-green.html" data-pjax>
+                <span>Msds Text Confirm Green</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-1.html" data-pjax>
+                <span>Msds Text Danger Red 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-2.html" data-pjax>
+                <span>Msds Text Danger Red 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-dark-blue.html" data-pjax>
+                <span>Msds Text Dark Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-1.html" data-pjax>
+                <span>Msds Text Gray 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-10.html" data-pjax>
+                <span>Msds Text Gray 10</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-2.html" data-pjax>
+                <span>Msds Text Gray 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-3.html" data-pjax>
+                <span>Msds Text Gray 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-4.html" data-pjax>
+                <span>Msds Text Gray 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-5.html" data-pjax>
+                <span>Msds Text Gray 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-6.html" data-pjax>
+                <span>Msds Text Gray 6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-7.html" data-pjax>
+                <span>Msds Text Gray 7</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-8.html" data-pjax>
+                <span>Msds Text Gray 8</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-9.html" data-pjax>
+                <span>Msds Text Gray 9</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-sand.html" data-pjax>
+                <span>Msds Text Sand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-white.html" data-pjax>
+                <span>Msds Text White</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-yellow.html" data-pjax>
+                <span>Msds Text Yellow</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/text-colors.html" data-pjax>
+                <span>Text Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/tab-tile.html" data-pjax>
+                <span>Tab Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-content">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-content-items">
+                Content
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-content-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-icons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-icons-items">
+                Icons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-icons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/icons-flat.html" data-pjax>
+                <span>Icons Flat</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/icons/icons-rich.html" data-pjax>
+                <span>Icons Rich</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-typography-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/links.html" data-pjax>
+                <span>Links</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/lists.html" data-pjax>
+                <span>Lists</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../content/typography/text.html" data-pjax>
+                <span>Text</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-component-documentation">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-component-documentation-items">
+                Component Documentation
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-component-documentation-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="buttons.html" data-pjax>
+                <span>Buttons</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Buttons Floating</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-cards">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-cards-items">
+                Cards
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-cards-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../cards/basic-cards.html" data-pjax>
+                <span>Basic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../cards/category-cards.html" data-pjax>
+                <span>Category Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../cards/contact-cards.html" data-pjax>
+                <span>Contact Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../cards/generic-cards.html" data-pjax>
+                <span>Generic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../cards/solution-cards.html" data-pjax>
+                <span>Solution Cards</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-dividers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-dividers-items">
+                Dividers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-dividers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../dividers/dividers.html" data-pjax>
+                <span>Dividers</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-expanding-components">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-expanding-components-items">
+                Expanding Components
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-expanding-components-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../expanding-components/accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../expanding-components/section.html" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../modal.html" data-pjax>
+                <span>Modal</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-popover">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-popover-items">
+                Popover
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-popover-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../popover/popover.html" data-pjax>
+                <span>Popover</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../progress-bar.html" data-pjax>
+                <span>Progress Bar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-forms">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-forms-items">
+                Forms
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-forms-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/drop-down-list.html" data-pjax>
+                <span>Drop Down List</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/input-field.html" data-pjax>
+                <span>Input Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/radio-button.html" data-pjax>
+                <span>Radio Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/text-area.html" data-pjax>
+                <span>Text Area</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../utilities/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-guidelines-and-guides">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-guidelines-and-guides-items">
+                Guidelines And Guides
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-guidelines-and-guides-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/creating-a-new-release.html" data-pjax>
+                <span>Creating A New Release</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/css-and-scss-guidelines.html" data-pjax>
+                <span>Css And Scss Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/git-cheat-sheet.html" data-pjax>
+                <span>Git Cheat Sheet</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/installation-and-usage.html" data-pjax>
+                <span>Installation And Usage</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+<script src="../../../design-system.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394.14 237.72">
+    <defs>
+      <style>
+        .artboard-3-2-cls-check {
+          fill: #bdc5c9;
+        }
+  
+        .cls-1-new3  {
+          fill: #003a5d;
+        }
+  
+        .cls-2-new3 {
+          fill: #96a6ae;
+        }
+  
+        .cls-3-new3 {
+          fill: #c3ccd1;
+        }
+  
+        .cls-4-new3 {
+          opacity: 0.6;
+        }
+  
+        .cls-5-new3 {
+          fill: #009bdb;
+        }
+  
+        .cls-6-new3 {
+          fill: #0080b4;
+        }
+  
+        .cls-7-new3 {
+          fill: #e4e8ea;
+        }
+  
+        .cls-8-new3 {
+          fill: #cdd4d8;
+        }
+  
+        .cls-9-new3 {
+          fill: #fff;
+        }
+  
+        .cls-10-new3 {
+          fill: #d8dde0;
+        }
+        .check-width-start {
+    transform: scalex(0);
+    animation: check-width 8s infinite;
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+.check-width2 {
+    animation: check-width2 8s infinite;
+}
+
+.check-width3 {
+    animation: check-width3 8s infinite;
+}
+
+.check {
+    fill: #bdc5c9;
+    animation: check-mark3 8s infinite;
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+
+.check1 {
+    animation: check-mark 8s infinite;
+}
+
+.check2 {
+    animation: check-mark2 8s infinite;
+}
+
+
+@keyframes check-width {
+    0% {
+        transform: scalex(0)
+    }
+
+    10% {
+        transform: scalex(1)
+    }
+
+    90% {
+        transform: scalex(1)
+    }
+
+    100% {
+        transform: scalex(0)
+    }
+}
+
+@keyframes check-width2 {
+
+    0%,
+    10% {
+        transform: scalex(0)
+    }
+
+    20% {
+        transform: scalex(1)
+    }
+
+    80% {
+        transform: scalex(1)
+    }
+
+    90%,
+    100% {
+        transform: scalex(0)
+    }
+}
+
+@keyframes check-width3 {
+
+    0%,
+    20% {
+        transform: scalex(0)
+    }
+
+    30% {
+        transform: scalex(1)
+    }
+
+    70% {
+        transform: scalex(1)
+    }
+
+    80%,
+    100% {
+        transform: scalex(0)
+    }
+}
+
+@keyframes check-mark {
+    0% {
+        fill: #bdc5c9;
+    }
+
+    15% {
+        fill: #0099da;
+    }
+
+    80% {
+        fill: #0099da;
+    }
+
+    90%,
+    100% {
+        fill: #bdc5c9;
+    }
+}
+
+@keyframes check-mark2 {
+
+    0%,
+    15% {
+        fill: #bdc5c9;
+    }
+
+    25% {
+        fill: #0099da;
+    }
+
+    70% {
+        fill: #0099da;
+    }
+
+    80%,
+    100% {
+        fill: #bdc5c9;
+    }
+}
+
+@keyframes check-mark3 {
+
+    0%,
+    25% {
+        fill: #bdc5c9;
+    }
+
+    35% {
+        fill: #0099da;
+    }
+
+    60% {
+        fill: #0099da;
+    }
+
+    70%,
+    100% {
+        fill: #bdc5c9;
+    }
+}
+      </style>
+    </defs>
+    <title>new icon3_compare-Xprotect-output</title>
+    <g>
+      <path class="cls-1-new3 " d="M375.15,282.38H70.81a5.33,5.33,0,0,1-2.08-.42,5.22,5.22,0,0,1-1.7-1.15A5.34,5.34,0,0,1,65.46,277V86.75A5.33,5.33,0,0,1,67,83a5.22,5.22,0,0,1,1.7-1.15,5.33,5.33,0,0,1,2.08-.42H375.15a5.33,5.33,0,0,1,2.08.42,5.44,5.44,0,0,1,2.85,2.85,5.33,5.33,0,0,1,.42,2.08V277a5.33,5.33,0,0,1-.42,2.08,5.44,5.44,0,0,1-2.85,2.85A5.33,5.33,0,0,1,375.15,282.38Z" transform="translate(-25.91 -47.88)"/>
+      <polygon class="cls-2-new3" points="394.14 231.28 295.61 231.28 197.07 231.28 98.53 231.28 0 231.28 0 228.98 0 226.68 0 224.38 0 222.08 98.53 222.08 197.07 222.08 295.61 222.08 394.14 222.08 394.14 224.38 394.14 226.68 394.14 228.98 394.14 231.28"/>
+      <path class="cls-3-new3" d="M399.82,285.6H46.15a36.44,36.44,0,0,1-4.67-.51c-2.06-.32-4.48-.79-6.79-1.38a35.32,35.32,0,0,1-6.12-2c-1.62-.77-2.66-1.62-2.66-2.51H420.05c0,.89-1,1.74-2.66,2.51a35.32,35.32,0,0,1-6.12,2c-2.31.59-4.73,1.06-6.79,1.38A36.48,36.48,0,0,1,399.82,285.6Z" transform="translate(-25.91 -47.88)"/>
+      <g class="cls-4-new3">
+        <polygon class="cls-1-new3 " points="262.84 222.08 229.95 222.08 197.07 222.08 164.19 222.08 131.3 222.08 134.75 223.64 138.2 225.19 141.65 226.74 145.1 228.29 171.09 228.29 197.07 228.29 223.06 228.29 249.04 228.29 252.49 226.74 255.94 225.19 259.39 223.64 262.84 222.08"/>
+      </g>
+      <polygon class="cls-5-new3" points="346.43 214.62 271.81 214.62 197.19 214.62 122.57 214.62 47.95 214.62 47.95 171.95 47.95 129.28 47.95 86.6 47.95 43.93 122.57 43.93 197.19 43.93 271.81 43.93 346.43 43.93 346.43 86.6 346.43 129.28 346.43 171.95 346.43 214.62"/>
+      <path class="cls-6-new3" d="M360.8,92.55H105.24V239a6.41,6.41,0,0,0,6.42,6.42H354.51a6.17,6.17,0,0,0,6.17-6.17h0l-.22-65.13Z" transform="translate(-25.91 -47.88)"/>
+      <path class="cls-7-new3" d="M94.51,63.69H349.74V233.11a6.44,6.44,0,0,1-6.43,6.42H100.94a6.41,6.41,0,0,1-6.43-6.41h0Z" transform="translate(-25.91 -47.88)"/>
+      <path class="cls-8-new3" d="M100.37,47.88H344.22a5.86,5.86,0,0,1,5.86,5.86V79.22H94.51V53.74a5.86,5.86,0,0,1,5.86-5.86Z" transform="translate(-25.91 -47.88)"/>
+      <g>
+        <path class="cls-2-new3" d="M120.6,63.55a4.34,4.34,0,1,0-1.27,3.06A4.35,4.35,0,0,0,120.6,63.55Z" transform="translate(-25.91 -47.88)"/>
+        <path class="cls-2-new3" d="M134.38,63.55a4.34,4.34,0,1,0-1.27,3.06A4.35,4.35,0,0,0,134.38,63.55Z" transform="translate(-25.91 -47.88)"/>
+      </g>
+      <polygon class="cls-9-new3" points="219.71 22.9 174.6 22.9 129.5 22.9 129.5 16.43 129.5 9.96 174.6 9.96 219.71 9.96 219.71 16.43 219.71 22.9"/>
+      <polygon class="cls-10-new3" points="278.35 31.63 235.52 31.63 236.04 191.65 278.86 191.65 278.35 31.63"/>
+      <rect class="cls-2-new3" x="241.75" y="50.92" width="27.13" height="3.75"/>
+      <rect class="cls-2-new3" x="287.2" y="50.92" width="27.13" height="3.75"/>
+      <!--  -->
+      <rect class="check-width-start check-width2 artboard-3-2-cls-check" x="86.02" y="121" width="98.2" height="7.51"/>
+      <rect class="check-width-start check-width3 artboard-3-2-cls-check" x="86.02" y="155.65" width="98.2" height="7.51"/>
+      <g>
+        <!--  -->
+        <path class="check check1 artboard-3-2-cls-check" d="M327.69,144.14l-1,1-1,1-1,1-1,1L321.58,146l-2.11-2.11-2.11-2.12-2.12-2.11,1-1,1-1,1-1,1-1,1.14,1.14,1.13,1.13,1.14,1.13,1.13,1.14,3.08-3.08,3.08-3.08L333,131l3.08-3.08,1,1,1,1,1,1,1,1L337,135l-3.15,3-3.08,3.08Z" transform="translate(-25.91 -47.88)"/>
+        <path class="check check2 artboard-3-2-cls-check" d="M327.69,178.79l-1,1-1,1-1,1-1,1-2.11-2.11-2.11-2.11-2.11-2.11-2.12-2.12,1-1,1-1,1-1,1-1,1.14,1.14,1.13,1.13,1.14,1.14,1.13,1.13,3.08-3.08,3.08-3.08,3.08-3.08,3.08-3.08,1,1,1,1,1,1,1,1L337,169.63l-3.08,3.08-3.08,3.08Z" transform="translate(-25.91 -47.88)"/>
+        <path class="check check3 artboard-3-2-cls-check" d="M327.69,213.44l-1,1-1,1-1,1-1,1-2.11-2.12-2.11-2.11-2-2.21-2.12-2.11,1-1,1-1,1-1,1-1,1.14,1.14,1.13,1.13,1.14,1.14,1.13,1.13,3.08-3.08,3.08-3.08,3-3,3.08-3.08,1,1,1,1,1,1,1,1L337,204.3l-3.08,3.08-3.08,3.07Z" transform="translate(-25.91 -47.88)"/>
+      </g>    
+      <rect class="check-width-start check-width1 artboard-3-2-cls-check" x="86.02" y="86.35" width="98.2" height="7.51"/>
+      <!--  -->
+    </g>
+  </svg>

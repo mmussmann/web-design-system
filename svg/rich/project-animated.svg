@@ -1,0 +1,100 @@
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style>
+.project-paper-in-out {
+    -webkit-animation: papir_project-aninated cubic-bezier(.165, .84, .44, 1) 1.5s alternate infinite;
+    transform-box: fill-box;
+    transform-origin: 51% 50%;
+}
+
+.project-lines-scale {
+    -webkit-animation: animationlines cubic-bezier(.165, .84, .44, 1) 5s infinite;
+    transform-box: fill-box;
+    transform-origin: 0% 50%;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+}
+
+.project-lines-scale-2 {
+    animation-delay: 200ms;
+}
+
+.project-lines-scale-3 {
+    animation-delay: 350ms;
+}
+
+@-webkit-keyframes papir_project-aninated {
+    from {
+        -webkit-transform: translateY(-20);
+    }
+
+    to {
+        -webkit-transform: translateY(30%);
+    }
+}
+
+@-ms-keyframes papir_project-aninated {
+    from {
+        -ms-transform: translateY(-20);
+    }
+
+    to {
+        -ms-transform: translateY(30%);
+    }
+}
+@-webkit-keyframes animationlines {
+    0% {
+        -webkit-transform: scaleX(0);
+    }
+
+    25% {
+        -webkit-transform: scaleX(1);
+    }
+
+    50% {
+        -webkit-transform: scaleX(1);
+    }
+
+    75%,
+    100% {
+        -webkit-transform: scaleX(0);
+    }
+}
+
+@-ms-keyframes animationlines {
+    0% {
+        -ms-transform: scaleX(0);
+    }
+
+    25% {
+        -ms-transform: scaleX(1);
+    }
+
+    50% {
+        -ms-transform: scaleX(1);
+    }
+
+    75%,
+    100% {
+        -ms-transform: scaleX(0);
+    }
+}
+
+</style>
+</defs>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project" transform="translate(37.000000, 0.000000)" fill-rule="nonzero">
+            <path d="M154.315472,42.9 C150.180214,42.9008974 146.413937,40.5209205 144.639623,36.7856604 L142.435472,32.1781132 L137.329811,21.4562264 L132.224151,10.7218868 L130.032453,6.11433962 C128.25148,2.37921101 124.482151,0 120.344151,0 L17.5086792,0 C11.5871447,0 6.78678521,4.80035223 6.78678521,10.7218868 L6.78678521,10.7218868 L6.78678521,278.457736 C6.78678521,281.303514 7.91165208,284.033868 9.92275425,286.047306 C11.9338564,288.060744 14.6628992,289.192075 17.5086792,289.192075 L348.679245,289.192075 C351.525025,289.192075 354.254068,288.060744 356.26517,286.047306 C358.276272,284.033868 359.401139,281.303514 359.401139,278.457736 L359.401139,53.6343396 C359.401139,50.7885615 358.276272,48.0582073 356.26517,46.0447694 C354.254068,44.0313315 351.525025,42.8999981 348.679245,42.9 L154.315472,42.9 Z" id="Path" fill="#003A5D"></path>
+            <path d="M6.78679245,42.9 L348.554717,42.9 C354.545027,42.9 359.401132,47.7561054 359.401132,53.7464151 L359.401132,105.475472 L6.78679245,105.475472 L6.78679245,42.9 Z" id="Path" fill="#809DAE" style="mix-blend-mode: multiply;"></path>
+            <rect class="project-paper-in-out" fill="#E3E7E9" x="22.2532075" y="28.2554717" width="320.610566" height="92.8732075"></rect>
+            <g id="Group" opacity="0.3" style="mix-blend-mode: multiply;" transform="translate(21.169811, 44.830189)" fill="#A5B1B8">
+                <path d="M321.706415,81.4290566 L321.706415,39.3260377 L132.112075,39.3260377 C128.023398,39.4054982 124.211819,37.2662492 122.149811,33.734717 L119.870943,29.5256604 L114.566038,19.725283 L109.236226,9.96226415 L106.957358,5.74075472 C104.890249,2.21596795 101.080528,0.0825242957 96.9950943,0.161886792 L1.10830189,0.161886792 L1.10830189,81.4664151 L321.706415,81.4290566 Z" id="Path"></path>
+            </g>
+            <path d="M153.281887,104.740755 C149.195788,104.822774 145.384815,102.688629 143.319623,99.1618868 L141.040755,94.9403774 L135.735849,85.14 L130.455849,75.3396226 L128.176981,71.130566 C126.111135,67.6029405 122.302059,65.4650962 118.214717,65.5373772 L11.6184906,65.5373772 C5.47924528,65.5373772 0.510566038,69.9226415 0.510566038,75.3396226 L0.510566038,75.3396226 L0.510566038,320.037736 C0.510566038,325.454717 5.49169811,329.850566 11.6184906,329.850566 L354.519623,329.850566 C360.658868,329.850566 365.627547,325.454717 365.627547,320.037736 L365.627547,114.566038 C365.627547,109.149057 360.646415,104.753208 354.519623,104.753208 L153.281887,104.753208 L153.281887,104.740755 Z" id="Path" fill="#1A4E6E"></path>
+            <path d="M-6.29123828e-05,284.385283 L-6.29123828e-05,318.854717 C-0.00992989566,321.807189 1.15598081,324.64214 3.24019799,326.733367 C5.32441516,328.824594 8.15543556,330 11.1079245,330 L354.021509,330 C356.967514,330 359.792858,328.829704 361.875998,326.746564 C363.959138,324.663424 365.129434,321.83808 365.129434,318.892075 L365.129434,284.385283 L364.855472,285.29434 C360.547621,299.665791 347.319432,309.507199 332.316226,309.502642 L32.8007547,309.502642 C17.4460546,309.50855 3.99773921,299.210428 -6.29123828e-05,284.385283 Z" id="Path" fill="#809DAE" style="mix-blend-mode: multiply;"></path>
+            <rect class="project-lines-scale" fill="#0099DA" x="78.54" y="158.860755" width="190.316604" height="16.8113208"></rect>
+            <rect class="project-lines-scale project-lines-scale-2" fill="#0099DA" x="78.54" y="194.226792" width="122.174717" height="16.1388679"></rect>
+            <rect class="project-lines-scale project-lines-scale-3" fill="#0099DA" x="78.54" y="229.269057" width="122.174717" height="16.1388679"></rect>
+        </g>
+    </g>
+</svg>

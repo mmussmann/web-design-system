@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html class="msds-enable-font-family">
+	<head>
+    <meta charset="utf-8">
+    <link media="all" rel="stylesheet" href="../../rich-icons-bundle.css">
+    <link media="all" rel="stylesheet" href="../../main.css">
+    <title>Dark Preview Layout</title>
+		<script defer src="../../main.js"></script>    
+
+    <style>
+      body {
+        margin: 100px 0 10px 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(90deg, #035d88 0%, #0099da 100%);
+        margin-bottom: 20px;
+      }
+
+      h1, h2, h3, h4, h5, h6, p{
+        color: white;
+      }
+
+      
+    </style>
+	</head>
+	<body>
+		<div class="container">
+  <div class="row">
+    <div class="col-12">        
+      <h1>Progress Bar</h1>
+      <h2>Dark Theme</h2>      
+      <div class="row">          
+          <div class="col-8">
+            <div id="DarkThemeProgressBar" class="msds-progress-bar msds-progress-bar--dark">
+              <span class="msds-progress-bar__progression-counter"></span>
+              <div class="msds-progress-bar__base-bar">
+                <div class="msds-progress-bar__progression-bar"></div>
+              </div>            
+              <div class="progress-pagination progress-pagination--dark">  
+                <div id="DarkThemePrevStep" class="prevStep">Previous step</div>
+                <div class="currentsteps">
+                  <input id="DarkThemeCurrentStep" type="number"> / <span id="DarkThemeBaseNumber" ></span>
+                </div>
+                <div id="DarkThemeNextStep" class="nextStep">Next step</div>                
+              </div>  
+            </div>
+          </div>
+      </div>      
+    </div>
+  </div>
+</div>
+	</body>
+</html>
+

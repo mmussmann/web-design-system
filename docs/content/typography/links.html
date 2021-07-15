@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../../src/demo-img/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../rich-icons-bundle.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../theme-overrides/styles.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../main.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Links | Milestone Web Design System</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    </button>
+    <div class="flex-child-header-txt">
+        <a href="../../../index.html" class="Header-title" data-pjax>
+            <img class="logo-test" src="../../../src/demo-img/milestone-logo-white.png" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>        
+    </div>
+    <div class="github-milestone-system">
+        <a class="github-milestonesys-design-system" href="https://github.com/milestone-sys/web-design-system" target="_blank">
+            <img class="git-icon" src="../../../src/demo-img/giticon.png" alt="git icon"></a>               
+        </a>
+    </div>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Links</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <h2 id="in-this-section-we-are-going-to-give-you-an-overview-of-how-milestone-systems-website-links-are-defined">In this section, we are going to give you an overview of how Milestone Systems website links are defined.</h2>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="row">    
+    <div class="col-md-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"><a class="msds-link" href="#overview">Overview</a></li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#primary">Primary Links</a>
+          <ul class="document__unordered-list">        
+            <li class="document__unordered-list-item"><a class="msds-link" href="#primary-link-overview">Overview</a></li>
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#on-light-background-colors">On Light background Colors</a>
+            </li>  
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#on-dark-background-colors">On Dark background Colors</a>
+            </li>         
+          </ul> 
+        </li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#primary">Secondry Links</a>          
+        </li>               
+      </ul>     
+    </div>
+</div>
+
+<h2 id="overview">Overview</h2>
+<p>Milestone links have been defined in three types, primary, secondary and custom links. </p>
+<p>The custom links are specific to a context (block or sections) such as header, footer, cards etc… Their definition will overwrite the primary link definition.</p>
+<p>Therefore on this page we will focus on the primary and secondary link definitions based on light or dark background.</p>
+<h2 id="primary-links">Primary Links</h2>
+<h3 id="primary-link-overview">Primary Link Overview</h3>
+<p>The primary links are our default and don’t require any specific CSS class. The styling will be applied automatically on any links. The definition will be overwritten if the link is of type secondary or custom link.</p>
+<p>We have designed different links based on the background color used on the page/block. Based on the background selection in the block/page property, the links will automatically get the correct styling. No need to add extra CSS classes. Therefore we are not adding the HTML code under the primary link representation.</p>
+<h3 id="on-light-background-colors">On Light background Colors</h3>
+<p>Below is the styling of Milestone primary links used on light background colors. The representation is showing the primary links on each of what is considered light background colors.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-white p-6">
+        <h3>White</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-1 p-6">
+        <h3>Gray 2</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-3 p-6">
+        <h3>Gray 3</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-4 p-6">
+        <h3>Gray 4</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-5 p-6">
+        <h3>Gray 5</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-yellow p-6">
+        <h3>Yellow</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-white-gradient p-6">
+        <h3>White Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-white-gradient-reverse p-6">
+        <h3>White Gradient Reverse</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-1 p-6">
+        <h3>Gray Gradient 1</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-2 p-6">
+        <h3>Gray Gradient 2</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-3 p-6">
+        <h3>Gray Gradient 3</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-4 p-6">
+        <h3>Gray Gradient 4</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-5 p-6">
+        <h3>Gray Gradient 5</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-yellow-gradient p-6">
+        <h3>Yellow Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<h3 id="on-dark-background-colors">On Dark background Colors</h3>
+<p>Below is the styling of Milestone primary links used on dark background colors. The representation is showing the primary links on each of what is considered dark background colors.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container-fluid">
+  <div class="row">    
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-8 p-6">
+        <h3 class="msds-text-white">Gray 8</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-9 p-6">
+        <h3 class="msds-text-white">Gray 9</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-10 p-6">
+        <h3 class="msds-text-white">Gray 10</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">      
+      <div class="msds-bg-clear-blue p-6">
+        <h3 class="msds-text-white">Milestone Clear Blue</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">      
+      <div class="msds-bg-dark-blue p-6">
+        <h3 class="msds-text-white">Milestone Dark Blue</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">      
+      <div class="msds-bg-orange p-6">
+        <h3 class="msds-text-white">Orange</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">      
+      <div class="msds-bg-dusty-green p-6">
+        <h3 class="msds-text-white">Dusty Green</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-6 p-6">
+        <h3 class="msds-text-white">Gray Gradient 6</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-gray-gradient-6-reverse p-6 text-right">
+        <h3 class="msds-text-white">Gray Gradient 6 Reverse</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>    
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-blue-to-yellow-gradient p-6">
+        <h3 class="msds-text-white">Blue To Yellow Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-clear-blue-gradient p-6">
+        <h3 class="msds-text-white">Clear Blue Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-clear-blue-gradient-2 p-6">
+        <h3 class="msds-text-white">Clear Blue Gradient 2</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-clear-blue-gradient-2-reverse p-6 text-right">
+        <h3 class="msds-text-white">Clear Blue Gradient 2 Reverse</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-dark-blue-gradient p-6">
+        <h3 class="msds-text-white">Dark Blue Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-dark-blue-gradient-2 p-6">
+        <h3 class="msds-text-white">Dark Blue Gradient 2</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-dark-blue-gradient-2-reverse p-6 text-right">
+        <h3 class="msds-text-white">Dark Blue Gradient 2 Reverse</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+    <div class="col-12 col-sm-4 mb-5">
+      <div class="msds-bg-mixed-blue-gradient p-6">
+        <h3 class="msds-text-white">Mixed Blue Gradient</h3>
+        <a href="/docs/content/typography/links">Read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<h2 id="secondary-links">Secondary Links</h2>
+<p>The secondary links are used for specific cases where we would like to avoid to highlight the link. For that reason, the link will keep the current text color in which it belongs.</p>
+<p>To perform this styling, we need to apply a specific CSS class called “msds-link–secondary”. </p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container-fluid">
+  <div class="row">    
+    <div class="col-12 col-sm-6 mb-5">
+      <div class="msds-bg-white p-6">
+        <h3 class="msds-text-gray-10">On White background</h3>
+        <p class="msds-text-gray-10">Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <a href="/docs/content/typography/links" class="msds-link--secondary">our product range</a> our product range you can choose the exact solution your business needs now.</p>
+        <p class="msds-text-gray-10">You can easily <a href="/docs/content/typography/links" class="msds-link--secondary">upgrade or add functionality</a> should your needs change alter. Build your surveillance system on a <a href="/docs/content/typography/links" class="msds-link--secondary">solid foundation</a>. Build it with Milestone XProtect.</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mb-5">      
+      <div class="msds-bg-yellow p-6">
+        <h3 class="msds-text-clear-blue">On Yellow background</h3>
+        <p class="msds-text-clear-blue">Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <a href="/docs/content/typography/links" class="msds-link--secondary">our product range</a> our product range you can choose the exact solution your business needs now.</p>
+        <p class="msds-text-clear-blue">You can easily <a href="/docs/content/typography/links" class="msds-link--secondary">upgrade or add functionality</a> should your needs change alter. Build your surveillance system on a <a href="/docs/content/typography/links" class="msds-link--secondary">solid foundation</a>. Build it with Milestone XProtect.</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mb-5">
+      <div class="msds-bg-dark-blue p-6">
+        <h3 class="msds-text-white">On Dark Blue Background</h3>
+        <p class="msds-text-white">Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <a href="/docs/content/typography/links" class="msds-link--secondary">our product range</a> our product range you can choose the exact solution your business needs now.</p>
+        <p class="msds-text-white">You can easily <a href="/docs/content/typography/links" class="msds-link--secondary">upgrade or add functionality</a> should your needs change alter. Build your surveillance system on a <a href="/docs/content/typography/links" class="msds-link--secondary">solid foundation</a>. Build it with Milestone XProtect.</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 mb-5">      
+      <div class="msds-bg-mixed-blue-gradient p-6">
+       <h3 class="msds-text-gray-4">On Mixed Blue Background</h3>
+        <p class="msds-text-gray-4">Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <a href="/docs/content/typography/links" class="msds-link--secondary">our product range</a> our product range you can choose the exact solution your business needs now.</p>
+        <p class="msds-text-gray-4">You can easily <a href="/docs/content/typography/links" class="msds-link--secondary">upgrade or add functionality</a> should your needs change alter. Build your surveillance system on a <a href="/docs/content/typography/links" class="msds-link--secondary">solid foundation</a>. Build it with Milestone XProtect.</p>
+      </div>
+    </div>    
+  </div>
+</div>
+</div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-sm-6 mb-5"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-white p-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-10"</span>&gt;</span>On White background<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-10"</span>&gt;</span>Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>our product range<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> our product range you can choose the exact solution your business needs now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-10"</span>&gt;</span>You can easily <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>upgrade or add functionality<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> should your needs change alter. Build your surveillance system on a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>solid foundation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>. Build it with Milestone XProtect.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-sm-6 mb-5"</span>&gt;</span>      
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-yellow p-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-clear-blue"</span>&gt;</span>On Yellow background<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-clear-blue"</span>&gt;</span>Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>our product range<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> our product range you can choose the exact solution your business needs now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-clear-blue"</span>&gt;</span>You can easily <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>upgrade or add functionality<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> should your needs change alter. Build your surveillance system on a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>solid foundation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>. Build it with Milestone XProtect.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-sm-6 mb-5"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-dark-blue p-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-white"</span>&gt;</span>On Dark Blue Background<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-white"</span>&gt;</span>Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>our product range<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> our product range you can choose the exact solution your business needs now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-white"</span>&gt;</span>You can easily <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>upgrade or add functionality<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> should your needs change alter. Build your surveillance system on a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>solid foundation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>. Build it with Milestone XProtect.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12 col-sm-6 mb-5"</span>&gt;</span>      
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-mixed-blue-gradient p-6"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-4"</span>&gt;</span>On Mixed Blue Background<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-4"</span>&gt;</span>Whether you have a small flower shop with a few cameras, or an airport with +1,000, we have a solution for you. With <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>our product range<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> our product range you can choose the exact solution your business needs now.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-gray-4"</span>&gt;</span>You can easily <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>upgrade or add functionality<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> should your needs change alter. Build your surveillance system on a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/docs/content/typography/links"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-link--secondary"</span>&gt;</span>solid foundation<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>. Build it with Milestone XProtect.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-colors-items">
+                Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/background-colors.html" data-pjax>
+                <span>Background Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/colors-and-shadows.html" data-pjax>
+                <span>Colors And Shadows</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-font-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-font-colors-items">
+                Font Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-font-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-1.html" data-pjax>
+                <span>Msds Text Alt Blue 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-2.html" data-pjax>
+                <span>Msds Text Alt Blue 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-blue-3.html" data-pjax>
+                <span>Msds Text Alt Blue 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-1.html" data-pjax>
+                <span>Msds Text Alt Yellow 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-alt-yellow-2.html" data-pjax>
+                <span>Msds Text Alt Yellow 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-black.html" data-pjax>
+                <span>Msds Text Black</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-clear-blue.html" data-pjax>
+                <span>Msds Text Clear Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-confirm-green.html" data-pjax>
+                <span>Msds Text Confirm Green</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-1.html" data-pjax>
+                <span>Msds Text Danger Red 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-danger-red-2.html" data-pjax>
+                <span>Msds Text Danger Red 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-dark-blue.html" data-pjax>
+                <span>Msds Text Dark Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-1.html" data-pjax>
+                <span>Msds Text Gray 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-10.html" data-pjax>
+                <span>Msds Text Gray 10</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-2.html" data-pjax>
+                <span>Msds Text Gray 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-3.html" data-pjax>
+                <span>Msds Text Gray 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-4.html" data-pjax>
+                <span>Msds Text Gray 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-5.html" data-pjax>
+                <span>Msds Text Gray 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-6.html" data-pjax>
+                <span>Msds Text Gray 6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-7.html" data-pjax>
+                <span>Msds Text Gray 7</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-8.html" data-pjax>
+                <span>Msds Text Gray 8</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-gray-9.html" data-pjax>
+                <span>Msds Text Gray 9</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-sand.html" data-pjax>
+                <span>Msds Text Sand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-white.html" data-pjax>
+                <span>Msds Text White</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/msds-text-yellow.html" data-pjax>
+                <span>Msds Text Yellow</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/text-colors.html" data-pjax>
+                <span>Text Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../components/detail/tab-tile.html" data-pjax>
+                <span>Tab Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-content">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-content-items">
+                Content
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-content-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-icons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-icons-items">
+                Icons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-icons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../icons/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../icons/icons-flat.html" data-pjax>
+                <span>Icons Flat</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../icons/icons-rich.html" data-pjax>
+                <span>Icons Rich</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-typography-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Links</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="lists.html" data-pjax>
+                <span>Lists</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text.html" data-pjax>
+                <span>Text</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-component-documentation">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-component-documentation-items">
+                Component Documentation
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-component-documentation-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/buttons/buttons.html" data-pjax>
+                <span>Buttons</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/buttons/buttons-floating.html" data-pjax>
+                <span>Buttons Floating</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-cards">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-cards-items">
+                Cards
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-cards-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/cards/basic-cards.html" data-pjax>
+                <span>Basic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/cards/category-cards.html" data-pjax>
+                <span>Category Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/cards/contact-cards.html" data-pjax>
+                <span>Contact Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/cards/generic-cards.html" data-pjax>
+                <span>Generic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/cards/solution-cards.html" data-pjax>
+                <span>Solution Cards</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-dividers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-dividers-items">
+                Dividers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-dividers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/dividers/dividers.html" data-pjax>
+                <span>Dividers</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-expanding-components">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-expanding-components-items">
+                Expanding Components
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-expanding-components-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/expanding-components/accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/expanding-components/section.html" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/modal.html" data-pjax>
+                <span>Modal</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-popover">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-popover-items">
+                Popover
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-popover-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/popover/popover.html" data-pjax>
+                <span>Popover</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/progress-bar.html" data-pjax>
+                <span>Progress Bar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../component-documentation/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-forms">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-forms-items">
+                Forms
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-forms-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/drop-down-list.html" data-pjax>
+                <span>Drop Down List</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/input-field.html" data-pjax>
+                <span>Input Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/radio-button.html" data-pjax>
+                <span>Radio Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../forms/text-area.html" data-pjax>
+                <span>Text Area</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../utilities/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-guidelines-and-guides">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-guidelines-and-guides-items">
+                Guidelines And Guides
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-guidelines-and-guides-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/creating-a-new-release.html" data-pjax>
+                <span>Creating A New Release</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/css-and-scss-guidelines.html" data-pjax>
+                <span>Css And Scss Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/git-cheat-sheet.html" data-pjax>
+                <span>Git Cheat Sheet</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../guidelines-and-guides/installation-and-usage.html" data-pjax>
+                <span>Installation And Usage</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+<script src="../../../design-system.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>

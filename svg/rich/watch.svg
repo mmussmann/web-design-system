@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="330px" viewBox="0 0 440 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic elements / Icons / Rich icons / watch</title>
+    <g id="Graphic-elements-/-Icons-/-Rich-icons-/-watch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Watch" transform="translate(0.000000, 49.000000)" fill-rule="nonzero">
+            <path d="M219.97822,0 C130.854917,0 51.9137113,53.7399733 3.39900996,106.759484 C-1.13300332,111.720332 -1.13300332,119.329897 3.39900996,124.290745 C51.9137113,177.310255 130.811357,231.050228 220,231.050228 C309.188643,231.050228 388.086289,177.310255 436.60099,124.290745 C441.133003,119.329897 441.133003,111.720332 436.60099,106.759484 C388.086289,53.7399733 309.145083,0 219.97822,0 Z" id="Path" fill="#F9F9FA"></path>
+            <circle id="Oval" fill="#0099DA" cx="220" cy="115.525114" r="107.488584"></circle>
+            <g id="Group" opacity="0.11" transform="translate(112.511416, 6.027397)" fill="#F4F6F7">
+                <path d="M144.505263,7.46658609 C132.198281,2.92681908 119.164872,0.703346345 106.056813,0.907359656 C51.1739623,1.738195 5.16634051,45.1493419 1.0332681,100.17032 C-0.225029711,116.646629 2.31331183,133.192688 8.45104542,148.52275 L76.3095684,122.974564 C86.1541744,119.23599 93.0768157,110.258621 94.2231744,99.7439699 C96.9314245,75.7153371 107.046575,31.7029277 144.505263,7.46658609 Z" id="Path"></path>
+            </g>
+            <circle id="Oval" fill="#023852" cx="219.497717" cy="115.022831" r="34.6575342"></circle>
+            <g id="Group" opacity="0.95" transform="translate(236.073059, 82.374429)" fill="#F4F6F7">
+                <ellipse id="Oval" cx="10.5919548" cy="10.9949772" rx="10.5182866" ry="10.5640183"></ellipse>
+            </g>
+            <g id="Group" opacity="0.54" transform="translate(241.095890, 60.273973)" fill="#F4F6F7">
+                <ellipse id="Oval" cx="19.9264079" cy="20.1239047" rx="19.1863775" ry="19.146489"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

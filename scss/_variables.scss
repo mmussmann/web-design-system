@@ -1,0 +1,123 @@
+/***************** MILESTONE DESIGN SYSTEM VARIABLES *****************/
+// Colors Definitions ----------------------------------------------------------------------------------------------------------------------------
+// Primary Colors
+$clear-blue: #0099da;
+$dark-blue: #023852;
+$yellow: #ffe700;
+
+// Gray, White and Black Colors
+$gray-1: #f9f9f9;
+$gray-2: #f5f6f7;
+$gray-3: #ebeff2;
+$gray-4: #dce2e6;
+$gray-5: #ced3d7;
+$gray-6: #b6bbc0;
+$gray-7: #9dadb7;
+$gray-8: #7c8b95;
+$gray-9: #6d6f71;
+$gray-10: #303436;
+$white: #ffffff;
+$black: #000000;
+
+// Alternative Colors
+$alt-blue-1: #50bfee;
+$alt-blue-2: #0081c1;
+$alt-blue-3: #035d88;
+$alt-yellow-1: #ffd300;
+$alt-yellow-2: #ffc000;
+$confirm-green: #3cc003;
+$danger-red-1: #ff285a;
+$danger-red-2: #b23b57;
+$sand: #9e9d8e;
+$dusty-green: #70c5a7;
+$orange: #ec6608;
+$husky-dark-blue: #011e2c;
+
+//RGBA Definitions
+$rgba-1: rgba(2, 56, 82, 0.17);
+$rgba-2: rgba(2, 56, 82, 0.12);
+$rgba-3: rgba(0, 153, 218, 0.5);
+$rgba-4: rgba(157, 173, 183, 0.5);
+$rgba-5: rgba(255, 40, 90, 0.5);
+$rgba-6: rgba(2, 56, 82, 0.3);
+$rgba-7: rgba(255, 255, 255, 0.5);
+$rgba-8: rgba(255, 255, 255, 0.3);
+$rgba-9: rgba(255, 255, 255, 0.1);
+$rgba-10: rgba(0, 0, 0, 0.3);
+$rgba-11: rgba(0, 0, 0, 0.1);
+$rgba-12: rgba(182, 187, 192, 0.5);
+$rgba-13: rgba(124, 139, 142, 0.5);
+$rgba-14: rgba(255, 255, 255, 0.6);
+$rgba-15: rgba(0, 0, 0, 0.2);
+$rgba-16: rgba(0, 0, 0, 0.03);
+
+// Gradients
+$clear-blue-gradient: linear-gradient(90deg, $alt-blue-2 0%, $clear-blue 100%);
+$clear-blue-gradient-reverse: linear-gradient(-90deg, $alt-blue-2 0%, $clear-blue 100%);
+$clear-blue-gradient-2: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218, 0) 100%);
+$clear-blue-gradient-2-mobile: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
+$clear-blue-gradient-2-reverse: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0) 100%);
+$clear-blue-gradient-2-reverse-mobile: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
+$dark-blue-gradient: linear-gradient(270deg, $alt-blue-3 0%, $dark-blue 100%);
+$dark-blue-gradient-reverse: linear-gradient(-90deg, $dark-blue 0%, $alt-blue-3 100%);
+$dark-blue-gradient-2: linear-gradient(90deg, $dark-blue 0%, rgba(2, 56, 82, 0) 100%);
+$dark-blue-gradient-2-mobile: linear-gradient(90deg, $dark-blue 0%, rgba(2, 56, 82, 0.5) 100%);
+$dark-blue-gradient-2-reverse: linear-gradient(270deg, $dark-blue 0%, rgba(2, 56, 82, 0) 100%);
+$dark-blue-gradient-2-reverse-mobile: linear-gradient(270deg, $dark-blue 0%, rgba(2, 56, 82, 0.5) 100%);
+$mixed-blue-gradient: linear-gradient(90deg, $alt-blue-3 20%, $clear-blue 80%);
+$mixed-blue-gradient-reverse: linear-gradient(-90deg, $alt-blue-3 20%, $clear-blue 80%);
+$yellow-gradient: linear-gradient(90deg, $alt-yellow-1 0%, $yellow 100%);
+$blue-to-yellow: linear-gradient(90deg, $clear-blue 32%, $yellow 68%);
+$gray-gradient-1: linear-gradient(90deg, $gray-3 0%, $white 100%);
+$gray-gradient-2: linear-gradient(90deg, $gray-2 0%, $gray-1 100%);
+$gray-gradient-3: linear-gradient(90deg, $gray-3 0%, $gray-2 100%);
+$gray-gradient-4: linear-gradient(90deg, $gray-4 0%, $gray-3 100%);
+$gray-gradient-5: linear-gradient(90deg, $gray-5 0%, $gray-4 100%);
+$gray-gradient-6: linear-gradient(90deg, rgba(48, 52, 54, 0.3) 0%, rgba(48, 52, 54, 0) 100%);
+$gray-gradient-6-mobile: linear-gradient(90deg, rgba(48, 52, 54, 0.5) 0%, rgba(48, 52, 54, 0.3) 100%);
+$gray-gradient-6-reverse: linear-gradient(270deg, rgba(48, 52, 54, 0.3) 0%, rgba(48, 52, 54, 0) 100%);
+$gray-gradient-6-reverse-mobile: linear-gradient(270deg, rgba(48, 52, 54, 0.5) 0%, rgba(48, 52, 54, 0.3) 100%);
+$white-gradient: linear-gradient(90deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+$white-gradient-mobile: linear-gradient(90deg, $white 0%, rgba(255, 255, 255, 0.5) 100%);
+$white-gradient-reverse: linear-gradient(270deg, $white 0%, rgba(255, 255, 255, 0) 100%);
+$white-gradient-reverse-mobile: linear-gradient(270deg, $white 0%, rgba(255, 255, 255, 0.5) 100%);
+$husky-dark-blue-gradient: linear-gradient(90deg, $husky-dark-blue 0%, $dark-blue 100%);
+
+// Shadows
+$shadow-small: 0 1px 2px rgba(2, 56, 82, 0.3);
+$shadow-medium: 0 2px 12px rgba(2, 56, 82, 0.17);
+$shadow-large: 0 12px 36px 0 rgba(2, 56, 82, 0.12);
+
+//Z-Indexes
+$zindex-component-hidden: -1;
+$zindex-component-1: 1000;
+
+$zindex-element-1: 100;
+$zindex-element-2: 110;
+
+$zindex-modal-1: 10002;
+$zindex-modal-2: 10010;
+
+/***************** BOOTSTRAP CONFIGURATION VARIABLES *****************/
+$grid-gutter-width: 20px;
+$spacers: (
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  7: 32px,
+  8: 40px,
+  9: 48px,
+  10: 64px,
+  11: 80px,
+  12: 96px,
+  13: 112px,
+  14: 128px,
+  15: 160px
+);
+
+$embed-responsive-aspect-ratios: ((16 9), (2 1));
+$enable-responsive-font-sizes: true;
+$rfs-factor: 4;

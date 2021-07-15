@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../src/demo-img/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../rich-icons-bundle.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../theme-overrides/styles.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../main.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Spacing | Milestone Web Design System</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    </button>
+    <div class="flex-child-header-txt">
+        <a href="../../index.html" class="Header-title" data-pjax>
+            <img class="logo-test" src="../../src/demo-img/milestone-logo-white.png" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>        
+    </div>
+    <div class="github-milestone-system">
+        <a class="github-milestonesys-design-system" href="https://github.com/milestone-sys/web-design-system" target="_blank">
+            <img class="git-icon" src="../../src/demo-img/giticon.png" alt="git icon"></a>               
+        </a>
+    </div>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Spacing</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <h2 id="in-this-section-we-are-going-to-give-you-an-overview-of-how-milestone-systems-web-application-spacing-are-defined">In this section, we are going to give you an overview of how Milestone Systems web application spacing are defined.</h2>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="row">    
+    <div class="col-md-6">
+      <ul class="document__unordered-list">
+        <li class="document__unordered-list-item"><a class="msds-link" href="#overview">Overview</a></li>
+        <li class="document__unordered-list-item">     
+          <a class="msds-link" href="#global-spacing-definitions">Global Spacing Definitions</a>     
+          <ul class="document__unordered-list">                   
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#margin-definitions">Margin Definitions</a>
+            </li>  
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#padding-definitions">Padding Definitions</a>
+            </li>         
+          </ul> 
+        </li>
+        <li class="document__unordered-list-item">
+          <a class="msds-link" href="#section-spacing-definitions">Section Spacing definitions</a>    
+          <ul class="document__unordered-list">                   
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#large-spacing-definitions">Large Spacing Definitions</a>
+            </li>  
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#medium-spacing-definitions">Medium Spacing Definitions</a>
+            </li>
+            <li class="document__unordered-list-item">
+              <a class="msds-link" href="#small-spacing-definitions">Small Spacing Definitions</a>
+            </li>
+          </ul>     
+        </li>               
+      </ul>     
+    </div>
+</div>
+
+<h2 id="overview">Overview</h2>
+<p>Milestone Systems web systems spacing are globally defined on bootstrap definitions as described in the global spacing definition below. Concerning  global spacing definitions, you will to install boostrap 4 or above.</p>
+<p>Besides th4ese spacing definitions, there is also section spacing which is not bsed on bootstrap and has its own definition.</p>
+<h2 id="global-spacing-definitions">Global spacing definitions</h2>
+<h3 id="margin-definitions">Margin Definitions</h3>
+<p>Below is the global margin definitions based on bootstrap 4 margin definitions.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Below is an attempt to illustrate the different spacers.</h2>
+            <p>The spacer is the distance between the 2 elements, for more info go to component documentation or <a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">Bootstrap documentation on spacing</a> </p>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-1">mr-1</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-2">mr-2</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-3">mr-3</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-4">mr-4</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-5">mr-5</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-6">mr-6</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-7">mr-7</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-8">mr-8</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-9">mr-9</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-10">mr-10</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-11">mr-11</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-12">mr-12</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-13">mr-13</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-14">mr-14</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+            <div><span class="spacing-preview msds-bg-clear-blue mr-15">mr-15</span><span class="spacing-preview msds-bg-yellow">end</span></div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+
+<h3 id="padding-definitions">Padding Definitions</h3>
+<p>Below is the global padding definitions based on bootstrap 4 padding definitions.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><h2>Coming Soon</h2>
+</div>
+</div>
+
+
+<h2 id="section-spacing-definitions">Section Spacing Definitions</h2>
+<p>The section spacing is not based on Bootstrap 4 spacing definitions. it has its own and is devided in 3, Large, Medium and Small definitions. For each of them, there will be a specific padding definition for desktop, tablet and mobile devices.</p>
+<p>Basically, the section spacing consists of 3 distinct CSS classes definitions:</p>
+<ul>
+  <li>msds-block-padding-large</li>
+  <li>msds-block-padding-medium</li>
+  <li>msds-block-padding-small</li>
+</ul>
+
+<p>For each of the following section, The blue areas represent the section spacing and based on the CSS class used will adapt to device automatically.</p>
+<p>Also, remember that </p>
+<ul>
+<li><strong>Desktop</strong> represents screens superior or equivalent than 992px.</li>
+<li><strong>Tablets</strong> represents screens superior or equivalent than 769px and inferior than 992px.</li>
+<li><strong>Mobile</strong> represents screens inferior than 769px.</li>
+</ul>
+
+<p> They are defined as follow:</p>
+<h3 id="large-spacing-definitions">Large Spacing Definitions</h3>
+<p>Below is the “Large” definitions for sections where the section is using the “msds-block-padding-large” CSS class. </p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="msds-text-header-2-bold">Large Spacing - Desktop</h2>            
+            <div class="section-spacing section-spacing--large-desktop msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>                
+            </div>
+        </div>        
+        <div class="col-8">            
+            <h2 class="msds-text-header-2-bold mt-10">Large Spacing - Tablets</h2>            
+            <div class="section-spacing section-spacing--large-tablet msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h2 class="msds-text-header-2-bold mt-10">Large Spacing - Mobile</h2>            
+            <div class="section-spacing section-spacing--large-mobile msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+</br>
+Try out the "Large" section implementation by resizing the client window or any repsonsive/developer tools to select the different screen sizes.
+
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="msds-bg-clear-blue">    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="msds-block-padding-large msds-text-white">
+                    <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                    <div class="msds-text-body-1">
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    </div>                
+                </div>
+            </div>
+        </div>        
+    </div>      
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-clear-blue"</span>&gt;</span>    
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-block-padding-large msds-text-white"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-header-2-bold mb-4"</span>&gt;</span>PREVENT. PROTECT. PROVE.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-body-1"</span>&gt;</span>
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>                
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>        
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>      
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="medium-spacing-definitions">Medium Spacing Definitions</h3>
+<p>Below is the “Medium” definitions for sections where the section is using the “msds-block-padding-medium” CSS class.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="msds-text-header-2-bold">Medium Spacing - Desktop</h2>            
+            <div class="section-spacing section-spacing--medium-desktop msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>                
+            </div>
+        </div>        
+        <div class="col-8">            
+            <h2 class="msds-text-header-2-bold mt-10">Medium Spacing - Tablets</h2>            
+            <div class="section-spacing section-spacing--medium-tablet msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h2 class="msds-text-header-2-bold mt-10">Medium Spacing - Mobile</h2>            
+            <div class="section-spacing section-spacing--medium-mobile msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+</br>
+Try out the "Medium" section implementation by resizing the client window or any repsonsive/developer tools to select the different screen sizes.
+
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="msds-bg-clear-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="msds-block-padding-medium msds-text-white">
+                    <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                    <div class="msds-text-body-1">
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-clear-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-block-padding-medium msds-text-white"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-header-2-bold mb-4"</span>&gt;</span>PREVENT. PROTECT. PROVE.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-body-1"</span>&gt;</span>
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="small-spacing-definitions">Small Spacing Definitions</h3>
+<p>Below is the “Small” definitions for sections where the section is using the “msds-block-padding-small” CSS class.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="msds-text-header-2-bold">Small spacing - Desktop</h2>            
+            <div class="section-spacing section-spacing--small-desktop msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>                
+            </div>
+        </div>        
+        <div class="col-8">            
+            <h2 class="msds-text-header-2-bold mt-10">Small spacing - Tablets</h2>            
+            <div class="section-spacing section-spacing--small-tablet msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <h2 class="msds-text-header-2-bold mt-10">Small spacing - Mobile</h2>            
+            <div class="section-spacing section-spacing--small-mobile msds-bg-gray-4">
+                <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                <div class="msds-text-body-1">
+                    Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>    
+
+<p></style></div></p>
+</div>
+
+</br>
+Try out the "Small" section implementation by resizing the client window or any repsonsive/developer tools to select the different screen sizes.
+
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="msds-bg-clear-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="msds-block-padding-small msds-text-white">
+                    <div class="msds-text-header-2-bold mb-4">PREVENT. PROTECT. PROVE.</div>
+                    <div class="msds-text-body-1">
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-bg-clear-blue"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-block-padding-small msds-text-white"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-header-2-bold mb-4"</span>&gt;</span>PREVENT. PROTECT. PROVE.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-text-body-1"</span>&gt;</span>
+                        Milestone XProtect® video management software (VMS) brings all the puzzle pieces for video surveillance together in a perfect combination to create a solution that keeps people and property safe today – and tomorrow.
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-colors-items">
+                Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/background-colors.html" data-pjax>
+                <span>Background Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/colors-and-shadows.html" data-pjax>
+                <span>Colors And Shadows</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-font-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-font-colors-items">
+                Font Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-font-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-alt-blue-1.html" data-pjax>
+                <span>Msds Text Alt Blue 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-alt-blue-2.html" data-pjax>
+                <span>Msds Text Alt Blue 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-alt-blue-3.html" data-pjax>
+                <span>Msds Text Alt Blue 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-alt-yellow-1.html" data-pjax>
+                <span>Msds Text Alt Yellow 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-alt-yellow-2.html" data-pjax>
+                <span>Msds Text Alt Yellow 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-black.html" data-pjax>
+                <span>Msds Text Black</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-clear-blue.html" data-pjax>
+                <span>Msds Text Clear Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-confirm-green.html" data-pjax>
+                <span>Msds Text Confirm Green</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-danger-red-1.html" data-pjax>
+                <span>Msds Text Danger Red 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-danger-red-2.html" data-pjax>
+                <span>Msds Text Danger Red 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-dark-blue.html" data-pjax>
+                <span>Msds Text Dark Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-1.html" data-pjax>
+                <span>Msds Text Gray 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-10.html" data-pjax>
+                <span>Msds Text Gray 10</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-2.html" data-pjax>
+                <span>Msds Text Gray 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-3.html" data-pjax>
+                <span>Msds Text Gray 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-4.html" data-pjax>
+                <span>Msds Text Gray 4</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-5.html" data-pjax>
+                <span>Msds Text Gray 5</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-6.html" data-pjax>
+                <span>Msds Text Gray 6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-7.html" data-pjax>
+                <span>Msds Text Gray 7</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-8.html" data-pjax>
+                <span>Msds Text Gray 8</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-gray-9.html" data-pjax>
+                <span>Msds Text Gray 9</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-sand.html" data-pjax>
+                <span>Msds Text Sand</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-white.html" data-pjax>
+                <span>Msds Text White</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/msds-text-yellow.html" data-pjax>
+                <span>Msds Text Yellow</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/text-colors.html" data-pjax>
+                <span>Text Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/tab-tile.html" data-pjax>
+                <span>Tab Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-content">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-content-items">
+                Content
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-content-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-icons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-icons-items">
+                Icons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-icons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/icons-flat.html" data-pjax>
+                <span>Icons Flat</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/icons-rich.html" data-pjax>
+                <span>Icons Rich</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-typography-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/links.html" data-pjax>
+                <span>Links</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/lists.html" data-pjax>
+                <span>Lists</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/text.html" data-pjax>
+                <span>Text</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-component-documentation">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-component-documentation-items">
+                Component Documentation
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-component-documentation-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/buttons/buttons.html" data-pjax>
+                <span>Buttons</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/buttons/buttons-floating.html" data-pjax>
+                <span>Buttons Floating</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-cards">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-cards-items">
+                Cards
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-cards-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/cards/basic-cards.html" data-pjax>
+                <span>Basic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/cards/category-cards.html" data-pjax>
+                <span>Category Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/cards/contact-cards.html" data-pjax>
+                <span>Contact Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/cards/generic-cards.html" data-pjax>
+                <span>Generic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/cards/solution-cards.html" data-pjax>
+                <span>Solution Cards</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-dividers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-dividers-items">
+                Dividers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-dividers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/dividers/dividers.html" data-pjax>
+                <span>Dividers</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-expanding-components">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-expanding-components-items">
+                Expanding Components
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-expanding-components-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/expanding-components/accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/expanding-components/section.html" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/modal.html" data-pjax>
+                <span>Modal</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-popover">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-popover-items">
+                Popover
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-popover-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/popover/popover.html" data-pjax>
+                <span>Popover</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/progress-bar.html" data-pjax>
+                <span>Progress Bar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../component-documentation/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-forms">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-forms-items">
+                Forms
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-forms-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/drop-down-list.html" data-pjax>
+                <span>Drop Down List</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/input-field.html" data-pjax>
+                <span>Input Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/radio-button.html" data-pjax>
+                <span>Radio Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/text-area.html" data-pjax>
+                <span>Text Area</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-guidelines-and-guides">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-guidelines-and-guides-items">
+                Guidelines And Guides
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-guidelines-and-guides-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/creating-a-new-release.html" data-pjax>
+                <span>Creating A New Release</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/css-and-scss-guidelines.html" data-pjax>
+                <span>Css And Scss Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/git-cheat-sheet.html" data-pjax>
+                <span>Git Cheat Sheet</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/installation-and-usage.html" data-pjax>
+                <span>Installation And Usage</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+<script src="../../design-system.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>
