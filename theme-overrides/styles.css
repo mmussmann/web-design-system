@@ -641,7 +641,7 @@ button:focus {
   text-decoration: underline !important;
 }
 
-/* Spacing definitions ofr the documentation 
+/* Spacing definitions for the documentation 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .section-spacing {
   opacity: 0.8;        
@@ -736,4 +736,28 @@ button:focus {
     content: '40px';
     height: 40px;
   }
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Color definitions for the documentation 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.color-square{
+  width: 170px; 
+  height: 92px; 
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  flex-direction: column;
+} 
+.color-container{display: flex; flex-wrap: wrap}
+.variable-name{
+  font-size: 14px;
+  text-transform: initial;
+  font-weight: normal;
+  margin-top: 10px;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
